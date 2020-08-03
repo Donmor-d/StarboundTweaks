@@ -1,0 +1,7 @@
+[
+	{
+	"op": "replace",
+	"path": "/label",
+	"value": "Electrified: nearby allies take damage"
+	}
+]

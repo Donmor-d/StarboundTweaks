@@ -1,0 +1,27 @@
+[
+    {
+        "op" : "test",
+        "path" : "/ability/stances/windup/allowRotate",
+        "value" : false
+    },
+    {
+        "op" : "test",
+        "path" : "/ability/stances/preslash/allowRotate",
+        "value" : false
+    },
+    {
+        "op" : "replace",
+        "path" : "/ability/stances/windup/allowRotate",
+        "value" : true
+    },
+    {
+        "op" : "replace",
+        "path" : "/ability/stances/preslash/allowRotate",
+        "value" : true
+    },
+    {
+        "op" : "add",
+        "path" : "/ability/stances/idle/aimAngle",
+        "value" : 0
+    }
+]

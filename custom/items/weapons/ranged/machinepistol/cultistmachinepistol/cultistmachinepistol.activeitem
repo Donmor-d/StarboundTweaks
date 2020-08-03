@@ -1,0 +1,99 @@
+{
+  "itemName" : "cultistmachinepistol",
+  "price" : 1080,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A machine pistol made for cultists",
+  "shortdescription" : "Cultist Machine Pistol",
+  "category" : "uniqueWeapon",
+  "tooltipKind" : "gun",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","pistol"],
+  
+  "fixedLevel" : false,
+
+  "inventoryIcon" : [
+    { "image" : "cultistmachinepistol.png" }
+  ],
+
+  "animation" : "gun.animation",
+  "animationParts" : {
+    "middle" : "cultistmachinepistol.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+	"particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 2,
+        "particles" : [
+          { "particle" : "dust2" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/pistol3.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [90, 90, 0]
+      }
+    }
+  },
+
+  "baseOffset" : [0.625, 0.35],
+  "muzzleOffset" : [1.5, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "poison",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.13,
+    "baseDps" : 6.5,
+    "energyUsage" : 20,
+    "inaccuracy" : 0.05,
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "poisonplasma",
+    "muzzleFlashVariants" : 1,
+	"projectileParameters" : { 
+		"statusEffects" : [ "weakpoison" ] 
+	},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : -5,
+        "weaponRotation" : 8,
+        "twoHanded" : false,
+		"weaponOffset" : [-0.2, 0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : -5,
+        "weaponRotation" : 8,
+        "twoHanded" : false,
+		"weaponOffset" : [-0.2, 0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

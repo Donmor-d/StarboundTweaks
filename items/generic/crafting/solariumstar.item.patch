@@ -1,0 +1,15 @@
+[
+	{
+	"op": "add",
+	"path": "/learnBlueprintsOnPickup",
+	"value": [
+		"mechbodyexodus",
+		"mechbodyhero",
+		"mechbodyiris",
+		"mecharmteslastream",
+		"mecharmbeamsniper",
+		"mecharmmultidrone",
+		"mecharmgravitymine"
+		]
+	}
+]

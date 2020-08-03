@@ -1,0 +1,52 @@
+[
+    {
+        "op" : "test",
+        "path" : "/primaryAbility/stances/windup/allowRotate",
+        "value" : false
+    },
+    {
+        "op" : "test",
+        "path" : "/primaryAbility/stances/preslash/allowRotate",
+        "value" : false
+    },
+    {
+        "op" : "test",
+        "path" : "/primaryAbility/stances/preslash/allowFlip",
+        "value" : false
+    },
+    {
+        "op" : "test",
+        "path" : "/primaryAbility/stances/fire/allowRotate",
+        "value" : false
+    },
+    {
+        "op" : "test",
+        "path" : "/primaryAbility/stances/fire/allowFlip",
+        "value" : false
+    },
+    {
+        "op" : "replace",
+        "path" : "/primaryAbility/stances/windup/allowRotate",
+        "value" : true
+    },
+    {
+        "op" : "replace",
+        "path" : "/primaryAbility/stances/preslash/allowRotate",
+        "value" : true
+    },
+    {
+        "op" : "replace",
+        "path" : "/primaryAbility/stances/preslash/allowFlip",
+        "value" : true
+    },
+    {
+        "op" : "replace",
+        "path" : "/primaryAbility/stances/fire/allowRotate",
+        "value" : true
+    },
+    {
+        "op" : "replace",
+        "path" : "/primaryAbility/stances/fire/allowFlip",
+        "value" : true
+    }
+]

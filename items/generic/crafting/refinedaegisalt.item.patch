@@ -1,0 +1,15 @@
+[
+	{
+	"op": "add",
+	"path": "/learnBlueprintsOnPickup",
+	"value": [
+		"mecharmenergyrifle",
+		"mecharmspikefist",
+		"mecharmbeamdrill",
+		"mecharmenergyblade",
+		"mecharmshielddrone",
+		"mecharmdualrifle",
+		"mecharmguidedmissiles"
+		]
+	}
+]

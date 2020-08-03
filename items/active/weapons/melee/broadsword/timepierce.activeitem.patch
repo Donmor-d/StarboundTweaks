@@ -1,0 +1,7 @@
+[
+    {
+        "op" : "add",
+        "path" : "/altAbility/stances/idle/aimAngle",
+        "value" : 0
+    }
+]

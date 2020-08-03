@@ -1,0 +1,17 @@
+[
+	{
+	"op": "add",
+	"path": "/learnBlueprintsOnPickup",
+	"value": [
+		"mechboostersleek",
+		"mecharmcannon",
+		"mecharmclustermine",
+		"mecharmhomingmissile",
+		"mecharmwobbleshot",
+		"mecharmplasmadrone",
+		"mecharmgatling",
+		"mecharmchainsaw",
+		"mechlegssleek"
+		]
+	}
+]

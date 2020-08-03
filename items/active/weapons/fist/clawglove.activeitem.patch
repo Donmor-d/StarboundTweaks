@@ -1,0 +1,47 @@
+[
+    {
+        "op" : "test",
+        "path" : "/primaryAbility/stances/windup/allowRotate",
+        "value" : false
+    },
+    {
+        "op" : "test",
+        "path" : "/primaryAbility/stances/fire/allowRotate",
+        "value" : false
+    },
+    {
+        "op" : "test",
+        "path" : "/primaryAbility/stances/fire/allowFlip",
+        "value" : false
+    },
+    {
+        "op" : "test",
+        "path" : "/primaryAbility/stances/windup2/allowRotate",
+        "value" : false
+    },
+    {
+        "op" : "replace",
+        "path" : "/primaryAbility/stances/windup/allowRotate",
+        "value" : true
+    },
+    {
+        "op" : "replace",
+        "path" : "/primaryAbility/stances/fire/allowRotate",
+        "value" : true
+    },
+    {
+        "op" : "replace",
+        "path" : "/primaryAbility/stances/fire/allowFlip",
+        "value" : true
+    },
+    {
+        "op" : "replace",
+        "path" : "/primaryAbility/stances/windup2/allowRotate",
+        "value" : true
+    },
+    {
+        "op" : "add",
+        "path" : "/primaryAbility/stances/idle/aimAngle",
+        "value" : 0
+    }
+]

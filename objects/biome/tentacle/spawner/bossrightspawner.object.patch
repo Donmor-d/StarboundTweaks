@@ -1,0 +1,42 @@
+[
+	{
+	"op" : "replace",
+	"path" : "/spawnPoints/blob1/count",
+	"value" : 2
+	},
+	{
+	"op" : "replace",
+	"path" : "/spawnPoints/blob2/count",
+	"value" : 2
+	},
+	{
+	"op" : "replace",
+	"path" : "/spawnPoints/blob3/count",
+	"value" : 2
+	},
+	{
+	"op" : "replace",
+	"path" : "/spawnPoints/blob4/interval",
+	"value" : 60
+	},
+	{
+	"op" : "replace",
+	"path" : "/spawnPoints/blob5/interval",
+	"value" : 60
+	},
+	{
+	"op" : "replace",
+	"path" : "/spawnPoints/blob6/interval",
+	"value" : 60
+	},
+	{
+	"op" : "replace",
+	"path" : "/spawnPoints/blob7/interval",
+	"value" : 60
+	},
+	{
+	"op" : "replace",
+	"path" : "/spawnPoints/blob8/interval",
+	"value" : 60
+	}
+]

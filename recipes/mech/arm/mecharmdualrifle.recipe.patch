@@ -1,0 +1,11 @@
+[
+	{
+	"op": "replace",
+	"path": "/input",
+	"value":[
+	{ "item" : "refinedaegisalt", "count" : 15 },
+    { "item" : "salvagearm", "count" : 25 },
+    { "item" : "salvagetier6", "count" : 12 }
+	]
+	}
+]

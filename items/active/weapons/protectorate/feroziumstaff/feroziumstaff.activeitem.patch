@@ -1,0 +1,12 @@
+[
+	{
+	"op": "replace",
+	"path": "/stances/charge/duration",
+	"value": 0.65
+	},
+	{
+	"op": "replace",
+	"path": "/primaryAbility/projectileParameters/baseDamage",
+	"value": 28
+	}
+]

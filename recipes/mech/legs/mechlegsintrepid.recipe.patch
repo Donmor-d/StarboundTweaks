@@ -1,0 +1,11 @@
+[
+	{
+	"op": "replace",
+	"path": "/input",
+	"value":[
+	{ "item" : "refinedferozium", "count" : 15 },
+    { "item" : "salvagelegs", "count" : 25 },
+    { "item" : "salvagetier6", "count" : 5 }
+	]
+	}
+]

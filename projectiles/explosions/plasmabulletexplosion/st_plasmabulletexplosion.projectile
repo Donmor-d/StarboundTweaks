@@ -1,0 +1,13 @@
+{
+  "projectileName" : "st_plasmabulletexplosion",
+  "image" : "st_plasmabulletexplosion.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 8,
+  "speed" : 0,
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "onlyHitTerrain" : true,
+  "power" : 0,
+  "damageKind" : "default"
+}

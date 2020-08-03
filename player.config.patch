@@ -1,0 +1,12 @@
+[
+	{
+	"op": "replace",
+	"path": "/statusControllerSettings/stats/foodDelta/baseValue",
+	"value": -0.02915 //-70 food over 40 minutes
+	},
+	{
+	"op": "replace",
+	"path": "/statusControllerSettings/stats/fallDamageMultiplier/baseValue",
+	"value": 0.5
+	}
+]

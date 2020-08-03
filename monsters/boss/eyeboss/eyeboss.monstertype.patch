@@ -1,0 +1,16 @@
+[
+	{
+	"op" : "replace",
+	"path" : "/baseParameters/damageParts/beam/damage",
+	"value" : 100
+	},
+	{
+	"op" : "replace",
+	"path" : "/baseParameters/statusSettings/stats/maxHealth/baseValue",
+	"value" : 3000
+	},
+	{
+	"op" : "remove",
+	"path" : "/baseParameters/damageParts/beam/damageTeam"
+	}
+]

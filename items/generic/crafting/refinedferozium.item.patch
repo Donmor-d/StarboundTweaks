@@ -1,0 +1,14 @@
+[
+	{
+	"op": "add",
+	"path": "/learnBlueprintsOnPickup",
+	"value": [
+		"mechboosterhammer",
+		"mechboosterzero",
+		"mechboostergallant",
+		"mechlegsronin",
+		"mechlegsintrepid",
+		"mechlegshermes"
+		]
+	}
+]

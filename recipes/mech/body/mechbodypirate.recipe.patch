@@ -1,0 +1,11 @@
+[
+	{
+	"op": "replace",
+	"path": "/input",
+	"value":[
+	{ "item" : "titaniumbar", "count" : 10 },
+	{ "item" : "salvagebody", "count" : 5 },
+	{ "item" : "salvagetier4", "count" : 3 }
+	]
+	}
+]

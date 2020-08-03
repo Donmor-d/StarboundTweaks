@@ -1,0 +1,7 @@
+[
+	{
+	"op": "replace",
+	"path": "/label",
+	"value": "Deadly Chill: greatly reduced mobility, losing energy and health"
+	}
+]

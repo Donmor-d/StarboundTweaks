@@ -1,0 +1,11 @@
+[
+	{
+	"op": "replace",
+	"path": "/input",
+	"value":[
+	{ "item" : "durasteelbar", "count" : 15 },
+	{ "item" : "salvagebody", "count" : 12 },
+	{ "item" : "salvagetier5", "count" : 5 }
+	]
+	}
+]

@@ -1,0 +1,19 @@
+[
+	{
+	"op": "add",
+	"path": "/learnBlueprintsOnPickup",
+	"value": [
+		"mechbodymilitary",
+		"mechbodybad",
+		"mechboosterastro",
+		"mechboosterstalwart",
+		"mechboosterzed",
+		"mecharmsplitshot",
+		"mecharmheatrifle",
+		"mecharmtommygun",
+		"mechlegshopper",
+		"mechlegstwinjet",
+		"mechlegsarc"
+		]
+	}
+]

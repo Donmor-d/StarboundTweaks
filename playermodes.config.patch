@@ -1,0 +1,12 @@
+[
+	{ 
+	"op" : "replace",
+	"path" : "/survival/reviveCostPercentile",
+	"value" : 0.3 
+	},
+	{ 
+	"op": "replace",
+	"path": "/survival/deathDropItemTypes",
+	"value" : "generic" 
+	}
+]
