@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "ironore", "count" : 3 }
+  ],
+  "output" : { "item" : "ironbar", "count" : 3 },
+  "duration" : 0,
+  "groups" : [ "craftingfurnace3", "bars", "all" ]
+}
