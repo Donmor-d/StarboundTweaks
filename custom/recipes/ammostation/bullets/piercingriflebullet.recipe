@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "normalriflebullet", "count" : 1 },
+	{ "item" : "titaniumbar", "count" : 2 }
+  ],
+  "output" : { "item" : "piercingriflebullet", "count" : 1 },
+  "groups" : [ "ammostation", "ammobullet", "all" ]
+}

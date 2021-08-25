@@ -1,0 +1,17 @@
+[
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalSingleBeamAttack/damagePerSecond",
+	"value" : 2500
+	},
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalSingleBeamAttack/skillTime",
+	"value" : 14
+	},
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalSingleBeamAttack/rotateInterval",
+	"value" : 14
+	}
+]

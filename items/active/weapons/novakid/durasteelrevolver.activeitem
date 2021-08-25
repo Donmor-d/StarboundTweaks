@@ -5,15 +5,17 @@
   "rarity" : "Uncommon",
   "description" : "A large handgun that packs a punch.",
   "shortdescription" : "Durasteel Revolver",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "gunwithammo",
   "category" : "pistol",
   "twoHanded" : false,
   "itemTags" : ["weapon","ranged","pistol"],
   "level" : 4,
 
   "inventoryIcon" : "durasteelrevolver.png",
+  
+  "acceptsAugmentType" : "pistolammo",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/gunwithammo.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "durasteelrevolver.png",
@@ -30,7 +32,9 @@
       }
     },
     "sounds" : {
-      "fire" : ["/sfx/gun/revolver2.ogg"]
+      "fire" : ["/sfx/gun/revolver2.ogg"],
+	  "reload" : ["/custom/sfx/reloadwithping/revolver2.ogg"],
+	  "reloaded" : ["/sfx/gun/reload/pistol_reload_clip3.ogg"]
     }
   },
 
@@ -42,13 +46,18 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
+	"scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.6,
     "baseDps" : 6.25,
-    "energyUsage" : 18.75,
+    "energyUsage" : 0,
     "inaccuracy" : 0.025,
+	
+	"ammo" : 8,      //munição
+	   
+    "reloadTime" : 2,     //tempo de recarga
 
     "projectileCount" : 1,
     "fireType" : "auto",

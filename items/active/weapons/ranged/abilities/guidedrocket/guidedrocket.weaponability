@@ -36,8 +36,8 @@
     },
     "projectileParameters" : {},
     "baseDps" : 10,
-    "energyUsage" : 62.5,
-    "fireTime" : 1.0,
+    "energyUsage" : 65,
+    "fireTime" : 1.5,
 
     "stances" : {
       "fire" : {

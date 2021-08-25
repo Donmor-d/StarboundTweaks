@@ -11,16 +11,6 @@
 	},
 	{
 		"op": "replace",
-		"path": "/normalGroundFriction",
-		"value": 40
-	},
-	{
-		"op": "replace",
-		"path": "/ambulatingGroundFriction",
-		"value": 0
-	},
-	{
-		"op": "replace",
 		"path": "/airForce",
 		"value": 100
 	}

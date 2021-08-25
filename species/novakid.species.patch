@@ -38,5 +38,25 @@
 	"op": "add",
 	"path": "/defaultBlueprints/tier1/-",
 	"value": { "item" : "durasteelshortsword" }
+	},
+	{
+	"op": "add",
+	"path": "/defaultBlueprints/tier1/-",
+	"value": { "item" : "durasteelshortsword" }
+	},
+	{
+	"op": "add",
+	"path": "/defaultBlueprints/tier1/-",
+	"value": { "item" : "durasteelshotgun" }
+	},
+	{
+	"op": "add",
+	"path": "/defaultBlueprints/tier1/-",
+	"value": { "item" : "irongrenadelauncher" }
+	},
+	{
+	"op": "add",
+	"path": "/defaultBlueprints/tier1/-",
+	"value": { "item" : "titaniumgrenadelauncher" }
 	}
 ]

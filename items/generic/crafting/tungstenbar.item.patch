@@ -1,0 +1,11 @@
+[
+	{
+	"op": "add",
+	"path": "/learnBlueprintsOnPickup",
+	"value": [
+		"throwingdagger",
+		"throwingspear",
+		"rocketjumper"
+		]
+	}
+]

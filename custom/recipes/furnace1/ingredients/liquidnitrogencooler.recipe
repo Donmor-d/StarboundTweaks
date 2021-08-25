@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 1 },
+    { "item" : "refinedferozium", "count" : 1 },
+    { "item" : "refinedviolium", "count" : 1 },
+    { "item" : "refinedaegisalt", "count" : 1 }
+	
+  ],
+  "output" : { "item" : "liquidnitrogencooler", "count" : 1 },
+  "groups" : ["craftingfurnace", "craftingfurnace2", "craftingfurnace3", "ingredients", "all" ]
+}
+//temporary recipe until lead is added

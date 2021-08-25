@@ -5,15 +5,17 @@
   "rarity" : "Uncommon",
   "description" : "A fully automatic military grade rifle.",
   "shortdescription" : "Durasteel Assault Rifle",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "gunwithammo",
   "category" : "assaultRifle",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","assaultrifle"],
   "level" : 4,
 
   "inventoryIcon" : "durasteelassaultrifle.png",
+  
+  "acceptsAugmentType" : "assaultrifleammo",               //adiciona munição que usa
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/gunwithammo.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "durasteelassaultrifle.png",
@@ -30,7 +32,9 @@
       }
     },
     "sounds" : {
-      "fire" : ["/sfx/gun/ar4.ogg"]
+      "fire" : ["/sfx/gun/ar4.ogg"],
+	  "reload" : ["/custom/sfx/reloadwithping/ar4.ogg"],
+	  "reloaded" : ["/sfx/gun/reload/ar_reload_clip1.ogg"]
     }
   },
 
@@ -42,13 +46,18 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
+	"scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.11,
     "baseDps" : 10.5,
-    "energyUsage" : 31.5,
+    "energyUsage" : 0,   //~39.375
     "inaccuracy" : 0.02,
+	
+	"ammo" : 30,      //munição
+	   
+    "reloadTime" : 2,     //tempo de recarga
 
     "projectileCount" : 1,
     "fireType" : "auto",
@@ -71,7 +80,7 @@
         "armRotation" : 2,
         "weaponRotation" : 4,
         "twoHanded" : true,
-		"recoil" : true,
+		    "recoil" : true,
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -81,7 +90,7 @@
         "armRotation" : 2,
         "weaponRotation" : 4,
         "twoHanded" : true,
-		"recoil": true,
+		    "recoil": true,
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -89,7 +98,6 @@
     }
   },
 
-  "altAbilityType" : "grenadelauncher",
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

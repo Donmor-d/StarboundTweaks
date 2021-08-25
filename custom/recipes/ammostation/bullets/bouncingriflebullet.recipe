@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "normalriflebullet", "count" : 1 },
+	{ "item" : "liquidoil", "count" : 5 }
+  ],
+  "output" : { "item" : "bouncingriflebullet", "count" : 1 },
+  "groups" : [ "ammostation", "ammobullet", "all" ]
+}

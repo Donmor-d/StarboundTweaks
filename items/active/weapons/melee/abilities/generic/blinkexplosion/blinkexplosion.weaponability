@@ -40,8 +40,8 @@
     "scripts" : ["/items/active/weapons/melee/abilities/generic/blinkexplosion/blinkexplosion.lua"],
     "class" : "BlinkExplosion",
 
-    "energyUsage" : 120.0,
-    "cooldownTime" : 1.5,
+    "energyUsage" : 0,
+    "cooldownTime" : 3.9,
 
     "maxDistance" : 12,
     "baseDamage" : 28,

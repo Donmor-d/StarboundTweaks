@@ -1,0 +1,252 @@
+{
+  "name": "pelletattack-circlepattern",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/projectiles.lua"
+  ],
+  "parameters": {
+    "leftEyeOffset": [-2.5, 1],
+    "rightEyeOffset": [2.5, 1],
+    "progress": 0,
+    "maxAngle": 6.28,
+	"pelletAttackConfig": {"power": 10}
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {},
+        "output": {
+          "direction": "circleDirection"
+        }
+      },
+      {
+        "title": "multiply",
+        "type": "action",
+        "name": "multiply",
+        "parameters": {
+          "factor": {"key": "<maxAngle>"},
+          "number": {"key": "circleDirection"}
+        },
+        "output": {
+          "result": "maxAngle"
+        }
+      },
+      {
+        "title": "repeater",
+        "type": "decorator",
+        "name": "repeater",
+        "parameters": {
+          "maxLoops": {"value": -1},
+          "untilSuccess": {"value": false}
+        },
+        "child": {
+          "title": "sequence",
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": "timer",
+              "type": "action",
+              "name": "timer",
+              "parameters": {
+                "time": {"value": 0.2}
+              }
+            },
+            {
+              "title": "repeater",
+              "type": "decorator",
+              "name": "repeater",
+              "parameters": {
+                "maxLoops": {"value": 4},
+                "untilSuccess": {"value": false}
+              },
+              "child": {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "playSound",
+                    "type": "action",
+                    "name": "playSound",
+                    "parameters": {
+                      "sound": {"value": "firePellet"}
+                    }
+                  },
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.02}
+                    }
+                  },
+                  {
+                    "title": "lerp",
+                    "type": "action",
+                    "name": "lerp",
+                    "parameters": {
+                      "max": {"key": "maxAngle"},
+                      "min": {"value": 0},
+                      "ratio": {"key": "<progress>"}
+                    },
+                    "output": {
+                      "number": "spawnAngle"
+                    }
+                  },
+                  {
+                    "title": "vecRotate",
+                    "type": "action",
+                    "name": "vecRotate",
+                    "parameters": {
+                      "angle": {"key": "spawnAngle"},
+                      "vector": {"value": [1, 0]}
+                    },
+                    "output": {
+                      "vector": "aimVector"
+                    }
+                  },
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": -1},
+                      "success": {"value": -1}
+                    },
+                    "children": [
+                      {
+                        "title": "spawnProjectile",
+                        "type": "action",
+                        "name": "spawnProjectile",
+                        "parameters": {
+                          "aimVector": {"key": "aimVector"},
+                          "angle": {"value": 0},
+                          "offset": {"key": "<rightEyeOffset>"},
+                          "position": {"key": "self"},
+                          "projectileConfig": {"value": "<pelletAttackConfig>"},
+                          "projectileType": {"value": "lightpellet"},
+                          "scalePower": {"value": true},
+                          "sourceEntity": {"key": "self"},
+                          "trackSource": {"value": false}
+                        }
+                      },
+                      {
+                        "title": "vecMultiply",
+                        "type": "action",
+                        "name": "vecMultiply",
+                        "parameters": {
+                          "first": {"key": "aimVector"},
+                          "second": {"value": [-1, 1]}
+                        },
+                        "output": {
+                          "vector": "aimVector"
+                        }
+                      },
+                      {
+                        "title": "spawnProjectile",
+                        "type": "action",
+                        "name": "spawnProjectile",
+                        "parameters": {
+                          "aimVector": {"key": "aimVector"},
+                          "angle": {"value": 0},
+                          "offset": {"key": "<leftEyeOffset>"},
+                          "position": {"key": "self"},
+                          "projectileConfig": {"value": "<pelletAttackConfig>"},
+                          "projectileType": {"value": "lightpellet"},
+                          "scalePower": {"value": true},
+                          "sourceEntity": {"key": "self"},
+                          "trackSource": {"value": false}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "vecMultiply",
+                    "type": "action",
+                    "name": "vecMultiply",
+                    "parameters": {
+                      "first": {"key": "aimVector"},
+                      "second": {"value": [-1, -1]}
+                    },
+                    "output": {
+                      "vector": "aimVector"
+                    }
+                  },
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": -1},
+                      "success": {"value": -1}
+                    },
+                    "children": [
+                      {
+                        "title": "spawnProjectile",
+                        "type": "action",
+                        "name": "spawnProjectile",
+                        "parameters": {
+                          "aimVector": {"key": "aimVector"},
+                          "angle": {"value": 0},
+                          "offset": {"key": "<rightEyeOffset>"},
+                          "position": {"key": "self"},
+                          "projectileConfig": {"value": "<pelletAttackConfig>"},
+                          "projectileType": {"value": "lightpellet"},
+                          "scalePower": {"value": true},
+                          "sourceEntity": {"key": "self"},
+                          "trackSource": {"value": false}
+                        }
+                      },
+                      {
+                        "title": "vecMultiply",
+                        "type": "action",
+                        "name": "vecMultiply",
+                        "parameters": {
+                          "first": {"key": "aimVector"},
+                          "second": {"value": [-1, 1]}
+                        },
+                        "output": {
+                          "vector": "aimVector"
+                        }
+                      },
+                      {
+                        "title": "spawnProjectile",
+                        "type": "action",
+                        "name": "spawnProjectile",
+                        "parameters": {
+                          "aimVector": {"key": "aimVector"},
+                          "angle": {"value": 0},
+                          "offset": {"key": "<leftEyeOffset>"},
+                          "position": {"key": "self"},
+                          "projectileConfig": {"value": "<pelletAttackConfig>"},
+                          "projectileType": {"value": "lightpellet"},
+                          "scalePower": {"value": true},
+                          "sourceEntity": {"key": "self"},
+                          "trackSource": {"value": false}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

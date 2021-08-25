@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "ironbar", "count" : 10 },
+	{ "item" : "tungstenbar", "count" : 1 },
+    { "item" : "logblock", "count" : 1 }
+  ],
+  "output" : { "item" : "throwingspear", "count" : 25 },
+  "groups" : [ "craftinganvil", "consumables", "all" ]
+}

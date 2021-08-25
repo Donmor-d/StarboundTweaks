@@ -1,0 +1,70 @@
+{
+  "itemName" : "bouncinggrenade",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "bouncinggrenade.png",
+  "description" : "Enables bounce for grenade launchers.",
+  "shortdescription" : "Bouncing Grenade",
+
+  "augment": {
+    "type": "grenadelauncherammo",
+    "name": "bouncinggrenade",
+    "displayName": "Bouncing Ammo",
+    "displayIcon": "/custom/items/augments/grenadelauncher/bouncegrenade/bouncinggrenade.png",
+    "elementalType": "physical",
+    "primaryAbility": {
+      //"scripts": [ "/items/active/weapons/ranged/gunfire.lua" ], original
+	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 1.0,
+       "baseDps" : 5,
+       "energyUsage" : 0,
+       "inaccuracy" : 0.0,
+	   
+	   "ammo" : 1,
+	   
+	   "reloadTime" : 2,
+
+      "projectileType": "grenade",
+      "projectileParameters": {
+		"bounces" : -1
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

@@ -1,0 +1,513 @@
+{
+  "name": "taroni",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/entity.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/pets.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/world.lua"
+  ],
+  "parameters": {
+    "followDistance": 5,
+    "projectileType": "tarball"
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "setDamageOnTouch",
+        "type": "action",
+        "name": "setDamageOnTouch",
+        "parameters": {
+          "touchDamage": {"value": false}
+        }
+      },
+      {
+        "title": "setNumber",
+        "type": "action",
+        "name": "setNumber",
+        "parameters": {
+          "number": {"value": 0}
+        },
+        "output": {
+          "number": "heading"
+        }
+      },
+      {
+        "title": "setAggressive",
+        "type": "action",
+        "name": "setAggressive",
+        "parameters": {
+          "aggressive": {"value": true}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "selector",
+            "type": "composite",
+            "name": "selector",
+            "parameters": {},
+            "children": [
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "monster-targeting",
+                    "type": "module",
+                    "name": "monster-targeting",
+                    "parameters": {
+                      "targetQueryRange": {"value": 20},
+                      "keepTargetInRange": {"value": 40},
+                      "keepTargetInSight": {"value": true},
+                      "queryTargets": {"value": true},
+                      "targetOnDamage": {"value": true},
+                      "targetOutOfSightTime": {"value": 2}
+                    }
+                  },
+                  {
+                    "title": "setFlag",
+                    "type": "action",
+                    "name": "setFlag",
+                    "parameters": {
+                      "name": {"value": "hostile"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "unsetFlag",
+                    "type": "action",
+                    "name": "unsetFlag",
+                    "parameters": {
+                      "name": {"value": "hostile"}
+                    }
+                  },
+                  {
+                    "title": "ownerEntity",
+                    "type": "action",
+                    "name": "ownerEntity",
+                    "parameters": {},
+                    "output": {
+                      "entity": "target"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "dynamic",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "wasDamaged",
+                    "type": "action",
+                    "name": "wasDamaged",
+                    "parameters": {}
+                  },
+                  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "stunned"},
+                      "type": {"value": "damage"}
+                    }
+                  },
+                  {
+                    "title": "timer",
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.25}
+                    }
+                  },
+                  {
+                    "title": "dynamic",
+                    "type": "composite",
+                    "name": "dynamic",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "onGround",
+                        "type": "action",
+                        "name": "onGround",
+                        "parameters": {}
+                      },
+                      {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 0.5}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "setAnimationState",
+                    "type": "action",
+                    "name": "setAnimationState",
+                    "parameters": {
+                      "state": {"value": "none"},
+                      "type": {"value": "damage"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "hasFlag",
+                      "type": "action",
+                      "name": "hasFlag",
+                      "parameters": {
+                        "name": {"key": "hostile"}
+                      }
+                    }
+                  },
+                  {
+                    "title": "dynamic",
+                    "type": "composite",
+                    "name": "dynamic",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "cooldown",
+                        "type": "decorator",
+                        "name": "cooldown",
+                        "parameters": {
+                          "cooldown": {"value": 3},
+                          "onFail": {"value": true},
+                          "onSuccess": {"value": true}
+                        },
+                        "child": {
+                          "title": "parallel",
+                          "type": "composite",
+                          "name": "parallel",
+                          "parameters": {
+                            "fail": {"value": 1},
+                            "success": {"value": -1}
+                          },
+                          "children": [
+                            {
+                              "title": "inverter",
+                              "type": "decorator",
+                              "name": "inverter",
+                              "parameters": {},
+                              "child": {
+                                "title": "entityInRange",
+                                "type": "action",
+                                "name": "entityInRange",
+                                "parameters": {
+                                  "entity": {"key": "target"},
+                                  "position": {"key": "self"},
+                                  "range": {"key": "<followDistance>"},
+                                  "xRange": {"key": ""},
+                                  "yRange": {"key": ""}
+                                }
+                              }
+                            },
+                            {
+                              "title": "approach-walk",
+                              "type": "module",
+                              "name": "approach-walk",
+                              "parameters": {
+                                "canJump": {"value": false},
+                                "moveState": {"value": "walk"},
+                                "run": {"value": false},
+                                "idleState": {"value": "idle"}
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "title": "wander-walk",
+                        "type": "module",
+                        "name": "wander-walk",
+                        "parameters": {
+                          "wanderTime": {"value": [1, 3]},
+                          "moveState": {"value": "walk"},
+                          "idleState": {"value": "idle"},
+                          "run": {"value": false}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "cooldown",
+                "type": "decorator",
+                "name": "cooldown",
+                "parameters": {
+                  "cooldown": {"value": 2},
+                  "onFail": {"value": false},
+                  "onSuccess": {"value": true}
+                },
+                "child": {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "setAnimationState",
+                      "type": "action",
+                      "name": "setAnimationState",
+                      "parameters": {
+                        "state": {"value": "dig"},
+                        "type": {"value": "body"}
+                      }
+                    },
+                    {
+                      "title": "timer",
+                      "type": "action",
+                      "name": "timer",
+                      "parameters": {
+                        "time": {"value": 1}
+                      }
+                    },
+                    {
+                      "title": "dynamic",
+                      "type": "composite",
+                      "name": "dynamic",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "parallel",
+                          "type": "composite",
+                          "name": "parallel",
+                          "parameters": {
+                            "fail": {"value": 1},
+                            "success": {"value": -1}
+                          },
+                          "children": [
+                            {
+                              "title": "entityExists",
+                              "type": "action",
+                              "name": "entityExists",
+                              "parameters": {
+                                "entity": {"key": "target"}
+                              }
+                            },
+                            {
+                              "title": "dynamic",
+                              "type": "composite",
+                              "name": "dynamic",
+                              "parameters": {},
+                              "children": [
+                                {
+                                  "title": "action-fire",
+                                  "type": "module",
+                                  "name": "action-fire",
+                                  "parameters": {
+                                    "aimAtTarget": {"value": true},
+                                    "aimDirection": {"value": [1, 0]},
+                                    "projectileType": {"key": "<projectileType>"},
+                                    "inaccuracy": {"value": 0},
+                                    "projectileCount": {"value": 1},
+                                    "projectileInterval": {"value": 0.25},
+                                    "fireOffset": {"value": [0, 0]},
+                                    "fireSound": {"value": "fire"},
+                                    "winddownState": {"value": "idle"},
+                                    "windupState": {"value": "fire"},
+                                    "fireDelay": {"value": 0},
+                                    "projectileParameters": {"value": {}},
+                                    "fireArc": {"value": true},
+                                    "projectileSpeed": {"value": 32},
+                                    "highArc": {"value": false},
+                                    "faceTarget": {"value": true}
+                                  }
+                                },
+                                {
+                                  "title": "approach-walk",
+                                  "type": "module",
+                                  "name": "approach-walk",
+                                  "parameters": {
+                                    "canJump": {"value": false},
+                                    "moveState": {"value": "tarwalk"},
+                                    "run": {"value": false},
+                                    "idleState": {"value": "taridle"}
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "title": "failer",
+                          "type": "decorator",
+                          "name": "failer",
+                          "parameters": {},
+                          "child": {
+                            "title": "cooldown",
+                            "type": "decorator",
+                            "name": "cooldown",
+                            "parameters": {
+                              "cooldown": {"value": [2, 6]},
+                              "onFail": {"value": false},
+                              "onSuccess": {"value": true}
+                            },
+                            "child": {
+                              "title": "wander-walk",
+                              "type": "module",
+                              "name": "wander-walk",
+                              "parameters": {
+                                "wanderTime": {"value": [1, 3]},
+                                "moveState": {"value": "tarwalk"},
+                                "idleState": {"value": "taridle"},
+                                "run": {"value": false}
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "title": "runner",
+                          "type": "action",
+                          "name": "runner",
+                          "parameters": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "selector",
+                    "type": "composite",
+                    "name": "selector",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "parallel",
+                        "type": "composite",
+                        "name": "parallel",
+                        "parameters": {
+                          "fail": {"value": 1},
+                          "success": {"value": -1}
+                        },
+                        "children": [
+                          {
+                            "title": "entityExists",
+                            "type": "action",
+                            "name": "entityExists",
+                            "parameters": {
+                              "entity": {"key": "target"}
+                            }
+                          },
+                          {
+                            "title": "approach-walk",
+                            "type": "module",
+                            "name": "approach-walk",
+                            "parameters": {
+                              "canJump": {"value": false},
+                              "maxJumps": {"value": 3},
+                              "jumpXVelocity": {"value": 15},
+                              "jumpYVelocity": {"value": 35},
+                              "jumpState": {"value": "jump"},
+                              "fallState": {"value": "fall"},
+                              "jumpXControlForce": {"value": 50},
+                              "moveState": {"value": "walk"},
+                              "run": {"value": false},
+                              "idleState": {"value": "idle"}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "title": "cooldown",
+                        "type": "decorator",
+                        "name": "cooldown",
+                        "parameters": {
+                          "cooldown": {"value": [1, 3]},
+                          "onFail": {"value": false},
+                          "onSuccess": {"value": true}
+                        },
+                        "child": {
+                          "title": "wander-walk",
+                          "type": "module",
+                          "name": "wander-walk",
+                          "parameters": {
+                            "wanderTime": {"value": [1, 3]},
+                            "moveState": {"value": "walk"},
+                            "idleState": {"value": "idle"},
+                            "run": {"value": false}
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "runner",
+                "type": "action",
+                "name": "runner",
+                "parameters": {}
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "titaniumbar", "count" : 10 },
+    { "item" : "logblock", "count" : 1 }
+  ],
+  "output" : { "item" : "throwingaxe", "count" : 25 },
+  "groups" : [ "craftinganvil2", "consumables", "all" ]
+}

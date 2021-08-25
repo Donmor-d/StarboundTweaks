@@ -2,6 +2,11 @@
 	{
 	"op": "replace",
 	"path": "/label",
-	"value": "Electrified: nearby allies take damage"
+	"value": "Electrified: allies take damage and losing energy"
+	},
+	{
+	"op": "replace",
+	"path": "/effectConfig/boltInterval",
+	"value": 0.5
 	}
 ]

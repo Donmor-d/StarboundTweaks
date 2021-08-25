@@ -1,0 +1,68 @@
+{
+  "itemName" : "piercingsniperbullet",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "piercingsniperbullet.png",
+  "description" : "Enables piercing for Sniper Rifles.",
+  "shortdescription" : "Piercing Sniper Bullet",
+
+  "augment": {
+    "type": "sniperrifleammo",
+    "name": "piercingsniperbullet",
+    "displayName": "Piercing Bullet",
+    "displayIcon": "/custom/items/augments/sniperrifle/piercingbullet/piercingsniperbullet.png",
+    "elementalType": "physical",
+    "primaryAbility": {
+      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
+	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 1,
+       "baseDps" : 12.75,
+       "energyUsage" : 50,
+       "inaccuracy" : 0.008,
+	   
+	   "ammo" : 5,      //munição
+	   
+       "reloadTime" : 1.5,     //tempo de recarga
+
+      "projectileType": "piercingbullet",
+      "projectileParameters": {},
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 6,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

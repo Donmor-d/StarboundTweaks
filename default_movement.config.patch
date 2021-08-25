@@ -2,6 +2,6 @@
 	{
 	"op": "replace",
 	"path": "/airFriction",
-	"value": 8
+	"value": 0
 	}
 ]

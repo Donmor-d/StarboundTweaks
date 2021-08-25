@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 10 },
+	{ "item" : "refinedviolium", "count" : 1 }
+  ],
+  "output" : { "item" : "throwingstar", "count" : 25 },
+  "groups" : [ "craftinganvil3", "consumables", "all" ]
+}

@@ -1,0 +1,138 @@
+{
+  "hylotlmissionBasic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.3, "pool" : "basicTreasure"},
+        {"weight" : 0.1, "item" : [ "ornatetiles", 10]},
+        {"weight" : 0.1, "item" : [ "ornateroofing", 10]},
+        {"weight" : 0.1, "item" : [ "bookpiles", 10]},
+        {"weight" : 0.1, "item" : "ornatetorch" },
+        {"weight" : 0.1, "item" : "hylotlsupportbeam-recipe" },
+        {"weight" : 0.05, "item" : "airlockdoor-recipe" },
+        {"weight" : 0.05, "item" : "airlockhatch-recipe" },
+        {"weight" : 0.05, "item" : "hylotlwallshelf" },
+        {"weight" : 0.05, "item" : "hylotlemblem" }
+      ],
+      "poolRounds" : [
+        [0.50, 0],
+        [0.30, 1],
+        [0.10, 2],
+        [0.05, 3],
+        [0.05, 4]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlmission1Rare1" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "valoroushead", 1]},
+        {"item" : [ "hylotlmission2-codex", 1]}
+      ]
+    }]
+  ],
+
+  "hylotlmission1Rare2" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "valorouschest", 1]},
+        {"item" : [ "hylotlmission3-codex", 1]}
+      ]
+    }]
+  ],
+
+  "hylotlmission1Rare3" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "valorouspants", 1]},
+        {"item" : [ "hylotlmission4-codex", 1]}
+      ]
+    }]
+  ],
+
+  "hylotlmission1Rare5" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "snorkelhead", 1]}
+      ]
+    }]
+  ],
+
+  "hylotlmission1Competition1" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "hylotlmission5-codex", 1]}
+      ]
+    }]
+  ],
+
+  "hylotlmission1Competition2" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "hylotlmission6-codex", 1]}
+      ]
+    }]
+  ],
+
+  "hylotlmission1Competition3" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "hylotlmission7-codex", 1]}
+      ]
+    }]
+  ],
+
+  "hylotlmission1Competition4" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "hylotlmission8-codex", 1]}
+      ]
+    }]
+  ],
+
+  "hylotlmission1Competition5" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "hylotlmission9-codex", 1]}
+      ]
+    }]
+  ],
+
+  "hylotlmissionReward" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "hylotlmission1-codex", 1]}
+      ],
+      "pool" : [
+        {"weight" : 0.1, "item" : [ "techcard", 1]},
+        {"weight" : 0.1, "item" : [ "ironbar", 20]},
+        {"weight" : 0.2, "item" : [ "diamond", 1]},
+        {"weight" : 0.1, "item" : [ "money", 1000]},
+        {"weight" : 0.1, "pool" : "uncommonGun"},
+        {"weight" : 0.15, "item" : [ "capturepod", 1]},
+        {"weight" : 0.15, "pool" : "uncommonMelee"},
+        {"weight" : 0.1, "pool" : "shield"},
+		{"weight" : 1, "item" : "leadshieldedcore"}
+      ],
+      "poolRounds" : [
+        [0.5, 5],
+        [0.5, 6]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+    "cultistbosstreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "chestMoney"}
+      ],
+      "poolRounds" : [
+        [0.4, 1],
+        [0.6, 2],
+        [0.1, 3]
+      ]
+    } ]
+  ]
+}

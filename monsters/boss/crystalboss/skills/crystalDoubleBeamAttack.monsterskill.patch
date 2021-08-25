@@ -1,0 +1,17 @@
+[
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalDoubleBeamAttack/damagePerSecond",
+	"value" : 3750
+	},
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalDoubleBeamAttack/skillTime",
+	"value" : 11
+	},
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalDoubleBeamAttack/rotateInterval",
+	"value" : 11
+	}
+]

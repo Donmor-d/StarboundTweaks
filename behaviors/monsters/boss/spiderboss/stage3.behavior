@@ -1,0 +1,52 @@
+{
+  "name": "spiderboss-stage3",
+  "description": "",
+  "scripts": [],
+  "parameters": {},
+  "root": {
+    "title": "repeater",
+    "type": "decorator",
+    "name": "repeater",
+    "parameters": {},
+    "child": {
+      "title": "sequence",
+      "type": "composite",
+      "name": "sequence",
+      "parameters": {},
+      "children": [
+        {
+          "title": "Return to spawn",
+          "type": "module",
+          "name": "spiderboss-return",
+          "parameters": {}
+        },
+        {
+          "title": "Hatch",
+          "type": "module",
+          "name": "spiderboss-hatch",
+          "parameters": {
+            "hatchNumber": {"value": 10}
+          }
+        },
+        {
+          "title": "Slam",
+          "type": "module",
+          "name": "spiderboss-slam",
+          "parameters": {}
+        },
+        {
+          "title": "Acid Spray",
+          "type": "module",
+          "name": "spiderboss-acid",
+          "parameters": {}
+        },
+        {
+          "title": "Spiderboss Sweep",
+          "type": "module",
+          "name": "spiderboss-sweep",
+          "parameters": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "name": "apeboss-sweep",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/boss/apeboss.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "projectorList": "",
+    "sweepWidth": 30,
+    "projectorSpeed": 20,
+    "sweepSpeed": 20,
+    "sweepHeight": 4,
+    "sweeps": 1
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "setScreenStates",
+        "type": "action",
+        "name": "setScreenStates",
+        "parameters": {
+          "state": {"value": "sweep"}
+        }
+      },
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {},
+        "output": {
+          "direction": "sweepDirection"
+        }
+      },
+      {
+        "title": "sequence",
+        "type": "composite",
+        "name": "sequence",
+        "parameters": {},
+        "children": [
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "multiply",
+                "type": "action",
+                "name": "multiply",
+                "parameters": {
+                  "factor": {"key": "sweepDirection"},
+                  "number": {"key": "<sweepWidth>"}
+                },
+                "output": {
+                  "result": "sweepX"
+                }
+              },
+              {
+                "title": "offsetPosition",
+                "type": "action",
+                "name": "offsetPosition",
+                "parameters": {
+                  "offset": {"value": ["sweepX", 0]},
+                  "position": {"key": "spawn"}
+                },
+                "output": {
+                  "position": "sweepPosition"
+                }
+              },
+              {
+                "title": "groundPosition",
+                "type": "action",
+                "name": "groundPosition",
+                "parameters": {
+                  "avoidLiquid": {"value": true},
+                  "maxHeight": {"value": 5},
+                  "minHeight": {"value": -20},
+                  "position": {"key": "sweepPosition"}
+                },
+                "output": {
+                  "position": "sweepPosition"
+                }
+              },
+              {
+                "title": "offsetPosition",
+                "type": "action",
+                "name": "offsetPosition",
+                "parameters": {
+                  "position": {"key": "sweepPosition"},
+                  "x": {"value": 0},
+                  "y": {"key": "<sweepHeight>"}
+                },
+                "output": {
+                  "position": "sweepPosition"
+                }
+              }
+            ]
+          },
+          {
+            "title": "flyToPosition",
+            "type": "action",
+            "name": "flyToPosition",
+            "parameters": {
+              "position": {"key": "sweepPosition"},
+              "tolerance": {"value": 1}
+            }
+          },
+          {
+            "title": "setVelocity",
+            "type": "action",
+            "name": "setVelocity",
+            "parameters": {
+              "velocity": {"value": [0, 0]}
+            }
+          },
+          {
+            "title": "setAnimationState",
+            "type": "action",
+            "name": "setAnimationState",
+            "parameters": {
+              "state": {"value": "windup"},
+              "type": {"value": "body"}
+            }
+          },
+          {
+            "title": "apeboss-stagesound",
+            "type": "module",
+            "name": "apeboss-stagesound",
+            "parameters": {
+              "projectorCount": {"key": "projectorCount"},
+              "stage1": {"value": "stage1Attack"},
+              "stage2": {"value": "stage2Attack"},
+              "stage3": {"value": "stage3Attack"},
+              "stage4": {"value": "stage4Attack"}
+            }
+          },
+          {
+            "title": "timer",
+            "type": "action",
+            "name": "timer",
+            "parameters": {
+              "time": {"value": 0.3}
+            }
+          }
+        ]
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": 1}
+        },
+        "children": [
+          {
+            "title": "animate",
+            "type": "action",
+            "name": "animate",
+            "parameters": {
+              "fallback": {"value": "off"},
+              "state": {"value": "sweep"},
+              "type": {"value": "attackSound"}
+            }
+          },
+          {
+            "title": "repeater",
+            "type": "decorator",
+            "name": "repeater",
+            "parameters": {
+              "maxLoops": {"key": "<sweeps>"},
+              "untilSuccess": {"value": false}
+            },
+            "child": {
+              "title": "sequence",
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "multiply",
+                  "type": "action",
+                  "name": "multiply",
+                  "parameters": {
+                    "factor": {"value": -1},
+                    "number": {"key": "sweepDirection"}
+                  },
+                  "output": {
+                    "result": "sweepDirection"
+                  }
+                },
+                {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "multiply",
+                      "type": "action",
+                      "name": "multiply",
+                      "parameters": {
+                        "factor": {"key": "sweepDirection"},
+                        "number": {"key": "<projectorSpeed>"}
+                      },
+                      "output": {
+                        "result": "sweepProjectorSpeed"
+                      }
+                    },
+                    {
+                      "title": "setProjectorSpeeds",
+                      "type": "action",
+                      "name": "setProjectorSpeeds",
+                      "parameters": {
+                        "projectorList": {"key": "<projectorList>"},
+                        "speed": {"key": "sweepProjectorSpeed"}
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "timer",
+                  "type": "action",
+                  "name": "timer",
+                  "parameters": {
+                    "time": {"value": 0.5}
+                  }
+                },
+                {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "multiply",
+                      "type": "action",
+                      "name": "multiply",
+                      "parameters": {
+                        "factor": {"key": "sweepDirection"},
+                        "number": {"key": "<sweepWidth>"}
+                      },
+                      "output": {
+                        "result": "sweepX"
+                      }
+                    },
+                    {
+                      "title": "offsetPosition",
+                      "type": "action",
+                      "name": "offsetPosition",
+                      "parameters": {
+                        "offset": {"value": ["sweepX", 0]},
+                        "position": {"key": "spawn"}
+                      },
+                      "output": {
+                        "position": "sweepPosition"
+                      }
+                    },
+                    {
+                      "title": "groundPosition",
+                      "type": "action",
+                      "name": "groundPosition",
+                      "parameters": {
+                        "avoidLiquid": {"value": true},
+                        "maxHeight": {"value": 5},
+                        "minHeight": {"value": -20},
+                        "position": {"key": "sweepPosition"}
+                      },
+                      "output": {
+                        "position": "sweepPosition"
+                      }
+                    },
+                    {
+                      "title": "offsetPosition",
+                      "type": "action",
+                      "name": "offsetPosition",
+                      "parameters": {
+                        "position": {"key": "sweepPosition"},
+                        "x": {"value": 0},
+                        "y": {"key": "<sweepHeight>"}
+                      },
+                      "output": {
+                        "position": "sweepPosition"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "flyToPosition",
+                      "type": "action",
+                      "name": "flyToPosition",
+                      "parameters": {
+                        "position": {"key": "sweepPosition"},
+                        "speed": {"key": "<sweepSpeed>"},
+                        "tolerance": {"value": 1}
+                      }
+                    },
+                    {
+                      "title": "setVelocity",
+                      "type": "action",
+                      "name": "setVelocity",
+                      "parameters": {
+                        "velocity": {"value": [0, 0]}
+                      }
+                    },
+                    {
+                      "title": "timer",
+                      "type": "action",
+                      "name": "timer",
+                      "parameters": {
+                        "time": {"value": 0.5}
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "title": "setProjectorSpeeds",
+        "type": "action",
+        "name": "setProjectorSpeeds",
+        "parameters": {
+          "projectorList": {"key": "<projectorList>"},
+          "speed": {"key": "projectorSpeed"}
+        }
+      },
+      {
+        "title": "setAnimationState",
+        "type": "action",
+        "name": "setAnimationState",
+        "parameters": {
+          "state": {"value": "winddown"},
+          "type": {"value": "body"}
+        }
+      },
+      {
+        "title": "apeboss-idle",
+        "type": "module",
+        "name": "apeboss-idle",
+        "parameters": {}
+      }
+    ]
+  }
+}

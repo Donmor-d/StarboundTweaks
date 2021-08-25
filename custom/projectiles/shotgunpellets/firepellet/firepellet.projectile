@@ -1,0 +1,38 @@
+{
+  "projectileName" : "firepellet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 0.075,
+  "damageKindImage" : "icon.png",
+  "image" : "firepellet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 3,
+  "power" : 50,
+  "speed" : 150,
+  "emitters" : [ "fireplasma" ],
+  "supportsProcessing" : true,
+  "actionOnCollide" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmafireexplosion.config"
+    }
+  ],
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmafireexplosion.config"
+    }
+  ],
+  "actionOnTimeout" : [
+    {
+      "action" : "projectile",
+      "type" : "weakfirepellet",
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 0
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [255, 55, 0],
+  "fullBright" : true,
+  "damageKind" : "fireplasmabullet"
+}

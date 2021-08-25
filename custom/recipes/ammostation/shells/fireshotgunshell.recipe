@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "normalshotgunshell", "count" : 1 },
+	{ "item" : "scorchedcore", "count" : 2 }
+  ],
+  "output" : { "item" : "fireshotgunshell", "count" : 1 },
+  "groups" : [ "ammostation", "ammoshell", "all" ]
+}

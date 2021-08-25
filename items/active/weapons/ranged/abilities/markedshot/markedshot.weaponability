@@ -40,8 +40,8 @@
       "poison" : { "projectileType" : "chainpoisonplasma" }
     },
     "projectileParameters" : { },
-    "baseDamage" : 8,
-    "energyUsage" : 37.5, // cost per target marked
+    "baseDamage" : 20,
+    "energyUsage" : 30, // cost per target marked
     "cooldownTime" : 1.0,
 
     "maxTargets" : 10,
@@ -52,8 +52,8 @@
         "duration" : 0.6,
         "armRotation" : 5,
         "weaponRotation" : 5,
-        "twoHanded" : true
-		"recoil" : true,
+        "twoHanded" : true,
+		"recoil" : true
       }
     }
   }

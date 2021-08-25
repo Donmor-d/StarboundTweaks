@@ -1,0 +1,72 @@
+{
+  "itemName" : "grapeshotgunshell",
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "grapeshotgunshell.png",
+  "description" : "???",
+  "shortdescription" : "Grape Shotgun Shell",
+
+  "augment": {
+    "type": "shotgunammo",
+    "name": "grapeshotgunshell",
+    "displayName": "Juicy Ammo",
+    "displayIcon": "/custom/items/augments/shotgun/grapeshell/grapeshotgunshell.png",
+    "elementalType": "physical",
+    "primaryAbility": {
+      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
+	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 1.5,
+       "baseDps" : 16.5,
+       "energyUsage" : 0,
+       "inaccuracy" : 0.12,
+	   
+	   "ammo" : 5,      //munição
+	   
+       "reloadTime" : 1.25,     //tempo de recarga
+  
+       "projectileCount" : 16,
+	    "fireType" : "auto",
+
+      "projectileType": "grapebullet",
+      "projectileParameters": {
+	    "damageKind" : "shotgunbullet",
+        "knockback" : 30,
+        "speed" : 75
+	  },
+
+      "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

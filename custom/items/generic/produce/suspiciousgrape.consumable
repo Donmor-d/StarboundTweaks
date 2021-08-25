@@ -1,0 +1,19 @@
+{
+  "itemName" : "suspiciousgrape",
+  "rarity" : "Common",
+  "price" : 10,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "suspiciousgrape.png",
+  "description" : "Grown out of a living being, should be delicious.",
+  "shortdescription" : "Grape",
+  "foodValue" : 1.8,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 10,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "thornfruit", "count" : 5 },
+    { "item" : "volatilepowder", "count" : 1 }
+  ],
+  "output" : { "item" : "thorngrenade", "count" : 5 },
+  "groups" : [ "craftinganvil", "consumables", "all" ]
+}

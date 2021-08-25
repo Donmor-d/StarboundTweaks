@@ -44,8 +44,8 @@
         "weaponRotation" : 0,
         "twoHanded" : true,
 
-        "allowRotate" : false,
-        "allowFlip" : false
+        "allowRotate" : true,
+        "allowFlip" : true
       },
       "fire" : {
         "duration" : 0.4,
@@ -53,8 +53,8 @@
         "weaponRotation" : -55,
         "twoHanded" : true,
 
-        "allowRotate" : false,
-        "allowFlip" : false
+        "allowRotate" : true,
+        "allowFlip" : true
       }
     }
   }

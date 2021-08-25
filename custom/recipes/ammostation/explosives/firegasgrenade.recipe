@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "normalgrenade", "count" : 1 },
+	{ "item" : "scorchedcore", "count" : 2 }
+  ],
+  "output" : { "item" : "firegasgrenade", "count" : 1 },
+  "groups" : [ "ammostation", "ammoexplosive", "all" ]
+}

@@ -6,13 +6,17 @@
   "rarity" : "Legendary",
   "description" : "A powerful scope helps this gun pick off distant targets easily.",
   "shortdescription" : "Vintage Scoped Rifle",
-  "level" : 5,
-  "tooltipKind" : "gun",
+  "level" : 2,
+  "tooltipKind" : "gunwithammo",
   "category" : "sniperRifle",
   "itemTags" : ["weapon","ranged","rifle","upgradeableWeapon"],
   "twoHanded" : true,
+  
+  "acceptsAugmentType" : "sniperrifleammo",                      //adiciona munição que usa
+  
+  "primaryAltAbility": "allow",  //faz com que a abilidade secundaria seja ativada por m1, usado nos arquivos de munição
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/gunwithammo.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "hunterrifle.png",
@@ -20,16 +24,18 @@
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
-  "particleEmitters" : {
+    "particleEmitters" : {
       "muzzleFlash" : {
-        "burstCount" : 2,
+        "burstCount" : 4,
         "particles" : [
           { "particle" : "dust2" }
         ]
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/rifle1.ogg", "/sfx/gun/rifle2.ogg" ]
+      "fire" : [ "/sfx/gun/rifle1.ogg", "/sfx/gun/rifle2.ogg" ],
+	  "reload" : ["/custom/sfx/reloadwithping/rifle1.ogg"],
+	  "reloaded" : ["/sfx/gun/reload/sniper_reload_clip3.ogg"]
     }
   },
 
@@ -41,13 +47,18 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
+	"scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
     "class" : "GunFire",
 
     "fireTime" : 1.0,
-    "baseDps" : 8,
-    "energyUsage" : 24,
-    "inaccuracy" : 0.008,
+    "baseDps" : 10,
+    "energyUsage" : 0,
+    "inaccuracy" : 0.01,
+	
+	"ammo" : 5,      //munição
+	   
+    "reloadTime" : 2.5,     //tempo de recarga
 
     "projectileCount" : 1,
     "fireType" : "auto",
@@ -72,8 +83,8 @@
         "twoHanded" : true,
 		"recoil" : true,
 
-        "allowRotate" : false,
-        "allowFlip" : false
+        "allowRotate" : true,
+        "allowFlip" : true
       },
       "cooldown" : {
         "duration" : 0.25,
@@ -82,13 +93,12 @@
         "twoHanded" : true,
 		"recoil" : true,
 
-        "allowRotate" : false,
-        "allowFlip" : false
+        "allowRotate" : true,
+        "allowFlip" : true
       }
     }
   },
 
-  "altAbilityType" : "piercingshot",
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua",
 

@@ -1,0 +1,70 @@
+{
+  "itemName" : "electricgasgrenade",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "electricgasgrenade.png",
+  "description" : "Allows grenades from grenade launchers to explode into electrified gas.",
+  "shortdescription" : "Electric Gas Grenade",
+
+  "augment": {
+    "type": "grenadelauncherammo",
+    "name": "electricgasgrenade",
+    "displayName": "Electric Gas Ammo",
+    "displayIcon": "/custom/items/augments/grenadelauncher/electricgasgrenade/electricgasgrenade.png",
+    "elementalType": "electric",
+    "primaryAbility": {
+      //"scripts": [ "/items/active/weapons/ranged/gunfire.lua" ], original
+	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 1.5,
+       "baseDps" : 4,
+       "energyUsage" : 0,
+       "inaccuracy" : 0.0,
+	   
+	   "ammo" : 1,
+	   
+	   "reloadTime" : 2,
+
+      "projectileType": "electriccloudgrenade",
+      "projectileParameters": {
+		"damageType" : "damage"
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

@@ -1,0 +1,15 @@
+{
+  "name" : "recovering",
+  "effectConfig" : {},
+  "defaultDuration" : 20,
+
+  "scripts" : [
+    "heal.lua"
+  ],
+
+  "animationConfig" : "heal.animation",
+
+  "label" : "Recovering: unable to heal",
+  "icon" : "/interface/statuses/healblock.png"
+}
+//this actually doesnt do anything, its just made to prevent healing items from being spammed

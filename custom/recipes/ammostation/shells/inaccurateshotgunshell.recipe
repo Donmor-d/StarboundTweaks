@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "normalshotgunshell", "count" : 1 },
+	{ "item" : "silverbar", "count" : 2 }
+  ],
+  "output" : { "item" : "inaccurateshotgunshell", "count" : 1 },
+  "groups" : [ "ammostation", "ammoshell", "all" ]
+}

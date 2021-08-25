@@ -1,0 +1,70 @@
+{
+  "itemName" : "t1maricebullet",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "t1maricebullet.png",
+  "description" : "Changes the M-Assault Rifle's element.",
+  "shortdescription" : "T1 Ice M-AR Bullet",
+
+  "augment": {
+    "type": "massaultrifleammo",
+    "name": "t1maricebullet",
+    "displayName": "T1 Ice Ammo",
+    "displayIcon": "/custom/items/augments/massaultrifle/icebullet/t1maricebullet.png",
+    "elementalType": "ice",
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 0.15,
+      "baseDps" : 16.5,
+      "energyUsage" : 29,
+      "inaccuracy" : 0.03,
+      "fireType" : "auto",
+
+      "projectileType": "iceplasma",
+      "projectileParameters": {
+        "damageKind": "ice",
+		"speed" : 100,
+        "statusEffects": [
+          "frostslow"
+        ]
+      },
+      "projectileCount": 1,
+
+      "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

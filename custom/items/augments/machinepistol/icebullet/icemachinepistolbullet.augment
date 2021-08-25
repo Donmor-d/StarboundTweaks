@@ -1,0 +1,84 @@
+{
+  "itemName" : "icemachinepistolbullet",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "icemachinepistolbullet.png",
+  "description" : "Changes the machine pistol's element to ice.",
+  "shortdescription" : "Ice Machine Pistol Bullet",
+
+  "augment": {
+    "type": "machinepistolammo",
+    "name": "icemachinepistolbullet",
+    "displayName": "Freezing Ammo",
+    "displayIcon": "/custom/items/augments/machinepistol/icebullet/icemachinepistolbullet.png",
+    "elementalType": "ice",
+    "primaryAbility": {
+      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
+	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 0.11,
+       "baseDps" : 7.5,
+       "energyUsage" : 0,   //~39.375
+       "inaccuracy" : 0.04,
+	   
+	   "ammo" : 20,      //munição
+	   
+       "reloadTime" : 0.75,     //tempo de recarga
+
+      "projectileType": "iceplasma",
+      "projectileParameters": {
+	    "physics" : "laser",
+	    "damageKind" : "ice",
+	    "statusEffects": ["frostslow"],
+      "actionOnReap" : [
+        {
+          "action" : "projectile",
+          "type" : "weakicepellet",
+          "inheritDamageFactor" : 0.5,
+          "angleAdjust" : 0,
+          "config" : {
+            "piercing" : true,
+            "bounces" : 2
+          }
+        }
+      ]
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

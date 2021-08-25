@@ -1,0 +1,16 @@
+------------AssaultRifle--------
+-elemental bullets
+-burst bullet
+------------GrenadeLauncher----------
+
+------------MachinePistol------------
+
+------------Pistol----------
+
+------------RocketLauncher-----------
+
+------------Shotgun----------
+-slugshell
+-grapeshell
+
+------------SniperRifle------------

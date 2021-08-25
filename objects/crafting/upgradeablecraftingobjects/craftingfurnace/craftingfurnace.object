@@ -76,7 +76,8 @@
         "upgradeMaterials" : [
           { "item" : "tungstenbar", "count" : 6 },
           { "item" : "coalore", "count" : 10 },
-          { "item" : "glass", "count" : 5 }
+          { "item" : "glass", "count" : 5 },
+		  { "item" : "heatingcomponent", "count" : 1}
         ]
       },
 

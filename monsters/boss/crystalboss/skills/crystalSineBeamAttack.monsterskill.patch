@@ -1,0 +1,18 @@
+[
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalSineBeamAttack/damagePerSecond",
+	"value" : 1500
+	}
+	,
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalSineBeamAttack/skillTime",
+	"value" : 15
+	},
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalSineBeamAttack/rotateInterval",
+	"value" : 15
+	}
+]

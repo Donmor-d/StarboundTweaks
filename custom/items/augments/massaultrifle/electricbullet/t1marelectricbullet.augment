@@ -1,0 +1,78 @@
+{
+  "itemName" : "t1marelectricbullet",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "t1marelectricbullet.png",
+  "description" : "Changes the M-Assault Rifle's element.",
+  "shortdescription" : "T1 Electric M-AR Bullet",
+
+  "augment": {
+    "type": "massaultrifleammo",
+    "name": "t1marelectricbullet",
+    "displayName": "T1 Electric Ammo",
+    "displayIcon": "/custom/items/augments/massaultrifle/electricbullet/t1marelectricbullet.png",
+    "elementalType": "electric",
+	
+	"animationParts" : {
+        "butt" : "",
+		"middle" : "massaultrifle1.png",
+        "barrel" : "",
+		"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+	},
+	
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 0.15,
+      "baseDps" : 15,
+      "energyUsage" : 29,
+      "inaccuracy" : 0.03,
+      "fireType" : "auto",
+
+      "projectileType": "electricplasma",
+      "projectileParameters": {
+        "damageKind": "electric",
+		"speed" : 100,
+        "statusEffects": [
+          "electrified"
+        ]
+      },
+      "projectileCount": 1,
+
+      "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

@@ -1,0 +1,7 @@
+[
+	{
+	"op" : "replace",
+	"path" : "/parameters/crystalShatterAttack/skillTime",
+	"value" : 0.25
+	}
+]

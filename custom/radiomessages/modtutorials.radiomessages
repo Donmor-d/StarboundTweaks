@@ -1,0 +1,7 @@
+{
+//on crafted weapon pickup
+  "pickupfirearm" : {
+    "type" : "tutorial",
+    "text" : "I looks like you've crafted your first weapon, i suggest you craft an ammo station so you can take a look at what ammo you can craft, you can still shoot it without ammo but it won't be as strong"
+  }
+}

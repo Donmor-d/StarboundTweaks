@@ -1,0 +1,74 @@
+{
+  "itemName" : "fireshotgunshell",
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "fireshotgunshell.png",
+  "description" : "Changes the shotgun's element to fire.",
+  "shortdescription" : "Fire Shotgun Shell",
+
+  "augment": {
+    "type": "shotgunammo",
+    "name": "fireshotgunshell",
+    "displayName": "Burning Ammo",
+    "displayIcon": "/custom/items/augments/shotgun/fireshell/fireshotgunshell.png",
+    "elementalType": "fire",
+    "primaryAbility": {
+      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
+	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 1.2,
+       "baseDps" : 17,
+       "energyUsage" : 0,
+       "inaccuracy" : 0.12,
+	   
+	   "ammo" : 5,      //munição
+	   
+       "reloadTime" : 1.5,     //tempo de recarga
+  
+       "projectileCount" : 8,
+	   "fireType" : "auto",
+
+      "projectileType": "firepellet",
+      "projectileParameters": {
+	    "damageKind" : "fire",
+      "knockback" : 30,
+      "statusEffects": [
+        "burning"
+      ]
+	  },
+
+      "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

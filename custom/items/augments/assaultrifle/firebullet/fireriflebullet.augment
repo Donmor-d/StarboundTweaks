@@ -1,0 +1,70 @@
+{
+  "itemName" : "fireriflebullet",
+  "price" : 1000,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "fireriflebullet.png",
+  "description" : "Changes the assault rifle's element to fire.",
+  "shortdescription" : "Fire Rifle Bullet",
+
+  "augment": {
+    "type": "assaultrifleammo",
+    "name": "fireriflebullet",
+    "displayName": "Burning Ammo",
+    "displayIcon": "/custom/items/augments/assaultrifle/firebullet/fireriflebullet.png",
+    "elementalType": "fire",
+    "primaryAbility": {
+      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
+	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 0.11,
+       "baseDps" : 15,
+       "energyUsage" : 0,   //~39.375
+       "inaccuracy" : 0.02,
+	   
+	   "ammo" : 30,      //munição
+	   
+       "reloadTime" : 1,     //tempo de recarga
+
+      "projectileType": "fireplasma",
+      "projectileParameters": {
+	    "knockback" : 5
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

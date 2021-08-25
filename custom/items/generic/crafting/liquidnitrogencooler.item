@@ -1,0 +1,13 @@
+{
+  "itemName" : "liquidnitrogencooler",
+  "price" : 0,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "liquidnitrogencooler.png",
+  "description" : "Able to keep things cool for a long time. Reward for liberating the apex",
+  "shortdescription" : "Liquid Nitrogen Cooler",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : [
+		"liquidnitrogencooler"
+		]
+}

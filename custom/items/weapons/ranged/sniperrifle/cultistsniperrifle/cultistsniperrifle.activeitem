@@ -16,9 +16,11 @@
     { "image" : "cultistsniperrifle.png" }
   ],
 
-  "animation" : "gun.animation",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
+    "butt" : "",
     "middle" : "cultistsniperrifle.png",
+	"barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {

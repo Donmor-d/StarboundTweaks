@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "normalmachinepistolbullet", "count" : 1 },
+	{ "item" : "cryonicextract", "count" : 2 }
+  ],
+  "output" : { "item" : "icemachinepistolbullet", "count" : 1 },
+  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
+}

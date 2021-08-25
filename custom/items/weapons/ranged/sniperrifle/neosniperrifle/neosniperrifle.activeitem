@@ -5,7 +5,7 @@
 	"rarity" : "rare",
 	"description" : "The latest technology in long ranged assassinations",
 	"shortdescription" : "Neo Sniper Rifle",
-	"tooltipKind" : "gun",
+	"tooltipKind" : "gunwithammo",
 	"category" : "uniqueWeapon",
 	"twoHanded" : true,
 	"itemTags" : ["weapon","ranged","sniperrifle"],
@@ -14,9 +14,11 @@
 	
 	"inventoryIcon" : "neosniperrifle.png",
 	
-	"animation" : "neosniperrifle.animation",
+	"animation" : "/items/active/weapons/ranged/gun.animation",
 	"animationParts" : {
+	    "butt" : "",
 		"middle" : "neosniperrifle.png",
+		"barrel" : "",
 		"middleFullbright" : "neosniperriflefullbright.png", 
 		"muzzleFlash" : "/custom/items/weapons/ranged/sniperrifle/neosniperrifle/muzzleflash.png"
 	},
@@ -25,7 +27,7 @@
       "muzzleFlash" : {
         "burstCount" : 4,
         "particles" : [
-          { "particle" : "dust2" }
+          { "particle" : "dust2" }  
         ]
       }
     },
@@ -42,25 +44,24 @@
 	"muzzleOffset" : [2.375, 0.0625],
 	
 	"scripts" : ["/items/active/weapons/ranged/gun.lua"],
-	
-	"elementalType" : "electric",
-	
+
+	"elementalType": "electric",
+
 	"primaryAbility" : {
 		"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
 		"class" : "GunFire",
 
-		"fireTime" : 1.0,
+		"fireTime" : 1,
 		"baseDps" : 10,
 		"energyUsage" : 24,
 		"inaccuracy" : 0.008,
 		"fireType" : "auto",
+		"projectileCount" : 1,
 
 		"projectileType" : "neosniperriflebullet",
-		"projectileParameters" : {
-			"knockback" : 20,
-			"speed" : 100
+		"projectileParameters": {
+			"speed" : 150
 		},
-		"projectileCount" : 1,
 
 		"stances" : {
 			"idle" : {

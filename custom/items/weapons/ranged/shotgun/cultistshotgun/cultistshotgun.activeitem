@@ -16,9 +16,11 @@
     { "image" : "cultistshotgun.png" }
   ],
 
-  "animation" : "gun.animation",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
+    "butt" : "",
     "middle" : "cultistshotgun.png",
+	"barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
@@ -58,7 +60,7 @@
     "inaccuracy" : 0.13,
     "fireType" : "auto",
 
-    "projectileType" : "poisonplasma",
+    "projectileType" : "poisonpellet",
     "projectileParameters" : {
       "knockbackRange" : [10, 40],
 	  "statusEffects" : [ "weakpoison" ] 

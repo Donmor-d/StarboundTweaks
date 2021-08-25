@@ -1,0 +1,13 @@
+{
+  "itemName" : "leadshieldedcore",
+  "price" : 0,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "leadshieldedcore.png",
+  "description" : "Shields you from radiation. Reward for saving the hylotl library",
+  "shortdescription" : "Lead Shielded Core",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : [
+		"leadshieldedcore"
+		]
+}

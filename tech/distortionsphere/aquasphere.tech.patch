@@ -1,0 +1,37 @@
+[
+	{
+	"op" : "replace",
+	"path" : "/transformedMovementParameters/liquidBuoyancy",
+	"value" : 0
+	},
+	{
+	"op" : "add",
+	"path" : "/transformedMovementParameters/liquidJumpProfile/autoJump",
+	"value" : true
+	},
+	{
+	"op" : "add",
+	"path" : "/transformedMovementParameters/liquidJumpProfile/multiJump",
+	"value" : true
+	},
+	{
+	"op" : "add",
+	"path" : "/transformedMovementParameters/liquidJumpProfile/reJumpDelay",
+	"value" : 0.1
+	},
+	{
+	"op" : "replace",
+	"path" : "/ballLiquidSpeed",
+	"value" : 25
+	},
+	{
+	"op" : "replace",
+	"path" : "/transformedMovementParameters/liquidJumpProfile/jumpSpeed",
+	"value" : 30
+	},
+	{
+	"op" : "replace",
+	"path" : "/transformedMovementParameters/liquidJumpProfile/jumpControlForce",
+	"value" : 400
+	}
+]

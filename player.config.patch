@@ -8,5 +8,140 @@
 	"op": "replace",
 	"path": "/statusControllerSettings/stats/fallDamageMultiplier/baseValue",
 	"value": 0.5
+	},
+	{
+	"op": "replace",
+	"path": "/statusControllerSettings/stats/energyRegenPercentageRate/baseValue",
+	"value": 0.25 //4 second recharge
+	},
+	{
+	"op": "replace",
+	"path": "/statusControllerSettings/stats/maxEnergy/baseValue",
+	"value": 200 
+	},
+	{
+	"op": "replace",
+	"path": "/movementParameters/flySpeed",
+	"value": 14 
+	},
+	{
+	"op": "replace",
+	"path": "/movementParameters/airFriction",
+	"value": 0 
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "ammostation" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "assaultriflebouncingbullet" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "assaultriflenormalbullet" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "assaultriflepiercingbullet" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "assaultriflespraybullet" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "sniperriflebouncingbullet" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "sniperriflenormalbullet" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "sniperriflepiercingbullet" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "grenadelauncherbouncegrenade" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "grenadelauncherelectricgasgrenade" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "grenadelauncherelectricgasgrenade" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "grenadelauncherpoisongasgrenade" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "grenadelaunchericegasgrenade" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "grenadelauncherfiregasgrenade" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "grenadelaunchernormalgrenade" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "rocketlauncherguidedrocket" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "rocketlauncherhomingrocket" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "rocketlauncherminirocket" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "rocketlaunchernormalrocket" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "shotgunnormalshell" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "shotgunaccurateshell" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "shotguninaccurateshell" }
+	},
+	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "shotgunstickyshell" }
 	}
 ]

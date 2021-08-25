@@ -1,0 +1,9 @@
+{
+  "name" : "flyingmoontant",
+  "category" : "flyingmoontant",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "flyingmoontant.png"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "beam5",
+  "category" : "crystalboss",
+  "type" : "beam5",
+
+  "frames" : {
+    "beam5" : "crystalbeam.png"
+  }
+}

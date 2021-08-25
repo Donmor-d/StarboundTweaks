@@ -1,0 +1,24 @@
+{
+  "projectileName" : "weakelectricpellet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "weakelectricpellet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 3,
+  "power" : 50,
+  "speed" : 150,
+  "emitters" : [ "electricplasma" ],
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmaelectricexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [27, 0, 63],
+  "fullbright" : true,
+  "damageKind" : "electricplasmabullet",
+  "statusEffect" : ["electrified"]
+}

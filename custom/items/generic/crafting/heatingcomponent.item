@@ -1,0 +1,13 @@
+{
+  "itemName" : "heatingcomponent",
+  "price" : 0,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "heatingcomponent.png",
+  "description" : "Allows furnaces to build up enough heat to melt titanium. Reward for completing the floran hunt",
+  "shortdescription" : "Heating Component",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : [
+		"heatingcomponent"
+		]
+}

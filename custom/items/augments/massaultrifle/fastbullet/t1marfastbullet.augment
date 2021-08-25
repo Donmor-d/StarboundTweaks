@@ -1,0 +1,67 @@
+{
+  "itemName" : "t1marfastbullet",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "t1marfastbullet.png",
+  "description" : "Changes the M-Assault Rifle's bullet speed.",
+  "shortdescription" : "T1 Fast M-AR Bullet",
+
+  "augment": {
+    "type": "massaultrifleammo",
+    "name": "t1marfastbullet",
+    "displayName": "T1 Fast Ammo",
+    "displayIcon": "/custom/items/augments/massaultrifle/fastbullet/t1marfastbullet.png",
+    "elementalType": "physical",
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 0.15,
+      "baseDps" : 22.5,
+      "energyUsage" : 29,
+      "inaccuracy" : 0.03,
+      "fireType" : "auto",
+
+      "projectileType": "standardbullet",
+      "projectileParameters": {
+        "damageKind": "default",
+        "speed": 200
+      },
+      "projectileCount": 1,
+
+      "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

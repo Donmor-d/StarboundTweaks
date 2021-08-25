@@ -1,0 +1,17 @@
+{
+  "name" : "shortjump",
+  "type" : "legs",
+
+  "scripts" : ["multijump.lua"],
+  "animator" : "shortjump.animation",
+
+  "description" : "An additional two small jumps that can be used while in the air!",
+  "shortDescription" : "Short Jump",
+  "rarity" : "Common",
+  "icon" : "/custom/tech/shortjump.png",
+
+  "chipCost" : 3,
+
+  "multiJumpCount" : 2,
+  "multiJumpModifier" : 0.4
+}

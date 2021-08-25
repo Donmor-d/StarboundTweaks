@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "leadbar", "count" : 1 },
+	{ "item" : "copperbar", "count" : 2 }
+  ],
+  "output" : { "item" : "normalmachinepistolbullet", "count" : 1 },
+  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
+}

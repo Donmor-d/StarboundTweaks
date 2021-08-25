@@ -1,0 +1,67 @@
+{
+  "itemName" : "t1marpiercingbullet",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "t1marpiercingbullet.png",
+  "description" : "Enables piercing for M-Assault Rifle's bullets.",
+  "shortdescription" : "T1 Piercing M-AR Bullet",
+
+  "augment": {
+    "type": "massaultrifleammo",
+    "name": "t1marpiercingbullet",
+    "displayName": "T1 Piercing Ammo",
+    "displayIcon": "/custom/items/augments/massaultrifle/piercingbullet/t1marpiercingbullet.png",
+    "elementalType": "physical",
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 0.2,
+      "baseDps" : 15,
+      "energyUsage" : 29,
+      "inaccuracy" : 0.03,
+      "fireType" : "auto",
+
+      "projectileType": "piercingbullet",
+      "projectileParameters": {
+        "damageKind": "default",
+        "speed": 100
+      },
+      "projectileCount": 1,
+
+      "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

@@ -1,0 +1,70 @@
+{
+  "itemName" : "normalpistolbullet",
+  "price" : 500,
+  "rarity" : "Common",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "normalpistolbullet.png",
+  "description" : "Regular bullet made for pistols.",
+  "shortdescription" : "Normal Pistol Bullet",
+
+  "augment": {
+    "type": "pistolammo",
+    "name": "normalpistolbullet",
+    "displayName": "Normal Ammo",
+    "displayIcon": "/custom/items/augments/pistol/normalbullet/normalpistolbullet.png",
+    "elementalType": "physical",
+    "primaryAbility": {
+      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
+	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 0.6,
+       "baseDps" : 9,
+       "energyUsage" : 0,   //~39.375
+       "inaccuracy" : 0.025,
+	   
+	   "ammo" : 9,      //munição
+	   
+       "reloadTime" : 1,     //tempo de recarga
+
+      "projectileType": "standardbullet",
+      "projectileParameters": {
+	    "knockback" : 5
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

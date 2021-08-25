@@ -8,6 +8,10 @@
   "piercing" : true,
   "flippable" : true,
   "onlyHitTerrain" : true,
+
+  "lightColor" : [63, 13, 0],
+  "fullbright" : true,
+  
   "power" : 0,
   "damageKind" : "default"
 }
