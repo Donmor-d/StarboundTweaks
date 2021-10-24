@@ -1,0 +1,77 @@
+{
+  "itemName" : "explosiverevolverbullet",
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "explosiverevolverbullet.png",
+  "description" : "Enables explosion on contact for revolver bullets.",
+  "shortdescription" : "Explosive Revolver Bullet",
+
+  "augment": {
+    "type": "pistolammo",
+    "name": "explosiverevolverbullet",
+    "displayName": "Explosive Ammo",
+    "displayIcon": "/custom/items/augments/revolver/explosivebullet/explosiverevolverbullet.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "explosive.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "explosive.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"], 
+      "class": "GunFire",
+
+       "fireTime" : 0.6,
+       "baseDps" : 6,
+       "energyUsage" : 0,   //~39.375
+       "inaccuracy" : 0.025,
+	   
+       "reloadTime" : 1.5,     //tempo de recarga
+
+      "projectileType": "explosivebullet",
+      "projectileParameters": {
+	    "knockback" : 20
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

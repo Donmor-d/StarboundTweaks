@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/walkSpeed",
+    "value": 8
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/runSpeed",
+    "value": 8
+  }
+]

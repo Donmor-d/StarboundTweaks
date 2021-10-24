@@ -1,0 +1,37 @@
+[
+  {
+    "op": "replace",
+    "path": "/ability/baseDps",
+    "value": 7
+  },
+  {
+    "op": "replace",
+    "path": "/ability/fireTime",
+    "value": 0.4
+  },
+  {
+    "op": "replace",
+    "path": "/ability/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/fire/allowFlip",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/cooldown/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/cooldown/allowFlip",
+    "value": true
+  }
+]

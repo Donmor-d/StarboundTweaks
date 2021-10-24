@@ -4,7 +4,7 @@
   "rarity" : "Uncommon",
   "category" : "ammoModifier",
   "inventoryIcon" : "bouncingsniperbullet.png",
-  "description" : "Enables Bounce for sniper rifles.",
+  "description" : "Enables Bounce for sniper rifles. Each bounce empowers the bullet",
   "shortdescription" : "Bouncing Sniper Bullet",
 
   "augment": {
@@ -13,24 +13,30 @@
     "displayName": "Bouncing Ammo",
     "displayIcon": "/custom/items/augments/sniperrifle/bouncingbullet/bouncingsniperbullet.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "bouncing.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "bouncing.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
       "class": "GunFire",
 
        "fireTime" : 1,
-       "baseDps" : 13.5,
+       "baseDps" : 9,
        "energyUsage" : 0,
-       "inaccuracy" : 0.008,
-	   
-	   "ammo" : 5,      //munição
+       "inaccuracy" : 0,
 	   
        "reloadTime" : 1.5,     //tempo de recarga
 
-      "projectileType": "standardbullet",
+      "projectileType": "bouncybullet",
       "projectileParameters": {
-	    "bounces" : 3,
-        "speed" : 100,
+        "speed" : 150,
         "actionOnCollide" : [
           {
             "action" : "sound",
@@ -49,6 +55,15 @@
               "/sfx/projectiles/bullet_ricochet12.ogg",
               "/sfx/projectiles/bullet_ricochet13.ogg"
             ]
+          },
+          {
+            "action" : "projectile",
+            "type" : "strongsniperbullet",
+            "inheritDamageFactor" : 1,
+            "angleAdjust" : 0,
+            "config" : {
+              "speed" : 150
+            }  
           }
         ]
 	  },

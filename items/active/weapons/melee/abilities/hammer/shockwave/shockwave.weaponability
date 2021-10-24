@@ -83,7 +83,7 @@
 
     "energyUsage" : 0,
 
-    "cooldownTime" : 3.5,
+    "cooldownTime" : 3.0,
 
     "chargeTime" : 1.5,
     "minChargeTime" : 0.5,

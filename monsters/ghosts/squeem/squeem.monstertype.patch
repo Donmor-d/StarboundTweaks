@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/touchDamage/statusEffects/-",
+    "value": "weakpoison"
+  }
+]

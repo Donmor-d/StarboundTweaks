@@ -1,0 +1,59 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/damageOnTouch",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/1/cooldown",
+    "value": 2.5
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/damageParts/body/damage",
+    "value": 26
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/poly/0"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/poly/0"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/poly/0"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/poly/0"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/poly/0"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/poly/0"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/poly/0"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/poly/0"
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damage",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/runSpeed",
+    "value": 6
+  }
+]

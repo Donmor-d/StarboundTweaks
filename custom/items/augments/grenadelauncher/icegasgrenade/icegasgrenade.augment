@@ -13,17 +13,24 @@
     "displayName": "Ice Gas Ammo",
     "displayIcon": "/custom/items/augments/grenadelauncher/icegasgrenade/icegasgrenade.png",
     "elementalType": "ice",
+
+    "inventoryIcon" : "ice.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "ice.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts": [ "/items/active/weapons/ranged/gunfire.lua" ], original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ], 
       "class": "GunFire",
 
        "fireTime" : 1.5,
        "baseDps" : 4.5,
        "energyUsage" : 0,
        "inaccuracy" : 0.0,
-	   
-	   "ammo" : 1,
 	   
 	   "reloadTime" : 2,
 

@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/groups/1",
+    "value": "craftingfurnace2"
+  },
+  {
+    "op": "add",
+    "path": "/groups/2",
+    "value": "craftingfurnace3"
+  }
+]

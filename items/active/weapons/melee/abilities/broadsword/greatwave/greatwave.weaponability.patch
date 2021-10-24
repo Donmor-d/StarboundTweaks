@@ -1,0 +1,14 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/recharge",
+    "value": [
+      "/sfx/tech/tech_dash_cooldown1.ogg"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/ability/projectileParameters/knockback",
+    "value": 50
+  }
+]

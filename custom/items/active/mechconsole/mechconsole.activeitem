@@ -1,0 +1,14 @@
+{
+  "itemName" : "mechconsole",
+  "price" : 10000,
+  "rarity" : "Rare",
+  "category" : "",
+  "maxStack" : 1,
+  "inventoryIcon" : "mechconsole.png",
+  "description" : "A portable console that allows access to the mech assembly station",
+  "shortdescription" : "Mech Console",
+  "twoHanded" : true,
+
+  "scripts" : ["mechconsole.lua"],
+  "questId" : ""
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters",
+    "value": {
+      "muzzleFlash": {
+        "burstCount": 2,
+        "particles": [
+          {
+            "particle": "dust2"
+          }
+        ]
+      }
+    }
+  }
+]

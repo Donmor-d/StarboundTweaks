@@ -1,0 +1,78 @@
+[
+  {
+    "op": "add",
+    "path": "/primaryAbility/reloadTime",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/baseDps",
+    "value": 5.5
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/fire/weaponOffset",
+    "value": [
+      -0.2,
+      0
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/armRotation",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/weaponRotation",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/allowFlip",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/cooldown/weaponOffset",
+    "value": [
+      -0.2,
+      0
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/duration",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/armRotation",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/weaponRotation",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/allowFlip",
+    "value": true
+  }
+]

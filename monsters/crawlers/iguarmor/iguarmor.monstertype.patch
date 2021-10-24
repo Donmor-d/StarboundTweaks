@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damage",
+    "value": 10
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/walkSpeed",
+    "value": 8
+  }
+]

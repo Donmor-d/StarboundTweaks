@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown",
+    "value": 1.5
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/touchDamage/statusEffects/-",
+    "value": "burning"
+  }
+]

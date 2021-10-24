@@ -1,0 +1,11 @@
+[
+  {
+    "op": "add",
+    "path": "/list/0",
+    "value": {
+      "action": "projectile",
+      "inheritDamageFactor": 0,
+      "type": "st_bulletexplosion"
+    }
+  }
+]

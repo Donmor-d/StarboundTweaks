@@ -3,7 +3,7 @@
 	"op": "replace",
 	"path": "/input",
 	"value":[
-	{ "item" : "titaniumbar", "count" : 10 }
+	{ "item" : "titaniumbar", "count" : 20 }
 	]
 	}
 ]

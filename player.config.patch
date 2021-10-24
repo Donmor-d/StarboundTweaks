@@ -52,7 +52,7 @@
 	{
 	"op" : "add",
 	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "assaultriflespraybullet" }
+	"value" : { "item" : "assaultrifleburstbullet" }
 	},
 	{
 	"op" : "add",

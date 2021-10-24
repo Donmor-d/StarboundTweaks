@@ -1,0 +1,6 @@
+[
+  {
+    "op": "remove",
+    "path": "/animatedParts/parts/body/partStates/body/attack/properties/damageArea"
+  }
+]

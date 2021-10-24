@@ -1,0 +1,55 @@
+[
+  {
+    "op": "remove",
+    "path": "/ability/ammoTypes/0/energyUsage"
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoTypes/0/baseDps",
+    "value": 16
+  },
+  {
+    "op": "remove",
+    "path": "/ability/ammoTypes/1/energyUsage"
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoTypes/1/baseDps",
+    "value": 6.5
+  },
+  {
+    "op": "remove",
+    "path": "/ability/ammoTypes/2/energyUsage"
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoTypes/2/baseDps",
+    "value": 12
+  },
+  {
+    "op": "remove",
+    "path": "/ability/ammoTypes/3/energyUsage"
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoTypes/3/baseDps",
+    "value": 12
+  },
+  {
+    "op": "remove",
+    "path": "/ability/ammoTypes/4/energyUsage"
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoTypes/4/baseDps",
+    "value": 12
+  },
+  {
+    "op": "remove",
+    "path": "/ability/ammoTypes/5/energyUsage"
+  },
+  {
+    "op": "remove",
+    "path": "/ability/ammoTypes/6/energyUsage"
+  }
+]

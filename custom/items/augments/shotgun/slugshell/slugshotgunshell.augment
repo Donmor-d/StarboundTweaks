@@ -13,17 +13,24 @@
     "displayName": "Slug Ammo",
     "displayIcon": "/custom/items/augments/shotgun/slugshell/slugshotgunshell.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "slug.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "slug.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
       "class": "GunFire",
 
        "fireTime" : 1.2,
        "baseDps" : 10,
        "energyUsage" : 0,
        "inaccuracy" : 0.06,
-	   
-	   "ammo" : 5,      //munição
 	   
        "reloadTime" : 1.5,     //tempo de recarga
   

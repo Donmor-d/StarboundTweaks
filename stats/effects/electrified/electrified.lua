@@ -47,10 +47,4 @@ function update(dt)
         animator.playSound("bolt")
         return
       end
-    end
-  end
-end
-
-function uninit()
-
-end
+    end 

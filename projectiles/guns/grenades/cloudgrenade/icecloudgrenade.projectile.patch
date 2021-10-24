@@ -1,0 +1,22 @@
+[
+  {
+    "op": "replace",
+    "path": "/actionOnReap/1/inheritDamageFactor",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/2/inheritDamageFactor",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/3/inheritDamageFactor",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/4/inheritDamageFactor",
+    "value": 0.25
+  }
+]

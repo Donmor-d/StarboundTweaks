@@ -1,0 +1,78 @@
+{
+  "itemName" : "guidedrocket",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "guidedrocket.png",
+  "description" : "Enables rocket control for rocket launchers.",
+  "shortdescription" : "Guided Rocket",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "name": "guidedrocket",
+    "displayName": "Guided Ammo",
+
+    "inventoryIcon" : "guided.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "guided.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "displayIcon": "/custom/items/augments/bazooka/guidedrocket/guidedrocket.png",
+    "elementalType": "physical",
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 10000,
+       "baseDps" : 9.5,
+       "energyUsage" : 0,
+       "inaccuracy" : 0.0,
+
+       "reloadTime" : 10000,
+
+      "projectileType": "guidedrocket",
+      "projectileParameters": {},
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 1.5,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    },
+	"altAbilityType" : "guidedrocketaugment"
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

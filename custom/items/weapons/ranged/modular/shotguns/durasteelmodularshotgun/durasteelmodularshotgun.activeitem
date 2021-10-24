@@ -1,0 +1,99 @@
+{
+  "itemName" : "durasteelmodularshotgun",
+  "price" : 960,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "Fires a spread that's lethal at close range.",
+  "shortdescription" : "Durasteel Modular Shotgun",
+  "tooltipKind" : "gunwithammo",
+  "category" : "shotgun",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","shotgun"],
+  "level" : 4,
+
+  "inventoryIcon" : "normal.png",
+  
+  "acceptsAugmentType" : "shotgunammo",               //adiciona munição que usa
+
+  "animation" : "/custom/items/weapons/ranged/gunwithammo.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "normal.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+  "particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 4,
+        "particles" : [
+          { "particle" : "dust2" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/shotgun1.ogg"]
+    }
+  },
+
+  "baseOffset" : [0.9, 0.25],
+  "muzzleOffset" : [2, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"], 
+    "class" : "GunFire",
+
+    "fireTime" : 1.2,
+    "baseDps" : 10.5,
+    "energyUsage" : 0,
+    "inaccuracy" : 0.12,
+	
+    "reloadTime" : 1.5,     //tempo que demora para poder usar a arma
+
+    "projectileCount" : 8,
+    "fireType" : "auto",
+
+    "projectileType" : "normalpellet",
+    "projectileParameters" : {
+      "damageKind" : "shotgunbullet",
+      "knockback" : 30
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 6,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -13,9 +13,18 @@
     "displayName": "Inaccurate Ammo",
     "displayIcon": "/custom/items/augments/shotgun/inaccurateshell/inaccurateshotgunshell.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "inaccurate.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "inaccurate.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
       "class": "GunFire",
 
        "fireTime" : 1.2,
@@ -23,12 +32,10 @@
        "energyUsage" : 0,
        "inaccuracy" : 0.25,
 	   
-	   "ammo" : 6,      //munição
-	   
        "reloadTime" : 1.5,     //tempo de recarga
   
        "projectileCount" : 8,
-	   "fireType" : "auto",
+	    "fireType" : "auto",
 
       "projectileType": "normalpellet",
       "projectileParameters": {

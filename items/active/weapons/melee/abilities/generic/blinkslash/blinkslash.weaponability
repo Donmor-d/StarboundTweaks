@@ -1,6 +1,9 @@
 {
   "animationParts" : { },
   "animationCustom" : {
+    "sounds" : {
+      "recharge" : [ "/sfx/tech/tech_dash_cooldown1.ogg" ]
+    },
     "animatedParts" : {
       "stateTypes" : {
         "blinkSwoosh" : {

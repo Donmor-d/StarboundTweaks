@@ -1,0 +1,22 @@
+[
+  {
+    "op" : "add",
+    "path" : "/starTypeColors/blackhole",
+    "value" : [39, 39, 63, 255]
+  },
+  {
+    "op" : "add",
+    "path" : "/starTypeNames/blackhole",
+    "value" : "Black Hole"
+  },
+  {
+    "op" : "add",
+    "path" : "/objectThreatColors/available/5",
+    "value" : [213, 140, 0]
+  },
+  {
+    "op" : "add",
+    "path" : "/objectThreatText/available/5",
+    "value" : "Inconceivable"
+  }
+]

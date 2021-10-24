@@ -1,0 +1,78 @@
+{
+  "itemName" : "fastrevolverbullet",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "fastrevolverbullet.png",
+  "description" : "Increases the speed of your revolver's bullets.",
+  "shortdescription" : "Fast Revolver Bullet",
+
+  "augment": {
+    "type": "pistolammo",
+    "name": "fastrevolverbullet",
+    "displayName": "Fast Ammo",
+    "displayIcon": "/custom/items/augments/revolver/fastbullet/fastrevolverbullet.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "fast.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "fast.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"], 
+      "class": "GunFire",
+
+       "fireTime" : 0.6,
+       "baseDps" : 8.5,
+       "energyUsage" : 0,   //~39.375
+       "inaccuracy" : 0,
+	   
+       "reloadTime" : 1.5,     //tempo de recarga
+
+      "projectileType": "standardbullet",
+      "projectileParameters": {
+	    "speed" : 450,
+	    "knockback" : 5
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

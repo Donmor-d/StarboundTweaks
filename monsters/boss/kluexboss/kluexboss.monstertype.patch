@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damage",
+    "value": 40
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/protection/baseValue",
+    "value": 50
+  }
+]

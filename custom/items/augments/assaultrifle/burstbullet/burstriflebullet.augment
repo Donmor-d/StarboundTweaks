@@ -1,7 +1,7 @@
 {
   "itemName" : "burstriflebullet",
   "price" : 500,
-  "rarity" : "Common",
+  "rarity" : "Uncommon",
   "category" : "ammoModifier",
   "inventoryIcon" : "burstriflebullet.png",
   "description" : "Changes the assault rifle's fire mode to burst.",
@@ -13,9 +13,19 @@
     "displayName": "Burst Ammo",
     "displayIcon": "/custom/items/augments/assaultrifle/burstbullet/burstriflebullet.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "burst.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "burst.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+       "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+	 
       "class": "GunFire",
 
        "fireTime" : 0.3,
@@ -28,9 +38,7 @@
        "burstCount" : 3,
        "burstTime" : 0.1,
 	   
-	     "ammo" : 24,      //munição
-	   
-       "reloadTime" : 1,     //tempo de recarga
+       "reloadTime" : 1.5,     //tempo de recarga
 
       "projectileType": "standardbullet",
       "projectileParameters": {

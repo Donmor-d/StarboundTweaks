@@ -13,9 +13,18 @@
     "displayName": "Fire Gas Ammo",
     "displayIcon": "/custom/items/augments/grenadelauncher/firegasgrenade/firegasgrenade.png",
     "elementalType": "fire",
+
+    "inventoryIcon" : "fire.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "fire.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts": [ "/items/active/weapons/ranged/gunfire.lua" ], original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
       "class": "GunFire",
 
        "fireTime" : 1.5,

@@ -4,6 +4,7 @@
 	"path": "/learnBlueprintsOnPickup",
 	"value": [
 		"mechbodymilitary",
+		"mechbodyreactor",
 		"mechbodybad",
 		"mechboosterastro",
 		"mechboosterstalwart",
@@ -16,7 +17,12 @@
 		"mechlegsarc",
 		"throwingknife",
 		"throwingaxe",
-		"leadshieldedcore"
+		"leadshieldedcore",
+		"titaniummodularrifle",
+		"titaniummodularrevolver",
+		"titaniummodularshotgun",
+		"titaniummodularpistol",
+		"titaniummodularsniper"
 		]
 	}
 ]

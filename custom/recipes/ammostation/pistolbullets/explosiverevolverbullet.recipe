@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "normalrevolverbullet", "count" : 1 },
+	{ "item" : "volatilepowder", "count" : 5 },
+	{ "item" : "titaniumbar", "count" : 1 }
+  ],
+  "output" : { "item" : "explosiverevolverbullet", "count" : 1 },
+  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
+}

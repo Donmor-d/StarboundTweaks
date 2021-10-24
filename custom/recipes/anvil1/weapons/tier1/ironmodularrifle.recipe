@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "ironbar", "count" : 10 },
+    { "item" : "darkwoodmaterial", "count" : 6 },
+    { "item" : "modularframe", "count" : 1 }
+  ],
+  "output" : { "item" : "ironmodularrifle", "count" : 1 },
+  "groups" : [ "craftinganvil", "weapons", "all" ]
+}

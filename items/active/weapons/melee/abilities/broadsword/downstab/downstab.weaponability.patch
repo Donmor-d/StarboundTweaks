@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/ability/damageConfig/baseDamage",
+    "value": 10
+  },
+  {
+    "op": "replace",
+    "path": "/ability/energyUsage",
+    "value": 0
+  }
+]

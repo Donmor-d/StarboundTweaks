@@ -3,9 +3,9 @@
 	"op": "replace",
 	"path": "/input",
 	"value":[
-	{ "item" : "durasteelbar", "count" : 10 },
-    { "item" : "salvagebooster", "count" : 15 },
-    { "item" : "salvagetier5", "count" : 10 }
+	{ "item" : "durasteelbar", "count" : 20 },
+	{ "item" : "salvagebooster", "count" : 15 },
+	{ "item" : "salvagetier5", "count" : 10 }
 	]
 	}
 ]

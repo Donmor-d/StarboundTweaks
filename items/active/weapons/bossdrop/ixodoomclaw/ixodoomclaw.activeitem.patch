@@ -1,10 +1,5 @@
 [
     {
-        "op" : "test",
-        "path" : "/primaryAbility/stances/windup/allowRotate",
-        "value" : false
-    },
-    {
         "op" : "replace",
         "path" : "/primaryAbility/stances/windup/allowRotate",
         "value" : true

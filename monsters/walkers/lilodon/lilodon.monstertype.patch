@@ -1,0 +1,47 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/damageParts",
+    "value": {
+      "body": {
+        "damage": 20,
+        "teamType": "enemy",
+        "damageSourceKind": "slash",
+        "knockback": 20,
+        "statusEffects": []
+      }
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/damageOnTouch",
+    "value": false
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/hostileActions/-",
+    "value": {
+      "name": "action-hop",
+      "cooldown": 1,
+      "parameters": {
+        "verticalSpeed": 30,
+        "horizontalSpeed": 18,
+        "hopSequence": 1,
+        "windupTime": 0,
+        "landTime": 0,
+        "timeBetweenHops": 0,
+        "hopAwayFromWall": true
+      }
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/walkSpeed",
+    "value": 7
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/runSpeed",
+    "value": 10
+  }
+]

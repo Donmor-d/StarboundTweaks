@@ -1,0 +1,25 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/damageParts",
+    "value": {
+      "body": {
+        "damage": 12,
+        "teamType": "enemy",
+        "damageSourceKind": "slash",
+        "knockback": 20,
+        "statusEffects": []
+      }
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/damageOnTouch",
+    "value": false
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/1/cooldown",
+    "value": 1.5
+  }
+]

@@ -3,9 +3,9 @@
 	"op": "replace",
 	"path": "/input",
 	"value":[
-	{ "item" : "refinedferozium", "count" : 15 },
-    { "item" : "salvagebooster", "count" : 25 },
-    { "item" : "salvagetier6", "count" : 12 }
+	{ "item" : "refinedferozium", "count" : 30 },
+	{ "item" : "salvagebooster", "count" : 25 },
+	{ "item" : "salvagetier6", "count" : 12 }
 	]
 	}
 ]

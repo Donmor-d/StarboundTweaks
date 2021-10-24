@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/primaryAbility/reloadTime",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/energyUsage",
+    "value": 0
+  }
+]

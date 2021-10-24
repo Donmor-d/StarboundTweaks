@@ -1,0 +1,25 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/hostileActions/-",
+    "value": {
+      "name": "action-swoop",
+      "cooldown": 1,
+      "parameters": {
+        "minimumRange": 3,
+        "maximumRange": 10,
+        "onGround": false,
+        "windupTime": 0.6,
+        "windupState": "",
+        "gravityMultiplier": -0.5,
+        "swoopVelocity": 25,
+        "collisionCheck": true,
+        "highArc": false,
+        "swoopTime": 0.5,
+        "swoopState": "",
+        "winddownTime": 0,
+        "winddownState": ""
+      }
+    }
+  }
+]

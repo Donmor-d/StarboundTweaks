@@ -1,0 +1,22 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/windupTime",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/touchDamage/statusEffects/-",
+    "value": "burning"
+  }
+]

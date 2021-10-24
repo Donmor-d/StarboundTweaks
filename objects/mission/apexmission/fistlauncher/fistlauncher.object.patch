@@ -1,0 +1,126 @@
+[
+  {
+    "op": "add",
+    "path": "/orientations/0/touchDamage",
+    "value": {
+      "poly": [
+        [
+          -2,
+          1.5
+        ],
+        [
+          2,
+          1.5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "damage": 15,
+      "knockback": 20,
+      "damageType": "Environment",
+      "damageSourceKind": "electric",
+      "statusEffects": [
+        "electrified"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/orientations/1/touchDamage",
+    "value": {
+      "poly": [
+        [
+          -2,
+          1.5
+        ],
+        [
+          2,
+          1.5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "damage": 15,
+      "knockback": 20,
+      "damageType": "Environment",
+      "damageSourceKind": "electric",
+      "statusEffects": [
+        "electrified"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/orientations/2/touchDamage",
+    "value": {
+      "poly": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "damage": 15,
+      "knockback": 20,
+      "damageType": "Environment",
+      "damageSourceKind": "electric",
+      "statusEffects": [
+        "electrified"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/orientations/3/touchDamage",
+    "value": {
+      "poly": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "damage": 15,
+      "knockback": 20,
+      "damageType": "Environment",
+      "damageSourceKind": "electric",
+      "statusEffects": [
+        "electrified"
+      ]
+    }
+  }
+]

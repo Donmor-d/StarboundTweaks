@@ -1,0 +1,17 @@
+[
+  {
+    "op": "add",
+    "path": "/ability/name",
+    "value": "Charge"
+  },
+  {
+    "op": "replace",
+    "path": "/ability/maxEnergyUsage",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/ability/baseDps",
+    "value": 8
+  }
+]

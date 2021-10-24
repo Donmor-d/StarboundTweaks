@@ -1,0 +1,106 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters",
+    "value": {
+      "muzzleFlash": {
+        "burstCount": 2,
+        "particles": [
+          {
+            "particle": "dust2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/reloadTime",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/fire/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/armRotation",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/weaponRotation",
+    "value": 4
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/cooldown/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/duration",
+    "value": 0.11
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/armRotation",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/weaponRotation",
+    "value": 4
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/altAbility/stances/fire/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/stances/fire/allowFlip",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/altAbility/stances/cooldown/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/stances/cooldown/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/stances/cooldown/allowFlip",
+    "value": true
+  }
+]

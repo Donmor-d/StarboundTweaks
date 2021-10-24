@@ -5,7 +5,7 @@
   "scripts" : ["multijump.lua"],
   "animator" : "shortjump.animation",
 
-  "description" : "An additional two small jumps that can be used while in the air!",
+  "description" : "Gives you two smaller jumps that can be used in the air!",
   "shortDescription" : "Short Jump",
   "rarity" : "Common",
   "icon" : "/custom/tech/shortjump.png",

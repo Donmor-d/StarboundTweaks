@@ -1,0 +1,22 @@
+[
+  {
+    "op": "add",
+    "path": "/upgradeStages/0/interactData/upgradeMaterials/-",
+    "value": {
+      "item": "heatingcomponent",
+      "count": 1
+    }
+  },
+  {
+    "op": "remove",
+    "path": "/upgradeStages/1/interactData/filter/0"
+  },
+  {
+    "op": "remove",
+    "path": "/upgradeStages/2/interactData/filter/0"
+  },
+  {
+    "op": "remove",
+    "path": "/upgradeStages/2/interactData/filter/0"
+  }
+]

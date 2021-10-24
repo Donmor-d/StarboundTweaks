@@ -13,17 +13,24 @@
     "displayName": "Normal Ammo",
     "displayIcon": "/custom/items/augments/shotgun/normalshell/normalshotgunshell.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "normal.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "normal.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
       "class": "GunFire",
 
        "fireTime" : 1.2,
        "baseDps" : 20,
        "energyUsage" : 0,
        "inaccuracy" : 0.12,
-	   
-	   "ammo" : 5,      //munição
 	   
        "reloadTime" : 1.5,     //tempo de recarga
   

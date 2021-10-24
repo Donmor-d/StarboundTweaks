@@ -1,0 +1,9 @@
+cultist
+cultist2
+hero
+iris
+miniknog
+penguin
+pirate
+protector
+--------------modified from vanilla recipes, since theyre now rare--------

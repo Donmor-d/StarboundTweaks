@@ -1,0 +1,24 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/recharge",
+    "value": [
+      "/sfx/tech/tech_dash_cooldown1.ogg"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ability/cooldownTime",
+    "value": 2.5
+  },
+  {
+    "op": "add",
+    "path": "/ability/maxBarriers",
+    "value": 30
+  },
+  {
+    "op": "replace",
+    "path": "/ability/energyUsage",
+    "value": 0
+  }
+]

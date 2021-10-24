@@ -1,0 +1,30 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/damageParts",
+    "value": {
+      "body": {
+        "damage": 20,
+        "teamType": "enemy",
+        "damageSourceKind": "slash",
+        "knockback": 20,
+        "statusEffects": []
+      }
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/damageOnTouch",
+    "value": false
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/chargeSpeed",
+    "value": 25
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damage",
+    "value": 20
+  }
+]

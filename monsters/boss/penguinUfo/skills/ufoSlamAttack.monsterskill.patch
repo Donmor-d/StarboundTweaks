@@ -1,0 +1,7 @@
+[
+  {
+    "op": "replace",
+    "path": "/parameters/ufoSlamAttack/stunDuration",
+    "value": 3
+  }
+]

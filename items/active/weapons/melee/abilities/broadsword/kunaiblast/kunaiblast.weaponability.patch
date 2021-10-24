@@ -1,0 +1,39 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/recharge",
+    "value": [
+      "/sfx/tech/tech_dash_cooldown1.ogg"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/ability/projectileParameters/baseDamage",
+    "value": 11.5
+  },
+  {
+    "op": "replace",
+    "path": "/ability/baseDamage",
+    "value": 11.5
+  },
+  {
+    "op": "replace",
+    "path": "/ability/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/ability/cooldownTime",
+    "value": 3.5
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/windup/allowFlip",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/fire/allowFlip",
+    "value": true
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/collisionPoly/0/0",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/collisionPoly/1/0",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/collisionPoly/1/1",
+    "value": -5.375
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/collisionPoly/2/0",
+    "value": -2
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/collisionPoly/2/1",
+    "value": -5.375
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/collisionPoly/3/0",
+    "value": -2
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/collisionPoly/3/1",
+    "value": 5.375
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/movementSettings/collisionPoly/4"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/movementSettings/collisionPoly/4"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/movementSettings/collisionPoly/4"
+  },
+  {
+    "op": "remove",
+    "path": "/baseParameters/movementSettings/collisionPoly/4"
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/runSpeed",
+    "value": 20
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/flySpeed",
+    "value": 20
+  }
+]

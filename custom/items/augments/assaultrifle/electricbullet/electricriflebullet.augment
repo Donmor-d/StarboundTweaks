@@ -13,9 +13,19 @@
     "displayName": "Electrified Ammo",
     "displayIcon": "/custom/items/augments/assaultrifle/electricbullet/electricriflebullet.png",
     "elementalType": "electric",
+
+    "inventoryIcon" : "electric.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "electric.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+       "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+	 
       "class": "GunFire",
 
        "fireTime" : 0.11,
@@ -23,9 +33,9 @@
        "energyUsage" : 0,   //~39.375
        "inaccuracy" : 0.02,
 	   
-	   "ammo" : 30,      //munição
+ 
 	   
-       "reloadTime" : 1,     //tempo de recarga
+       "reloadTime" : 1.5,     //tempo de recarga
 
       "projectileType": "electricplasma",
       "projectileParameters": {

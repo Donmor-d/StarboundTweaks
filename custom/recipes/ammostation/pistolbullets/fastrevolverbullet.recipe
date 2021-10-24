@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "normalrevolverbullet", "count" : 1 },
+	{ "item" : "phasematter", "count" : 2 }
+  ],
+  "output" : { "item" : "fastrevolverbullet", "count" : 1 },
+  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
+}

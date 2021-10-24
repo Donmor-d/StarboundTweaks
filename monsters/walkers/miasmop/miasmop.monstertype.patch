@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/damageOnTouch",
+    "value": false
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/1/cooldown",
+    "value": 2
+  }
+]

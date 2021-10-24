@@ -1,0 +1,11 @@
+[
+  {
+    "op": "remove",
+    "path": "/damageType"
+  },
+  {
+    "op": "replace",
+    "path": "/acceleration",
+    "value": 50
+  }
+]

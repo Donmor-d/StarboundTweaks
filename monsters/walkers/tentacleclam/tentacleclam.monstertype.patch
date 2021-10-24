@@ -1,0 +1,17 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damage",
+    "value": 15
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/maxHealth/baseValue",
+    "value": 24
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/protection/baseValue",
+    "value": 75
+  }
+]

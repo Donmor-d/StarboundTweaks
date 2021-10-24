@@ -1,0 +1,15 @@
+[
+  {
+    "op": "replace",
+    "path": "/frameGrid/dimensions/1",
+    "value": 4
+  },
+  {
+    "op": "add",
+    "path": "/frameGrid/names/-",
+    "value": [
+      null,
+      "stage4"
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "op": "replace",
+    "path": "/mechPartBlueprint/1/1/pool/0/item",
+    "value": "mechbodypirate-recipe"
+  },
+  {
+    "op": "remove",
+    "path": "/mechPartBlueprint/2/1/pool/0"
+  },
+  {
+    "op": "replace",
+    "path": "/mechPartBlueprint/3/1/pool/0/item",
+    "value": "mechbodyhero-recipe"
+  },
+  {
+    "op": "replace",
+    "path": "/mechPartBlueprint/4/1/pool/0/item",
+    "value": "mechbodyhero-recipe"
+  },
+  {
+    "op": "replace",
+    "path": "/mechPartBlueprint/4/1/pool/1/weight",
+    "value": 0.15
+  },
+  {
+    "op": "replace",
+    "path": "/mechPartBlueprint/4/1/pool/1/item",
+    "value": "mechbodyiris-recipe"
+  },
+  {
+    "op": "replace",
+    "path": "/rareSpaceItem/1/1/pool/0/weight",
+    "value": 0.05
+  },
+  {
+    "op": "replace",
+    "path": "/cultistshipChest/0/1/pool/0/weight",
+    "value": 0.2
+  },
+  {
+    "op": "replace",
+    "path": "/cultistshipChest/1/1/pool/0/weight",
+    "value": 0.2
+  },
+  {
+    "op": "replace",
+    "path": "/miniknogshipChest/1/1/fill/0/weight",
+    "value": 0.9
+  },
+  {
+    "op": "replace",
+    "path": "/protectorateshipChest/1/1/fill/0/weight",
+    "value": 0.9
+  }
+]

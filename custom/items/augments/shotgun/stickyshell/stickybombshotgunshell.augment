@@ -13,9 +13,18 @@
     "displayName": "Sticky Bomb Ammo",
     "displayIcon": "/custom/items/augments/shotgun/stickyshell/stickybombshotgunshell.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "stickyshell.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "stickyshell.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
       "class": "GunFire",
 
        "fireTime" : 1.2,
@@ -23,19 +32,17 @@
        "energyUsage" : 0,
        "inaccuracy" : 0.12,
 	   
-	   "ammo" : 5,      //munição
-	   
        "reloadTime" : 1.5,     //tempo de recarga
   
        "projectileCount" : 6,
-	   "fireType" : "auto",
+       "fireType" : "auto",
 
       "projectileType": "stickybullet",
       "projectileParameters": {
-	    "timeToLive" : 4.5,
-		"knockback" : 0,
-		"speed" : 100
-	  },
+	    "timeToLive" : 4.0,
+		  "knockback" : 0,
+		  "speed" : 100
+	    },
 
       "stances" : {
       "idle" : {

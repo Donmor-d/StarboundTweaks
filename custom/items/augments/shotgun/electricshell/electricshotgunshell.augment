@@ -13,17 +13,24 @@
     "displayName": "Elecrtified Ammo",
     "displayIcon": "/custom/items/augments/shotgun/electricshell/electricshotgunshell.png",
     "elementalType": "fire",
+
+    "inventoryIcon" : "electric.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "electric.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
       "class": "GunFire",
 
        "fireTime" : 1.2,
        "baseDps" : 17,
        "energyUsage" : 0,
        "inaccuracy" : 0.12,
-	   
-	   "ammo" : 5,      //munição
 	   
        "reloadTime" : 1.5,     //tempo de recarga
   

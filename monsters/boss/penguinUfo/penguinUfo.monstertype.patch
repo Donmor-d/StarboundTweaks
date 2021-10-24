@@ -1,0 +1,27 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/phases/1/skills/3",
+    "value": "ufoPulseCannonAttack"
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/phases/2/healthPercentage",
+    "value": 0.6
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damage",
+    "value": 30
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/maxHealth/baseValue",
+    "value": 1000
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/protection/baseValue",
+    "value": 60
+  }
+]

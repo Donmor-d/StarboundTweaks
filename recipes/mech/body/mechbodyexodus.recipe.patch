@@ -3,7 +3,7 @@
 	"op": "replace",
 	"path": "/input",
 	"value":[
-	{ "item" : "solariumstar", "count" : 20 },
+	{ "item" : "solariumstar", "count" : 40 },
 	{ "item" : "salvagebody", "count" : 25 },
 	{ "item" : "salvagetier6", "count" : 12 }
 	]

@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/parameters/ufoMoveFireAttack/projectile/config/speed",
+    "value": 50
+  },
+  {
+    "op": "replace",
+    "path": "/parameters/ufoMoveFireAttack/projectile/config/power",
+    "value": 25
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "op": "replace",
+    "path": "/altAbility/energyPerShot",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/projectileParameters/actionOnReap/0/type",
+    "value": "energyarrowspread"
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/projectileParameters/actionOnReap/1/type",
+    "value": "energyarrowspread"
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/projectileParameters/actionOnReap/2/type",
+    "value": "energyarrowspread"
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/projectileParameters/actionOnReap/3/type",
+    "value": "energyarrowspread"
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/projectileParameters/actionOnReap/4/type",
+    "value": "energyarrowspread"
+  }
+]

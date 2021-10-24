@@ -13,9 +13,19 @@
     "displayName": "Fast Firing Ammo",
     "displayIcon": "/custom/items/augments/assaultrifle/spraybullet/sprayriflebullet.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "spray.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "spray.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+       "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+	 
       "class": "GunFire",
 
        "fireTime" : 0.04,
@@ -23,9 +33,9 @@
        "energyUsage" : 0,   //~39.375
        "inaccuracy" : 0.12,
 	   
-	   "ammo" : 45,      //munição
+
 	   
-       "reloadTime" : 2,     //tempo de recarga
+       "reloadTime" : 1.5,     //tempo de recarga
 
       "projectileType": "standardbullet",
       "projectileParameters": {

@@ -1,0 +1,14 @@
+[
+  {
+    "op": "add",
+    "path": "/damageTeam",
+    "value": {
+      "type": "indiscriminate"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/knockback",
+    "value": 20
+  }
+]

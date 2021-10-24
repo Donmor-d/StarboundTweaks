@@ -1,0 +1,26 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown/0",
+    "value": 1
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown/1",
+    "value": 2
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/projectileParameters",
+    "value": {
+      "statusEffects": [
+        "weakpoison"
+      ]
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  }
+]

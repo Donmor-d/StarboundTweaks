@@ -1,0 +1,41 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters",
+    "value": {
+      "altMuzzleFlash": {
+        "burstCount": 2,
+        "particles": [
+          {
+            "particle": "dust2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/ability/baseDamage",
+    "value": 15
+  },
+  {
+    "op": "replace",
+    "path": "/ability/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/ability/cooldownTime",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/ability/maxTargets",
+    "value": 5
+  },
+  {
+    "op": "add",
+    "path": "/ability/stances/cooldown/recoil",
+    "value": true
+  }
+]

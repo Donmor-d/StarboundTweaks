@@ -14,8 +14,12 @@ function apply(input)
       output:setInstanceValue("currentAugment", augmentConfig)
       output:setInstanceValue("elementalType", augmentConfig.elementalType) -- muda o elemento da arma para o da bala
       output:setInstanceValue("primaryAbility", augmentConfig.primaryAbility) -- muda as propriedades da abilidade primária (m1)
-	  output:setInstanceValue("animationParts", augmentConfig.animationParts) --muda a textura da arma (olhar "massaultrifle.activeitem" e t1marelectricbullet.augment
-	  output:setInstanceValue("altAbilityType", augmentConfig.altAbilityType)
+      
+	    output:setInstanceValue("animationParts", augmentConfig.animationParts) --muda a textura da arma (olhar "massaultrifle.activeitem" e t1marelectricbullet.augment
+	    output:setInstanceValue("inventoryIcon", augmentConfig.inventoryIcon)
+
+      output:setInstanceValue("altAbilityType", augmentConfig.altAbilityType)
+      output:setInstanceValue("animationCustom", augmentConfig.animationCustom)
       return output:descriptor(), 1
     end
   end

@@ -1,25 +1,5 @@
 [
     {
-        "op" : "test",
-        "path" : "/primaryAbility/stances/windup/allowRotate",
-        "value" : false
-    },
-    {
-        "op" : "test",
-        "path" : "/primaryAbility/stances/fire/allowRotate",
-        "value" : false
-    },
-    {
-        "op" : "test",
-        "path" : "/primaryAbility/stances/fire/allowFlip",
-        "value" : false
-    },
-    {
-        "op" : "test",
-        "path" : "/primaryAbility/stances/windup2/allowRotate",
-        "value" : false
-    },
-    {
         "op" : "replace",
         "path" : "/primaryAbility/stances/windup/allowRotate",
         "value" : true

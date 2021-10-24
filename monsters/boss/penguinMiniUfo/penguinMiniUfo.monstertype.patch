@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/healthRegen/baseValue",
+    "value": 1
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/projectileConfig/power",
+    "value": 12.5
+  }
+]

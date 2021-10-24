@@ -9,7 +9,7 @@ function HomingRocketAttack:new(abilityConfig)
 end
 
 function HomingRocketAttack:init()
-  self.cooldownTimer = 0
+  self.cooldownTimer = self.fireTime
   self.activeRockets = {}
   self.newRockets = {}
 end
@@ -18,44 +18,17 @@ function HomingRocketAttack:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
   self:updateRockets(dt)
-  
-  local primaryEnabler = config.getParameter("primaryAltAbility")    --necessário para o bagui abaixo funcionar
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
-  
-  if primaryEnabler == "allow" then
-     if self.fireMode == "primary"
-       and not self.weapon.currentAbility
-       and self.cooldownTimer == 0 
-       and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-       and status.overConsumeResource("energy", self:energyPerShot())  then
-      self:setState(self.fire)
-    end
-  else 
-    if self.fireMode == "alt"
-       and not self.weapon.currentAbility
-       and self.cooldownTimer == 0 
-       and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-       and status.overConsumeResource("energy", self:energyPerShot())  then
-      self:setState(self.fire)
-    end
-  end
-  
-  --[[     original abaixo, adicionei uma variável que checa se ele permite usar a abilidade com m1 ou não, a abilidade primária deve ter um firerate absurdo para que ele não sobrepoa a abilidade
-  if self.fireMode == "alt"
-    and not self.weapon.currentAbility
-    and self.cooldownTimer == 0
-    and not status.resourceLocked("energy")
-    and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
-    if self.fireType == "auto" and status.overConsumeResource("energy", self:energyPerShot()) then
-      self:setState(self.auto)
-    elseif self.fireType == "burst" then
-      self:setState(self.burst)
-    end
+  if self.fireMode == "alt"
+     and not self.weapon.currentAbility
+     and self.cooldownTimer == 0
+     and not world.lineTileCollision(mcontroller.position(), self:firePosition())
+     and status.overConsumeResource("energy", self:energyPerShot()) then
+
+    self:setState(self.fire)
   end
-  ]]--
-  
 end
 
 function HomingRocketAttack:fire()
@@ -71,6 +44,7 @@ function HomingRocketAttack:fire()
   animator.playSound("altFire")
 
   self:setState(self.cooldown)
+  self.cooldownTimer = self.fireTime
 end
 
 function HomingRocketAttack:reset()

@@ -1,0 +1,26 @@
+[
+  {
+    "op": "remove",
+    "path": "/offeredQuests/1"
+  },
+  {
+    "op": "remove",
+    "path": "/offeredQuests/2"
+  },
+  {
+    "op": "remove",
+    "path": "/offeredQuests/3"
+  },
+  {
+    "op": "remove",
+    "path": "/turnInQuests/1"
+  },
+  {
+    "op": "remove",
+    "path": "/turnInQuests/2"
+  },
+  {
+    "op": "remove",
+    "path": "/turnInQuests/3"
+  }
+]

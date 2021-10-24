@@ -1,0 +1,32 @@
+[
+  {
+    "op": "replace",
+    "path": "/erchiushorrorTreasure/0/1/pool/2/weight",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/ixodoomTreasure/0/1/pool/2/weight",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/asranoxTreasure/0/1/pool/2/weight",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/kluexavatarTreasure/0/1/pool/2/weight",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/bigapeTreasure/0/1/pool/2/weight",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/bonedragonTreasure/0/1/pool/2/weight",
+    "value": 0.25
+  }
+]

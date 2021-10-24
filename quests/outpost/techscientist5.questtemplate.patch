@@ -1,0 +1,28 @@
+[
+  {
+    "op": "replace",
+    "path": "/prerequisites/0",
+    "value": "techscientist3"
+  },
+  {
+    "op": "replace",
+    "path": "/completionText",
+    "value": "Most excellent! Now that the ^orange;Distortion Sphere Tech^white; is ready for mass production, heres one as a token of appreciation."
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/showTech",
+    "value": [
+      "aquasphere",
+      "sonicsphere",
+      "spikesphere"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/equipTech",
+    "value": [
+      "distortionsphere"
+    ]
+  }
+]

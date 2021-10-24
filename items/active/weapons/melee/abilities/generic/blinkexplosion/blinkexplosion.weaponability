@@ -1,6 +1,9 @@
 {
   "animationParts" : { },
   "animationCustom" : {
+    "sounds" : {
+      "recharge" : [ "/sfx/tech/tech_dash_cooldown1.ogg" ]
+    },
     "animatedParts" : {
       "stateTypes" : {
         "blinkCharge" : {
@@ -40,11 +43,11 @@
     "scripts" : ["/items/active/weapons/melee/abilities/generic/blinkexplosion/blinkexplosion.lua"],
     "class" : "BlinkExplosion",
 
-    "energyUsage" : 0,
-    "cooldownTime" : 3.9,
+    "energyUsage" : 0.0,
+    "cooldownTime" : 3.5,
 
     "maxDistance" : 12,
-    "baseDamage" : 28,
+    "baseDamage" : 14,
     "elementalConfig" : {
       "fire" : {
         "projectileType" : "fireplasmaexplosionstatus"

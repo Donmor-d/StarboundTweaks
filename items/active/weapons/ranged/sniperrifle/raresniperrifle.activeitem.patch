@@ -1,0 +1,106 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters",
+    "value": {
+      "muzzleFlash": {
+        "burstCount": 3,
+        "particles": [
+          {
+            "particle": "dust2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/reloadTime",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/baseDps/0",
+    "value": 8
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/baseDps/1",
+    "value": 9
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/fire/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/armRotation",
+    "value": 6
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/weaponRotation",
+    "value": 10
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/allowFlip",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/cooldown/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/armRotation",
+    "value": 6
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/weaponRotation",
+    "value": 10
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/allowFlip",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/builderConfig/0/elementalConfig/fire/primaryAbility/projectileType",
+    "value": "firesniperbullet"
+  },
+  {
+    "op": "replace",
+    "path": "/builderConfig/0/elementalConfig/ice/primaryAbility/projectileType",
+    "value": "icesniperbullet"
+  },
+  {
+    "op": "replace",
+    "path": "/builderConfig/0/elementalConfig/poison/primaryAbility/projectileType",
+    "value": "poisonsniperbullet"
+  },
+  {
+    "op": "replace",
+    "path": "/builderConfig/0/elementalConfig/electric/primaryAbility/projectileType",
+    "value": "electricsniperbullet"
+  }
+]

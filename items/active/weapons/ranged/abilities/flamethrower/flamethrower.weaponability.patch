@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/ability/reloadTime",
+    "value": 1.5
+  }
+]

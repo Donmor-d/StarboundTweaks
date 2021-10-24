@@ -1,0 +1,83 @@
+{
+  "itemName" : "bouncinggrenade",
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "bouncinggrenade.png",
+  "description" : "Enables explosive bounces for grenade launchers.",
+  "shortdescription" : "Bouncing Grenade",
+
+  "augment": {
+    "type": "grenadelauncherammo",
+    "name": "bouncinggrenade",
+    "displayName": "Bouncing Ammo",
+    "displayIcon": "/custom/items/augments/grenadelauncher/bouncinggrenade/bouncinggrenade.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "bouncing.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "bouncing.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 1.0,
+       "baseDps" : 3,
+       "energyUsage" : 0,
+       "inaccuracy" : 0.0,
+	   
+	   "reloadTime" : 2,
+
+      "projectileType": "grenade",
+      "projectileParameters": {
+		"bounces" : 2,
+    "actionOnCollide" : [
+      {
+        "action" : "config",
+        "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
+      }
+    ]
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

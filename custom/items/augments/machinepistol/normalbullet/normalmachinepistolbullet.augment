@@ -13,9 +13,18 @@
     "displayName": "Normal Ammo",
     "displayIcon": "/custom/items/augments/machinepistol/normalbullet/normalmachinepistolbullet.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "normal.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "normal.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  
       "class": "GunFire",
 
        "fireTime" : 0.11,
@@ -23,9 +32,7 @@
        "energyUsage" : 0,   //~39.375
        "inaccuracy" : 0.04,
 	   
-	   "ammo" : 20,      //munição
-	   
-       "reloadTime" : 0.75,     //tempo de recarga
+       "reloadTime" : 1,     //tempo de recarga
 
       "projectileType": "standardbullet",
       "projectileParameters": {

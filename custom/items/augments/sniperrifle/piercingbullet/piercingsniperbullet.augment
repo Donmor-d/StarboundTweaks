@@ -4,7 +4,7 @@
   "rarity" : "Uncommon",
   "category" : "ammoModifier",
   "inventoryIcon" : "piercingsniperbullet.png",
-  "description" : "Enables piercing for Sniper Rifles.",
+  "description" : "Enables piercing for Sniper Rifles, bullets empower after piercing.",
   "shortdescription" : "Piercing Sniper Bullet",
 
   "augment": {
@@ -13,22 +13,30 @@
     "displayName": "Piercing Bullet",
     "displayIcon": "/custom/items/augments/sniperrifle/piercingbullet/piercingsniperbullet.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "piercing.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "piercing.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  
       "class": "GunFire",
 
        "fireTime" : 1,
-       "baseDps" : 12.75,
+       "baseDps" : 8,
        "energyUsage" : 50,
        "inaccuracy" : 0.008,
 	   
-	   "ammo" : 5,      //munição
-	   
        "reloadTime" : 1.5,     //tempo de recarga
 
-      "projectileType": "piercingbullet",
-      "projectileParameters": {},
+      "projectileType": "piercingsniperbullet",
+      "projectileParameters": {
+      },
       "projectileCount": 1,
 
      "stances" : {

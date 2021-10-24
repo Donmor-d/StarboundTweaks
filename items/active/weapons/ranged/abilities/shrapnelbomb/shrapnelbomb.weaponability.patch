@@ -1,0 +1,56 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds/particleEmitters",
+    "value": {
+      "muzzleFlash": {
+        "burstCount": 2,
+        "particles": [
+          {
+            "particle": "dust2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/ability/baseDamage",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/ability/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/ability/stances/fire/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/fire/allowFlip",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/ability/stances/cooldown/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/cooldown/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/cooldown/allowFlip",
+    "value": true
+  }
+]

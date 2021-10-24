@@ -1,0 +1,210 @@
+[
+  {
+    "op": "add",
+    "path": "/systemTypeBins/5",
+    "value": [
+      0.28,
+      "Black"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/systemTypes/Black",
+    "value": {
+      "selectionWeight": 1,
+      "baseParameters": {
+        "typeName": "blackhole",
+        "image": "/custom/celestial/system/blackhole.png",
+        "twinkleTime": [
+          1,
+          1.5
+        ],
+        "spaceThreatLevel": 7
+      },
+      "variationParameters": [
+        {
+          "magnitude": 3,
+          "description": "Small Black Hole",
+          "imageScale": 0.04,
+          "twinkleFrames": "/custom/celestial/stars/star14pxBlack.png",
+          "twinkleBackground": "/custom/celestial/stars/backgrounds/star14px.png",
+          "brightness": [
+            1,
+            1
+          ]
+        },
+        {
+          "magnitude": 5,
+          "description": "Medium Black Hole",
+          "imageScale": 0.055,
+          "twinkleFrames": "/custom/celestial/stars/star26pxBlack.png",
+          "twinkleBackground": "/custom/celestial/stars/backgrounds/star26px.png",
+          "brightness": [
+            1,
+            1
+          ]
+        },
+        {
+          "magnitude": 7,
+          "description": "Large Black Hole",
+          "imageScale": 0.075,
+          "twinkleFrames": "/custom/celestial/stars/star34pxBlack.png",
+          "twinkleBackground": "/custom/celestial/stars/backgrounds/star34px.png",
+          "brightness": [
+            1,
+            1
+          ]
+        }
+      ],
+      "orbitRegions": [
+        {
+          "regionName": "Tier7Inner",
+          "orbitRange": [
+            6,
+            6
+          ],
+          "bodyProbability": 0.5,
+          "planetaryTypes": [
+            {
+              "weight": 0.05,
+              "item": "Tier4"
+            },
+            {
+              "weight": 0.15,
+              "item": "Tier5"
+            },
+            {
+              "weight": 0.7,
+              "item": "Tier6"
+            },
+            {
+              "weight": 0.05,
+              "item": "Barren"
+            },
+            {
+              "weight": 0.05,
+              "item": "AsteroidField"
+            }
+          ],
+          "satelliteTypes": [
+            {
+              "weight": 1,
+              "item": "Moon"
+            }
+          ]
+        },
+        {
+          "regionName": "Tier7Mid",
+          "orbitRange": [
+            7,
+            7
+          ],
+          "bodyProbability": 0.25,
+          "planetaryTypes": [
+            {
+              "weight": 0.9,
+              "item": "GasGiant"
+            },
+            {
+              "weight": 0.05,
+              "item": "Barren"
+            },
+            {
+              "weight": 0.05,
+              "item": "AsteroidField"
+            }
+          ],
+          "satelliteTypes": [
+            {
+              "weight": 0.1,
+              "item": "Moon"
+            },
+            {
+              "weight": 0.05,
+              "item": "Tier3"
+            },
+            {
+              "weight": 0.1,
+              "item": "Tier4"
+            },
+            {
+              "weight": 0.15,
+              "item": "Tier5"
+            },
+            {
+              "weight": 0.6,
+              "item": "Tier6"
+            }
+          ]
+        },
+        {
+          "regionName": "Tier7Outer",
+          "orbitRange": [
+            8,
+            10
+          ],
+          "bodyProbability": 0.5,
+          "planetaryTypes": [
+            {
+              "weight": 0.05,
+              "item": "Tier4"
+            },
+            {
+              "weight": 0.15,
+              "item": "Tier5"
+            },
+            {
+              "weight": 0.7,
+              "item": "Tier6"
+            },
+            {
+              "weight": 0.05,
+              "item": "Barren"
+            },
+            {
+              "weight": 0.05,
+              "item": "AsteroidField"
+            }
+          ],
+          "satelliteTypes": [
+            {
+              "weight": 1,
+              "item": "Moon"
+            }
+          ]
+        },
+        {
+          "regionName": "Gate",
+          "orbitRange": [
+            11,
+            11
+          ],
+          "bodyProbability": 1,
+          "planetaryTypes": [
+            {
+              "weight": 0.2,
+              "item": "AncientGateway"
+            },
+            {
+              "weight": 0.1,
+              "item": "AsteroidField"
+            },
+            {
+              "weight": 0.1,
+              "item": "Barren"
+            },
+            {
+              "weight": 0.1,
+              "item": "Tier5"
+            },
+            {
+              "weight": 0.5,
+              "item": "Tier6"
+            }
+          ],
+          "satelliteTypes": []
+        }
+      ]
+    }
+  }
+]

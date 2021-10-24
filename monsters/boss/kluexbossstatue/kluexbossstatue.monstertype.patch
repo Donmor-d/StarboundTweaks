@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/maxHealth/baseValue",
+    "value": 750
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/protection/baseValue",
+    "value": 35
+  }
+]

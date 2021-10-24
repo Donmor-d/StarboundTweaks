@@ -1,0 +1,36 @@
+[
+  {
+    "op": "remove",
+    "path": "/baseParameters/collisionParts"
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown",
+    "value": 1
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/maximumRange",
+    "value": 40
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/leapVelocity",
+    "value": 30
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/highArc",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/damageParts/body/damage",
+    "value": 20
+  }
+]

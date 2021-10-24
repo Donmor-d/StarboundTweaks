@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/builderConfig/0/altAbilities/-",
+    "value": "spearcharge"
+  }
+]

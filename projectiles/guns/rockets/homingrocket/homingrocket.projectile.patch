@@ -1,0 +1,16 @@
+[
+  {
+    "op": "remove",
+    "path": "/damageType"
+  },
+  {
+    "op": "replace",
+    "path": "/controlForce",
+    "value": 300
+  },
+  {
+    "op": "replace",
+    "path": "/maxSpeed",
+    "value": 100
+  }
+]

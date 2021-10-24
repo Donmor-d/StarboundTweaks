@@ -13,9 +13,18 @@
     "displayName": "Electric Gas Ammo",
     "displayIcon": "/custom/items/augments/grenadelauncher/electricgasgrenade/electricgasgrenade.png",
     "elementalType": "electric",
+
+    "inventoryIcon" : "electric.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "electric.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts": [ "/items/active/weapons/ranged/gunfire.lua" ], original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
       "class": "GunFire",
 
        "fireTime" : 1.5,
@@ -23,14 +32,10 @@
        "energyUsage" : 0,
        "inaccuracy" : 0.0,
 	   
-	   "ammo" : 1,
-	   
 	   "reloadTime" : 2,
 
       "projectileType": "electriccloudgrenade",
-      "projectileParameters": {
-		"damageType" : "damage"
-	  },
+      "projectileParameters": {},
       "projectileCount": 1,
 
      "stances" : {

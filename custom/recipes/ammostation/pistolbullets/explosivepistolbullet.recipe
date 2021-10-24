@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalpistolbullet", "count" : 1 },
-	{ "item" : "volatilepowder", "count" : 5 },
-	{ "item" : "titaniumbar", "count" : 1 }
-  ],
-  "output" : { "item" : "explosivepistolbullet", "count" : 1 },
-  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
-}

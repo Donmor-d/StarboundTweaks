@@ -1,0 +1,23 @@
+[
+  {
+    "op": "replace",
+    "path": "/completionText",
+    "value": "You brought me the parts! Wonderful! With these the ^orange;Dash Tech^white; should be ready for action."
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/showTech",
+    "value": [
+      "airdash",
+      "blinkdash",
+      "sprint"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/equipTech",
+    "value": [
+      "dash"
+    ]
+  }
+]

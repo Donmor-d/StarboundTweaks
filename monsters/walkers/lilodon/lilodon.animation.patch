@@ -1,0 +1,75 @@
+[
+  {
+    "op": "add",
+    "path": "/animatedParts/stateTypes/body/states/hop",
+    "value": {
+      "frames": 2,
+      "cycle": 0.5,
+      "properties": {
+        "immediateSound": "/sfx/npc/monsters/monster_hop.ogg"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animatedParts/stateTypes/body/states/land",
+    "value": {}
+  },
+  {
+    "op": "replace",
+    "path": "/animatedParts/stateTypes/body/states/walk/cycle",
+    "value": 0.4
+  },
+  {
+    "op": "add",
+    "path": "/animatedParts/parts/body/partStates/body/hop",
+    "value": {
+      "properties": {
+        "image": "<partImage>:jump.<frame>",
+        "damageArea": [
+          [
+            0.8125,
+            1.25
+          ],
+          [
+            1.3125,
+            0.75
+          ],
+          [
+            1.3125,
+            -0.05
+          ],
+          [
+            0.8125,
+            -0.55
+          ],
+          [
+            -0.8125,
+            -0.55
+          ],
+          [
+            -1.3125,
+            -0.05
+          ],
+          [
+            -1.3125,
+            0.75
+          ],
+          [
+            -0.8125,
+            1.25
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/animatedParts/parts/body/partStates/body/land",
+    "value": {
+      "properties": {
+        "image": "<partImage>:idle.<frame>"
+      }
+    }
+  }
+]

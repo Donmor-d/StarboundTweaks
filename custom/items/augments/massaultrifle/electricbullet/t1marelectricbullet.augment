@@ -14,12 +14,7 @@
     "displayIcon": "/custom/items/augments/massaultrifle/electricbullet/t1marelectricbullet.png",
     "elementalType": "electric",
 	
-	"animationParts" : {
-        "butt" : "",
-		"middle" : "massaultrifle1.png",
-        "barrel" : "",
-		"muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
-	},
+    "testmiddle" : "massaultrifle1.png",
 	
     "primaryAbility": {
       "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],

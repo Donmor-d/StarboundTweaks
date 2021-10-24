@@ -1,0 +1,17 @@
+[
+  {
+    "op": "add",
+    "path": "/power",
+    "value": 20
+  },
+  {
+    "op": "replace",
+    "path": "/speed",
+    "value": 70
+  },
+  {
+    "op": "replace",
+    "path": "/timeToLive",
+    "value": 15
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters",
+    "value": {
+      "muzzleFlash": {
+        "burstCount": 2,
+        "particles": [
+          {
+            "particle": "dust2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/elementalType",
+    "value": "electric"
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/reloadTime",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/fire/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/weaponRotation",
+    "value": 4
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/allowFlip",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/cooldown/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/duration",
+    "value": 0.11
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/weaponRotation",
+    "value": 4
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/allowFlip",
+    "value": true
+  }
+]

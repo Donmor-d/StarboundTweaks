@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalgrenade", "count" : 1 },
-	{ "item" : "liquidoil", "count" : 5 }
-  ],
-  "output" : { "item" : "bouncinggrenade", "count" : 1 },
-  "groups" : [ "ammostation", "ammoexplosive", "all" ]
-}

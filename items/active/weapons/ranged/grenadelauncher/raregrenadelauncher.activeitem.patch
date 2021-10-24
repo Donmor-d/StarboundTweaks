@@ -1,0 +1,42 @@
+[
+  {
+    "op": "add",
+    "path": "/primaryAbility/reloadTime",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/baseDps/0",
+    "value": 5
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/baseDps/1",
+    "value": 5.5
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/fire/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/cooldown/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/stances/cooldown/allowRotate",
+    "value": true
+  }
+]

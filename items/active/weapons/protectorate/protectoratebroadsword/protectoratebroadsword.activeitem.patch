@@ -1,0 +1,36 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/sounds",
+    "value": {
+      "recharge": [
+        "/sfx/tech/tech_dash_cooldown1.ogg"
+      ]
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/activeBaseDps",
+    "value": 14
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/energyPerSecond",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/cooldownTime",
+    "value": 3
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/stances/fire/allowFlip",
+    "value": true
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "op": "replace",
+    "path": "/ability/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/ability/cooldownTime",
+    "value": 3
+  },
+  {
+    "op": "replace",
+    "path": "/ability/damageConfig/baseDamage",
+    "value": 12
+  },
+  {
+    "op": "add",
+    "path": "/ability/stances/fire/recoil",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/fire/allowRotate",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/ability/stances/fire/allowFlip",
+    "value": true
+  }
+]

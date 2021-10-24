@@ -1,0 +1,11 @@
+[
+  {
+    "op": "add",
+    "path": "/scriptConfig/equipTech",
+    "value": [
+      "shortdash",
+      "slowdistortionsphere",
+      "shortjump"
+    ]
+  }
+]

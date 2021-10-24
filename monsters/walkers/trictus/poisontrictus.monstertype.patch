@@ -1,0 +1,22 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/foundTargetActions/0/parameters/animationTime",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/chargeSpeed",
+    "value": 100
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/winddownTime",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/damageParts/body/statusEffects/-",
+    "value": "weakpoison"
+  }
+]

@@ -13,9 +13,18 @@
     "displayName": "Juicy Ammo",
     "displayIcon": "/custom/items/augments/shotgun/grapeshell/grapeshotgunshell.png",
     "elementalType": "physical",
+
+    "inventoryIcon" : "grape.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "grape.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
       "class": "GunFire",
 
        "fireTime" : 1.5,
@@ -23,16 +32,14 @@
        "energyUsage" : 0,
        "inaccuracy" : 0.12,
 	   
-	   "ammo" : 5,      //munição
-	   
-       "reloadTime" : 1.25,     //tempo de recarga
+       "reloadTime" : 2,     //tempo de recarga
   
        "projectileCount" : 16,
 	    "fireType" : "auto",
 
       "projectileType": "grapebullet",
       "projectileParameters": {
-	    "damageKind" : "shotgunbullet",
+	      "damageKind" : "shotgunbullet",
         "knockback" : 30,
         "speed" : 75
 	  },

@@ -1,0 +1,31 @@
+[
+  {
+    "op": "add",
+    "path": "/animationCustom/particleEmitters",
+    "value": {
+      "altMuzzleFlash": {
+        "burstCount": 1,
+        "particles": [
+          {
+            "particle": "dust2"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/ability/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/ability/stances/fire/recoil",
+    "value": true
+  },
+  {
+    "op": "add",
+    "path": "/ability/stances/cooldown/recoil",
+    "value": true
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/concurrentHostileActions/0/parameters/spawnCooldown",
+    "value": 1
+  }
+]

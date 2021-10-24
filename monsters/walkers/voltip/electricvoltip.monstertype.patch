@@ -1,0 +1,26 @@
+[
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown",
+    "value": 1
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/projectileParameters",
+    "value": {
+      "statusEffects": [
+        "electrified"
+      ]
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/statusEffects/0",
+    "value": "electrified"
+  }
+]

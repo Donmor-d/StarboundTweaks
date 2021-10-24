@@ -13,9 +13,18 @@
     "displayName": "Ice Gas Ammo",
     "displayIcon": "/custom/items/augments/grenadelauncher/poisongasgrenade/poisongasgrenade.png",
     "elementalType": "ice",
+
+    "inventoryIcon" : "poison.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "poison.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
     "primaryAbility": {
-      //"scripts": [ "/items/active/weapons/ranged/gunfire.lua" ], original
-	  "scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
       "class": "GunFire",
 
        "fireTime" : 1.5,
