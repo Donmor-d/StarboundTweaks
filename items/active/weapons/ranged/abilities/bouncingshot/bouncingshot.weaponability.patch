@@ -2,10 +2,10 @@
   {
     "op": "replace",
     "path": "/ability/baseDamageMultiplier",
-    "value": 0.9
+    "value": 1.5
   },
   {
-    "op": "replace",
+    "op": "remove",
     "path": "/ability/energyUsage",
     "value": 0
   },

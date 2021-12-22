@@ -8,5 +8,10 @@
     "op": "replace",
     "path": "/ability/energyUsage",
     "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoUsage",
+    "value": 2
   }
 ]

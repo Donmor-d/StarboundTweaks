@@ -1,0 +1,14 @@
+[
+  
+	{
+  "op": "add",
+  "path": "/statusControllerSettings/stats/maxAmmo",
+  "value": { "baseValue": 50 }
+  },
+  {
+  "op": "add",
+  "path": "/statusControllerSettings/resources/ammo",
+  "value": { "maxStat": "maxAmmo",
+          "inicialPercentage": 1 }
+  }
+]

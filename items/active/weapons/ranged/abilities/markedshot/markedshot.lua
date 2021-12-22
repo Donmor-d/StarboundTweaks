@@ -21,7 +21,7 @@ function MarkedShot:update(dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
 
-  if self.fireMode == "alt" and not self.weapon.currentAbility and self.cooldownTimer == 0 and not status.resourceLocked("energy") then
+  if self.fireMode == "alt" and not self.weapon.currentAbility and self.cooldownTimer == 0 and not status.resourceLocked("ammo") then
     self:setState(self.aim)
   end
 end
@@ -30,12 +30,11 @@ function MarkedShot:aim()
   animator.playSound("enterAimMode")
 
   while self.fireMode == "alt" do
-    status.setResource("energyRegenBlock", 1.0)
 
     self.targets = util.filter(self.targets, world.entityExists)
     if #self.targets < self.maxTargets then
       local newTarget = self:findTarget()
-      if newTarget and status.overConsumeResource("energy", self.energyUsage) then
+      if newTarget and status.overConsumeResource("ammo", self.ammoUsage) then
         table.insert(self.targets, newTarget)
         animator.playSound("targetAcquired"..#self.targets)
 

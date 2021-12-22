@@ -3,10 +3,5 @@
     "op": "replace",
     "path": "/ability/cooldownTime",
     "value": 1.5
-  },
-  {
-    "op": "replace",
-    "path": "/ability/energyUsagePerSecond",
-    "value": 0
   }
 ]

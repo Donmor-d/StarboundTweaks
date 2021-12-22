@@ -4,7 +4,7 @@
   "rarity" : "Uncommon",
   "category" : "ammoModifier",
   "inventoryIcon" : "bouncingriflebullet.png",
-  "description" : "Enables Bounce for assault rifles. Each bounce empowers the bullet",
+  "description" : "Enables bounce for assault rifles. Each bounce empowers the bullet",
   "shortdescription" : "Bouncing Rifle Bullet",
 
   "augment": {
@@ -30,6 +30,7 @@
        "fireTime" : 0.11,
        "baseDps" : 10,
        "energyUsage" : 0,   //~39.375
+       "ammoUsage" : 1.5,
        "inaccuracy" : 0.02,
 	   
  

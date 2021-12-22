@@ -3,5 +3,10 @@
     "op": "replace",
     "path": "/ability/energyPerShot",
     "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoUsage",
+    "value": 8
   }
 ]

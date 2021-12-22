@@ -34,6 +34,11 @@
   },
   {
     "op": "add",
+    "path": "/primaryAbility/ammoUsage",
+    "value": 0.75
+  },
+  {
+    "op": "add",
     "path": "/primaryAbility/stances/fire/recoil",
     "value": true
   },

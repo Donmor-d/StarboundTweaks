@@ -3,11 +3,9 @@
   "effectConfig" : {},
   "defaultDuration" : 20,
 
-  "scripts" : [
-    "heal.lua"
-  ],
+  "scripts" : [],
 
-  "animationConfig" : "heal.animation",
+  "animationConfig" : "recovering.animation",
 
   "label" : "Recovering: unable to heal",
   "icon" : "/interface/statuses/healblock.png"

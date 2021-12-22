@@ -1,0 +1,22 @@
+[
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/cooldown",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/leapVelocity",
+    "value": 30
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/winddownTime",
+    "value": 0.1
+  }
+]

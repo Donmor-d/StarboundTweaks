@@ -1,0 +1,40 @@
+[
+  {
+    "op": "remove",
+    "path": "/baseParameters/baseSkills"
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/specialSkills",
+    "value": [
+      "shockingWaveAttack",
+      "plasmaTorpedoAttack",
+      "miniDragonBreathAttack",
+      "fireSwirlAttack",
+      "rockRollAttack",
+      "snotBubbleAttack",
+      "leafyGustAttack",
+      "lightBallAttack",
+      "smokeRingAttack",
+      "putridWaveAttack",
+      "orbOfZotsAttack",
+      "explosivePhlegmAttack",
+      "cellBlastAttack"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/runSpeed",
+    "value": 10
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damage",
+    "value": 3
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/knockback",
+    "value": 40
+  }
+]

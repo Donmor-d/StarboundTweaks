@@ -72,5 +72,10 @@
     "op": "replace",
     "path": "/primaryAbility/stances/cooldown/allowFlip",
     "value": true
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/ammoUsage",
+    "value": 1
   }
 ]

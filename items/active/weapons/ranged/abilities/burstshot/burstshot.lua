@@ -18,7 +18,7 @@ function BurstShot:update(dt, fireMode, shiftHeld)
     and self.fireMode == "alt"
     and self.cooldownTimer == 0
     and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-    and status.overConsumeResource("energy", self.energyUsage) then
+    and status.overConsumeResource("ammo", self.ammoUsage) then
 
     self:setState(self.fire)
   end

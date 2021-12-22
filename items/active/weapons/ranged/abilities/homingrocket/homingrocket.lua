@@ -25,7 +25,7 @@ function HomingRocketAttack:update(dt, fireMode, shiftHeld)
      and not self.weapon.currentAbility
      and self.cooldownTimer == 0
      and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-     and status.overConsumeResource("energy", self:energyPerShot()) then
+     and status.overConsumeResource("ammo", self.ammoUsage*2) then
 
     self:setState(self.fire)
   end

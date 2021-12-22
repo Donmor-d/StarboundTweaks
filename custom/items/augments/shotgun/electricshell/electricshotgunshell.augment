@@ -30,6 +30,7 @@
        "fireTime" : 1.2,
        "baseDps" : 17,
        "energyUsage" : 0,
+       "ammoUsage" : 4.5,
        "inaccuracy" : 0.12,
 	   
        "reloadTime" : 1.5,     //tempo de recarga

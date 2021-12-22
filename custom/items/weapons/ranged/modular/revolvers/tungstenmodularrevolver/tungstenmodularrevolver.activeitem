@@ -17,7 +17,7 @@
   
   "acceptsAugmentType" : "pistolammo",
   
-  "animation" : "/custom/items/weapons/ranged/gunwithammo.animation",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "normal.png",
@@ -52,6 +52,7 @@
     "fireTime" : 0.6,
     "baseDps" : 6.25,
     "energyUsage" : 0,
+    "ammoUsage" : 2,
     "inaccuracy" : 0.025,
 	   
     "reloadTime" : 1.5,     //tempo que demora para poder usar a arma

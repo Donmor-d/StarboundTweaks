@@ -1,0 +1,1884 @@
+{
+  // ==============================================================================================
+  //                                        APEX DUNGEONS
+  // ==============================================================================================
+
+  // ================================
+  //        Apex Test Facility
+  // ================================
+
+  "apextestfacilityTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.05, "pool" : "stim"},
+        {"weight" : 0.05, "item" : "apexbrainjar"},
+        {"weight" : 0.05, "item" : "banana"}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apextestfacilityChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "valuableTreasure"},
+        {"weight" : 0.05, "pool" : "stim"},
+        {"weight" : 0.10, "pool" : "goodWeapon"},
+        {"weight" : 0.02, "item" : [ "monitorhead", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apextestfacilityRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apextestfacilityLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "apexhistory2-codex"},
+        {"weight" : 0.33, "item" : "apexhistory6-codex"},
+        {"weight" : 0.33, "item" : "apexhistory9-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //        Apex Miniknog Base
+  // ================================
+
+    "apexbaseTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.05, "item" : [ "throwingblock", 5]},
+        {"weight" : 0.05, "pool" : "stim"},
+        {"weight" : 0.03, "item" : "apexbrainjar"},
+        {"weight" : 0.03, "item" : "plasmadisc"},
+        {"weight" : 0.03, "item" : "greenflask"},
+        {"weight" : 0.03, "item" : "blueflask"},
+        {"weight" : 0.03, "item" : "redflask"},
+        {"weight" : 0.03, "item" : "apexobeysign"},
+        {"weight" : 0.03, "item" : "banana"}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apexbaseChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.4, "pool" : "valuableTreasure"},
+        {"weight" : 0.05, "item" : [ "visorhead", 1]},
+        {"weight" : 0.2, "item" : [ "scientistchest", 1]},
+        {"weight" : 0.2, "item" : [ "scientistlegs", 1]},
+        {"weight" : 0.2, "item" : [ "scientisthead", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apexbaseRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apexbaseLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "apexhistory3-codex"},
+        {"weight" : 0.33, "item" : "apexhistory4-codex"},
+        {"weight" : 0.33, "item" : "apexhistory6-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //        Apex Rebel Camp
+  // ================================
+
+    "apexcampTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.80, "pool" : "basicTreasure"},
+        {"weight" : 0.05, "item" : "banana"},
+        {"weight" : 0.05, "item" : [ "molotov", 1]},
+        {"weight" : 0.05, "pool" : "apexcampLore"},
+        {"weight" : 0.1, "item" : [ "molotov", 2]},
+        {"weight" : 0.01, "item" : "captainshead"},
+        {"weight" : 0.01, "item" : "berethead"},
+        {"weight" : 0.01, "item" : "berethead"},
+        {"weight" : 0.01, "item" : "m1helmethead"}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apexcampChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.30, "pool" : "goodWeapon"},
+        {"weight" : 0.05, "pool" : "apexcampLore"},
+        {"weight" : 0.05, "item" : "captainshead"},
+        {"weight" : 0.05, "item" : "berethead"},
+        {"weight" : 0.025, "item" : "berethead"},
+        {"weight" : 0.025, "item" : "m1helmethead"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apexcampRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apexcampLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "apexhistory7-codex"},
+        {"weight" : 0.5, "item" : "apexhistory10-codex"},
+        {"weight" : 0.2, "item" : "townresistance-codex"},
+        {"weight" : 0.2, "item" : "townsilly-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //       Apex City Apartments
+  // ================================
+
+    "apexcityTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.96, "pool" : "basicTreasure"},
+        {"weight" : 0.04, "item" : "banana"}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apexcityChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.29, "pool" : "goodWeapon"},
+        {"weight" : 0.01, "item" : "bananahead"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apexcityRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "apexcityLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "apexhistory1-codex"},
+        {"weight" : 0.2, "item" : "apexhistory2-codex"},
+        {"weight" : 0.2, "item" : "apexhistory5-codex"},
+        {"weight" : 0.2, "item" : "apexhistory8-codex"},
+        {"weight" : 0.2, "item" : "apexhistory9-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ==============================================================================================
+  //                                        AVIAN DUNGEONS
+  // ==============================================================================================
+
+  // ================================
+  //          Avian Temple
+  // ================================
+
+    "aviantempleTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.29, "pool" : "money"},
+        {"weight" : 0.40, "pool" : "basicTreasure"},
+        {"weight" : 0.075, "pool" : "weapon"},
+        {"weight" : 0.025, "pool" : "goodWeapon"},
+        {"weight" : 0.05, "pool" : "aviantempleLore"},
+        {"weight" : 0.15, "item" : [ "throwingspear", 5]},
+        {"weight" : 0.001, "item" : [ "spearback", 1 ]},
+        {"weight" : 0.001, "item" : [ "tribalwingsback", 1]},
+        {"weight" : 0.001, "item" : [ "guardwingsback", 1]},
+        {"weight" : 0.001, "item" : [ "phoenixhat", 1]},
+        {"weight" : 0.001, "item" : [ "featherhead", 1]},
+        {"weight" : 0.001, "item" : [ "falconwingsback", 1]},
+        {"weight" : 0.001, "item" : [ "aviangodwingsback", 1]}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.70, 1],
+        [0.10, 2]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviantempleChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.40, "pool" : "valuableTreasure"},
+        {"weight" : 0.20, "pool" : "goodWeapon"},
+        {"weight" : 0.03, "item" : [ "tribalwingsback", 1]},
+        {"weight" : 0.03, "item" : [ "bladedwingsback", 1]},
+        {"weight" : 0.03, "item" : [ "guardwingsback", 1]},
+        {"weight" : 0.03, "item" : [ "phoenixhat", 1]},
+        {"weight" : 0.03, "item" : [ "featherhead", 1]},
+        {"weight" : 0.03, "item" : [ "falconwingsback", 1]},
+        {"weight" : 0.03, "item" : [ "aviangodwingsback", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviantempleRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviantempleLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "avianhistory1-codex"},
+        {"weight" : 0.2, "item" : "avianhistory2-codex"},
+        {"weight" : 0.2, "item" : "avianhistory3-codex"},
+        {"weight" : 0.2, "item" : "avianhistory4-codex"},
+        {"weight" : 0.2, "item" : "avianhistory7-codex"},
+        {"weight" : 0.2, "item" : "avianhistory9-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //           Avian Tomb
+  // ================================
+
+    "aviantombTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.06, "item" : [ "bone", 2]},
+        {"weight" : 0.04, "item" : [ "bone", 1]},
+        {"weight" : 0.05, "item" : [ "bone", 4]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviantombChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.40, "pool" : "valuableTreasure"},
+        {"weight" : 0.10, "pool" : "aviantombLore"},
+        {"weight" : 0.10, "pool" : "goodWeapon"},
+        {"weight" : 0.15, "item" : [ "tribalwingsback", 1]},
+        {"weight" : 0.10, "item" : [ "guardwingsback", 1]},
+        {"weight" : 0.10, "item" : [ "falconwingsback", 1]},
+        {"weight" : 0.05, "item" : [ "aviangodwingsback", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviantombRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviantombLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "avianhistory4-codex"},
+        {"weight" : 0.33, "item" : "avianhistory7-codex"},
+        {"weight" : 0.33, "item" : "avianhistory9-codex"},
+        {"weight" : 0.2, "item" : "trappedtomb-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //      Avian Grounded Village
+  // ================================
+
+  "avianvillageTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.95, "pool" : "basicTreasure"},
+        {"weight" : 0.03, "item" : [ "redapple", 1]},
+        {"weight" : 0.02, "item" : [ "redapple", 2]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "avianvillageChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.27, "pool" : "goodWeapon"},
+        {"weight" : 0.03, "item" : "featherhead"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "avianvillageRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "avianvillageLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "avianhistory5-codex"},
+        {"weight" : 0.25, "item" : "avianhistory6-codex"},
+        {"weight" : 0.25, "item" : "avianhistory8-codex"},
+        {"weight" : 0.25, "item" : "avianhistory9-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //       Avian Native Village
+  // ================================
+
+    "aviannativevillageTreasure" : [
+     [1, {
+      "pool" : [
+        {"weight" : 0.90, "pool" : "basicTreasure"},
+        {"weight" : 0.05, "pool" : "aviannativevillageLore"},
+        {"weight" : 0.03, "item" : [ "redapple", 1]},
+        {"weight" : 0.02, "item" : [ "redapple", 2]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviannativevillageChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.26, "pool" : "goodWeapon"},
+        {"weight" : 0.02, "item" : [ "featherhead", 1]},
+        {"weight" : 0.02, "item" : "pyramidhead"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviannativevillageRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviannativevillageLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "avianhistory1-codex"},
+        {"weight" : 0.33, "item" : "avianhistory2-codex"},
+        {"weight" : 0.33, "item" : "avianhistory3-codex"},
+        {"weight" : 0.33, "item" : "avianhistory4-codex"},
+        {"weight" : 0.33, "item" : "avianhistory7-codex"},
+        {"weight" : 0.33, "item" : "avianhistory9-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "aviannativevillageLoreDiary1" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "yolotlisdiary1-codex", 1]}
+      ]
+    }]
+  ],
+
+  "aviannativevillageLoreDiary2" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "yolotlisdiary2-codex", 1]}
+      ]
+    }]
+  ],
+
+  "aviannativevillageLoreDiary3" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "yolotlisdiary3-codex", 1]}
+      ]
+    }]
+  ],
+
+  "aviannativevillageLoreDiary4" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "yolotlisdiary4-codex", 1]}
+      ]
+    }]
+  ],
+
+  // ================================
+  //          Avian Airship
+  // ================================
+
+    "avianairshipTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.87, "pool" : "basicTreasure"},
+        {"weight" : 0.03, "item" : [ "treasuremap", 1]},
+        {"weight" : 0.03, "item" : [ "redapple", 1]},
+        {"weight" : 0.02, "item" : [ "redapple", 2]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "avianairshipChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.10, "pool" : "goodWeapon"},
+        {"weight" : 0.05, "item" : [ "piratehead", 1]},
+        {"weight" : 0.05, "item" : [ "piratechest", 1]},
+        {"weight" : 0.05, "item" : [ "piratelegs", 1]},
+        {"weight" : 0.05, "item" : [ "pirateback", 1]},
+        {"weight" : 0.01, "item" : [ "tricornhat", 1]},
+        {"weight" : 0.01, "item" : [ "eyepatchhead", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "avianairshipRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "avianairshipLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "avianhistory5-codex"},
+        {"weight" : 0.5, "item" : "avianhistory6-codex"},
+        {"weight" : 0.5, "item" : "shipseasick-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ==============================================================================================
+  //                                        FLORAN DUNGEONS
+  // ==============================================================================================
+  // ================================
+  //      Floran Hunting Grounds
+  // ================================
+
+    "floranhuntinggroundsTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.05, "pool" : "floranhuntinggroundsLore"},
+        {"weight" : 0.01, "item" : [ "skulltorch", 1]},
+        {"weight" : 0.01, "item" : [ "florandrum1", 1]},
+        {"weight" : 0.01, "item" : [ "florandrum2", 1]},
+        {"weight" : 0.01, "item" : [ "florandrum1", 1]},
+        {"weight" : 0.01, "item" : [ "florandrum4", 1]},
+        {"weight" : 0.01, "item" : [ "floranarmchair", 1]},
+        {"weight" : 0.01, "item" : [ "huntingtrophy1", 1]},
+        {"weight" : 0.01, "item" : [ "huntingtrophy2", 1]},
+        {"weight" : 0.01, "item" : [ "huntingtrophy3", 1]}
+      ],
+      "poolRounds" : [
+        [0.40, 1],
+        [0.50, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "floranhuntinggroundsChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.30, "pool" : "goodWeapon"},
+        {"weight" : 0.01, "item" : [ "dreadfulskullhead", 1]},
+        {"weight" : 0.01, "item" : [ "gladiatorhead", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "floranhuntinggroundsRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "floranhuntinggroundsLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "floranhistory1-codex"},
+        {"weight" : 0.25, "item" : "floranhistory7-codex"},
+        {"weight" : 0.25, "item" : "floranhistory8-codex"},
+        {"weight" : 0.25, "item" : "floranhistory10-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //          Floran Canyon
+  // ================================
+
+    "florancanyonTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.03, "item" : [ "skulltorch", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum1", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum2", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum3", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum4", 1]},
+        {"weight" : 0.03, "item" : [ "floranarmchair", 1]},
+        {"weight" : 0.03, "item" : [ "huntingtrophy1", 1]},
+        {"weight" : 0.03, "item" : [ "huntingtrophy2", 1]},
+        {"weight" : 0.03, "item" : [ "huntingtrophy3", 1]},
+        {"weight" : 0.03, "item" : [ "huntingspear", 1]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "florancanyonChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.30, "pool" : "goodWeapon"},
+        {"weight" : 0.05, "item" : [ "huntingspear", 5]},
+        {"weight" : 0.01, "item" : [ "mushroomhead", 1]},
+        {"weight" : 0.01, "item" : [ "gladiatorhead", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "florancanyonRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "florancanyonLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "floranhistory1-codex"},
+        {"weight" : 0.2, "item" : "floranhistory5-codex"},
+        {"weight" : 0.2, "item" : "floranhistory7-codex"},
+        {"weight" : 0.2, "item" : "floranhistory8-codex"},
+        {"weight" : 0.2, "item" : "floranhistory10-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //      Floran Treetop Village
+  // ================================
+
+    "floranvillagetowerTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.03, "item" : [ "florandrum1", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum2", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum3", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum4", 1]},
+        {"weight" : 0.03, "item" : [ "floranarmchair", 1]},
+        {"weight" : 0.03, "item" : [ "florancorner", 2]},
+        {"weight" : 0.02, "item" : [ "alienmeat", 1]}
+      ],
+      "poolRounds" : [
+        [0.10, 0],
+        [0.40, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "floranvillagetowerChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.27, "pool" : "goodWeapon"},
+        {"weight" : 0.03, "item" : [ "alienmeat", 1]},
+        {"weight" : 0.03, "item" : "spearback"},
+        {"weight" : 0.01, "item" : "greenfingerhead"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "floranvillagetowerRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "floranvillagetowerLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "floranhistory1-codex"},
+        {"weight" : 0.2, "item" : "floranhistory2-codex"},
+        {"weight" : 0.2, "item" : "floranhistory4-codex"},
+        {"weight" : 0.2, "item" : "floranhistory6-codex"},
+        {"weight" : 0.2, "item" : "floranhistory7-codex"},
+        {"weight" : 0.2, "item" : "floranhistory8-codex"},
+        {"weight" : 0.2, "item" : "floranhistory9-codex"},
+        {"weight" : 0.2, "item" : "floranhistory10-codex"},
+        {"weight" : 0.2, "item" : "florvilarchitect-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //        Floran Hut Village
+  // ================================
+
+    "floranhutvillageTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.03, "item" : [ "wicker", 10]},
+        {"weight" : 0.03, "item" : [ "skulltorch", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum1", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum2", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum3", 1]},
+        {"weight" : 0.03, "item" : [ "florandrum4", 1]},
+        {"weight" : 0.02, "item" : [ "alienmeat", 1]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "floranhutvillageChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.27, "pool" : "goodWeapon"},
+        {"weight" : 0.03, "item" : "spearback"},
+        {"weight" : 0.01, "item" : "greenfingerhead"},
+        {"weight" : 0.02, "item" : [ "alienmeat", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "floranhutvillageRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "floranhutvillageLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "floranhistory1-codex"},
+        {"weight" : 0.2, "item" : "floranhistory2-codex"},
+        {"weight" : 0.2, "item" : "floranhistory3-codex"},
+        {"weight" : 0.2, "item" : "floranhistory4-codex"},
+        {"weight" : 0.2, "item" : "floranhistory6-codex"},
+        {"weight" : 0.2, "item" : "floranhistory7-codex"},
+        {"weight" : 0.2, "item" : "floranhistory8-codex"},
+        {"weight" : 0.2, "item" : "floranhistory9-codex"},
+        {"weight" : 0.2, "item" : "floranhistory10-codex"},
+        {"weight" : 0.2, "item" : "florvilarchitect-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ==============================================================================================
+  //                                        GLITCH DUNGEONS
+  // ==============================================================================================
+
+  // ================================
+  //      Glitch Dungeon Crawler
+  // ================================
+
+    "dungeoncrawlerTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.96, "pool" : "basicTreasure"},
+        {"weight" : 0.02, "pool" : "dungeoncrawlerLore"},
+        {"weight" : 0.02, "item" : "chesspawn"}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "dungeoncrawlerChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.25, "pool" : "goodWeapon"},
+        {"weight" : 0.02, "item" : "quiverback"},
+        {"weight" : 0.02, "item" : "startershield"},
+        {"weight" : 0.01, "item" : "ocarina"},
+        {"weight" : 0.01, "item" : [ "thehrodgardhead", 1]},
+        {"weight" : 0.01, "item" : [ "vikinghead", 1]},
+        {"weight" : 0.01, "item" : [ "valkyriehelm", 1]},
+        {"weight" : 0.01, "item" : [ "soulguise", 1]},
+        {"weight" : 0.01, "item" : [ "rustyskul", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "dungeoncrawlerRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "dungeoncrawlerLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "glitchhistory2-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory5-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory9-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //       Glitch Evil Fortress
+  // ================================
+
+    "evilfortressTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.04, "item" : [ "medievalaxedisplay", 1]},
+        {"weight" : 0.04, "item" : [ "hourglass", 1]},
+        {"weight" : 0.04, "item" : [ "medievalglobe", 1]},
+        {"weight" : 0.04, "item" : [ "darkbattlestandard", 1]},
+        {"weight" : 0.04, "item" : [ "throwingaxe", 3]},
+        {"weight" : 0.02, "item" : [ "bomb", 3]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "evilfortressChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.30, "pool" : "goodWeapon"},
+        {"weight" : 0.02, "item" : [ "executionershead", 1]},
+        {"weight" : 0.02, "item" : [ "executionerschest", 1]},
+        {"weight" : 0.01, "item" : [ "plumeknighthead", 1]},
+        {"weight" : 0.01, "item" : [ "knighthead", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "evilfortressRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "evilfortressLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "glitchhistory5-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory6-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory7-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory8-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory9-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //         Glitch Castle
+  // ================================
+
+    "glitchcastleTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.95, "pool" : "basicTreasure"},
+        {"weight" : 0.03, "item" : [ "redapple", 1]},
+        {"weight" : 0.02, "item" : [ "redapple", 2]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "glitchcastleChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.30, "pool" : "goodWeapon"},
+        {"weight" : 0.03, "item" : [ "jesterhead", 1]},
+        {"weight" : 0.03, "item" : [ "herocaphead", 1]},
+        {"weight" : 0.26, "pool" : "goodWeapon"},
+        {"weight" : 0.04, "item" : "knighthead"},
+        {"weight" : 0.03, "item" : "nylonguitar"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "glitchcastleRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "glitchcastleLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "glitchhistory6-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory7-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory8-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory9-codex"},
+        {"weight" : 0.2, "item" : "castleguest-codex"},
+        {"weight" : 0.2, "item" : "castlemisunderstanding-codex"},
+        {"weight" : 0.2, "item" : "castleprefix-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //        Glitch Village
+  // ================================
+
+    "glitchvillageTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.95, "pool" : "basicTreasure"},
+        {"weight" : 0.03, "item" : [ "redapple", 1]},
+        {"weight" : 0.02, "item" : [ "redapple", 2]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "glitchvillageChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.26, "pool" : "goodWeapon"},
+        {"weight" : 0.02, "item" : "craftsmenchest"},
+        {"weight" : 0.02, "item" : "craftsmenlegs"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "glitchvillageRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "glitchvillageLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "glitchhistory1-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory2-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory3-codex"},
+        {"weight" : 0.2, "item" : "glitchhistory4-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ==============================================================================================
+  //                                        HUMAN DUNGEONS
+  // ==============================================================================================
+
+  // ================================
+  //          Human Prison
+  // ================================
+
+    "humanprisonTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.88, "pool" : "basicTreasure"},
+        {"weight" : 0.02, "item" : [ "molotov", 1]},
+        {"weight" : 0.02, "item" : [ "basictv", 1]},
+        {"weight" : 0.02, "item" : [ "prisonfloodlight", 2]},
+        {"weight" : 0.02, "item" : [ "displaylight", 2]},
+        {"weight" : 0.02, "item" : [ "barbedwire", 2]},
+        {"weight" : 0.02, "item" : [ "hazardtapeh", 5]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "humanprisonChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.30, "pool" : "goodWeapon"},
+        {"weight" : 0.05, "item" : [ "molotov", 3]},
+        {"weight" : 0.28, "pool" : "goodWeapon"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "humanprisonRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "humanprisonLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "humanhistory5-codex"},
+        {"weight" : 0.2, "item" : "humanhistory7-codex"},
+        {"weight" : 0.2, "item" : "humanhistory8-codex"},
+        {"weight" : 0.2, "item" : "humanhistory9-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //          Human Campsite
+  // ================================
+
+    "humancampTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.05, "pool" : "humancampLore"},
+        {"weight" : 0.02, "item" : [ "lavalamp1", 1]},
+        {"weight" : 0.02, "item" : [ "bunkerposter2", 1]},
+        {"weight" : 0.02, "item" : [ "basictv", 1]},
+        {"weight" : 0.02, "item" : [ "jukebox", 1]},
+        {"weight" : 0.01, "item" : [ "afrowighead", 1]},
+        {"weight" : 0.01, "item" : [ "caphead", 1]},
+        {"weight" : 0.01, "item" : [ "coolfezhead", 1]},
+        {"weight" : 0.01, "item" : [ "gagnosehead", 1]},
+        {"weight" : 0.01, "item" : [ "hobohead", 1]},
+        {"weight" : 0.01, "item" : [ "glasses1head", 1]},
+        {"weight" : 0.01, "item" : [ "winterscarfhead", 1]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "humancampChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.05, "item" : [ "afrowighead", 1]},
+        {"weight" : 0.05, "item" : [ "caphead", 1]},
+        {"weight" : 0.05, "item" : [ "coolfezhead", 1]},
+        {"weight" : 0.05, "item" : [ "gagnosehead", 1]},
+        {"weight" : 0.05, "item" : [ "hobohead", 1]},
+        {"weight" : 0.05, "item" : [ "glasses1head", 1]},
+        {"weight" : 0.05, "item" : [ "winterscarfhead", 1]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "humancampRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "humancampLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "humanhistory1-codex"},
+        {"weight" : 0.2, "item" : "humanhistory2-codex"},
+        {"weight" : 0.2, "item" : "humanhistory3-codex"},
+        {"weight" : 0.2, "item" : "humanhistory4-codex"},
+        {"weight" : 0.2, "item" : "humanhistory5-codex"},
+        {"weight" : 0.2, "item" : "humanhistory6-codex"},
+        {"weight" : 0.2, "item" : "humanhistory7-codex"},
+        {"weight" : 0.2, "item" : "humanhistory8-codex"},
+        {"weight" : 0.2, "item" : "humanhistory10-codex"},
+        {"weight" : 0.2, "item" : "colonystory1-codex"},
+        {"weight" : 0.2, "item" : "colonystory2-codex"},
+        {"weight" : 0.2, "item" : "colonystory3-codex"},
+        {"weight" : 0.2, "item" : "colonystory4-codex"},
+        {"weight" : 0.2, "item" : "colonystory5-codex"},
+        {"weight" : 0.2, "item" : "colonystory6-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ==============================================================================================
+  //                                        HYLOTL DUNGEONS
+  // ==============================================================================================
+
+  // ================================
+  //     Hylotl Underwater Ruins
+  // ================================
+
+    "hylotlruinedcityTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.90, "pool" : "basicTreasure"},
+        {"weight" : 0.05, "pool" : "basicTreasure"},
+        {"weight" : 0.02, "item" : [ "throwingstar", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink1", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink2", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink3", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink4", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink5", 2]}
+
+      ],
+      "poolRounds" : [
+        [0.10, 0],
+        [0.40, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlruinedcityChestTreasure" : [
+   [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.28, "pool" : "goodWeapon"},
+        {"weight" : 0.02, "item" : "deepdiverhead"},
+        {"weight" : 0.02, "item" : "hylotlpainting1"},
+        {"weight" : 0.02, "item" : "hylotlpainting2"},
+        {"weight" : 0.02, "item" : "hylotlpainting3"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlruinedcityRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlruinedcityLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "hylotlhistory1-codex"},
+        {"weight" : 0.25, "item" : "hylotlhistory2-codex"},
+        {"weight" : 0.25, "item" : "hylotlhistory6-codex"},
+        {"weight" : 0.25, "item" : "hylotlhistory8-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //      Hylotl Ruined Castle
+  // ================================
+
+    "hylotlruinedcastleTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy1"},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy2"},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy3"},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy4"},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy5"}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlruinedcastleChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.82, "pool" : "valuableTreasure"},
+        {"weight" : 0.10, "pool" : "goodWeapon"},
+        {"weight" : 0.02, "item" : "deepdiverhead"},
+        {"weight" : 0.02, "item" : "hylotlpainting1"},
+        {"weight" : 0.02, "item" : "hylotlpainting2"},
+        {"weight" : 0.02, "item" : "hylotlpainting3"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlruinedcastleRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlruinedcastleLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "hylotlhistory1-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory2-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //      Hylotl Underwater City
+  // ================================
+
+    "hylotloceancityTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "basicTreasure"},
+        {"weight" : 0.02, "item" : [ "smashabledrink1", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink2", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink3", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink4", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink5", 2]},
+        {"weight" : 0.05, "item" : [ "pressurisedbeam", 5]},
+        {"weight" : 0.05, "item" : [ "pressurisedgirder", 10]},
+        {"weight" : 0.05, "item" : [ "pressurisedplatform", 10]},
+        {"weight" : 0.05, "item" : [ "underwaterlight", 1]},
+        {"weight" : 0.05, "item" : [ "hylotlmovieposter2", 1]},
+        {"weight" : 0.05, "item" : [ "hylotlmovieposter3", 1]},
+        {"weight" : 0.05, "item" : [ "ornatetorch", 1]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotloceancityChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.26, "pool" : "goodWeapon"},
+        {"weight" : 0.02, "item" : "kimonochest"},
+        {"weight" : 0.02, "item" : "glasses3eyes"},
+        {"weight" : 0.02, "item" : "kimonolegs"},
+        {"weight" : 0.05, "item" : "pressuredoor"},
+        {"weight" : 0.05, "item" : "hylotldrinks"},
+        {"weight" : 0.05, "item" : "hylotlradio"},
+        {"weight" : 0.02, "item" : "arcadedance"},
+        {"weight" : 0.05, "item" : "hockeytable"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotloceancityRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotloceancityLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "hylotlhistory1-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory2-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory5-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory6-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory7-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //       Hylotl Surface City
+  // ================================
+
+    "hylotlcityTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.88, "pool" : "basicTreasure"},
+        {"weight" : 0.02, "item" : [ "hylotlfloorornament", 1]},
+        {"weight" : 0.02, "item" : [ "smashabledrink1", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink2", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink3", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink4", 2]},
+        {"weight" : 0.02, "item" : [ "smashabledrink5", 2]},
+        {"weight" : 0.02, "item" : [ "oillantern1", 2]},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy1"},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy2"},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy3"},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy4"},
+        {"weight" : 0.02, "item" : "hylotlcalligraphy5"}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlcityChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.26, "pool" : "goodWeapon"},
+        {"weight" : 0.02, "item" : "traditionalchest"},
+        {"weight" : 0.02, "item" : "traditionallegs"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlcityRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "hylotlcityLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "hylotlhistory1-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory2-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory3-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory4-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory5-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory6-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory7-codex"},
+        {"weight" : 0.5, "item" : "hylotlhistory8-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ==============================================================================================
+  //                                        NOVAKID DUNGEONS
+  // ==============================================================================================
+
+  // =======================
+  //      Novakid Town
+  // =======================
+
+  "novakidvillageTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.95, "pool" : "basicTreasure"},
+        {"weight" : 0.01, "item" : [ "smashabledrink1", 1]},
+        {"weight" : 0.01, "item" : [ "smashabledrink2", 1]},
+        {"weight" : 0.01, "item" : [ "smashabledrink3", 1]},
+        {"weight" : 0.01, "item" : [ "smashabledrink4", 1]},
+        {"weight" : 0.01, "item" : [ "smashabledrink5", 1]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "novakidvillageChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.27, "pool" : "goodWeapon"},
+        {"weight" : 0.01, "item" : "cowboyhead"},
+        {"weight" : 0.01, "item" : "cowboychest"},
+        {"weight" : 0.01, "item" : "cowboylegs"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "novakidvillageRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  "novakidvillageSaloonTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.02, "item" : [ "smashabledrink1", 1]},
+        {"weight" : 0.02, "item" : [ "smashabledrink2", 1]},
+        {"weight" : 0.02, "item" : [ "smashabledrink3", 1]},
+        {"weight" : 0.02, "item" : [ "smashabledrink4", 1]},
+        {"weight" : 0.02, "item" : [ "smashabledrink5", 1]}
+      ],
+      "poolRounds" : [
+        [0.20, 3],
+        [0.20, 4],
+        [0.20, 5],
+        [0.20, 6],
+        [0.20, 7]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+
+  "novakidvillageMiningTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.2, "pool" : "money"},
+        {"weight" : 0.2, "pool" : "ore"},
+        {"weight" : 0.2, "item" : ["corefragmentore", 1]},
+        {"weight" : 0.15, "item" : ["cobblestonematerial", 15]},
+        {"weight" : 0.15, "item" : [ "climbingrope", 3]},
+        {"weight" : 0.1, "item" : ["darkwoodmaterial", 10]},
+        {"weight" : 0.1, "item" : [ "torch", 5]},
+        {"weight" : 0.1, "pool" : "tool"},
+        {"weight" : 0.08, "item" : [ "oillantern1", 2]},
+        {"weight" : 0.05, "item" : [ "bomb", 1]},
+        {"weight" : 0.02, "pool" : "weapon"}
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+
+  "novakidvillageLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.33, "item" : "hylotlmission9-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ==============================================================================================
+  //                                        MISC DUNGEONS
+  // ==============================================================================================
+
+  // ================================
+  //           Old Sewer
+  // ================================
+
+    "glitchsewerTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "glitchsewerChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.10, "pool" : "glitchsewerLore"},
+        {"weight" : 0.19, "pool" : "goodWeapon"},
+        {"weight" : 0.01, "pool" : "bomb"}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "glitchsewerRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+  "glitchsewerLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "sewerdayout-codex"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //          Natural Cave
+  // ================================
+
+  "naturalcaveTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.85, "pool" : "basicTreasure"},
+        {"weight" : 0.15, "item" : [ "corefragmentore", 1]},
+        {"weight" : 0.05, "item" : [ "corefragmentore", 2]}
+      ],
+      "poolRounds" : [
+        [0.30, 0],
+        [0.20, 1],
+        [0.40, 2],
+        [0.10, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "naturalcaveChestTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "valuableTreasure"},
+        {"weight" : 0.30, "pool" : "goodWeapon"},
+        {"weight" : 0.10, "item" : [ "corefragmentore", 2]},
+        {"weight" : 0.05, "item" : [ "corefragmentore", 3]}
+      ],
+      "poolRounds" : [
+        [0.55, 1],
+        [0.40, 2],
+        [0.05, 3]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "naturalcaveRareTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+  "naturalcaveLore" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1, "pool" : "LargeDungeonReward"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //          Outpost
+  // ================================
+
+  "OutpostUndersideChest" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "insidioushead", 1]}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ],
+
+  // ================================
+  //          Universal Unique Weapon Pool for testing
+  // ================================
+
+  "LargeDungeonReward" : [
+    [1, {
+      "fill" : [
+        {"pool" : "basicTreasure"},
+        {"pool" : "basicTreasure"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "uniqueWeapon"},
+        {"weight" : 0.5, "pool" : "goodWeapon"},
+        {"weight" : 0.5, "item" : "modularframe"}
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    }]
+  ]
+}

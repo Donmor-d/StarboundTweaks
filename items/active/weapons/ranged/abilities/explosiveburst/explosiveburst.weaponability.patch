@@ -15,6 +15,11 @@
     "value": 0
   },
   {
+    "op": "add",
+    "path": "/ability/ammoUsage",
+    "value": 8
+  },
+  {
     "op": "replace",
     "path": "/ability/stances/fire/allowRotate",
     "value": true

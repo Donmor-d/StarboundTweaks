@@ -1,16 +1,7 @@
 [
   {
     "op": "add",
-    "path": "/fulllbright",
+    "path": "/fullbright",
     "value": true
-  },
-  {
-    "op": "add",
-    "path": "/lightColor",
-    "value": [
-      68,
-      68,
-      68
-    ]
   }
 ]

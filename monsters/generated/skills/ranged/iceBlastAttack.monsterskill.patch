@@ -1,0 +1,34 @@
+[
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/cooldown",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/statusEffects",
+    "value": [
+      "frostslow"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/speed",
+    "value": 30
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/projectiles/spit1.ogg"
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/projectiles/spit2.ogg"
+  }
+]

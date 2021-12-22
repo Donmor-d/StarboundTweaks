@@ -1,0 +1,39 @@
+[
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/cooldown",
+    "value": 2
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/winddownState",
+    "value": ""
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/winddownTime",
+    "value": 0.5
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/speed",
+    "value": 10
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/statusEffects",
+    "value": [
+      "electrified"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/projectiles/glitchscratch.ogg"
+  }
+]

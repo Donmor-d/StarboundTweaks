@@ -30,6 +30,7 @@
        "fireTime" : 1.5,
        "baseDps" : 5,
        "energyUsage" : 0,
+       "ammoUsage" : 7.5,
        "inaccuracy" : 0.0,
 
       "projectileType": "electricplasmarocket",

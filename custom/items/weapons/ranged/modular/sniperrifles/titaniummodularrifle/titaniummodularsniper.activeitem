@@ -15,12 +15,12 @@
   
   "primaryAltAbility": "allow",  //faz com que a abilidade secundaria seja ativada por m1, usado nos arquivos de munição
 
-  "inventoryIcon" : "titaniummodularsniper.png",
+  "inventoryIcon" : "normal.png",
 
-  "animation" : "/custom/items/weapons/ranged/gunwithammo.animation",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "titaniummodularsniper.png",
+    "middle" : "normal.png",
     "barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
@@ -34,7 +34,9 @@
       }
     },
     "sounds" : {
-      "fire" : ["/sfx/gun/rifle1.ogg"]
+      "fire" : ["/sfx/gun/rifle1.ogg"],
+      "charge" : ["/sfx/melee/charge_up1.ogg"],
+      "charged" : ["/sfx/tech/tech_dash_cooldown1.ogg"]
     }
   },
 
@@ -52,6 +54,7 @@
     "fireTime" : 1.0,
     "baseDps" : 10,
     "energyUsage" : 0,
+    "ammoUsage" : 3,
     "inaccuracy" : 0.01,
 	   
     "reloadTime" : 1.5,     //tempo que demora para poder usar a arma

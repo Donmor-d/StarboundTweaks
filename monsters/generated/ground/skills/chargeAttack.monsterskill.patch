@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/cooldown",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/chargeSpeed",
+    "value": 40
+  }
+]

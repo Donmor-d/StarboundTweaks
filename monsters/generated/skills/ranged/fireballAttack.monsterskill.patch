@@ -1,0 +1,17 @@
+[
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/cooldown",
+    "value": 2
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/projectiles/fireball_spit.ogg"
+  }
+]

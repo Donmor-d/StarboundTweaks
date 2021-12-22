@@ -1,0 +1,11 @@
+{
+  "name" : "mediumammogain",
+  "effectConfig" : {
+    "ammoGain" : 25
+  },
+  "defaultDuration" : 0.01,
+
+  "scripts" : [
+    "ammogain.lua"
+  ]
+}

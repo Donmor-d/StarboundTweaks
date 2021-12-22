@@ -1,34 +1,28 @@
 [
   {
     "op": "replace",
-    "path": "",
+    "path": "/prerequisites/0",
+    "value": "techscientist1"
+  },
+  {
+    "op": "replace",
+    "path": "/completionText",
+    "value": "Marvelous! With these additions the ^orange;Pulse Jump Tech^white; is ready. Here, you can have one."
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/showTech",
     "value": [
-      {
-        "op": "replace",
-        "path": "/prerequisites/0",
-        "value": "techscientist1"
-      },
-      {
-        "op": "replace",
-        "path": "/completionText",
-        "value": "Marvelous! With these additions the ^orange;Pulse Jump Tech^white; is ready. Here, you can have one."
-      },
-      {
-        "op": "add",
-        "path": "/scriptConfig/showTech",
-        "value": [
-          "multijump",
-          "rocketjump",
-          "walljump"
-        ]
-      },
-      {
-        "op": "add",
-        "path": "/scriptConfig/equipTech",
-        "value": [
-          "doublejump"
-        ]
-      }
+      "multijump",
+      "rocketjump",
+      "walljump"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/equipTech",
+    "value": [
+      "doublejump"
     ]
   }
 ]

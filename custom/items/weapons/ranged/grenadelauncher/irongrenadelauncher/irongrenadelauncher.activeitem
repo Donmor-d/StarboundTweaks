@@ -64,8 +64,7 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    //"scripts" : ["/items/active/weapons/ranged/gunfire.lua"], original
-	"scripts" : ["/custom/items/weapons/ranged/gunfireammo.lua"],
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
 	
     "class" : "GunFire",
 
@@ -74,14 +73,14 @@
     "energyUsage" : 0,
     "inaccuracy" : 0,
 	
-	"ammo" : 1,
+	"ammoUsage" : 0,
 	   
 	"reloadTime" : 2,
 
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "grenade",
+    "projectileType" : "loosecannongrenade",
     "projectileParameters" : {
 		"bounces" : 0
     },

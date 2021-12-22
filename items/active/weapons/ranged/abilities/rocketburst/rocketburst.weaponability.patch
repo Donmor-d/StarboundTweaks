@@ -10,6 +10,11 @@
     "value": 0
   },
   {
+    "op": "add",
+    "path": "/ability/ammoUsage",
+    "value": 2
+  },
+  {
     "op": "replace",
     "path": "/ability/fireTime",
     "value": 0.5

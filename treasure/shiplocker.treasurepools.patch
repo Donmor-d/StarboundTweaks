@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/starterTreasure/0/1/fill/2",
+    "value": {
+      "item": [
+        "smallammopack",
+        10
+      ]
+    }
+  }
+]

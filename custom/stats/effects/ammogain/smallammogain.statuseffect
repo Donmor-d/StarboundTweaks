@@ -1,0 +1,11 @@
+{
+  "name" : "smallammogain",
+  "effectConfig" : {
+    "ammoGain" : 12.5
+  },
+  "defaultDuration" : 0,
+
+  "scripts" : [
+    "ammogain.lua"
+  ]
+}

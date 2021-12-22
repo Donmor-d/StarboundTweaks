@@ -8,11 +8,11 @@
 	{
 	"op" : "replace",
 	"path" : "/parameters/crystalSineBeamAttack/skillTime",
-	"value" : 15
+	"value" : 18
 	},
 	{
 	"op" : "replace",
 	"path" : "/parameters/crystalSineBeamAttack/rotateInterval",
-	"value" : 15
+	"value" : 18
 	}
 ]

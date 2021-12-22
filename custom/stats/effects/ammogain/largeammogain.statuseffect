@@ -1,0 +1,11 @@
+{
+  "name" : "largeammogain",
+  "effectConfig" : {
+    "ammoGain" : 50
+  },
+  "defaultDuration" : 0.01,
+
+  "scripts" : [
+    "ammogain.lua"
+  ]
+}

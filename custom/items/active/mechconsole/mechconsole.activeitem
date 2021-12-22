@@ -5,9 +5,13 @@
   "category" : "",
   "maxStack" : 1,
   "inventoryIcon" : "mechconsole.png",
-  "description" : "A portable console that allows access to the mech assembly station",
+  "description" : "A portable console that allows easy access to the mech assembly station",
   "shortdescription" : "Mech Console",
   "twoHanded" : true,
+
+  "fireOffset" : [1.0, 0.0],
+
+  "animationCustom" : {},
 
   "scripts" : ["mechconsole.lua"],
   "questId" : ""

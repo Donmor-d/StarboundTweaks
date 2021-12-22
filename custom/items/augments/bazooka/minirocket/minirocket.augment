@@ -52,6 +52,7 @@
        "fireTime" : 0.5,
        "baseDps" : 12,
        "energyUsage" : 0,
+       "ammoUsage" : 2,
        "inaccuracy" : 0.05,
 
        "fireType" : "burst",

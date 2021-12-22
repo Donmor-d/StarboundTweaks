@@ -5,12 +5,22 @@
   },
   {
     "op": "add",
+    "path": "/ability/ammoTypes/0/ammoUsage",
+    "value": 2
+  },
+  {
+    "op": "add",
     "path": "/ability/ammoTypes/0/baseDps",
     "value": 16
   },
   {
     "op": "remove",
     "path": "/ability/ammoTypes/1/energyUsage"
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoTypes/1/ammoUsage",
+    "value": 5
   },
   {
     "op": "add",
@@ -23,12 +33,22 @@
   },
   {
     "op": "add",
+    "path": "/ability/ammoTypes/2/ammoUsage",
+    "value": 4
+  },
+  {
+    "op": "add",
     "path": "/ability/ammoTypes/2/baseDps",
     "value": 12
   },
   {
     "op": "remove",
     "path": "/ability/ammoTypes/3/energyUsage"
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoTypes/3/ammoUsage",
+    "value": 4
   },
   {
     "op": "add",
@@ -41,12 +61,22 @@
   },
   {
     "op": "add",
+    "path": "/ability/ammoTypes/4/ammoUsage",
+    "value": 4
+  },
+  {
+    "op": "add",
     "path": "/ability/ammoTypes/4/baseDps",
     "value": 12
   },
   {
     "op": "remove",
     "path": "/ability/ammoTypes/5/energyUsage"
+  },
+  {
+    "op": "add",
+    "path": "/ability/ammoTypes/5/ammoUsage",
+    "value": 4
   },
   {
     "op": "remove",

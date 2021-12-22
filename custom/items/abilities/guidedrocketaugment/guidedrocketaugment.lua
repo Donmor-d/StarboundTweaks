@@ -41,7 +41,7 @@ function GuidedRocketAugment:update(dt, fireMode, shiftHeld)
     and self.cooldownTimer == 0
     and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
-    if self.fireType == "auto" and status.overConsumeResource("energy", self:energyPerShot()) then
+    if self.fireType == "auto" and status.overConsumeResource("ammo", ammoUsage) then
       self:setState(self.auto)
     elseif self.fireType == "burst" then
       self:setState(self.burst)

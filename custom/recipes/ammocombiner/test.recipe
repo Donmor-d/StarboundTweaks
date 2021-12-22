@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "ironore", "count" : 1 },
+	{ "item" : "copperore", "count" : 2 }
+  ],
+  "output" : { "item" : "electricgasgrenade", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

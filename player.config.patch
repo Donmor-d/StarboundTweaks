@@ -7,17 +7,7 @@
 	{
 	"op": "replace",
 	"path": "/statusControllerSettings/stats/fallDamageMultiplier/baseValue",
-	"value": 0.5
-	},
-	{
-	"op": "replace",
-	"path": "/statusControllerSettings/stats/energyRegenPercentageRate/baseValue",
-	"value": 0.25 //4 second recharge
-	},
-	{
-	"op": "replace",
-	"path": "/statusControllerSettings/stats/maxEnergy/baseValue",
-	"value": 200 
+	"value": 0.75
 	},
 	{
 	"op": "replace",
@@ -143,5 +133,16 @@
 	"op" : "add",
 	"path" : "/defaultBlueprints/tier1/-",
 	"value" : { "item" : "shotgunstickyshell" }
+	},
+	{
+	"op": "add",
+	"path": "/statusControllerSettings/stats/maxAmmo",
+	"value": { "baseValue": 50 }
+	},
+	{
+	"op": "add",
+	"path": "/statusControllerSettings/resources/ammo",
+	"value": { "maxStat": "maxAmmo",
+		  		"inicialPercentage": 0 }
 	}
 ]

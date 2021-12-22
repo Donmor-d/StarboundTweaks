@@ -20,6 +20,11 @@
     "value": 0
   },
   {
+    "op": "add",
+    "path": "/primaryAbility/ammoUsage",
+    "value": 5
+  },
+  {
     "op": "replace",
     "path": "/primaryAbility/stances/fire/allowRotate",
     "value": true

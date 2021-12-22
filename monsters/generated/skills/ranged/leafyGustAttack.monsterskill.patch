@@ -1,0 +1,52 @@
+[
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/cooldown",
+    "value": 2
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/winddownState",
+    "value": ""
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/winddownTime",
+    "value": 0.1
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/objects/plant_break1.ogg"
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/objects/plant_break2.ogg"
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/objects/plant_break3.ogg"
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/objects/plant_break4.ogg"
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/objects/plant_break5.ogg"
+  },
+  {
+    "op": "add",
+    "path": "/animationParameters/sounds/fire/-",
+    "value": "/sfx/objects/plant_break6.ogg"
+  }
+]

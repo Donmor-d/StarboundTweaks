@@ -1,0 +1,13 @@
+{
+  "particleEmitters" : {},
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [255, 100, 100]
+    }
+  },
+  "sounds" : {
+    "donked" : [ "/custom/sfx/doubledonk/doubledonk.ogg" ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "itemName" : "largeammopack",
+  "rarity" : "Uncommon",
+  "price" : 250,
+  "maxStack" : 20,
+  "category" : "largeammopack",
+  "inventoryIcon" : "largeammopack.png",
+  "description" : "A large ammo pack, made for military use, using it restores 50 ammo.",
+  "shortdescription" : "Large Ammo Pack",
+  "effects" : [ [
+      {
+        "effect" : "largeammogain"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "largeammouse" ],
+  "blockingEffects" : [ ]
+}

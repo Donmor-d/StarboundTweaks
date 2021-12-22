@@ -1,0 +1,27 @@
+[
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/cooldown",
+    "value": 2
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/winddownState",
+    "value": ""
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/winddownTime",
+    "value": 0.1
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/maximumRange",
+    "value": 40
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/minimumRange",
+    "value": 0
+  }
+]

@@ -4,7 +4,6 @@ require "/scripts/vec2.lua"
 BowShot = WeaponAbility:new()
 
 function BowShot:init()
-  self.energyPerShot = self.energyPerShot or 0
 
   self.drawTime = 0
   self.cooldownTimer = self.cooldownTime
@@ -21,7 +20,7 @@ function BowShot:update(dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 
-  if not self.weapon.currentAbility and self.fireMode == (self.activatingFireMode or self.abilitySlot) and self.cooldownTimer == 0 and (self.energyPerShot == 0 or not status.resourceLocked("energy")) then
+  if not self.weapon.currentAbility and self.fireMode == (self.activatingFireMode or self.abilitySlot) and self.cooldownTimer == 0 and (self.ammoUsage == 0 or not status.resourceLocked("ammo")) then
     self:setState(self.draw)
   end
 end
@@ -61,7 +60,7 @@ function BowShot:fire()
   animator.stopAllSounds("draw")
   animator.setGlobalTag("drawFrame", "0")
 
-  if not world.pointTileCollision(self:firePosition()) and status.overConsumeResource("energy", self.energyPerShot) then
+  if not world.pointTileCollision(self:firePosition()) and status.overConsumeResource("ammo", self.ammoUsage) then
     world.spawnProjectile(
         self:perfectTiming() and self.powerProjectileType or self.projectileType,
         self:firePosition(),

@@ -1,26 +1,28 @@
 ------------AssaultRifle--------
--elemental bullets
+-elementalriflebullet
 	-poison
 	-ice
 	-fire
 	-electric
--spray bullet
+-sprayriflebullet
 ------------GrenadeLauncher----------
--cluster grenade
--bouncing grenade
+-splitgrenade
+-bouncinggrenade
 ------------MachinePistol------------
--speeding bullet
--soapy bullet
+-speedingmachinepistolbullet
+-soapymachinepistolbullet
 ------------Pistol----------
--ghost bullet
+-ghostrevolverbullet
 ------------RocketLauncher-----------
--mini rocket
--elemental rockets
+-minirocket
+-elementalrocket
 	-poison
 	-ice
 	-fire
 	-electric
 ------------Shotgun----------
--slugshell
--grapeshell
+-slugshotgunshell
+-grapeshotgunshell
 ------------SniperRifle------------
+-chargedsniperbullet
+-splitsniperbullet

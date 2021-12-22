@@ -1,0 +1,33 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/skillCount",
+    "value": 2
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/specialSkills",
+    "value": [
+      "waterGunAttack",
+      "shockingBoltAttack",
+      "acidicSpitAttack",
+      "fireballAttack",
+      "rockShotAttack",
+      "miniDragonBreathAttack",
+      "acidSprayAttack",
+      "eyeballShotAttack",
+      "mudBallAttack",
+      "boneRainAttack"
+    ]
+  },
+  {
+    "op":"add",
+       "path":"/baseParameters/behaviorConfig/windupState",
+    "value": "windup"
+  },
+ {
+    "op":"add",
+       "path":"/baseParameters/behaviorConfig/winddownState",
+    "value": "winddown"
+  }
+]

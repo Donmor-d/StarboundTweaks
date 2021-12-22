@@ -7,6 +7,10 @@ GunFire = WeaponAbility:new()
 function GunFire:init()
   self.weapon:setStance(self.stances.idle)
 
+  if self.ammoUsage == nil then
+    self.ammoUsage = self.energyUsage or 0
+  end
+
   self.cooldownTimer = self.reloadTime --increased delay until you can fire
 
   if self.cooldownTimer == nil then
@@ -27,18 +31,26 @@ function GunFire:update(dt, fireMode, shiftHeld)
     animator.setLightActive("muzzleFlash", false)
   end
 
+  if self.fireMode == "primary" 
+  and self.cooldownTimer == 0
+  and status.resourceLocked("ammo") then
+    
+    animator.playSound("noAmmo")
+    self.cooldownTimer = self.fireTime
+  end  
+
   if self.fireMode == "primary"
     and not self.weapon.currentAbility
+    and not status.resourceLocked("ammo") --New resource, works like energy but needs to be refilled manually
     and self.cooldownTimer == 0     
     and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
-    if self.fireType == "auto" then
+    if self.fireType == "auto" and status.overConsumeResource("ammo", self.ammoUsage) then
       self:setState(self.auto)
     elseif self.fireType == "burst" then
       self:setState(self.burst)
     end
   end
-  
 end
 
 function GunFire:auto()
@@ -60,7 +72,7 @@ function GunFire:burst()
   self.weapon:setStance(self.stances.fire)
 
   local shots = self.burstCount
-  while shots > 0 do
+  while shots > 0 and status.overConsumeResource("ammo", self.ammoUsage) do
     self:fireProjectile()
     self:muzzleFlash()
     shots = shots - 1
@@ -141,10 +153,6 @@ function GunFire:aimVector(inaccuracy)
   local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
-end
-
-function GunFire:energyPerShot()
-  return self.energyUsage * self.fireTime * (self.energyUsageMultiplier or 1.0)
 end
 
 function GunFire:damagePerShot()

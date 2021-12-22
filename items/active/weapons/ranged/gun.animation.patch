@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/sounds/noAmmo",
+    "value": [ "/custom/sfx/reloadwithping/noAmmo.ogg" ]
+  }
+]

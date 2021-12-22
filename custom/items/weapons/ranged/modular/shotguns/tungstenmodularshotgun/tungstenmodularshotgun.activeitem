@@ -15,7 +15,7 @@
   
   "acceptsAugmentType" : "shotgunammo",               //adiciona munição que usa
 
-  "animation" : "/custom/items/weapons/ranged/gunwithammo.animation",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "normal.png",
@@ -36,7 +36,7 @@
     }
   },
 
-  "baseOffset" : [0.9, 0.25],
+  "baseOffset" : [0.3, 0.0],
   "muzzleOffset" : [2, 0.125],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
@@ -50,6 +50,7 @@
     "fireTime" : 1.2,
     "baseDps" : 10.5,
     "energyUsage" : 0,
+    "ammoUsage" : 3,
     "inaccuracy" : 0.12,
 	
     "reloadTime" : 1.5,     //tempo que demora para poder usar a arma
@@ -68,6 +69,8 @@
         "weaponRotation" : 0,
         "twoHanded" : true,
 
+        "frontArmFrame" : "jump.1",
+
         "allowRotate" : true,
         "allowFlip" : true
       },
@@ -76,7 +79,9 @@
         "armRotation" : 6,
         "weaponRotation" : 10,
         "twoHanded" : true,
-		"recoil" : true,
+	    	"recoil" : true,
+
+        "frontArmFrame" : "jump.1",
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -86,7 +91,9 @@
         "armRotation" : 6,
         "weaponRotation" : 10,
         "twoHanded" : true,
-		"recoil" : true,
+		    "recoil" : true,
+
+        "frontArmFrame" : "jump.1",
 
         "allowRotate" : true,
         "allowFlip" : true

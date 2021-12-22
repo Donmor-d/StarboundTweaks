@@ -1,0 +1,31 @@
+[
+  {
+    "op": "add",
+    "path": "/animatedParts/stateTypes/body/states/fire/properties",
+    "value": {
+      "persistentSound": "",
+      "persistentSoundStopTime": 0.25,
+      "persistentSoundRangeMultiplier": 0.15
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/animatedParts/parts/head/partStates/body/charge/properties/image",
+    "value": "<partImage>:fire.1"
+  },
+  {
+    "op": "replace",
+    "path": "/animatedParts/parts/head/partStates/body/firewindup/properties/image",
+    "value": "<partImage>:rotation"
+  },
+  {
+    "op": "replace",
+    "path": "/animatedParts/parts/head/partStates/body/fire/properties/image",
+    "value": "<partImage>:rotation"
+  },
+  {
+    "op": "replace",
+    "path": "/animatedParts/parts/head/partStates/body/firewinddown/properties/image",
+    "value": "<partImage>:rotation"
+  }
+]

@@ -30,7 +30,7 @@
       "dualImage" : "ammostation.png:<color>.<frame>",
       "imagePosition" : [-24, 0],
       "frames" : 19,
-      "animationCycle" : 1.0,
+      "animationCycle" : 1.5,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]

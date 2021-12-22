@@ -16,6 +16,11 @@
   },
   {
     "op": "add",
+    "path": "/primaryAbility/ammoUsage",
+    "value": 5
+  },
+  {
+    "op": "add",
     "path": "/primaryAbility/stances/fire/weaponOffset",
     "value": [
       -0.2,

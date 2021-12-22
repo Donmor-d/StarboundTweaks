@@ -17,7 +17,7 @@
 
   "inventoryIcon" : "normal.png",
 
-  "animation" : "/custom/items/weapons/ranged/gunwithammo.animation",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
     "butt" : "",
     "middle" : "normal.png",
@@ -52,6 +52,7 @@
     "fireTime" : 1.0,
     "baseDps" : 10,
     "energyUsage" : 0,
+    "ammoUsage" : 3,
     "inaccuracy" : 0.01,
 	   
     "reloadTime" : 1.5,     //tempo que demora para poder usar a arma

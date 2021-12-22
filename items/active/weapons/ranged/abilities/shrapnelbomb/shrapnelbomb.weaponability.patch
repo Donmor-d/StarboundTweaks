@@ -25,6 +25,11 @@
   },
   {
     "op": "add",
+    "path": "/ability/ammoUsage",
+    "value": 6
+  },
+  {
+    "op": "add",
     "path": "/ability/stances/fire/recoil",
     "value": true
   },

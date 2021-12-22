@@ -35,7 +35,7 @@ function GunFire:update(dt, fireMode, shiftHeld)
     and self.cooldownTimer == 0
     and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
-      if self.fireType == "auto" and status.overConsumeResource("energy", self:energyPerShot()) then
+      if self.fireType == "auto" and status.overConsumeResource("ammo", self.ammoUsage) then
         self:setState(self.auto)
       end
     end
@@ -130,10 +130,6 @@ function GunFire:aimVector(inaccuracy)
   local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
-end
-
-function GunFire:energyPerShot()
-  return self.energyUsage * self.fireTime * (self.energyUsageMultiplier or 1.0)
 end
 
 function GunFire:damagePerShot()

@@ -34,6 +34,11 @@
     "value": 0
   },
   {
+    "op": "add",
+    "path": "/primaryAbility/ammoUsage",
+    "value": 3
+  },
+  {
     "op": "replace",
     "path": "/primaryAbility/projectileType",
     "value": "normalpellet"
