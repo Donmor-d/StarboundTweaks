@@ -6,7 +6,6 @@
   "inventoryIcon" : "bouncingburstriflebullet.png",
   "description" : "Changes the assault rifle's fire mode to burst and enables bounce.",
   "shortdescription" : "Combined Rifle Bullet",
-
   "augment": {
     "type": "assaultrifleammo",
     "name": "bouncingburstriflebullet",
