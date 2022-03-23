@@ -1,0 +1,19 @@
+{
+  "itemName" : "smallsuspiciousgrape",
+  "rarity" : "Uncommon",
+  "price" : 10,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "smallsuspiciousgrape.png",
+  "description" : "Grown out of a living being, compact and delicious.", //currently no idea what this grape should do
+  "shortdescription" : "Small Grape",
+  "foodValue" : 1.2,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 20,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -14,11 +14,11 @@
     "displayIcon": "/custom/items/augments/assaultriflefusion/bouncing-electricbullet/bouncingelectricriflebullet.png",
     "elementalType": "electric",
 
-    "inventoryIcon" : "bouncingelectric.png",
+    "inventoryIcon" : "bouncing.png",
 
     "animationParts" : {
       "butt" : "",
-      "middle" : "bouncingelectric.png",
+      "middle" : "bouncing.png",
       "barrel" : "",
       "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
     },
@@ -63,7 +63,7 @@
           {
             "action" : "projectile",
             "type" : "strongelectricsniperbullet",
-            "inheritDamageFactor" : 1,
+            "inheritDamageFactor" : 0.75,
             "angleAdjust" : 0,
             "config" : {
               "speed" : 100

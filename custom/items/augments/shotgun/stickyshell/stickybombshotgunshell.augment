@@ -14,11 +14,11 @@
     "displayIcon": "/custom/items/augments/shotgun/stickyshell/stickybombshotgunshell.png",
     "elementalType": "physical",
 
-    "inventoryIcon" : "stickyshell.png",
+    "inventoryIcon" : "sticky.png",
 
     "animationParts" : {
       "butt" : "",
-      "middle" : "stickyshell.png",
+      "middle" : "sticky.png",
       "barrel" : "",
       "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
     },
@@ -28,7 +28,7 @@
       "class": "GunFire",
 
        "fireTime" : 1.2,
-       "baseDps" : 13.75,
+       "baseDps" : 10,
        "energyUsage" : 0,
        "ammoUsage" : 4.5,
        "inaccuracy" : 0.12,
@@ -42,7 +42,23 @@
       "projectileParameters": {
 	    "timeToLive" : 4.0,
 		  "knockback" : 0,
-		  "speed" : 100
+      "damageKind" : "standardbullet",
+      "damageType" : "damage",
+		  "speed" : 100,
+      "actionOnReap" : [],
+      "actionOnHit" : [
+        {
+          "action" : "config",
+          "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+        }
+      ],
+      "actionOnCollide" : [
+        {
+          "action" : "projectile",
+          "type" : "stickybullet",
+          "inheritDamageFactor" : 1
+        }
+      ]
 	    },
 
       "stances" : {

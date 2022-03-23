@@ -122,16 +122,6 @@
 	{
 	"op" : "add",
 	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "shotgunaccurateshell" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "shotguninaccurateshell" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
 	"value" : { "item" : "shotgunstickyshell" }
 	},
 	{

@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalshotgunshell", "count" : 1 },
-	{ "item" : "goldbar", "count" : 2 }
-  ],
-  "output" : { "item" : "accurateshotgunshell", "count" : 1 },
-  "groups" : [ "ammostation", "ammoshell", "all" ]
-}

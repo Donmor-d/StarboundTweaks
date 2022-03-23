@@ -1,0 +1,91 @@
+{
+  "itemName" : "electricspeedingmachinepistolbullet",
+  "price" : 2000,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "electricspeedingmachinepistolbullet.png",
+  "description" : "Makes the machine pistol shoot faster the longer the trigger is held, and changes the element to electric.",
+  "shortdescription" : "Combined Machine Pistol Bullet",
+
+  "augment": {
+    "type": "machinepistolammo",
+    "name": "electricspeedingmachinepistolbullet",
+    "displayName": "Electric Speeding Ammo",
+    "displayIcon": "/custom/items/augments/machinepistolfusion/speeding-electricbullet/electricspeedingmachinepistolbullet.png",
+    "elementalType": "electric",
+
+    "inventoryIcon" : "speeding.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "speeding.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+	  "scripts" : ["/custom/items/augments/machinepistol/speedingbullet/speedingshot.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 0.5,
+       "baseDps" : 3,
+       "energyUsage" : 0,   //~39.375
+       "ammoUsage" : 1,
+       "inaccuracy" : 0.04,
+	   
+       "reloadTime" : 1,     //tempo de recarga
+
+      "projectileType": "electricplasma",
+      "projectileParameters": {
+        "physics" : "laser",
+        "damageKind" : "electric",
+        "statusEffects": ["electrified"],
+        "actionOnReap" : [
+          {
+            "action" : "projectile",
+            "type" : "weakelectricpellet",
+            "inheritDamageFactor" : 0.5,
+            "angleAdjust" : 0,
+            "config" : {
+              "piercing" : true
+            }
+          }
+        ]
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.01,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

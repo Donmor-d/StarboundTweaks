@@ -1,0 +1,96 @@
+{
+  "itemName" : "firesoapymachinepistolbullet",
+  "price" : 2000,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "firesoapymachinepistolbullet.png",
+  "description" : "Turns your machine pistol's bullets into lingering burning bubbles.",
+  "shortdescription" : "Combined Machine Pistol Bullet",
+
+  "augment": {
+    "type": "machinepistolammo",
+    "name": "firesoapymachinepistolbullet",
+    "displayName": "Soapy Fire Ammo",
+    "displayIcon": "/custom/items/augments/machinepistolfusion/soapy-firebullet/firesoapymachinepistolbullet.png",
+    "elementalType": "fire",
+
+    "inventoryIcon" : "soapy.png",
+    
+    "animationCustom" : {
+      "particleEmitters" : {
+          "muzzleFlash" : {
+            "burstCount" : 1,
+            "particles" : [
+            ]
+          }
+        },
+        "sounds" : {
+          "fire" : [ "/sfx/projectiles/bubble_cluster.ogg" ],
+          "reload" : [ "/sfx/projectiles/bubble_cluster.ogg" ],
+          "reloaded" : ["/sfx/gun/reload/pistol_reload_clip3.ogg"]
+        }
+      },
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "soapy.png",
+      "barrel" : "",
+      "muzzleFlash" : ""
+    },
+
+    "primaryAbility": {
+     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+ 
+      "class": "GunFire",
+
+       "fireTime" : 0.11,
+       "baseDps" : 9,
+       "energyUsage" : 0,   //~39.375
+       "ammoUsage" : 1,
+       "inaccuracy" : 0.04,
+	   
+       "reloadTime" : 1,     //tempo de recarga
+
+      "projectileType": "firebubbles",
+      "projectileParameters": {
+        "piercing" : true,
+        "timeToLive" : 3.95,
+        "animationCycle" : 4
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

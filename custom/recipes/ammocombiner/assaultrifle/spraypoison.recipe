@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "sprayriflebullet", "count" : 1 },
+	  { "item" : "poisonriflebullet", "count" : 1 },
+    { "item" : "leadbar", "count" : 3}
+  ],
+  "output" : { "item" : "spraypoisonriflebullet", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

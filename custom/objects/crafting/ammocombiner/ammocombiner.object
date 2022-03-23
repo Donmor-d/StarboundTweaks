@@ -2,7 +2,7 @@
   "objectName" : "ammocombiner",
   "colonyTags" : ["commerce"],
   "rarity" : "Rare",
-  "description" : "WIP The ammo combiner is used to create new types of ammo by combination (doesnt craft anything at the moment but it works (: ).",
+  "description" : "The ammo combiner is used to create new types of ammo by combination.",
   "shortdescription" : "^orange;Ammo Combiner^white;",
   "subtitle" : "Combines two types of ammo",
   "race" : "generic",

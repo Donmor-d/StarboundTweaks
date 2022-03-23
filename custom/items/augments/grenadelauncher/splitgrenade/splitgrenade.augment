@@ -1,16 +1,16 @@
 {
   "itemName" : "splitgrenade",
-  "price" : 500,
-  "rarity" : "Common",
+  "price" : 1000,
+  "rarity" : "Rare",
   "category" : "ammoModifier",
   "inventoryIcon" : "splitgrenade.png",
-  "description" : "Regular grenade made for grenade launchers.",
+  "description" : "Makes grenades split into 3 smaller grenades.",
   "shortdescription" : "Split Grenade",
 
   "augment": {
     "type": "grenadelauncherammo",
     "name": "splitgrenade",
-    "displayName": "Normal Ammo",
+    "displayName": "Spliting Ammo",
     "displayIcon": "/custom/items/augments/grenadelauncher/splitgrenade/splitgrenade.png",
     "elementalType": "physical",
 

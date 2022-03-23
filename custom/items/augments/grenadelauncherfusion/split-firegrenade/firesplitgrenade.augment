@@ -1,0 +1,79 @@
+{
+  "itemName" : "firesplitgrenade",
+  "price" : 1500,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "firesplitgrenade.png",
+  "description" : "Makes grenades split into 3 smaller burning grenades.",
+  "shortdescription" : "Combined Grenade",
+
+  "augment": {
+    "type": "grenadelauncherammo",
+    "name": "firesplitgrenade",
+    "displayName": "Spliting Fire Ammo",
+    "displayIcon": "/custom/items/augments/grenadelauncherfusion/split-firegrenade/firesplitgrenade.png",
+    "elementalType": "fire",
+
+    "inventoryIcon" : "split.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "split.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 1.0,
+       "baseDps" : 3,
+       "energyUsage" : 0,
+       "ammoUsage" : 4.5,
+       "inaccuracy" : 0.0,
+	   
+	   "ammo" : 1,
+	   
+	   "reloadTime" : 2,
+
+      "projectileType": "firesplitgrenade",
+      "projectileParameters": {
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

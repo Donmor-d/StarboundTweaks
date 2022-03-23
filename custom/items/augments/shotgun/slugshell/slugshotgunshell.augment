@@ -1,7 +1,7 @@
 {
   "itemName" : "slugshotgunshell",
-  "price" : 500,
-  "rarity" : "Common",
+  "price" : 2500,
+  "rarity" : "Legendary",
   "category" : "ammoModifier",
   "inventoryIcon" : "slugshotgunshell.png",
   "description" : "Packs pellets together that spread after a while.",

@@ -1,0 +1,85 @@
+{
+  "itemName" : "burstpoisonriflebullet",
+  "price" : 1500,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "burstpoisonriflebullet.png",
+  "description" : "Changes the assault rifle's fire mode to burst and element to ice.",
+  "shortdescription" : "Combined Rifle Bullet",
+
+  "augment": {
+    "type": "assaultrifleammo",
+    "name": "burstpoisonriflebullet",
+    "displayName": "Burst Poisoned Ammo",
+    "displayIcon": "/custom/items/augments/assaultriflefusion/burst-poisonbullet/burstpoisonriflebullet.png",
+    "elementalType": "poison",
+
+    "inventoryIcon" : "burst.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "burst.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+       "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+	 
+      "class": "GunFire",
+
+       "fireTime" : 0.3,
+       "baseDps" : 15,
+       "energyUsage" : 0,   //~39.375
+       "ammoUsage" : 1.5,
+       "inaccuracy" : 0.02,
+       
+       "fireType" : "burst",
+
+       "burstCount" : 3,
+       "burstTime" : 0.1,
+	   
+       "reloadTime" : 1.5,     //tempo de recarga
+
+      "projectileType": "poisonplasma",
+      "projectileParameters": {
+      "statusEffects" : [ "weakpoison" ],
+	    "knockback" : 5
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

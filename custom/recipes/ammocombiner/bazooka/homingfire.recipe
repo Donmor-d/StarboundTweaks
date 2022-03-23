@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "firegasrocket", "count" : 1 },
+    { "item" : "homingrocket", "count" : 1 },
+	  { "item" : "leadbar", "count" : 3 }
+  ],
+  "output" : { "item" : "homingfirerocket", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

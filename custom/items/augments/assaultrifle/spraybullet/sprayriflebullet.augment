@@ -4,7 +4,7 @@
   "rarity" : "Rare",
   "category" : "ammoModifier",
   "inventoryIcon" : "sprayriflebullet.png",
-  "description" : "Enables fast firing for assault rifles",
+  "description" : "Increases the Assault Rifle's firerate with lower accuracy",
   "shortdescription" : "Spray Rifle Bullet",
 
   "augment": {

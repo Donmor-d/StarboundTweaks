@@ -10,7 +10,7 @@
   "augment": {
     "type": "grenadelauncherammo",
     "name": "poisongasgrenade",
-    "displayName": "Ice Gas Ammo",
+    "displayName": "Poison Gas Ammo",
     "displayIcon": "/custom/items/augments/grenadelauncher/poisongasgrenade/poisongasgrenade.png",
     "elementalType": "ice",
 

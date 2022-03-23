@@ -1,0 +1,24 @@
+{
+  "projectileName" : "electricgrapebullet",
+  "image" : "electricgrapebullet.png",
+  "physics" : "grenade",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "lightColor" : [255, 216, 0],
+  "fullBright" : true,
+  "damageKind" : "electricplasma",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmaelectricexplosion.config"
+    }
+  ],
+  "statusEffects" : [ "electrified" ],
+  "power" : 5.0,
+  "speed" : 50,
+  "knockback" : 0,
+  "grapeSpawn" : "electricsuspiciousgrape",
+  "scripts" : ["grapebullet.lua"]
+}

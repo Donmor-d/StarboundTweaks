@@ -62,7 +62,7 @@
           {
             "action" : "projectile",
             "type" : "strongsniperbullet",
-            "inheritDamageFactor" : 1,
+            "inheritDamageFactor" : 0.75,
             "angleAdjust" : 0,
             "config" : {
               "speed" : 100

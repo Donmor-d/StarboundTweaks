@@ -4,7 +4,7 @@
   "rarity" : "Rare",
   "category" : "ammoModifier",
   "inventoryIcon" : "speedingmachinepistolbullet.png",
-  "description" : "Regular bullet made for machine pistols.",
+  "description" : "Makes the machine pistol shoot faster the longer the trigger is held.",
   "shortdescription" : "Speeding Machine Pistol Bullet",
 
   "augment": {

@@ -1,0 +1,26 @@
+{
+  "itemName" : "poisonsuspiciousgrape",
+  "rarity" : "Uncommon",
+  "price" : 50,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "poisonsuspiciousgrape.png",
+  "description" : "Grown from a living being, it hurts to touch but somehow leaves a refreshing feeling when eaten.",
+  "shortdescription" : "Poison Grape",
+  "foodValue" : 1.8,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 10,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "effects" : [[  
+      {
+        "effect" : "poisonblock",
+        "duration" : 1
+      }
+  ]],
+  "blockingEffects" : [
+    "wellfed",
+    "poisonblock"
+  ]
+}

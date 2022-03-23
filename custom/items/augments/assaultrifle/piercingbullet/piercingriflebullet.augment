@@ -10,7 +10,7 @@
   "augment": {
     "type": "assaultrifleammo",
     "name": "piercingriflebullet",
-    "displayName": "Piercing Bullet",
+    "displayName": "Piercing Ammo",
     "displayIcon": "/custom/items/augments/assaultrifle/piercingbullet/piercingriflebullet.png",
     "elementalType": "physical",
 

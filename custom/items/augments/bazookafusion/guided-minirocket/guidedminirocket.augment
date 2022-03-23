@@ -1,0 +1,82 @@
+{
+  "itemName" : "guidedminirocket",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "guidedminirocket.png",
+  "description" : "Enables rocket control for rocket launchers.",
+  "shortdescription" : "Guided Rocket",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "name": "guidedminirocket",
+    "displayName": "Guided Ammo",
+
+    "inventoryIcon" : "guided.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "guided.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "displayIcon": "/custom/items/augments/bazookafusion/guided-minirocket/guidedminirocket.png",
+    "elementalType": "physical",
+    "primaryAbility": {
+      "scripts": [ "/custom/items/augments/bazooka/guidedrocket/guidedrocketaugment.lua" ],
+      "class": "GunFire",
+
+      "baseDps" : 9.5,
+      "energyUsage" : 0,
+      "ammoUsage" : 2,
+      "fireTime" : 0.5,
+
+      "fireType" : "burst",
+      "burstCount" : 6,
+      "burstTime" : 0.15,
+      
+
+       "reloadTime" : 1.5,
+
+      "projectileType": "guidedminirocket",
+      "projectileParameters": {},
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 1.5,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

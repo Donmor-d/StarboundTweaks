@@ -10,7 +10,7 @@
   "augment": {
     "type": "rocketlauncherammo",
     "name": "electricgasrocket",
-    "displayName": "Gas Ammo",
+    "displayName": "Electrified Gas Ammo",
     "displayIcon": "/custom/items/augments/bazooka/electricgasrocket/electricgasrocket.png",
     "elementalType": "electric",
 
