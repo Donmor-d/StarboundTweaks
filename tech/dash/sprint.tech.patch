@@ -1,7 +1,17 @@
 [
-	{
-	"op" : "replace",
-	"path" : "/groundOnly",
-	"value" : false
-	}
+  {
+    "op": "replace",
+    "path": "/description",
+    "value": "Replaces the dash with a sprint!"
+  },
+  {
+    "op": "replace",
+    "path": "/dashSpeedModifier",
+    "value": 1.75
+  },
+  {
+    "op": "replace",
+    "path": "/groundOnly",
+    "value": false
+  }
 ]

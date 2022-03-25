@@ -1,0 +1,22 @@
+[
+  {
+    "op": "add",
+    "path": "/energyCost",
+    "value": 30
+  },
+  {
+    "op": "replace",
+    "path": "/description",
+    "value": "A dash that blinks past traps and enemies! Cooldown: 1.2s"
+  },
+  {
+    "op": "replace",
+    "path": "/dashDistance",
+    "value": 15
+  },
+  {
+    "op": "replace",
+    "path": "/dashCooldown",
+    "value": 1.2
+  }
+]

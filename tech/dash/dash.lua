@@ -1,6 +1,10 @@
 require "/tech/doubletap.lua"
 
 function init()
+  self.energyCost = config.getParameter("energyCost") or 0
+  self.damageReductionPerc = config.getParameter("damageReduction") or 50
+  self.damageReduction = (100/self.damageReductionPerc)
+  
   self.airDashing = false
   self.dashDirection = 0
   self.dashTimer = 0
@@ -18,6 +22,7 @@ function init()
 
   self.doubleTap = DoubleTap:new({"left", "right"}, config.getParameter("maximumDoubleTapTime"), function(dashKey)
       if self.dashTimer == 0
+          and not status.resourceLocked("energy")
           and self.dashCooldownTimer == 0
           and groundValid()
           and not mcontroller.crouching()
@@ -36,6 +41,8 @@ function uninit()
 end
 
 function update(args)
+  self.currentProtection = status.stat("protection")
+
   if self.dashCooldownTimer > 0 then
     self.dashCooldownTimer = math.max(0, self.dashCooldownTimer - args.dt)
     if self.dashCooldownTimer == 0 then
@@ -78,6 +85,7 @@ function groundValid()
 end
 
 function startDash(direction)
+  status.overConsumeResource("energy", self.energyCost)
   self.dashDirection = direction
   self.dashTimer = self.dashDuration
   self.airDashing = not mcontroller.groundMovement()
@@ -85,17 +93,16 @@ function startDash(direction)
   animator.playSound("startDash")
   animator.setAnimationState("dashing", "on")
   animator.setParticleEmitterActive("dashParticles", true)
+  status.setPersistentEffects("dashDefense", {{stat = "protection", amount = (100 - self.currentProtection)/self.damageReduction}})
 end
 
 function endDash()
   status.clearPersistentEffects("movementAbility")
+  status.clearPersistentEffects("dashDefense")
 
   if self.stopAfterDash then
     local movementParams = mcontroller.baseParameters()
     local currentVelocity = mcontroller.velocity()
-    if math.abs(currentVelocity[1]) > movementParams.runSpeed then
-      mcontroller.setVelocity({movementParams.runSpeed * self.dashDirection, 0})
-    end
     mcontroller.controlApproachXVelocity(self.dashDirection * movementParams.runSpeed, self.dashControlForce)
   end
 

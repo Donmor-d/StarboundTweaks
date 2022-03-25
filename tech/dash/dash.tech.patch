@@ -1,0 +1,27 @@
+[
+  {
+    "op": "add",
+    "path": "/energyCost",
+    "value": 20
+  },
+  {
+    "op": "add",
+    "path": "/damageReduction",
+    "value": 50
+  },
+  {
+    "op": "replace",
+    "path": "/description",
+    "value": "Double tap ^green;[A]^white; or ^green;[D] ^white;to quickly dash! Cooldown: 0.6s"
+  },
+  {
+    "op": "replace",
+    "path": "/dashDuration",
+    "value": 0.2
+  },
+  {
+    "op": "replace",
+    "path": "/dashCooldown",
+    "value": 0.6
+  }
+]

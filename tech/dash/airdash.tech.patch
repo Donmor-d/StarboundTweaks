@@ -1,0 +1,27 @@
+[
+  {
+    "op": "add",
+    "path": "/energyCost",
+    "value": 20
+  },
+  {
+    "op": "add",
+    "path": "/damageReduction",
+    "value": 25
+  },
+  {
+    "op": "replace",
+    "path": "/description",
+    "value": "A dash that can be used in the air! Cooldown: 0.6s"
+  },
+  {
+    "op": "replace",
+    "path": "/dashDuration",
+    "value": 0.2
+  },
+  {
+    "op": "replace",
+    "path": "/dashCooldown",
+    "value": 0.6
+  }
+]
