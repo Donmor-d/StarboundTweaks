@@ -2,7 +2,6 @@
   "projectileName" : "piercingsniperbullet",
   "image" : "piercingsniperbullet.png",
   "physics" : "laser",
-  "damageKindImage" : "icon.png",
   "animationCycle" : 0.25,
   "lightColor" : [99, 82, 0],
   "frameNumber" : 1,

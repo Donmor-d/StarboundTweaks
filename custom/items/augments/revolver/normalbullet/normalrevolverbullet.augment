@@ -4,7 +4,7 @@
   "rarity" : "Common",
   "category" : "ammoModifier",
   "inventoryIcon" : "normalrevolverbullet.png",
-  "description" : "Regular bullet made for pistols.",
+  "description" : "Regular bullet made for revolvers.",
   "shortdescription" : "Normal Revolver Bullet",
 
   "augment": {

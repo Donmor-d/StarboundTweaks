@@ -1042,7 +1042,8 @@
         {"weight" : 1.0, "item" : "iceriflebullet"},
         {"weight" : 1.0, "item" : "poisonriflebullet"},
         {"weight" : 1.0, "item" : "sprayriflebullet"},
-        {"weight" : 1.0, "item" : "ghostrevolverbullet"}
+        {"weight" : 1.0, "item" : "snowballingrevolverbullet"},
+        {"weight" : 1.0, "item" : "rouletterevolverbullet"}
       ]
     }],
     [1.9, {
@@ -1052,7 +1053,8 @@
         {"weight" : 1.0, "item" : "iceriflebullet"},
         {"weight" : 1.0, "item" : "poisonriflebullet"},
         {"weight" : 1.0, "item" : "sprayriflebullet"},
-        {"weight" : 1.0, "item" : "ghostrevolverbullet"},
+        {"weight" : 1.0, "item" : "snowballingrevolverbullet"},
+        {"weight" : 1.0, "item" : "rouletterevolverbullet"},
         {"weight" : 1.0, "item" : "slugshotgunshell"},
         {"weight" : 0.5, "item" : "grapeshotgunshell"}
       ]

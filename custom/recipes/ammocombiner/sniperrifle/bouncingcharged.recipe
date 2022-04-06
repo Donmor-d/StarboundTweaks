@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "bouncingsniperbullet", "count" : 1 },
+    { "item" : "chargedsniperbullet", "count" : 1 },
+	  { "item" : "leadbar", "count" : 3 }
+  ],
+  "output" : { "item" : "bouncingchargedsniperbullet", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

@@ -1,7 +1,7 @@
 {
   "itemName" : "splitsniperbullet",
-  "price" : 500,
-  "rarity" : "Common",
+  "price" : 1500,
+  "rarity" : "Rare",
   "category" : "ammoModifier",
   "inventoryIcon" : "splitsniperbullet.png",
   "description" : "Bullets split into 3 after a shorter time",

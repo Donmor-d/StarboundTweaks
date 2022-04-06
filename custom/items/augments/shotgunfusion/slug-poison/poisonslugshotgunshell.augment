@@ -11,7 +11,7 @@
     "type": "shotgunammo",
     "name": "poisonslugshotgunshell",
     "displayName": "Poison Slug Ammo",
-    "displayIcon": "/custom/items/augments/shotgunfusion/slug-poisonshell/poisonslugshotgunshell.png",
+    "displayIcon": "/custom/items/augments/shotgunfusion/slug-poison/poisonslugshotgunshell.png",
     "elementalType": "poison",
 
     "inventoryIcon" : "slug.png",

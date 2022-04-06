@@ -4,7 +4,6 @@
   "bounces" : 0,
   "timeToLive" : 0.15,
   "speed" : 75,
-  "damageKindImage" : "icon.png",
   "image" : "fireshotgunslug.png",
   "animationCycle" : 0.25,
   "frameNumber" : 1,
@@ -38,56 +37,56 @@
     },
     {
       "action" : "projectile",
-      "type" : "fireslugpellet",
+      "type" : "weakfirepellet",
       "fuzzAngle" : 5,
       "inheritDamageFactor" : 0.3,
       "angleAdjust" : 0
     },
     {
       "action" : "projectile",
-      "type" : "fireslugpellet",
+      "type" : "weakfirepellet",
       "fuzzAngle" : 5,
       "inheritDamageFactor" : 0.3,
       "angleAdjust" : 10
     },
     {
       "action" : "projectile",
-      "type" : "fireslugpellet",
+      "type" : "weakfirepellet",
       "fuzzAngle" : 5,
       "inheritDamageFactor" : 0.3,
       "angleAdjust" : 350
     },
     {
       "action" : "projectile",
-      "type" : "fireslugpellet",
+      "type" : "weakfirepellet",
       "fuzzAngle" : 5,
       "inheritDamageFactor" : 0.3,
       "angleAdjust" : 20
     },
     {
       "action" : "projectile",
-      "type" : "fireslugpellet",
+      "type" : "weakfirepellet",
       "fuzzAngle" : 5,
       "inheritDamageFactor" : 0.3,
       "angleAdjust" : 340
     },
     {
       "action" : "projectile",
-      "type" : "fireslugpellet",
+      "type" : "weakfirepellet",
       "fuzzAngle" : 5,
       "inheritDamageFactor" : 0.3,
       "angleAdjust" : 30
     },
     {
       "action" : "projectile",
-      "type" : "fireslugpellet",
+      "type" : "weakfirepellet",
       "fuzzAngle" : 5,
       "inheritDamageFactor" : 0.3,
       "angleAdjust" : 330
     },
     {
       "action" : "projectile",
-      "type" : "fireslugpellet",
+      "type" : "weakfirepellet",
       "fuzzAngle" : 5,
       "inheritDamageFactor" : 0.3,
       "angleAdjust" : 40

@@ -3,7 +3,6 @@
   "image" : "homingrocketaugment2.png",
   "animationCycle" : 0.4,
   "frameNumber" : 4,
-  "damageKindImage" : "icon.png",
   "lightColor" : [128, 128, 255],
   "pointLight" : true,
   "actionOnReap" : [

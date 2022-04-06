@@ -41,7 +41,6 @@
 
       "projectileType": "standardbullet",
       "projectileParameters": {
-	    "speed" : 450,
 	    "knockback" : 5
 	  },
       "projectileCount": 1,

@@ -1,10 +1,10 @@
 {
   "itemName" : "ghostrevolverbullet",
   "price" : 500,
-  "rarity" : "Rare",
+  "rarity" : "Uncommon",
   "category" : "ammoModifier",
   "inventoryIcon" : "ghostrevolverbullet.png",
-  "description" : "Allows revolver bullets to pierce through walls.",
+  "description" : "Allows revolver bullets to pierce through walls but use more ammo.",
   "shortdescription" : "Ghost revolver Bullet",
 
   "augment": {
@@ -30,17 +30,13 @@
        "fireTime" : 0.6,
        "baseDps" : 8,
        "energyUsage" : 0,   //~39.375
-       "ammoUsage" : 3,
+       "ammoUsage" : 6,
        "inaccuracy" : 0.025,
 	   
        "reloadTime" : 1.5,     //tempo de recarga
 
-      "projectileType": "standardbullet",
+      "projectileType": "ghostbullet",
       "projectileParameters": {
-	    "knockback" : 5,
-      "movementSettings" : {
-        "collisionEnabled" : false
-      }
 	  },
       "projectileCount": 1,
 

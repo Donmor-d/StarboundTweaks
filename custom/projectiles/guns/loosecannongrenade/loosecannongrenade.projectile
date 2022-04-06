@@ -5,7 +5,6 @@
   "timeToLive" : 1.5,
   "piercing" : true,
   "fullbright" : true,
-  "damageKindImage" : "icon.png",
   "image" : "loosecannongrenade.png",
   "animationCycle" : 0.5,
   "frameNumber" : 4,

@@ -4,7 +4,6 @@
   "physics" : "laser",
   "animationCycle" : 0.25,
   "lightColor" : [99, 82, 0],
-  "damageKindImage" : "icon.png",
   "frameNumber" : 1,
   "damageKind" : "standardbullet",
   "pointLight" : false,

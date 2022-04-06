@@ -3,7 +3,6 @@
   "image" : "icebubbles.png",
   "physics" : "flame",
   "animationCycle" : 1,
-  "damageKindImage" : "icon.png",
   "frameNumber" : 16,
   "power" : 50,
   "speed" : 25,

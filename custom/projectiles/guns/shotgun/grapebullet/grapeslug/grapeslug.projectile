@@ -4,7 +4,6 @@
   "bounces" : 0,
   "timeToLive" : 0.15,
   "speed" : 50,
-  "damageKindImage" : "icon.png",
   "image" : "grapeslug.png",
   "animationCycle" : 0.25,
   "frameNumber" : 1,

@@ -1,7 +1,7 @@
 {
   "itemName" : "chargedsniperbullet",
-  "price" : 500,
-  "rarity" : "Legendary",
+  "price" : 1500,
+  "rarity" : "Rare",
   "category" : "ammoModifier",
   "inventoryIcon" : "chargedsniperbullet.png",
   "description" : "Enables charge firing for sniper rifles, higher damage the longer its charged.",
@@ -14,11 +14,11 @@
     "displayIcon": "/custom/items/augments/sniperrifle/chargedbullet/chargedsniperbullet.png",
     "elementalType": "physical",
 
-    "inventoryIcon" : "normal.png",
+    "inventoryIcon" : "charged.png",
 
     "animationParts" : {
       "butt" : "",
-      "middle" : "normal.png",
+      "middle" : "charged.png",
       "barrel" : "",
       "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
     },

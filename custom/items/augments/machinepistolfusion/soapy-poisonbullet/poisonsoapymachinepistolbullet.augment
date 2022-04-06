@@ -11,7 +11,7 @@
     "type": "machinepistolammo",
     "name": "poisonsoapymachinepistolbullet",
     "displayName": "Soapy Poison Ammo",
-    "displayIcon": "/custom/items/augments/machinepistolfusion/soapy-icebullet/poisonsoapymachinepistolbullet.png",
+    "displayIcon": "/custom/items/augments/machinepistolfusion/soapy-poisonbullet/poisonsoapymachinepistolbullet.png",
     "elementalType": "poison",
 
     "inventoryIcon" : "soapy.png",

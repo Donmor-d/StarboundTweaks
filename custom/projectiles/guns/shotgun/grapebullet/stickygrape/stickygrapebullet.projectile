@@ -16,8 +16,18 @@
   "actionOnCollide" : [
     {
       "action" : "projectile",
-      "type" : "stickygrapebullet2",
-      "inheritDamageFactor" : 1
+      "type" : "stickygrapebullet",
+      "inheritDamageFactor" : 1,
+      "config" : {
+        "actionOnReap" : [
+          {
+            "action" : "config",
+            "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionknockback.config"
+          }
+        ],
+        "actionOnCollide" : [{ }],
+        "actionOnHit" : [{ }]
+      }
     }
   ], 
   "statusEffects" : [ ],

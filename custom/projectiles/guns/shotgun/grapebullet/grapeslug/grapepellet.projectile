@@ -6,7 +6,6 @@
   "lightColor" : [99, 82, 0],
   "bounces" : 0,
   "piercing" : false,
-  "damageKindImage" : "icon.png",
   "pointLight" : false,
   "actionOnReap" : [
     {

@@ -3,7 +3,7 @@
   "physics" : "grenade",
   "bounces" : -1,
   "timeToLive" : 0.0,
-  "image" : "zbomb.png",
+  "image" : "grapebomb.png",
   "animationCycle" : 5,
   "lightColor" : [105, 64, 0],
   "frameNumber" : 7,

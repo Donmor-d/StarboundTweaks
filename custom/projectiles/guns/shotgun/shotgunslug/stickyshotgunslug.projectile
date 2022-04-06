@@ -1,10 +1,9 @@
 {
   "projectileName" : "stickyshotgunslug",
   "physics" : "stickybullet",
-  "bounces" : 0,
+  "bounces" : -1,
   "timeToLive" : 0.15,
   "speed" : 75,
-  "damageKindImage" : "icon.png",
   "image" : "stickyshotgunslug.png",
   "animationCycle" : 0.25,
   "frameNumber" : 1,

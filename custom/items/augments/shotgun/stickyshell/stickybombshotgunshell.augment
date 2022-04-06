@@ -42,8 +42,6 @@
       "projectileParameters": {
 	    "timeToLive" : 4.0,
 		  "knockback" : 0,
-      "damageKind" : "standardbullet",
-      "damageType" : "damage",
 		  "speed" : 100,
       "actionOnReap" : [],
       "actionOnHit" : [

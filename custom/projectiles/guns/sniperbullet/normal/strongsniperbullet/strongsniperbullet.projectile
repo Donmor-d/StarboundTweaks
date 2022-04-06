@@ -5,7 +5,6 @@
   "animationCycle" : 0.25,
   "lightColor" : [255, 216, 0],
   "fullBright" : true,
-  "damageKindImage" : "icon.png",
   "frameNumber" : 1,
   "damageKind" : "standardbullet",
   "pointLight" : false,

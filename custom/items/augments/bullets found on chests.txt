@@ -11,8 +11,9 @@
 ------------MachinePistol------------
 -speedingmachinepistolbullet
 -soapymachinepistolbullet
-------------Pistol----------
--ghostrevolverbullet
+------------Revolver----------
+-snowballingrevolverbullet
+-rouletterevolverbullet
 ------------RocketLauncher-----------
 -minirocket
 -elementalrocket

@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "poisonmachinepistolbullet", "count" : 1 },
+    { "item" : "soapymachinepistolbullet", "count" : 1 },
+	  { "item" : "leadbar", "count" : 3 }
+  ],
+  "output" : { "item" : "poisonsoapymachinepistolbullet", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

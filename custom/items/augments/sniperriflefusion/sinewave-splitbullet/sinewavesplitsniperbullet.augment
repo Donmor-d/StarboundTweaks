@@ -1,0 +1,145 @@
+{
+  "itemName" : "sinewavesplitsniperbullet",
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "sinewavesplitsniperbullet.png",
+  "description" : "Bullets split into 6 waving bullets.",
+  "shortdescription" : "Combined Sniper Bullet",
+
+  "augment": {
+    "type": "sniperrifleammo",
+    "name": "sinewavesplitsniperbullet",
+    "displayName": "Split Sine Wave Ammo",
+    "displayIcon": "/custom/items/augments/sniperriflefusion/sinewave-splitbullet/sinewavesplitsniperbullet.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "sinewave.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "sinewave.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 1,
+       "baseDps" : 10,
+       "energyUsage" : 0,
+       "ammoUsage" : 4.5,
+       "inaccuracy" : 0.008,
+	   
+       "reloadTime" : 1.5,     //tempo de recarga
+
+      "projectileType": "standardbullet",
+      "projectileParameters": {
+	    "timeToLive" : 0,
+      "actionOnTimeout" : [
+        { // down
+          "action" : "projectile",
+          "type" : "waveshot",
+          "inheritDamageFactor" : 0.8,
+          "angleAdjust" : 0,
+          "config" : {
+            "speed" : 150
+          }
+        },
+        {
+          "action" : "projectile",
+          "type" : "waveshot",
+          "inheritDamageFactor" : 0.25,
+          "angleAdjust" : 0,
+          "config" : {
+            "wavePeriod" : 1,
+            "speed" : 100,
+            "lightColor" : [99, 82, 0]
+          }
+        },
+        {
+          "action" : "projectile",
+          "type" : "waveshot",
+          "inheritDamageFactor" : 0.15,
+          "angleAdjust" : 0,
+          "config" : {
+            "wavePeriod" : 1.5,
+            "speed" : 50,
+            "lightColor" : [63, 51, 0]
+          }
+        }, // up
+        {
+          "action" : "projectile",
+          "type" : "waveshot",
+          "inheritDamageFactor" : 0.8,
+          "angleAdjust" : 0,
+          "config" : {
+            "speed" : 150,
+            "waveAmplitude" : 0.25
+          }
+        },
+        {
+          "action" : "projectile",
+          "type" : "waveshot",
+          "inheritDamageFactor" : 0.25,
+          "angleAdjust" : 0,
+          "config" : {
+            "wavePeriod" : 1,
+            "speed" : 100,
+            "lightColor" : [99, 82, 0],
+            "waveAmplitude" : 0.25
+          }
+        },
+        {
+          "action" : "projectile",
+          "type" : "waveshot",
+          "inheritDamageFactor" : 0.15,
+          "angleAdjust" : 0,
+          "config" : {
+            "wavePeriod" : 1.5,
+            "speed" : 50,
+            "lightColor" : [63, 51, 0],
+            "waveAmplitude" : 0.25
+          }
+        }
+      ]
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 6,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+}

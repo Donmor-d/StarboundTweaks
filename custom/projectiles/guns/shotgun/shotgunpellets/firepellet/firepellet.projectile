@@ -3,7 +3,6 @@
   "physics" : "laser",
   "bounces" : 0,
   "timeToLive" : 0.075,
-  "damageKindImage" : "icon.png",
   "image" : "firepellet.png",
   "animationCycle" : 0.5,
   "frameNumber" : 3,

@@ -2,7 +2,6 @@
   "projectileName" : "weakelectricpellet",
   "physics" : "laser",
   "bounces" : 0,
-  "damageKindImage" : "icon.png",
   "image" : "weakelectricpellet.png",
   "animationCycle" : 0.5,
   "frameNumber" : 3,

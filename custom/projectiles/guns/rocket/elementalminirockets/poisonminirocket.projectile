@@ -3,7 +3,6 @@
   "image" : "poisonminirocket.png",
   "animationCycle" : 0.2,
   "frameNumber" : 3,
-  "damageKindImage" : "icon.png",
   "lightColor" : [255, 255, 128],
   "pointLight" : true,
   "actionOnReap" : [

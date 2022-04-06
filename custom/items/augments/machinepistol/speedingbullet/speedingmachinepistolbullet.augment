@@ -1,6 +1,6 @@
 {
   "itemName" : "speedingmachinepistolbullet",
-  "price" : 500,
+  "price" : 2500,
   "rarity" : "Rare",
   "category" : "ammoModifier",
   "inventoryIcon" : "speedingmachinepistolbullet.png",

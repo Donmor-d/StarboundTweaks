@@ -3,7 +3,6 @@
   "image" : "strongpiercingsniperbullet.png",
   "physics" : "laser",
   "piercing" : true,
-  "damageKindImage" : "icon.png",
   "animationCycle" : 0.25,
   "lightColor" : [255, 216, 0],
   "frameNumber" : 1,

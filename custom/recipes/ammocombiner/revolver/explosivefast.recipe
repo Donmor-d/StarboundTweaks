@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "explosiverevolverbullet", "count" : 1 },
+    { "item" : "fastrevolverbullet", "count" : 1 },
+	  { "item" : "leadbar", "count" : 3 }
+  ],
+  "output" : { "item" : "explosivefastrevolverbullet", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

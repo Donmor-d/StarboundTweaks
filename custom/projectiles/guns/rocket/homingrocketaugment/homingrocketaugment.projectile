@@ -2,7 +2,6 @@
   "projectileName" : "homingrocketaugment",
   "image" : "homingrocketaugment.png",
   "timeToLive" : 0.5,
-  "damageKindImage" : "icon.png",
   "lightColor" : [128, 128, 255],
   "pointLight" : true,
   "actionOnTimeout" : [
