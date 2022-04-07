@@ -12,7 +12,7 @@
   {
     "op": "add",
     "path": "/items/override/0/1/0/primary/-",
-    "value": "neosniperrifle"
+    "value": "npcneosniperrifle"
   },
   {
     "op": "replace",
@@ -27,7 +27,7 @@
   {
     "op": "add",
     "path": "/items/override/0/1/1/primary/-",
-    "value": "neosniperrifle"
+    "value": "npcneosniperrifle"
   },
   {
     "op": "replace",
@@ -42,7 +42,7 @@
   {
     "op": "add",
     "path": "/items/override/0/1/2/primary/-",
-    "value": "neosniperrifle"
+    "value": "npcneosniperrifle"
   },
   {
     "op": "replace",
@@ -57,7 +57,7 @@
   {
     "op": "add",
     "path": "/items/override/0/1/3/sheathedprimary/-",
-    "value": "neosniperrifle"
+    "value": "npcneosniperrifle"
   },
   {
     "op": "replace",
@@ -72,6 +72,6 @@
   {
     "op": "add",
     "path": "/items/override/0/1/4/sheathedprimary/-",
-    "value": "neosniperrifle"
+    "value": "npcneosniperrifle"
   }
 ]

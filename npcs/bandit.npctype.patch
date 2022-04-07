@@ -22,6 +22,6 @@
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/10",
-    "value": "neosniperrifle"
+    "value": "npcneosniperrifle"
   }
 ]

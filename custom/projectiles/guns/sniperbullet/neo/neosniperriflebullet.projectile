@@ -7,12 +7,26 @@
 	"damageKind" : "plasma",
 	"pointLight" : false,
 	"flippable" : true,
-	"actionOnReap" : [
+	"actionOnHit" : [
 		{
 			"action" : "config",
 			"file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
 		}
 	],
+	"actionOnCollide" : [
+		{
+			"action" : "config",
+			"file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+		}
+	],
+	"actionOnTimeout" : [
+		{
+		  "action" : "projectile",
+		  "type" : "strongneosniperriflebullet",
+		  "inheritDamageFactor" : 2,
+		  "angleAdjust" : 0
+		}
+	  ],
 	"statusEffects" : [ ],
 	"power" : 10.0,
 	"speed" : 150,
