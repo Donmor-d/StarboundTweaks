@@ -1,0 +1,14 @@
+[
+    {
+      "op": "remove",
+      "path": "/maxFuel"
+    },
+    {
+      "op": "remove",
+      "path": "/fuelEfficiency"
+    },
+    {
+      "op": "remove",
+      "path": "/shipSpeed"
+    }
+  ]

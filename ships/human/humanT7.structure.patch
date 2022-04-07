@@ -1,0 +1,17 @@
+[
+  {
+    "op": "add",
+    "path": "/config/shipUpgrades/maxFuel",
+    "value": 3000
+  },
+  {
+    "op": "add",
+    "path": "/config/shipUpgrades/fuelEfficiency",
+    "value": 0.4
+  },
+  {
+    "op": "add",
+    "path": "/config/shipUpgrades/shipSpeed",
+    "value": 50
+  }
+]
