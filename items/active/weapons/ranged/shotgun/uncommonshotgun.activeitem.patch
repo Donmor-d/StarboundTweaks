@@ -14,6 +14,31 @@
     }
   },
   {
+    "op": "replace",
+    "path": "/baseOffset/0",
+    "value": -1.5
+  },
+  {
+    "op": "replace",
+    "path": "/baseOffset/1",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/idle/frontArmFrame",
+    "value": "jump.1"
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/fire/frontArmFrame",
+    "value": "jump.1"
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/stances/cooldown/frontArmFrame",
+    "value": "jump.1"
+  },
+  {
     "op": "add",
     "path": "/primaryAbility/reloadTime",
     "value": 1.5

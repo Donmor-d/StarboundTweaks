@@ -36,7 +36,7 @@
        "reloadTime" : 1.5,     //tempo de recarga
   
        "projectileCount" : 8,
-	   "fireType" : "auto",
+	      "fireType" : "auto",
 
       "projectileType": "normalpellet",
       "projectileParameters": {

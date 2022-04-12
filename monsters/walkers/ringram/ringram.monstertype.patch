@@ -14,11 +14,6 @@
   },
   {
     "op": "replace",
-    "path": "/baseParameters/behaviorConfig/damageOnTouch",
-    "value": false
-  },
-  {
-    "op": "replace",
     "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown",
     "value": 1
   },
@@ -26,5 +21,35 @@
     "op": "replace",
     "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/chargeSpeed",
     "value": 40
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/touchDamage/damageType",
+    "value": "knockback"
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/touchDamage/damageRepeatGroup",
+    "value": "monstertouchknockback"
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/touchDamage/damageRepeatTimeout",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damage",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damageSourceKind",
+    "value": "nodamage"
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/knockback",
+    "value": 30
   }
 ]

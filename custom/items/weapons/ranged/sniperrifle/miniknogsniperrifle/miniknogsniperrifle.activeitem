@@ -1,0 +1,102 @@
+{
+  "itemName" : "miniknogsniperrifle",
+  "price" : 1080,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "Standard issue sniper rifle for Miniknog Law Enforcement, shoots weakening freezing rounds.",
+  "shortdescription" : "Miniknog Sniper Rifle",
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","sniperrifle"],
+
+  "inventoryIcon" : [
+    { "image" : "miniknogsniperrifle.png" }
+  ],
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "miniknogsniperrifle.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 4,
+        "particles" : [
+          { "particle" : "dust2" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/sniper1.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [90, 90, 0]
+      }
+    }
+  },
+  "baseOffset" : [0.9, 0.35],
+  "muzzleOffset" : [3.0, 0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "ice",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.5,
+    "baseDps" : 7.0,
+    "energyUsage" : 0,
+    "ammoUsage" : 3,
+    "inaccuracy" : 0.008,
+    "fireType" : "auto",
+
+    "projectileType" : "icesniperbullet",
+    "projectileParameters" : {
+      "knockback" : 10,
+      "statusEffects" : [ "frostslow" ]
+    },
+    "projectileCount" : 1,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+		    "armRotation" : 6,
+		    "weaponRotation" : 10,
+		    "twoHanded" : true,
+		    "recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+		    "armRotation" : 6,
+		    "weaponRotation" : 10,
+		    "twoHanded" : true,
+		    "recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbilityType" : "explosiveburst",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

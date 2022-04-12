@@ -71,5 +71,81 @@
         "image": "<partImage>:idle.<frame>"
       }
     }
+  },
+  {
+    "op": "add",
+    "path": "/animatedParts/parts/body/partStates/body/jump/properties/damageArea",
+    "value": [
+      [
+        0.625,
+        1.125
+      ],
+      [
+        1,
+        0.75
+      ],
+      [
+        1,
+        -0.75
+      ],
+      [
+        0.625,
+        -1.125
+      ],
+      [
+        -0.625,
+        -1.125
+      ],
+      [
+        -1,
+        -0.75
+      ],
+      [
+        -1,
+        0.75
+      ],
+      [
+        -0.625,
+        1.125
+      ]
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animatedParts/parts/body/partStates/body/fall/properties/damageArea",
+    "value": [
+      [
+        0.625,
+        1.125
+      ],
+      [
+        1,
+        0.75
+      ],
+      [
+        1,
+        -0.75
+      ],
+      [
+        0.625,
+        -1.125
+      ],
+      [
+        -0.625,
+        -1.125
+      ],
+      [
+        -1,
+        -0.75
+      ],
+      [
+        -1,
+        0.75
+      ],
+      [
+        -0.625,
+        1.125
+      ]
+    ]
   }
 ]

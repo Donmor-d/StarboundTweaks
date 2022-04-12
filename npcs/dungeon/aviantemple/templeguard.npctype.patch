@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/items/override/0/1/0/sheathedprimary/-",
+    "value": "npcavoliteenergyrifle"
+  },
+  {
+    "op": "add",
+    "path": "/items/override/0/1/0/sheathedprimary/-",
+    "value": "npcavoliteenergysniper"
+  }
+]

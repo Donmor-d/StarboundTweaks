@@ -26,7 +26,7 @@
 		  "inheritDamageFactor" : 2,
 		  "angleAdjust" : 0
 		}
-	  ],
+	],
 	"statusEffects" : [ ],
 	"power" : 10.0,
 	"speed" : 150,

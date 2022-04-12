@@ -2,6 +2,10 @@
 //on crafted weapon pickup
   "pickupfirearm" : {
     "type" : "tutorial",
-    "text" : "I looks like you've crafted your first weapon, i suggest you craft an ammo station so you can take a look at what ammo you can craft, you can still shoot it without ammo but it won't be as strong"
+    "text" : "I looks like you've crafted your first modular weapon, i suggest you craft an ammo station so you can take a look at what ammo augments you can craft, you can still shoot it without augmenting but it won't be as strong."
+  },
+  "pickupupgrademodule" : {
+    "type" : "tutorial",
+    "text" : "You've obtained a ship upgrade module. With enough of these and a sizeable crew (or some other means) you can upgrade your ship with Penguin Pete. Upgrading your ship will increase maximum fuel capacity, crew size, ship speed and decrease fuel consumption."
   }
 }

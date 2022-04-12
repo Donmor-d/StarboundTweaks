@@ -27,11 +27,30 @@
   {
     "op": "replace",
     "path": "/baseParameters/touchDamage/damage",
-    "value": 5
+    "value": 0
   },
   {
     "op": "replace",
     "path": "/baseParameters/touchDamage/knockback",
-    "value": 30
+    "value": 40
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/touchDamage/damageRepeatGroup",
+    "value": "monstertouchknockback"
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/touchDamage/damageType",
+    "value": "knockback"
+  },{
+    "op": "add",
+    "path": "/baseParameters/touchDamage/damageRepeatTimeout",
+    "value": 0.25
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/damageSourceKind",
+    "value": "nodamage"
   }
 ]

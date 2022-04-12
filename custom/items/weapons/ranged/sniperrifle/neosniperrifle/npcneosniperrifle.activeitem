@@ -62,18 +62,7 @@
 		"projectileType" : "neosniperriflebullet",
 		"projectileParameters": {
 		  "speed" : 75,
-		  "timeToLive" : 0.35,
-		  "actionOnTimeout" : [
-			{
-			  "action" : "projectile",
-			  "type" : "strongneosniperriflebullet",
-			  "inheritDamageFactor" : 2,
-			  "angleAdjust" : 0,
-			  "config" : {
-				"speed" : 75
-			  }
-			}
-		  ]
+		  "timeToLive" : 0.35
 		},
 
 		"stances" : {

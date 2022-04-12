@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/items/override/0/1/0/primary/0",
+    "value": "npcminiknogassaultrifle"
+  },
+  {
+    "op": "replace",
+    "path": "/items/override/0/1/0/primary/1",
+    "value": "npcminiknogpistol"
+  }
+]

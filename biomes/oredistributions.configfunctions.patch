@@ -2,7 +2,7 @@
   { 
     "op" : "add", 
     "path" : "/asteroid/0/1/-",
-    "value" : [ "lead", 0.10] 
+    "value" : [ "lead", 0.2 ] 
   }
 ]
 

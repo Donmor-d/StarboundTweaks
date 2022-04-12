@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/text",
+    "value": "Before you go jetting off, I'll teach you how to ^green;access and use^white; the ^orange;scan mode^white; on your ^orange;Matter Manipulator^white;. There is a lot to be learned from your surroundings, and the Outpost is no exception. ^green;Press ^#71f2f6;[N]^green; to equip your ^orange;scanner^white;, key areas of interest will appear green. Let me know how you get on! ^orange;By the way if you want to skip this quest you can simply scan the portal behind me.^white;"
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/objectValues/monolithgate",
+    "value": 70
+  }
+]

@@ -27,7 +27,28 @@
       "muzzleFlash" : {
         "burstCount" : 1,
         "particles" : [
-          { "particle" : "dust2" }
+          { "particle" : "dust2" },
+          {
+            "particle" : {
+              "type" : "textured",
+              "image" : "/custom/particles/casing/casing.png",
+              "position" : [-1.5, 0.125],
+              "color" : [ 255, 255, 255, 255] ,
+              "initialVelocity" : [0, 8],
+              "finalVelocity" : [0, -50],
+              "approach" : [0, 40],
+              "rotation" : 0,
+              "destructionAction" : "fade",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 1,
+              "layer" : "middle",
+              "timeToLive" : 0.45,
+              "variance" : {
+                "initialVelocity" : [2, 2]
+              }
+            }
+          }
         ]
       }
     },

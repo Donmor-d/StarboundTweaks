@@ -54,7 +54,7 @@
     "class" : "GunFire",
 
     "fireTime" : 1,
-    "baseDps" : 5,
+    "baseDps" : 7,
     "energyUsage" : 0,
     "ammoUsage" : 3,
     "projectileCount" : 1,
@@ -66,18 +66,7 @@
       "knockbackRange" : [10, 40],
 	  "statusEffects" : [ "weakpoison" ],
 	  "speed" : 75,
-    "timeToLive" : 0.35,
-    "actionOnTimeout" : [
-      {
-        "action" : "projectile",
-        "type" : "strongpoisonsniperbullet",
-        "inheritDamageFactor" : 2,
-        "angleAdjust" : 0,
-        "config" : {
-          "speed" : 75
-        }
-      }
-    ]
+    "timeToLive" : 0.35
     },
     "muzzleFlashVariants" : 1,
 

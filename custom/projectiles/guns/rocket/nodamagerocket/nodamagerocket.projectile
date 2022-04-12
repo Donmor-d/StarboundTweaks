@@ -8,7 +8,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/custom/projectiles/explosions/highknockbackexplosion/highknockbackexplosionknockback.config"
+      "file" : "/custom/projectiles/guns/explosions/highknockbackexplosion/highknockbackexplosionknockback.config"
     }
   ],
   "statusEffects" : [ ],

@@ -10,8 +10,6 @@
   "twoHanded" : false,
   "itemTags" : ["weapon","ranged","pistol"],
   "level" : 1,
-  
-  "radioMessagesOnPickup" : [ "pickupfirearm" ],
 
   "inventoryIcon" : "normal.png",
   
@@ -95,6 +93,9 @@
       }
     }
   },
+
+  
+  "radioMessagesOnPickup" : [ "pickupfirearm" ],
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

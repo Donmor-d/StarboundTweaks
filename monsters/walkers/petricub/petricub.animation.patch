@@ -1,7 +1,45 @@
 [
   {
     "op": "add",
-    "path": "/animatedParts/parts/body/partStates/body/jump/properties/damageArea",
+    "path": "/animatedParts/parts/body/partStates/body/leapjump/properties/damageArea",
+    "value": [
+      [
+        0.5,
+        1
+      ],
+      [
+        1,
+        0.5
+      ],
+      [
+        1,
+        -0.5
+      ],
+      [
+        0.5,
+        -1
+      ],
+      [
+        -0.5,
+        -1
+      ],
+      [
+        -1,
+        -0.5
+      ],
+      [
+        -1,
+        0.5
+      ],
+      [
+        -0.5,
+        1
+      ]
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/animatedParts/parts/body/partStates/body/leapfall/properties/damageArea",
     "value": [
       [
         0.5,
