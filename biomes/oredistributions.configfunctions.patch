@@ -2,32 +2,6 @@
   { 
     "op" : "add", 
     "path" : "/asteroid/0/1/-",
-    "value" : [ "lead", 0.2 ] 
+    "value" : [ "lead", 0.40 ] 
   }
 ]
-
-/* -original
-
-  "asteroid" : [
-    [0.5, [ [ "copper", 0.65 ], [ "silver", 0.55 ], [ "gold", 0.45 ] ] ]
-  ]
-
-   -após o patch
-
-    "asteroid" : [
-    [0.5, [ [ "copper", 0.65 ], [ "silver", 0.55 ], [ "gold", 0.45 ], [ "lead", 0.1 ] ] ]
-  ],
-
-  "path" : "/asteroid/0/1/-"  <- O "0" significa o primeiro valor do array, se tivesse outro valor,  como por exemplo:
-    "asteroid" : [
-    [0.5, [ [ "copper", 0.65 ], [ "silver", 0.55 ], [ "gold", 0.45 ], [ "lead", 0.1 ] ] ]
-    [exemplo, [[cuceta]]]
-  ],
-
-  o que contem o "exemplo" seria 1, daí em diante
-
-
-  já o "1" é o "[ [ "copper", 0.65 ], [ "silver", 0.55 ], [ "gold", 0.45 ] ]", "0" aqui daria erro pois ele não é um array em si já que o patch tenta adicionar algo dentro dele
-
-
-  */

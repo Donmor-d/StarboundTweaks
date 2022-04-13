@@ -125,6 +125,11 @@
 	"value" : { "item" : "shotgunstickyshell" }
 	},
 	{
+	"op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "leadbar" }
+	},
+	{
 	"op": "add",
 	"path": "/statusControllerSettings/stats/maxAmmo",
 	"value": { "baseValue": 50 }

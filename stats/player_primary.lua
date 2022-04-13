@@ -206,7 +206,7 @@ function update(dt)
   if status.resource("health") <= status.resourceMax("health") * 0.5
   and status.resource("health") > status.resourceMax("health") * 0.25 then
     if not self.lowhplock then
-      animator.playSound("lowHealth", -1)  
+      animator.playSound( "lowHealth", -1, 1)
       self.lowhplock = true
     end
   else
@@ -292,17 +292,17 @@ function overheadBars()
   end
 
   
-  if status.resource("ammo")/50 > 0.75 then
+  if status.resourcePercentage("ammo") > 0.75 then
     table.insert(bars, {
       percentage = status.resource("ammo")/50,
       color = {0, 200, 0, 255}
     })
-  elseif status.resource("ammo")/50 > 0.5 then
+  elseif status.resourcePercentage("ammo") > 0.5 then
     table.insert(bars, {
       percentage = status.resource("ammo")/50,
       color = {200, 200, 0, 255}
     })
-  elseif status.resource("ammo")/50 > 0.25 then
+  elseif status.resourcePercentage("ammo") > 0.25 then
     table.insert(bars, {
       percentage = status.resource("ammo")/50,
       color = {200, 100, 0, 255}
