@@ -4,7 +4,7 @@ crystalSingleBeamAttack = {}
 function crystalSingleBeamAttack.enter()
   if not hasTarget() then return nil end
   return {
-    windupTimer = 0.6,
+    windupTimer = 1,
     timer = config.getParameter("crystalSingleBeamAttack.skillTime", 12),
     rotateInterval = config.getParameter("crystalSingleBeamAttack.rotateInterval", 12),
     angleRange = 1.5,
