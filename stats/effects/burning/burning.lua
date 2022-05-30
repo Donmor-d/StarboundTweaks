@@ -15,7 +15,18 @@ function update(dt)
   if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then
     effect.expire()
   end
+  local sourceID = effect.sourceEntity()
+  local activeStatus = status.activeUniqueStatusEffectSummary()
 
+  for i = 1, #activeStatus do
+    if activeStatus[i][1] == "weakpoison" then
+      status.addEphemeralEffect("poisongas", nil, sourceID)
+    elseif activeStatus[i][1] == "frostslow" then
+      status.addEphemeralEffect("armorshatter", nil, sourceID)
+    elseif activeStatus[i][1] == "electrified" then
+      status.addEphemeralEffect("conductor", nil, sourceID)
+    end
+  end
   self.tickTimer = self.tickTimer - dt
   if self.tickTimer <= 0 then
     self.tickTimer = self.tickTime

@@ -258,7 +258,7 @@ function update(dt)
   end
 
   if not status.resourcePositive("energyRegenBlock") then
-    status.modifyResourcePercentage("energy", status.stat("energyRegenPercentageRate") * dt)
+    status.modifyResourcePercentage("energy", status.stat("energyRegenPercentageRate") * dt * ((status.resourcePercentage("energy") + 0.5))) -- regens faster the more you have
   end
 
   self.shieldHitInvulnerabilityTime = math.max(self.shieldHitInvulnerabilityTime - dt, 0)

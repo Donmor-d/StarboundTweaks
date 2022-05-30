@@ -1,0 +1,27 @@
+{
+  "projectileName" : "corrosivechunk",
+  "physics" : "grenadenobounce",
+  "bounces" : -1,
+  "timeToLive" : 10,
+  "speed" : 15,
+  "image" : "corrosivechunk.png",
+  "animationCycle" : 0.8,
+  "lightColor" : [235, 126, 2],
+  "frameNumber" : 8,
+  "emitters" : [ "poisonplasmarocket", "poisondrip" ],
+  "piercing" : true,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smoke/smoke.config"
+    }
+  ],
+  "damageKind" : "poison",
+  "statusEffects" : [
+    "weakpoison"
+  ],
+  "hydrophobic" : true,
+
+  "persistentAudio" : "/sfx/objects/torch.ogg"
+}

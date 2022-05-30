@@ -3,6 +3,5 @@
     { "item" : "durasteelore", "count" : 3 }
   ],
   "output" : { "item" : "durasteelbar", "count" : 3 },
-  "duration" : 0,
   "groups" : [ "craftingfurnace3", "bars", "all" ]
 }

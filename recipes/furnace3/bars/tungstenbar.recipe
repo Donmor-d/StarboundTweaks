@@ -3,6 +3,5 @@
     { "item" : "tungstenore", "count" : 3 }
   ],
   "output" : { "item" : "tungstenbar", "count" : 3 },
-  "duration" : 0,
   "groups" : [ "craftingfurnace3", "bars", "all" ]
 }

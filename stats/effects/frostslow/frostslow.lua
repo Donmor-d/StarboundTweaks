@@ -12,6 +12,15 @@ function init()
 end
 
 function update(dt)
+  local sourceID = effect.sourceEntity()
+  local activeStatus = status.activeUniqueStatusEffectSummary()
+
+  for i = 1, #activeStatus do
+    if activeStatus[i][1] == "weakpoison" then
+      status.addEphemeralEffect("commoncold", nil, sourceID)
+    end
+  end
+
   mcontroller.controlModifiers({
       groundMovementModifier = 0.3,
       speedModifier = 0.75,

@@ -1,0 +1,13 @@
+[
+    {
+      "op": "replace",
+      "path": "/animatedParts/parts/blade/properties/image",
+      "value": "<partImage><paletteSwaps>?<directives>?<bladeDirectives>"
+    },
+    {
+        "op": "add",
+        "path": "/sounds/chargedFire",
+        "value": [ "/sfx/melee/charge_full_swing3.ogg" ]
+    }
+  ]
+  

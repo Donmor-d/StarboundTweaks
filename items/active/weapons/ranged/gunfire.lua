@@ -8,7 +8,7 @@ function GunFire:init()
   self.weapon:setStance(self.stances.idle)
 
   if self.ammoUsage == nil then
-    self.ammoUsage = self.energyUsage or 0
+    self.ammoUsage = self.energyUsage/10 or 0
   end
 
   self.cooldownTimer = self.reloadTime --increased delay until you can fire

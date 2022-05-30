@@ -25,16 +25,21 @@ function AxeCleave:windup(windupProgress)
     else
       bounceProgress = math.min(1, bounceProgress + (self.dt / self.stances.windup.bounceTime))
       self.weapon.relativeWeaponRotation = self:bounceWeaponAngle(bounceProgress)
-      self:setState(self.fire)
+    end
+
+    if windupProgress > 0.8 and windupProgress < 1 then
+      animator.setGlobalTag("bladeDirectives", "fade=FFFFFFFF=0.15")
+    else 
+      animator.setGlobalTag("bladeDirectives", "")
     end
     coroutine.yield()
   end
-
-  if windupProgress >= 1.0 then
+  
+  if windupProgress > 0.5 then
     if self.stances.preslash then
       self:setState(self.preslash)
     else
-      self:setState(self.fire)
+      self:setState(self.fire, windupProgress)
     end
   else
     self:setState(self.winddown, windupProgress)
@@ -56,18 +61,27 @@ function AxeCleave:winddown(windupProgress)
   end
 end
 
-function AxeCleave:fire()
+function AxeCleave:fire(windupProgress)
   self.weapon:setStance(self.stances.fire)
   self.weapon:updateAim()
+  
+  if windupProgress > 0.8 and windupProgress < 1 then
+    windupProgress = 1.25 -- 125% of base damage
+    animator.setGlobalTag("bladeDirectives", "")
+    animator.playSound("chargedFire")
+  end
+  self.damageConfig.baseDamage = self.damageConfig.baseDamage * windupProgress
 
-  animator.setAnimationState("swoosh", "fire")
   animator.playSound("fire")
+  animator.setAnimationState("swoosh", "fire")
   animator.burstParticleEmitter(self.weapon.elementalType .. "swoosh")
 
   util.wait(self.stances.fire.duration, function()
       local damageArea = partDamageArea("swoosh")
       self.weapon:setDamage(self.damageConfig, damageArea, self.fireTime)
     end)
+
+    self.damageConfig.baseDamage = self.baseDps * self.fireTime
 
   self.cooldownTimer = self:cooldownTime()
 end
@@ -94,4 +108,3 @@ function AxeCleave:windupAngle(ratio)
 
   return util.toRadians(weaponRotation), util.toRadians(armRotation)
 end
-

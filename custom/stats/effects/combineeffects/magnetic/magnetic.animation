@@ -1,0 +1,15 @@
+{
+  "particleEmitters" : {
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [100, 100, 255]
+    }
+  },
+  "sounds" : {
+    "proc" : [ "/sfx/projectiles/glitchscratch.ogg" ],
+    "pull" : [ "/sfx/projectiles/astraltear_stop3.ogg" ]
+  }
+}

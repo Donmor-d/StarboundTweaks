@@ -8,10 +8,5 @@
     "op": "replace",
     "path": "/output/count",
     "value": 2
-  },
-  {
-    "op": "replace",
-    "path": "/duration",
-    "value": 0
   }
 ]

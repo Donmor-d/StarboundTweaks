@@ -14,7 +14,18 @@ function init()
 end
 
 function update(dt)
-  status.overConsumeResource("energy", 2.5) --drains energy 
+  status.overConsumeResource("energy", 0.75) --drains energy 
+
+  local sourceID = effect.sourceEntity()
+  local activeStatus = status.activeUniqueStatusEffectSummary()
+
+  for i = 1, #activeStatus do
+    if activeStatus[i][1] == "weakpoison" then
+      status.addEphemeralEffect("corrosion", nil, sourceID)
+    elseif activeStatus[i][1] == "frostslow" then
+      status.addEphemeralEffect("magnetic", nil, sourceID)
+    end
+  end
 
 
   self.tickTimer = self.tickTimer - dt
