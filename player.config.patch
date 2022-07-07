@@ -139,5 +139,21 @@
 	"path": "/statusControllerSettings/resources/ammo",
 	"value": { "maxStat": "maxAmmo",
 		  		"inicialPercentage": 0 }
+	},
+	{
+	"op": "add",
+	"path": "/statusControllerSettings/resources/lunacy",
+	"value": {
+		"maxValue": 3600, //1 hour if 1 item is equipped/held, 30 minutes if 2, 20 minutes if 3, 10 minutes if 4
+		"inicialPercentage": 0,
+		"deltaStat" : "lunacyRegen"
+		}
+	},
+	{
+	"op": "add",
+	"path": "/statusControllerSettings/stats/lunacyRegen",
+	"value": {
+		"baseValue": 0
+	}
 	}
 ]

@@ -1,0 +1,20 @@
+{
+  "name" : "eerie",
+
+  "effectConfig" : { 
+    "powerModifier" : 1,
+    "removeEffects" :["eldritch", "delirium", "lunacy"],
+    "message" : {
+      "unique" : false,
+      "messageId" : "eeriemessage",
+      "senderName" : "doesntmatter",
+      "text" : "I am detecting anomalous waves from the equipment youre wearing, i'd advise being cautious with them."
+    }
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [ "eerie.lua" ],
+  
+  "label" : "Eerie: Something noticed you.",
+  "icon" : "/custom/stats/effects/eerie/eerie.png"
+}

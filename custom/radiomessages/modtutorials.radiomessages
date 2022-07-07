@@ -7,5 +7,9 @@
   "pickupupgrademodule" : {
     "type" : "tutorial",
     "text" : "You've obtained a Ship Upgrade Module. With enough of these and a sizeable crew (or some other means) you can upgrade your ship! Upgrading your ship will increase fuel capacity, ship speed and decrease fuel consumption."
-  }
+  },
+  "outofammo" : {
+    "type" : "tutorial",
+    "text" : "Looks like you've ran out of ammo, you can craft more at an Ammo Station or simply interact to me on the ship to refill."
+  } // see how to later
 }

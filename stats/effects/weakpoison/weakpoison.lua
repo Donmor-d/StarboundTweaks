@@ -4,7 +4,7 @@ function init()
 
   script.setUpdateDelta(5)
 
-  self.tickDamagePercentage = 0.025
+  self.tickDamagePercentage = 0.02
   self.tickTime = 1.0
   self.tickTimer = self.tickTime
 end
@@ -15,7 +15,7 @@ function update(dt)
     self.tickTimer = self.tickTime
     status.applySelfDamageRequest({
         damageType = "IgnoresDef",
-        damage = math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1,
+        damage = math.floor(status.resourcePercentage("health") * self.tickDamagePercentage) + 5,
         damageSourceKind = "poison",
         sourceEntityId = entity.id()
       })

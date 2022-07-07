@@ -1,0 +1,14 @@
+{
+  "name" : "suiciding",
+
+  "effectConfig" : {},
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "suiciding.lua"
+  ],
+
+  //"animationConfig" : "suiciding.animation", later
+
+  "label" : "Suiciding"
+}

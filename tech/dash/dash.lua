@@ -103,6 +103,9 @@ function endDash()
   if self.stopAfterDash then
     local movementParams = mcontroller.baseParameters()
     local currentVelocity = mcontroller.velocity()
+    if math.abs(currentVelocity[1]) > movementParams.runSpeed then
+      mcontroller.setVelocity({currentVelocity[1]/2, 0})
+    end
     mcontroller.controlApproachXVelocity(self.dashDirection * movementParams.runSpeed, self.dashControlForce)
   end
 

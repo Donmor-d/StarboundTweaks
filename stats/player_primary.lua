@@ -23,6 +23,9 @@ function init()
   message.setHandler("applyStatusEffect", function(_, _, effectConfig, duration, sourceEntityId)
       status.addEphemeralEffect(effectConfig, duration, sourceEntityId)
     end)
+  if status.resourcePercentage("lunacy") == 1 then
+    status.setResourcePercentage("lunacy", 0)
+  end
 end
 
 function inflictedDamageCallback(notifications)
@@ -228,6 +231,43 @@ function update(dt)
   end
 
   ----------end heartbeat sound
+  if status.resourcePercentage("ammo") == 0 then 
+    local message = {
+      unique = true,
+      messageId = "outofammo",
+      senderName = "doesntmatter",
+      text = "Looks like you've ran out of ammo, you can craft more at an Ammo Station or simply interact with me on the ship to refill."
+    }
+
+    world.sendEntityMessage(entity.id(), "queueRadioMessage", message)
+  end
+
+  -- lunacy mechanic start
+  if status.resource("lunacy") > 0 and status.stat("lunacyRegen") == 0 then --if no equipment is equipped 
+    status.consumeResource("lunacy", 3 * dt)
+  end
+  
+                                  --Probably a VERY bad way to do this, make better later
+  if status.resourcePercentage("lunacy") >= 0.9  then
+    status.addEphemeralEffect("lunacy", math.huge)
+    
+  elseif status.resourcePercentage("lunacy") >= 0.75 then
+    status.addEphemeralEffect("delirium", math.huge)
+
+  elseif status.resourcePercentage("lunacy") >= 0.5 then
+    status.addEphemeralEffect("eldritch", math.huge)
+
+  elseif status.resourcePercentage("lunacy") >= 0.01 then
+    status.addEphemeralEffect("eerie", math.huge)
+
+  else
+    status.removeEphemeralEffect("eerie")
+  end
+
+  if status.resourcePercentage("lunacy") == 1 then
+    status.addEphemeralEffect("suiciding", math.huge)
+  end
+  -- lunacy mechanic end
 
   self.hitInvulnerabilityTime = math.max(self.hitInvulnerabilityTime - dt, 0)
   local flashTime = status.statusProperty("hitInvulnerabilityFlash")
@@ -292,27 +332,14 @@ function overheadBars()
   end
 
   
-  if status.resourcePercentage("ammo") > 0.75 then
-    table.insert(bars, {
-      percentage = status.resource("ammo")/50,
-      color = {0, 200, 0, 255}
-    })
-  elseif status.resourcePercentage("ammo") > 0.5 then
-    table.insert(bars, {
-      percentage = status.resource("ammo")/50,
-      color = {200, 200, 0, 255}
-    })
-  elseif status.resourcePercentage("ammo") > 0.25 then
-    table.insert(bars, {
-      percentage = status.resource("ammo")/50,
-      color = {200, 100, 0, 255}
-    })
-  else
-    table.insert(bars, {
-      percentage = status.resource("ammo")/50,
-      color = {200, 0, 0, 255}
-    })
-  end
+  local r = math.min(math.abs(status.resourcePercentage("ammo") - 1) * 800, 200) --pega um valor de 0 a 200 dependendo da porcentagem perdida até 0.5
+  local b = math.min(status.resourcePercentage("ammo") * 400, 200)               --mesmo de cima mas do contrário
+
+
+  table.insert(bars, {
+      percentage = math.ceil(status.resource("ammo") * (1/status.resource("ammo"))),
+      color = {r, b, 0, 255}
+  })
 
   return bars
 end
