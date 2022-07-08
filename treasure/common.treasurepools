@@ -89,6 +89,94 @@
   ],
 
   // ================================
+  //       Cultist camp treasure pool
+  // ================================
+
+  "cultistCampTreasure" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.32, "pool" : "chestMoney"},
+        {"weight" : 0.16, "pool" : "healingItem"},
+        {"weight" : 0.16, "pool" : "ore"},
+        {"weight" : 0.12, "pool" : "thrownWeapon"},
+        {"weight" : 0.05, "pool" : "weapon"},
+        {"weight" : 0.05, "pool" : "cultistArmor"},
+        {"weight" : 0.08, "item" : "manipulatormodule"},
+        {"weight" : 0.03, "item" : "techcard"},
+        {"weight" : 0.01, "item" : "upgrademodule"},
+        {"weight" : 0.01, "pool" : "instrument"},
+        {"weight" : 0.01, "pool" : "costume"}
+      ]
+    }]
+  ],
+
+  "cultistWeapon" : [
+    [0, {
+      "pool" : [
+        // large chance of melee
+        {"weight" : 0.40, "pool" : "commonMelee"},
+        {"weight" : 0.30, "pool" : "uncommonMelee"},
+        {"weight" : 0.10, "pool" : "rareMelee"},
+
+        // small chance of guns
+        {"weight" : 0.2, "pool" : "cultistGun"}
+      ]
+    }],
+    [2.9, {
+      "pool" : [
+        // moderate chance of melee
+        {"weight" : 0.25, "pool" : "commonMelee"},
+        {"weight" : 0.15, "pool" : "uncommonMelee"},
+        {"weight" : 0.05, "pool" : "rareMelee"},
+
+        // moderate chance of guns
+        {"weight" : 0.45, "pool" : "cultistGun"},
+
+        // small chance of staff/wand
+        {"weight" : 0.05, "item" : "rarestaff"},
+        {"weight" : 0.05, "item" : "rarewand"}
+      ]
+    }],
+    [4.9, {
+      "pool" : [
+        // moderate chance of melee
+        {"weight" : 0.20, "pool" : "commonMelee"},
+        {"weight" : 0.12, "pool" : "uncommonMelee"},
+        {"weight" : 0.05, "pool" : "rareMelee"},
+
+        // moderate chance of guns
+        {"weight" : 0.38, "pool" : "cultistGun"},
+
+        // moderate chance of staff/wand
+        {"weight" : 0.12, "item" : "rarestaff"},
+        {"weight" : 0.13, "item" : "rarewand"}
+      ]
+    }]
+  ],
+  
+  "cultistGun" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.007, "item" : "cultistassaultrifle"},
+        {"weight" : 0.007, "item" : "cultistmachinepistol"},
+        {"weight" : 0.007, "item" : "cultistpistol"},
+        {"weight" : 0.007, "item" : "cultistshotgun"},
+        {"weight" : 0.007, "item" : "cultistsniperrifle"}
+      ]
+    }]
+  ],
+
+  "cultistArmor" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.007, "item" : "cultisthead"},
+        {"weight" : 0.007, "item" : "cultistchest"},
+        {"weight" : 0.007, "item" : "cultistlegs"}
+      ]
+    }]
+  ],
+
+  // ================================
   //     Small Chance of Weapon
   // ================================
 

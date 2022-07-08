@@ -2,6 +2,7 @@
   "name" : "delirium",
 
   "effectConfig" : { 
+    "canSpawn" : true,
     "powerModifier" : 1.2,
     "removeEffects" :["eldritch", "eerie", "lunacy"],
     "message" : {

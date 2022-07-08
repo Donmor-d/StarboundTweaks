@@ -335,9 +335,8 @@ function overheadBars()
   local r = math.min(math.abs(status.resourcePercentage("ammo") - 1) * 800, 200) --pega um valor de 0 a 200 dependendo da porcentagem perdida até 0.5
   local b = math.min(status.resourcePercentage("ammo") * 400, 200)               --mesmo de cima mas do contrário
 
-
   table.insert(bars, {
-      percentage = math.ceil(status.resource("ammo") * (1/status.resource("ammo"))),
+      percentage = status.resource("ammo") * (1/status.resourceMax("ammo")),
       color = {r, b, 0, 255}
   })
 

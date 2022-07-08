@@ -2,6 +2,7 @@
   "name" : "eldritch",
 
   "effectConfig" : { 
+    "canSpawn" : false,
     "powerModifier" : 1.1,
     "removeEffects" :["eerie", "delirium", "lunacy"],
     "message" : {

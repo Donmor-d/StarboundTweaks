@@ -11,6 +11,8 @@ function AxeCleave:init()
 
   MeleeSlash.init(self)
   self:setupInterpolation()
+
+  self.defKnockback = self.damageConfig.knockback  --default knockback
 end
 
 function AxeCleave:windup(windupProgress)
@@ -66,10 +68,11 @@ function AxeCleave:fire(windupProgress)
   self.weapon:updateAim()
   
   if windupProgress > 0.8 and windupProgress < 1 then
-    windupProgress = 1.25 -- 125% of base damage
+    windupProgress = 1.25 -- 125% of base damage and base knockback
     animator.setGlobalTag("bladeDirectives", "")
     animator.playSound("chargedFire")
   end
+  self.damageConfig.knockback = self.damageConfig.knockback * windupProgress
   self.damageConfig.baseDamage = self.damageConfig.baseDamage * windupProgress
 
   animator.playSound("fire")
@@ -81,6 +84,7 @@ function AxeCleave:fire(windupProgress)
       self.weapon:setDamage(self.damageConfig, damageArea, self.fireTime)
     end)
 
+    self.damageConfig.knockback = self.defKnockback
     self.damageConfig.baseDamage = self.baseDps * self.fireTime
 
   self.cooldownTimer = self:cooldownTime()
