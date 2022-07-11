@@ -4,5 +4,5 @@
 	{ "item" : "liquidoil", "count" : 10 }
   ],
   "output" : { "item" : "st_fastrevolverbullet", "count" : 1 },
-  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
+  "groups" : [ "st_ammostation", "st_ammopistolbullet", "all" ]
 }

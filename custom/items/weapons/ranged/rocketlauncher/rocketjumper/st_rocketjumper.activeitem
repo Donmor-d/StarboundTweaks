@@ -38,7 +38,7 @@
   "animationScripts" : [],
   "scriptedAnimationParameters" : {},
 
-  "baseOffset" : [0.30, 0.385],
+  "baseOffset" : [-0.25, 0.385],
   "muzzleOffset" : [2, 0],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
@@ -60,6 +60,7 @@
 
     "projectileType" : "st_nodamagerocket",
     "projectileParameters" : {
+	  "timeToLive" : 0.5,
       "knockback" : 20
     },
 

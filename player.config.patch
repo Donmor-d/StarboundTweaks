@@ -19,116 +19,77 @@
 	"path": "/movementParameters/airFriction",
 	"value": 0 
 	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "ammostation" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "assaultriflebouncingbullet" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "assaultriflenormalbullet" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "assaultriflepiercingbullet" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "assaultrifleburstbullet" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "sniperriflebouncingbullet" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "sniperriflenormalbullet" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "sniperriflepiercingbullet" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "grenadelauncherbouncegrenade" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "grenadelauncherelectricgasgrenade" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "grenadelauncherelectricgasgrenade" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "grenadelauncherpoisongasgrenade" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "grenadelaunchericegasgrenade" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "grenadelauncherfiregasgrenade" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "grenadelaunchernormalgrenade" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "rocketlauncherguidedrocket" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "rocketlauncherhomingrocket" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "rocketlauncherminirocket" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "rocketlaunchernormalrocket" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "shotgunnormalshell" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "shotgunstickyshell" }
-	},
-	{
-	"op" : "add",
-	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "st_leadbar" }
-	},
+//--------------------------------------recipes--------------------------------------
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ammostation" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ammocombiner" } },
+		//assaultrifles
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ironmodularrifle" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_tungstenmodularrifle" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularrifle" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularrifle" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularrifle" } },
+		//revolvers
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ironmodularrevolver" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_tungstenmodularrevolver" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularrevolver" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularrevolver" } },
+		//shotguns
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_tungstenmodularshotgun" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularshotgun" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularshotgun" } },
+		//snipers
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularsniper" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularsniper" } },
+		//machinepistols
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularpistol" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularpistol" } },
+		//bazookas - rocket launchers
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularbazooka" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_rocketjumper" } },
+		//launchers - grenade launchers
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularlauncher" } },
+		//------augments-----
+			//assaultrifle
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalriflebullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_piercingriflebullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_burstriflebullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_bouncingriflebullet" } },
+			//revolver
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalrevolverbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_explosiverevolverbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_fastrevolverbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ghostrevolverbullet" } },
+			//shotgun
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalshotgunshell" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_stickybombshotgunshell" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_poisonshotgunshell" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_fireshotgunshell" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_iceshotgunshell" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricshotgunshell" } },
+			//sniperrifle
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalsniperbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_piercingsniperbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_bouncingsniperbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_sinewavesniperbullet" } },
+			//machinepistol
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalmachinepistolbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricmachinepistolbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_firemachinepistolbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_icemachinepistolbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_poisonmachinepistolbullet" } },
+			//bazooka - rocketlauncher
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalrocket" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_guidedrocket" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_homingrocket" } },
+			//launcher - grenade launcher
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalgrenade" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_poisongasgrenade" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_icegasgrenade" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricgasgrenade" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_firegasgrenade" } },
+		//bars
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_leadbar" } },
+
 	{
 	"op": "add",
 	"path": "/statusControllerSettings/stats/maxAmmo",

@@ -3,13 +3,13 @@
   "price" : 500,
   "rarity" : "Rare",
   "category" : "ammoModifier",
-  "inventoryIcon" : "electricshotgunshell.png",
+  "inventoryIcon" : "st_electricshotgunshell.png",
   "description" : "Changes the shotgun's element to electric.",
   "shortdescription" : "Electric Shotgun Shell",
 
   "augment": {
     "type": "shotgunammo",
-    "name": "electricshotgunshell",
+    "name": "st_electricshotgunshell",
     "displayName": "Elecrtified Ammo",
     "displayIcon": "/custom/items/augments/shotgun/electricshell/st_electricshotgunshell.png",
     "elementalType": "electric",

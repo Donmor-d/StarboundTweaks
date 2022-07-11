@@ -1,8 +1,8 @@
 {
-  "kind" : "shortjump",
+  "kind" : "st_shortjump",
   "definition" : {
     "type" : "animated",
-    "animation" : "/custom/animations/shortjump/shortjump.animation",
+    "animation" : "/custom/animations/shortjump/st_shortjump.animation",
     "position" : [0, 0],
     "finalVelocity" : [0, 0],
     "approach" : [0, 50],

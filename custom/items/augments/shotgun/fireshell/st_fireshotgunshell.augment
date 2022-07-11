@@ -3,7 +3,7 @@
   "price" : 500,
   "rarity" : "Rare",
   "category" : "ammoModifier",
-  "inventoryIcon" : "fireshotgunshell.png",
+  "inventoryIcon" : "st_fireshotgunshell.png",
   "description" : "Changes the shotgun's element to fire.",
   "shortdescription" : "Fire Shotgun Shell",
 
@@ -38,7 +38,7 @@
        "projectileCount" : 8,
 	   "fireType" : "auto",
 
-      "projectileType": "firepellet",
+      "projectileType": "st_firepellet",
       "projectileParameters": {
 	    "damageKind" : "fire",
       "knockback" : 30,

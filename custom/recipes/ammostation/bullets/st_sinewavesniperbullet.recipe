@@ -4,5 +4,5 @@
 	{ "item" : "crystal", "count" : 10 }
   ],
   "output" : { "item" : "st_sinewavesniperbullet", "count" : 1 },
-  "groups" : [ "ammostation", "ammobullet", "all" ]
+  "groups" : [ "st_ammostation", "st_ammobullet", "all" ]
 }

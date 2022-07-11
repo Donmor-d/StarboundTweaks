@@ -1,8 +1,8 @@
 {
-  "kind" : "shortdash",
+  "kind" : "st_shortdash",
   "definition" : {
     "type" : "animated",
-    "animation" : "/custom/animations/shortdash/shortdash.animation",
+    "animation" : "/custom/animations/shortdash/st_shortdash.animation",
     "position" : [0, 0],
     "finalVelocity" : [0, 0],
     "approach" : [0, 0],

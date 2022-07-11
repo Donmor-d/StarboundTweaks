@@ -6,7 +6,7 @@
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
     "config" : "/custom/interface/windowconfig/st_ammostation.config",
-    "filter" : [ "ammostation" ]
+    "filter" : [ "st_ammostation" ]
   },
 
   "category" : "crafting",

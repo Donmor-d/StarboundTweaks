@@ -26,6 +26,12 @@ function init()
   if status.resourcePercentage("lunacy") == 1 then
     status.setResourcePercentage("lunacy", 0)
   end
+
+  
+  animator.playSound("lowHealth", -1)
+  animator.playSound("veryLowHealth", -1)
+  animator.setSoundVolume("lowHealth", 0)
+  animator.setSoundVolume("veryLowHealth", 0)
 end
 
 function inflictedDamageCallback(notifications)
@@ -206,31 +212,11 @@ function update(dt)
   end
 
   --plays heartbeat sound when low on health
-  if status.resource("health") <= status.resourceMax("health") * 0.5
-  and status.resource("health") > status.resourceMax("health") * 0.25 then
-    if not self.lowhplock then
-      animator.playSound( "lowHealth", -1, 1)
-      self.lowhplock = true
-    end
-  else
-    if self.lowhplock then
-      self.lowhplock = false  
-    end
-    animator.stopAllSounds("lowHealth")
-  end
-  if status.resource("health") <= status.resourceMax("health") * 0.25 then
-    if not self.vlowhplock then
-      animator.playSound("veryLowHealth", -1)  
-      self.vlowhplock = true
-    end
-  else
-    if self.vlowhplock then
-      self.vlowhplock = false  
-    end
-    animator.stopAllSounds("veryLowHealth")
-  end
 
+  --planned change, make the sounds tied to a status effect rather than play it directly, thatll also allow for screen effects
+  
   ----------end heartbeat sound
+
   if status.resourcePercentage("ammo") == 0 then 
     local message = {
       unique = true,

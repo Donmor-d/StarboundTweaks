@@ -5,11 +5,11 @@ function init()
   self.controlForce = config.getParameter("baseHomingControlForce") * self.targetSpeed
 
   self.timeToHome = 0.5
-  self.homingActions = config.getParameter("homingActions", {})
+  homingActions = config.getParameter("homingActions", {})
   self.lock = false
 end
 
-function update()
+function update(dt)
 
     self.timeToHome = math.max(self.timeToHome - dt, 0)
 
@@ -24,12 +24,15 @@ function update()
         
 
         for _, target in ipairs(targets) do
-            if not self.lock then
-                projectile.processAction(self.homingActions)
-                self.lock = true
-            end
+            
 
             if entity.isValidTarget(target) and entity.entityInSight(target)then
+                if not self.lock then
+                    for _,action in ipairs(homingActions) do
+                        projectile.processAction(action)
+                    end
+                    self.lock = true
+                end
                 local targetPos = world.entityPosition(target)
                 local myPos = mcontroller.position()
                 local dist = world.distance(targetPos, myPos)

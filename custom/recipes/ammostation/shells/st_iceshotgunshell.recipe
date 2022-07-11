@@ -4,5 +4,5 @@
 	{ "item" : "cryonicextract", "count" : 2 }
   ],
   "output" : { "item" : "st_iceshotgunshell", "count" : 1 },
-  "groups" : [ "ammostation", "ammoshell", "all" ]
+  "groups" : [ "st_ammostation", "st_ammoshell", "all" ]
 }

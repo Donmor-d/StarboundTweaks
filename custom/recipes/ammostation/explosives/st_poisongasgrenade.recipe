@@ -4,5 +4,5 @@
 	{ "item" : "venomsample", "count" : 2 }
   ],
   "output" : { "item" : "st_poisongasgrenade", "count" : 1 },
-  "groups" : [ "ammostation", "ammoexplosive", "all" ]
+  "groups" : [ "st_ammostation", "st_ammoexplosive", "all" ]
 }

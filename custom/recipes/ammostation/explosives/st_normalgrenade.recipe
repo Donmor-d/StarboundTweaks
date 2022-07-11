@@ -5,5 +5,5 @@
 	{ "item" : "silverbar", "count" : 2 }
   ],
   "output" : { "item" : "st_normalgrenade", "count" : 1 },
-  "groups" : [ "ammostation", "ammoexplosive", "all" ]
+  "groups" : [ "st_ammostation", "st_ammoexplosive", "all" ]
 }

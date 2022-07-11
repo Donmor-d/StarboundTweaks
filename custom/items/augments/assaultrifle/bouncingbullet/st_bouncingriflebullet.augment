@@ -14,7 +14,7 @@
     "displayIcon": "/custom/items/augments/assaultrifle/bouncingbullet/st_bouncingriflebullet.png",
     "elementalType": "physical",
 
-    "inventoryIcon" : "st_bouncing.png",
+    "inventoryIcon" : "bouncing.png",
 
     "animationParts" : {
       "butt" : "",

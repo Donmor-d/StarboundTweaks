@@ -4,5 +4,5 @@
 	{ "item" : "scorchedcore", "count" : 2 }
   ],
   "output" : { "item" : "st_fireshotgunshell", "count" : 1 },
-  "groups" : [ "ammostation", "ammoshell", "all" ]
+  "groups" : [ "st_ammostation", "st_ammoshell", "all" ]
 }

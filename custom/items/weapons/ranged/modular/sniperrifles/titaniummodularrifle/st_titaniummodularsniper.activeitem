@@ -3,7 +3,7 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "Powerfully strong to cover long distances.",
+  "description" : "A long ranged rifle that can have its bullets augmented.",
   "shortdescription" : "Titanium Modular Sniper",
   "tooltipKind" : "gunwithammo",
   "category" : "sniperRifle",

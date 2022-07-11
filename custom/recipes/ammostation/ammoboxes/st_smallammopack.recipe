@@ -4,5 +4,5 @@
 	{ "item" : "copperbar", "count" : 1 }
   ],
   "output" : { "item" : "st_smallammopack", "count" : 2 },
-  "groups" : [ "ammostation", "ammoboxes", "all" ]
+  "groups" : [ "st_ammostation", "st_ammoboxes", "all" ]
 }

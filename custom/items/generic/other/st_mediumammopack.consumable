@@ -13,6 +13,6 @@
       }
     ] ],
   "emote" : "",
-  "emitters" : [ "mediumammouse" ],
+  "emitters" : [ "st_mediumammouse" ],
   "blockingEffects" : [ ]
 }

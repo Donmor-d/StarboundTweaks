@@ -4,5 +4,5 @@
 	{ "item" : "phasematter", "count" : 2 }
   ],
   "output" : { "item" : "st_burstriflebullet", "count" : 1 },
-  "groups" : [ "ammostation", "ammobullet", "all" ]
+  "groups" : [ "st_ammostation", "st_ammobullet", "all" ]
 }

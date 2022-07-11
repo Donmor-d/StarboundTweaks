@@ -5,5 +5,5 @@
 	{ "item" : "titaniumbar", "count" : 1 }
   ],
   "output" : { "item" : "st_explosiverevolverbullet", "count" : 1 },
-  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
+  "groups" : [ "st_ammostation", "st_ammopistolbullet", "all" ]
 }

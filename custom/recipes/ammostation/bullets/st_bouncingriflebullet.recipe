@@ -4,5 +4,5 @@
 	{ "item" : "liquidoil", "count" : 5 }
   ],
   "output" : { "item" : "st_bouncingriflebullet", "count" : 1 },
-  "groups" : [ "ammostation", "ammobullet", "all" ]
+  "groups" : [ "st_ammostation", "st_ammobullet", "all" ]
 }

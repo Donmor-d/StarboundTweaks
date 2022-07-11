@@ -13,6 +13,6 @@
       }
     ] ],
   "emote" : "",
-  "emitters" : [ "smallammouse" ],
+  "emitters" : [ "st_smallammouse" ],
   "blockingEffects" : [ ]
 }

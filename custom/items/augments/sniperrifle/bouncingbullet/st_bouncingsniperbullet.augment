@@ -3,13 +3,13 @@
   "price" : 500,
   "rarity" : "Uncommon",
   "category" : "ammoModifier",
-  "inventoryIcon" : "bouncingsniperbullet.png",
+  "inventoryIcon" : "st_bouncingsniperbullet.png",
   "description" : "Enables Bounce for sniper rifles. Each bounce empowers the bullet",
   "shortdescription" : "Bouncing Sniper Bullet",
 
   "augment": {
     "type": "sniperrifleammo",
-    "name": "bouncingsniperbullet",
+    "name": "st_bouncingsniperbullet",
     "displayName": "Bouncing Ammo",
     "displayIcon": "/custom/items/augments/sniperrifle/bouncingbullet/st_bouncingsniperbullet.png",
     "elementalType": "physical",

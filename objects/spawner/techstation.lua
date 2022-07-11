@@ -38,7 +38,7 @@ function onInteraction(args)
     return nil
   else
     for i = 1, #players do
-      world.sendEntityMessage(players[i], "applyStatusEffect", "fullammogain")
+      world.sendEntityMessage(players[i], "applyStatusEffect", "st_fullammogain")
     end
    
     return config.getParameter("interactAction")

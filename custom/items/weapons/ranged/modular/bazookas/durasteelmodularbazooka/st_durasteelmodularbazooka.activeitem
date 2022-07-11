@@ -4,7 +4,7 @@
   "inventoryIcon" : "normal.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "The power to blow stuff up.",
+  "description" : "A launcher that can have its rockets augmented.",
   "shortdescription" : "Durasteel Modular Bazooka",
   "level" : 4,
   "tooltipKind" : "gunwithammo",

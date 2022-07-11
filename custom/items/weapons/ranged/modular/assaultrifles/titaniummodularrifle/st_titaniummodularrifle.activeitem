@@ -3,7 +3,7 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A fully automatic military grade rifle.",
+  "description" : "A fully automatic rifle that can have its bullets augmented.",
   "shortdescription" : "Titanium Modular Rifle",
   "tooltipKind" : "gunwithammo",
   "category" : "assaultRifle",

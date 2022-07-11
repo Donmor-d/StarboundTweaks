@@ -3,7 +3,7 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "For when your grenades need some distance.",
+  "description" : "A launcher that can have its grenades augmented.",
   "shortdescription" : "Durasteel Modular Launcher",
   "tooltipKind" : "gunwithammo",
   "category" : "grenadeLauncher",

@@ -3,7 +3,7 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "Fires a spread that's lethal at close range.",
+  "description" : "A close range shotgun that can have its shells augmented.",
   "shortdescription" : "Durasteel Modular Shotgun",
   "tooltipKind" : "gunwithammo",
   "category" : "shotgun",

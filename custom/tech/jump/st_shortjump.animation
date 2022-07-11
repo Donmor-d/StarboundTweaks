@@ -4,7 +4,7 @@
       "burstCount" : 8,
       "particles" : [
         {
-          "particle" : "shortjump",
+          "particle" : "st_shortjump",
           "offset" : [0.2, -3]
         }
       ]

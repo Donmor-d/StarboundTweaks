@@ -3,7 +3,7 @@
   "type" : "legs",
 
   "scripts" : ["/tech/jump/multijump.lua"],
-  "animator" : "shortjump.animation",
+  "animator" : "st_shortjump.animation",
 
   "description" : "Gives you two smaller jumps that can be used in the air!",
   "shortDescription" : "Short Jump",

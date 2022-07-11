@@ -14,6 +14,8 @@ function init()
 end
 
 function update(dt)
+  
+
   status.overConsumeResource("energy", 0.75) --drains energy 
 
   local sourceID = effect.sourceEntity()
@@ -38,6 +40,16 @@ function update(dt)
     })
 
     shuffle(targetIds)
+
+    if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then --if underwater, damage player and halve the timer to damage
+      status.applySelfDamageRequest({
+        damageType = "damage",
+        damage = boltPower,
+        damageSourceKind = "electric",
+        sourceEntityId = entity.id()
+      })
+      self.tickTimer = self.tickTime/2
+    end
 
     for i,id in ipairs(targetIds) do
       local sourceEntityId = effect.sourceEntity() or entity.id()
