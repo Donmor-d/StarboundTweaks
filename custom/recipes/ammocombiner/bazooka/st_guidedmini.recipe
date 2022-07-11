@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "st_minirocket", "count" : 1 },
+    { "item" : "st_guidedrocket", "count" : 1 },
+	  { "item" : "st_leadbar", "count" : 3 }
+  ],
+  "output" : { "item" : "st_guidedminirocket", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

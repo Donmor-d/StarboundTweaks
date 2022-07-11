@@ -1,0 +1,11 @@
+{
+  "name" : "st_fullammogain",
+  "effectConfig" : {
+    "ammoGain" : 500
+  },
+  "defaultDuration" : 0.01,
+
+  "scripts" : [
+    "st_ammogain.lua"
+  ]
+}

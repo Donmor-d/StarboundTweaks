@@ -1,0 +1,13 @@
+{
+  "itemName" : "st_avolitepoweredheater",
+  "price" : 0,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "st_avolitepoweredheater.png",
+  "description" : "Able to maintain heat without losing energy. Reward for surviving the avian temple",
+  "shortdescription" : "Avolite Powered Heater",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : [
+		"st_avolitepoweredheater"
+		]
+}

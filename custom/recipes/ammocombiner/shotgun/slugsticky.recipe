@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "stickybombshotgunshell", "count" : 1 },
-    { "item" : "slugshotgunshell", "count" : 1 },
-	  { "item" : "leadbar", "count" : 3 }
-  ],
-  "output" : { "item" : "stickyslugshotgunshell", "count" : 1 },
-  "groups" : [ "ammocombiner" ]
-}

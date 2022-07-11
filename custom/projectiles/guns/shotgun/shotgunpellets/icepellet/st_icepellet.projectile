@@ -1,0 +1,37 @@
+{
+  "projectileName" : "st_icepellet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "timeToLive" : 0.075,
+  "image" : "st_icepellet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 3,
+  "power" : 50,
+  "speed" : 150,
+  "emitters" : [ "iceplasma" ],
+  "supportsProcessing" : true,
+  "actionOnCollide" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmaiceexplosion.config"
+    }
+  ],
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmaiceexplosion.config"
+    }
+  ],
+  "actionOnTimeout" : [
+    {
+      "action" : "projectile",
+      "type" : "st_weakicepellet",
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 0
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [148, 255, 0],
+  "fullBright" : true,
+  "damageKind" : "iceplasmabullet"
+}

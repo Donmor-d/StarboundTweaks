@@ -1,0 +1,10 @@
+{
+  "itemName" : "st_leadbar",
+  "price" : 20,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "st_leadbar.png",
+  "description" : "Ore for lead bars is found at asteroid fields present around some stars.",
+  "shortdescription" : "Lead Bar",
+  "itemTags" : [ "reagent" ]
+}

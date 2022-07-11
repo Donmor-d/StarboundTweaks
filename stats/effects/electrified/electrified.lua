@@ -21,9 +21,9 @@ function update(dt)
 
   for i = 1, #activeStatus do
     if activeStatus[i][1] == "weakpoison" then
-      status.addEphemeralEffect("corrosion", nil, sourceID)
+      status.addEphemeralEffect("sb_corrosion", nil, sourceID)
     elseif activeStatus[i][1] == "frostslow" then
-      status.addEphemeralEffect("magnetic", nil, sourceID)
+      status.addEphemeralEffect("sb_magnetic", nil, sourceID)
     end
   end
 

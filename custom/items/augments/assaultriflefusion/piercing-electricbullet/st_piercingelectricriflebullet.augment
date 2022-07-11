@@ -1,0 +1,82 @@
+{
+  "itemName" : "st_piercingelectricriflebullet",
+  "price" : 1500,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_piercingelectricriflebullet.png",
+  "description" : "Enables piercing for assault rifles and changes the element to electric.",
+  "shortdescription" : "Combined Rifle Bullet",
+
+  "augment": {
+    "type": "assaultrifleammo",
+    "name": "st_piercingelectricriflebullet",
+    "displayName": "Piercing Electrified Ammo",
+    "displayIcon": "/custom/items/augments/assaultriflefusion/piercing-electricbullet/st_piercingelectricriflebullet.png",
+    "elementalType": "electric",
+
+    "inventoryIcon" : "piercing.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "piercing.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+       "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+	 
+      "class": "GunFire",
+
+       "fireTime" : 0.11,
+       "baseDps" : 12,      
+       "energyUsage" : 0,   //~39.375
+       "ammoUsage" : 1.5,
+       "inaccuracy" : 0.02,
+	   
+ 
+	   
+       "reloadTime" : 1.5,     //tempo de recarga
+
+      "projectileType": "electricplasma",
+      "projectileParameters": {
+        "piercing" : true,
+        "speed" : 100
+      },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

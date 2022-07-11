@@ -1,0 +1,21 @@
+{
+  "name" : "st_eldritch",
+
+  "effectConfig" : { 
+    "canSpawn" : false,
+    "powerModifier" : 1.1,
+    "removeEffects" :["st_eerie", "st_delirium", "st_lunacy"],
+    "message" : {
+      "unique" : false,
+      "messageId" : "st_eldritchmessage",
+      "senderName" : "doesntmatter",
+      "text" : "The equipment is apparently injecting a strengthening substance, its still recommended to be careful ."
+    }
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [ "st_eerie.lua" ],
+  
+  "label" : "Eldritch: It feels like you're being watched.",
+  "icon" : "/custom/stats/effects/eerie/st_eldritch.png"
+}

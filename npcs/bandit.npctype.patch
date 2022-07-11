@@ -2,26 +2,26 @@
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/6",
-    "value": "neotommygun"
+    "value": "sb_neotommygun"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/7",
-    "value": "neopistol"
+    "value": "sb_neopistol"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/8",
-    "value": "neouzi"
+    "value": "sb_neouzi"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/9",
-    "value": "neoshotgun"
+    "value": "sb_neoshotgun"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/10",
-    "value": "npcneosniperrifle"
+    "value": "sb_npcneosniperrifle"
   }
 ]

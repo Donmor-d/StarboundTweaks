@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalgrenade", "count" : 1 },
-	{ "item" : "cryonicextract", "count" : 2 }
-  ],
-  "output" : { "item" : "icegasgrenade", "count" : 1 },
-  "groups" : [ "ammostation", "ammoexplosive", "all" ]
-}

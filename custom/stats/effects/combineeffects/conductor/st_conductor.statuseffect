@@ -1,0 +1,22 @@
+{
+  "name" : "st_conductor",
+  "blockingStat" : "electricStatusImmunity",
+
+  "effectConfig" : {
+    "boltInterval" : 0.25,
+    "jumpDistance" : 8,
+    "healthDamageFactor" : 0.1,
+    "damageClampRange" : [2, 40],
+    "statusEffects" : [ "electrified" ]
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "st_conductor.lua"
+  ],
+
+  "animationConfig" : "st_conductor.animation",
+
+  "label" : "Conductor: you're conducting electricity",
+  "icon" : "st_conductor.png"
+}

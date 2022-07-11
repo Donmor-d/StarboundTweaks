@@ -1,0 +1,11 @@
+{
+  "name" : "st_creativeammogain",
+  "effectConfig" : {
+    "ammoGain" : 50
+  },
+  "defaultDuration" : 10000,
+
+  "scripts" : [
+    "st_ammogain.lua"
+  ]
+}

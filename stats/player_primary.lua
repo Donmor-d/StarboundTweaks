@@ -249,23 +249,23 @@ function update(dt)
   
                                   --Probably a VERY bad way to do this, make better later
   if status.resourcePercentage("lunacy") >= 0.9  then
-    status.addEphemeralEffect("lunacy", math.huge)
+    status.addEphemeralEffect("sb_lunacy", math.huge)
     
   elseif status.resourcePercentage("lunacy") >= 0.75 then
-    status.addEphemeralEffect("delirium", math.huge)
+    status.addEphemeralEffect("sb_delirium", math.huge)
 
   elseif status.resourcePercentage("lunacy") >= 0.5 then
-    status.addEphemeralEffect("eldritch", math.huge)
+    status.addEphemeralEffect("sb_eldritch", math.huge)
 
   elseif status.resourcePercentage("lunacy") >= 0.01 then
-    status.addEphemeralEffect("eerie", math.huge)
+    status.addEphemeralEffect("sb_eerie", math.huge)
 
   else
-    status.removeEphemeralEffect("eerie")
+    status.removeEphemeralEffect("sb_eerie")
   end
 
   if status.resourcePercentage("lunacy") == 1 then
-    status.addEphemeralEffect("suiciding", math.huge)
+    status.addEphemeralEffect("sb_suiciding", math.huge)
   end
   -- lunacy mechanic end
 

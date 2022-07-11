@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "st_explosiverevolverbullet", "count" : 1 },
+    { "item" : "st_snowballingrevolverbullet", "count" : 1 },
+	  { "item" : "st_leadbar", "count" : 3 }
+  ],
+  "output" : { "item" : "st_explosivesnowballingrevolverbullet", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

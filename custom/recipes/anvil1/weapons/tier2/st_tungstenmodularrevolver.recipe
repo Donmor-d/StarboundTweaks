@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "tungstenbar", "count" : 6 },
+    { "item" : "st_ironmodularrevolver", "count" : 1 },
+    { "item" : "st_modularframe", "count" : 1 }
+
+  ],
+  "output" : { "item" : "st_tungstenmodularrevolver", "count" : 1 },
+  "groups" : [ "craftinganvil", "weapons", "all" ]
+}

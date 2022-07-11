@@ -1,0 +1,81 @@
+{
+  "itemName" : "st_electricriflebullet",
+  "price" : 1000,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_electricriflebullet.png",
+  "description" : "Changes the assault rifle's element to electric.",
+  "shortdescription" : "Electric Rifle Bullet",
+
+  "augment": {
+    "type": "assaultrifleammo",
+    "name": "st_electricriflebullet",
+    "displayName": "Electrified Ammo",
+    "displayIcon": "/custom/items/augments/assaultrifle/electricbullet/st_electricriflebullet.png",
+    "elementalType": "electric",
+
+    "inventoryIcon" : "electric.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "electric.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+       "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+	 
+      "class": "GunFire",
+
+       "fireTime" : 0.11,
+       "baseDps" : 15,
+       "energyUsage" : 0,   //~39.375
+       "ammoUsage" : 1.5,
+       "inaccuracy" : 0.02,
+	   
+ 
+	   
+       "reloadTime" : 1.5,     //tempo de recarga
+
+      "projectileType": "electricplasma",
+      "projectileParameters": {
+	    "knockback" : 5
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

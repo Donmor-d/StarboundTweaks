@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalrocket", "count" : 1 },
-	{ "item" : "siliconboard", "count" : 1 }
-  ],
-  "output" : { "item" : "guidedrocket", "count" : 1 },
-  "groups" : [ "ammostation", "ammoexplosive", "all" ]
-}

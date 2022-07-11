@@ -1,0 +1,11 @@
+{
+  "itemName" : "st_modularframe",
+  "price" : 0,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "st_modularframe.png",
+  "description" : "Frame used to create or upgrade modular weapons, commonly found in dungeons",
+  "shortdescription" : "Modular frame",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : []
+}

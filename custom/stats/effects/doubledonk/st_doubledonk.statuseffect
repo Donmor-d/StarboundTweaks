@@ -1,0 +1,19 @@
+{
+  "name" : "st_doubledonk",
+  "blockingStat" : "specialStatusImmunity",
+
+  "effectConfig" : {
+    "activateDelay" : 0,
+    "deactivateDelay" : 0.1,
+    "triggerDamageThreshold" : 10,
+    "explosionDamageAmount" : 130
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "doubledonk.lua"
+  ],
+
+  "animationConfig" : "st_doubledonk.animation"
+
+}

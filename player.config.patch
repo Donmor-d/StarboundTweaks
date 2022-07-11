@@ -127,7 +127,7 @@
 	{
 	"op" : "add",
 	"path" : "/defaultBlueprints/tier1/-",
-	"value" : { "item" : "leadbar" }
+	"value" : { "item" : "st_leadbar" }
 	},
 	{
 	"op": "add",

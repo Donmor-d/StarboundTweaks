@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "leadbar", "count" : 1 },
+	{ "item" : "titaniumbar", "count" : 1 }
+  ],
+  "output" : { "item" : "st_mediumammopack", "count" : 2 },
+  "groups" : [ "ammostation", "ammoboxes", "all" ]
+}

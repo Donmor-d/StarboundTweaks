@@ -1,0 +1,18 @@
+{
+  "itemName" : "st_creativeammopack",
+  "rarity" : "Essential",
+  "price" : 250,
+  "maxStack" : 20,
+  "category" : "medicine",
+  "inventoryIcon" : "st_creativeammopack.png",
+  "description" : "A big big ammo no small.",
+  "shortdescription" : "Creative Ammo Pack",
+  "effects" : [ [
+      {
+        "effect" : "st_creativeammogain"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "st_largeammouse" ],
+  "blockingEffects" : [ ]
+}

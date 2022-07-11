@@ -1,0 +1,22 @@
+{
+  "projectileName" : "st_strongelectricsniperbullet",
+  "image" : "st_strongelectricsniperbullet.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "lightColor" : [255, 216, 0],
+  "fullBright" : true,
+  "frameNumber" : 1,
+  "damageKind" : "electricplasmabullet",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmaelectricexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 150,
+  "knockback" : 0
+}

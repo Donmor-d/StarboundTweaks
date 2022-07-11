@@ -1,0 +1,21 @@
+{
+  "name" : "st_eerie",
+
+  "effectConfig" : { 
+    "canSpawn" : false,
+    "powerModifier" : 1,
+    "removeEffects" :["st_eldritch", "st_delirium", "st_lunacy"],
+    "message" : {
+      "unique" : false,
+      "messageId" : "st_eeriemessage",
+      "senderName" : "doesntmatter",
+      "text" : "I am detecting anomalous waves from the equipment youre wearing, i'd advise being cautious with them."
+    }
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [ "st_eerie.lua" ],
+  
+  "label" : "Eerie: Something noticed you.",
+  "icon" : "/custom/stats/effects/eerie/st_eerie.png"
+}

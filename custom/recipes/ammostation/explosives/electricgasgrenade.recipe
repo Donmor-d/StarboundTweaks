@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalgrenade", "count" : 1 },
-	{ "item" : "staticcell", "count" : 2 }
-  ],
-  "output" : { "item" : "electricgasgrenade", "count" : 1 },
-  "groups" : [ "ammostation", "ammoexplosive", "all" ]
-}

@@ -1,0 +1,24 @@
+{
+  "name" : "st_shortdash",
+  "type" : "body",
+
+  "scripts" : ["/tech/dash/dash.lua"],
+  "animator" : "st_shortdash.animation",
+
+  "description" : "Double tap ^green;[A]^white; or ^green;[D] ^white;to do a short dash! Cooldown: 0.6s",
+  "shortDescription" : "Short Dash",
+  "rarity" : "Common",
+  "icon" : "/custom/tech/st_shortdash.png",
+
+  "chipCost" : 2,
+
+  "energyCost": 10,
+  "damageReduction" : 25,
+  "maximumDoubleTapTime" : 0.25,
+  "dashControlForce" : 2000,
+  "dashSpeed" : 50,
+  "dashDuration" : 0.1,
+  "dashCooldown" : 0.5,
+  "stopAfterDash" : true,
+  "groundOnly" : true
+}

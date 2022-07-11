@@ -1,0 +1,22 @@
+{
+	"projectileName" : "st_strongneosniperriflebullet",
+	"image" : "st_strongneosniperriflebullet.png",
+	"physics" : "laser",
+	"animationCycle" : 0.25,
+	"frameNumber" : 1,
+	"damageKind" : "plasma",
+	"pointLight" : false,
+	"flippable" : true,
+	"actionOnReap" : [
+		{
+			"action" : "config",
+			"file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+		}
+	],
+	"statusEffects" : [ ],
+	"power" : 10.0,
+	"speed" : 150,
+	"knockback" : 0,
+	"lightColor" : [26, 221, 227],
+	"fullbright" : true
+}

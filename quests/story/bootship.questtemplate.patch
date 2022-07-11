@@ -3,9 +3,9 @@
     "op": "add",
     "path": "/scriptConfig/equipTech",
     "value": [
-      "shortdash",
-      "slowdistortionsphere",
-      "shortjump"
+      "st_shortdash",
+      "st_slowdistortionsphere",
+      "st_shortjump"
     ]
   }
 ]

@@ -1,0 +1,21 @@
+{
+  "name" : "st_delirium",
+
+  "effectConfig" : { 
+    "canSpawn" : true,
+    "powerModifier" : 1.2,
+    "removeEffects" :["st_eldritch", "st_eerie", "st_lunacy"],
+    "message" : {
+      "unique" : false,
+      "messageId" : "st_deliriummessage",
+      "senderName" : "doesntmatter",
+      "text" : "Hey sexy man, youre pretty sexy ;)."
+    }
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [ "st_eerie.lua" ],
+  
+  "label" : "Delirium: Something speaks with you.",
+  "icon" : "/custom/stats/effects/eerie/st_delirium.png"
+}

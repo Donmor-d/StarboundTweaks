@@ -1,0 +1,30 @@
+{
+  "projectileName" : "st_electricstickybullet",
+  "image" : "st_electricstickybullet.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "physics" : "stickybullet",
+  "pointLight" : false,
+  "timeToLive" : 4,
+  "bounces" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallelectricexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "emitters" : [ "electricplasma" ],
+  "damageType" : "NoDamage",
+  "damageKind" : "electricplasmabullet",
+  "statusEffects" : [ "electrified" ],
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_bullet.ogg"
+      ]
+    }
+  ]
+}

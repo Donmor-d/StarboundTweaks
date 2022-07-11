@@ -1,0 +1,29 @@
+{
+  "projectileName" : "st_magneticpull",
+  "image" : "st_magneticpull.png",
+  "animationCycle" : 0.6,
+  "timeToLive" : 0.6,
+  "frameNumber" : 10,
+  "speed" : 0,
+  "pointLight" : true,
+  "statusEffects" : [ ],
+  "boundBox" : [-50, -50, 50, 50],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "default",
+  "power" : 0,
+  "damageType" : "knockback",
+
+  "physicsForces" : {
+    "vacuum" : {
+      "type" : "RadialForceRegion",
+      "outerRadius" : 50,
+      "innerRadius" : 0,
+      "targetRadialVelocity" : -10,
+      "controlForce" : 500,
+      "categoryWhitelist" : ["monster"]
+    }
+  }
+}

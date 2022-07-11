@@ -17,7 +17,7 @@ function update(dt)
 
   for i = 1, #activeStatus do
     if activeStatus[i][1] == "weakpoison" then
-      status.addEphemeralEffect("commoncold", nil, sourceID)
+      status.addEphemeralEffect("sb_commoncold", nil, sourceID)
     end
   end
 

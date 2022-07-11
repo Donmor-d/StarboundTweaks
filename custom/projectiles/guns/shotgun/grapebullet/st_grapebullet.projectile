@@ -1,0 +1,22 @@
+{
+  "projectileName" : "st_grapebullet",
+  "image" : "st_grapebullet.png",
+  "physics" : "grenade",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "standardbullet",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 50,
+  "knockback" : 0,
+  "grapeSpawn" : "st_suspiciousgrape",
+  "scripts" : ["st_grapebullet.lua"]
+}

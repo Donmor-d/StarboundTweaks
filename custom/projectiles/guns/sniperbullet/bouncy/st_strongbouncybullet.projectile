@@ -1,0 +1,20 @@
+{
+  "projectileName" : "st_strongbouncybullet",
+  "image" : "st_strongbouncybullet.png",
+  "animationCycle" : 0.25,
+  "lightColor" : [255, 216, 0],
+  "fullBright" : true,
+  "physics" : "laser",
+  "bounces" : 2,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "damageKind" : "default"
+}

@@ -1,0 +1,30 @@
+{
+  "projectileName" : "st_poisonstickybullet",
+  "image" : "st_poisonstickybullet.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "physics" : "stickybullet",
+  "pointLight" : false,
+  "timeToLive" : 4,
+  "bounces" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallpoisonexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "emitters" : [ "poisonplasma" ],
+  "damageType" : "NoDamage",
+  "damageKind" : "poisonplasmabullet",
+  "statusEffects" : [ "frostslow" ],
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_bullet.ogg"
+      ]
+    }
+  ]
+}

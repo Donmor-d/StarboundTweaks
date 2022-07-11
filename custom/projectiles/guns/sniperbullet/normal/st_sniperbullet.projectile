@@ -1,0 +1,36 @@
+{
+  "projectileName" : "st_sniperbullet",
+  "image" : "st_sniperbullet.png",
+  "physics" : "laser",
+  "timeToLive" : 0.25,
+  "animationCycle" : 0.25,
+  "lightColor" : [99, 82, 0],
+  "frameNumber" : 1,
+  "damageKind" : "standardbullet",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnCollide" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "actionOnTimeout" : [
+    {
+      "action" : "projectile",
+      "type" : "st_strongsniperbullet",
+      "inheritDamageFactor" : 2,
+      "angleAdjust" : 0
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 150,
+  "knockback" : 0
+}

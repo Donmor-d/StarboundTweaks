@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "ironbar", "count" : 10 },
-    { "item" : "darkwoodmaterial", "count" : 6 },
-    { "item" : "silverbar", "count" : 5 }
-  ],
-  "output" : { "item" : "ironmodularrifle", "count" : 1 },
-  "groups" : [ "craftinganvil", "weapons", "all" ]
-}

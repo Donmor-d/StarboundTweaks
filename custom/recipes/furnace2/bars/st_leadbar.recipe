@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "lead", "count" : 3 }
+  ],
+  "output" : { "item" : "st_leadbar", "count" : 2 },
+  "duration" : 0,
+  "groups" : [ "craftingfurnace2", "bars", "all" ]
+}

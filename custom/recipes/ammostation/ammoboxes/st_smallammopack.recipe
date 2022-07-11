@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "ironbar", "count" : 1 },
+	{ "item" : "copperbar", "count" : 1 }
+  ],
+  "output" : { "item" : "st_smallammopack", "count" : 2 },
+  "groups" : [ "ammostation", "ammoboxes", "all" ]
+}

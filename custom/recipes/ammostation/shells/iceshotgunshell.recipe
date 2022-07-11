@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalshotgunshell", "count" : 1 },
-	{ "item" : "cryonicextract", "count" : 2 }
-  ],
-  "output" : { "item" : "iceshotgunshell", "count" : 1 },
-  "groups" : [ "ammostation", "ammoshell", "all" ]
-}

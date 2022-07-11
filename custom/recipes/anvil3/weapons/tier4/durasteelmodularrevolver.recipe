@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "durasteelbar", "count" : 6 },
-    { "item" : "titaniummodularrevolver", "count" : 1 },
-    { "item" : "modularframe", "count" : 1 }
-  ],
-  "output" : { "item" : "durasteelmodularrevolver", "count" : 1 },
-  "groups" : [ "craftinganvil3", "weapons", "all" ]
-}

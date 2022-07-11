@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalmachinepistolbullet", "count" : 1 },
-	{ "item" : "staticcell", "count" : 2 }
-  ],
-  "output" : { "item" : "electricmachinepistolbullet", "count" : 1 },
-  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
-}

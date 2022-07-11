@@ -1,0 +1,72 @@
+{
+  "itemName" : "icebullet",
+  "price" : 5000,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "icebullet.png",
+  "description" : "A regular ice bullet that doesnt have any special properties.",
+  "shortdescription" : "ice Bullet",
+
+  "augment": {
+    "type": "ammo",
+    "name": "icebullet",
+    "displayName": "Ice Bullet",
+    "displayIcon": "/custom/items/augments/ammo/icebullet/icebullet.png",
+    "elementalType": "ice",
+    //"effects" : [ "rageaugment1" ]
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+      "fireTime": 1.0,
+      "baseDps": 10,
+      "energyUsage": 24,
+      "inaccuracy": 0.008,
+      "fireType": "auto",
+
+      "projectileType": "neosniperriflebullet",
+      "projectileParameters": {
+        "damageKind": "ice",
+        "knockback": 20,
+        "speed": 100,
+		"statusEffects": [
+          "frostslow"
+        ]
+      },
+      "projectileCount": 1,
+
+      "stances": {
+        "idle": {
+          "armRotation": 0,
+          "weaponRotation": 0,
+          "twoHanded": true,
+
+          "allowRotate": true,
+          "allowFlip": true
+        },
+        "fire": {
+          "duration": 0,
+          "armRotation": 6,
+          "weaponRotation": 10,
+          "twoHanded": true,
+          "recoil": true,
+
+          "allowRotate": true,
+          "allowFlip": true
+        },
+        "cooldown": {
+          "duration": 0.25,
+          "armRotation": 6,
+          "weaponRotation": 10,
+          "twoHanded": true,
+          "recoil": true,
+
+          "allowRotate": true,
+          "allowFlip": true
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}
