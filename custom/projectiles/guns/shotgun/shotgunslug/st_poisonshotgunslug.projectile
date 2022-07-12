@@ -12,19 +12,19 @@
   "actionOnCollide" : [
     {
       "action" : "config",
-      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/smallpoisonexplosion2.config"
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallpoisonexplosion.config"
     }
   ],
   "actionOnHit" : [
     {
       "action" : "config",
-      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/smallpoisonexplosion2.config"
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallpoisonexplosion.config"
     }
   ],
   "actionOnTimeout" : [
     {
       "action" : "config",
-      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/smallpoisonexplosion2.config"
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallpoisonexplosion.config"
     },
     {
       "action" : "sound",

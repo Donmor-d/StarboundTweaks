@@ -14,7 +14,7 @@
     "displayIcon": "/custom/items/augments/revolver/snowballingbullet/st_snowballingrevolverbullet.png",
     "elementalType": "physical",
 
-    "inventoryIcon" : "st_snowballing.png",
+    "inventoryIcon" : "snowballing.png",
 
     "animationParts" : {
       "butt" : "",

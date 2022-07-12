@@ -20,5 +20,5 @@
   "speed" : 50,
   "knockback" : 0,
   "grapeSpawn" : "st_icesuspiciousgrape",
-  "scripts" : ["grapebullet.lua"]
+  "scripts" : ["st_grapebullet.lua"]
 }

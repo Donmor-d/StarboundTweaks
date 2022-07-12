@@ -37,7 +37,7 @@
 	   
 	   "reloadTime" : 2,
 
-      "projectileType": "splitgrenade",
+      "projectileType": "st_splitgrenade",
       "projectileParameters": {
 	  },
       "projectileCount": 1,

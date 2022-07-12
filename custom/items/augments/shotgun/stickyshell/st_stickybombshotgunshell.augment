@@ -43,20 +43,20 @@
 	    "timeToLive" : 4.0,
 		  "knockback" : 0,
 		  "speed" : 100,
-      "actionOnReap" : [],
-      "actionOnHit" : [
-        {
-          "action" : "config",
-          "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
-        }
-      ],
-      "actionOnCollide" : [
-        {
-          "action" : "projectile",
-          "type" : "stickybullet",
-          "inheritDamageFactor" : 1
-        }
-      ]
+		  "actionOnReap" : [],
+		  "actionOnHit" : [
+			  {
+			  "action" : "config",
+			  "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+			  }
+		  ],
+		  "actionOnCollide" : [
+			  {
+			  "action" : "projectile",
+			  "type" : "stickybullet",
+			  "inheritDamageFactor" : 1
+			  }
+		  ]	  
 	    },
 
       "stances" : {

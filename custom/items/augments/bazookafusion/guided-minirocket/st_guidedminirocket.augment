@@ -10,7 +10,7 @@
   "augment": {
     "type": "rocketlauncherammo",
     "name": "st_guidedminirocket",
-    "displayName": "Guided Ammo",
+    "displayName": "Guided Rapid Fire Ammo",
 
     "inventoryIcon" : "guided.png",
 

@@ -11,7 +11,7 @@
     "type": "sniperrifleammo",
     "name": "st_chargedpiercingsniperbullet",
     "displayName": "Charged Piercing Ammo",
-    "displayIcon": "/custom/items/augments/sniperriflefusion/charged-piercingbullet/chargedpiercingsniperbullet.png",
+    "displayIcon": "/custom/items/augments/sniperriflefusion/charged-piercingbullet/st_chargedpiercingsniperbullet.png",
     "elementalType": "physical",
 
     "inventoryIcon" : "charged.png",

@@ -62,7 +62,7 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "sniperbullet",
+    "projectileType" : "st_sniperbullet",
     "projectileParameters" : {
       "knockback" : 20
     },

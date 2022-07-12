@@ -38,7 +38,7 @@
        "projectileCount" : 6,
        "fireType" : "auto",
 
-      "projectileType": "poisonstickybullet",
+      "projectileType": "st_poisonstickybullet",
       "projectileParameters": {
 	    "timeToLive" : 4.0,
 		  "knockback" : 0,

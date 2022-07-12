@@ -1,6 +1,6 @@
 {
-  "projectileName" : "smallgrenade",
-  "image" : "smallgrenade.png",
+  "projectileName" : "st_smallgrenade",
+  "image" : "st_smallgrenade.png",
   "frameNumber" : 1,
   "physics" : "shrapnel",
   "bounces" : -1,

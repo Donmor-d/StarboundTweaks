@@ -19,5 +19,5 @@
   "knockback" : 10,
   "damageKind" : "shotgunbullet",
   "grapeSpawn" : "st_smallsuspiciousgrape",
-  "scripts" : ["/custom/projectiles/guns/shotgun/grapebullet/grapebullet.lua"]
+  "scripts" : ["/custom/projectiles/guns/shotgun/grapebullet/st_grapebullet.lua"]
 }

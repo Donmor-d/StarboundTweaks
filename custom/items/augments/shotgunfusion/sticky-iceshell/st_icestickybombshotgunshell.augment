@@ -38,7 +38,7 @@
        "projectileCount" : 6,
        "fireType" : "auto",
 
-      "projectileType": "icestickybullet",
+      "projectileType": "st_icestickybullet",
       "projectileParameters": {
 	    "timeToLive" : 4.0,
 		  "knockback" : 0,

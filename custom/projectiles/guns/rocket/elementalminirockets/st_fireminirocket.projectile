@@ -1,6 +1,6 @@
 {
-  "projectileName" : "fireminirocket",
-  "image" : "fireminirocket.png",
+  "projectileName" : "st_fireminirocket",
+  "image" : "st_fireminirocket.png",
   "animationCycle" : 0.2,
   "frameNumber" : 3,
   "lightColor" : [255, 255, 128],
@@ -20,7 +20,7 @@
   "damageType" : "NoDamage",
   "damageKind" : "default",
 
-  "scripts" : [ "minirocket.lua" ],
+  "scripts" : [ "st_minirocket.lua" ],
   "maxSpeed" : 75,
   "controlForce" : 100
 }

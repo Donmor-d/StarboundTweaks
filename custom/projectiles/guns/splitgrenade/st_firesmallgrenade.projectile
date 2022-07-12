@@ -10,7 +10,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/smallfireexplosion.config"
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallfireexplosion.config"
     },
     {
       "action" : "projectile",

@@ -28,23 +28,21 @@
 	 
       "class": "GunFire",
 
-       "fireTime" : 0.15,
+       "fireTime" : 0.12,
        "baseDps" : 30,
        "energyUsage" : 0,   //~39.375
        "ammoUsage" : 1.5,
-       "inaccuracy" : 0.02,
+       "inaccuracy" : 0.12,
        
        "fireType" : "burst",
 
-       "burstCount" : 5,
-       "burstTime" : 0.1,
+       "burstCount" : 6,
+       "burstTime" : 0.05,
 	   
        "reloadTime" : 1.5,     //tempo de recarga
 
-      "projectileType": "piercingbullet",
+      "projectileType": "standardbullet",
       "projectileParameters": {
-        "piercing" : true,
-	    "knockback" : 5
 	  },
       "projectileCount": 1,
 
@@ -68,7 +66,7 @@
         "allowFlip" : true
       },
       "cooldown" : {
-        "duration" : 0.11,
+        "duration" : 0.04,
         "armRotation" : 2,
         "weaponRotation" : 4,
         "twoHanded" : true,

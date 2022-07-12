@@ -61,8 +61,11 @@ end
 
 function GunFire:charged()
 
-  
-  animator.playSound("charged")
+  if self.chargeTimer <= 0.5 then
+    animator.playSound("charged")
+  else 
+	animator.stopAllSounds("charge")
+  end
   --[[   to be added later, right now it only delays testing
   animator.playSound("chargedloop", -1)
   --]]
@@ -73,8 +76,10 @@ function GunFire:charged()
 
     coroutine.yield()
   end
-
-  self:setState(self.fire)
+  if self.chargeTimer <= 0.5 then
+  
+	self:setState(self.fire)
+  end
   activeItem.setCursor("/cursors/reticle0.cursor")
 end
 

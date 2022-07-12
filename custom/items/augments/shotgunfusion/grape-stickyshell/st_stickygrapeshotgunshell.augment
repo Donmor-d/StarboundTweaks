@@ -41,7 +41,21 @@
       "projectileType": "st_stickygrapebullet",
       "projectileParameters": {
 	    "timeToLive" : 4.0,
-		  "knockback" : 0
+		  "knockback" : 0,
+		  "actionOnReap" : [],
+		  "actionOnHit" : [
+			  {
+			  "action" : "config",
+			  "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+			  }
+		  ],
+		  "actionOnCollide" : [
+			  {
+			  "action" : "projectile",
+			  "type" : "st_stickygrapebullet",
+			  "inheritDamageFactor" : 1
+			  }
+		  ]	  
 	    },
 
       "stances" : {

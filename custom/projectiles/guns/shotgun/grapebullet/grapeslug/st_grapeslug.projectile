@@ -4,7 +4,7 @@
   "bounces" : 0,
   "timeToLive" : 0.15,
   "speed" : 50,
-  "image" : "grapeslug.png",
+  "image" : "st_grapeslug.png",
   "animationCycle" : 0.25,
   "frameNumber" : 1,
   "piercing" : true,
