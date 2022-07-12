@@ -1,0 +1,50 @@
+{
+  "projectileName" : "st_icesmallgrenade",
+  "image" : "st_icesmallgrenade.png",
+  "frameNumber" : 1,
+  "physics" : "shrapnel",
+  "bounces" : -1,
+  "timeToLive" : 1,
+  "piercing" : true,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smalliceexplosion.config"
+    },
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.05,
+      "type" : "smallicecloud",
+      "fuzzAngle" : 30,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.05,
+      "type" : "smallicecloud",
+      "fuzzAngle" : 30,
+      "angleAdjust" : 90
+    },
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.05,
+      "type" : "smallicecloud",
+      "fuzzAngle" : 30,
+      "angleAdjust" : 180
+    },
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.05,
+      "type" : "smallicecloud",
+      "fuzzAngle" : 30,
+      "angleAdjust" : 270
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "iceplasmarocket" ],
+  "power" : 5.0,
+  "speed" : 35,
+  "knockback" : 10,
+  "damageKind" : "shotgunbullet"
+}

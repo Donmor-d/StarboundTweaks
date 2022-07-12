@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "st_fireshotgunshell", "count" : 1 },
+    { "item" : "st_slugshotgunshell", "count" : 1 },
+	  { "item" : "st_leadbar", "count" : 3 }
+  ],
+  "output" : { "item" : "st_fireslugshotgunshell", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

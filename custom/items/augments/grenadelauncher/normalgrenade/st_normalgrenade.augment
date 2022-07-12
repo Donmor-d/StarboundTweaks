@@ -1,0 +1,78 @@
+{
+  "itemName" : "st_normalgrenade",
+  "price" : 500,
+  "rarity" : "Common",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_normalgrenade.png",
+  "description" : "Regular grenade made for grenade launchers.",
+  "shortdescription" : "Normal Grenade",
+
+  "augment": {
+    "type": "grenadelauncherammo",
+    "name": "st_normalgrenade",
+    "displayName": "Normal Ammo",
+    "displayIcon": "/custom/items/augments/grenadelauncher/normalgrenade/st_normalgrenade.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "normal.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "normal.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 1.0,
+       "baseDps" : 6,
+       "energyUsage" : 0,
+       "ammoUsage" : 4.5,
+       "inaccuracy" : 0.0,
+	   
+	   "reloadTime" : 2,
+
+      "projectileType": "grenade",
+      "projectileParameters": {
+	    "bounces" : 0
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		    "recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		    "recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

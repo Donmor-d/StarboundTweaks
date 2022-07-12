@@ -3,7 +3,7 @@
     "op": "add",
     "path": "/input/-",
     "value": {
-      "item": "leadshieldedcore",
+      "item": "st_leadshieldedcore",
       "count": 1
     }
   }

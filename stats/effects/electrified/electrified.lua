@@ -14,6 +14,8 @@ function init()
 end
 
 function update(dt)
+  
+
   status.overConsumeResource("energy", 0.75) --drains energy 
 
   local sourceID = effect.sourceEntity()
@@ -21,9 +23,9 @@ function update(dt)
 
   for i = 1, #activeStatus do
     if activeStatus[i][1] == "weakpoison" then
-      status.addEphemeralEffect("corrosion", nil, sourceID)
+      status.addEphemeralEffect("sb_corrosion", nil, sourceID)
     elseif activeStatus[i][1] == "frostslow" then
-      status.addEphemeralEffect("magnetic", nil, sourceID)
+      status.addEphemeralEffect("sb_magnetic", nil, sourceID)
     end
   end
 
@@ -38,6 +40,16 @@ function update(dt)
     })
 
     shuffle(targetIds)
+
+    if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then --if underwater, damage player and halve the timer to damage
+      status.applySelfDamageRequest({
+        damageType = "damage",
+        damage = boltPower,
+        damageSourceKind = "electric",
+        sourceEntityId = entity.id()
+      })
+      self.tickTimer = self.tickTime/2
+    end
 
     for i,id in ipairs(targetIds) do
       local sourceEntityId = effect.sourceEntity() or entity.id()

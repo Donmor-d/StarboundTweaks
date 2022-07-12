@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "st_iceshotgunshell", "count" : 1 },
+    { "item" : "st_slugshotgunshell", "count" : 1 },
+	  { "item" : "st_leadbar", "count" : 3 }
+  ],
+  "output" : { "item" : "st_iceslugshotgunshell", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

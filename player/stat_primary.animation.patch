@@ -8,14 +8,14 @@
     "op": "add",
     "path": "/sounds/lowHealth",
     "value": [
-      "/custom/sfx/lowhealth/lowhealth.ogg"
+      "/custom/sfx/lowhealth/st_lowhealth.ogg"
     ]
   },
   {
     "op": "add",
     "path": "/sounds/veryLowHealth",
     "value": [
-      "/custom/sfx/lowhealth/verylowhealth.ogg"
+      "/custom/sfx/lowhealth/st_verylowhealth.ogg"
     ]
   }
 ]

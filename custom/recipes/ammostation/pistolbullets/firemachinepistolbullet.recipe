@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalmachinepistolbullet", "count" : 1 },
-	{ "item" : "scorchedcore", "count" : 2 }
-  ],
-  "output" : { "item" : "firemachinepistolbullet", "count" : 1 },
-  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
-}

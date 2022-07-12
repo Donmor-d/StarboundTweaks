@@ -1,0 +1,30 @@
+{
+  "itemName" : "st_stickysuspiciousgrape",
+  "price" : 10,
+  "rarity" : "Uncommon",
+  "category" : "throwableItem",
+  "inventoryIcon" : "st_stickysuspiciousgrape.png",
+  "image" : "stickysuspiciousgrape.png",
+  "shortdescription" : "Sticky Grape",
+  "description" : "Grown out of a living being, inedible but can be used as a bomb that sticks to surfaces.",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "st_grapebomb",
+  "projectileConfig" : {
+    "speed" : 40,
+    "power" : 40,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item.ogg" ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "st_normalrevolverbullet", "count" : 1 },
+	{ "item" : "phasematter", "count" : 2 }
+  ],
+  "output" : { "item" : "st_ghostrevolverbullet", "count" : 1 },
+  "groups" : [ "st_ammostation", "st_ammopistolbullet", "all" ]
+}

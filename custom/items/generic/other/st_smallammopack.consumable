@@ -1,0 +1,18 @@
+{
+  "itemName" : "st_smallammopack",
+  "rarity" : "Common",
+  "price" : 50,
+  "maxStack" : 20,
+  "category" : "smallammopack",
+  "inventoryIcon" : "st_smallammopack.png",
+  "description" : "A small sized ammo pack, made for home use, using it restores 12 ammo.",
+  "shortdescription" : "Small Ammo Pack",
+  "effects" : [ [
+      {
+        "effect" : "st_smallammogain"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "st_smallammouse" ],
+  "blockingEffects" : [ ]
+}

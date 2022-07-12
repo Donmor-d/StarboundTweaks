@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalrocket", "count" : 1 },
-	{ "item" : "stickofram", "count" : 1 }
-  ],
-  "output" : { "item" : "homingrocket", "count" : 1 },
-  "groups" : [ "ammostation", "ammoexplosive", "all" ]
-}

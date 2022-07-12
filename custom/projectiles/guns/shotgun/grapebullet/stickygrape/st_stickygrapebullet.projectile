@@ -1,0 +1,27 @@
+{
+  "projectileName" : "st_stickygrapebullet",
+  "image" : "st_stickygrapebullet.png",
+  "physics" : "stickygrenade",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "standardbullet",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionknockback.config"
+    }
+  ],
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_bullet.ogg"
+      ]
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 50,
+  "knockback" : 0
+}

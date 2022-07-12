@@ -2,7 +2,7 @@
   {
     "op": "replace",
     "path": "/items/avian/0/1/0/sheathedprimary/0",
-    "value": "npcavoliteenergypistol"
+    "value": "sb_npcavoliteenergypistol"
   },
   {
     "op": "remove",
@@ -11,7 +11,7 @@
   {
     "op": "replace",
     "path": "/items/avian/0/1/1/sheathedprimary/0",
-    "value": "npcavoliteenergypistol"
+    "value": "sb_npcavoliteenergypistol"
   },
   {
     "op": "remove",
@@ -20,7 +20,7 @@
   {
     "op": "replace",
     "path": "/items/avian/1/1/0/sheathedprimary/0",
-    "value": "npcavoliteenergypistol"
+    "value": "sb_npcavoliteenergypistol"
   },
   {
     "op": "remove",
@@ -29,7 +29,7 @@
   {
     "op": "replace",
     "path": "/items/avian/1/1/1/sheathedprimary/0",
-    "value": "npcavoliteenergypistol"
+    "value": "sb_npcavoliteenergypistol"
   },
   {
     "op": "remove",
@@ -38,7 +38,7 @@
   {
     "op": "replace",
     "path": "/items/avian/2/1/0/sheathedprimary/0",
-    "value": "npcavoliteenergypistol"
+    "value": "sb_npcavoliteenergypistol"
   },
   {
     "op": "remove",
@@ -47,7 +47,7 @@
   {
     "op": "replace",
     "path": "/items/avian/2/1/1/sheathedprimary/0",
-    "value": "npcavoliteenergypistol"
+    "value": "sb_npcavoliteenergypistol"
   },
   {
     "op": "remove",

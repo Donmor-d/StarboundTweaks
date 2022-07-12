@@ -20,11 +20,11 @@ function update(dt)
 
   for i = 1, #activeStatus do
     if activeStatus[i][1] == "weakpoison" then
-      status.addEphemeralEffect("poisongas", nil, sourceID)
+      status.addEphemeralEffect("sb_poisongas", nil, sourceID)
     elseif activeStatus[i][1] == "frostslow" then
-      status.addEphemeralEffect("armorshatter", nil, sourceID)
+      status.addEphemeralEffect("sb_armorshatter", nil, sourceID)
     elseif activeStatus[i][1] == "electrified" then
-      status.addEphemeralEffect("conductor", nil, sourceID)
+      status.addEphemeralEffect("sb_conductor", nil, sourceID)
     end
   end
   self.tickTimer = self.tickTimer - dt

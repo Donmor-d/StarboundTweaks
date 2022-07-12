@@ -3,7 +3,7 @@
     "op": "add",
     "path": "/interactData/items/-",
     "value": {
-      "item": "mechconsole"
+      "item": "st_mechconsole"
     }
   }
 ]

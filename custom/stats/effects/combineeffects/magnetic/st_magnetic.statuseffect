@@ -1,0 +1,17 @@
+{
+  "name" : "st_magnetic",
+  "blockingStat" : "specialStatusImmunity",
+
+  "effectConfig" : {
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "st_magnetic.lua"
+  ],
+
+  "animationConfig" : "st_magnetic.animation",
+
+  "label" : "Magnetic: You've lost energy and are attracting monsters.",
+  "icon" : "magnetic.png"
+}

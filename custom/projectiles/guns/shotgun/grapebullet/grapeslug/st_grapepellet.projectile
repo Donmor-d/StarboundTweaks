@@ -1,0 +1,23 @@
+{
+  "projectileName" : "st_grapepellet",
+  "image" : "st_grapepellet.png",
+  "frameNumber" : 1,
+  "physics" : "grenade",
+  "lightColor" : [99, 82, 0],
+  "bounces" : 0,
+  "piercing" : false,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 50,
+  "knockback" : 10,
+  "damageKind" : "shotgunbullet",
+  "grapeSpawn" : "st_smallsuspiciousgrape",
+  "scripts" : ["/custom/projectiles/guns/shotgun/grapebullet/st_grapebullet.lua"]
+}

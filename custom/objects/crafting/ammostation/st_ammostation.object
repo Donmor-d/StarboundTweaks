@@ -1,0 +1,40 @@
+{
+  "objectName" : "st_ammostation",
+  "colonyTags" : ["commerce"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/custom/interface/windowconfig/st_ammostation.config",
+    "filter" : [ "st_ammostation" ]
+  },
+
+  "category" : "crafting",
+  "price" : 2400,
+
+  "description" : "Modify ammo for your weapons.",
+  "shortdescription" : "^orange;Ammo Station^white;",
+  "race" : "human",
+
+  "apexDescription" : "I can modify ammo here. (but apex desc)",
+  "avianDescription" : "I can modify ammo here. (but avian desc)",
+  "floranDescription" : "I can modify ammo here. (but floran dessssc)",
+  "glitchDescription" : "I can modify ammo here. (but, glitch desc)",
+  "humanDescription" : "I can modify ammo here. (but human desc)",
+  "hylotlDescription" : "I can modify ammo here. (but hylotl desc)",
+  "novakidDescription" : "I can modify ammo here. (but' novakid' desc)",
+
+  "inventoryIcon" : "st_ammostationicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "st_ammostation.png:<color>.<frame>",
+      "imagePosition" : [-24, 0],
+      "frames" : 19,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

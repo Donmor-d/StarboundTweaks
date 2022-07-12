@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "titaniumbar", "count" : 6 },
-    { "item" : "tungstenmodularrevolver", "count" : 1 },
-    { "item" : "modularframe", "count" : 1 }
-  ],
-  "output" : { "item" : "titaniummodularrevolver", "count" : 1 },
-  "groups" : [ "craftinganvil2", "weapons", "all" ]
-}

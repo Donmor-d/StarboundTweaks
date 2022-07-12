@@ -1,0 +1,124 @@
+{
+  "itemName" : "st_loosecannon",
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Grenades live depending on the charge time, be careful to not overcharge it.",
+  "shortdescription" : "Loose Cannon",
+  "tooltipKind" : "base",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","upgradeableWeapon"],
+  "level" : 4,
+
+  "inventoryIcon" : "st_loosecannon.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "st_loosecannon.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : { 
+    "animatedParts" : { 
+      "parts" : {
+        "muzzleFlash" : {
+          "partStates" : {
+            "firing" : {
+              "fire" : {
+                "properties" : {
+                  "image" : ""
+                }
+              }
+            }
+          }
+        }  
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
+        ]
+      }
+    },
+	"sounds" : {
+      "fire" : ["/sfx/gun/grenade1.ogg"],
+      "charge" : [ "/custom/sfx/charge/cannon_charge.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.9, 0.3],
+  "muzzleOffset" : [1.7, 0.2],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/custom/items/weapons/ranged/grenadelauncher/loosecannon/st_loosecannon.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.0,
+    "baseDps" : 7.5,
+    "energyUsage" : 0,
+    "inaccuracy" : 0,
+
+    "chargeTime" : 1.5,
+	
+	  "ammoUsage" : 5,
+	   
+	  "reloadTime" : 2,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "st_loosecannongrenade",
+    "projectileParameters" : {
+      "timeToLive" : 1.5
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : true,
+		    "recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 1,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : true,
+		    "recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+
+  "upgradeParameters" : {
+    "inventoryIcon" : "st_loosecannon_l6.png",
+    "animationParts" : {
+      "middle" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/loosecannon_l6.png"
+    },
+    "shortdescription" : "Australium Loose Cannon ^yellow;^reset;"
+  }
+}

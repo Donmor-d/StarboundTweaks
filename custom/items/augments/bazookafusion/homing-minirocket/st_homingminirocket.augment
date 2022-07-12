@@ -1,0 +1,102 @@
+{
+  "itemName" : "st_homingminirocket",
+  "price" : 2000,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_homingminirocket.png",
+  "description" : "Replaces rockets with a burst of homing mini rockets.",
+  "shortdescription" : "Combined Rocket",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "name": "st_homingminirocket",
+    "displayName": "Homing Mini Ammo",
+    "displayIcon": "/custom/items/augments/bazookafusion/homing-minirocket/st_homingminirocket.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "homing.png",
+
+    "animationCustom" : {
+      "particleEmitters" : {
+        "muzzleFlash" : {
+          "burstCount" : 3,
+          "particles" : [
+            { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
+          ]
+        }
+      },
+      "lights" : {
+        "laser" : {
+          "transformationGroups" : ["weapon"],
+          "active" : true,
+          "position" : [3.3, 0.385],
+          "color" : [90, 0, 0]
+        }
+      },
+      "sounds" : {
+        "fire" : [ "/sfx/gun/grenade2.ogg" ]
+      }
+    },
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "homing.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+      "fireTime" : 0.5,
+      "baseDps" : 10.5,
+      "energyUsage" : 0,
+      "ammoUsage" : 2,
+      "inaccuracy" : 0.05,
+
+      "fireType" : "burst",
+      "burstCount" : 6,
+      "burstTime" : 0.15,
+
+      "projectileType": "st_minihomingrocket",
+      "projectileParameters": {},
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 1.5,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

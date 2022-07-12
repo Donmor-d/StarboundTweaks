@@ -1,0 +1,91 @@
+{
+  "itemName" : "st_poisonmachinepistolbullet",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_poisonmachinepistolbullet.png",
+  "description" : "Changes the machine pistol's element to poison.",
+  "shortdescription" : "Poison Machine Pistol Bullet",
+
+  "augment": {
+    "type": "machinepistolammo",
+    "name": "st_poisonmachinepistolbullet",
+    "displayName": "Poisoned Ammo",
+    "displayIcon": "/custom/items/augments/machinepistol/poisonbullet/st_poisonmachinepistolbullet.png",
+    "elementalType": "poison",
+
+    "inventoryIcon" : "poison.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "poison.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 0.11,
+       "baseDps" : 7.5,
+       "energyUsage" : 0,   //~39.375
+       "ammoUsage" : 1,
+       "inaccuracy" : 0.04,
+	   
+       "reloadTime" : 1,     //tempo de recarga
+
+      "projectileType": "poisonplasma",
+      "projectileParameters": {
+	    "physics" : "laser",
+	    "damageKind" : "poison",
+	    "statusEffects": ["weakpoison"],
+        "actionOnReap" : [
+          {
+            "action" : "projectile",
+            "type" : "st_weakpoisonpellet",
+            "inheritDamageFactor" : 0.5,
+            "angleAdjust" : 0,
+            "config" : {
+              "piercing" : true
+            }
+          }
+        ]
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+		"recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

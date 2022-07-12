@@ -1,0 +1,13 @@
+{
+    "kind" : "st_largeammouse",
+    "definition" : {
+      "duration" : 0.05,
+      "loops" : true,
+      "start" : {
+        "sounds" : [
+          [ "/sfx/gun/reload/rocket_reload_clip3.ogg" ]
+        ]
+      }
+    }
+  }
+  

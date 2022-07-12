@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "st_normalshotgunshell", "count" : 1 },
+	{ "item" : "staticcell", "count" : 2 }
+  ],
+  "output" : { "item" : "st_electricshotgunshell", "count" : 1 },
+  "groups" : [ "st_ammostation", "st_ammoshell", "all" ]
+}

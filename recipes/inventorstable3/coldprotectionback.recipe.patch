@@ -3,7 +3,7 @@
     "op": "add",
     "path": "/input/-",
     "value": {
-      "item": "avolitepoweredheater",
+      "item": "st_avolitepoweredheater",
       "count": 1
     }
   }

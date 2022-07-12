@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "tungstenbar", "count" : 8 },
+    { "item" : "silverbar", "count" : 10 },
+    { "item" : "corefragmentore", "count" : 5 }   
+  ],
+  "output" : {
+    "item" : "st_ammocombiner",
+    "count" : 1
+  },
+  "groups" : [ "inventorstable", "craftingstations", "all" ]
+}

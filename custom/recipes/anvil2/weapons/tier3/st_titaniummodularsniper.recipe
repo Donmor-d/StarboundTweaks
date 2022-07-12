@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "titaniumbar", "count" : 10 },
+    { "item" : "silverbar", "count" : 4 },
+    { "item" : "st_modularframe", "count" : 1 }
+  ],
+  "output" : { "item" : "st_titaniummodularsniper", "count" : 1 },
+  "groups" : [ "craftinganvil2", "weapons", "all" ]
+}

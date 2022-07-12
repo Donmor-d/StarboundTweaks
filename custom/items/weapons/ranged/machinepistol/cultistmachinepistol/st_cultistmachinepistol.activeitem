@@ -1,0 +1,123 @@
+{
+  "itemName" : "st_cultistmachinepistol",
+  "price" : 1080,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A machine pistol made for cultists",
+  "shortdescription" : "Cultist Machine Pistol",
+  "category" : "uniqueWeapon",
+  "tooltipKind" : "gun",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","pistol"],
+  
+  "fixedLevel" : false,
+
+  "inventoryIcon" : [
+    { "image" : "st_cultistmachinepistol.png" }
+  ],
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "st_cultistmachinepistol.png",
+	"barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+	"particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 1,
+        "particles" : [
+          { "particle" : "dust2" },
+          {
+            "particle" : {
+              "type" : "textured",
+              "image" : "/custom/particles/casing/st_casing.png",
+              "position" : [-1.5, 0.125],
+              "color" : [ 255, 255, 255, 255] ,
+              "initialVelocity" : [0, 8],
+              "finalVelocity" : [0, -50],
+              "approach" : [0, 40],
+              "rotation" : 0,
+              "destructionAction" : "fade",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 1,
+              "layer" : "middle",
+              "timeToLive" : 0.45,
+              "variance" : {
+                "initialVelocity" : [2, 2]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/pistol3.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [90, 90, 0]
+      }
+    }
+  },
+
+  "baseOffset" : [0.625, 0.35],
+  "muzzleOffset" : [1.5, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "poison",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.13,
+    "baseDps" : 6.5,
+    "energyUsage" : 0,
+    "ammoUsage" : 0.75,
+    "inaccuracy" : 0.05,
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "poisonplasma",
+    "muzzleFlashVariants" : 1,
+	"projectileParameters" : { 
+		"statusEffects" : [ "weakpoison" ] 
+	},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+        "recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+        "recoil": true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

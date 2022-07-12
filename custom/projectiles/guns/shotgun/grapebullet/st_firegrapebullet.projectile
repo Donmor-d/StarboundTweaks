@@ -1,0 +1,24 @@
+{
+  "projectileName" : "st_firegrapebullet",
+  "image" : "st_firegrapebullet.png",
+  "physics" : "grenade",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "lightColor" : [255, 216, 0],
+  "fullBright" : true,
+  "damageKind" : "fireplasma",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmafireexplosion.config"
+    }
+  ],
+  "statusEffects" : [ "burning" ],
+  "power" : 5.0,
+  "speed" : 50,
+  "knockback" : 0,
+  "grapeSpawn" : "st_firesuspiciousgrape",
+  "scripts" : ["st_grapebullet.lua"]
+}

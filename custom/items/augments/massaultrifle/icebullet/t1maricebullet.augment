@@ -66,5 +66,5 @@
     }
   },
 
-  "scripts" : [ "/custom/items/augments/ammo/ammo.lua" ]
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
 }

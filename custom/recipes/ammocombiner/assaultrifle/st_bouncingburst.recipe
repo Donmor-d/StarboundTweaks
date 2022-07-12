@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "st_bouncingriflebullet", "count" : 1 },
+	  { "item" : "st_burstriflebullet", "count" : 1 },
+    { "item" : "st_leadbar", "count" : 3}
+  ],
+  "output" : { "item" : "st_bouncingburstriflebullet", "count" : 1 },
+  "groups" : [ "ammocombiner" ]
+}

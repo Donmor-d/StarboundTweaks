@@ -1,0 +1,80 @@
+{
+  "itemName" : "st_firegasgrenade",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_firegasgrenade.png",
+  "description" : "Allows grenades from grenade launchers to explode into burning gas.",
+  "shortdescription" : "Fire Gas Grenade",
+
+  "augment": {
+    "type": "grenadelauncherammo",
+    "name": "st_firegasgrenade",
+    "displayName": "Fire Gas Ammo",
+    "displayIcon": "/custom/items/augments/grenadelauncher/firegasgrenade/st_firegasgrenade.png",
+    "elementalType": "fire",
+
+    "inventoryIcon" : "fire.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "fire.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 1.5,
+       "baseDps" : 4,
+       "energyUsage" : 0,
+       "ammoUsage" : 4.5,
+       "inaccuracy" : 0.0,
+	   
+	   "ammo" : 1,
+	   
+	   "reloadTime" : 2,
+
+      "projectileType": "firecloudgrenade",
+      "projectileParameters": {
+		"damageType" : "damage"
+	  },
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 7.5,
+        "weaponRotation" : 7.5,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

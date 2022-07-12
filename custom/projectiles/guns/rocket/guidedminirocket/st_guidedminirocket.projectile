@@ -1,0 +1,28 @@
+{
+  "projectileName" : "st_guidedminirocket",
+  "image" : "st_guidedminirocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 10.0,
+  "acceleration" : 100,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+
+  "scripts" : [ "/projectiles/activeitems/guidedrocket/guidedrocket.lua" ],
+  "rotationRate" : 5.0,
+  "maxTrackingAngle" : 2.0
+}

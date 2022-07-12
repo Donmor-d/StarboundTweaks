@@ -1,0 +1,26 @@
+{
+  "itemName" : "st_firesuspiciousgrape",
+  "rarity" : "Uncommon",
+  "price" : 50,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "st_firesuspiciousgrape.png",
+  "description" : "Grown from a living being, its hot but somehow leaves a cooling feeling when eaten.",
+  "shortdescription" : "Fire Grape",
+  "foodValue" : 1.8,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 10,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "effects" : [[  
+      {
+        "effect" : "fireblock",
+        "duration" : 1
+      }
+  ]],
+  "blockingEffects" : [
+    "wellfed",
+    "fireblock"
+  ]
+}

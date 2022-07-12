@@ -157,11 +157,11 @@
   "cultistGun" : [
     [0, {
       "pool" : [
-        {"weight" : 0.007, "item" : "cultistassaultrifle"},
-        {"weight" : 0.007, "item" : "cultistmachinepistol"},
-        {"weight" : 0.007, "item" : "cultistpistol"},
-        {"weight" : 0.007, "item" : "cultistshotgun"},
-        {"weight" : 0.007, "item" : "cultistsniperrifle"}
+        {"weight" : 0.007, "item" : "sb_cultistassaultrifle"},
+        {"weight" : 0.007, "item" : "sb_cultistmachinepistol"},
+        {"weight" : 0.007, "item" : "sb_cultistpistol"},
+        {"weight" : 0.007, "item" : "sb_cultistshotgun"},
+        {"weight" : 0.007, "item" : "sb_cultistsniperrifle"}
       ]
     }]
   ],
@@ -201,7 +201,7 @@
         {"weight" : 0.45, "item" : "manipulatormodule"},
         {"weight" : 0.08, "item" : "upgrademodule"},
         {"weight" : 0.04, "item" : "teleportercore"},
-        {"weight" : 0.10, "item" : "modularframe"},
+        {"weight" : 0.10, "item" : "st_modularframe"},
         {"weight" : 0.15, "pool" : "goodWeapon"},
         {"weight" : 0.03, "pool" : "uniqueWeapon"},
         {"weight" : 0.25, "pool" : "ammoAugments"}
@@ -214,7 +214,7 @@
         {"weight" : 0.05, "item" : ["manipulatormodule", 2]},
         {"weight" : 0.11, "item" : "upgrademodule"},
         {"weight" : 0.05, "item" : "teleportercore"},
-        {"weight" : 0.08, "item" : "modularframe"},
+        {"weight" : 0.08, "item" : "st_modularframe"},
         {"weight" : 0.05, "pool" : "augments"},
         {"weight" : 0.12, "pool" : "goodWeapon"},
         {"weight" : 0.02, "pool" : "uniqueWeapon"},
@@ -228,7 +228,7 @@
         {"weight" : 0.07, "item" : ["manipulatormodule", 2]},
         {"weight" : 0.12, "item" : "upgrademodule"},
         {"weight" : 0.05, "item" : "teleportercore"},
-        {"weight" : 0.08, "item" : "modularframe"},
+        {"weight" : 0.08, "item" : "st_modularframe"},
         {"weight" : 0.05, "pool" : "augments"},
         {"weight" : 0.03, "pool" : "petcollars"},
         {"weight" : 0.05, "pool" : "goodWeapon"},
@@ -244,7 +244,7 @@
         {"weight" : 0.10, "item" : ["manipulatormodule", 2]},
         {"weight" : 0.13, "item" : "upgrademodule"},
         {"weight" : 0.05, "item" : "teleportercore"},
-        {"weight" : 0.08, "item" : "modularframe"},
+        {"weight" : 0.08, "item" : "st_modularframe"},
         {"weight" : 0.06, "pool" : "augments"},
         {"weight" : 0.06, "pool" : "petcollars"},
         {"weight" : 0.03, "pool" : "uniqueWeapon"},
@@ -1208,7 +1208,7 @@
         {"weight" : 1.0, "item" : "intestinewhip"},
         {"weight" : 0.2, "item" : "gnomegun"},
         //loose cannon courtesy of yours truly
-        {"weight" : 1.0, "item" : "loosecannon"}
+        {"weight" : 1.0, "item" : "sb_loosecannon"}
       ]
     }],
     [4.9, {
@@ -1809,7 +1809,7 @@
         {"weight" : 0.1, "pool" : "valuableTreasure"},
         {"weight" : 0.05, "pool" : "costume"},
         {"weight" : 0.05, "pool" : "instrument"},
-        {"weight" : 0.1, "item" : "modularframe"}
+        {"weight" : 0.1, "item" : "st_modularframe"}
       ]
     }]
   ],
@@ -1825,7 +1825,7 @@
         {"weight" : 0.5, "pool" : "chestMoney"},
         {"weight" : 0.3, "pool" : "valuableTreasure"},
         {"weight" : 0.2, "pool" : "goodWeapon"},
-        {"weight" : 0.2, "item" : "modularframe"}
+        {"weight" : 0.2, "item" : "st_modularframe"}
       ]
     }]
   ],

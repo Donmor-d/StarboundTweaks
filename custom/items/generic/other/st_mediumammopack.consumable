@@ -1,0 +1,18 @@
+{
+  "itemName" : "st_mediumammopack",
+  "rarity" : "Common",
+  "price" : 100,
+  "maxStack" : 20,
+  "category" : "medicine",
+  "inventoryIcon" : "st_mediumammopack.png",
+  "description" : "A medium ammo pack, made for police use, using it restores 25 ammo.",
+  "shortdescription" : "Medium Ammo Pack",
+  "effects" : [ [
+      {
+        "effect" : "st_mediumammogain"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "st_mediumammouse" ],
+  "blockingEffects" : [ ]
+}

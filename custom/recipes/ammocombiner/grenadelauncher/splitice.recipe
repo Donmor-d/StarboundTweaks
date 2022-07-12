@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "splitgrenade", "count" : 1 },
-    { "item" : "icegasgrenade", "count" : 1 },
-	  { "item" : "leadbar", "count" : 3 }
-  ],
-  "output" : { "item" : "icesplitgrenade", "count" : 1 },
-  "groups" : [ "ammocombiner" ]
-}

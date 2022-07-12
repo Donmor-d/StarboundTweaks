@@ -4,7 +4,7 @@
     "path": "/interactData/items/0",
     "value": {
       "item": {
-        "name": "leadbar"
+        "name": "st_leadbar"
       },
       "prerequisiteQuest": "human_mission1"
     }

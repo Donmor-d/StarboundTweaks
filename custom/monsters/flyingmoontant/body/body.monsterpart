@@ -1,9 +1,9 @@
 {
-  "name" : "flyingmoontant",
-  "category" : "flyingmoontant",
+  "name" : "st_flyingmoontant",
+  "category" : "st_flyingmoontant",
   "type" : "body",
 
   "frames" : {
-    "body" : "flyingmoontant.png"
+    "body" : "st_flyingmoontant.png"
   }
 }

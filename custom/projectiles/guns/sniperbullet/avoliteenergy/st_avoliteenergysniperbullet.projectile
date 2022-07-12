@@ -1,0 +1,37 @@
+{
+  "projectileName" : "st_avoliteenergysniperbullet",
+  "image" : "st_avoliteenergysniperbullet.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "timeToLive" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "plasma",
+  "pointLight" : false,
+  "flippable" : true,
+	"actionOnHit" : [
+		{
+			"action" : "config",
+			"file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+		}
+	],
+	"actionOnCollide" : [
+		{
+			"action" : "config",
+			"file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+		}
+	],
+	"actionOnTimeout" : [
+		{
+		  "action" : "projectile",
+		  "type" : "st_strongavoliteenergysniperbullet",
+		  "inheritDamageFactor" : 2,
+		  "angleAdjust" : 0
+		}
+	],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 150,
+  "knockback" : 0,
+  "lightColor" : [255, 63, 63],
+  "fullbright" : true
+}

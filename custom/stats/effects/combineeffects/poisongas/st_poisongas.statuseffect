@@ -1,0 +1,16 @@
+{
+  "name" : "st_poisongas",
+  "blockingStat" : "poisonStatusImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "st_poisongas.lua"
+  ],
+
+  "animationConfig" : "st_poisongas.animation",
+
+  "label" : "Poison Gas : you're exuding poisonous gas",
+  "icon" : "st_poisongas.png"
+}

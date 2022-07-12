@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalmachinepistolbullet", "count" : 1 },
-	{ "item" : "venomsample", "count" : 2 }
-  ],
-  "output" : { "item" : "poisonmachinepistolbullet", "count" : 1 },
-  "groups" : [ "ammostation", "ammopistolbullet", "all" ]
-}

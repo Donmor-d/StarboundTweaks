@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "normalgrenade", "count" : 1 },
-	{ "item" : "venomsample", "count" : 2 }
-  ],
-  "output" : { "item" : "poisongasgrenade", "count" : 1 },
-  "groups" : [ "ammostation", "ammoexplosive", "all" ]
-}

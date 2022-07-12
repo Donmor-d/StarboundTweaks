@@ -1,0 +1,16 @@
+{
+  "name" : "st_commoncold",
+  "blockingStat" : "poisonStatusImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "st_commoncold.lua"
+  ],
+
+  "animationConfig" : "st_commoncold.animation",
+
+  "label" : "Common Cold: Hunger drain and weakness",
+  "icon" : "st_commoncold.png"
+}

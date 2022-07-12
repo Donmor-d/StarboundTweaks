@@ -1,0 +1,21 @@
+{
+  "name" : "st_lunacy",
+
+  "effectConfig" : {
+    "canSpawn" : true,
+    "powerModifier" : 2,
+    "removeEffects" :["st_eldritch", "st_delirium", "st_eerie"],
+    "message" : {
+      "unique" : false,
+      "messageId" : "st_lunacymessage",
+      "senderName" : "doesntmatter",
+      "text" : "IM DEtecting bruh waves."
+    }
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [ "eerie.lua" ],
+  
+  "label" : "Lunacy: Your purpose is evident.",
+  "icon" : "/custom/stats/effects/eerie/st_lunacy.png"
+}

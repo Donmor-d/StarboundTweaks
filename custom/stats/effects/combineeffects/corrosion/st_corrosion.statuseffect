@@ -1,0 +1,17 @@
+{
+  "name" : "st_corrosion",
+
+  "effectConfig" : {
+    "statusEffects" : [ "weakpoison" ]
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "st_corrosion.lua"
+  ],
+
+  "animationConfig" : "st_corrosion.animation",
+
+  "label" : "Corrosion: you're expelling corrosive liquid",
+  "icon" : "st_corrosion.png"
+}

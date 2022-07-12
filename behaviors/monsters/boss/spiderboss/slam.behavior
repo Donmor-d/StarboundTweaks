@@ -450,7 +450,7 @@
                 "parameters": {
                   "aimVector": {"value": [0, 0]},
                   "offset": {"value": [0, -7]},
-                  "projectileType": {"value": "spiderbosspoisoncloud"},
+                  "projectileType": {"value": "st_spiderbosspoisoncloud"},
 				  "projectileConfig": {"value": "<poisonCloudConfig>"}
                 }
               },
@@ -461,7 +461,7 @@
                 "parameters": {
                   "aimVector": {"value": [0, 0]},
                   "offset": {"value": [3, -7]},
-                  "projectileType": {"value": "spiderbosspoisoncloud"},
+                  "projectileType": {"value": "st_spiderbosspoisoncloud"},
 				  "projectileConfig": {"value": "<poisonCloudConfig>"}
                 }
               },
@@ -472,7 +472,7 @@
                 "parameters": {
                   "aimVector": {"value": [0, 0]},
                   "offset": {"value": [-3, -7]},
-                  "projectileType": {"value": "spiderbosspoisoncloud"},
+                  "projectileType": {"value": "st_spiderbosspoisoncloud"},
 				  "projectileConfig": {"value": "<poisonCloudConfig>"}
                 }
               },
@@ -483,7 +483,7 @@
                 "parameters": {
                   "aimVector": {"value": [0, 0]},
                   "offset": {"value": [6, -7]},
-                  "projectileType": {"value": "spiderbosspoisoncloud"},
+                  "projectileType": {"value": "st_spiderbosspoisoncloud"},
 				  "projectileConfig": {"value": "<poisonCloudConfig>"}
                 }
               },
@@ -494,7 +494,7 @@
                 "parameters": {
                   "aimVector": {"value": [0, 0]},
                   "offset": {"value": [-6, -7]},
-                  "projectileType": {"value": "spiderbosspoisoncloud"},
+                  "projectileType": {"value": "st_spiderbosspoisoncloud"},
 				  "projectileConfig": {"value": "<poisonCloudConfig>"}
                 }
               }

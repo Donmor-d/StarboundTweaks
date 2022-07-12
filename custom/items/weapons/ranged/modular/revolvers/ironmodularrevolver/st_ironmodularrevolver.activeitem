@@ -1,0 +1,101 @@
+{
+  "itemName" : "st_ironmodularrevolver",
+  "price" : 640,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A large handgun that can have its bullets augmented.",
+  "shortdescription" : "Iron Modular Revolver",
+  "tooltipKind" : "gunwithammo",
+  "category" : "pistol",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","pistol"],
+  "level" : 1,
+
+  "inventoryIcon" : "normal.png",
+  
+  "acceptsAugmentType" : "pistolammo",
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "normal.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+  "particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 2,
+        "particles" : [
+          { "particle" : "dust2" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/revolver2.ogg"]
+    }
+  },
+
+  "baseOffset" : [0.7, 0.25],
+  "muzzleOffset" : [1.4, 0.3],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"], 
+    "class" : "GunFire",
+
+    "fireTime" : 0.6,
+    "baseDps" : 6.25,
+    "energyUsage" : 0,
+    "ammoUsage" : 2,
+    "inaccuracy" : 0.025,
+	   
+    "reloadTime" : 1.5,     //tempo que demora para poder usar a arma
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "standardbullet",
+    "projectileParameters" : {
+      "knockback" : 6
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  
+  "radioMessagesOnPickup" : [ "pickupfirearm" ],
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

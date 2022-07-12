@@ -1,0 +1,72 @@
+{
+  "itemName" : "normalbullet",
+  "price" : 5000,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "normalbullet.png",
+  "description" : "A regular lead bullet that doesnt have any special properties.",
+  "shortdescription" : "Normal Bullet",
+
+  "augment": {
+    "type": "ammo",
+    "name": "normalbullet",
+    "displayName": "Normal Bullet",
+    "displayIcon": "/custom/items/augments/ammo/normalbullet/normalbullet.png",
+    "elementalType": "fire",
+    //"effects" : [ "rageaugment1" ]
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+      "fireTime": 1.0,
+      "baseDps": 10,
+      "energyUsage": 24,
+      "inaccuracy": 0.008,
+      "fireType": "auto",
+
+      "projectileType": "neosniperriflebullet",
+      "projectileParameters": {
+        "damageKind": "fire",
+        "knockback": 20,
+        "speed": 100,
+        "statusEffects": [
+          "burning"
+        ]
+      },
+      "projectileCount": 1,
+
+      "stances": {
+        "idle": {
+          "armRotation": 0,
+          "weaponRotation": 0,
+          "twoHanded": true,
+
+          "allowRotate": true,
+          "allowFlip": true
+        },
+        "fire": {
+          "duration": 0,
+          "armRotation": 6,
+          "weaponRotation": 10,
+          "twoHanded": true,
+          "recoil": true,
+
+          "allowRotate": true,
+          "allowFlip": true
+        },
+        "cooldown": {
+          "duration": 0.25,
+          "armRotation": 6,
+          "weaponRotation": 10,
+          "twoHanded": true,
+          "recoil": true,
+
+          "allowRotate": true,
+          "allowFlip": true
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

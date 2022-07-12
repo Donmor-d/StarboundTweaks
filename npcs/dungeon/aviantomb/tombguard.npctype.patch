@@ -2,11 +2,11 @@
   {
     "op": "add",
     "path": "/items/override/0/1/0/sheathedprimary/-",
-    "value": "npcavoliteenergyrifle"
+    "value": "sb_npcavoliteenergyrifle"
   },
   {
     "op": "add",
     "path": "/items/override/0/1/0/sheathedprimary/-",
-    "value": "npcavoliteenergysniper"
+    "value": "sb_npcavoliteenergysniper"
   }
 ]

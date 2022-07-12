@@ -1,0 +1,13 @@
+{
+    "kind" : "st_smallammouse",
+    "definition" : {
+      "duration" : 0.05,
+      "loops" : true,
+      "start" : {
+        "sounds" : [
+          [ "/sfx/gun/reload/machinepistol_reload_clip3.ogg" ]
+        ]
+      }
+    }
+  }
+  

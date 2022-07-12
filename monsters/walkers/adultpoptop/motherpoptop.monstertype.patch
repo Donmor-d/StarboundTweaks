@@ -77,7 +77,7 @@
         "minimumRange": 1,
         "windupState": "roar",
         "windupTime": 0,
-        "projectileType": "motherpoptoppull",
+        "projectileType": "st_motherpoptoppull",
         "fireOffset": [ 0, 0 ],
         "aimAtTarget": false,
         "projectileCount": 1,
