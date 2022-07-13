@@ -1,4 +1,5 @@
 require "/scripts/util.lua"
+require "/scripts/rect.lua"
 require "/scripts/poly.lua"
 require "/scripts/interp.lua"
 require "/items/active/weapons/melee/meleeslash.lua"
@@ -9,8 +10,11 @@ HammerSmash = MeleeSlash:new()
 function HammerSmash:init()
   self.stances.windup.duration = self.fireTime - self.stances.preslash.duration - self.stances.fire.duration
 
-  self.damageMultiplier = 0; -- temporary solution while the thing doesnt fucking work for some fucking reason its literally the same as with the axe one so why the fuck does it return nil while axe doesnt FUCK YOU FUCK YOU
+  self.damageMultiplier = 0 -- temporary solution while the thing doesnt fucking work for some fucking reason its literally the same as with the axe one so why the fuck does it return nil while axe doesnt FUCK YOU FUCK YOU
 
+  self.defKnockback = self.damageConfig.knockback
+  
+  self.falling = false
   MeleeSlash.init(self)
   self:setupInterpolation()
 end
@@ -79,6 +83,7 @@ function HammerSmash:fire()
     animator.playSound("chargedFire")
   end
   self.damageConfig.baseDamage = self.damageConfig.baseDamage * self.damageMultiplier
+  self.damageConfig.knockback = self.damageConfig.knockback * self.damageMultiplier
 
   animator.setAnimationState("swoosh", "fire")
   animator.playSound("fire")
@@ -87,6 +92,8 @@ function HammerSmash:fire()
   local smashMomentum = self.smashMomentum
   smashMomentum[1] = smashMomentum[1] * mcontroller.facingDirection()
   mcontroller.addMomentum(smashMomentum)
+
+  local initialYPos = mcontroller.yPosition() --initial position when the player swings the weapon mid air
 
   local smashTimer = self.stances.fire.smashTimer
   local duration = self.stances.fire.duration
@@ -101,12 +108,22 @@ function HammerSmash:fire()
     self.weapon:setDamage(self.damageConfig, damageArea, self.fireTime)
 
     if smashTimer > 0 then
+      if not mcontroller.onGround() then
+        self.falling = true
+      end
+
       local groundImpact = world.polyCollision(poly.translate(poly.handPosition(animator.partPoly("blade", "groundImpactPoly")), mcontroller.position()))
-      if mcontroller.onGround() or groundImpact then
+      if mcontroller.onGround() or groundImpact or mcontroller.yVelocity() > 0 then --mcontroller.yVelocity() > 0 ends the if statement if the player double jumps
         smashTimer = 0
+        
         if groundImpact then
+          local fallMultiplier = math.abs(initialYPos - mcontroller.yPosition()) / 10 --increases distance travelled by shockwave the higher the height
           animator.burstParticleEmitter("groundImpact")
           animator.playSound("groundImpact")
+          if self.falling then
+            self.falling = false
+            self:fireShockwave(self.damageMultiplier * fallMultiplier)
+          end
         end
       end
     end
@@ -114,8 +131,82 @@ function HammerSmash:fire()
   end
 
   self.damageConfig.baseDamage = self.baseDps * self.fireTime
+  self.damageConfig.knockback = self.defKnockback
 
   self.cooldownTimer = self:cooldownTime()
+end
+
+function HammerSmash:fireShockwave(charge)
+  local impact, impactHeight = self:impactPosition()
+
+  local volume = math.min(charge, 1)
+
+  if impact then
+    self.weapon.weaponOffset = {0, impactHeight + self.impactWeaponOffset}
+
+    local charge = math.floor(charge * self.maxDistance)
+    local directions = {1}
+    if self.bothDirections then directions[2] = -1 end
+    local positions = self:shockwaveProjectilePositions(impact, charge, directions)
+    if #positions > 0 then
+      animator.playSound(self.weapon.elementalType.."impact")
+      animator.setSoundVolume(self.weapon.elementalType.."impact", volume)
+      local params = copy(self.projectileParameters)
+      params.powerMultiplier = activeItem.ownerPowerMultiplier()
+      params.power = params.power * config.getParameter("damageLevelMultiplier")
+      params.actionOnReap = {
+        {
+          action = "projectile",
+          inheritDamageFactor = 0.5,
+          type = self.weapon.elementalType.."shockwave"
+        }
+      }
+      for i,position in pairs(positions) do
+        local xDistance = world.distance(position, impact)[1]
+        local dir = util.toDirection(xDistance)
+        params.timeToLive = (math.floor(math.abs(xDistance))) * 0.025
+        world.spawnProjectile("shockwavespawner", position, activeItem.ownerEntityId(), {dir,0}, false, params)
+      end
+    end
+  end
+end
+
+function HammerSmash:impactPosition()
+  local dir = mcontroller.facingDirection()
+  local startLine = vec2.add(mcontroller.position(), vec2.mul(self.impactLine[1], {dir, 1}))
+  local endLine = vec2.add(mcontroller.position(), vec2.mul(self.impactLine[2], {dir, 1}))
+
+  local blocks = world.collisionBlocksAlongLine(startLine, endLine, {"Null", "Block"})
+  if #blocks > 0 then
+    return vec2.add(blocks[1], {0.5, 0.5}), endLine[2] - blocks[1][2] + 1
+  end
+end
+
+function HammerSmash:shockwaveProjectilePositions(impactPosition, maxDistance, directions)
+  local positions = {}
+
+  for _,direction in pairs(directions) do
+    direction = direction * mcontroller.facingDirection()
+    local position = copy(impactPosition)
+    for i = 0, maxDistance do
+      local continue = false
+      for _,yDir in ipairs({0, -1, 1}) do
+        local wavePosition = {position[1] + direction * i, position[2] + 0.5 + yDir + self.shockwaveHeight}
+        local groundPosition = {position[1] + direction * i, position[2] + yDir}
+        local bounds = rect.translate(self.shockWaveBounds, wavePosition)
+
+        if world.pointTileCollision(groundPosition, {"Null", "Block", "Dynamic", "Slippery"}) and not world.rectTileCollision(bounds, {"Null", "Block", "Dynamic", "Slippery"}) then
+          table.insert(positions, wavePosition)
+          position[2] = position[2] + yDir
+          continue = true
+          break
+        end
+      end
+      if not continue then break end
+    end
+  end
+
+  return positions
 end
 
 function HammerSmash:spin()

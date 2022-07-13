@@ -2,11 +2,11 @@
   {
     "op": "replace",
     "path": "/items/override/0/1/0/sheathedprimary/1",
-    "value": "sb_npcdoublegoldenbarrel"
+    "value": "st_npcdoublegoldenbarrel"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/sheathedprimary/2",
-    "value": "sb_npcleveractiongoldenrifle"
+    "value": "st_npcleveractiongoldenrifle"
   }
 ]

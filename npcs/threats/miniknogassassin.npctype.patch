@@ -2,21 +2,21 @@
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/0",
-    "value": "sb_npcminiknogsniperrifle"
+    "value": "st_npcminiknogsniperrifle"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/1",
-    "value": "sb_npcminiknogpistol"
+    "value": "st_npcminiknogpistol"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/1/primary/0",
-    "value": "sb_npcminiknogsniperrifle"
+    "value": "st_npcminiknogsniperrifle"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/1/primary/1",
-    "value": "sb_npcminiknogpistol"
+    "value": "st_npcminiknogpistol"
   }
 ]

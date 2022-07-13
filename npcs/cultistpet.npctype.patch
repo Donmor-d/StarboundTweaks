@@ -2,11 +2,11 @@
   {
     "op": "replace",
     "path": "/items/override/0/1/0/sheathedprimary/1",
-    "value": "sb_npccultistassaultrifle"
+    "value": "st_npccultistassaultrifle"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/sheathedprimary/2",
-    "value": "sb_npccultistshotgun"
+    "value": "st_npccultistshotgun"
   }
 ]

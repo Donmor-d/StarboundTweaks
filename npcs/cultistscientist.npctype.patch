@@ -2,6 +2,6 @@
   {
     "op": "replace",
     "path": "/items/override/0/1/0/sheathedprimary/0",
-    "value": "sb_npccultistmachinepistol"
+    "value": "st_npccultistmachinepistol"
   }
 ]

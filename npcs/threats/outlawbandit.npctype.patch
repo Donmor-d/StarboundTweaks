@@ -2,11 +2,11 @@
   {
     "op": "replace",
     "path": "/items/override/0/1/0/sheathedprimary/0",
-    "value": "sb_npcneotommygun"
+    "value": "st_npcneotommygun"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/sheathedprimary/1",
-    "value": "sb_npcneosniperrifle"
+    "value": "st_npcneosniperrifle"
   }
 ]
