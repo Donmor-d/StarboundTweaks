@@ -1,7 +1,7 @@
 function init()
   local removeEffects = config.getParameter("removeEffects")
-
-  --remove the other eerie effects on start
+  
+  --removes the other eerie effects on start
   for k, v in pairs(removeEffects) do
     status.removeEphemeralEffect(v)
   end

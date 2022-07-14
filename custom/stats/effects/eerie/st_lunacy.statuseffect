@@ -7,14 +7,18 @@
     "removeEffects" :["st_eldritch", "st_delirium", "st_eerie"],
     "message" : {
       "unique" : false,
-      "messageId" : "st_lunacymessage",
+	  "portraitImage" : "/custom/interface/chatbubbles/st_eerie.png:<frame>",
+	  "portraitFrames" : 4,
+      "messageId" : "st_deliriummessage",
       "senderName" : "doesntmatter",
-      "text" : "IM DEtecting bruh waves."
+      "text" : "You cannot escape, you cannot win, lay down and give up everything.",
+	  "portraitSpeed" : 0.30,
+	  "textSpeed" : 10
     }
   },
   "defaultDuration" : 0.5,
 
-  "scripts" : [ "eerie.lua" ],
+  "scripts" : [ "st_eerie.lua" ],
   
   "label" : "Lunacy: Your purpose is evident.",
   "icon" : "/custom/stats/effects/eerie/st_lunacy.png"

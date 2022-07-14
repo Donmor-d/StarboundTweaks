@@ -7,9 +7,12 @@
     "removeEffects" :["st_eldritch", "st_eerie", "st_lunacy"],
     "message" : {
       "unique" : false,
+	  "portraitImage" : "/custom/interface/chatbubbles/st_eerie.png:<frame>",
+	  "portraitFrames" : 4,
       "messageId" : "st_deliriummessage",
       "senderName" : "doesntmatter",
-      "text" : "Hey sexy man, youre pretty sexy ;)."
+      "text" : "It's apparent that this ####$%#%# is not .... to use, its highly recommended that you rem##$$ them.",
+	  "portraitSpeed" : 0.30
     }
   },
   "defaultDuration" : 0.5,
