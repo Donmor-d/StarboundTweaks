@@ -1,7 +1,19 @@
 [
   {
     "op": "add",
+    "path": "/animationScripts",
+    "value": [
+      "/custom/scripts/st_ammo_drawables.lua"
+    ]
+  },
+  {
+    "op": "add",
     "path": "/primaryAbility/ammoUsage",
     "value": 3
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/projectileType",
+    "value": "st_sniperbullet"
   }
 ]

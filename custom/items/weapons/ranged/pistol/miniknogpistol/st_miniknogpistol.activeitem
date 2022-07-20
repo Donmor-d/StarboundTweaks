@@ -67,6 +67,7 @@
   "muzzleOffset" : [1.125, 0.25],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "animationScripts" : ["/custom/scripts/st_ammo_drawables.lua"],
 
   "elementalType" : "ice",
 

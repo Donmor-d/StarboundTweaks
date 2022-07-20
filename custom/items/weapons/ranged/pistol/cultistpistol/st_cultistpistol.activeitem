@@ -46,6 +46,7 @@
   "muzzleOffset" : [1.5, 0.25],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "animationScripts" : ["/custom/scripts/st_ammo_drawables.lua"],
 
   "elementalType" : "poison",
 

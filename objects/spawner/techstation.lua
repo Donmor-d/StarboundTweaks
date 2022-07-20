@@ -28,7 +28,7 @@ function onInteraction(args)
 
 
 
-  local players = world.entityQuery(object.toAbsolutePosition({-3, 0}), object.toAbsolutePosition({3, 5}), {
+  local players = world.entityQuery(object.toAbsolutePosition({-10, 0}), object.toAbsolutePosition({10, 5}), {
     includedTypes = {"player"},
     boundMode = "CollisionArea"
   })

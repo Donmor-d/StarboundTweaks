@@ -1,0 +1,32 @@
+{
+  "id" : "st_tutorial_ammostation2",
+  "prerequisites" : [ "st_tutorial_ammostation" ],
+  "mainQuest" : true,
+  "title" : "^green;Modular Weapons",
+  "text" : "The Ammo Station can also be used to craft augments for modular guns. Craft an ^orange;Iron Modular Rifle^white; from the anvil and smelt this ^green;lead^white; into ^orange;bars^white;to craft a ^orange; Normal Rifle Bullet^white; from the ^green;Ammo Station ^white;, this can be used to augment the assault rifle.",
+  "completionText" : "Congratulations! You've learned the ammo system, there's also the ^orange;Ammo Combiner ^white;, but we're not there yet. ^green(note: lead ore can only be found on asteroid fields)",
+  "moneyRange" : [10, 10],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "acceptItems" : [[ "lead", 2]],
+    "portraits" : {"default" : "sail"},
+    "requireTurnIn" : false,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "st_ironmodularrifle",
+        "count" : 1,
+        "consume" : false
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "st_normalriflebullet",
+        "count" : 1,
+        "consume" : false
+      }
+    ]
+  }
+}

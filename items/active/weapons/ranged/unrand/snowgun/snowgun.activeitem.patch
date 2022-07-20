@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/primaryAbility/energyUsage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/ammoUsage",
+    "value": 0
+  }
+]

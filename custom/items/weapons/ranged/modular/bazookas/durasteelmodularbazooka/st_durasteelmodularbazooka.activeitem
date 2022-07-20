@@ -47,6 +47,7 @@
   "muzzleOffset" : [2.5, 0.5],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "animationScripts" : ["/custom/scripts/st_ammo_drawables.lua"],
 
   "elementalType" : "physical",
   

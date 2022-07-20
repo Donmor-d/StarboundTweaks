@@ -1,0 +1,27 @@
+{
+  "id" : "st_tutorial_ammostation",
+  "prerequisites" : [ "bootship" ],
+  "mainQuest" : true,
+  "title" : "^green;Ammo System",
+  "text" : "You're currently full on ammo and have some spare in the ^green;ship locker^white;, but you have to learn how to craft ^green;ammo boxes^white;if you want to keep using firearms.To create ammo boxes you'll need to ^green;make yourself an ^orange;Ammo Station.",
+  "completionText" : "Well done! you can use the ^orange;Ammo Station^reset; to craft ammo boxes to refill ammo, but it can also be used for another purpose.",
+  "moneyRange" : [100, 100],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "followUp" : "st_tutorial_ammostation2",
+    "giveBlueprints" : ["st_ammostation"],
+    "portraits" : {"default" : "sail"},
+    "requireTurnIn" : false,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "st_ammostation",
+        "count" : 1,
+        "consume" : false
+      }
+    ]
+  }
+}

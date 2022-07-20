@@ -1,6 +1,13 @@
 [
   {
     "op": "add",
+    "path": "/animationScripts",
+    "value": [
+      "/custom/scripts/st_ammo_drawables.lua"
+    ]
+  },
+  {
+    "op": "add",
     "path": "/animationCustom/particleEmitters",
     "value": {
       "muzzleFlash": {
@@ -41,7 +48,7 @@
   {
     "op": "replace",
     "path": "/primaryAbility/projectileType",
-    "value": "sniperbullet"
+    "value": "st_sniperbullet"
   },
   {
     "op": "replace",

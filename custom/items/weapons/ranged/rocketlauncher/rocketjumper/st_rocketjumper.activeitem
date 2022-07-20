@@ -34,14 +34,14 @@
       "fire" : [ "/sfx/gun/rocket3.ogg" ]
     }
   },
-
-  "animationScripts" : [],
+  
   "scriptedAnimationParameters" : {},
 
   "baseOffset" : [-0.25, 0.385],
   "muzzleOffset" : [2, 0],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "animationScripts" : ["/custom/scripts/st_ammo_drawables.lua"],
 
   "elementalType" : "physical",
 

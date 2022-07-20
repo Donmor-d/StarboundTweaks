@@ -10,6 +10,14 @@ function crystalMoontantAttack.enter()
 
   if self.moontants <= 1 then return nil end
 
+  self.flyingMoontants = world.monsterQuery(entity.position(), 100, {
+    boundMode = "CollisionArea"
+  })
+
+  sb.logInfo(#self.flyingMoontants)
+
+  if #self.flyingMoontants > 6 then return nil end --wont spawn more if the amount is reached
+
   return {
     windupTimer = 0.6,
     timer = config.getParameter("crystalMoontantAttack.skillTime", 0.3),
@@ -47,7 +55,7 @@ function crystalMoontantAttack.update(dt, stateData)
       local aimVector = {math.cos(spawnAngle), math.sin(spawnAngle)}
       world.spawnProjectile("moontantspawn", mcontroller.position(), entity.id(), aimVector, false, {power = 0, level = monster.level()} )	
       
-      animator.setAnimationState("organs", crystalMoontantAttack.stateNames[self.moontants])
+      animator.setAnimationState("organs", crystalMoontantAttack.stateNames[math.max(6 - #self.flyingMoontants, 1)])
 
       animator.playSound("spawnAdd")
     end

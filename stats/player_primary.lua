@@ -211,11 +211,14 @@ function update(dt)
     self.suffocateSoundTimer = 0
   end
 
-  --plays heartbeat sound when low on health
+  -------------------------------plays heartbeat sound when low on health-------------------------------
 
   --planned change, make the sounds tied to a status effect rather than play it directly, thatll also allow for screen effects
   
-  ----------end heartbeat sound
+  --------------------------------------------end heartbeat sound---------------------------------------
+
+  ----------------------------------------------ammo stuff----------------------------------------------
+  
 
   if status.resourcePercentage("ammo") == 0 then 
     local message = {
@@ -228,7 +231,11 @@ function update(dt)
     world.sendEntityMessage(entity.id(), "queueRadioMessage", message)
   end
 
-  -- lunacy mechanic start
+  --localAnimator.addDrawable({image="/custom/interface/st_number.png:"..time[i],fullbright=true,position={pos[1]+(i/1.6),pos[2]}},"overlay")
+
+  --------------------------------------------end ammo stuff--------------------------------------------
+
+  ----------------------------------------lunacy mechanic start-----------------------------------------
   if status.resource("lunacy") > 0 and status.stat("lunacyRegen") == 0 then --if no equipment is equipped 
     status.consumeResource("lunacy", 3 * dt)
   end
@@ -253,7 +260,7 @@ function update(dt)
   if status.resourcePercentage("lunacy") == 1 then
     status.addEphemeralEffect("sb_suiciding", math.huge)
   end
-  -- lunacy mechanic end
+  ------------------------------------------lunacy mechanic end------------------------------------------
 
   self.hitInvulnerabilityTime = math.max(self.hitInvulnerabilityTime - dt, 0)
   local flashTime = status.statusProperty("hitInvulnerabilityFlash")
@@ -317,7 +324,7 @@ function overheadBars()
     })
   end
 
-  
+  --[[
   local r = math.min(math.abs(status.resourcePercentage("ammo") - 1) * 800, 200) --pega um valor de 0 a 200 dependendo da porcentagem perdida até 0.5
   local b = math.min(status.resourcePercentage("ammo") * 400, 200)               --mesmo de cima mas do contrário
 
@@ -325,6 +332,7 @@ function overheadBars()
       percentage = status.resource("ammo") * (1/status.resourceMax("ammo")),
       color = {r, b, 0, 255}
   })
+  ]]
 
   return bars
 end
