@@ -42,13 +42,16 @@ function update(dt)
     shuffle(targetIds)
 
     if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then --if underwater, damage player and halve the timer to damage
-      status.applySelfDamageRequest({
-        damageType = "damage",
-        damage = boltPower,
-        damageSourceKind = "electric",
-        sourceEntityId = entity.id()
-      })
-      self.tickTimer = self.tickTime/2
+      local liquidID =world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1})[1] 
+      if liquidID == 1  or liquidID == 6 or liquidID == 12 then  --water, healingwater and swampwater, respectivelly
+        status.applySelfDamageRequest({
+          damageType = "damage",
+          damage = boltPower,
+          damageSourceKind = "electric",
+          sourceEntityId = entity.id()
+        })
+        self.tickTimer = self.tickTime/2
+      end
     end
 
     for i,id in ipairs(targetIds) do

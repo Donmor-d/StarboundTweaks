@@ -12,9 +12,14 @@ function init()
 end
 
 function update(dt)
+
   if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then
+    if world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1})[1] == 5 then
+      world.spawnLiquid(entity.position(), 2, 1)
+    end
     effect.expire()
   end
+
   local sourceID = effect.sourceEntity()
   local activeStatus = status.activeUniqueStatusEffectSummary()
 
@@ -29,6 +34,7 @@ function update(dt)
   end
   self.tickTimer = self.tickTimer - dt
   if self.tickTimer <= 0 then
+
     self.tickTimer = self.tickTime
     status.applySelfDamageRequest({
         damageType = "damage",

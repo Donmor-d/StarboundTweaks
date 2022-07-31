@@ -1,3 +1,5 @@
+require "/scripts/util.lua"
+
 function init()
   animator.setParticleEmitterOffsetRegion("drips", mcontroller.boundBox())
   animator.setParticleEmitterActive("drips", true)
@@ -11,6 +13,7 @@ end
 
 function update(dt)
   self.tickTimer = self.tickTimer - dt
+
   if self.tickTimer <= 0 then
     self.tickTimer = self.tickTime
     status.applySelfDamageRequest({

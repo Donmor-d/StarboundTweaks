@@ -6,12 +6,12 @@
 	},
 	{
 	"op": "replace",
-	"path": "/effectConfig/energyCost",
-	"value": 5
+	"path": "/effectConfig/movementModifiers/speedModifier",
+	"value": 0.4
 	},
 	{
 	"op": "replace",
-	"path": "/effectConfig/movementModifiers/speedModifier",
-	"value": 0.3
+	"path": "/effectConfig/healthDamage",
+	"value": 0
 	}
 ]

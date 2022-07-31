@@ -21,6 +21,7 @@
 	},
 //--------------------------------------recipes--------------------------------------
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ammocombiner" } },
+/*
 		//assaultrifles
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ironmodularrifle" } },
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_tungstenmodularrifle" } },
@@ -47,6 +48,7 @@
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_rocketjumper" } },
 		//launchers - grenade launchers
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularlauncher" } },
+*/
 		//------augments-----
 			//assaultrifle
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalriflebullet" } },

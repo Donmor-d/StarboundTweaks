@@ -9,6 +9,7 @@ function init()
   effect.addStatModifierGroup({
     {stat = "jumpModifier", amount = -0.15}
   })
+  self.speedMult = 1
 end
 
 function update(dt)
@@ -21,10 +22,19 @@ function update(dt)
     end
   end
 
+  if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then --if touching water, eventually slows more
+    local liquidID =world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1})[1] 
+      if liquidID == 1  or liquidID == 6 or liquidID == 12 then
+        self.speedMult = math.max(self.speedMult - dt/2, 0.1)
+      end
+  else  
+    self.speedMult = math.min(self.speedMult + dt/2, 1)
+  end
+
   mcontroller.controlModifiers({
-      groundMovementModifier = 0.3,
-      speedModifier = 0.75,
-      airJumpModifier = 0.85
+      groundMovementModifier = 0.3 * self.speedMult,
+      speedModifier = 0.75 * self.speedMult,
+      airJumpModifier = 0.85 * self.speedMult
     })
 end
 
