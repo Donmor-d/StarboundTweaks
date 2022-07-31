@@ -17,12 +17,12 @@
 		"mechlegsarc",
 		"throwingknife",
 		"throwingaxe",
-		"leadshieldedcore",
-		"titaniummodularrifle",
-		"titaniummodularrevolver",
-		"titaniummodularshotgun",
-		"titaniummodularpistol",
-		"titaniummodularsniper"
+		"st_leadshieldedcore",
+		"st_titaniummodularrifle",
+		"st_titaniummodularrevolver",
+		"st_titaniummodularshotgun",
+		"st_titaniummodularpistol",
+		"st_titaniummodularsniper"
 		]
 	}
 ]

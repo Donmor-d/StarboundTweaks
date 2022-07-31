@@ -1,0 +1,11 @@
+[
+  {
+    "op": "add",
+    "path": "/maxAmmo",
+    "value": {
+      "label": "Maximum Ammo",
+      "description": "-todo-",
+      "icon": "/interface/stats/maxammo.png"
+    }
+  }
+]

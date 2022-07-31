@@ -4,5 +4,5 @@
 	{ "item" : "staticcell", "count" : 2 }
   ],
   "output" : { "item" : "st_electricgasgrenade", "count" : 1 },
-  "groups" : [ "st_ammostation", "st_ammoexplosive", "all" ]
+  "groups" : [ "st_ammostation2", "st_ammoexplosive", "all" ]
 }

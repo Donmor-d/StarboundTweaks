@@ -2,22 +2,22 @@
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/6",
-    "value": "st_neotommygun"
+    "value": "npcneotommygun"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/7",
-    "value": "st_neopistol"
+    "value": "npcneopistol"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/8",
-    "value": "st_neouzi"
+    "value": "npcneouzi"
   },
   {
     "op": "replace",
     "path": "/items/override/0/1/0/primary/9",
-    "value": "st_neoshotgun"
+    "value": "npcneoshotgun"
   },
   {
     "op": "replace",

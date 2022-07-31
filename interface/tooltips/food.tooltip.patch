@@ -1,0 +1,170 @@
+[
+  {
+    "op": "add",
+    "path": "/foodBuff1Image",
+    "value": {
+      "type": "image",
+      "position": [
+        120,
+        104
+      ],
+      "file": "",
+      "centered": true,
+      "maxSize": [
+        12,
+        12
+      ],
+      "minSize": [
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/foodBuff2Image",
+    "value": {
+      "type": "image",
+      "position": [
+        106,
+        104
+      ],
+      "file": "",
+      "centered": true,
+      "maxSize": [
+        12,
+        12
+      ],
+      "minSize": [
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/foodBuff3Image",
+    "value": {
+      "type": "image",
+      "position": [
+        92,
+        104
+      ],
+      "file": "",
+      "centered": true,
+      "maxSize": [
+        12,
+        12
+      ],
+      "minSize": [
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/foodBuff4Image",
+    "value": {
+      "type": "image",
+      "position": [
+        78,
+        104
+      ],
+      "file": "",
+      "centered": true,
+      "maxSize": [
+        12,
+        12
+      ],
+      "minSize": [
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/foodBuff5Image",
+    "value": {
+      "type": "image",
+      "position": [
+        64,
+        104
+      ],
+      "file": "",
+      "centered": true,
+      "maxSize": [
+        12,
+        12
+      ],
+      "minSize": [
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/foodBuff6Image",
+    "value": {
+      "type": "image",
+      "position": [
+        50,
+        104
+      ],
+      "file": "",
+      "centered": true,
+      "maxSize": [
+        12,
+        12
+      ],
+      "minSize": [
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/foodBuff7Image",
+    "value": {
+      "type": "image",
+      "position": [
+        36,
+        104
+      ],
+      "file": "",
+      "centered": true,
+      "maxSize": [
+        12,
+        12
+      ],
+      "minSize": [
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/foodBuff8Image",
+    "value": {
+      "type": "image",
+      "position": [
+        22,
+        104
+      ],
+      "file": "",
+      "centered": true,
+      "maxSize": [
+        12,
+        12
+      ],
+      "minSize": [
+        12,
+        12
+      ]
+    }
+  }
+]

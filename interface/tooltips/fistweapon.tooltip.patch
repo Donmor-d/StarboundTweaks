@@ -1,0 +1,28 @@
+[
+  {
+    "op": "add",
+    "path": "/levelTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        105,
+        125
+      ],
+      "hAnchor": "left",
+      "value": "Tier "
+    }
+  },
+  {
+    "op": "add",
+    "path": "/levelLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        122,
+        125
+      ],
+      "hAnchor": "left",
+      "wrapWidth": 126
+    }
+  }
+]

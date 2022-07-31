@@ -3,7 +3,7 @@
     "op": "add",
     "path": "/upgradeStages/0/interactData/upgradeMaterials/-",
     "value": {
-      "item": "heatingcomponent",
+      "item": "st_heatingcomponent",
       "count": 1
     }
   },

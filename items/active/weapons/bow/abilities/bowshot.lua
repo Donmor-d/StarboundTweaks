@@ -20,7 +20,7 @@ function BowShot:update(dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 
-  if not self.weapon.currentAbility and self.fireMode == (self.activatingFireMode or self.abilitySlot) and self.cooldownTimer == 0 and (self.ammoUsage == 0 or not status.resourceLocked("ammo")) then
+  if not self.weapon.currentAbility and self.fireMode == (self.activatingFireMode or self.abilitySlot) and self.cooldownTimer == 0 then
     self:setState(self.draw)
   end
 end
@@ -41,8 +41,11 @@ function BowShot:draw()
 
   while self.fireMode == (self.activatingFireMode or self.abilitySlot) do
     
-
-    self.drawTime = self.drawTime + self.dt
+    if status.resourceLocked("ammo") then
+      self.drawTime = self.drawTime + self.dt/2
+    else
+      self.drawTime = self.drawTime + self.dt
+    end
 
     local drawFrame = math.floor(root.evalFunction(self.drawFrameSelector, self.drawTime))
     animator.setGlobalTag("drawFrame", drawFrame)
@@ -60,7 +63,8 @@ function BowShot:fire()
   animator.stopAllSounds("draw")
   animator.setGlobalTag("drawFrame", "0")
 
-  if not world.pointTileCollision(self:firePosition()) and status.overConsumeResource("ammo", self.ammoUsage) then
+  if not world.pointTileCollision(self:firePosition()) then
+    status.overConsumeResource("ammo", self.ammoUsage)
     world.spawnProjectile(
         self:perfectTiming() and self.powerProjectileType or self.projectileType,
         self:firePosition(),

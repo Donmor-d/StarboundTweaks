@@ -2,7 +2,7 @@
 	{
 	"op" : "replace",
 	"path" : "/transformedMovementParameters/liquidBuoyancy",
-	"value" : 0
+	"value" : 0.5
 	},
 	{
 	"op" : "add",

@@ -128,21 +128,21 @@
   {
     "op": "replace",
     "path": "/builderConfig/0/elementalConfig/fire/primaryAbility/projectileType",
-    "value": "firepellet"
+    "value": "st_firepellet"
   },
   {
     "op": "replace",
     "path": "/builderConfig/0/elementalConfig/ice/primaryAbility/projectileType",
-    "value": "icepellet"
+    "value": "st_icepellet"
   },
   {
     "op": "replace",
     "path": "/builderConfig/0/elementalConfig/poison/primaryAbility/projectileType",
-    "value": "poisonpellet"
+    "value": "st_poisonpellet"
   },
   {
     "op": "replace",
     "path": "/builderConfig/0/elementalConfig/electric/primaryAbility/projectileType",
-    "value": "electricpellet"
+    "value": "st_electricpellet"
   }
 ]

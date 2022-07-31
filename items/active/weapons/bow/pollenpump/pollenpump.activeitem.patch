@@ -1,0 +1,9 @@
+[
+  {
+    "op": "add",
+    "path": "/animationScripts",
+    "value": [
+      "/custom/scripts/st_ammo_drawables.lua"
+    ]
+  }
+]

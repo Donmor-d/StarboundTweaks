@@ -1,0 +1,77 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "st_ammostation",
+        "states" : {
+          "st_ammostation" : {},
+          "st_ammostation2" : {
+            "frames" : 19,
+            "cycle" : 1.5,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "lights" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 0
+        },
+        "partStates" : {
+          "stage" : {
+            "st_ammostation" : {},
+
+            "st_ammostation2" : {
+              "properties" : {
+                "image" : "st_ammostation2.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "chassis" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "stage" : {
+            "st_ammostation" : {
+              "properties" : {
+                "image" : "st_ammostation.png:<color>.<frame>"
+              }
+            },
+
+            "st_ammostation2" : {
+              "properties" : {
+                "image" : "st_ammostation2.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "lights" : {
+  },
+  
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

@@ -53,13 +53,13 @@
     "scripts" : ["/items/active/weapons/melee/abilities/spear/spin/spin.lua"],
     "class" : "Spin",
 
-    "energyUsage" : 60,
+    "energyUsage" : 0,
     "cooldownTime" : 0.2,
 
     "damageConfig" : {
       "damageSourceKind" : "spear",
       "statusEffects" : [ ],
-    	"baseDamage" : 6,
+    	"baseDamage" : 5,
     	"knockbackMode" : "none",
     	"knockback" : 30,
     	"timeout" : 0.25,

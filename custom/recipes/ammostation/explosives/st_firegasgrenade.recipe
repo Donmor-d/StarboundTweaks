@@ -4,5 +4,5 @@
 	{ "item" : "scorchedcore", "count" : 2 }
   ],
   "output" : { "item" : "st_firegasgrenade", "count" : 1 },
-  "groups" : [ "st_ammostation", "st_ammoexplosive", "all" ]
+  "groups" : [ "st_ammostation2", "st_ammoexplosive", "all" ]
 }

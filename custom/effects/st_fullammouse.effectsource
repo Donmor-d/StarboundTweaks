@@ -1,0 +1,13 @@
+{
+    "kind" : "st_fullammouse",
+    "definition" : {
+      "duration" : 0.05,
+      "loops" : true,
+      "start" : {
+        "sounds" : [
+          [ "/sfx/gun/reload/grenade_reload_clip3.ogg" ]
+        ]
+      }
+    }
+  }
+  

@@ -48,7 +48,7 @@
   {
     "op": "replace",
     "path": "/primaryAbility/projectileType",
-    "value": "sb_sniperbullet"
+    "value": "st_sniperbullet"
   },
   {
     "op": "add",

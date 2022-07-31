@@ -53,13 +53,13 @@
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
-  "energyPerShotTitleLabel" : {
+  "ammoPerShotTitleLabel" : {
     "type" : "label",
     "position" : [9, 74],
     "hAnchor" : "left",
-    "value" : "Energy Per Shot:"
+    "value" : "Ammo Per Shot:"
   },
-  "energyPerShotLabel" : {
+  "ammoPerShotLabel" : {
     "type" : "label",
     "position" : [130, 74],
     "hAnchor" : "right",
@@ -113,5 +113,18 @@
     "type" : "label",
     "position" : [30, 42],
     "value" : ""
+  },
+  //tier
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [105, 158],
+    "hAnchor" : "left",
+    "value" : "Tier "
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [122, 158],
+    "hAnchor" : "left",
+    "wrapWidth" : 126
   }
 }

@@ -4,5 +4,5 @@
 	{ "item" : "stickofram", "count" : 1 }
   ],
   "output" : { "item" : "st_homingrocket", "count" : 1 },
-  "groups" : [ "st_ammostation", "st_ammoexplosive", "all" ]
+  "groups" : [ "st_ammostation2", "st_ammoexplosive", "all" ]
 }

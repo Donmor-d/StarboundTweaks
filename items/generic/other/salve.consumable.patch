@@ -3,12 +3,12 @@
     "op": "add",
     "path": "/effects/0/-",
     "value": {
-      "effect": "sb_recovering"
+      "effect": "st_recovering"
     }
   },
   {
     "op": "add",
     "path": "/blockingEffects/-",
-    "value": "sb_recovering"
+    "value": "st_recovering"
   }
 ]

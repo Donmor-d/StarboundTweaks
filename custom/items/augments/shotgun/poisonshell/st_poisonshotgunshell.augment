@@ -4,8 +4,8 @@
   "rarity" : "Uncommon",
   "category" : "ammoModifier",
   "inventoryIcon" : "st_poisonshotgunshell.png",
-  "description" : "Changes the shotgun's element to fire.",
-  "shortdescription" : "Fire Shotgun Shell",
+  "description" : "Changes the shotgun's element to poison.",
+  "shortdescription" : "Poison Shotgun Shell",
 
   "augment": {
     "type": "shotgunammo",

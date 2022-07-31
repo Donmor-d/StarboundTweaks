@@ -31,21 +31,12 @@ function GunFire:update(dt, fireMode, shiftHeld)
     animator.setLightActive("muzzleFlash", false)
   end
 
-  if self.fireMode == "primary" 
-  and self.cooldownTimer == 0
-  and status.resourceLocked("ammo") then
-    
-    animator.playSound("noAmmo")
-    self.cooldownTimer = self.fireTime
-  end  
-
   if self.fireMode == "primary"
     and not self.weapon.currentAbility
-    and not status.resourceLocked("ammo") --New resource, works like energy but needs to be refilled manually
     and self.cooldownTimer == 0     
     and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
-    if self.fireType == "auto" and status.overConsumeResource("ammo", self.ammoUsage) then
+    if self.fireType == "auto" then
       self:setState(self.auto)
     elseif self.fireType == "burst" then
       self:setState(self.burst)
@@ -62,8 +53,13 @@ function GunFire:auto()
   if self.stances.fire.duration then
     util.wait(self.stances.fire.duration)
   end
-  
-  self.cooldownTimer = self.fireTime
+  if status.resourceLocked("ammo") then
+    self.cooldownTimer = self.fireTime*2
+
+  else
+    self.cooldownTimer = self.fireTime
+    
+  end
   self:setState(self.cooldown)
   
 end
@@ -72,15 +68,18 @@ function GunFire:burst()
   self.weapon:setStance(self.stances.fire)
 
   local shots = self.burstCount
-  while shots > 0 and status.overConsumeResource("ammo", self.ammoUsage) do
+  while shots > 0 do
     self:fireProjectile()
     self:muzzleFlash()
     shots = shots - 1
     
     self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.weaponRotation))
     self.weapon.relativeArmRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.armRotation))
-
-    util.wait(self.burstTime)
+    if status.resourceLocked("ammo") then
+      util.wait(self.burstTime*2)
+    else
+      util.wait(self.burstTime)
+    end
   end
 
   self.cooldownTimer = (self.fireTime - self.burstTime) * self.burstCount
@@ -107,6 +106,12 @@ function GunFire:muzzleFlash()
   animator.setPartTag("muzzleFlash", "variant", math.random(1, self.muzzleFlashVariants or 3))
   animator.setAnimationState("firing", "fire")
   animator.burstParticleEmitter("muzzleFlash")
+
+  status.overConsumeResource("ammo", self.ammoUsage)
+
+  if status.resourceLocked("ammo") then
+    animator.playSound("noAmmo")
+  end
   
   animator.playSound("fire")
 

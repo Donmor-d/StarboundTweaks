@@ -5,10 +5,10 @@
 	"value": [
 		"throwingdagger",
 		"throwingspear",
-		"rocketjumper",
-		"tungstenmodularrifle",
-		"tungstenmodularrevolver",
-		"tungstenmodularshotgun"
+		"st_rocketjumper",
+		"st_tungstenmodularrifle",
+		"st_tungstenmodularrevolver",
+		"st_tungstenmodularshotgun"
 		]
 	}
 ]

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "st_leadbar", "count" : 1 },
+	{ "item" : "refinedaegisalt", "count" : 1 }
+  ],
+  "output" : { "item" : "st_fullammopack", "count" : 4 },
+  "groups" : [ "st_ammostation2", "st_ammoboxes", "all" ]
+}

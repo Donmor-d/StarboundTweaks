@@ -1,0 +1,7 @@
+[
+  {
+    "op": "replace",
+    "path": "/statusList/position/1",
+    "value": 189
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "op": "remove",
+    "path": "/energyPerShotTitleLabel"
+  },
+  {
+    "op": "remove",
+    "path": "/energyPerShotLabel"
+  },
+  {
+    "op": "add",
+    "path": "/ammoPerShotTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        9,
+        50
+      ],
+      "hAnchor": "left",
+      "value": "Ammo Usage Per Shot:"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/ammoPerShotLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        130,
+        50
+      ],
+      "hAnchor": "right",
+      "wrapWidth": 126
+    }
+  },
+  {
+    "op": "add",
+    "path": "/levelTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        105,
+        134
+      ],
+      "hAnchor": "left",
+      "value": "Tier "
+    }
+  },
+  {
+    "op": "add",
+    "path": "/levelLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        122,
+        134
+      ],
+      "hAnchor": "left",
+      "wrapWidth": 126
+    }
+  }
+]

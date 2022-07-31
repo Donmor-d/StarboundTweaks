@@ -59,7 +59,7 @@
     "projectileCount" : 8,
     "fireType" : "auto",
 
-    "projectileType" : "normalpellet",
+    "projectileType" : "st_normalpellet",
     "projectileParameters" : {
       "damageKind" : "shotgunbullet",
       "knockback" : 30

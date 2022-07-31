@@ -1,0 +1,18 @@
+{
+  "itemName" : "st_fullammopack",
+  "rarity" : "Rare",
+  "price" : 250,
+  "maxStack" : 20,
+  "category" : "medicine",
+  "inventoryIcon" : "st_fullammopack.png",
+  "description" : "A custom sized ammo pack, probably illegal to carry, using it refills ammo.",
+  "shortdescription" : "Full Ammo Pack",
+  "effects" : [ [
+      {
+        "effect" : "st_fullammogain"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "st_fullammouse" ],
+  "blockingEffects" : [ ]
+}

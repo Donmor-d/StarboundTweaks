@@ -2,6 +2,6 @@
 	{
 	"op" : "replace",
 	"path" : "/projectileConfig/power",
-	"value" : 13.5
+	"value" : 16.875
 	}
 ]

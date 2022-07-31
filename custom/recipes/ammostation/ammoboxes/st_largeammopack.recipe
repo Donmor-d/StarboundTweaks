@@ -1,8 +1,8 @@
 {
   "input" : [
     { "item" : "st_leadbar", "count" : 1 },
-	{ "item" : "refinedaegisalt", "count" : 1 }
+	{ "item" : "durasteelbar", "count" : 1 }
   ],
   "output" : { "item" : "st_largeammopack", "count" : 4 },
-  "groups" : [ "st_ammostation", "st_ammoboxes", "all" ]
+  "groups" : [ "st_ammostation2", "st_ammoboxes", "all" ]
 }

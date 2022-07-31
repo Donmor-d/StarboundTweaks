@@ -14,14 +14,14 @@
 		"mechlegssleek",
 		"throwingkunai",
 		"javelin",
-		"avolitepoweredheater",
-		"durasteelmodularrifle",
-		"durasteelmodularrevolver",
-		"durasteelmodularshotgun",
-		"durasteelmodularpistol",
-		"durasteelmodularsniper",
-		"durasteelmodularrocketlauncher",
-		"durasteelmodulargrenadelauncher"
+		"st_avolitepoweredheater",
+		"st_durasteelmodularrifle",
+		"st_durasteelmodularrevolver",
+		"st_durasteelmodularshotgun",
+		"st_durasteelmodularpistol",
+		"st_durasteelmodularsniper",
+		"st_durasteelmodularrocketlauncher",
+		"st_durasteelmodulargrenadelauncher"
 		]
 	}
 ]

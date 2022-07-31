@@ -1875,7 +1875,7 @@
       "pool" : [
         {"weight" : 0.5, "pool" : "uniqueWeapon"},
         {"weight" : 0.5, "pool" : "goodWeapon"},
-        {"weight" : 0.5, "item" : "sb_st_modularframe"}
+        {"weight" : 0.5, "item" : "st_modularframe"}
       ],
       "poolRounds" : 1,
       "allowDuplication" : false

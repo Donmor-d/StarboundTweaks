@@ -1,8 +1,8 @@
 {
   "input" : [
     { "item" : "ironbar", "count" : 8 },
-    { "item" : "copperbar", "count" : 10 },
-    { "item" : "coalore", "count" : 5 }   
+    { "item" : "darkwoodmaterial", "count" : 20 },
+    { "item" : "copperbar", "count" : 5 }   
   ],
   "output" : {
     "item" : "st_ammostation",

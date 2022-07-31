@@ -157,11 +157,11 @@
   "cultistGun" : [
     [0, {
       "pool" : [
-        {"weight" : 0.007, "item" : "sb_cultistassaultrifle"},
-        {"weight" : 0.007, "item" : "sb_cultistmachinepistol"},
-        {"weight" : 0.007, "item" : "sb_cultistpistol"},
-        {"weight" : 0.007, "item" : "sb_cultistshotgun"},
-        {"weight" : 0.007, "item" : "sb_cultistsniperrifle"}
+        {"weight" : 0.007, "item" : "st_cultistassaultrifle"},
+        {"weight" : 0.007, "item" : "st_cultistmachinepistol"},
+        {"weight" : 0.007, "item" : "st_cultistpistol"},
+        {"weight" : 0.007, "item" : "st_cultistshotgun"},
+        {"weight" : 0.007, "item" : "st_cultistsniperrifle"}
       ]
     }]
   ],
@@ -1125,53 +1125,53 @@
   "ammoAugments" : [
     [0, {
       "pool" : [
-        {"weight" : 1.0, "item" : "electricriflebullet"},
-        {"weight" : 1.0, "item" : "fireriflebullet"},
-        {"weight" : 1.0, "item" : "iceriflebullet"},
-        {"weight" : 1.0, "item" : "poisonriflebullet"},
-        {"weight" : 1.0, "item" : "sprayriflebullet"},
-        {"weight" : 1.0, "item" : "snowballingrevolverbullet"},
-        {"weight" : 1.0, "item" : "rouletterevolverbullet"}
+        {"weight" : 1.0, "item" : "st_electricriflebullet"},
+        {"weight" : 1.0, "item" : "st_fireriflebullet"},
+        {"weight" : 1.0, "item" : "st_iceriflebullet"},
+        {"weight" : 1.0, "item" : "st_poisonriflebullet"},
+        {"weight" : 1.0, "item" : "st_sprayriflebullet"},
+        {"weight" : 1.0, "item" : "st_snowballingrevolverbullet"},
+        {"weight" : 1.0, "item" : "st_rouletterevolverbullet"}
       ]
     }],
     [1.9, {
       "pool" : [
-        {"weight" : 1.0, "item" : "electricriflebullet"},
-        {"weight" : 1.0, "item" : "fireriflebullet"},
-        {"weight" : 1.0, "item" : "iceriflebullet"},
-        {"weight" : 1.0, "item" : "poisonriflebullet"},
-        {"weight" : 1.0, "item" : "sprayriflebullet"},
-        {"weight" : 1.0, "item" : "snowballingrevolverbullet"},
-        {"weight" : 1.0, "item" : "rouletterevolverbullet"},
-        {"weight" : 1.0, "item" : "slugshotgunshell"},
-        {"weight" : 0.5, "item" : "grapeshotgunshell"}
+        {"weight" : 1.0, "item" : "st_electricriflebullet"},
+        {"weight" : 1.0, "item" : "st_fireriflebullet"},
+        {"weight" : 1.0, "item" : "st_iceriflebullet"},
+        {"weight" : 1.0, "item" : "st_poisonriflebullet"},
+        {"weight" : 1.0, "item" : "st_sprayriflebullet"},
+        {"weight" : 1.0, "item" : "st_snowballingrevolverbullet"},
+        {"weight" : 1.0, "item" : "st_rouletterevolverbullet"},
+        {"weight" : 1.0, "item" : "st_slugshotgunshell"},
+        {"weight" : 0.5, "item" : "st_grapeshotgunshell"}
       ]
     }],
     [2.9, {
       "pool" : [
-        {"weight" : 1.0, "item" : "slugshotgunshell"},
-        {"weight" : 0.5, "item" : "grapeshotgunshell"},
-        {"weight" : 1.0, "item" : "chargedsniperbullet"},
-        {"weight" : 1.0, "item" : "splitsniperbullet"},
-        {"weight" : 1.0, "item" : "speedingmachinepistolbullet"},
-        {"weight" : 0.5, "item" : "soapymachinepistolbullet"}
+        {"weight" : 1.0, "item" : "st_slugshotgunshell"},
+        {"weight" : 0.5, "item" : "st_grapeshotgunshell"},
+        {"weight" : 1.0, "item" : "st_chargedsniperbullet"},
+        {"weight" : 1.0, "item" : "st_splitsniperbullet"},
+        {"weight" : 1.0, "item" : "st_speedingmachinepistolbullet"},
+        {"weight" : 0.5, "item" : "st_soapymachinepistolbullet"}
       ]
     }],
     [3.9, {
       "pool" : [
-        {"weight" : 1.0, "item" : "slugshotgunshell"},
-        {"weight" : 0.5, "item" : "grapeshotgunshell"},
-        {"weight" : 1.0, "item" : "chargedsniperbullet"},
-        {"weight" : 1.0, "item" : "splitsniperbullet"},
-        {"weight" : 1.0, "item" : "speedingmachinepistolbullet"},
-        {"weight" : 0.5, "item" : "soapymachinepistolbullet"},
-        {"weight" : 1.0, "item" : "splitgrenade"},
-        {"weight" : 1.0, "item" : "bouncinggrenade"},
-        {"weight" : 1.0, "item" : "minirocket"},
-        {"weight" : 1.0, "item" : "electricgasrocket"},
-        {"weight" : 1.0, "item" : "firegasrocket"},
-        {"weight" : 1.0, "item" : "icegasrocket"},
-        {"weight" : 1.0, "item" : "poisongasrocket"}
+        {"weight" : 1.0, "item" : "st_slugshotgunshell"},
+        {"weight" : 0.5, "item" : "st_grapeshotgunshell"},
+        {"weight" : 1.0, "item" : "st_chargedsniperbullet"},
+        {"weight" : 1.0, "item" : "st_splitsniperbullet"},
+        {"weight" : 1.0, "item" : "st_speedingmachinepistolbullet"},
+        {"weight" : 0.5, "item" : "st_soapymachinepistolbullet"},
+        {"weight" : 1.0, "item" : "st_splitgrenade"},
+        {"weight" : 1.0, "item" : "st_bouncinggrenade"},
+        {"weight" : 1.0, "item" : "st_minirocket"},
+        {"weight" : 1.0, "item" : "st_electricgasrocket"},
+        {"weight" : 1.0, "item" : "st_firegasrocket"},
+        {"weight" : 1.0, "item" : "st_icegasrocket"},
+        {"weight" : 1.0, "item" : "st_poisongasrocket"}
       ]
     }]      
   ],
@@ -1208,7 +1208,7 @@
         {"weight" : 1.0, "item" : "intestinewhip"},
         {"weight" : 0.2, "item" : "gnomegun"},
         //loose cannon courtesy of yours truly
-        {"weight" : 1.0, "item" : "sb_loosecannon"}
+        {"weight" : 1.0, "item" : "st_loosecannon"}
       ]
     }],
     [4.9, {

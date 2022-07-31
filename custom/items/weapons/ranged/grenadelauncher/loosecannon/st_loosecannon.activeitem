@@ -47,7 +47,7 @@
     },
 	"sounds" : {
       "fire" : ["/sfx/gun/grenade1.ogg"],
-      "charge" : [ "/custom/sfx/charge/cannon_charge.ogg" ]
+      "charge" : [ "/custom/sfx/charge/st_cannon_charge.ogg" ]
     }
   },
 
@@ -118,7 +118,7 @@
   "upgradeParameters" : {
     "inventoryIcon" : "st_loosecannon_l6.png",
     "animationParts" : {
-      "middle" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/loosecannon_l6.png"
+      "middle" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/st_loosecannon_l6.png"
     },
     "shortdescription" : "Australium Loose Cannon ^yellow;^reset;"
   }
