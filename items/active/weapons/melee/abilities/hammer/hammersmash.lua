@@ -141,10 +141,22 @@ function HammerSmash:fireShockwave(charge)
 
   local volume = math.min(charge, 1)
 
+  
+
   if impact then
     self.weapon.weaponOffset = {0, impactHeight + self.impactWeaponOffset}
+    
+    
 
     local charge = math.floor(charge * self.maxDistance)
+
+--screenshake 
+    local screenshakeId = world.spawnProjectile("screenshake", mcontroller.position(), activeItem.ownerEntityId(), {0, 0}, false, 
+    {timeToLive = 0.25 * charge/10,
+     shakeAmount = 1 * charge/10})
+    activeItem.setCameraFocusEntity(screenshakeId)
+--screenshake end
+
     local directions = {1}
     if self.bothDirections then directions[2] = -1 end
     local positions = self:shockwaveProjectilePositions(impact, charge, directions)
@@ -166,6 +178,7 @@ function HammerSmash:fireShockwave(charge)
         local dir = util.toDirection(xDistance)
         params.timeToLive = (math.floor(math.abs(xDistance))) * 0.025
         world.spawnProjectile("shockwavespawner", position, activeItem.ownerEntityId(), {dir,0}, false, params)
+
       end
     end
   end

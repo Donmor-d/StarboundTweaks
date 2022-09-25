@@ -80,9 +80,10 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "loosecannongrenade",
+    "projectileType" : "standardbullet",
     "projectileParameters" : {
 		"bounces" : 0
+
     },
     "stances" : {
       "idle" : {

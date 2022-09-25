@@ -7,6 +7,9 @@ GunFire = WeaponAbility:new()
 function GunFire:init()
   self.weapon:setStance(self.stances.idle)
 
+  self.fired = false
+  self.screenshake = self.screenshake or false
+
   if self.ammoUsage == nil then
     self.ammoUsage = self.energyUsage/10 or 0
   end
@@ -41,6 +44,11 @@ function GunFire:update(dt, fireMode, shiftHeld)
     elseif self.fireType == "burst" then
       self:setState(self.burst)
     end
+  end
+
+  if self.fired and self.screenshake and not world.entityExists(self.projectileId) then
+    self:screenShake()
+    self.fired = false
   end
 end
 
@@ -109,7 +117,7 @@ function GunFire:muzzleFlash()
 
   status.overConsumeResource("ammo", self.ammoUsage)
 
-  if status.resourceLocked("ammo") then
+  if status.resourceLocked("ammo") and animator.hasSound("noAmmo") then
     animator.playSound("noAmmo")
   end
   
@@ -120,6 +128,9 @@ function GunFire:muzzleFlash()
 end
 
 function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
+
+  self.fired = true
+
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
@@ -132,13 +143,13 @@ function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, fi
     projectileType = projectileType[math.random(#projectileType)]
   end
 
-  local projectileId = 0
+  self.projectileId = 0
   for i = 1, (projectileCount or self.projectileCount) do
     if params.timeToLive then
       params.timeToLive = util.randomInRange(params.timeToLive)
     end
 
-    projectileId = world.spawnProjectile(
+    self.projectileId = world.spawnProjectile(
         projectileType,
         firePosition or self:firePosition(),
         activeItem.ownerEntityId(),
@@ -147,7 +158,7 @@ function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, fi
         params
       )
   end
-  return projectileId
+  return self.projectileId
 end
 
 function GunFire:firePosition()
@@ -162,6 +173,13 @@ end
 
 function GunFire:damagePerShot()
   return (self.baseDamage or (self.baseDps * self.fireTime)) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
+end
+
+function GunFire:screenShake()
+  local screenshakeId = world.spawnProjectile("screenshake", mcontroller.position(), activeItem.ownerEntityId(), {0, 0}, false, 
+  {timeToLive = 0.25,
+   shakeAmount = 1})
+  activeItem.setCameraFocusEntity(screenshakeId)
 end
 
 function GunFire:uninit()

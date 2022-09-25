@@ -33,6 +33,8 @@
        "ammoUsage" : 7.5,
        "inaccuracy" : 0.0,
 
+       "screenshake" : true,
+
       "projectileType": "st_poisongasrocket",
       "projectileParameters": {
         "acceleration" : 100,

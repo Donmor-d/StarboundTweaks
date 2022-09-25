@@ -58,6 +58,8 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
+    "screenshake" : true,
+
     "projectileType" : "st_nodamagerocket",
     "projectileParameters" : {
 	  "timeToLive" : 0.5,

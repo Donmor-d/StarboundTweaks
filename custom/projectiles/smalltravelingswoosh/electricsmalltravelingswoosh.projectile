@@ -1,0 +1,24 @@
+{
+  "projectileName" : "electricsmalltravelingswoosh",
+  "image" : "electricsmalltravelingswoosh.png",
+  "animationCycle" : 0.15,
+  "timeToLive" : 0.15,
+  "frameNumber" : 5,
+  "damageKindImage" : "icon.png",
+  "speed" : 50,
+  "orientationLocked" : true,
+  "damagePoly" : [ [-20, 12.25], [1.75, 12.25], [7.75, 10.75], [14.25, 7.75], [18.25, 3.75], [20.25, -0.75], [20.25, -6.25], [16.25, -12.25], [-6, -12.25] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : 0,
+  "flippable" : true,
+  "emitters" : [ "electricswoosh" ],
+  "statusEffects" : [
+    "electrified"
+  ],
+  "damageKind" : "electricbroadsword",
+  "lightColor" : [25, 92, 107],
+  "pointLight" : true,
+  "knockback" : 10,
+  "knockbackDirectional" : true
+}

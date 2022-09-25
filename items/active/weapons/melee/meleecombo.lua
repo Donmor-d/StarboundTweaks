@@ -1,11 +1,22 @@
 require "/scripts/util.lua"
+require "/scripts/status.lua" --for later
 
 -- Melee primary ability
 MeleeCombo = WeaponAbility:new()
 
 function MeleeCombo:init()
   self.comboStep = 1
+  --listener
+  self.damageListener = damageListener("inflictedHits", function() 
+    self.fallTimer = 0.35
+    self.slowFall = true
+  end)
+  --
+  --add projectile
+  self.projectileOffset = self.projectileOffset or {0, 0}
 
+  self.projectileType = self.projectileType or nil
+  --
   self.energyUsage = self.energyUsage or 0
 
   self:computeDamageAndCooldowns()
@@ -20,7 +31,6 @@ function MeleeCombo:init()
 
   self.slowFall = false
   self.fallTimer = 0.35
-  self.previousYSpeed = nil
 
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
@@ -30,6 +40,8 @@ end
 -- Ticks on every update regardless if this is the active ability
 function MeleeCombo:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
+
+  self.damageListener:update()
 
   if self.cooldownTimer > 0 then
     self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
@@ -66,7 +78,6 @@ function MeleeCombo:update(dt, fireMode, shiftHeld)
     if self.fallTimer < 0 then
       self.fallTimer = 0.35
       self.slowFall = false
-      mcontroller.setYVelocity(self.previousYSpeed/2)
     end
   end
 end
@@ -132,11 +143,6 @@ end
 
 -- State: fire
 function MeleeCombo:fire()
-  
-  self.fallTimer = 0.35
-  self.slowFall = true
-
-  self.previousYSpeed = mcontroller.yVelocity()
 
   local stance = self.stances["fire"..self.comboStep]
 
@@ -151,6 +157,18 @@ function MeleeCombo:fire()
   animator.setParticleEmitterOffsetRegion(swooshKey, self.swooshOffsetRegions[self.comboStep])
   animator.burstParticleEmitter(swooshKey)
 
+  --spawn traveling swoosh
+  local position = vec2.add(mcontroller.position(), {self.projectileOffset[1] * mcontroller.facingDirection(), self.projectileOffset[2]})
+  local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
+  params.power = self.stepDamageConfig[self.comboStep].baseDamage/2
+  params.powerMultiplier = activeItem.ownerPowerMultiplier()
+  params.speed = util.randomInRange(params.speed)
+
+  if self.projectileType and self.comboStep == self.comboSteps then
+    world.spawnProjectile(self.projectileType, firePosition or self:firePosition(), activeItem.ownerEntityId(), self:aimVector(), false, params)
+  end
+  --
+
   util.wait(stance.duration, function()
     local damageArea = partDamageArea("swoosh")
     self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
@@ -163,6 +181,10 @@ function MeleeCombo:fire()
     self.cooldownTimer = self.cooldowns[self.comboStep]
     self.comboStep = 1
   end
+end
+
+function MeleeCombo:firePosition()
+  return vec2.add(mcontroller.position(), activeItem.handPosition({2, 0}))
 end
 
 function MeleeCombo:shouldActivate()
@@ -207,6 +229,12 @@ function MeleeCombo:computeDamageAndCooldowns()
     local speedFactor = 1.0 * (self.comboSpeedFactor ^ i)
     table.insert(self.cooldowns, (targetTime - totalAttackTime) * speedFactor)
   end
+end
+
+function MeleeCombo:aimVector()
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle)
+  aimVector[1] = aimVector[1] * self.weapon.aimDirection
+  return aimVector
 end
 
 function MeleeCombo:uninit()

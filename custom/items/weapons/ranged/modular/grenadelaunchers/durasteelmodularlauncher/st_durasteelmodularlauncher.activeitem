@@ -74,6 +74,8 @@
 	   
 	  "reloadTime" : 2,
 
+    "screenshake" : true,
+
     "projectileCount" : 1,
     "fireType" : "auto",
 
