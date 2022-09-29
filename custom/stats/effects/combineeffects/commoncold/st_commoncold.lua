@@ -6,9 +6,11 @@ function init()
 
   script.setUpdateDelta(5)
   
+  local threat = (entity.entityType() == "player") and world.threatLevel()/2 or world.threatLevel() --if its a player, halve the threat damage
+  
   status.applySelfDamageRequest({
         damageType = "IgnoresDef",
-        damage = math.floor(status.resourceMax("health") * 0.125) + 5,
+        damage = 5 + (10 * threat),
         damageSourceKind = "poison",
         sourceEntityId = entity.id()
       })

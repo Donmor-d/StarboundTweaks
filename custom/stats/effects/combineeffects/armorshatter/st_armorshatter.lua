@@ -5,17 +5,19 @@ function init()
     {stat = "protection", effectiveMultiplier = config.getParameter("protectionMultipier", 0.5)}  --halves armor
   })
 
-  self.sourceTeam = world.entityDamageTeam(effect.sourceEntity())
-  local bombPower = status.resourceMax("health") * config.getParameter("healthDamageFactor", 1.0)
+  local threat = (entity.entityType() == "player") and world.threatLevel()/2 or world.threatLevel() --if its a player, halve the threat damage
+
+  local sourceTeam = world.entityDamageTeam(effect.sourceEntity())
+  local bombPower = 5 + math.floor(config.getParameter("damageFactor", 25) * threat) --status.resourceMax("health") * config.getParameter("healthDamageFactor", 1.0)
   local projectileConfig = {
     power = bombPower,
-    damageTeam = self.sourceTeam,
+    damageTeam = sourceTeam,
     onlyHitTerrain = true,
     timeToLive = 0,
     actionOnReap = {
       {
         action = "config",
-      file = config.getParameter("bombConfig")
+        file = config.getParameter("bombConfig")
       }
     }
   }

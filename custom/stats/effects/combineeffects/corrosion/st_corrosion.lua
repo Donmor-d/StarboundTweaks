@@ -8,9 +8,10 @@ function init()
 
   script.setUpdateDelta(5)
 
-  self.damageClampRange = config.getParameter("damageClampRange")
+  self.threat = (entity.entityType() == "player") and world.threatLevel()/2 or world.threatLevel() --if its a player, halve the threat damage
 
-  self.tickDamagePercentage = 0.025
+  self.baseDamage = 2
+  --self.tickDamagePercentage = 0.025 deprecated
   self.tickTime = 0.25
   self.tickTimer = self.tickTime
 end
@@ -25,7 +26,7 @@ function update(dt)
 
     status.applySelfDamageRequest({
         damageType = "IgnoresDef",
-        damage = math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1,
+        damage = 1 + (self.threat * self.baseDamage),
         damageSourceKind = "poison",
         sourceEntityId = entity.id()
       })
@@ -40,7 +41,7 @@ function update(dt)
       directionTo,
       false,
       {
-        power = math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1,
+        power = 1 + (self.threat * self.baseDamage),
         damageTeam = sourceDamageTeam,
         statusEffects = config.getParameter("statusEffects"),
         piercing = false,

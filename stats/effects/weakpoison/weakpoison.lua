@@ -5,8 +5,13 @@ function init()
   animator.setParticleEmitterActive("drips", true)
 
   script.setUpdateDelta(5)
+  
+  self.threat = (entity.entityType() == "player") and world.threatLevel()/2 or world.threatLevel() --if its a player, halve the threat damage
 
-  self.tickDamagePercentage = 0.02
+  sb.logInfo(self.threat)
+
+  self.baseDamage = 2
+  --self.tickDamagePercentage = 0.02 deprecated
   self.tickTime = 1.0
   self.tickTimer = self.tickTime
 end
@@ -18,7 +23,7 @@ function update(dt)
     self.tickTimer = self.tickTime
     status.applySelfDamageRequest({
         damageType = "IgnoresDef",
-        damage = math.floor(status.resourcePercentage("health") * self.tickDamagePercentage) + 5,
+        damage = 1 + (self.threat * self.baseDamage), --fixed damage based on threat level of planet
         damageSourceKind = "poison",
         sourceEntityId = entity.id()
       })

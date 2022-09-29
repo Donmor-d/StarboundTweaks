@@ -8,7 +8,10 @@ function init()
 
   script.setUpdateDelta(5)
 
-  self.tickDamagePercentage = 0.025
+  self.threat = (entity.entityType() == "player") and world.threatLevel()/2 or world.threatLevel() --if its a player, halve the threat damage
+
+  self.baseDamage = 2
+  --self.tickDamagePercentage = 0.025 deprecated
   self.tickTime = 0.5
   self.tickTimer = self.tickTime
 end
@@ -19,7 +22,7 @@ function update(dt)
 
   self.tickTimer = self.tickTimer - dt
 
-  local gasPower = math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1  
+  local gasPower = 1 + (self.threat * self.baseDamage)
 
   local x = math.random(-10, 10) / 10
   local y = math.random(-10, 10) / 10
