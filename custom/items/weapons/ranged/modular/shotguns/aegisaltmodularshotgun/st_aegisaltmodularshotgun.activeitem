@@ -1,0 +1,108 @@
+{
+  "itemName" : "st_aegisaltmodularshotgun",
+  "price" : 960,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A close range shotgun that can have its shells augmented.",
+  "shortdescription" : "Aegisalt Modular Shotgun",
+  "tooltipKind" : "gunwithammo",
+  "category" : "shotgun",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","shotgun"],
+  "level" : 5,
+
+  "inventoryIcon" : "normal.png",
+  
+  "acceptsAugmentType" : "shotgunammo",               //adiciona munição que usa
+
+  "animation" : "st_aegisaltmodularshotgun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "normal.png",
+    "middleFullbright" : "fullbright.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+  "particleEmitters" : {
+      "muzzleFlash" : {
+        "burstCount" : 4,
+        "particles" : [
+          { "particle" : "dust2" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/shotgun1.ogg"]
+    }
+  },
+
+  "baseOffset" : [0.3, 0.0],
+  "muzzleOffset" : [2, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "animationScripts" : ["/custom/scripts/st_ammo_drawables.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"], 
+    "class" : "GunFire",
+
+    "fireTime" : 1.2,
+    "baseDps" : 10.5,
+    "energyUsage" : 0,
+    "ammoUsage" : 3,
+    "inaccuracy" : 0.12,
+	
+    "reloadTime" : 1.5,     //tempo que demora para poder usar a arma
+
+    "projectileCount" : 8,
+    "fireType" : "auto",
+
+    "projectileType" : "st_normalpellet",
+    "projectileParameters" : {
+      "damageKind" : "shotgunbullet",
+      "knockback" : 30
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "jump.1",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+		    "recoil" : true,
+
+        "frontArmFrame" : "jump.1",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 6,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+	    	"recoil" : true,
+
+        "frontArmFrame" : "jump.1",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -5,7 +5,7 @@
   "maxStack" : 20,
   "category" : "smallammopack",
   "inventoryIcon" : "st_smallammopack.png",
-  "description" : "A small sized ammo pack, made for home use, using it restores 12 ammo.",
+  "description" : "A small sized ammo pack made for home use. Using it restores 12 ammo.",
   "shortdescription" : "Small Ammo Pack",
   "effects" : [ [
       {

@@ -5,7 +5,7 @@
   "maxStack" : 20,
   "category" : "medicine",
   "inventoryIcon" : "st_fullammopack.png",
-  "description" : "A custom sized ammo pack, probably illegal to carry, using it refills ammo.",
+  "description" : "A custom sized ammo pack thats probably illegal, using it fully refills ammo.",
   "shortdescription" : "Full Ammo Pack",
   "effects" : [ [
       {

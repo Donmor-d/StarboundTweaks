@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "refinedaegisalt", "count" : 10 },
+    { "item" : "st_durasteelmodularsniper", "count" : 1 },
+    { "item" : "st_modularframe", "count" : 1 }
+  ],
+  "output" : { "item" : "st_aegisaltmodularsniper", "count" : 1 },
+  "groups" : [ "craftingaccelerator", "weapons", "all" ]
+}

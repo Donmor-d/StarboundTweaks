@@ -5,7 +5,7 @@
   "maxStack" : 20,
   "category" : "medicine",
   "inventoryIcon" : "st_largeammopack.png",
-  "description" : "A large ammo pack, made for military use, using it restores 50 ammo.",
+  "description" : "A large ammo pack made for military use. Using it restores 50 ammo.",
   "shortdescription" : "Large Ammo Pack",
   "effects" : [ [
       {
