@@ -1,0 +1,17 @@
+{
+  "itemName" : "st_abilityaugment",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_abilityaugment.png",
+  "description" : "this is test. \nCompatible with ^orange;Assault Rifles^white; and ^orange;Sniper Rifles",
+  "shortdescription" : "Ability Rifle Bullet",
+
+  "augment": {
+    "type": ["assaultrifleammo", "sniperrifleammo"],
+    "altAbilityType" : "lance",
+    "elementalAbility" : true
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

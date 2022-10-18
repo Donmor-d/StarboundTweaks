@@ -1,0 +1,17 @@
+{
+  "itemName" : "st_flashlightability",
+  "price" : 500,
+  "rarity" : "Common",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_flashlightability.png",
+  "description" : " Compatible with modular ^orange;Assault Rifles^white;, ^orange;Sniper Rifles^white; and ^orange;Shotguns^white;.",
+  "shortdescription" : "Flashlight",
+
+  "augment": {
+    "type": ["assaultrifleammo", "sniperrifleammo", "shotgunammo"],
+    "altAbilityType" : "flashlight",
+    "elementalAbility" : false
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

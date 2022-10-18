@@ -5,7 +5,7 @@
   "scripts" : ["st_slowdistortionsphere.lua"],
   "animator" : "st_slowdistortionsphere.animation",
 
-  "description" : "Turn into a sphere that can fit into smaller places! ^green;[F]",
+  "description" : "Turn into a big sphere! Can kinda fit into smaller places. ^green;[F]",
   "shortDescription" : "Slow Distortion Sphere",
   "rarity" : "Common",
   "icon" : "/custom/tech/st_slowdistortionsphere.png",

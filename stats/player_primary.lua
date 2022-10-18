@@ -225,7 +225,7 @@ function update(dt)
       unique = true,
       messageId = "outofammo",
       senderName = "doesntmatter",
-      text = "Looks like you've ran out of ammo, you can craft more at an Ammo Station or simply interact with me on the ship to refill."
+      text = "Looks like you've run out of ammo, you can craft more at an ^orange;Ammo Station^white; or simply interact with S.A.I.L. to refill."
     }
 
     world.sendEntityMessage(entity.id(), "queueRadioMessage", message)

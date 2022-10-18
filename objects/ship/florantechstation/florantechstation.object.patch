@@ -1,0 +1,10 @@
+[
+  {
+    "op": "add",
+    "path": "/dialog/wakeUp/4",
+    "value": [
+      "Your ^orange;head^white;, ^orange;body^white; and ^orange;leg^white; techs were damaged. I've replaced them with ^red;weaker backup^white; versions.",
+      "/ai/portraits/floranportrait.png:talk.0"
+    ]
+  }
+]

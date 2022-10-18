@@ -1,0 +1,17 @@
+{
+  "itemName" : "st_grenadelauncherability",
+  "price" : 500,
+  "rarity" : "Common",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_grenadelauncherability.png",
+  "description" : " Compatible with modular ^orange;Assault Rifles^white;, ^orange;Sniper Rifles^white; and ^orange;Shotguns^white;.",
+  "shortdescription" : "Grenade Launcher",
+
+  "augment": {
+    "type": ["assaultrifleammo", "sniperrifleammo", "shotgunammo"],
+    "altAbilityType" : "grenadelauncher",
+    "elementalAbility" : false
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}
