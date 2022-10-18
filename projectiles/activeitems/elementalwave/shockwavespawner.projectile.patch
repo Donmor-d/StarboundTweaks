@@ -1,6 +1,6 @@
 [
   {
-    "op": "replace",
+    "op": "add",
     "path": "/damageType",
     "value": "NoDamage"
   }
