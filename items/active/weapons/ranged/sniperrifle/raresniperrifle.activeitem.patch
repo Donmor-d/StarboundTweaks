@@ -98,21 +98,21 @@
   {
     "op": "replace",
     "path": "/builderConfig/0/elementalConfig/fire/primaryAbility/projectileType",
-    "value": "sb_firesniperbullet"
+    "value": "st_firesniperbullet"
   },
   {
     "op": "replace",
     "path": "/builderConfig/0/elementalConfig/ice/primaryAbility/projectileType",
-    "value": "sb_icesniperbullet"
+    "value": "st_icesniperbullet"
   },
   {
     "op": "replace",
     "path": "/builderConfig/0/elementalConfig/poison/primaryAbility/projectileType",
-    "value": "sb_poisonsniperbullet"
+    "value": "st_poisonsniperbullet"
   },
   {
     "op": "replace",
     "path": "/builderConfig/0/elementalConfig/electric/primaryAbility/projectileType",
-    "value": "sb_electricsniperbullet"
+    "value": "st_electricsniperbullet"
   }
 ]

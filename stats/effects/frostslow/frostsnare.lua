@@ -8,7 +8,7 @@ function init()
     {stat = "jumpModifier", amount = -0.15}
   })
 
-  effect.addStatModifierGroup({{stat = "powerMultiplier", effectiveMultiplier = 0.5}}) --halves damage done by victim
+  effect.addStatModifierGroup({{stat = "powerMultiplier", effectiveMultiplier = 0.75}}) --reduces damage done by victim
   
 end
 

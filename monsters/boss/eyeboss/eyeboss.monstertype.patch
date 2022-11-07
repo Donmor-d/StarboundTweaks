@@ -12,5 +12,20 @@
 	{
 	"op" : "remove",
 	"path" : "/baseParameters/damageParts/beam/damageTeam"
+	},
+	{
+	  "op": "replace",
+	  "path": "/baseParameters/statusSettings/stats/fireStatusImmunity/baseValue",
+	  "value": 0
+	},
+	{
+	  "op": "replace",
+	  "path": "/baseParameters/statusSettings/stats/iceStatusImmunity/baseValue",
+	  "value": 0
+	},
+	{
+	  "op": "replace",
+	  "path": "/baseParameters/statusSettings/stats/poisonStatusImmunity/baseValue",
+	  "value": 0
 	}
 ]

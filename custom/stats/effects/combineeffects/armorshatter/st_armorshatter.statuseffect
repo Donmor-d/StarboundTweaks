@@ -2,7 +2,7 @@
   "name" : "st_armorshatter",
   "effectConfig" : {
     //"healthDamageFactor" : 0.25, deprecated
-    "damageFactor" : 30,
+    "damageFactor" : 25,
     "protectionMultipier" : 0.75,
     "bombProjectile" : "iceplasmaexposion",
     "bombConfig" : "/projectiles/explosions/regularexplosion2/iceexplosionknockbackstatus.config",

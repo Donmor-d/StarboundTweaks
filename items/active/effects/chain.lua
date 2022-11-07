@@ -138,7 +138,9 @@ function update()
 end
 
 function drawAmmo() 
-
+  if not animationConfig.animationParameter("maxAmmo") then
+    return
+  end 
   localAnimator.clearDrawables()
 
   local maxAmmo = math.floor(animationConfig.animationParameter("maxAmmo"))

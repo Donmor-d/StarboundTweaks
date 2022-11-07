@@ -10,7 +10,7 @@ function init()
 
   sb.logInfo(self.threat)
 
-  self.baseDamage = 2
+  self.baseDamage = 1.5
   --self.tickDamagePercentage = 0.02 deprecated
   self.tickTime = 1.0
   self.tickTimer = self.tickTime

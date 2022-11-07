@@ -1,5 +1,5 @@
 {
-  "itemName" : "npcdoublegoldenbarrel",
+  "itemName" : "st_npcdoublegoldenbarrel",
   "price" : 1080,
   "maxStack" : 1,
   "rarity" : "Common",
@@ -13,13 +13,13 @@
   "fixedLevel" : false,
 
   "inventoryIcon" : [
-    { "image" : "doublegoldenbarrel.png" }
+    { "image" : "st_doublegoldenbarrel.png" }
   ],
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "doublegoldenbarrel.png",
+    "middle" : "st_doublegoldenbarrel.png",
 	  "barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
@@ -64,7 +64,7 @@
     "burstCount" : 2,
     "burstTime" : 0.2,
 
-    "projectileType" : "normalpellet",
+    "projectileType" : "st_normalpellet",
     "projectileParameters" : {
       "knockback" : 10
     },

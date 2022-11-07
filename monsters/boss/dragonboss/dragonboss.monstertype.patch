@@ -3,5 +3,15 @@
     "op": "replace",
     "path": "/baseParameters/statusSettings/stats/protection/baseValue",
     "value": 80
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/iceStatusImmunity/baseValue",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/electricStatusImmunity/baseValue",
+    "value": 0
   }
 ]

@@ -3,8 +3,8 @@
   "prerequisites" : [ "bootship" ],
   "mainQuest" : true,
   "title" : "^green;Ammo System",
-  "text" : "You're currently full on ammo and have some spare in the ^green;ship locker^white;, but you have to learn how to craft ^green;ammo boxes^white;if you want to keep using firearms.To create ammo boxes you'll need to ^green;make yourself an ^orange;Ammo Station.",
-  "completionText" : "Well done! you can use the ^orange;Ammo Station^reset; to craft ammo boxes to refill ammo, but it can also be used for another purpose.",
+  "text" : "You're probably full on ammo and got some spare from the ^green;ship locker^white;, but you have to learn how to craft ^green;ammo boxes^white; if you want to keep using firearms to their full potential. To create ammo boxes you'll need to ^green;make yourself an ^orange;Ammo Table.",
+  "completionText" : "Well done! you can use the ^orange;Ammo Table^reset; to craft ammo boxes to refill ammo, but it can also be used for another purpose.",
   "moneyRange" : [100, 100],
   "canBeAbandoned" : false,
 

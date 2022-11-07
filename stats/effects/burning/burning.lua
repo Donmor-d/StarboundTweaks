@@ -8,7 +8,7 @@ function init()
   
   self.threat = (entity.entityType() == "player") and world.threatLevel()/2 or world.threatLevel() --if its a player, halve the threat damage
 
-  self.baseDamage = 5
+  self.baseDamage = 2
   --self.tickDamagePercentage = 0.050
   self.tickTime = 0.5
   self.tickTimer = self.tickTime
@@ -37,8 +37,9 @@ function update(dt)
   end
   self.tickTimer = self.tickTimer - dt
   if self.tickTimer <= 0 then
+    local health = status.resourcePercentage("health")
 
-    self.tickTimer = self.tickTime
+    self.tickTimer = self.tickTime * (1/math.max(health, 0.5)) --does damage more frequently the more health you have
     status.applySelfDamageRequest({
         damageType = "damage",
         damage = 1 + (self.threat * self.baseDamage),

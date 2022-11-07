@@ -1,10 +1,5 @@
 function init()
   effect.setParentDirectives("fade=3BB55C=0.15")
-
-  effect.addStatModifierGroup({
-    {stat = "protection", effectiveMultiplier = config.getParameter("protectionMultipier", 0.5)}  --halves armor
-  })
-
   local threat = (entity.entityType() == "player") and world.threatLevel()/2 or world.threatLevel() --if its a player, halve the threat damage
 
   local sourceTeam = world.entityDamageTeam(effect.sourceEntity())
@@ -22,6 +17,11 @@ function init()
     }
   }
   world.spawnProjectile("invisibleprojectile", mcontroller.position(), 0, {0, 0}, false, projectileConfig)
+
+  effect.addStatModifierGroup({
+    {stat = "protection", effectiveMultiplier = config.getParameter("protectionMultipier", 0.5)}  --halves armor
+  })
+
 
   script.setUpdateDelta(5)
 end

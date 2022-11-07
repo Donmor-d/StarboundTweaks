@@ -10,6 +10,8 @@ function init()
   message.setHandler("applyStatusEffect", function(_, _, effectConfig, duration, sourceEntityId)
       status.addEphemeralEffect(effectConfig, duration, sourceEntityId)
     end)
+
+  self.fallMultiplier = status.stat("fallDamageMultiplier") --note: for now the stat is reversed, so 1 = 0, thats because status.stat returns 0 if stat doesnt exist, so instead of adding this op to every single monster i find it much better to do this for now
 end
 
 function applyDamageRequest(damageRequest)
@@ -102,8 +104,6 @@ function knockbackMomentum(momentum)
 end
 
 function update(dt)
-  
-
 
   local minimumFallDistance = 14
   local fallDistanceDamageFactor = 3
@@ -120,7 +120,7 @@ function update(dt)
     damage = damage * 0.5
     status.applySelfDamageRequest({
         damageType = "IgnoresDef",
-        damage = damage,
+        damage = damage - (damage * self.fallMultiplier),
         damageSourceKind = "falling",
         sourceEntityId = entity.id()
       })

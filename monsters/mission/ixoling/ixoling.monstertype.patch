@@ -75,5 +75,12 @@
     "op": "replace",
     "path": "/baseParameters/touchDamage/knockback",
     "value": 30
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/statusSettings/stats/fallDamageMultiplier",
+    "value": {
+      "baseValue": 1 //note: for now the stat is reversed, so 1 = 0, thats because status.stat returns 0 if stat doesnt exist, so instead of adding this op to every single monster i find it much better to do this for now
+    }
   }
 ]

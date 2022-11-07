@@ -8,5 +8,20 @@
     "op": "replace",
     "path": "/baseParameters/statusSettings/stats/protection/baseValue",
     "value": 50
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/fireStatusImmunity/baseValue",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/iceStatusImmunity/baseValue",
+    "value": 0
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/statusSettings/stats/poisonStatusImmunity/baseValue",
+    "value": 0
   }
 ]

@@ -3,7 +3,7 @@ function init()
   animator.setParticleEmitterActive("icetrail", true)
   effect.setParentDirectives("fade=00BBFF=0.15")
   
-  effect.addStatModifierGroup({{stat = "powerMultiplier", effectiveMultiplier = 0.5}}) --halves damage done by victim
+  effect.addStatModifierGroup({{stat = "powerMultiplier", effectiveMultiplier = 0.75}}) --reduces damage done by victim
 
   script.setUpdateDelta(5)
   effect.addStatModifierGroup({

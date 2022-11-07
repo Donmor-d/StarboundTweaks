@@ -1,0 +1,18 @@
+{
+  "itemName" : "st_compassradar",
+  "price" : 10000,
+  "rarity" : "Rare",
+  "category" : "",
+  "maxStack" : 1,
+  "inventoryIcon" : "st_compassradar.png",
+  "description" : "Gives current coordinates when used and when dying.",
+  "shortdescription" : "Compass Radar",
+  "twoHanded" : true,
+
+  "fireOffset" : [1.0, 0.0],
+
+  "animationCustom" : {},
+
+  "scripts" : ["st_compassradar.lua"],
+  "questId" : ""
+}

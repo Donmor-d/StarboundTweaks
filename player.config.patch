@@ -21,6 +21,7 @@
 	},
 //--------------------------------------recipes--------------------------------------
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ammocombiner" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ammostation" } },
 /*
 		//assaultrifles
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ironmodularrifle" } },
