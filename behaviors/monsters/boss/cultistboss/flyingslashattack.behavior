@@ -18,7 +18,7 @@
     "projectileCount": 5,
     "projectileInterval": 0.05,
     "startAngle": -0.5,
-	"energyShardConfig": {"power": 40, "timeToLive": 10}
+	"energyShardConfig": {"power": 30, "timeToLive": 10}
   },
   "root": {
     "title": "Reset",

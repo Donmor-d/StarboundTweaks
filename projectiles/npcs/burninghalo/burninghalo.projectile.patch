@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/damageKind",
+    "value": "fire"
+  },
+  {
+    "op": "replace",
+    "path": "/timeToLive",
+    "value": 1
+  }
+]

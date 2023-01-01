@@ -2,6 +2,7 @@
 	"projectileName" : "st_neosniperriflebullet",
 	"image" : "st_neosniperriflebullet.png",
 	"physics" : "laser",
+	"timeToLive" : 0.12,
 	"animationCycle" : 0.25,
 	"frameNumber" : 1,
 	"damageKind" : "plasma",

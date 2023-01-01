@@ -1,0 +1,12 @@
+[
+    {
+      "op": "replace",
+      "path": "/damageKind",
+      "value": "fire"
+    },
+    {
+      "op": "add",
+      "path": "/acceleration",
+      "value": -50
+    }
+]

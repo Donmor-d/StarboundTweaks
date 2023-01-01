@@ -2,7 +2,7 @@
   "projectileName" : "st_icesniperbullet",
   "image" : "st_icesniperbullet.png",
   "physics" : "laser",
-  "timeToLive" : 0.25,
+  "timeToLive" : 0.12,
   "animationCycle" : 0.25,
   "lightColor" : [99, 82, 0],
   "frameNumber" : 1,

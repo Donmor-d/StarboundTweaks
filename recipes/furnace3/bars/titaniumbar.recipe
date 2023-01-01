@@ -4,7 +4,7 @@
   ],
   "output" : {
     "item" : "titaniumbar",
-    "count" : 3
+    "count" : 2
   },
   "groups" : [ "craftingfurnace3", "bars", "all" ]
 }

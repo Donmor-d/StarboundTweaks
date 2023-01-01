@@ -30,5 +30,15 @@
     "op": "add",
     "path": "/animationParameters/sounds/fire/-",
     "value": "/sfx/projectiles/plasma3.ogg"
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/acceleration",
+    "value": 160
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/speed",
+    "value": 20
   }
 ]

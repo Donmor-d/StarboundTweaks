@@ -19,7 +19,7 @@
   {
     "op": "replace",
     "path": "/config/hostileActions/0/parameters/projectileParameters/speed",
-    "value": 30
+    "value": 20
   },
   {
     "op": "add",

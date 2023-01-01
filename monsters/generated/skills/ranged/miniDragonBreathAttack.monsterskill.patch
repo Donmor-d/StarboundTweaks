@@ -18,5 +18,15 @@
     "op": "add",
     "path": "/animationParameters/sounds/fire/-",
     "value": "/sfx/projectiles/fireball_spit.ogg"
+  },
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/acceleration",
+    "value": 50
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/speed",
+    "value": 10
   }
 ]

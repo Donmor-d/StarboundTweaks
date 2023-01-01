@@ -2,6 +2,6 @@
   "input" : [
     { "item" : "durasteelore", "count" : 3 }
   ],
-  "output" : { "item" : "durasteelbar", "count" : 3 },
+  "output" : { "item" : "durasteelbar", "count" : 2 },
   "groups" : [ "craftingfurnace3", "bars", "all" ]
 }

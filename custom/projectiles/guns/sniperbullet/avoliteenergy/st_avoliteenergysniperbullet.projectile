@@ -3,7 +3,7 @@
   "image" : "st_avoliteenergysniperbullet.png",
   "physics" : "laser",
   "animationCycle" : 0.25,
-  "timeToLive" : 0.25,
+  "timeToLive" : 0.12,
   "frameNumber" : 1,
   "damageKind" : "plasma",
   "pointLight" : false,

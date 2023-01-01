@@ -1,0 +1,73 @@
+[
+  {
+    "op": "replace",
+    "path": "/actionOnReap/1/inheritSpeedFactor",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/1/delaySteps",
+    "value": 20
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/2/inheritSpeedFactor",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/2/delaySteps",
+    "value": 30
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/3/inheritSpeedFactor",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/3/delaySteps",
+    "value": 40
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/4/inheritSpeedFactor",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/4/delaySteps",
+    "value": 50
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/5/inheritSpeedFactor",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/actionOnReap/5/delaySteps",
+    "value": 60
+  },
+  {
+    "op": "remove",
+    "path": "/actionOnReap/6"
+  },
+  {
+    "op": "remove",
+    "path": "/actionOnReap/6"
+  },
+  {
+    "op": "remove",
+    "path": "/actionOnReap/6"
+  },
+  {
+    "op": "remove",
+    "path": "/actionOnReap/6"
+  },
+  {
+    "op": "replace",
+    "path": "/damageKind",
+    "value": "fire"
+  }
+]

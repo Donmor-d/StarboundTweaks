@@ -1,0 +1,11 @@
+[
+    {
+      "op": "replace",
+      "path": "/damageKind",
+      "value": "electric"
+    },
+    {
+      "op": "remove",
+      "path": "/bounces"
+    }
+]

@@ -39,7 +39,7 @@ function apply(input)
   
         output:setInstanceValue("animationCustom", augmentConfig.animationCustom)
       end
-      return output:descriptor(), 1
+      return output:descriptor(), 0
     end
   end
 end

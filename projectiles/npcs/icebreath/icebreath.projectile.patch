@@ -1,0 +1,22 @@
+[
+    {
+      "op": "replace",
+      "path": "/damageKind",
+      "value": "ice"
+    },
+    {
+      "op": "add",
+      "path": "/actionOnReap/0/inheritSpeedFactor",
+      "value": 1
+    },
+    {
+      "op": "add",
+      "path": "/actionOnReap/1/inheritSpeedFactor",
+      "value": 1
+    },
+    {
+      "op": "add",
+      "path": "/actionOnReap/2/inheritSpeedFactor",
+      "value": 1
+    }
+]

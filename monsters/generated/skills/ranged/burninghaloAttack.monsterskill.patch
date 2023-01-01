@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/acceleration",
+    "value": -30
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/projectileParameters/speed",
+    "value": 30
+  }
+]

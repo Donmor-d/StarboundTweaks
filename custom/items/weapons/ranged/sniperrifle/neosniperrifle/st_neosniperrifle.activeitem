@@ -5,7 +5,7 @@
 	"rarity" : "rare",
 	"description" : "The latest technology in long ranged assassinations",
 	"shortdescription" : "Neo Sniper Rifle",
-	"tooltipKind" : "gunwithammo",
+	"tooltipKind" : "gun",
 	"category" : "uniqueWeapon",
 	"twoHanded" : true,
 	"itemTags" : ["weapon","ranged","sniperrifle"],

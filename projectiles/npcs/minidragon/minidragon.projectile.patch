@@ -1,0 +1,31 @@
+[
+    {
+      "op": "replace",
+      "path": "/damageKind",
+      "value": "fire"
+    },
+    {
+      "op": "remove",
+      "path": "/actionOnHit"
+    },
+    {
+      "op": "add",
+      "path": "/actionOnReap",
+      "value": [
+        {
+          "action": "config",
+          "file": "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallfireexplosion.config"
+        },
+        {
+          "action": "projectile",
+          "type": "molotovflamemonster",
+          "fuzzAngle": 0,
+          "inheritDamageFactor": 1,
+          "angleAdjust": 35,
+          "config": {
+            "timeToLive": 1.5
+          }
+        }
+      ]
+    }
+]
