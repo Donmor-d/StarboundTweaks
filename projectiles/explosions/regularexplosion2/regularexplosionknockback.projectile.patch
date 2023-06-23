@@ -1,14 +1,16 @@
 [
   {
-    "op": "add",
-    "path": "/damageTeam",
-    "value": {
-      "type": "indiscriminate"
-    }
+    "op": "remove",
+    "path": "/knockback"
   },
   {
-    "op": "replace",
-    "path": "/knockback",
-    "value": 20
+    "op": "add",
+    "path": "/damageRepeatGroup",
+    "value": "STexplosion"
+  },
+  {
+    "op": "add",
+    "path": "/damageRepeatTimeout",
+    "value": 0.25
   }
 ]

@@ -24,9 +24,9 @@
   "speed" : 50.0,
   "physics" : "grenade",
   "knockbackDirectional" : true,
-  "damageType" : "NoDamage",
-  "damageKind" : "default",
-  "knockback" : 20,
+  "damageType" : "damage",
+  "knockback" : 40,
+  "damageRepeatGroup" : "STexplosion",
 
   "scripts" : [ "st_homingrocket.lua" ],
   "baseHomingControlForce" : 10

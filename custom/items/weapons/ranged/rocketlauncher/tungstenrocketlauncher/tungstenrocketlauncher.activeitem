@@ -64,7 +64,7 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "rocketshell",
+    "projectileType" : "st_nukerocket",
     "projectileParameters" : {},
 
     "stances" : {

@@ -68,7 +68,12 @@
             "type" : "smallpoisoncloud",
             "angleAdjust" : 180,
             "time" : 0.075,
-            "repeat" : true
+            "repeat" : true,
+            "config" :{
+              "movementSettings" : {
+                "gravityMultiplier" : 0.1
+              }
+            }
           }
         ]
       },

@@ -1,0 +1,28 @@
+{
+  "projectileName" : "st_nukerocket",
+  "image" : "st_nukerocket.png",
+  "animationCycle" : 0.2,
+  
+  "frameNumber" : 4,
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/nukeexplosion/st_nukeexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "smoke", "rocketsmoke" ],
+  "flippable" : true,
+  "power" : 1.0,
+  "speed" : 20.0,
+  "acceleration" : 10,
+  "physics" : "grenade",
+  "movementSettings" : {
+    "gravityMultiplier" : 0.1
+  },
+  "damageType" : "damage",
+  "knockback" : 40,
+  "damageRepeatGroup" : "STexplosion"
+}

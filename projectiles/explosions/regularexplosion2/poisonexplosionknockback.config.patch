@@ -1,0 +1,7 @@
+[
+  {
+    "op": "replace",
+    "path": "/list/0/inheritDamageFactor",
+    "value": 0.5
+  }
+]

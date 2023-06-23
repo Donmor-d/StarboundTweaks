@@ -19,12 +19,12 @@
   {
     "op": "replace",
     "path": "/primaryAbility/baseDps/0",
-    "value": 5.5
+    "value": 6.5
   },
   {
     "op": "replace",
     "path": "/primaryAbility/baseDps/1",
-    "value": 6
+    "value": 7
   },
   {
     "op": "replace",

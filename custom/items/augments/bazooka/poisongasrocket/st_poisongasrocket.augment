@@ -37,18 +37,6 @@
 
       "projectileType": "st_poisongasrocket",
       "projectileParameters": {
-        "acceleration" : 100,
-        "knockback" : 0,
-        "periodicActions":[
-          {
-            "action" : "projectile",
-            "inheritDamageFactor" : 1,
-            "type" : "largePoisoncloud",
-            "angleAdjust" : 180,
-            "time" : 0.075,
-            "repeat" : true
-          }
-        ]
       },
       "projectileCount": 1,
 

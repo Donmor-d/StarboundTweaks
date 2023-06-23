@@ -35,20 +35,8 @@
 
        "screenshake" : true,
 
-      "projectileType": "iceplasmarocket",
+      "projectileType": "st_icegasrocket",
       "projectileParameters": {
-        "acceleration" : 100,
-        "knockback" : 0,
-        "periodicActions":[
-          {
-            "action" : "projectile",
-            "inheritDamageFactor" : 1,
-            "type" : "largeicecloud",
-            "angleAdjust" : 180,
-            "time" : 0.075,
-            "repeat" : true
-          }
-        ]
       },
       "projectileCount": 1,
 

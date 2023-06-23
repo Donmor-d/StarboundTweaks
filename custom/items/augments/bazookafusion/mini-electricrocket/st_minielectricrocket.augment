@@ -72,7 +72,8 @@
             "time" : 0.075,
             "repeat" : true,
             "parameters" : {
-              "timeToLive" : 2
+              "timeToLive" : 2,
+              "gravityMultiplier" : 0.1
             }
           }
         ]

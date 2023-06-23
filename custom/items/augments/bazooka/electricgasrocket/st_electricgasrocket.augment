@@ -3,7 +3,7 @@
   "price" : 500,
   "rarity" : "Rare",
   "category" : "ammoModifier",
-  "inventoryIcon" : "electricgasrocket.png",
+  "inventoryIcon" : "st_electricgasrocket.png",
   "description" : "Replaces explosive power with shocking propulsion.",
   "shortdescription" : "Gas Rocket",
 
@@ -35,20 +35,8 @@
 
        "screenshake" : true,
 
-      "projectileType": "electricplasmarocket",
+      "projectileType": "st_electricgasrocket",
       "projectileParameters": {
-        "acceleration" : 100,
-        "knockback" : 0,
-        "periodicActions":[
-          {
-            "action" : "projectile",
-            "inheritDamageFactor" : 1,
-            "type" : "largeelectriccloud",
-            "angleAdjust" : 180,
-            "time" : 0.075,
-            "repeat" : true
-          }
-        ]
       },
       "projectileCount": 1,
 

@@ -1,7 +1,23 @@
 [
   {
-    "op": "remove",
-    "path": "/damageType"
+    "op": "replace",
+    "path": "/damageType",
+    "value": "damage"
+  },
+  {
+    "op": "add",
+    "path": "/knockback",
+    "value": 30
+  },
+  {
+    "op": "add",
+    "path": "/damageRepeatGroup",
+    "value": "STexplosion"
+  },
+  {
+    "op": "add",
+    "path": "/damageRepeatTimeout",
+    "value": 0.25
   },
   {
     "op": "replace",
