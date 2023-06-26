@@ -7,8 +7,12 @@ GunFire = WeaponAbility:new()
 function GunFire:init()
   self.weapon:setStance(self.stances.idle)
 
-  self.fired = false
+  self.projectileList = {}
+
   self.screenshake = self.screenshake or false
+
+  self.shakeTime = self.shakeTime or 0.25
+  self.shakeAmount = self.shakeAmount or 1
 
   if self.ammoUsage == nil then
     self.ammoUsage = self.energyUsage/10 or 0
@@ -46,10 +50,22 @@ function GunFire:update(dt, fireMode, shiftHeld)
     end
   end
 
-  if self.fired and self.screenshake and not world.entityExists(self.projectileId) then
-    self:screenShake()
-    self.fired = false
+  local removeItem = 0
+  if #self.projectileList > 0 then
+    for i=1, #self.projectileList do 
+      if not world.entityExists(self.projectileList[i]) then
+        removeItem = i
+      end
+    end
+    if removeItem ~= 0 then
+      if self.screenshake then
+        self:screenShake()
+      end
+      table.remove(self.projectileList, removeItem)
+      removeItem = 0
+    end
   end
+
 end
 
 function GunFire:auto()
@@ -129,7 +145,7 @@ end
 
 function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
 
-  self.fired = true
+  --self.fired = true
 
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
   params.power = self:damagePerShot()
@@ -158,6 +174,9 @@ function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, fi
         params
       )
   end
+  self.projectileList[#self.projectileList + 1] = self.projectileId
+  
+  sb.logInfo(sb.print(self.projectileList))
   return self.projectileId
 end
 
@@ -177,8 +196,8 @@ end
 
 function GunFire:screenShake()
   local screenshakeId = world.spawnProjectile("screenshake", mcontroller.position(), activeItem.ownerEntityId(), {0, 0}, false, 
-  {timeToLive = 0.25,
-   shakeAmount = 1})
+  {timeToLive = self.shakeTime,
+   shakeAmount = self.shakeAmount})
   activeItem.setCameraFocusEntity(screenshakeId)
 end
 

@@ -1,6 +1,6 @@
 {
   "itemName" : "st_minirocket",
-  "price" : 500,
+  "price" : 1500,
   "rarity" : "Rare",
   "category" : "ammoModifier",
   "inventoryIcon" : "st_minirocket.png",
@@ -58,6 +58,9 @@
        "fireType" : "burst",
         "burstCount" : 6,
         "burstTime" : 0.15,
+
+        "shakeTime" : 0.1,
+        "shakeAmount" : 0.5,
 
       "projectileType": "minirocket",
       "projectileParameters": {},
