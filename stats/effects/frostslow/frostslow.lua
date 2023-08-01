@@ -9,10 +9,20 @@ function init()
   effect.addStatModifierGroup({
     {stat = "jumpModifier", amount = -0.15}
   })
-  self.speedMult = 1
+  self.defaultSpeedMult = 1
+  self.speedMult = self.defaultSpeedMult
+
+  self.block = true
 end
 
 function update(dt)
+  if effect.duration() > 4.9 and not self.block then  --Cada reaplicacao reseta a duração, então a cada vez que a duração fica 5s (que é a defaultDuration), 4.9 pois o ele é detectado entre 4.9 e 5
+    self.defaultSpeedMult = self.defaultSpeedMult - self.defaultSpeedMult/4
+    self.block = true
+  else
+    self.block = false
+  end
+
   local sourceID = effect.sourceEntity()
   local activeStatus = status.activeUniqueStatusEffectSummary()
 
@@ -28,7 +38,7 @@ function update(dt)
         self.speedMult = math.max(self.speedMult - dt/2, 0.1)
       end
   else  
-    self.speedMult = math.min(self.speedMult + dt/2, 1)
+    self.speedMult = math.min(self.speedMult + dt/2, self.defaultSpeedMult)
   end
 
   mcontroller.controlModifiers({

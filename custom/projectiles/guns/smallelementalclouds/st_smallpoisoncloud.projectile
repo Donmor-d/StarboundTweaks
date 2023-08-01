@@ -1,0 +1,19 @@
+{
+  "projectileName" : "st_smallpoisoncloud",
+  "image" : "st_smallpoisoncloud.png",
+  "physics" : "gas",
+  "frameNumber" : 7,
+  "animationCycle" : 2,
+  "movementSettings" : {
+    "gravityMultiplier" : 0.1
+  },
+  "power" : 1,
+  "speed" : 5,
+  "timeToLive" : 2,
+  "bounces" : -1,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "piercing" : true,
+  "emitters" : [ "smallpoisoncloud" ],
+  "damageKind" : "poisonbarrier",
+  "statusEffects" : [ "weakpoison" ]
+}

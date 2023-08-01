@@ -40,7 +40,8 @@
 
       "projectileType": "iceplasma",
       "projectileParameters": {
-	    "knockback" : 5
+	    "knockback" : 5,
+      "statusEffects" : ["frostslow"]
 	  },
       "projectileCount": 1,
 

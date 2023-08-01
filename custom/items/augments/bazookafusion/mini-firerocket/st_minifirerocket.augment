@@ -59,6 +59,9 @@
         "burstCount" : 6,
         "burstTime" : 0.15,
 
+        "shakeTime" : 0.1,
+        "shakeAmount" : 0.5,
+
       "projectileType": "st_fireminirocket",
       "projectileParameters": {
         "periodicActions":[

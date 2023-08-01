@@ -61,19 +61,21 @@
         "burstCount" : 6,
         "burstTime" : 0.15,
 
+        "shakeTime" : 0.1,
+        "shakeAmount" : 0.5,
+
       "projectileType": "st_electricminirocket",
       "projectileParameters": {
         "periodicActions":[
           {
             "action" : "projectile",
             "inheritDamageFactor" : 1,
-            "type" : "smallelectriccloud",
+            "type" : "st_smallelectriccloud",
             "angleAdjust" : 180,
             "time" : 0.075,
             "repeat" : true,
             "parameters" : {
-              "timeToLive" : 2,
-              "gravityMultiplier" : 0.1
+              "timeToLive" : 2
             }
           }
         ]

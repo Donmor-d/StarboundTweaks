@@ -40,7 +40,8 @@
 
       "projectileType": "poisonplasma",
       "projectileParameters": {
-	    "knockback" : 5
+	    "knockback" : 5,
+      "statusEffects" : ["weakpoison"]
 	  },
       "projectileCount": 1,
 

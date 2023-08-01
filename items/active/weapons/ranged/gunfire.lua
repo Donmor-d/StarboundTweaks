@@ -173,10 +173,11 @@ function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, fi
         false,
         params
       )
+      self.projectileList[#self.projectileList + 1] = self.projectileId
   end
-  self.projectileList[#self.projectileList + 1] = self.projectileId
+  --self.projectileList[#self.projectileList + 1] = self.projectileId
   
-  sb.logInfo(sb.print(self.projectileList))
+  --sb.logInfo(sb.print(self.projectileList))
   return self.projectileId
 end
 

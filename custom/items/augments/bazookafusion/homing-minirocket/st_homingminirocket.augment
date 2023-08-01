@@ -53,15 +53,18 @@
       "baseDps" : 10.5,
       "energyUsage" : 0,
       "ammoUsage" : 2,
-      "inaccuracy" : 0.05,
+      "inaccuracy" : 0.12,
 
-      "fireType" : "burst",
-      "burstCount" : 6,
-      "burstTime" : 0.15,
+      "fireType" : "auto",
+
+      "shakeTime" : 0.1,
+      "shakeAmount" : 0.5,
+      //"burstCount" : 6,
+      //"burstTime" : 0.15,
 
       "projectileType": "st_minihomingrocket",
       "projectileParameters": {},
-      "projectileCount": 1,
+      "projectileCount": 6,
 
      "stances" : {
       "idle" : {

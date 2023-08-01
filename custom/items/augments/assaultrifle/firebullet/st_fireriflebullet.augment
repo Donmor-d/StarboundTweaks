@@ -38,7 +38,8 @@
 
       "projectileType": "fireplasma",
       "projectileParameters": {
-	    "knockback" : 5
+	    "knockback" : 5,
+      "statusEffects" : ["burning"]
 	  },
       "projectileCount": 1,
 

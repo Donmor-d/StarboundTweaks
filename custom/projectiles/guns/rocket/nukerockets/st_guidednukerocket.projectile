@@ -1,0 +1,30 @@
+{
+  "projectileName" : "st_guidednukerocket",
+  "image" : "st_guidednukerocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/nukeexplosion/st_nukeexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "smoke", "rocketsmoke" ],
+  "flippable" : true,
+  "power" : 1.0,
+  "speed" : 10.0,
+  "acceleration" : 10,
+  "physics" : "rocket",
+  "damageType" : "damage",
+  "knockback" : 40,
+  "damageRepeatGroup" : "STexplosion",
+  "damageKind" : "default",
+
+  "scripts" : [ "/projectiles/activeitems/guidedrocket/guidedrocket.lua" ],
+  "rotationRate" : 5.0,
+  "maxTrackingAngle" : 2.0
+}

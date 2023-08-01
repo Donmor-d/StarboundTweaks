@@ -40,7 +40,8 @@
 
       "projectileType": "electricplasma",
       "projectileParameters": {
-	    "knockback" : 5
+	    "knockback" : 5,
+      "statusEffects" : ["electrified"]
 	  },
       "projectileCount": 1,
 

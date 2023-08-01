@@ -12,21 +12,27 @@
       "file" : "/projectiles/explosions/regularexplosion2/electricexplosionknockbackstatus.config"
     }
   ],
-  "periodicActions":[
+  //script smoke start -----------------------------
+  "smokeAction" : [
     {
       "action" : "projectile",
-      "inheritDamageFactor" : 1,
+      "inheritDamageFactor" : 0.5,
       "type" : "largeelectriccloud",
       "angleAdjust" : 180,
-      "time" : 0.075,
+      //"time" : 0.075,
       "repeat" : true,
       "config" :{
-        "movementSettings" : {
-          "gravityMultiplier" : 0.1
-        }
+        "speed" : 10
       }
     }
   ],
+  "smokePeriod" : 0.05,
+  "angleIncrement" : 22.5,
+  "angleMinMax" : [ 135, 225 ],
+  "randomizedSmoke" : true,
+  "scripts" : [ "st_rocketSmoke.lua" ],
+//script smoke end -----------------------------
+
   "statusEffects" : [ ],
   "emitters" : [ "electricplasma", "defaultblue", "electricplasma", "defaultblue", "electricplasma", "defaultblue"  ],
   "flippable" : true,

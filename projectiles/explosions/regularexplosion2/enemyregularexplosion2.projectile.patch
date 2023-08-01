@@ -1,9 +1,5 @@
 [
   {
-    "op": "remove",
-    "path": "/knockback"
-  },
-  {
     "op": "add",
     "path": "/damageRepeatGroup",
     "value": "STexplosion"

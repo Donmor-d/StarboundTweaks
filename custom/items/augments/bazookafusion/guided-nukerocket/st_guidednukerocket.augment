@@ -1,0 +1,80 @@
+{
+  "itemName" : "st_guidednukerocket",
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_guidednukerocket.png",
+  "description" : "Enables rocket control for rocket launchers.",
+  "shortdescription" : "Combined Rocket",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "name": "st_nukerocket",
+    "displayName": "Guided Nuke Ammo",
+    "displayIcon": "/custom/items/augments/bazookafusion/guided-nukerocket/st_guidednukerocket.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "nuke.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "nuke.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts": [ "/custom/items/augments/bazooka/guidedrocket/st_guidedrocketaugment.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 2.5,
+       "baseDps" : 5.5,
+       "energyUsage" : 0,
+       "ammoUsage" : 14,
+       "inaccuracy" : 0.0,
+
+    "screenshake" : true,
+    "shakeTime" : 1,
+
+      "projectileType": "st_guidednukerocket",
+      "projectileParameters": {},
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 1.5,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

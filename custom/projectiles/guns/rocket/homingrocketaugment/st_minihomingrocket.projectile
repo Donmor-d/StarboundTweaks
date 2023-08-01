@@ -29,7 +29,7 @@
   "knockback" : 20,
 
   "scripts" : [ "st_homingrocket.lua" ],
-  "baseHomingControlForce" : 10
+  "baseHomingControlForce" : 5
   //"detectionTime" : 0.5, deprecated
 
 }

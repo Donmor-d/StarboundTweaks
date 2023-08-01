@@ -1,0 +1,25 @@
+{
+  "projectileName" : "st_mininukerocket",
+  "image" : "st_mininukerocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosion2.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "smoke", "rocketsmoke" ],
+  "flippable" : true,
+  "power" : 1.0,
+  "speed" : 20.0,
+  "acceleration" : 10,
+  "physics" : "grenade",
+  "movementSettings" : {
+    "gravityMultiplier" : 0.1
+  }
+  //"scripts" : [ "/custom/projectiles/guns/rocket/elementalminirockets/st_minirocket.lua" ]
+}

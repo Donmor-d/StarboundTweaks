@@ -1,0 +1,51 @@
+{
+  "projectileName" : "st_icenukerocket",
+  "image" : "st_icenukerocket.png",
+  "animationCycle" : 0.2,
+  
+  "frameNumber" : 4,
+  "lightColor" : [52, 112, 153],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/nukeexplosion/st_nukeexplosion.config"
+    }
+  ],
+
+//script smoke start -----------------------------
+  "smokeAction" : [
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.5,
+      "type" : "largeicecloud",
+      "angleAdjust" : 180,
+      //"time" : 0.075,
+      "repeat" : true,
+      "config" :{
+        "speed" : 10
+      }
+    }
+  ],
+  "smokePeriod" : 0.05,
+  "angleIncrement" : 22.5,
+  "angleMinMax" : [ 90, 270 ],
+  "randomizedSmoke" : true,
+  "scripts" : [ "/custom/projectiles/guns/rocket/elementalgasrockets/st_rocketSmoke.lua" ],
+//script smoke end -----------------------------
+
+  "statusEffects" : [ ],
+  "emitters" : [ "iceplasmarocket" ],
+  "flippable" : true,
+  "power" : 1.0,
+  "speed" : 20.0,
+  "acceleration" : 10,
+  "physics" : "grenade",
+  "movementSettings" : {
+    "gravityMultiplier" : 0.1
+  },
+  "damageType" : "damage",
+  "knockback" : 40,
+  "damageRepeatGroup" : "STexplosion",
+  "damageKind" : "iceplasma"
+}

@@ -9,7 +9,6 @@ function GunFire:init()
 
   self.rocketIds = {}
 
-
   self.weapon:setStance(self.stances.idle)
 
   if self.ammoUsage == nil then
