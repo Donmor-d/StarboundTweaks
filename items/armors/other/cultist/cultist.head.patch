@@ -11,22 +11,22 @@
       {
         "levelFunction": "standardArmorLevelPowerMultiplierMultiplier",
         "stat": "powerMultiplier",
-        "baseMultiplier": 1.1
+        "baseMultiplier": 1.15
       },
       {
         "levelFunction": "standardArmorLevelProtectionMultiplier",
         "stat": "protection",
-        "amount": 0.3
+        "amount": 0.45
       },
       {
         "levelFunction": "standardArmorLevelMaxEnergyMultiplier",
         "stat": "maxEnergy",
-        "amount": 3
+        "amount": 4
       },
       {
         "levelFunction": "standardArmorLevelMaxHealthMultiplier",
         "stat": "maxHealth",
-        "amount": 3
+        "amount": 4
       },
       {
         "levelFunction": "standardArmorLevelLunacyRegenMultiplier",
@@ -36,14 +36,14 @@
       {
         "levelFunction": "standardArmorLevelMaxAmmoMultiplier",
         "stat": "maxAmmo",
-        "amount": 3
+        "amount": 4
       }
     ]
   },
   {
     "op": "replace",
     "path": "/price",
-    "value": 1500
+    "value": 1750
   },
   {
     "op": "replace",
