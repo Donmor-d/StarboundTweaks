@@ -5,7 +5,7 @@
     "value": {
       "levelFunction": "standardArmorLevelMaxAmmoMultiplier",
       "stat": "maxAmmo",
-      "amount": 4
+      "amount": 2
     }
   }
 ]

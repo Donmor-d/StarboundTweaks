@@ -12,17 +12,28 @@ function init()
   self.defaultSpeedMult = 1
   self.speedMult = self.defaultSpeedMult
 
+  --[[
   self.block = true
+  self.frozen = false
+  ]]--
 end
 
 function update(dt)
+  --[[  stacking cold, removed to balance later, too op for bosses
   if effect.duration() > 4.9 and not self.block then  --Cada reaplicacao reseta a duração, então a cada vez que a duração fica 5s (que é a defaultDuration), 4.9 pois o ele é detectado entre 4.9 e 5
-    self.defaultSpeedMult = self.defaultSpeedMult - self.defaultSpeedMult/4
+    self.defaultSpeedMult = self.defaultSpeedMult - self.defaultSpeedMult/10
     self.block = true
   else
     self.block = false
   end
 
+  if self.defaultSpeedMult < 0.10 and not self.frozen then
+    status.setResource("stunned", 50)
+    animator.setSoundVolume("freeze", 5)
+    animator.playSound("freeze", 0)
+    self.frozen = true
+  end
+]]--
   local sourceID = effect.sourceEntity()
   local activeStatus = status.activeUniqueStatusEffectSummary()
 
@@ -42,12 +53,12 @@ function update(dt)
   end
 
   mcontroller.controlModifiers({
-      groundMovementModifier = 0.3 * self.speedMult,
+      groundMovementModifier = self.speedMult,
       speedModifier = 0.75 * self.speedMult,
       airJumpModifier = 0.85 * self.speedMult
-    })
+  })
 end
 
 function uninit()
-
+  --status.setResource("stunned", 0)
 end
