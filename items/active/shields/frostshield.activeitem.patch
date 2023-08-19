@@ -1,0 +1,37 @@
+[
+  {
+    "op": "add",
+    "path": "/parryDamage",
+    "value": 10
+  },
+  {
+    "op": "add",
+    "path": "/parryProjectile",
+    "value": "iceexplosionknockback"
+  },
+  {
+    "op": "add",
+    "path": "/projectileParameters",
+    "value": {
+      "statusEffects" : [
+        {"effect" : "st_freeze", "duration" : 1.5}
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/parryEffects",
+    "value": [
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/parryEffect",
+    "value": "Freeze"
+  },
+  {
+    "op": "replace",
+    "path": "/baseShieldHealth",
+    "value": 25
+  }
+]

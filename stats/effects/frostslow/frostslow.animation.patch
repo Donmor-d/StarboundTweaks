@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/sounds",
+    "value": {
+      "freeze": [
+        "/sfx/projectiles/ice_barrier_freeze1.ogg",
+        "/sfx/projectiles/ice_barrier_freeze2.ogg"
+      ]
+    }
+  }
+]

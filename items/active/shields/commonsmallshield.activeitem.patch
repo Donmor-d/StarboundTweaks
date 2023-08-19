@@ -1,0 +1,47 @@
+[
+  {
+    "op": "add",
+    "path": "/parryDamage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/parryProjectile",
+    "value": "regularexplosionknockback"
+  },
+  {
+    "op": "add",
+    "path": "/projectileParameters",
+    "value": {
+      "damageType": "knockback",
+      "knockback" : 25
+    }
+  },
+  {
+    "op": "add",
+    "path": "/parryEffects",
+    "value": [
+      {"effect" : "rage", "duration" : 2}
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/parryEffect",
+    "value": "Rage"
+  },
+  {
+    "op": "replace",
+    "path": "/baseShieldHealth",
+    "value": [15, 20]
+  },
+  {
+    "op": "replace",
+    "path": "/cooldownTime",
+    "value": [0.4, 0.6]
+  },
+  {
+    "op": "replace",
+    "path": "/forceWalk",
+    "value": false
+  }
+]

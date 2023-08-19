@@ -1,0 +1,49 @@
+[
+  {
+    "op": "add",
+    "path": "/parryDamage",
+    "value": 5
+  },
+  {
+    "op": "add",
+    "path": "/parryProjectile",
+    "value": "sporeseed"
+  },
+  {
+    "op": "add",
+    "path": "/projectileParameters",
+    "value": {
+      "timeToLive": 0.25
+    }
+  },
+  {
+    "op": "add",
+    "path": "/parryEffects",
+    "value": []
+  },
+  {
+    "op": "add",
+    "path": "/projectileInaccuracy",
+    "value": 0.5
+  },
+  {
+    "op": "add",
+    "path": "/projectileCount",
+    "value": 6
+  },
+  {
+    "op": "add",
+    "path": "/projectileInterval",
+    "value": 0.1
+  },
+  {
+    "op": "add",
+    "path": "/parryEffect",
+    "value": "Spore Burst"
+  },
+  {
+    "op": "replace",
+    "path": "/scripts/0",
+    "value": "/items/active/shields/st_mushroomshield.lua"
+  }
+]

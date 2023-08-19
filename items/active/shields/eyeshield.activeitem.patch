@@ -1,0 +1,51 @@
+[
+  {
+    "op": "add",
+    "path": "/parryDamage",
+    "value": 10
+  },
+  {
+    "op": "add",
+    "path": "/parryProjectile",
+    "value": "regularexplosionknockback"
+  },
+  {
+    "op": "add",
+    "path": "/projectileParameters",
+    "value": {
+      "damageType": "noDamage"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/parryAreaParameters",
+    "value": {
+    }
+  },
+  {
+    "op": "add",
+    "path": "/parryEffects",
+    "value": [
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/parryEffect",
+    "value": "Area Damage"
+  },
+  {
+    "op": "replace",
+    "path": "/baseShieldHealth",
+    "value": 15
+  },
+  {
+    "op": "replace",
+    "path": "/forceWalk",
+    "value": false
+  },
+  {
+    "op": "replace",
+    "path": "/scripts/0",
+    "value": "/items/active/shields/st_eyeshield.lua"
+  }
+]

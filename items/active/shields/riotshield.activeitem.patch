@@ -1,0 +1,31 @@
+[
+  {
+    "op": "add",
+    "path": "/parryDamage",
+    "value": 0
+  },
+  {
+    "op": "add",
+    "path": "/parryProjectile",
+    "value": "regularexplosionknockback"
+  },
+  {
+    "op": "add",
+    "path": "/projectileParameters",
+    "value": {
+      "damageType": "noDamage"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/parryEffect",
+    "value": "Defense"
+  },
+  {
+    "op": "add",
+    "path": "/parryEffects",
+    "value": [
+      "st_riotshielddefense"
+    ]
+  }
+]

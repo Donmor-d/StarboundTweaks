@@ -1,0 +1,16 @@
+{
+  "name" : "st_freeze",
+  "blockingStat" : "iceStatusImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "st_freeze.lua"
+  ],
+
+  "animationConfig" : "st_freeze.animation",
+
+  "label" : "Frozen: you cant move",
+  "icon" : "/interface/statuses/ice.png"
+}

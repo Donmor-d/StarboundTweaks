@@ -1,0 +1,14 @@
+{
+  "projectileName" : "st_eyeshieldprojectile",
+  "image" : "st_eyeshieldprojectile.png",
+  "frameNumber" : 1,
+  "speed" : 0,
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-178, 178], [178, 178], [178, -178], [-178, -178] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "default",
+  "power" : 0
+}

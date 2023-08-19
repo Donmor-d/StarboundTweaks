@@ -1,0 +1,15 @@
+{
+  "name" : "st_riotshielddefense",
+  "effectConfig" : {
+    "damageReduction" : 0.5
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "st_riotshielddefense.lua"
+  ],
+  "scriptDelta" : 1,
+
+  "label" : "Protection: Increased Defense",
+  "icon" : "st_riotshielddefense.png"
+}
