@@ -66,11 +66,7 @@
           "bodyProbability": 0.5,
           "planetaryTypes": [
             {
-              "weight": 0.05,
-              "item": "Tier4"
-            },
-            {
-              "weight": 0.15,
+              "weight": 0.2,
               "item": "Tier5"
             },
             {
@@ -102,37 +98,21 @@
           "bodyProbability": 0.25,
           "planetaryTypes": [
             {
-              "weight": 0.9,
-              "item": "GasGiant"
-            },
-            {
-              "weight": 0.05,
-              "item": "Barren"
-            },
-            {
-              "weight": 0.05,
+              "weight": 1.0,
               "item": "AsteroidField"
             }
           ],
           "satelliteTypes": [
             {
-              "weight": 0.1,
+              "weight": 0.2,
               "item": "Moon"
             },
             {
-              "weight": 0.05,
-              "item": "Tier3"
-            },
-            {
-              "weight": 0.1,
-              "item": "Tier4"
-            },
-            {
-              "weight": 0.15,
+              "weight": 0.6,
               "item": "Tier5"
             },
             {
-              "weight": 0.6,
+              "weight": 0.2,
               "item": "Tier6"
             }
           ]
@@ -146,11 +126,7 @@
           "bodyProbability": 0.5,
           "planetaryTypes": [
             {
-              "weight": 0.05,
-              "item": "Tier4"
-            },
-            {
-              "weight": 0.15,
+              "weight": 0.2,
               "item": "Tier5"
             },
             {
@@ -158,11 +134,7 @@
               "item": "Tier6"
             },
             {
-              "weight": 0.05,
-              "item": "Barren"
-            },
-            {
-              "weight": 0.05,
+              "weight": 0.1,
               "item": "AsteroidField"
             }
           ],
@@ -186,12 +158,8 @@
               "item": "AncientGateway"
             },
             {
-              "weight": 0.1,
+              "weight": 0.2,
               "item": "AsteroidField"
-            },
-            {
-              "weight": 0.1,
-              "item": "Barren"
             },
             {
               "weight": 0.1,

@@ -13,6 +13,12 @@ function HammerSmash:init()
   self.damageMultiplier = 0 -- temporary solution while the thing doesnt fucking work for some fucking reason its literally the same as with the axe one so why the fuck does it return nil while axe doesnt FUCK YOU FUCK YOU
 
   self.defKnockback = self.damageConfig.knockback
+
+  sb.logInfo(sb.print(self.elementalShockwave))
+  if self.elementalShockwave == nil then
+    self.elementalShockwave = true
+  end
+  sb.logError(sb.print(self.elementalShockwave))
   
   self.falling = false
   MeleeSlash.init(self)
@@ -170,7 +176,7 @@ function HammerSmash:fireShockwave(charge)
         {
           action = "projectile",
           inheritDamageFactor = 0.5,
-          type = self.weapon.elementalType.."shockwave"
+          type = self.elementalShockwave and self.weapon.elementalType.."shockwave" or "physicalshockwave"
         }
       }
       for i,position in pairs(positions) do

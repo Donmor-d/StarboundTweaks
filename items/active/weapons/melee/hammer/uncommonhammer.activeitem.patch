@@ -8,5 +8,10 @@
     "op": "replace",
     "path": "/primaryAbility/baseDps/1",
     "value": 15.5
+  },
+  {
+    "op": "add",
+    "path": "/primaryAbility/elementalShockwave",
+    "value": false
   }
 ]

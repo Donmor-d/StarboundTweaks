@@ -43,5 +43,10 @@
     "op": "replace",
     "path": "/forceWalk",
     "value": false
+  },
+  {
+    "op": "replace",
+    "path": "/builderConfig/1/animationParts/shield/variants",
+    "value": 3
   }
 ]
