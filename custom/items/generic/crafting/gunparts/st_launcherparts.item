@@ -1,0 +1,11 @@
+{
+  "itemName" : "st_launcherparts",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "st_launcherparts.png",
+  "description" : "Frame used to create modular launchers",
+  "shortdescription" : "Launcher parts",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : []
+}

@@ -1,0 +1,11 @@
+{
+  "itemName" : "st_sniperparts",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "st_sniperparts.png",
+  "description" : "Frame used to create modular snipers",
+  "shortdescription" : "Sniper parts",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : []
+}

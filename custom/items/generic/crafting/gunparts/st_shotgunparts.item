@@ -1,0 +1,11 @@
+{
+  "itemName" : "st_shotgunparts",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "st_shotgunparts.png",
+  "description" : "Frame used to create modular shotguns",
+  "shortdescription" : "Shotgun parts",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : []
+}

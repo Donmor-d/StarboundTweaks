@@ -1,0 +1,11 @@
+{
+  "itemName" : "st_rifleparts",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "st_rifleparts.png",
+  "description" : "Frame used to create modular rifles",
+  "shortdescription" : "Rifle parts",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : []
+}

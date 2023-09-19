@@ -1,0 +1,11 @@
+{
+  "itemName" : "st_bazookaparts",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "st_bazookaparts.png",
+  "description" : "Frame used to create modular bazookas",
+  "shortdescription" : "Bazooka parts",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : []
+}

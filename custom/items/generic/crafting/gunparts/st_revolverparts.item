@@ -1,0 +1,11 @@
+{
+  "itemName" : "st_revolverparts",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "st_revolverparts.png",
+  "description" : "Frame used to create modular revolvers",
+  "shortdescription" : "Revolver parts",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : []
+}
