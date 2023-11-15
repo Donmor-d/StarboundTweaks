@@ -30,6 +30,8 @@ function init()
   self.projectileParameters = config.getParameter("projectileParameters", {})
   self.projectileDamage = config.getParameter("parryDamage", 0)
   self.parryEffects = config.getParameter("parryEffects")
+
+  self.damageArea = 20
   
   self.parryAreaParameters = config.getParameter("parryAreaParameters")
   setStance(self.stances.idle)
@@ -142,7 +144,7 @@ function raiseShield()
           if self.parryEffects then
             status.addEphemeralEffects(self.parryEffects)
           end
-          applyDamageToEnemies()
+          applyDamageToEnemies(self.damageArea)
           --function that applies damage to nearby enemies (or make it so they receive an effect similar to Doomed)
           refreshPerfectBlock()
         elseif status.resourcePositive("shieldStamina") then
@@ -203,11 +205,12 @@ function fireProjectile()
     )
 end
 
-function applyDamageToEnemies()
+function applyDamageToEnemies(radius)
   local params = self.parryAreaParameters
-  params.power = self.projectileDamage
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
+  params.power = self.projectileDamage
 
+  --[[
   world.spawnProjectile(
     "st_eyeshieldprojectile",
     entity.position(),
@@ -216,4 +219,24 @@ function applyDamageToEnemies()
     false,
     self.parryAreaParameters
   )
+
+   ]]
+
+  local playerPos = entity.position()
+
+  local entityList = world.monsterQuery(playerPos, radius, {})
+
+  for i = 1, #entityList do
+
+    world.spawnProjectile(
+    "st_eyeshieldprojectile",
+    world.entityPosition(entityList[i]),
+    activeItem.ownerEntityId(),
+    {0, 0},
+    false,
+    params
+    )
+    
+  end
+
 end

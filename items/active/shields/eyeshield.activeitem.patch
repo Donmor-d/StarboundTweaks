@@ -19,7 +19,7 @@
   {
     "op": "add",
     "path": "/parryAreaParameters",
-    "value": {
+    "value": {  
     }
   },
   {
@@ -47,5 +47,10 @@
     "op": "replace",
     "path": "/scripts/0",
     "value": "/items/active/shields/st_eyeshield.lua"
+  },
+  {
+    "op": "replace",
+    "path": "/animation",
+    "value": "st_eyeshield.animation"
   }
 ]

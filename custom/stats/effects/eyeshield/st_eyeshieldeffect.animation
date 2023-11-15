@@ -1,0 +1,30 @@
+{
+  "particleEmitters" : {
+    "eye" : {
+      "burstCount" : 1,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "textured",
+            "image" : "/custom/particles/eyeshield/st_eyeshield.png",
+            "position" : [0, 0],
+            "color" : [ 255, 255, 255, 255] ,
+            "initialVelocity" : [0, 0],
+            "finalVelocity" : [0, 0],
+            "approach" : [0, 0],
+            "rotation" : 0,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.85,
+            "fade" : 1,
+            "size" : 1.5,
+            "layer" : "middle",
+            "timeToLive" : 0.45,
+            "variance" : {
+              "position" : [2, 2]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

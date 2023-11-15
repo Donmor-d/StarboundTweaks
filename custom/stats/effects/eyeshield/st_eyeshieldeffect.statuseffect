@@ -1,0 +1,13 @@
+{
+  "name" : "st_eyeshieldeffect",
+
+  "effectConfig" : {
+  },
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "st_eyeshieldeffect.lua"
+  ],
+
+  "animationConfig" : "st_eyeshieldeffect.animation"
+}
