@@ -4,6 +4,9 @@
       "duration" : 0.05,
       "loops" : true,
       "start" : {
+        "particles" : [
+          [ "st_largeammoup" ]
+        ],
         "sounds" : [
           [ "/sfx/gun/reload/grenade_reload_clip3.ogg" ]
         ]

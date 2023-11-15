@@ -4,6 +4,9 @@
       "duration" : 0.05,
       "loops" : true,
       "start" : {
+        "particles" : [
+          [ "st_smallammoup" ]
+        ],
         "sounds" : [
           [ "/sfx/gun/reload/machinepistol_reload_clip3.ogg" ]
         ]
