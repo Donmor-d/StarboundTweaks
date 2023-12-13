@@ -6,7 +6,12 @@
   "inventoryIcon" : "st_explosiveghostrevolverbullet.png",
   "description" : "Enables explosion on contact for revolver bullets, bullets ignore walls",
   "shortdescription" : "Combined Revolver Bullet",
+  "tooltipKind" : "st_ammomodifier",
 
+  "typeName" : "Revolver",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
   "augment": {
     "type": "pistolammo",
     "name": "st_explosiveghostrevolverbullet",

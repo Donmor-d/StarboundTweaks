@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_firegasgrenade.png",
   "description" : "Allows grenades from grenade launchers to explode into burning gas.",
   "shortdescription" : "Fire Gas Grenade",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Launcher",
+  "notes" : "Grenades explode into burning gas.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "grenadelauncherammo",

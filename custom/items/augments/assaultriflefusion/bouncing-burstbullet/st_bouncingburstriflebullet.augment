@@ -6,6 +6,13 @@
   "inventoryIcon" : "st_bouncingburstriflebullet.png",
   "description" : "Changes the assault rifle's fire mode to burst and enables bounce.",
   "shortdescription" : "Combined Rifle Bullet",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Assault Rifle",
+  "notes" : "Bullets empower after the first bounce.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+  
   "augment": {
     "type": "assaultrifleammo",
     "name": "st_bouncingburstriflebullet",

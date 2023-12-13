@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_piercingsplitsniperbullet.png",
   "description" : "Bullets split into 3 after a shorter time",
   "shortdescription" : "Split Sniper Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Sniper",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "sniperrifleammo",

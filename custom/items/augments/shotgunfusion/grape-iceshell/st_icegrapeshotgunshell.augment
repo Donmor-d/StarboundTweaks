@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_icegrapeshotgunshell.png",
   "description" : "???",
   "shortdescription" : "Combined Shotgun Shell",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Shotgun",
+  "notes" : "Bullets may drop an ice grape.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "shotgunammo",

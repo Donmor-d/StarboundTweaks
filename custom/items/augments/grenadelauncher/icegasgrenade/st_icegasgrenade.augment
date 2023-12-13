@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_icegasgrenade.png",
   "description" : "Allows grenades from grenade launchers to explode into freezing gas.",
   "shortdescription" : "Ice Gas Grenade",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Launcher",
+  "notes" : "Grenades explode into freezing gas.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "grenadelauncherammo",

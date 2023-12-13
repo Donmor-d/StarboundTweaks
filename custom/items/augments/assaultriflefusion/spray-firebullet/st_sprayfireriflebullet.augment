@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_sprayfireriflebullet.png",
   "description" : "Increases the Assault Rifle's firerate and changes the element to fire",
   "shortdescription" : "Combined Rifle Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Assault Rifle",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "assaultrifleammo",

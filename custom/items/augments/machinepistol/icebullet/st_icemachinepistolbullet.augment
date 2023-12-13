@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_icemachinepistolbullet.png",
   "description" : "Changes the machine pistol's element to ice.",
   "shortdescription" : "Ice Machine Pistol Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Pistol",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "machinepistolammo",

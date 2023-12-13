@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_stickybombshotgunshell.png",
   "description" : "Sticky explosive shell for shotguns.",
   "shortdescription" : "Sticky Bomb Shotgun Shell",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Shotgun",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "shotgunammo",

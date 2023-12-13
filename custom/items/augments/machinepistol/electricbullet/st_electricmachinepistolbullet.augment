@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_electricmachinepistolbullet.png",
   "description" : "Changes the machine pistol's element to electric.",
   "shortdescription" : "Electric Machine Pistol Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Pistol",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "machinepistolammo",

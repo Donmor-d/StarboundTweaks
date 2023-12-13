@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_electricgasgrenade.png",
   "description" : "Allows grenades from grenade launchers to explode into electrified gas.",
   "shortdescription" : "Electric Gas Grenade",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Launcher",
+  "notes" : "Grenades explode into electric gas.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "grenadelauncherammo",

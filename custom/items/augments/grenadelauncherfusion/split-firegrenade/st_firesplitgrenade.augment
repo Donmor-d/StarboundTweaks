@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_firesplitgrenade.png",
   "description" : "Makes grenades split into 3 smaller burning grenades.",
   "shortdescription" : "Combined Grenade",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Launcher",
+  "notes" : "Grenades explode into burning gas.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "grenadelauncherammo",

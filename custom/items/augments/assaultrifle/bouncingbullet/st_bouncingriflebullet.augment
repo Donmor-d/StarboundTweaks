@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_bouncingriflebullet.png",
   "description" : "Enables bounce for assault rifles. Each bounce empowers the bullet",
   "shortdescription" : "Bouncing Rifle Bullet",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Assault Rifle",
+  "notes" : "Bullets increase in damage with each bounce.",
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "assaultrifleammo",
@@ -32,8 +38,6 @@
        "energyUsage" : 0,   //~39.375
        "ammoUsage" : 1.5,
        "inaccuracy" : 0.02,
-	   
- 
 	   
        "reloadTime" : 1.5,     //tempo de recarga
 

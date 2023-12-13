@@ -6,6 +6,13 @@
   "inventoryIcon" : "st_bouncingsniperbullet.png",
   "description" : "Enables Bounce for sniper rifles. Each bounce empowers the bullet",
   "shortdescription" : "Bouncing Sniper Bullet",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Sniper",
+  "notes" : "Bullets empower after athe first bounce.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
 
   "augment": {
     "type": "sniperrifleammo",

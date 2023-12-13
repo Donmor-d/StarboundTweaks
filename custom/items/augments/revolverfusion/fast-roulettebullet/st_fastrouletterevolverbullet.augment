@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_fastrouletterevolverbullet.png",
   "description" : "Shoots bullets in a 6 round burst that have a chance to empower.",
   "shortdescription" : "Combined Revolver Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Revolver",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "pistolammo",

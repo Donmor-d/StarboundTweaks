@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_bouncingchargedsniperbullet.png",
   "description" : "Enables charged bounced firing for sniper rifles, higher damage the longer its charged and when it bounces.",
   "shortdescription" : "Combined Sniper Bullet",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Sniper",
+  "notes" : "Bullets empower after the first bounce.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "sniperrifleammo",

@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_electricspeedingmachinepistolbullet.png",
   "description" : "Makes the machine pistol shoot faster the longer the trigger is held, and changes the element to electric.",
   "shortdescription" : "Combined Machine Pistol Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Pistol",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "machinepistolammo",

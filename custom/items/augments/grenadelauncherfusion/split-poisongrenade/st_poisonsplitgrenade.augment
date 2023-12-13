@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_poisonsplitgrenade.png",
   "description" : "Makes grenades split into 3 smaller poisoned grenades.",
   "shortdescription" : "Combined Grenade",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Launcher",
+  "notes" : "Grenades explode into poison gas.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "grenadelauncherammo",

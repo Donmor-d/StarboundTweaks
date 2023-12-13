@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_minipoisonrocket.png",
   "description" : "Replaces rockets with a burst of mini poison rockets.",
   "shortdescription" : "Combined Rocket",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Bazooka",
+  "notes" : "Releases poisonous gas throughout its trajectory.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "rocketlauncherammo",

@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_firesoapymachinepistolbullet.png",
   "description" : "Turns your machine pistol's bullets into lingering burning bubbles.",
   "shortdescription" : "Combined Machine Pistol Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Pistol",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "machinepistolammo",

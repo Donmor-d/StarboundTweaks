@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_homingminirocket.png",
   "description" : "Replaces rockets with a burst of homing mini rockets.",
   "shortdescription" : "Combined Rocket",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Bazooka",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "rocketlauncherammo",

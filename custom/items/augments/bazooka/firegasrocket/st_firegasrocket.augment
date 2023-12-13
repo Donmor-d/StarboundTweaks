@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_firegasrocket.png",
   "description" : "Replaces explosive power with fiery propulsion.",
   "shortdescription" : "Gas Rocket",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Bazooka",
+  "notes" : "Releases burning gas throughout its trajectory.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "rocketlauncherammo",

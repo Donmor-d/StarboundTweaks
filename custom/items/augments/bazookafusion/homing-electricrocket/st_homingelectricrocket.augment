@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_homingelectricrocket.png",
   "description" : "Enables homing for bazookas and adds electrified propulsion.",
   "shortdescription" : "Combined Rocket",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Bazooka",
+  "notes" : "Releases electric gas throughout its trajectory.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "rocketlauncherammo",

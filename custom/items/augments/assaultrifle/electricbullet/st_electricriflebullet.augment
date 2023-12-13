@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_electricriflebullet.png",
   "description" : "Changes the assault rifle's element to electric.",
   "shortdescription" : "Electric Rifle Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Assault Rifle",
+  "notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "assaultrifleammo",
@@ -33,8 +39,6 @@
        "energyUsage" : 0,   //~39.375
        "ammoUsage" : 1.5,
        "inaccuracy" : 0.02,
-	   
- 
 	   
        "reloadTime" : 1.5,     //tempo de recarga
 

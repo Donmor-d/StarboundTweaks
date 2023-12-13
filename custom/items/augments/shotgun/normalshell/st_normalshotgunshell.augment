@@ -6,7 +6,12 @@
   "inventoryIcon" : "st_normalshotgunshell.png",
   "description" : "Regular shell for shotguns.",
   "shortdescription" : "Normal Shotgun Shell",
+  "tooltipKind" : "st_ammomodifiernotes",
 
+  "typeName" : "Shotgun",
+  "notes" : "Bullets weaken after a short time.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
   "augment": {
     "type": "shotgunammo",
     "name": "st_normalshotgunshell",

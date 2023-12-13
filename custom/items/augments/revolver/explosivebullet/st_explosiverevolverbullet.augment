@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_explosiverevolverbullet.png",
   "description" : "Enables explosion on contact for revolver bullets.",
   "shortdescription" : "Explosive Revolver Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Revolver",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "pistolammo",

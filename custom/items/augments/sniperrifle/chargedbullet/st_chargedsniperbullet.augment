@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_chargedsniperbullet.png",
   "description" : "Enables charge firing for sniper rifles, higher damage the longer its charged.",
   "shortdescription" : "Charged Sniper Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Sniper",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "sniperrifleammo",

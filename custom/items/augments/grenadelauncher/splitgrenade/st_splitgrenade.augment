@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_splitgrenade.png",
   "description" : "Makes grenades split into 3 smaller grenades.",
   "shortdescription" : "Split Grenade",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Launcher",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "grenadelauncherammo",

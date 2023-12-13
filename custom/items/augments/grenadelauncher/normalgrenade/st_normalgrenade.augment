@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_normalgrenade.png",
   "description" : "Regular grenade made for grenade launchers.",
   "shortdescription" : "Normal Grenade",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Launcher",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "grenadelauncherammo",

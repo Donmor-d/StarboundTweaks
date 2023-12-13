@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_snowballingrevolverbullet.png",
   "description" : "Makes revolver bullets increase in damage over time.",
   "shortdescription" : "Snowballing Revolver Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Revolver",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "pistolammo",

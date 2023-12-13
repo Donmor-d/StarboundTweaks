@@ -51,6 +51,8 @@ function isCompatible(table, type) --checa se um dos elementos da table é o mes
   end
   return false
 end
+
+--[[
 -- não usado, talvez para futuros planos para simplificar o processo
 function primaryDefaultParameters(augmentType)
   local params = {
@@ -396,3 +398,4 @@ function primaryDefaultParameters(augmentType)
   }
   return params[augmentType]
 end
+]]

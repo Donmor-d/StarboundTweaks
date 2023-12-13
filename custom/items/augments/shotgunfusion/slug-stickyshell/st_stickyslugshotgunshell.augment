@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_stickyslugshotgunshell.png",
   "description" : "Packs sticky explosive pellets together that spread after a while.",
   "shortdescription" : "Combined Shotgun Shell",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Shotgun",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "shotgunammo",

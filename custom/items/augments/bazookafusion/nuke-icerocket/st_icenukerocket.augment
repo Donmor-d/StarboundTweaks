@@ -6,6 +6,12 @@
   "inventoryIcon" : "st_icenukerocket.png",
   "description" : "Replaces explosive power with chilling propulsion.",
   "shortdescription" : "Ice Gas Nuke Rocket",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Bazooka",
+  "notes" : "Releases freezing gas throughout its trajectory.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
     "type": "rocketlauncherammo",
