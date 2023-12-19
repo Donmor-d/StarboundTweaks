@@ -5,8 +5,8 @@
     "value": {
       "type": "image",
       "position": [
-        120,
-        104
+        130,
+        157
       ],
       "file": "",
       "centered": true,
@@ -26,8 +26,8 @@
     "value": {
       "type": "image",
       "position": [
-        106,
-        104
+        116,
+        157
       ],
       "file": "",
       "centered": true,
@@ -47,8 +47,8 @@
     "value": {
       "type": "image",
       "position": [
-        92,
-        104
+        102,
+        157
       ],
       "file": "",
       "centered": true,
@@ -68,8 +68,8 @@
     "value": {
       "type": "image",
       "position": [
-        78,
-        104
+        88,
+        157
       ],
       "file": "",
       "centered": true,
@@ -89,8 +89,8 @@
     "value": {
       "type": "image",
       "position": [
-        64,
-        104
+        74,
+        157
       ],
       "file": "",
       "centered": true,
@@ -110,8 +110,8 @@
     "value": {
       "type": "image",
       "position": [
-        50,
-        104
+        60,
+        157
       ],
       "file": "",
       "centered": true,
@@ -131,8 +131,8 @@
     "value": {
       "type": "image",
       "position": [
-        36,
-        104
+        46,
+        157
       ],
       "file": "",
       "centered": true,
@@ -152,8 +152,8 @@
     "value": {
       "type": "image",
       "position": [
-        22,
-        104
+        32,
+        157
       ],
       "file": "",
       "centered": true,
@@ -165,6 +165,40 @@
         12,
         12
       ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/rotTimerTitleLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        12,
+        108
+      ],
+      "hAnchor": "left",
+      "vAnchor": "top",
+      "lineSpacing": 1.2,
+      "wrapWidth": 118,
+      "value": "Rots in: ",
+      "color": "gray"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/rotTimerLabel",
+    "value": {
+      "type": "label",
+      "position": [
+        130,
+        108
+      ],
+      "hAnchor": "right",
+      "vAnchor": "top",
+      "lineSpacing": 1.2,
+      "wrapWidth": 118,
+      "value": "",
+      "color": "gray"
     }
   }
 ]

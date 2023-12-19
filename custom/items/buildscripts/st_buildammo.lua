@@ -4,8 +4,10 @@ function build(directory, config, parameters, level, seed)
 
   config.tooltipFields.damagePerShotLabel = config.augment.primaryAbility.baseDps
 
-  local rateOfFire = math.floor((1/config.augment.primaryAbility.fireTime)*100)/100
-  config.tooltipFields.rateOfFireLabel = rateOfFire.."/s"
+  if config.augment.primaryAbility.fireTime then
+    local rateOfFire = math.floor((1/config.augment.primaryAbility.fireTime)*100)/100
+    config.tooltipFields.rateOfFireLabel = rateOfFire.."/s"
+  end
   
   config.tooltipFields.ammoPerShotLabel = config.augment.primaryAbility.ammoUsage
   
