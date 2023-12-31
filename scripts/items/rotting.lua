@@ -7,7 +7,6 @@ function ageItem(baseItem, aging)
     baseItem.parameters.tooltipFields.rotTimeLabel = getRotTimeDescription(baseItem.parameters.timeToRot)
     baseItem.parameters.tooltipFields.rotTimerLabel = getRotTimerInClockFormat(baseItem.parameters.timeToRot)
 
-    sb.logError(sb.print(baseItem))
     if baseItem.parameters.timeToRot <= 0 then
       return 
     end
