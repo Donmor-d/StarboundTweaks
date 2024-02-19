@@ -20,5 +20,5 @@ function update(dt)
 end
 
 function uninit()
-  
+  status.addEphemeralEffect("st_recovering")
 end

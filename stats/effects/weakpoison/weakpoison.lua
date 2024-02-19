@@ -8,8 +8,6 @@ function init()
   
   self.threat = (entity.entityType() == "player") and world.threatLevel()/2 or world.threatLevel() --if its a player, halve the threat damage
 
-  sb.logInfo(self.threat)
-
   self.baseDamage = 1.5
   --self.tickDamagePercentage = 0.02 deprecated
   self.tickTime = 1.0
