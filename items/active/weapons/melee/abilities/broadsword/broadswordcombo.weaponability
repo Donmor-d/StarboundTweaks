@@ -43,10 +43,11 @@
           1
         ]
       ],
-      "comboSpeedFactor": 0.9,
+      "comboSpeedFactor": 0.5,
       "edgeTriggerGrace": 0.25,
       "fireTime": 0.8,
       "baseDps": 11.5,
+      "dashSpeed": 50, //controla velocidade do dash ao finalizar o combo
 
       "projectileOffset" : [0,0],
       
@@ -62,7 +63,7 @@
           "knockback": 15
         },
         {
-          "baseDamageFactor": 0.5,
+          "baseDamageFactor": 0.75,
           "knockback": 10
         },
         {
@@ -99,15 +100,15 @@
           "armRotation": -45,
           "weaponRotation": -55,
           "twoHanded": true,
-          "allowRotate": true,
-          "allowFlip": true
+          "allowRotate": false,
+          "allowFlip": false
         },
         "wait1": {
           "duration": 0.2,
           "armRotation": -45,
           "weaponRotation": -55,
-          "allowRotate": true,
-          "allowFlip": true,
+          "allowRotate": false,
+          "allowFlip": false,
           "twoHanded": true
         },
         "windup2": {
@@ -131,8 +132,8 @@
             0
           ],
           "twoHanded": true,
-          "allowFlip": true,
-          "allowRotate": true
+          "allowFlip": false,
+          "allowRotate": false
         },
         "wait2": {
           "duration": 0.2,
@@ -142,8 +143,8 @@
             0,
             0
           ],
-          "allowRotate": true,
-          "allowFlip": true,
+          "allowRotate": false,
+          "allowFlip": false,
           "twoHanded": true
         },
         "windup3": {
@@ -159,8 +160,8 @@
           "armRotation": 0,
           "weaponRotation": -90,
           "twoHanded": true,
-          "allowRotate": true,
-          "allowFlip": true
+          "allowRotate": false,
+          "allowFlip": false
         }
       }
     }

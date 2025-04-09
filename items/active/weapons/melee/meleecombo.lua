@@ -70,13 +70,15 @@ function MeleeCombo:update(dt, fireMode, shiftHeld)
   if self.slowFall then
     self.fallTimer = self.fallTimer - dt
 
-    if mcontroller.yVelocity() < -2 and not self.notSlowInAir and not mcontroller.onGround() then
+    if mcontroller.yVelocity() < -mcontroller.baseParameters().walkSpeed 
+    and not self.notSlowInAir 
+    and not mcontroller.onGround() 
+    and not mcontroller.groundMovement() then
       mcontroller.setVelocity({util.clamp(mcontroller.xVelocity(), -mcontroller.baseParameters().walkSpeed, mcontroller.baseParameters().walkSpeed), -2})
-
     end
 
     if self.fallTimer < 0 then
-      self.fallTimer = 0.35
+      self.fallTimer = 0.25
       self.slowFall = false
     end
   end
@@ -167,7 +169,16 @@ function MeleeCombo:fire()
   if self.projectileType and self.comboStep == self.comboSteps then
     world.spawnProjectile(self.projectileType, firePosition or self:firePosition(), activeItem.ownerEntityId(), self:aimVector(), false, params)
   end
-  --
+
+  if self.comboStep == self.comboSteps 
+  and self.weapon.aimDirection * mcontroller.xVelocity() >= 0 
+  and mcontroller.xVelocity() ~= 0 then
+    sb.logError(self.dashSpeed)
+    local dash = mcontroller.onGround() and self.dashSpeed or self.dashSpeed/2
+    sb.logWarn(dash)
+    
+    mcontroller.addMomentum({self:aimVector()[1] * dash, self:aimVector()[2] * dash})
+  end
 
   util.wait(stance.duration, function()
     local damageArea = partDamageArea("swoosh")
