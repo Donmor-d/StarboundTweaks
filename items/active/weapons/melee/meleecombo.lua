@@ -174,8 +174,8 @@ function MeleeCombo:fire()
   and self.weapon.aimDirection * mcontroller.xVelocity() >= 0 
   and mcontroller.xVelocity() ~= 0 then
     sb.logError(self.dashSpeed)
-    local dash = mcontroller.onGround() and self.dashSpeed or self.dashSpeed/2
-    sb.logWarn(dash)
+    local dash = self.dashSpeed and self.dashSpeed or 50
+    dash = mcontroller.onGround() and dash or dash/2
     
     mcontroller.addMomentum({self:aimVector()[1] * dash, self:aimVector()[2] * dash})
   end
