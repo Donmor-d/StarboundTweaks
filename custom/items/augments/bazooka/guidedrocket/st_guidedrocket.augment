@@ -39,8 +39,6 @@
       "fireTime" : 1.5,
       "fireType" : "auto",
 
-      "screenshake" : true,
-
        "reloadTime" : 1.5,
 
       "projectileType": "guidedrocket",

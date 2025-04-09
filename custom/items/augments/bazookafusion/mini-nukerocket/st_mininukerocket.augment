@@ -43,8 +43,6 @@
        "burstCount" : 6,
        "burstTime" : 0.3,
 
-    "screenshake" : true,
-
       "projectileType": "st_mininukerocket",
       "projectileParameters": {},
       "projectileCount": 1,

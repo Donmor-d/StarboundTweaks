@@ -64,8 +64,6 @@
     "ammoUsage" : 5,
     "inaccuracy" : 0.0,
 
-    "screenshake" : true,
-
     "reloadTime" : 2,
 
     "projectileCount" : 1,

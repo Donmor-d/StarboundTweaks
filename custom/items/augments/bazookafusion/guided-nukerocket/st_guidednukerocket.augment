@@ -39,9 +39,6 @@
        "ammoUsage" : 14,
        "inaccuracy" : 0.0,
 
-    "screenshake" : true,
-    "shakeTime" : 1,
-
       "projectileType": "st_guidednukerocket",
       "projectileParameters": {},
       "projectileCount": 1,

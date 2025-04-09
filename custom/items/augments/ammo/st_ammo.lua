@@ -113,13 +113,9 @@ function primaryDefaultParameters(augmentType)
       ammoUsage = 7.5,
       inaccuracy = 0.0,
 
-      screenshake = true,
-
       projectileType = "rocketshell",
       projectileParameters = {},
       projectileCount = 1,
-
-      screenshake = true,
 
       stances = {
         idle = {
@@ -162,8 +158,6 @@ function primaryDefaultParameters(augmentType)
       energyUsage = 0,
       ammoUsage = 4.5,
       inaccuracy = 0.0,
-
-      screenshake = true,
 
       projectileType = "grenade",
       projectileParameters = {

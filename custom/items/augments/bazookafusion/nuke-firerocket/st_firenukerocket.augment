@@ -39,9 +39,6 @@
        "ammoUsage" : 14,
        "inaccuracy" : 0.0,
 
-    "screenshake" : true,
-    "shakeTime" : 1,
-
       "projectileType": "st_firenukerocket",
       "projectileParameters": {},
       "projectileCount": 1,

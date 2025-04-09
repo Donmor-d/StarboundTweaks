@@ -61,7 +61,6 @@
        "ammoUsage" : 2,
        "inaccuracy" : 0.05,
 
-       "screenshake" : true,
 
        "fireType" : "burst",
         "burstCount" : 6,
