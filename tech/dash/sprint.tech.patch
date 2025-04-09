@@ -7,12 +7,12 @@
   {
     "op": "replace",
     "path": "/dashSpeedModifier",
-    "value": 1
+    "value": 1.25
   },
   {
     "op": "add",
     "path": "/maxDashSpeed",
-    "value": 2.5
+    "value": 2.25
   },
   {
     "op": "replace",

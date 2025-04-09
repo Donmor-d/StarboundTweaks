@@ -14,7 +14,6 @@ function init()
       local direction = dashKey == "left" and -1 or 1
       if not self.dashDirection
           and groundValid()
-          and mcontroller.facingDirection() == direction
           and not mcontroller.crouching()
           and not status.resourceLocked("energy")
           and not status.statPositive("activeMovementAbilities") then
@@ -35,25 +34,20 @@ function update(args)
 
   if self.dashDirection then
     if args.moves[self.dashDirection > 0 and "right" or "left"]
-        and not mcontroller.liquidMovement()
-        and not dashBlocked() then
+    and not mcontroller.liquidMovement()
+    and not dashBlocked() then
 
-      if mcontroller.facingDirection() == self.dashDirection then
-        if status.overConsumeResource("energy", self.energyCostPerSecond * args.dt) then
-          mcontroller.controlModifiers({speedModifier = self.dashSpeedModifier})
-          
-          --increase speed over time
-          self.dashSpeedModifier = math.min(self.dashSpeedModifier + args.dt/2, self.maxDashSpeed)
-          --
+      if status.overConsumeResource("energy", self.energyCostPerSecond * args.dt) then
+        mcontroller.controlModifiers({speedModifier = self.dashSpeedModifier})
+        
+        --increase speed over time
+        self.dashSpeedModifier = math.min(self.dashSpeedModifier + args.dt/3, self.maxDashSpeed)
+        --
 
-          animator.setAnimationState("dashing", "on")
-          animator.setParticleEmitterActive("dashParticles", true)
-        else
-          endDash()
-        end
+        animator.setAnimationState("dashing", "on")
+        animator.setParticleEmitterActive("dashParticles", true)
       else
-        animator.setAnimationState("dashing", "off")
-        animator.setParticleEmitterActive("dashParticles", false)
+        endDash()
       end
     else
       endDash()
