@@ -19,7 +19,7 @@
   {
     "op": "add",
     "path": "/animationParameters/sounds/fire/-",
-    "value": "/sfx/projectiles/plasma1s.ogg"
+    "value": "/sfx/projectiles/plasma1.ogg"
   },
   {
     "op": "add",
