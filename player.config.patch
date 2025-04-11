@@ -95,7 +95,7 @@
 	{
 	"op": "add",
 	"path": "/statusControllerSettings/stats/maxAmmo",
-	"value": { "baseValue": 50 }
+	"value": { "baseValue": 100 }
 	},
 	{
 	"op": "add",

@@ -3,9 +3,9 @@
   "rarity" : "Common",
   "price" : 100,
   "maxStack" : 20,
-  "category" : "medicine",
+  "category" : "ammo",
   "inventoryIcon" : "st_mediumammopack.png",
-  "description" : "A medium ammo pack made for law enforcement. Using it restores 25 ammo.",
+  "description" : "A medium ammo pack made for law enforcement. Using it restores 50 ammo.",
   "shortdescription" : "Medium Ammo Pack",
   "effects" : [ [
       {

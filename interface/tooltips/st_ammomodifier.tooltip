@@ -91,7 +91,7 @@
   },
   "weaponTypeTitleLabel" : {
     "type" : "label",
-    "position" : [9, 50],
+    "position" : [9, 68],
     "hAnchor" : "left",
     "vAnchor" : "top",
     "wrapWidth" : 118,
@@ -99,7 +99,7 @@
   },
   "weaponTypeLabel" : {
     "type" : "label",
-    "position" : [130, 50],
+    "position" : [130, 68],
     "hAnchor" : "right",
     "vAnchor" : "top",
     "wrapWidth" : 118,
@@ -107,11 +107,11 @@
   },
   "instructionLabel" : {
     "type" : "label",
-    "position" : [9, 68],
+    "position" : [9, 54],
     "hAnchor" : "left",
     "vAnchor" : "top",
     "wrapWidth" : 118,
-    "value" : "Equip to modular gun with right-click",
+    "value" : "Only equippable on modular weapons",
     "color" : "gray"
   }
 }

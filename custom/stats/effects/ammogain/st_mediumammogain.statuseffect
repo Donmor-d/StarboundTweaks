@@ -1,7 +1,7 @@
 {
   "name" : "st_mediumammogain",
   "effectConfig" : {
-    "ammoGain" : 25
+    "ammoGain" : 50
   },
   "defaultDuration" : 0.01,
 

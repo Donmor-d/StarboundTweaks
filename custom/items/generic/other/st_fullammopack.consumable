@@ -3,7 +3,7 @@
   "rarity" : "Rare",
   "price" : 250,
   "maxStack" : 20,
-  "category" : "medicine",
+  "category" : "ammo",
   "inventoryIcon" : "st_fullammopack.png",
   "description" : "A custom sized ammo pack thats probably illegal, using it fully refills ammo.",
   "shortdescription" : "Full Ammo Pack",

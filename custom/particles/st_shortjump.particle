@@ -9,7 +9,7 @@
     "size" : 1.0,
     "timeToLive" : 0.85,
     "layer" : "back",
-    "light" : [70, 100, 140],
+    "light" : [127, 68, 24],
     "fade" : 0.5,
     "variance" : {
       "initialVelocity" : [0.0, 0.0]

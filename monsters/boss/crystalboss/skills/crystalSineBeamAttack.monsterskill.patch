@@ -3,8 +3,7 @@
 	"op" : "replace",
 	"path" : "/parameters/crystalSineBeamAttack/damagePerSecond",
 	"value" : 1500
-	}
-	,
+	},
 	{
 	"op" : "replace",
 	"path" : "/parameters/crystalSineBeamAttack/skillTime",

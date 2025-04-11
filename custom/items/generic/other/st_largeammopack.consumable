@@ -3,9 +3,9 @@
   "rarity" : "Uncommon",
   "price" : 250,
   "maxStack" : 20,
-  "category" : "medicine",
+  "category" : "ammo",
   "inventoryIcon" : "st_largeammopack.png",
-  "description" : "A large ammo pack made for military use. Using it restores 50 ammo.",
+  "description" : "A large ammo pack made for military use. Using it restores 100 ammo.",
   "shortdescription" : "Large Ammo Pack",
   "effects" : [ [
       {

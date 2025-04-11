@@ -1,7 +1,7 @@
 {
   "name" : "st_smallammogain",
   "effectConfig" : {
-    "ammoGain" : 12.5
+    "ammoGain" : 25
   },
   "defaultDuration" : 0,
 

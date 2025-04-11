@@ -1,7 +1,7 @@
 {
   "name" : "st_largeammogain",
   "effectConfig" : {
-    "ammoGain" : 50
+    "ammoGain" : 100
   },
   "defaultDuration" : 0.01,
 

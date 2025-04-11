@@ -6,6 +6,11 @@
   },
   {
     "op": "replace",
+    "path": "/config/hostileActions/0/parameters/projectileCount",
+    "value": 5
+  },
+  {
+    "op": "replace",
     "path": "/config/hostileActions/0/parameters/minimumRange",
     "value": 0
   },

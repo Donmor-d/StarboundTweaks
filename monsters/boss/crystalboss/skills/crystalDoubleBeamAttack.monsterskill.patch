@@ -2,7 +2,7 @@
 	{
 	"op" : "replace",
 	"path" : "/parameters/crystalDoubleBeamAttack/damagePerSecond",
-	"value" : 3750
+	"value" : 2500
 	},
 	{
 	"op" : "replace",
