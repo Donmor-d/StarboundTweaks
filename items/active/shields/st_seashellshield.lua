@@ -140,7 +140,6 @@ function raiseShield()
           end
           if self.parryEffects then
             status.addEphemeralEffects(self.parryEffects)
-            sb.logError(status.resource("shieldStamina"))
           end
           --function that applies damage to nearby enemies (or make it so they receive an effect similar to Doomed)
           refreshPerfectBlock()

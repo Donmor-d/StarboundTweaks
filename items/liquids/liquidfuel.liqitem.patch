@@ -2,6 +2,6 @@
 	{
 	"op": "replace",
 	"path": "/fuelAmount",
-	"value": 2
+	"value": 1
 	}
 ]

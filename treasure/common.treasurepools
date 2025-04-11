@@ -835,16 +835,22 @@
     [0, {
       "pool" : [
         {"weight" : 0.40, "item" : [ "salve", 2]},
+        {"weight" : 0.40, "item" : [ "st_smallammopack", 10]},
+        {"weight" : 0.35, "item" : [ "st_smallammopack", 15]},
         {"weight" : 0.35, "item" : [ "salve", 3]},
-        {"weight" : 0.25, "item" : [ "bandage", 2]}
+        {"weight" : 0.25, "item" : [ "bandage", 2]},
+        {"weight" : 0.25, "item" : [ "st_mediumammopack", 10]}
       ]
     }],
     [3.9, {
       "pool" : [
         {"weight" : 0.40, "item" : [ "medkit", 1]},
+        {"weight" : 0.40, "item" : [ "st_largeammopack", 10]},
         {"weight" : 0.35, "item" : [ "medkit", 2]},
+        {"weight" : 0.35, "item" : [ "st_largeammopack", 15]},
         {"weight" : 0.15, "item" : [ "nanowrap", 1]},
-        {"weight" : 0.10, "item" : [ "nanowrap", 2]}
+        {"weight" : 0.10, "item" : [ "nanowrap", 2]},
+        {"weight" : 0.10, "item" : [ "st_fullammopack", 5]}
       ]
     }]
   ],

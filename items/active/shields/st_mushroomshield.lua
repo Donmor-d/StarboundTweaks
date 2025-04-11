@@ -145,7 +145,6 @@ function raiseShield(dt)
           end
           if self.parryEffects then
             status.addEphemeralEffects(self.parryEffects)
-            sb.logError(status.resource("shieldStamina"))
           end
             refreshPerfectBlock()
         elseif status.resourcePositive("shieldStamina") then

@@ -18,7 +18,6 @@ function HammerSmash:init()
   if self.elementalShockwave == nil then
     self.elementalShockwave = true
   end
-  sb.logError(sb.print(self.elementalShockwave))
   
   self.falling = false
   MeleeSlash.init(self)

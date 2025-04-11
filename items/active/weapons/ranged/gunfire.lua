@@ -57,15 +57,14 @@ function GunFire:auto()
   if self.stances.fire.duration then
     util.wait(self.stances.fire.duration)
   end
+  
   if status.resourceLocked("ammo") then
     self.cooldownTimer = self.fireTime*2
-
   else
     self.cooldownTimer = self.fireTime
-    
   end
+
   self:setState(self.cooldown)
-  
 end
 
 function GunFire:burst()
@@ -126,7 +125,6 @@ end
 function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
 
   --self.fired = true
-
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()

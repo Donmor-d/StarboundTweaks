@@ -173,7 +173,6 @@ function MeleeCombo:fire()
   if self.comboStep == self.comboSteps 
   and self.weapon.aimDirection * mcontroller.xVelocity() >= 0 
   and mcontroller.xVelocity() ~= 0 then
-    sb.logError(self.dashSpeed)
     local dash = self.dashSpeed and self.dashSpeed or 50
     dash = mcontroller.onGround() and dash or dash/2
     
