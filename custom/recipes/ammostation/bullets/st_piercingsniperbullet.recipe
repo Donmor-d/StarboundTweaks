@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "st_normalsniperbullet", "count" : 1 },
+    { "item" : "st_defaultsniperbullet", "count" : 1 },
 	{ "item" : "titaniumbar", "count" : 2 }
   ],
   "output" : { "item" : "st_piercingsniperbullet", "count" : 1 },

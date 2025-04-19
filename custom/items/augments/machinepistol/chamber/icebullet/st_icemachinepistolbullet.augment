@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_icemachinepistolbullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_icemachinepistolbullet.png",
+  "description" : "Changes the machine pistol's element to ice.",
+  "shortdescription" : "Ice Machine Pistol Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "machinepistolammo",
+    "category": "chamber",
+    "name": "st_iceammo",
+    "displayName": "Freezing Ammo",
+    "displayIcon": "/custom/items/augments/machinepistol/chamber/icebullet/st_icemachinepistolbullet.png",
+    "elementalType": "ice",
+
+    "inventoryIcon" : "ice.png",
+    "fullbright" : "icefullbright.png",
+
+    "primaryAbility": {
+      "chamberDamageMult" : 0.85
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

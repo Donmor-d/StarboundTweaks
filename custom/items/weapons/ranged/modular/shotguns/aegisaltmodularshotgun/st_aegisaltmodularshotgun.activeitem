@@ -5,22 +5,25 @@
   "rarity" : "Rare",
   "description" : "A close range shotgun that can have its shells augmented.",
   "shortdescription" : "Aegisalt Modular Shotgun",
-  "tooltipKind" : "gunwithammo",
+  "tooltipKind" : "st_gunwithammo",
   "category" : "shotgun",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","shotgun"],
   "level" : 5,
 
-  "inventoryIcon" : "normal.png",
+  "inventoryIcon" : [
+    { "image" : "/custom/items/weapons/ranged/modular/shotguns/aegisaltmodularshotgun/butt/normal.png" },
+    { "image" : "/custom/items/weapons/ranged/modular/shotguns/aegisaltmodularshotgun/middle/normal.png" },
+    { "image" : "/custom/items/weapons/ranged/modular/shotguns/aegisaltmodularshotgun/barrel/normal.png" }
+  ],
   
   "acceptsAugmentType" : "shotgunammo",               //adiciona munição que usa
 
-  "animation" : "st_aegisaltmodularshotgun.animation",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
-    "butt" : "",
-    "middle" : "normal.png",
-    "middleFullbright" : "fullbright.png",
-    "barrel" : "",
+    "butt" : "/custom/items/weapons/ranged/modular/shotguns/aegisaltmodularshotgun/butt/normal.png",
+    "middle" : "/custom/items/weapons/ranged/modular/shotguns/aegisaltmodularshotgun/middle/normal.png",
+    "barrel" : "/custom/items/weapons/ranged/modular/shotguns/aegisaltmodularshotgun/barrel/normal.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
@@ -46,13 +49,13 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"], 
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua", "/custom/items/weapons/ranged/st_modulargunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 1.2,
-    "baseDps" : 10.5,
+    "baseDps" : 20,
     "energyUsage" : 0,
-    "ammoUsage" : 3,
+    "ammoUsage" : 4.5,
     "inaccuracy" : 0.12,
 	
     "reloadTime" : 1.5,     //tempo que demora para poder usar a arma
@@ -60,11 +63,25 @@
     "projectileCount" : 8,
     "fireType" : "auto",
 
-    "projectileType" : "st_normalpellet",
-    "projectileParameters" : {
-      "damageKind" : "shotgunbullet",
-      "knockback" : 30
+    "elementalConfig" : {
+      "physical" : {
+        "primaryAbility" : { "projectileType" : "st_normalpellet", "projectileParameters" : {"damageKind" : "shotgunbullet", "knockback" : 20} }
+        //"fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ] //talvez colocar depois
+      },
+      "fire" : {
+        "primaryAbility" : { "projectileType" : "st_firepellet", "projectileParameters" : {"damageKind" : "fireplasmashotgun", "knockback" : 20, "statusEffects" : [ "burning" ] } }
+      },
+      "ice" : {
+        "primaryAbility" : { "projectileType" : "st_icepellet", "projectileParameters" : {"damageKind" : "iceplasmashotgun", "knockback" : 20, "statusEffects" : [ "frostslow" ] } }
+      },
+      "poison" : {
+        "primaryAbility" : { "projectileType" : "st_poisonpellet", "projectileParameters" : {"damageKind" : "poisonplasmashotgun", "knockback" : 20, "statusEffects" : [ "weakpoison" ] } }
+      },
+      "electric" : {
+        "primaryAbility" : { "projectileType" : "st_electricpellet", "projectileParameters" : {"damageKind" : "electricplasmashotgun", "knockback" : 20, "statusEffects" : [ "electrified" ] } }
+      }
     },
+    
     "stances" : {
       "idle" : {
         "armRotation" : 0,

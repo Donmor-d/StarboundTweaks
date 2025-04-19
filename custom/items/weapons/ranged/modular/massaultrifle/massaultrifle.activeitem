@@ -5,7 +5,7 @@
 	"rarity" : "Legendary",
 	"description" : "Can use a variety of different bullets",
 	"shortdescription" : "M-Assault Rifle",
-	"tooltipKind" : "gunwithammo",
+	"tooltipKind" : "st_gunwithammo",
 	"category" : "uniqueWeapon",
 	"twoHanded" : true,
 	"itemTags" : ["weapon","ranged","assaultrifle"],

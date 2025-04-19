@@ -171,12 +171,13 @@ function MeleeCombo:fire()
   end
 
   if self.comboStep == self.comboSteps 
-  and self.weapon.aimDirection * mcontroller.xVelocity() >= 0 
+  and self.weapon.aimDirection * mcontroller.xVelocity() >= 0
   and mcontroller.xVelocity() ~= 0 then
     local dash = self.dashSpeed and self.dashSpeed or 50
     dash = mcontroller.onGround() and dash or dash/2
-    
-    mcontroller.addMomentum({self:aimVector()[1] * dash, self:aimVector()[2] * dash})
+    if self.weapon.aimDirection * mcontroller.xVelocity() <= dash then
+      mcontroller.addMomentum({self:aimVector()[1] * dash, self:aimVector()[2] * dash})
+    end
   end
 
   util.wait(stance.duration, function()

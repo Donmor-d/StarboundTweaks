@@ -93,7 +93,8 @@ function GunFire:cooldown()
   self.weapon:updateAim()
 
   local progress = 0
-  util.wait(self.stances.cooldown.duration, function()
+  local cooldown = math.min(self.fireTime, self.stances.cooldown.duration)
+  util.wait(cooldown, function()
     local from = self.stances.cooldown.weaponOffset or {0,0}
     local to = self.stances.idle.weaponOffset or {0,0}
     self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
@@ -101,7 +102,7 @@ function GunFire:cooldown()
     self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.weaponRotation, self.stances.idle.weaponRotation))
     self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.armRotation, self.stances.idle.armRotation))
 
-    progress = math.min(1.0, progress + (self.dt / self.stances.cooldown.duration))
+    progress = math.min(1.0, progress + (self.dt / cooldown))
   end)
 end
 
@@ -124,7 +125,6 @@ end
 
 function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
 
-  --self.fired = true
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()

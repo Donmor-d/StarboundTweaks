@@ -1,0 +1,82 @@
+{
+  "itemName" : "st_defaultrocket",
+  "price" : 500,
+  "rarity" : "Common",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_defaultrocket.png",
+  "description" : "Regular rocket made for rocket launchers.",
+  "shortdescription" : "Normal Rocket",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Bazooka",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "name": "st_defaultrocket",
+    "displayName": "Normal Ammo",
+    "displayIcon": "/custom/items/augments/bazooka/normalrocket/st_defaultrocket.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "normal.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "normal.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+      "class": "GunFire",
+
+       "fireTime" : 1.5,
+       "baseDps" : 10,
+       "energyUsage" : 0,
+       "ammoUsage" : 7.5,
+       "inaccuracy" : 0.0,
+
+      "projectileType": "rocketshell",
+      "projectileParameters": {},
+      "projectileCount": 1,
+
+     "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 1.5,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+		"recoil" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

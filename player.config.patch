@@ -52,39 +52,39 @@
 */
 		//------augments-----
 			//assaultrifle
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalriflebullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultriflebullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_piercingriflebullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_burstriflebullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_bouncingriflebullet" } },
 			//revolver
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalrevolverbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultrevolverbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_explosiverevolverbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_fastrevolverbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_rapidrevolverbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ghostrevolverbullet" } },
 			//shotgun
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalshotgunshell" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultshotgunshell" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_stickybombshotgunshell" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_poisonshotgunshell" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_fireshotgunshell" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_iceshotgunshell" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricshotgunshell" } },
 			//sniperrifle
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalsniperbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultsniperbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_piercingsniperbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_bouncingsniperbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_sinewavesniperbullet" } },
 			//machinepistol
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalmachinepistolbullet" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultmachinepistolbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricmachinepistolbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_firemachinepistolbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_icemachinepistolbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_poisonmachinepistolbullet" } },
 			//bazooka - rocketlauncher
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalrocket" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultrocket" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_guidedrocket" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_homingrocket" } },
 			//launcher - grenade launcher
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_normalgrenade" } },
+		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultgrenade" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_poisongasgrenade" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_icegasgrenade" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricgasgrenade" } },

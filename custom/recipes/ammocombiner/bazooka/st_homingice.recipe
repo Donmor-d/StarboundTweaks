@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "st_icegasrocket", "count" : 1 },
-    { "item" : "st_homingrocket", "count" : 1 },
-	  { "item" : "st_leadbar", "count" : 3 }
-  ],
-  "output" : { "item" : "st_homingicerocket", "count" : 1 },
-  "groups" : [ "ammocombiner" ]
-}

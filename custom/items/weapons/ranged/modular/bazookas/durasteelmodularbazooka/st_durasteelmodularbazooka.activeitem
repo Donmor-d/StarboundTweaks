@@ -1,24 +1,29 @@
 {
   "itemName" : "st_durasteelmodularbazooka",
   "price" : 1500,
-  "inventoryIcon" : "normal.png",
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A launcher that can have its rockets augmented.",
   "shortdescription" : "Durasteel Modular Bazooka",
-  "level" : 4,
-  "tooltipKind" : "gunwithammo",
+  "tooltipKind" : "st_gunwithammo",
   "category" : "rocketLauncher",
-  "itemTags" : ["weapon","ranged","rocketlauncher"],
   "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","rocketlauncher"],
+  "level" : 4,
+
+  "inventoryIcon" : [
+    { "image" : "/custom/items/weapons/ranged/modular/bazookas/durasteelmodularbazooka/butt/normal.png" },
+    { "image" : "/custom/items/weapons/ranged/modular/bazookas/durasteelmodularbazooka/middle/normal.png" },
+    { "image" : "/custom/items/weapons/ranged/modular/bazookas/durasteelmodularbazooka/barrel/normal.png" }
+  ],
   
   "acceptsAugmentType" : "rocketlauncherammo",               //adiciona munição que usa
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
-    "butt" : "",
-    "middle" : "normal.png",
-    "barrel" : "",
+    "butt" : "/custom/items/weapons/ranged/modular/bazookas/durasteelmodularbazooka/butt/normal.png",
+    "middle" : "/custom/items/weapons/ranged/modular/bazookas/durasteelmodularbazooka/middle/normal.png",
+    "barrel" : "/custom/items/weapons/ranged/modular/bazookas/durasteelmodularbazooka/barrel/normal.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
@@ -54,13 +59,13 @@
   "primaryAltAbility": "allow",  //faz com que a abilidade secundaria seja ativada por m1, usado nos arquivos de munição
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua", "/custom/items/weapons/ranged/st_modulargunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 2,
-    "baseDps" : 6,
+    "fireTime" : 1.5,
+    "baseDps" : 10,
     "energyUsage" : 0,
-    "ammoUsage" : 5,
+    "ammoUsage" : 7.5,
     "inaccuracy" : 0.0,
 
     "reloadTime" : 2,
@@ -68,8 +73,24 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "rocketshell",
-    "projectileParameters" : {},
+    "elementalConfig" : {
+      "physical" : {
+        "primaryAbility" : { "projectileType" : "rocketshell", "projectileParameters" : {"knockback" : 5} }
+        //"fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ] //talvez colocar depois
+      },
+      "fire" : {
+        "primaryAbility" : { "projectileType" : "st_firegasrocket", "projectileParameters" : {} }
+      },
+      "ice" : {
+        "primaryAbility" : { "projectileType" : "st_icegasrocket", "projectileParameters" : {} }
+      },
+      "poison" : {
+        "primaryAbility" : { "projectileType" : "st_poisongasrocket", "projectileParameters" : {} }
+      },
+      "electric" : {
+        "primaryAbility" : { "projectileType" : "st_electricgasrocket", "projectileParameters" : {} }
+      }
+    },
 
     "stances" : {
       "idle" : {

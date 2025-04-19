@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "st_speedingmachinepistolbullet", "count" : 1 },
-    { "item" : "st_soapymachinepistolbullet", "count" : 1 },
-	  { "item" : "st_leadbar", "count" : 3 }
-  ],
-  "output" : { "item" : "st_soapyspeedingmachinepistolbullet", "count" : 1 },
-  "groups" : [ "ammocombiner" ]
-}

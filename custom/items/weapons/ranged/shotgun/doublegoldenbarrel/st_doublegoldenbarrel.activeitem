@@ -65,7 +65,7 @@
     "burstCount" : 2,
     "burstTime" : 0.2,
 
-    "projectileType" : "normalpellet",
+    "projectileType" : "st_normalpellet",
     "projectileParameters" : {
       "knockback" : 10
     },

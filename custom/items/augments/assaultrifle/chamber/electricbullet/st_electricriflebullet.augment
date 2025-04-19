@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_electricriflebullet",
+  "maxStack" : 5,
+  "price" : 1000,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_electricriflebullet.png",
+  "description" : "Changes the assault rifle's element to electric.",
+  "shortdescription" : "Electric Rifle Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  // "notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "assaultrifleammo",
+    "category": "chamber",
+    "name": "st_electricammo",
+    "displayName": "Electrified Ammo",
+    "displayIcon": "/custom/items/augments/assaultrifle/chamber/electricbullet/st_electricriflebullet.png",
+    "elementalType": "electric",
+
+    "inventoryIcon" : "electric.png",
+    "fullbright" : "electricfullbright.png",
+
+    "primaryAbility": {
+      "chamberDamageMult" : 0.75
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

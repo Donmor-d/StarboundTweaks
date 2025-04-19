@@ -2,7 +2,7 @@
   "background" : {
     "type" : "background",
     "fileHeader" : "/interface/tooltips/header.png",
-    "fileBody" : "/interface/tooltips/bodyobject4.png",
+    "fileBody" : "/custom/interface/tooltips/st_bodyammo.png",
     "fileFooter" : "/interface/tooltips/footerobject4.png"
   },
   "moneyIcon" : {
@@ -16,7 +16,6 @@
     "hAnchor" : "left",
     "value" : "0"
   },
-  /*
   "descriptionLabel" : {
     "type" : "label",
     "position" : [12, 90],
@@ -24,55 +23,6 @@
     "vAnchor" : "top",
     "lineSpacing" : 1.2,
     "wrapWidth" : 118
-  },
-  */
-  "damagePerShotTitleLabel" : {
-    "type" : "label",
-    "position" : [9, 88],
-    "hAnchor" : "left",
-    "value" : "Base Damage Per Shot:"
-  },
-  "damagePerShotLabel" : {
-    "type" : "label",
-    "position" : [130, 88],
-    "hAnchor" : "right",
-    "wrapWidth" : 126
-  },
-  "rateOfFireTitleLabel" : {
-    "type" : "label",
-    "position" : [9, 79],
-    "hAnchor" : "left",
-    "value" : "Rate of Fire:"
-  },
-  "rateOfFireLabel" : {
-    "type" : "label",
-    "position" : [130, 79],
-    "hAnchor" : "right",
-    "wrapWidth" : 126
-  },
-  "ammoPerShotTitleLabel" : {
-    "type" : "label",
-    "position" : [9, 70],
-    "hAnchor" : "left",
-    "value" : "Ammo Per Shot:"
-  },
-  "ammoPerShotLabel" : {
-    "type" : "label",
-    "position" : [130, 70],
-    "hAnchor" : "right",
-    "wrapWidth" : 126
-  },
-  "statusEffectTitleLabel" : {
-    "type" : "label",
-    "position" : [9, 61],
-    "hAnchor" : "left",
-    "value" : ""
-  },
-  "statusEffectLabel" : {
-    "type" : "label",
-    "position" : [130, 61],
-    "hAnchor" : "right",
-    "wrapWidth" : 126
   },
   "rarityLabel" : {
     "type" : "label",
@@ -83,31 +33,45 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [67, 131],
+    "position" : [50, 131],
     "file" : "",
     "centered" : true,
     "maxSize" : [38, 38],
     "minSize" : [38, 38]
   },
-  "weaponTypeTitleLabel" : {
-    "type" : "label",
-    "position" : [9, 68],
-    "hAnchor" : "left",
-    "vAnchor" : "top",
-    "wrapWidth" : 118,
-    "value" : "Type:"
-  },
-  "weaponTypeLabel" : {
-    "type" : "label",
-    "position" : [130, 68],
-    "hAnchor" : "right",
-    "vAnchor" : "top",
-    "wrapWidth" : 118,
+  "weaponType1Image" : {
+    "type" : "image",
+    "position" : [94, 143],
     "value" : ""
+  },
+  "weaponType2Image" : {
+    "type" : "image",
+    "position" : [114, 143],
+    "file" : ""
+  },
+  "weaponType3Image" : {
+    "type" : "image",
+    "position" : [94, 123],
+    "file" : ""
+  },
+  "weaponType4Image" : {
+    "type" : "image",
+    "position" : [114, 123],
+    "file" : ""
+  },
+  "weaponType5Image" : {
+    "type" : "image",
+    "position" : [94, 103],
+    "file" : ""
+  },
+  "weaponType6Image" : {
+    "type" : "image",
+    "position" : [114, 103],
+    "file" : ""
   },
   "instructionLabel" : {
     "type" : "label",
-    "position" : [9, 54],
+    "position" : [9, 64],
     "hAnchor" : "left",
     "vAnchor" : "top",
     "wrapWidth" : 118,

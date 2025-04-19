@@ -7,7 +7,7 @@
   "description" : "The power to blow stuff up.",
   "shortdescription" : "Tungsten Rocket Launcher",
   "level" : 2,
-  "tooltipKind" : "gunwithammo",
+  "tooltipKind" : "st_gunwithammo",
   "category" : "rocketLauncher",
   "itemTags" : ["weapon","ranged","rocketlauncher"],
   "twoHanded" : true,

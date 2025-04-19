@@ -1,8 +1,0 @@
-{
-  "input" : [
-    { "item" : "st_leadbar", "count" : 1 },
-	{ "item" : "copperbar", "count" : 2 }
-  ],
-  "output" : { "item" : "st_normalsniperbullet", "count" : 1 },
-  "groups" : [ "st_ammostation", "st_ammobullet", "all" ]
-}

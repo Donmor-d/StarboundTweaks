@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "st_normalgrenade", "count" : 1 },
+    { "item" : "st_defaultgrenade", "count" : 1 },
 	{ "item" : "scorchedcore", "count" : 2 }
   ],
   "output" : { "item" : "st_firegasgrenade", "count" : 1 },

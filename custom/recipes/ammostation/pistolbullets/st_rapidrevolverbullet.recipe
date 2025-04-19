@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "st_defaultrevolverbullet", "count" : 1 },
+	{ "item" : "liquidoil", "count" : 10 }
+  ],
+  "output" : { "item" : "st_fastrevolverbullet", "count" : 1 },
+  "groups" : [ "st_ammostation", "st_ammopistolbullet", "all" ]
+}

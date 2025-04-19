@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "st_poisongasrocket", "count" : 1 },
-    { "item" : "st_guidedrocket", "count" : 1 },
-	  { "item" : "st_leadbar", "count" : 3 }
-  ],
-  "output" : { "item" : "st_guidedpoisonrocket", "count" : 1 },
-  "groups" : [ "ammocombiner" ]
-}

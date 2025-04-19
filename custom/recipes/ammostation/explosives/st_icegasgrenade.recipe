@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "st_normalgrenade", "count" : 1 },
+    { "item" : "st_defaultgrenade", "count" : 1 },
 	{ "item" : "cryonicextract", "count" : 2 }
   ],
   "output" : { "item" : "st_icegasgrenade", "count" : 1 },

@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "st_normalshotgunshell", "count" : 1 },
+    { "item" : "st_defaultshotgunshell", "count" : 1 },
 	{ "item" : "volatilepowder", "count" : 5 },
 	{ "item" : "tar", "count" : 1 }
   ],

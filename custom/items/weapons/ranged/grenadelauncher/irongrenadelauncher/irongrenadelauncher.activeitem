@@ -5,7 +5,7 @@
   "rarity" : "Common",
   "description" : "For when your grenades need some distance.",
   "shortdescription" : "Iron Grenade Launcher",
-  "tooltipKind" : "gunwithammo",
+  "tooltipKind" : "st_gunwithammo",
   "category" : "grenadeLauncher",
   "twoHanded" : false,
   "itemTags" : ["weapon","ranged","grenadelauncher"],

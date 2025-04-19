@@ -1,0 +1,227 @@
+{
+  "itemName" : "st_bouncingriflebullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_bouncingriflebullet.png",
+  "description" : "Enables bounce for assault rifles.",
+  "shortdescription" : "Bouncing Rifle Bullet",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Base damage reduced. First bounce empowers the bullet.",
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "assaultrifleammo",
+    "category": "barrel",
+    "name": "st_bouncingriflebullet",
+    "displayName": "Bouncing Ammo",
+    "displayIcon": "/custom/items/augments/assaultrifle/barrel/bouncingbullet/st_bouncingriflebullet.png",
+
+    "inventoryIcon" : "bouncing.png",
+
+    "primaryAbility": {
+      "barrelDamageMult" : 0.5,
+
+      "elementalConfig": {
+        "physical": {
+          "primaryAbility": {
+            "projectileType": "bouncybullet",
+            "projectileParameters": {
+              "speed" : 100,
+              "actionOnCollide" : [
+                {
+                  "action" : "sound",
+                  "options" : [
+                    "/sfx/projectiles/bullet_ricochet1.ogg",
+                    "/sfx/projectiles/bullet_ricochet2.ogg",
+                    "/sfx/projectiles/bullet_ricochet3.ogg",
+                    "/sfx/projectiles/bullet_ricochet4.ogg",
+                    "/sfx/projectiles/bullet_ricochet5.ogg",
+                    "/sfx/projectiles/bullet_ricochet6.ogg",
+                    "/sfx/projectiles/bullet_ricochet7.ogg",
+                    "/sfx/projectiles/bullet_ricochet8.ogg",
+                    "/sfx/projectiles/bullet_ricochet9.ogg",
+                    "/sfx/projectiles/bullet_ricochet10.ogg",
+                    "/sfx/projectiles/bullet_ricochet11.ogg",
+                    "/sfx/projectiles/bullet_ricochet12.ogg",
+                    "/sfx/projectiles/bullet_ricochet13.ogg"
+                  ]
+                },
+                {
+                  "action" : "projectile",
+                  "type" : "st_strongsniperbullet",
+                  "inheritDamageFactor" : 0.75,
+                  "angleAdjust" : 0,
+                  "config" : {
+                    "speed" : 100
+                  }  
+                }
+              ]
+            }
+          }
+        },
+        "fire": {
+          "primaryAbility": {
+            "projectileType": "bouncybullet",
+            "projectileParameters": {
+              "damageKind" : "fireplasmabullet",
+              "statusEffects" : [ "burning" ], 
+              "speed" : 100,
+              "actionOnCollide" : [
+                {
+                  "action" : "sound",
+                  "options" : [
+                    "/sfx/projectiles/bullet_ricochet1.ogg",
+                    "/sfx/projectiles/bullet_ricochet2.ogg",
+                    "/sfx/projectiles/bullet_ricochet3.ogg",
+                    "/sfx/projectiles/bullet_ricochet4.ogg",
+                    "/sfx/projectiles/bullet_ricochet5.ogg",
+                    "/sfx/projectiles/bullet_ricochet6.ogg",
+                    "/sfx/projectiles/bullet_ricochet7.ogg",
+                    "/sfx/projectiles/bullet_ricochet8.ogg",
+                    "/sfx/projectiles/bullet_ricochet9.ogg",
+                    "/sfx/projectiles/bullet_ricochet10.ogg",
+                    "/sfx/projectiles/bullet_ricochet11.ogg",
+                    "/sfx/projectiles/bullet_ricochet12.ogg",
+                    "/sfx/projectiles/bullet_ricochet13.ogg"
+                  ]
+                },
+                {
+                  "action" : "projectile",
+                  "type" : "st_strongfiresniperbullet",
+                  "inheritDamageFactor" : 0.75,
+                  "angleAdjust" : 0,
+                  "config" : {
+                    "speed" : 100
+                  }  
+                }
+              ]
+            }
+          }
+        },
+        "ice": {
+          "primaryAbility": {
+            "projectileType": "bouncybullet",
+            "projectileParameters": {
+              "damageKind" : "iceplasmabullet",
+              "statusEffects" : [ "frostslow" ], 
+              "speed" : 100,
+              "actionOnCollide" : [
+                {
+                  "action" : "sound",
+                  "options" : [
+                    "/sfx/projectiles/bullet_ricochet1.ogg",
+                    "/sfx/projectiles/bullet_ricochet2.ogg",
+                    "/sfx/projectiles/bullet_ricochet3.ogg",
+                    "/sfx/projectiles/bullet_ricochet4.ogg",
+                    "/sfx/projectiles/bullet_ricochet5.ogg",
+                    "/sfx/projectiles/bullet_ricochet6.ogg",
+                    "/sfx/projectiles/bullet_ricochet7.ogg",
+                    "/sfx/projectiles/bullet_ricochet8.ogg",
+                    "/sfx/projectiles/bullet_ricochet9.ogg",
+                    "/sfx/projectiles/bullet_ricochet10.ogg",
+                    "/sfx/projectiles/bullet_ricochet11.ogg",
+                    "/sfx/projectiles/bullet_ricochet12.ogg",
+                    "/sfx/projectiles/bullet_ricochet13.ogg"
+                  ]
+                },
+                {
+                  "action" : "projectile",
+                  "type" : "st_strongicesniperbullet",
+                  "inheritDamageFactor" : 0.75,
+                  "angleAdjust" : 0,
+                  "config" : {
+                    "speed" : 100
+                  }  
+                }
+              ]
+            }
+          }
+        },
+        "poison": {
+          "primaryAbility": {
+            "projectileType": "bouncybullet",
+            "projectileParameters": {
+              "damageKind" : "poisonplasmabullet",
+              "statusEffects" : [ "weakpoison" ], 
+              "speed" : 100,
+              "actionOnCollide" : [
+                {
+                  "action" : "sound",
+                  "options" : [
+                    "/sfx/projectiles/bullet_ricochet1.ogg",
+                    "/sfx/projectiles/bullet_ricochet2.ogg",
+                    "/sfx/projectiles/bullet_ricochet3.ogg",
+                    "/sfx/projectiles/bullet_ricochet4.ogg",
+                    "/sfx/projectiles/bullet_ricochet5.ogg",
+                    "/sfx/projectiles/bullet_ricochet6.ogg",
+                    "/sfx/projectiles/bullet_ricochet7.ogg",
+                    "/sfx/projectiles/bullet_ricochet8.ogg",
+                    "/sfx/projectiles/bullet_ricochet9.ogg",
+                    "/sfx/projectiles/bullet_ricochet10.ogg",
+                    "/sfx/projectiles/bullet_ricochet11.ogg",
+                    "/sfx/projectiles/bullet_ricochet12.ogg",
+                    "/sfx/projectiles/bullet_ricochet13.ogg"
+                  ]
+                },
+                {
+                  "action" : "projectile",
+                  "type" : "st_strongpoisonsniperbullet",
+                  "inheritDamageFactor" : 0.75,
+                  "angleAdjust" : 0,
+                  "config" : {
+                    "speed" : 100
+                  }  
+                }
+              ]
+            }
+          }
+        },
+        "electric": {
+          "primaryAbility": {
+            "projectileType": "bouncybullet",
+            "projectileParameters": {
+              "damageKind" : "electricplasmabullet",
+              "statusEffects" : [ "electrified" ], 
+              "speed" : 100,
+              "actionOnCollide" : [
+                {
+                  "action" : "sound",
+                  "options" : [
+                    "/sfx/projectiles/bullet_ricochet1.ogg",
+                    "/sfx/projectiles/bullet_ricochet2.ogg",
+                    "/sfx/projectiles/bullet_ricochet3.ogg",
+                    "/sfx/projectiles/bullet_ricochet4.ogg",
+                    "/sfx/projectiles/bullet_ricochet5.ogg",
+                    "/sfx/projectiles/bullet_ricochet6.ogg",
+                    "/sfx/projectiles/bullet_ricochet7.ogg",
+                    "/sfx/projectiles/bullet_ricochet8.ogg",
+                    "/sfx/projectiles/bullet_ricochet9.ogg",
+                    "/sfx/projectiles/bullet_ricochet10.ogg",
+                    "/sfx/projectiles/bullet_ricochet11.ogg",
+                    "/sfx/projectiles/bullet_ricochet12.ogg",
+                    "/sfx/projectiles/bullet_ricochet13.ogg"
+                  ]
+                },
+                {
+                  "action" : "projectile",
+                  "type" : "st_strongelectricsniperbullet",
+                  "inheritDamageFactor" : 0.75,
+                  "angleAdjust" : 0,
+                  "config" : {
+                    "speed" : 100
+                  }  
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

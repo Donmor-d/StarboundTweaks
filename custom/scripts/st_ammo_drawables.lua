@@ -1,10 +1,11 @@
+local oldUpdate = update or function() end
 
-function update(dt)
+function update(dt) oldUpdate(dt)
 
     localAnimator.clearDrawables()
 
     local maxAmmo = animationConfig.animationParameter("maxAmmo") and math.floor(animationConfig.animationParameter("maxAmmo")) or 0
-    local currentAmmo = math.floor(animationConfig.animationParameter("currentAmmo"))
+    local currentAmmo = math.floor(animationConfig.animationParameter("currentAmmo") or 0)
     local pos = activeItemAnimation.ownerPosition()
 
     self.showTimer = self.showTimer or 0

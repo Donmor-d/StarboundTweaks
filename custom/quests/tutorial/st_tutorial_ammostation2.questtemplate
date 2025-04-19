@@ -23,7 +23,7 @@
       },
       {
         "type" : "gatherItem",
-        "itemName" : "st_normalriflebullet",
+        "itemName" : "st_defaultriflebullet",
         "count" : 1,
         "consume" : false
       }

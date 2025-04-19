@@ -24,7 +24,7 @@
   {
     "op": "replace",
     "path": "/primaryAbility/projectileType",
-    "value": "normalpellet"
+    "value": "st_normalpellet"
   },
   {
     "op": "add",

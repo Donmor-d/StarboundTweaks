@@ -5,22 +5,25 @@
   "rarity" : "Rare",
   "description" : "A fast-firing handgun that can have its bullets augmented.",
   "shortdescription" : "Aegisalt Modular Pistol",
-  "tooltipKind" : "gunwithammo",
+  "tooltipKind" : "st_gunwithammo",
   "category" : "machinePistol",
   "twoHanded" : false,
   "itemTags" : ["weapon","ranged","machinepistol"],
   "level" : 5,
 
-  "inventoryIcon" : "normal.png",
+  "inventoryIcon" : [
+    { "image" : "/custom/items/weapons/ranged/modular/machinepistols/aegisaltmodularpistol/butt/normal.png" },
+    { "image" : "/custom/items/weapons/ranged/modular/machinepistols/aegisaltmodularpistol/middle/normal.png" },
+    { "image" : "/custom/items/weapons/ranged/modular/machinepistols/aegisaltmodularpistol/barrel/normal.png" }
+  ],
   
   "acceptsAugmentType" : "machinepistolammo",
 
-  "animation" : "st_aegisaltmodularpistol.animation",
+  "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
-    "butt" : "",
-    "middle" : "normal.png",
-    "middleFullbright" : "fullbright.png",
-    "barrel" : "",
+    "butt" : "/custom/items/weapons/ranged/modular/machinepistols/aegisaltmodularpistol/butt/normal.png",
+    "middle" : "/custom/items/weapons/ranged/modular/machinepistols/aegisaltmodularpistol/middle/normal.png",
+    "barrel" : "/custom/items/weapons/ranged/modular/machinepistols/aegisaltmodularpistol/barrel/normal.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
@@ -46,13 +49,13 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"], 
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua", "/custom/items/weapons/ranged/st_modulargunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.11,
-    "baseDps" : 6,
+    "baseDps" : 8.5,
     "energyUsage" : 0,
-    "ammoUsage" : 0.75,
+    "ammoUsage" : 1,
     "inaccuracy" : 0.04,
 	   
     "reloadTime" : 1,     //tempo que demora para poder usar a arma
@@ -60,10 +63,25 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "standardbullet",
-    "projectileParameters" : {
-      "knockback" : 2
+    "elementalConfig" : {
+      "physical" : {
+        "primaryAbility" : { "projectileType" : "standardbullet", "projectileParameters" : {"knockback" : 2} }
+        //"fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ] //talvez colocar depois
+      },
+      "fire" : {
+        "primaryAbility" : { "projectileType" : "fireplasma", "projectileParameters" : {"knockback" : 2, "statusEffects" : [ "burning" ] } }
+      },
+      "ice" : {
+        "primaryAbility" : { "projectileType" : "iceplasma", "projectileParameters" : {"knockback" : 2, "statusEffects" : [ "frostslow" ] } }
+      },
+      "poison" : {
+        "primaryAbility" : { "projectileType" : "poisonplasma", "projectileParameters" : {"knockback" : 2, "statusEffects" : [ "weakpoison" ] } }
+      },
+      "electric" : {
+        "primaryAbility" : { "projectileType" : "electricplasma", "projectileParameters" : {"knockback" : 2, "statusEffects" : [ "electrified" ] } }
+      }
     },
+    
     "stances" : {
       "idle" : {
         "armRotation" : 0,

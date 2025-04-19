@@ -1,0 +1,49 @@
+{
+  "itemName" : "st_piercingriflebullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_piercingriflebullet.png",
+  "description" : "Enables piercing for assault rifles.",
+  "shortdescription" : "Piercing Rifle Bullet",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Damage is slightly reduced", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "assaultrifleammo",
+    "category": "barrel",
+    "name": "st_piercingriflebullet",
+    "displayName": "Piercing Ammo",
+    "displayIcon": "/custom/items/augments/assaultrifle/barrel/piercingbullet/st_piercingriflebullet.png",
+
+    "inventoryIcon" : "piercing.png",
+
+    "primaryAbility": {
+      "barrelDamageMult" : 0.75,
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { "projectileType" : "piercingbullet", "projectileParameters" : { "piercing": true, "knockback" : 5} }
+        },
+        "fire" : {
+          "primaryAbility" : { "projectileType" : "fireplasma", "projectileParameters" : { "piercing": true, "knockback" : 5, "statusEffects" : [ "burning" ] } }
+        },
+        "ice" : {
+          "primaryAbility" : { "projectileType" : "iceplasma", "projectileParameters" : { "piercing": true, "knockback" : 5, "statusEffects" : [ "frostslow" ] } }
+        },
+        "poison" : {
+          "primaryAbility" : { "projectileType" : "poisonplasma", "projectileParameters" : { "piercing": true, "knockback" : 5, "statusEffects" : [ "weakpoison" ] } }
+        },
+        "electric" : {
+          "primaryAbility" : { "projectileType" : "electricplasma", "projectileParameters" : { "piercing": true, "knockback" : 5, "statusEffects" : [ "electrified" ] } }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

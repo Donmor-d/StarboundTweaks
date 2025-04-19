@@ -17,7 +17,7 @@
       {
         "action" : "projectile",
         "inheritDamageFactor" : 0.5,
-        "type" : "largeelectriccloud",
+        "type" : "largepoisoncloud",
         "angleAdjust" : 180,
         //"time" : 0.075,
         "repeat" : true,

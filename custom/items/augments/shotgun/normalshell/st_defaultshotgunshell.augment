@@ -1,0 +1,84 @@
+{
+  "itemName" : "st_defaultshotgunshell",
+  "price" : 500,
+  "rarity" : "Common",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_defaultshotgunshell.png",
+  "description" : "Regular shell for shotguns.",
+  "shortdescription" : "Normal Shotgun Shell",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Shotgun",
+  "notes" : "Bullets weaken after a short time.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+  "augment": {
+    "type": "shotgunammo",
+    "name": "st_defaultshotgunshell",
+    "displayName": "Normal Ammo",
+    "displayIcon": "/custom/items/augments/shotgun/normalshell/st_defaultshotgunshell.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "normal.png",
+
+    "animationParts" : {
+      "butt" : "",
+      "middle" : "normal.png",
+      "barrel" : "",
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+
+    "primaryAbility": {
+      "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+      "class": "GunFire",
+
+       "fireTime" : 1.2,
+       "baseDps" : 20,
+       "energyUsage" : 0,
+       "ammoUsage" : 4.5,
+       "inaccuracy" : 0.12,
+	   
+       "reloadTime" : 1.5,     //tempo de recarga
+  
+       "projectileCount" : 8,
+	      "fireType" : "auto",
+
+      "projectileType": "st_normalpellet",
+      "projectileParameters": {
+	    "damageKind" : "shotgunbullet",
+        "knockback" : 30
+	  },
+
+      "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

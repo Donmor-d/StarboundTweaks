@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "st_normalmachinepistolbullet", "count" : 1 },
+    { "item" : "st_defaultmachinepistolbullet", "count" : 1 },
 	{ "item" : "cryonicextract", "count" : 2 }
   ],
   "output" : { "item" : "st_icemachinepistolbullet", "count" : 1 },

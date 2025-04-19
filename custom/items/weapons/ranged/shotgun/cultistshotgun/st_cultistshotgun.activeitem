@@ -62,7 +62,7 @@
     "inaccuracy" : 0.13,
     "fireType" : "auto",
 
-    "projectileType" : "poisonpellet",
+    "projectileType" : "st_poisonpellet",
     "projectileParameters" : {
       "knockbackRange" : [10, 40],
 	  "statusEffects" : [ "weakpoison" ] 

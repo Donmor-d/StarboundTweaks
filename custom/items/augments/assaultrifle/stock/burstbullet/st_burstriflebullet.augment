@@ -1,0 +1,35 @@
+{
+  "itemName" : "st_burstriflebullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_burstriflebullet.png",
+  "description" : "Changes the assault rifle's fire mode to burst.",
+  "shortdescription" : "Burst Rifle Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "assaultrifleammo",
+    "category": "stock",
+    "name": "st_burstammo",
+    "displayName": "Burst Ammo",
+    "displayIcon": "/custom/items/augments/assaultrifle/stock/burstbullet/st_burstriflebullet.png",
+
+    "inventoryIcon" : "burst.png",
+
+    "primaryAbility": {
+      "fireType": "burst",
+      "burstCount": 3,
+      "ammoUsage" : 1.5,
+      "burstTime": 0.1,
+      "fireTime" : 0.2
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

@@ -5,21 +5,25 @@
   "rarity" : "Rare",
   "description" : "A fully automatic rifle that can have its bullets augmented.",
   "shortdescription" : "Titanium Modular Rifle",
-  "tooltipKind" : "gunwithammo",
+  "tooltipKind" : "st_gunwithammo",
   "category" : "assaultRifle",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","assaultrifle"],
   "level" : 3,
 
-  "inventoryIcon" : "normal.png",
+  "inventoryIcon" : [
+    { "image" : "/custom/items/weapons/ranged/modular/assaultrifles/titaniummodularrifle/butt/normal.png" },
+    { "image" : "/custom/items/weapons/ranged/modular/assaultrifles/titaniummodularrifle/middle/normal.png" },
+    { "image" : "/custom/items/weapons/ranged/modular/assaultrifles/titaniummodularrifle/barrel/normal.png" }
+  ],
   
   "acceptsAugmentType" : "assaultrifleammo",               //adiciona munição que usa
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
-    "butt" : "",
-    "middle" : "normal.png",
-    "barrel" : "",
+    "butt" : "/custom/items/weapons/ranged/modular/assaultrifles/titaniummodularrifle/butt/normal.png",
+    "middle" : "/custom/items/weapons/ranged/modular/assaultrifles/titaniummodularrifle/middle/normal.png",
+    "barrel" : "/custom/items/weapons/ranged/modular/assaultrifles/titaniummodularrifle/barrel/normal.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
@@ -67,11 +71,11 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],  
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua", "/custom/items/weapons/ranged/st_modulargunfire.lua"],  
     "class" : "GunFire",
 
     "fireTime" : 0.11,
-    "baseDps" : 10.5,
+    "baseDps" : 16,
     "energyUsage" : 0,   //~39.375
     "ammoUsage" : 1,
     "inaccuracy" : 0.02,
@@ -82,10 +86,25 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "standardbullet",
-    "projectileParameters" : {
-      "knockback" : 5
+    "elementalConfig" : {
+      "physical" : {
+        "primaryAbility" : { "projectileType" : "standardbullet", "projectileParameters" : {"knockback" : 5} }
+        //"fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ] //talvez colocar depois
+      },
+      "fire" : {
+        "primaryAbility" : { "projectileType" : "fireplasma", "projectileParameters" : {"knockback" : 5, "statusEffects" : [ "burning" ] } }
+      },
+      "ice" : {
+        "primaryAbility" : { "projectileType" : "iceplasma", "projectileParameters" : {"knockback" : 5, "statusEffects" : [ "frostslow" ] } }
+      },
+      "poison" : {
+        "primaryAbility" : { "projectileType" : "poisonplasma", "projectileParameters" : {"knockback" : 5, "statusEffects" : [ "weakpoison" ] } }
+      },
+      "electric" : {
+        "primaryAbility" : { "projectileType" : "electricplasma", "projectileParameters" : {"knockback" : 5, "statusEffects" : [ "electrified" ] } }
+      }
     },
+    
     "stances" : {
       "idle" : {
         "armRotation" : 0,
