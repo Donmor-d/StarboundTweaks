@@ -1,0 +1,177 @@
+{
+  "itemName" : "st_sinewavesniperbullet",
+  "maxStack" : 5,
+  "price" : 1500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_sinewavesniperbullet.png",
+  "description" : "Splits bullets into 2 waving bullets.",
+  "shortdescription" : "Sinewave Sniper Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "sniperrifleammo",
+    "category": "barrel",
+    "name": "st_sinewavesniperbullet",
+    "displayName": "Sine Wave Ammo",
+    "displayIcon": "/custom/items/augments/sniperrifle/sinewavebullet/st_sinewavesniperbullet.png",
+
+    "inventoryIcon" : "sinewave.png",
+    
+    "primaryAbility": {
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "standardbullet",
+              "projectileTypeUncharged": "standardbullet",
+              "projectileTypeCharged": "standardbullet",
+              "projectileParameters" : {
+                "timeToLive" : 0,
+                "actionOnReap" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "waveAmplitude" : 0.25
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "standardbullet",
+              "projectileTypeUncharged": "standardbullet",
+              "projectileTypeCharged": "standardbullet",
+              "projectileParameters" : {
+                "timeToLive" : 0,
+                "actionOnReap" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "waveAmplitude" : 0.25
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "standardbullet",
+              "projectileTypeUncharged": "standardbullet",
+              "projectileTypeCharged": "standardbullet",
+              "projectileParameters" : {
+                "timeToLive" : 0,
+                "actionOnReap" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "waveAmplitude" : 0.25
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "standardbullet",
+              "projectileTypeUncharged": "standardbullet",
+              "projectileTypeCharged": "standardbullet",
+              "projectileParameters" : {
+                "timeToLive" : 0,
+                "actionOnReap" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "waveAmplitude" : 0.25
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "standardbullet",
+              "projectileTypeUncharged": "standardbullet",
+              "projectileTypeCharged": "standardbullet",
+              "projectileParameters" : {
+                "timeToLive" : 0,
+                "actionOnReap" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "st_waveshot",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "waveAmplitude" : 0.25
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

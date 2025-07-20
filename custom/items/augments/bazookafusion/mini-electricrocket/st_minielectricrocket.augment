@@ -74,7 +74,7 @@
         "periodicActions":[
           {
             "action" : "projectile",
-            "inheritDamageFactor" : 1,
+            "inheritDamageFactor" : 0.5,
             "type" : "st_smallelectriccloud",
             "angleAdjust" : 180,
             "time" : 0.075,

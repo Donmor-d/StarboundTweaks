@@ -1,0 +1,109 @@
+{
+  "itemName": "st_ghostrevolverbullet",
+  "maxStack" : 5,
+  "price": 500,
+  "rarity": "Uncommon",
+  "category": "ammoModifier",
+  "inventoryIcon": "st_ghostrevolverbullet.png",
+  "description": "Allows revolver bullets to pierce through.",
+  "shortdescription": "Ghost revolver Bullet",
+  "tooltipKind": "st_ammomodifiernotes",
+
+  "notes" : "Bullets have a limited time span.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder": "/custom/items/buildscripts/st_buildammo.lua",
+  "augment": {
+    "type": "pistolammo",
+    "category": "barrel",
+    "name": "st_ghostrevolverbullet",
+    "displayName": "Ghost Ammo",
+    "displayIcon": "/custom/items/augments/revolver/barrel/ghostbullet/st_ghostrevolverbullet.png",
+    
+    "inventoryIcon": "ghost.png",
+    
+    "primaryAbility": {
+      "barrelDamageMult": 0.75,
+
+      //TODO colocar elementais
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_ghostbullet",
+              "empoweredProjectileType": "st_strongghostbullet",
+              "projectileParameters": {
+                "knockback": 6
+              },
+              "empoweredProjectileParameters": {
+              }
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_fireghostbullet",
+              "empoweredProjectileType": "st_strongfireghostbullet",
+              "projectileParameters": {
+                "statusEffects" : [ "burning" ],
+                "knockback": 6
+              },
+              "empoweredProjectileParameters": {
+                "statusEffects" : [ "burning" ]
+              }
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_iceghostbullet",
+              "empoweredProjectileType": "st_strongiceghostbullet",
+              "projectileParameters": {
+                "statusEffects" : [ "frostslow" ],
+                "knockback": 6
+              },
+              "empoweredProjectileParameters": {
+                "statusEffects" : [ "frostslow" ]
+              }
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_poisonghostbullet",
+              "empoweredProjectileType": "st_strongpoisonghostbullet",
+              "projectileParameters": {
+                "statusEffects" : [ "weakpoison" ],
+                "knockback": 6
+              },
+              "empoweredProjectileParameters": {
+                "statusEffects" : [ "weakpoison" ]
+              }
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_electricghostbullet",
+              "empoweredProjectileType": "st_strongelectricghostbullet",
+              "projectileParameters": {
+                "statusEffects" : [ "electrified" ],
+                "knockback": 6
+              },
+              "empoweredProjectileParameters": {
+                "statusEffects" : [ "electrified" ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "scripts": [
+    "/custom/items/augments/ammo/st_ammo.lua"
+  ]
+}

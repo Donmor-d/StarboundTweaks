@@ -22,7 +22,6 @@
   "movementSettings" : {
     "gravityMultiplier" : 0.1
   },
-  "damageType" : "damage",
-  "knockback" : 40,
-  "damageRepeatGroup" : "STexplosion"
+  "damageType" : "NoDamage",
+  "knockback" : 40
 }

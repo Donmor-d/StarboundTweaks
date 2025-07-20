@@ -1,10 +1,10 @@
 require "/scripts/vec2.lua"
 
 function init()
-  self.targetSpeed = vec2.mag(mcontroller.velocity())
-  self.controlForce = config.getParameter("baseHomingControlForce") * self.targetSpeed
+  self.targetSpeed = vec2.mag(mcontroller.velocity()) * 1.5
+  self.controlForce = config.getParameter("baseHomingControlForce") * vec2.mag(mcontroller.velocity())
 
-  self.timeToHome = 0.5
+  self.timeToHome = config.getParameter("detectionTime", 0.5)
   homingActions = config.getParameter("homingActions", {})
   self.lock = false
 end
@@ -21,11 +21,8 @@ function update(dt)
             order = "nearest"
         })
 
-        
-
         for _, target in ipairs(targets) do
             
-
             if entity.isValidTarget(target) and entity.entityInSight(target)then
                 if not self.lock then
                     for _,action in ipairs(homingActions) do

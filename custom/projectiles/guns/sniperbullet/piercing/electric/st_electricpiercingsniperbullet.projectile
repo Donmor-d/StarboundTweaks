@@ -1,0 +1,33 @@
+{
+  "projectileName" : "st_electricpiercingsniperbullet",
+  "image" : "st_electricpiercingsniperbullet.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "lightColor" : [102, 32, 110],
+  "frameNumber" : 1,
+  "damageKind" : "electricplasmabullet",
+  "pointLight" : false,
+  "flippable" : true,
+  "damageRepeatGroup" : "STpiercing",
+  "damageRepeatTimeout"	: 0.15,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmaelectricexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 150,
+  "knockback" : 0,
+  "scripts" : ["/custom/projectiles/guns/sniperbullet/piercing/st_piercingsniperbullet.lua"],
+
+  "hitactions" : [
+    {
+      "action" : "projectile",
+      "type" : "st_strongelectricpiercingsniperbullet",
+      "inheritDamageFactor" : 2,
+      "angleAdjust" : 0
+    }
+  ]
+}

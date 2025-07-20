@@ -10,7 +10,5 @@
   "piercing" : true,
   "bounces" : -1,
   "flippable" : true,
-  "damageKind" : "default",
-  "damageRepeatGroup" : "STexplosion",
-  "damageRepeatTimeout"	: 0.25
+  "damageKind" : "NoDamage"
 }

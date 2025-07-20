@@ -44,8 +44,7 @@
   "movementSettings" : {
     "gravityMultiplier" : 0.1
   },
-  "damageType" : "damage",
+  "damageType" : "NoDamage",
   "knockback" : 40,
-  "damageRepeatGroup" : "STexplosion",
-  "damageKind" : "fireplasma"
+  "damageKind" : "electricplasma"
 }

@@ -38,60 +38,63 @@
       "action" : "projectile",
       "type" : "st_weaknormalpellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.3,
-      "angleAdjust" : 0
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 0,
+      "config" : {
+        "speed" : 100
+      }
     },
     {
       "action" : "projectile",
       "type" : "st_weaknormalpellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.3,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 10
     },
     {
       "action" : "projectile",
       "type" : "st_weaknormalpellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.3,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 350
     },
     {
       "action" : "projectile",
       "type" : "st_weaknormalpellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.3,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 20
     },
     {
       "action" : "projectile",
       "type" : "st_weaknormalpellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.3,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 340
     },
     {
       "action" : "projectile",
       "type" : "st_weaknormalpellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.3,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 30
     },
     {
       "action" : "projectile",
       "type" : "st_weaknormalpellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.3,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 330
     },
     {
       "action" : "projectile",
       "type" : "st_weaknormalpellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.3,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 40
     }
   ],
   "power" : 0,
-  "damageKind" : "nodamage",
-  "damageType" : "noDamage"
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
 }

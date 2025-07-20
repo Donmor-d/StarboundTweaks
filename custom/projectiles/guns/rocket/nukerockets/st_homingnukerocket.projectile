@@ -25,12 +25,11 @@
   "speed" : 25.0,
   "physics" : "grenade",
   "knockbackDirectional" : true,
-  "damageType" : "damage",
+  "damageType" : "NoDamage",
   "knockback" : 40,
-  "damageRepeatGroup" : "STexplosion",
 
   "scripts" : [ "/custom/projectiles/guns/rocket/homingrocketaugment/st_homingrocket.lua" ],
-  "baseHomingControlForce" : 5
-  //"detectionTime" : 0.5, deprecated
+  "baseHomingControlForce" : 3,
+  "detectionTime" : 0.5
 
 }

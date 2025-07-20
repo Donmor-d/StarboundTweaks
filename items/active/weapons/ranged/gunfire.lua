@@ -7,9 +7,6 @@ GunFire = WeaponAbility:new()
 function GunFire:init()
   self.weapon:setStance(self.stances.idle)
 
-  self.shakeTime = self.shakeTime or 0.25
-  self.shakeAmount = self.shakeAmount or 1
-
   if self.ammoUsage == nil then
     self.ammoUsage = self.energyUsage/10 or 0
   end
@@ -35,9 +32,9 @@ function GunFire:update(dt, fireMode, shiftHeld)
   end
 
   if self.fireMode == "primary"
-    and not self.weapon.currentAbility
-    and self.cooldownTimer == 0     
-    and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
+  and not self.weapon.currentAbility
+  and self.cooldownTimer == 0     
+  and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
     if self.fireType == "auto" then
       self:setState(self.auto)

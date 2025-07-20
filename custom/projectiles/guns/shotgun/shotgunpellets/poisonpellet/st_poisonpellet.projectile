@@ -13,13 +13,13 @@
   "actionOnCollide" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmapoisonexplosion.config"
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmapoisonexplosion.config"
     }
   ],
   "actionOnHit" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmapoisonexplosion.config"
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmapoisonexplosion.config"
     }
   ],
   "actionOnTimeout" : [

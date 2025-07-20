@@ -27,19 +27,63 @@
 
       "elementalConfig" : {
         "physical" : {
-          "primaryAbility" : { "projectileType" : "piercingbullet", "projectileParameters" : { "piercing": true, "knockback" : 5} }
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "piercingbullet", 
+              "projectileParameters" : {
+                "piercing" : true,
+                "knockback": 5
+              }
+            }
+          }
         },
         "fire" : {
-          "primaryAbility" : { "projectileType" : "fireplasma", "projectileParameters" : { "piercing": true, "knockback" : 5, "statusEffects" : [ "burning" ] } }
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "fireplasma", 
+              "projectileParameters" : {
+                "piercing" : true,
+                "knockback": 5,
+                "statusEffects" : [ "burning" ]
+              }
+            }
+          }
         },
         "ice" : {
-          "primaryAbility" : { "projectileType" : "iceplasma", "projectileParameters" : { "piercing": true, "knockback" : 5, "statusEffects" : [ "frostslow" ] } }
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "iceplasma", 
+              "projectileParameters" : {
+                "piercing" : true,
+                "knockback": 5,
+                "statusEffects" : [ "frostslow" ]
+              }
+            }
+          }
         },
         "poison" : {
-          "primaryAbility" : { "projectileType" : "poisonplasma", "projectileParameters" : { "piercing": true, "knockback" : 5, "statusEffects" : [ "weakpoison" ] } }
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "poisonplasma", 
+              "projectileParameters" : {
+                "piercing" : true,
+                "knockback": 5,
+                "statusEffects" : [ "weakpoison" ]
+              }
+            }
+          }
         },
         "electric" : {
-          "primaryAbility" : { "projectileType" : "electricplasma", "projectileParameters" : { "piercing": true, "knockback" : 5, "statusEffects" : [ "electrified" ] } }
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "electricplasma", 
+              "projectileParameters" : {
+                "piercing" : true,
+                "knockback": 5,
+                "statusEffects" : [ "electrified" ]
+              }
+            }
+          }
         }
       }
     }

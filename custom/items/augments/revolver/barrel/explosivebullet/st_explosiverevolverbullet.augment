@@ -1,0 +1,95 @@
+{
+  "itemName": "st_explosiverevolverbullet",
+  "maxStack" : 5,
+  "price": 500,
+  "rarity": "Rare",
+  "category": "ammoModifier",
+  "inventoryIcon": "st_explosiverevolverbullet.png",
+  "description": "Enables explosive ammo for revolvers.",
+  "shortdescription": "Explosive Revolver Bullet",
+  "tooltipKind": "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder": "/custom/items/buildscripts/st_buildammo.lua",
+  "augment": {
+    "type": "pistolammo",
+    "category": "barrel",
+    "name": "st_explosiverevolverbullet",
+    "displayName": "Explosive Ammo",
+    "displayIcon": "/custom/items/augments/revolver/barrel/explosivebullet/st_explosiverevolverbullet.png",
+
+    "inventoryIcon": "explosive.png",
+    
+    "primaryAbility": {
+      "barrelDamageMult": 0.75,
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "explosivebullet", 
+              "empoweredProjectileType": "minirocket",
+              "projectileParameters" : {
+                "knockback": 6
+              },
+              "empoweredProjectileParameters" : {}
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "airburstfire", 
+              "empoweredProjectileType": "st_minifirerocket",
+              "projectileParameters" : {
+                "knockback": 6
+              },
+              "empoweredProjectileParameters" : {}
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "airburstice", 
+              "empoweredProjectileType": "st_miniicerocket",
+              "projectileParameters" : {
+                "knockback": 6
+              },
+              "empoweredProjectileParameters" : {}
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "airburstpoison", 
+              "empoweredProjectileType": "st_minipoisonrocket",
+              "projectileParameters" : {
+                "knockback": 6
+              },
+              "empoweredProjectileParameters" : {}
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "airburstelectric", 
+              "empoweredProjectileType": "st_minielectricrocket",
+              "projectileParameters" : {
+                "knockback": 6
+              },
+              "empoweredProjectileParameters" : {}
+            }
+          }
+        }
+      }
+      
+    }
+  },
+  "scripts": [
+    "/custom/items/augments/ammo/st_ammo.lua"
+  ]
+}

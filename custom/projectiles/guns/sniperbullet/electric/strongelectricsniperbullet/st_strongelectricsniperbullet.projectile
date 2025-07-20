@@ -3,19 +3,20 @@
   "image" : "st_strongelectricsniperbullet.png",
   "physics" : "laser",
   "animationCycle" : 0.25,
-  "lightColor" : [255, 216, 0],
+  "lightColor" : [234, 76, 255],
   "fullBright" : true,
   "frameNumber" : 1,
   "damageKind" : "electricplasmabullet",
+  "emitters" : [ "electricplasma" ],
   "pointLight" : false,
   "flippable" : true,
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmaelectricexplosion.config"
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmaelectricexplosion.config"
     }
   ],
-  "statusEffects" : [ ],
+  "statusEffects" : [ "electrified" ],
   "power" : 5.0,
   "speed" : 150,
   "knockback" : 0

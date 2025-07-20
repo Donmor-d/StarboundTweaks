@@ -1,0 +1,247 @@
+{
+  "itemName" : "st_splitsniperbullet",
+  "maxStack" : 5,
+  "price" : 1500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_splitsniperbullet.png",
+  "description" : "Bullets split into 3 after a shorter time",
+  "shortdescription" : "Split Sniper Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "sniperrifleammo",
+    "category": "barrel",
+    "name": "st_splitsniperbullet",
+    "displayName": "Split Ammo",
+    "displayIcon": "/custom/items/augments/sniperrifle/barrel/splitbullet/st_splitsniperbullet.png",
+
+    "inventoryIcon" : "split.png",
+
+    "primaryAbility": {
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_sniperbullet", 
+              "projectileTypeUncharged" : "st_sniperbullet", 
+              "projectileTypeCharged" : "st_sniperbullet", 
+              "projectileParameters" : { 
+                "timeToLive" : 0.06,
+                "actionOnTimeout" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_strongsniperbullet",
+                    "inheritDamageFactor" : 1.6,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 150
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "standardbullet",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 100,
+                      "lightColor" : [99, 82, 0]
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "standardbullet",
+                    "inheritDamageFactor" : 0.3,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 50,
+                      "lightColor" : [63, 51, 0]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_firesniperbullet", 
+              "projectileTypeUncharged" : "st_firesniperbullet", 
+              "projectileTypeCharged" : "st_firesniperbullet", 
+              "projectileParameters" : { 
+                "timeToLive" : 0.06,
+                "actionOnTimeout" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_strongfiresniperbullet",
+                    "inheritDamageFactor" : 1.6,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 150
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "fireplasma",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 100,
+                      "lightColor" : [99, 82, 0]
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "fireplasma",
+                    "inheritDamageFactor" : 0.3,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 50,
+                      "lightColor" : [63, 51, 0]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_icesniperbullet", 
+              "projectileTypeUncharged" : "st_icesniperbullet", 
+              "projectileTypeCharged" : "st_icesniperbullet", 
+              "projectileParameters" : { 
+                "timeToLive" : 0.06,
+                "actionOnTimeout" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_strongicesniperbullet",
+                    "inheritDamageFactor" : 1.6,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 150
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "iceplasma",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 100,
+                      "lightColor" : [99, 82, 0]
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "iceplasma",
+                    "inheritDamageFactor" : 0.3,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 50,
+                      "lightColor" : [63, 51, 0]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_poisonsniperbullet", 
+              "projectileTypeUncharged" : "st_poisonsniperbullet", 
+              "projectileTypeCharged" : "st_poisonsniperbullet", 
+              "projectileParameters" : { 
+                "timeToLive" : 0.06,
+                "actionOnTimeout" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_strongpoisonsniperbullet",
+                    "inheritDamageFactor" : 1.6,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 150
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "poisonplasma",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 100,
+                      "lightColor" : [99, 82, 0]
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "poisonplasma",
+                    "inheritDamageFactor" : 0.3,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 50,
+                      "lightColor" : [63, 51, 0]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_electricsniperbullet", 
+              "projectileTypeUncharged" : "st_electricsniperbullet", 
+              "projectileTypeCharged" : "st_electricsniperbullet", 
+              "projectileParameters" : { 
+                "timeToLive" : 0.06,
+                "actionOnTimeout" : [
+                  {
+                    "action" : "projectile",
+                    "type" : "st_strongelectricsniperbullet",
+                    "inheritDamageFactor" : 1.6,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 150
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "electricplasma",
+                    "inheritDamageFactor" : 0.5,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 100,
+                      "lightColor" : [99, 82, 0]
+                    }
+                  },
+                  {
+                    "action" : "projectile",
+                    "type" : "electricplasma",
+                    "inheritDamageFactor" : 0.3,
+                    "angleAdjust" : 0,
+                    "config" : {
+                      "speed" : 50,
+                      "lightColor" : [63, 51, 0]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

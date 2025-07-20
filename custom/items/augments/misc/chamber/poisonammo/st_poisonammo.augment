@@ -1,8 +1,8 @@
 {
   "itemName" : "st_poisonammo",
   "maxStack" : 5,
-  "price" : 1000,
-  "rarity" : "Uncommon",
+  "price" : 3000,
+  "rarity" : "Legendary",
   "category" : "ammoModifier",
   "inventoryIcon" : "st_poisonammo.png",
   "description" : "Changes the gun's element to poison.",
@@ -14,7 +14,7 @@
   "builder" : "/custom/items/buildscripts/st_buildammo.lua",
 
   "augment": {
-    "type": ["assaultrifleammo", "machinepistolammo", "shotgunammo", "rocketlauncherammo", "grenadelauncherammo"],
+    "type": "anyammo",
     "category": "chamber",
     "name": "st_poisonammo",
     "displayName": "Poisoned Ammo",

@@ -1,0 +1,25 @@
+{
+  "projectileName" : "st_strongicepiercingsniperbullet",
+  "image" : "st_strongicepiercingsniperbullet.png",
+  "physics" : "laser",
+  "piercing" : true,
+  "animationCycle" : 0.25,
+  "lightColor" : [86, 187, 255],
+  "frameNumber" : 1,
+  "damageKind" : "iceplasmabullet",
+  "emitters" : [ "iceplasma" ],
+  "pointLight" : false,
+  "flippable" : true,
+  "damageRepeatGroup" : "STpiercing", //coloca o projétil em um grupo para evitar que possa danificar a mesma entidade mais de uma vez com diferentes projéteis, pode ter qualquer nome que quiser
+  "damageRepeatTimeout"	: 0.15,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmaiceexplosion.config"
+    }
+  ],
+  "statusEffects" : [ "frostslow" ],
+  "power" : 5.0,
+  "speed" : 150,
+  "knockback" : 0
+}

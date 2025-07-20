@@ -7,7 +7,7 @@ function apply(input)
   local weaponType = output:instanceValue("acceptsAugmentType", "")
 
   if augmentConfig then
-    if weaponType == augmentConfig.type or isCompatible(augmentConfig.type, weaponType) or augmentConfig.type == "anyammo" then --checks if compatible, 
+    if weaponType == augmentConfig.type or augmentConfig.type == "anyammo" or isCompatible(augmentConfig.type, weaponType) then --checks if compatible, 
       local currentAugments = output:instanceValue("currentAugments", {stock, chamber, barrel})
       if currentAugments then
         if currentAugments[augmentConfig.category] and currentAugments[augmentConfig.category].name == augmentConfig.name then
@@ -38,8 +38,7 @@ function apply(input)
 
         --rebuild gun with current augments every time a new one is equipped
 
-        local defaultPrimaryAbility = root.assetJson("/custom/items/weapons/ranged/modular/defaultParameters.config:".. output:instanceValue("category", "assaultRifle"))
-        local descList = root.assetJson("/items/rotting.config:rotTimeDescriptions")
+        local defaultPrimaryAbility = root.assetJson("/custom/items/weapons/ranged/modular/st_defaultParameters.config:".. output:instanceValue("category", "assaultRifle"))
 
         for k, augment in pairs(equippedAugments) do
 
@@ -94,6 +93,14 @@ function apply(input)
           if augment.animationCustom then
             output:setInstanceValue("animationCustom", augment.animationCustom)
           end
+
+          if augment.animationCustom then
+            local newAnimationCustom = {}
+            for key, value in pairs(augment.animationCustom) do
+              newAnimationCustom[key] = value
+            end 
+            output:setInstanceValue("animationCustom", newAnimationCustom)
+          end  
 
         end
       end

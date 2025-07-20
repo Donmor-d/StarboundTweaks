@@ -1,0 +1,27 @@
+{
+  "projectileName" : "st_strongpoisonghostbullet",
+  "image" : "st_strongpoisonghostbullet.png",
+  "physics" : "laser",
+  "timeToLive" : 1,
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "animationCycle" : 0.25,
+  "emitters" : [ "poisonplasma" ],
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "damageKind" : "poisonplasmabullet",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmapoisonexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [156, 255, 76],
+  "power" : 5.0,
+  "speed" : 100,
+  "knockback" : 0
+}

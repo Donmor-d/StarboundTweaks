@@ -3,7 +3,7 @@
   "image" : "st_iceminirocket.png",
   "animationCycle" : 0.2,
   "frameNumber" : 3,
-  "lightColor" : [255, 255, 128],
+  "lightColor" : [52, 112, 153],
   "pointLight" : true,
   "actionOnReap" : [
     {

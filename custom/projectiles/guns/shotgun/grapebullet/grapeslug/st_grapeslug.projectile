@@ -1,6 +1,6 @@
 {
   "projectileName" : "st_grapeslug",
-  "physics" : "grenade",
+  "physics" : "laser",
   "bounces" : 0,
   "timeToLive" : 0.15,
   "speed" : 50,
@@ -38,60 +38,60 @@
       "action" : "projectile",
       "type" : "st_grapepellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.2,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 0
     },
     {
       "action" : "projectile",
       "type" : "st_grapepellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.2,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 10
     },
     {
       "action" : "projectile",
       "type" : "st_grapepellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.2,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 350
     },
     {
       "action" : "projectile",
       "type" : "st_grapepellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.2,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 20
     },
     {
       "action" : "projectile",
       "type" : "st_grapepellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.2,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 340
     },
     {
       "action" : "projectile",
       "type" : "st_grapepellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.2,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 30
     },
     {
       "action" : "projectile",
       "type" : "st_grapepellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.2,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 330
     },
     {
       "action" : "projectile",
       "type" : "st_grapepellet",
       "fuzzAngle" : 5,
-      "inheritDamageFactor" : 0.2,
+      "inheritDamageFactor" : 0.35,
       "angleAdjust" : 40
     }
   ],
   "power" : 0,
-  "damageKind" : "nodamage",
-  "damageType" : "noDamage"
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
 }

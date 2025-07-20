@@ -65,20 +65,11 @@
 
     "elementalConfig" : {
       "physical" : {
-        "primaryAbility" : { "projectileType" : "st_normalpellet", "projectileParameters" : {"damageKind" : "shotgunbullet", "knockback" : 20} }
-        //"fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ] //talvez colocar depois
-      },
-      "fire" : {
-        "primaryAbility" : { "projectileType" : "st_firepellet", "projectileParameters" : {"damageKind" : "fireplasmashotgun", "knockback" : 20, "statusEffects" : [ "burning" ] } }
-      },
-      "ice" : {
-        "primaryAbility" : { "projectileType" : "st_icepellet", "projectileParameters" : {"damageKind" : "iceplasmashotgun", "knockback" : 20, "statusEffects" : [ "frostslow" ] } }
-      },
-      "poison" : {
-        "primaryAbility" : { "projectileType" : "st_poisonpellet", "projectileParameters" : {"damageKind" : "poisonplasmashotgun", "knockback" : 20, "statusEffects" : [ "weakpoison" ] } }
-      },
-      "electric" : {
-        "primaryAbility" : { "projectileType" : "st_electricpellet", "projectileParameters" : {"damageKind" : "electricplasmashotgun", "knockback" : 20, "statusEffects" : [ "electrified" ] } }
+        "primaryAbility" : {
+          "default" : {
+            "projectileType" : "st_normalpellet"
+          }
+        }
       }
     },
     

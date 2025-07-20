@@ -51,10 +51,10 @@
         ]
       }
     },
-	"sounds" : {
+    "sounds" : {
       "fire" : ["/sfx/gun/grenade1.ogg"],
-	  "reload" : [],
-	  "reloaded" : []
+      "reload" : [],
+      "reloaded" : []
     }
   },
 
@@ -83,20 +83,11 @@
 
     "elementalConfig" : {
       "physical" : {
-        "primaryAbility" : { "projectileType" : "grenadeimpact", "projectileParameters" : {"bounces" : 0} }
-        //"fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ] //talvez colocar depois
-      },
-      "fire" : {
-        "primaryAbility" : { "projectileType" : "firecloudgrenade", "projectileParameters" : {"damageKind" : "damage", "statusEffects" : [ "burning" ] } }
-      },
-      "ice" : {
-        "primaryAbility" : { "projectileType" : "icecloudgrenade", "projectileParameters" : {"damageKind" : "damage", "statusEffects" : [ "frostslow" ] } }
-      },
-      "poison" : {
-        "primaryAbility" : { "projectileType" : "poisoncloudgrenade", "projectileParameters" : {"damageKind" : "damage", "statusEffects" : [ "weakpoison" ] } }
-      },
-      "electric" : {
-        "primaryAbility" : { "projectileType" : "electriccloudgrenade", "projectileParameters" : {"damageKind" : "damage", "statusEffects" : [ "electrified" ] } }
+        "primaryAbility" : {
+          "default" : {
+            "projectileType" : "impactgrenade"
+          }
+        }
       }
     },
     
@@ -114,7 +105,7 @@
         "armRotation" : 7.5,
         "weaponRotation" : 7.5,
         "twoHanded" : false,
-		"recoil" : true,
+		    "recoil" : true,
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -124,7 +115,7 @@
         "armRotation" : 7.5,
         "weaponRotation" : 7.5,
         "twoHanded" : false,
-		"recoil" : true,
+		    "recoil" : true,
 
         "allowRotate" : true,
         "allowFlip" : true

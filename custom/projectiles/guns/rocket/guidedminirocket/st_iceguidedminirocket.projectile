@@ -1,0 +1,28 @@
+{
+  "projectileName" : "st_iceguidedminirocket",
+  "image" : "st_iceguidedminirocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 3,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [52, 112, 153],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smalliceexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 10.0,
+  "acceleration" : 20,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+
+  "scripts" : [ "/projectiles/activeitems/guidedrocket/guidedrocket.lua" ],
+  "rotationRate" : 5.0,
+  "maxTrackingAngle" : 2.0
+}

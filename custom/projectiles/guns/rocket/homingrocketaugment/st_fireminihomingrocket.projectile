@@ -1,0 +1,56 @@
+{
+  "projectileName" : "st_fireminihomingrocket",
+  "image" : "st_fireminihomingrocket.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 3,
+  "lightColor" : [115, 119, 38],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallfireexplosion.config"
+    }
+  ],
+
+  "homingActions" :[
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/interface/rocket_lockon2.ogg" ]
+    }
+  ],
+
+  "emitters" : [ "tinyrocketsmoke" ],
+  
+  //script smoke start -----------------------------
+  "smokeAction" : [
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.5,
+      "type" : "st_smallfirecloud",
+      "angleAdjust" : 180,
+      //"time" : 0.075,
+      "repeat" : true,
+      "config" :{
+        "speed" : 10,
+        "gravityMultiplier" : 0.1
+      }
+    }
+  ],
+  "smokePeriod" : 0.05,
+  "angleIncrement" : 22.5,
+  "angleMinMax" : [ 135, 225 ],
+  "randomizedSmoke" : true,
+  "scripts" : [ "st_homingrocket.lua", "/custom/projectiles/guns/rocket/elementalgasrockets/st_rocketSmoke.lua" ],
+  //script smoke end -----------------------------
+
+  "power" : 10.0,
+  "speed" : 40.0,
+  "physics" : "grenade",
+  "knockbackDirectional" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "knockback" : 20,
+
+  "baseHomingControlForce" : 5,
+  "detectionTime" : 0.5
+}

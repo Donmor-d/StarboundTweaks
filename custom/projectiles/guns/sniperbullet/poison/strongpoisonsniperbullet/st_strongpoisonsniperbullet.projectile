@@ -3,19 +3,20 @@
   "image" : "st_strongpoisonsniperbullet.png",
   "physics" : "laser",
   "animationCycle" : 0.25,
-  "lightColor" : [255, 216, 0],
+  "lightColor" : [156, 255, 76],
   "fullBright" : true,
   "frameNumber" : 1,
   "damageKind" : "poisonplasmabullet",
+  "emitters" : [ "poisonplasma" ],
   "pointLight" : false,
   "flippable" : true,
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmapoisonexplosion.config"
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmapoisonexplosion.config"
     }
   ],
-  "statusEffects" : [ ],
+  "statusEffects" : [ "weakpoison" ],
   "power" : 5.0,
   "speed" : 150,
   "knockback" : 0

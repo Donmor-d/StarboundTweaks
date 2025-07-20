@@ -72,7 +72,6 @@
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultsniperbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_piercingsniperbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_bouncingsniperbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_sinewavesniperbullet" } },
 			//machinepistol
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultmachinepistolbullet" } },
 		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricmachinepistolbullet" } },

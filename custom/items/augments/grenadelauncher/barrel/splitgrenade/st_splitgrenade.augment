@@ -1,0 +1,75 @@
+{
+  "itemName" : "st_splitgrenade",
+  "maxStack" : 5,
+  "price" : 1000,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_splitgrenade.png",
+  "description" : "Makes grenades split into 3 smaller grenades.",
+  "shortdescription" : "Split Grenade",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "grenadelauncherammo",
+    "category": "barrel",
+    "name": "st_splitgrenade",
+    "displayName": "Spliting Ammo",
+    "displayIcon": "/custom/items/augments/grenadelauncher/splitgrenade/st_splitgrenade.png",
+
+    "inventoryIcon" : "split.png",
+
+    "primaryAbility": {
+      "barrelDamageMult" : 0.5,
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_splitgrenade", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_firesplitgrenade", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_icesplitgrenade", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_poisonsplitgrenade", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_electricsplitgrenade", 
+              "projectileParameters" : {}
+            }
+          }
+        }
+      }
+
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

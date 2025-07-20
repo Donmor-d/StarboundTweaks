@@ -14,7 +14,6 @@ function HammerSmash:init()
 
   self.defKnockback = self.damageConfig.knockback
 
-  sb.logInfo(sb.print(self.elementalShockwave))
   if self.elementalShockwave == nil then
     self.elementalShockwave = true
   end

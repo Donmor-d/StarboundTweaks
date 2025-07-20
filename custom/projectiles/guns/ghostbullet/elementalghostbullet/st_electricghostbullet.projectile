@@ -1,0 +1,28 @@
+{
+  "projectileName" : "st_electricghostbullet",
+  "image" : "st_electricghostbullet.png",
+  "physics" : "laser",
+  "timeToLive" : 1,
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "animationCycle" : 0.25,
+  "emitters" : [ "electricplasma" ],
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "damageKind" : "electricplasmabullet",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmaelectricexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [102, 32, 110],
+  "power" : 5.0,
+  "speed" : 100,
+  "knockback" : 0
+}
+

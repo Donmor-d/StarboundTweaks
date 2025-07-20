@@ -12,26 +12,27 @@
       "file" : "/projectiles/explosions/regularexplosion2/poisonexplosionknockbackstatus.config"
     }
   ],
-//script smoke start -----------------------------
-    "smokeAction" : [
-      {
-        "action" : "projectile",
-        "inheritDamageFactor" : 0.5,
-        "type" : "largepoisoncloud",
-        "angleAdjust" : 180,
-        //"time" : 0.075,
-        "repeat" : true,
-        "config" :{
-          "speed" : 10
-        }
+  //script smoke start -----------------------------
+  "smokeAction" : [
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.5,
+      "type" : "largepoisoncloud",
+      "angleAdjust" : 180,
+      //"time" : 0.075,
+      "repeat" : true,
+      "config" :{
+        "speed" : 10,
+        "gravityMultiplier" : 0.1
       }
-    ],
-    "smokePeriod" : 0.05,
-    "angleIncrement" : 22.5,
-    "angleMinMax" : [ 135, 225 ],
-    "randomizedSmoke" : true,
-    "scripts" : [ "st_rocketSmoke.lua" ],
-//script smoke end -----------------------------
+    }
+  ],
+  "smokePeriod" : 0.05,
+  "angleIncrement" : 22.5,
+  "angleMinMax" : [ 135, 225 ],
+  "randomizedSmoke" : true,
+  "scripts" : [ "st_rocketSmoke.lua" ],
+  //script smoke end -----------------------------
 
   "statusEffects" : [ ],
   "emitters" : [ "poisonplasmarocket", "poisondrip" ],
@@ -40,8 +41,7 @@
   "speed" : 1.0,
   "acceleration" : 100,
   "knockback" : 30,
-  "damageRepeatGroup" : "STexplosion",
   "physics" : "rocket",
-  "damageType" : "damage",
+  "damageType" : "NoDamage",
   "damageKind" : "poisonplasma"
 }

@@ -1,0 +1,83 @@
+{
+  "itemName" : "st_piercingsniperbullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_piercingsniperbullet.png",
+  "description" : "Enables piercing bullets for Sniper Rifles, bullets empower after piercing.",
+  "shortdescription" : "Piercing Sniper Bullet",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Bullets no longer empower after a small delay.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "sniperrifleammo",
+    "category": "barrel",
+    "name": "st_piercingsniperbullet",
+    "displayName": "Piercing Ammo",
+    "displayIcon": "/custom/items/augments/sniperrifle/barrel/piercingbullet/st_piercingsniperbullet.png",
+
+    "inventoryIcon" : "piercing.png",
+
+    "primaryAbility": {
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_piercingsniperbullet",
+              "projectileTypeUncharged" : "st_piercingsniperbullet",
+              "projectileTypeCharged" : "st_piercingsniperbullet", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_firepiercingsniperbullet",
+              "projectileTypeUncharged" : "st_firepiercingsniperbullet",
+              "projectileTypeCharged" : "st_firepiercingsniperbullet", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_icepiercingsniperbullet",
+              "projectileTypeUncharged" : "st_icepiercingsniperbullet",
+              "projectileTypeCharged" : "st_icepiercingsniperbullet", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_poisonpiercingsniperbullet",
+              "projectileTypeUncharged" : "st_poisonpiercingsniperbullet",
+              "projectileTypeCharged" : "st_poisonpiercingsniperbullet", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_electricpiercingsniperbullet",
+              "projectileTypeUncharged" : "st_electricpiercingsniperbullet",
+              "projectileTypeCharged" : "st_electricpiercingsniperbullet", 
+              "projectileParameters" : {}
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

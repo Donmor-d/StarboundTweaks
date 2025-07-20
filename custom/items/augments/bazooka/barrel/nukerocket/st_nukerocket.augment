@@ -1,0 +1,189 @@
+{
+  "itemName" : "st_nukerocket",
+  "maxStack" : 5,
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_nukerocket.png",
+  "description" : "Enhances rocket explosive power at the cost of fire rate.",
+  "shortdescription" : "Nuke Rocket",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "category": "barrel",
+    "name": "st_nukerocket",
+    "displayName": "Nuke Ammo",
+    "displayIcon": "/custom/items/augments/bazooka/barrel/nukerocket/st_nukerocket.png",
+
+    "inventoryIcon" : "nuke.png",
+
+    "primaryAbility": {
+      "barrelDamageMult" : 1.1,
+
+      "fireTime" : 2.5,
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_nukerocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_guidednukerocket", 
+              "projectileParameters" : {}
+            },
+            "homing" : {
+              "projectileType" : "st_homingnukerocket", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_firenukerocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_fireguidednukerocket", 
+              "projectileParameters" : {
+                "periodicActions": [
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.5,
+                    "type" : "largefirecloud",
+                    "angleAdjust" : 180,
+                    "fuzzAngle" : 100,
+                    "time" : 0.1,
+                    "repeat" : true,
+                    "config" :{
+                      "movementSettings" : {
+                        "speed" : 10,
+                        "gravityMultiplier" : 0.1
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "homing" : {
+              "projectileType" : "st_firehomingnukerocket", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_icenukerocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_iceguidednukerocket", 
+              "projectileParameters" : {
+                "periodicActions": [
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.5,
+                    "type" : "largeicecloud",
+                    "angleAdjust" : 180,
+                    "fuzzAngle" : 100,
+                    "time" : 0.1,
+                    "repeat" : true,
+                    "config" :{
+                      "movementSettings" : {
+                        "speed" : 10,
+                        "gravityMultiplier" : 0.1
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "homing" : {
+              "projectileType" : "st_icehomingnukerocket", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_poisonnukerocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_poisonguidednukerocket", 
+              "projectileParameters" : {
+                "periodicActions": [
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.5,
+                    "type" : "largepoisoncloud",
+                    "angleAdjust" : 180,
+                    "fuzzAngle" : 100,
+                    "time" : 0.1,
+                    "repeat" : true,
+                    "config" :{
+                      "movementSettings" : {
+                        "speed" : 10,
+                        "gravityMultiplier" : 0.1
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "homing" : {
+              "projectileType" : "st_poisonhomingnukerocket", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_electricnukerocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_electricguidednukerocket", 
+              "projectileParameters" : {
+                "periodicActions": [
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.5,
+                    "type" : "largeelectriccloud",
+                    "angleAdjust" : 180,
+                    "fuzzAngle" : 100,
+                    "time" : 0.1,
+                    "repeat" : true,
+                    "config" :{
+                      "movementSettings" : {
+                        "speed" : 10,
+                        "gravityMultiplier" : 0.1
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "homing" : {
+              "projectileType" : "st_electrichomingnukerocket", 
+              "projectileParameters" : {}
+            }
+          }
+        }
+      }
+
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

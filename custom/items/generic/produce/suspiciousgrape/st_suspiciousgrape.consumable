@@ -5,7 +5,7 @@
   "category" : "food",
   "eventCategory" : "eventCrop",
   "inventoryIcon" : "st_suspiciousgrape.png",
-  "description" : "Grown out of a living being, should be delicious.",
+  "description" : "Grown out of a monster. Could be delicious!",
   "shortdescription" : "Grape",
   "foodValue" : 1.8,
   "tooltipKind" : "food",

@@ -1,120 +1,123 @@
 {
-  "itemName" : "st_tungstenmodularrevolver",
-  "price" : 640,
-  "maxStack" : 1,
-  "rarity" : "Uncommon",
-  "description" : "A large handgun that can have its bullets augmented.",
-  "shortdescription" : "Tungsten Modular Revolver",
-  "tooltipKind" : "st_gunwithammo",
-  "category" : "pistol",
-  "twoHanded" : false,
-  "itemTags" : ["weapon","ranged","pistol"],
-  "level" : 2,
-  
-  "radioMessagesOnPickup" : [ "pickupfirearm" ],
-
-  "inventoryIcon" : [
-    { "image" : "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/butt/normal.png" },
-    { "image" : "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/middle/normal.png" },
-    { "image" : "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/barrel/normal.png" }
+  "itemName": "st_tungstenmodularrevolver",
+  "price": 640,
+  "maxStack": 1,
+  "rarity": "Uncommon",
+  "description": "A large handgun that can have its bullets augmented.",
+  "shortdescription": "Tungsten Modular Revolver",
+  "tooltipKind": "st_gunwithammo",
+  "category": "pistol",
+  "twoHanded": false,
+  "itemTags": [
+    "weapon",
+    "ranged",
+    "pistol"
   ],
-  
-  "acceptsAugmentType" : "pistolammo",
-  
-  "animation" : "/items/active/weapons/ranged/gun.animation",
-  "animationParts" : {
-    "butt" : "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/butt/normal.png",
-    "middle" : "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/middle/normal.png",
-    "barrel" : "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/barrel/normal.png",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  "level": 2,
+  "radioMessagesOnPickup": [
+    "pickupfirearm"
+  ],
+  "inventoryIcon": [
+    {
+      "image": "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/butt/normal.png"
+    },
+    {
+      "image": "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/middle/normal.png"
+    },
+    {
+      "image": "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/barrel/normal.png"
+    }
+  ],
+  "acceptsAugmentType": "pistolammo",
+  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animationParts": {
+    "butt": "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/butt/normal.png",
+    "middle": "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/middle/normal.png",
+    "barrel": "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/barrel/normal.png",
+    "muzzleFlash": "/items/active/weapons/ranged/muzzleflash.png"
   },
-  "animationCustom" : {
-  "particleEmitters" : {
-      "muzzleFlash" : {
-        "burstCount" : 2,
-        "particles" : [
-          { "particle" : "dust2" }
+  "animationCustom": {
+    "particleEmitters": {
+      "muzzleFlash": {
+        "burstCount": 2,
+        "particles": [
+          {
+            "particle": "dust2"
+          }
         ]
       }
     },
-    "sounds" : {
-      "fire" : ["/sfx/gun/revolver2.ogg"]
+    "sounds": {
+      "fire": ["/sfx/gun/revolver2.ogg"],
+      "empoweredFire": ["/sfx/gun/tank_shot.ogg"]
     }
   },
-
-  "baseOffset" : [0.7, 0.25],
-  "muzzleOffset" : [1.4, 0.3],
-
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
-  "animationScripts" : ["/custom/scripts/st_ammo_drawables.lua"],
-
-  "elementalType" : "physical",
-
-  "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua", "/custom/items/weapons/ranged/st_modulargunfire.lua"],
-    "class" : "GunFire",
-
-    "fireTime" : 0.6,
-    "baseDps" : 8.5,
-    "energyUsage" : 0,
-    "ammoUsage" : 3,
-    "inaccuracy" : 0.025,
-	   
-    "reloadTime" : 1.5,     //tempo que demora para poder usar a arma
-
-    "projectileCount" : 1,
-    "fireType" : "auto",
+  "baseOffset": [
+    0.7,
+    0.25
+  ],
+  "muzzleOffset": [
+    1.4,
+    0.3
+  ],
+  "scripts": [
+    "/items/active/weapons/ranged/gun.lua"
+  ],
+  "animationScripts": [
+    "/custom/scripts/st_ammo_drawables.lua"
+  ],
+  "elementalType": "physical",
+  "primaryAbility": {
+    "scripts": [
+      "/items/active/weapons/ranged/gunfire.lua",
+      "/custom/items/weapons/ranged/st_modulargunfire.lua"
+    ],
+    "class": "GunFire",
+    "fireTime": 0.6,
+    "baseDps": 8.5,
+    "energyUsage": 0,
+    "ammoUsage": 3,
+    "inaccuracy": 0.025,
+    "reloadTime": 1.5, //tempo que demora para poder usar a arma
+    "projectileCount": 1,
+    "fireType": "auto",
 
     "elementalConfig" : {
       "physical" : {
-        "primaryAbility" : { "projectileType" : "standardbullet", "projectileParameters" : {"knockback" : 6} }
-        //"fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ] //talvez colocar depois
-      },
-      "fire" : {
-        "primaryAbility" : { "projectileType" : "fireplasma", "projectileParameters" : {"knockback" : 6, "statusEffects" : [ "burning" ] } }
-      },
-      "ice" : {
-        "primaryAbility" : { "projectileType" : "iceplasma", "projectileParameters" : {"knockback" : 6, "statusEffects" : [ "frostslow" ] } }
-      },
-      "poison" : {
-        "primaryAbility" : { "projectileType" : "poisonplasma", "projectileParameters" : {"knockback" : 6, "statusEffects" : [ "weakpoison" ] } }
-      },
-      "electric" : {
-        "primaryAbility" : { "projectileType" : "electricplasma", "projectileParameters" : {"knockback" : 6, "statusEffects" : [ "electrified" ] } }
+        "primaryAbility" : {
+          "default" : {
+            "projectileType" : "standardbullet"
+          }
+        }
       }
     },
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : false,
-
-        "allowRotate" : true,
-        "allowFlip" : true
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "twoHanded": false,
+        "allowRotate": true,
+        "allowFlip": true
       },
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 4,
-        "weaponRotation" : 6,
-        "twoHanded" : false,
-		"recoil" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
+      "fire": {
+        "duration": 0,
+        "armRotation": 4,
+        "weaponRotation": 6,
+        "twoHanded": false,
+        "recoil": true,
+        "allowRotate": true,
+        "allowFlip": true
       },
-      "cooldown" : {
-        "duration" : 0.15,
-        "armRotation" : 4,
-        "weaponRotation" : 6,
-        "twoHanded" : false,
-		"recoil" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
+      "cooldown": {
+        "duration": 0.15,
+        "armRotation": 4,
+        "weaponRotation": 6,
+        "twoHanded": false,
+        "recoil": true,
+        "allowRotate": true,
+        "allowFlip": true
       }
     }
   },
-
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/buildunrandweapon.lua"
 }

@@ -1,0 +1,105 @@
+{
+  "itemName" : "st_snowballingrevolverbullet",
+  "maxStack" : 5,
+  "price" : 1500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_snowballingrevolverbullet.png",
+  "description" : "Makes revolver bullets increase in damage over time.",
+  "shortdescription" : "Snowballing Revolver Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "pistolammo",
+    "category": "barrel",
+    "name": "st_snowballingrevolverbullet",
+    "displayName": "Snowballing Ammo",
+    "displayIcon": "/custom/items/augments/revolver/snowballingbullet/st_snowballingrevolverbullet.png",
+
+    "inventoryIcon" : "snowballing.png",
+
+    "primaryAbility": {
+
+      "barrelDamageMult": 0.75,
+
+      "elementalConfig": {
+        "physical": {
+          "primaryAbility": {
+            "default": {
+              "projectileType": "st_rampingbullet",
+              "empoweredProjectileType": "st_strongrampingbullet",
+              "projectileParameters": {
+                "knockback": 6
+              },
+              "empoweredProjectileParameters": {
+              }
+            }
+          }
+        },
+        "fire": {
+          "primaryAbility": {
+            "default": {
+              "projectileType": "st_rampingbullet",
+              "empoweredProjectileType": "st_strongrampingbullet",
+              "projectileParameters": {
+                "knockback": 6,
+                "statusEffects": [ "burning" ]
+              },
+              "empoweredProjectileParameters": {
+              }
+            }
+          }
+        },
+        "ice": {
+          "primaryAbility": {
+            "default": {
+              "projectileType": "st_rampingbullet",
+              "empoweredProjectileType": "st_strongrampingbullet",
+              "projectileParameters": {
+                "knockback": 6,
+                "statusEffects": [ "frostslow" ]
+              },
+              "empoweredProjectileParameters": {
+              }
+            }
+          }
+        },
+        "poison": {
+          "primaryAbility": {
+            "default": {
+              "projectileType": "st_rampingbullet",
+              "empoweredProjectileType": "st_strongrampingbullet",
+              "projectileParameters": {
+                "knockback": 6,
+                "statusEffects": [ "weakpoison" ]
+              },
+              "empoweredProjectileParameters": {
+              }
+            }
+          }
+        },
+        "electric": {
+          "primaryAbility": {
+            "default": {
+              "projectileType": "st_rampingbullet",
+              "empoweredProjectileType": "st_strongrampingbullet",
+              "projectileParameters": {
+                "knockback": 6,
+                "statusEffects": [ "electrified" ]
+              },
+              "empoweredProjectileParameters": {
+              }
+            }
+          }
+        }
+      }
+
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

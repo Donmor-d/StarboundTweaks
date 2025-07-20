@@ -5,7 +5,7 @@
   "category" : "food",
   "eventCategory" : "eventCrop",
   "inventoryIcon" : "st_icesuspiciousgrape.png",
-  "description" : "Grown from a living being, its cold but somehow leaves a warm feeling when eaten.",
+  "description" : "Grown out of a monster. Feels cold to the touch",
   "shortdescription" : "Ice Grape",
   "foodValue" : 1.8,
   "tooltipKind" : "food",

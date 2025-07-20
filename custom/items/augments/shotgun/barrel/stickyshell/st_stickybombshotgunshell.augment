@@ -1,0 +1,118 @@
+{
+  "itemName" : "st_stickybombshotgunshell",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_stickybombshotgunshell.png",
+  "description" : "Sticky explosive shell for shotguns.",
+  "shortdescription" : "Sticky Bomb Shotgun Shell",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "shotgunammo",
+    "category": "barrel",
+    "name": "st_stickybombshotgunshell",
+    "displayName": "Sticky Bomb Ammo",
+    "displayIcon": "/custom/items/augments/shotgun/barrel/stickyshell/st_stickybombshotgunshell.png",
+
+    "inventoryIcon" : "sticky.png",
+
+    "primaryAbility": {
+      "barrelDamageMult" : 0.8,
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "stickybullet",
+              "projectileParameters": {
+                "speed" : 100,
+                "timeToLive" : [3.5, 4.5]
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_stickyshotgunslug",
+              "projectileParameters": {
+                "knockback": 20
+              }
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_firestickybullet",
+              "projectileParameters": {
+                "speed" : 100,
+                "timeToLive" : [3.5, 4.5]
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_firestickyshotgunslug",
+              "projectileParameters": {
+                "knockback": 20
+              }
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_icestickybullet",
+              "projectileParameters": {
+                "speed" : 100,
+                "timeToLive" : [3.5, 4.5]
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_icestickyshotgunslug",
+              "projectileParameters": {
+                "knockback": 20
+              }
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_poisonstickybullet",
+              "projectileParameters": {
+                "speed" : 100,
+                "timeToLive" : [3.5, 4.5]
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_poisonstickyshotgunslug",
+              "projectileParameters": {
+                "knockback": 20
+              }
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_electricstickybullet",
+              "projectileParameters": {
+                "speed" : 100,
+                "timeToLive" : [3.5, 4.5]
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_electricstickyshotgunslug",
+              "projectileParameters": {
+                "knockback": 20
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

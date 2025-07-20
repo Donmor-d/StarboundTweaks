@@ -21,8 +21,6 @@ function GuidedRocket:update(dt, fireMode, shiftHeld)
   self.rocketIds = util.filter(self.rocketIds, world.entityExists)
   local rocketTargetPosition = activeItem.ownerAimPosition()
   local rocketTargetDirection = nil
-  
-  local primaryEnabler = config.getParameter("primaryAltAbility")    --necessário para o bagui abaixo funcionar
 
   if self.laserGuideLength then
     -- Shoot a ray through the rocketTargetPosition and aim the rocket towards
@@ -39,22 +37,12 @@ function GuidedRocket:update(dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
 
-  if primaryEnabler == "allow" then
-     if self.fireMode == "primary"
-       and not self.weapon.currentAbility
-       and self.cooldownTimer == 0 
-       and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-       and status.overConsumeResource("ammo", self.ammoUsage)  then
-      self:setState(self.fire)
-    end
-  else 
-    if self.fireMode == "alt"
-       and not self.weapon.currentAbility
-       and self.cooldownTimer == 0 
-       and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-       and status.overConsumeResource("ammo", self.ammoUsage*2)  then
-      self:setState(self.fire)
-    end
+  if self.fireMode == "alt"
+      and not self.weapon.currentAbility
+      and self.cooldownTimer == 0 
+      and not world.lineTileCollision(mcontroller.position(), self:firePosition())
+      and status.overConsumeResource("ammo", self.ammoUsage*2)  then
+    self:setState(self.fire)
   end
   
   --[[     original abaixo, adicionei uma variável que checa se ele permite usar a abilidade com m1 ou não, a abilidade primária deve ter um firerate absurdo para que ele não sobrepoa a abilidade

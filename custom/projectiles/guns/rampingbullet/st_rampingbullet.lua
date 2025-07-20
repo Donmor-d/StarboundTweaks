@@ -11,7 +11,6 @@ function update(dt)
     if self.timer == 0 then
         projectile.setPower(self.projectilePower * self.multiplier)
         self.projectilePower = projectile.power()
-        sb.logInfo(self.projectilePower)
         self.timer = config.getParameter("rampTime", 1)
     end
 

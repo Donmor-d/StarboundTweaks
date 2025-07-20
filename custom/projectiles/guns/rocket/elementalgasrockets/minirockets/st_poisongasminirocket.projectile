@@ -1,0 +1,46 @@
+{
+  "projectileName" : "st_poisongasminirocket",
+  "image" : "st_poisongasminirocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 3,
+  "lightColor" : [67, 110, 32],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallpoisonexplosion.config" //2 because theres already one that doesnt do anything in the game files
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 10.0,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  //script smoke start -----------------------------
+  "smokeAction" : [
+    {
+      "action" : "projectile",
+      "inheritDamageFactor" : 0.5,
+      "type" : "st_smallpoisoncloud",
+      "angleAdjust" : 180,
+      //"time" : 0.075,
+      "repeat" : true,
+      "config" :{
+        "speed" : 10,
+        "gravityMultiplier" : 0.1
+      }
+    }
+  ],
+  "smokePeriod" : 0.075,
+  "angleIncrement" : 22.5,
+  "angleMinMax" : [ 135, 225 ],
+  "randomizedSmoke" : true,
+  "scripts" : [ "/custom/projectiles/guns/rocket/elementalminirockets/st_minirocket.lua", "/custom/projectiles/guns/rocket/elementalgasrockets/st_rocketSmoke.lua" ],
+  //script smoke end -----------------------------
+
+  "maxSpeed" : 75,
+  "controlForce" : 100
+}

@@ -22,6 +22,7 @@
     "barrel" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
+  
   "animationCustom" : { 
     "animatedParts" : { 
       "parts" : {
@@ -70,9 +71,9 @@
     "energyUsage" : 0,
     "inaccuracy" : 0,
 	
-	"ammo" : 1,
+	  "ammo" : 1,
 	   
-	"reloadTime" : 2,
+	  "reloadTime" : 2,
 
     "projectileCount" : 1,
     "fireType" : "auto",
@@ -81,34 +82,31 @@
     "projectileParameters" : {
 		"bounces" : 0
     },
-    "stances" : {
-      "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : false,
-
-        "allowRotate" : true,
-        "allowFlip" : true
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "twoHanded": false,
+        "allowRotate": true,
+        "allowFlip": true
       },
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 7.5,
-        "weaponRotation" : 7.5,
-        "twoHanded" : false,
-		"recoil" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
+      "fire": {
+        "duration": 0,
+        "armRotation": 7.5,
+        "weaponRotation": 7.5,
+        "twoHanded": false,
+        "recoil": true,
+        "allowRotate": true,
+        "allowFlip": true
       },
-      "cooldown" : {
-        "duration" : 0.4,
-        "armRotation" : 7.5,
-        "weaponRotation" : 7.5,
-        "twoHanded" : false,
-		"recoil" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
+      "cooldown": {
+        "duration": 0.4,
+        "armRotation": 7.5,
+        "weaponRotation": 7.5,
+        "twoHanded": false,
+        "recoil": true,
+        "allowRotate": true,
+        "allowFlip": true
       }
     }
   },

@@ -12,16 +12,28 @@
     }
   ],
   "emitters" : [ "poisonplasmarocket", "poisondrip" ],
-  "periodicActions":[
+  
+  //script smoke start -----------------------------
+  "smokeAction" : [
     {
       "action" : "projectile",
-      "inheritDamageFactor" : 1,
+      "inheritDamageFactor" : 0.5,
       "type" : "largepoisoncloud",
       "angleAdjust" : 180,
-      "time" : 0.075,
-      "repeat" : true
+      //"time" : 0.075,
+      "repeat" : true,
+      "config" :{
+        "speed" : 10,
+        "gravityMultiplier" : 0.1
+      }
     }
   ],
+  "smokePeriod" : 0.05,
+  "angleIncrement" : 22.5,
+  "angleMinMax" : [ 135, 225 ],
+  "randomizedSmoke" : true,
+  "scripts" : [ "st_homingrocket.lua", "/custom/projectiles/guns/rocket/elementalgasrockets/st_rocketSmoke.lua" ],
+  //script smoke end -----------------------------
 
   "homingActions" :[
     {
@@ -31,15 +43,14 @@
   ],
   
   "power" : 10.0,
-  "speed" : 50.0,
+  "speed" : 40.0,
   "physics" : "grenade",
   "knockbackDirectional" : true,
-  "damageType" : "damage",
+  "damageType" : "NoDamage",
+  "damageKind" : "poisonplasma",
   "knockback" : 40,
-  "damageRepeatGroup" : "STexplosion",
 
-  "scripts" : [ "st_homingrocket.lua" ],
-  "baseHomingControlForce" : 10
-  //"detectionTime" : 0.5, deprecated
+  "baseHomingControlForce" : 5,
+  "detectionTime" : 0.5
 
 }

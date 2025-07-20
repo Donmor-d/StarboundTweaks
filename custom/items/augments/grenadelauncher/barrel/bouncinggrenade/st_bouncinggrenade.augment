@@ -1,0 +1,227 @@
+{
+  "itemName" : "st_bouncinggrenade",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_bouncinggrenade.png",
+  "description" : "Makes grenades bounce.",
+  "shortdescription" : "Bouncing Grenade",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Every bounce explodes.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "grenadelauncherammo",
+    "category": "barrel",
+    "name": "st_bouncinggrenade",
+    "displayName": "Bouncing Ammo",
+    "displayIcon": "/custom/items/augments/grenadelauncher/bouncinggrenade/st_bouncinggrenade.png",
+
+    "inventoryIcon" : "bouncing.png",
+
+    "primaryAbility": {
+      "barrelDamageMult" : 0.5,
+
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "grenade", 
+              "projectileParameters" : {
+                "bounces" : 2,
+                "actionOnCollide" : [
+                  {
+                    "action" : "config",
+                    "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "firecloudgrenade", 
+              "projectileParameters" : {
+                "bounces" : 2,
+                "actionOnCollide" : [
+                  {
+                    "action" : "config",
+                    "file" : "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config"
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largefirecloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 0
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largefirecloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 90
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largefirecloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 180
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largefirecloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 270
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "icecloudgrenade", 
+              "projectileParameters" : {
+                "bounces" : 2,
+                "actionOnCollide" : [
+                  {
+                    "action" : "config",
+                    "file" : "/projectiles/explosions/regularexplosion2/iceexplosionknockback.config"
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largeicecloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 0
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largeicecloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 90
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largeicecloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 180
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largeicecloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 270
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "poisoncloudgrenade", 
+              "projectileParameters" : {
+                "bounces" : 2,
+                "actionOnCollide" : [
+                  {
+                    "action" : "config",
+                    "file" : "/projectiles/explosions/regularexplosion2/poisonexplosionknockback.config"
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largepoisoncloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 0
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largepoisoncloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 90
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largepoisoncloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 180
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largepoisoncloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 270
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "electriccloudgrenade", 
+              "projectileParameters" : {
+                "bounces" : 2,
+                "actionOnCollide" : [
+                  {
+                    "action" : "config",
+                    "file" : "/projectiles/explosions/regularexplosion2/electricexplosionknockback.config"
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largeelectriccloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 0
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largeelectriccloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 90
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largeelectriccloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 180
+                  },
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.05,
+                    "type" : "largeelectriccloud",
+                    "fuzzAngle" : 30,
+                    "angleAdjust" : 270
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

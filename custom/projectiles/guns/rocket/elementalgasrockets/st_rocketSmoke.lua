@@ -1,7 +1,10 @@
-function init()
+local oldInit = init or function() end
+local oldUpdate = update or function() end
+
+function init() oldInit()
     --hitActions = config.getParameter("hitactions", {})
 
-    periodicActions = config.getParameter("smokeAction", {})
+    smokeActions = config.getParameter("smokeAction", {})
     
     actionTime = config.getParameter("smokePeriod", 1)
 
@@ -15,32 +18,43 @@ function init()
     randomizedSmoke = config.getParameter("randomizedSmoke", false)
 end
   
-function update(dt)
+function update(dt) oldUpdate(dt)
 
     if actionTimer < actionTime then
         actionTimer = actionTimer + dt
     else
         changeAngle();
         
-        projectile.processAction(periodicActions[1])
+        for i = 1, #smokeActions do 
+            projectile.processAction(smokeActions[i])
+        end
+        
         actionTimer = 0
     end
 
     if angleDirection == 1 then
-        if periodicActions[1].angleAdjust > angleMinMax[2] then
-            angleDirection = -1
+        for i = 1, #smokeActions do 
+            if smokeActions[i].angleAdjust > angleMinMax[2] then
+                angleDirection = -1
+            end
         end
     else
-        if periodicActions[1].angleAdjust < angleMinMax[1] then
-            angleDirection = 1
+        for i = 1, #smokeActions do 
+            if smokeActions[i].angleAdjust < angleMinMax[1] then
+                angleDirection = 1
+            end
         end
     end
 end
 
 function changeAngle()
     if randomizedSmoke then
-        periodicActions[1].angleAdjust = math.random(angleMinMax[1], angleMinMax[2])
+        for i = 1, #smokeActions do 
+            smokeActions[i].angleAdjust = math.random(angleMinMax[1], angleMinMax[2])
+        end
     else
-        periodicActions[1].angleAdjust = periodicActions[1].angleAdjust + (angleIncrement * angleDirection)
+        for i = 1, #smokeActions do 
+            smokeActions[i].angleAdjust = smokeActions[i].angleAdjust + (angleIncrement * angleDirection)
+        end
     end
 end

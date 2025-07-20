@@ -4,21 +4,22 @@
   "physics" : "laser",
   "timeToLive" : 0.12,
   "animationCycle" : 0.25,
-  "lightColor" : [99, 82, 0],
+  "lightColor" : [115, 119, 38],
   "frameNumber" : 1,
   "damageKind" : "fireplasmabullet",
+  "emitters" : [ "fireplasma" ],
   "pointLight" : false,
   "flippable" : true,
   "actionOnCollide" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmafireexplosion.config"
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmafireexplosion.config"
     }
   ],
   "actionOnHit" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmafireexplosion.config"
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmafireexplosion.config"
     }
   ],
   "actionOnTimeout" : [

@@ -1,0 +1,124 @@
+{
+  "itemName" : "st_grapeshotgunshell",
+  "maxStack" : 5,
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_grapeshotgunshell.png",
+  "description" : "???",
+  "shortdescription" : "Grape Shotgun Shell",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Bullets dont fall off and may drop a grape when hit.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "shotgunammo",
+    "category": "barrel",
+    "name": "st_grapeshotgunshell",
+    "displayName": "Juicy Ammo",
+    "displayIcon": "/custom/items/augments/shotgun/barrel/grapeshell/st_grapeshotgunshell.png",
+
+    "inventoryIcon" : "grape.png",
+
+    "primaryAbility": {
+      "barrelDamageMult" : 0.8,
+      "barrelFireRateMult" : 0.9,
+  
+      "projectileCount" : 16,
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_grapebullet",
+              "projectileParameters": {
+                "damageKind" : "shotgunbullet",
+                "knockback" : 20,
+                "speed" : 75
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_grapeslug",
+              "projectileParameters": {
+                "knockback" : 20
+              }
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_firegrapebullet",
+              "projectileParameters": {
+                "damageKind" : "fireplasmashotgun",
+                "knockback" : 30,
+                "speed" : 75
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_grapeslug",
+              "projectileParameters": {
+                "knockback": 20
+              }
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_icegrapebullet",
+              "projectileParameters": {
+                "damageKind": "iceplasmashotgun",
+                "knockback": 20
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_grapeslug",
+              "projectileParameters": {
+                "knockback": 20
+              }
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_poisongrapebullet",
+              "projectileParameters": {
+                "damageKind": "poisonplasmashotgun",
+                "knockback": 20
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_grapeslug",
+              "projectileParameters": {
+                "knockback": 20
+              }
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType": "st_electricgrapebullet",
+              "projectileParameters": {
+                "damageKind": "electricplasmashotgun",
+                "knockback": 20
+              }
+            },
+            "slug" : { 
+              "projectileType": "st_grapeslug",
+              "projectileParameters": {
+                "knockback": 20
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

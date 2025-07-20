@@ -1,0 +1,28 @@
+{
+  "projectileName" : "st_iceghostbullet",
+  "image" : "st_iceghostbullet.png",
+  "physics" : "laser",
+  "timeToLive" : 1,
+  "movementSettings" : {
+    "collisionEnabled" : false
+  },
+  "animationCycle" : 0.25,
+  "emitters" : [ "iceplasma" ],
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "damageKind" : "iceplasmabullet",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmaiceexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "lightColor" : [52, 112, 153],
+  "power" : 5.0,
+  "speed" : 100,
+  "knockback" : 0
+}
+

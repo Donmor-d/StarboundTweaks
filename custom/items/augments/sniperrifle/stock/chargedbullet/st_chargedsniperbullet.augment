@@ -1,0 +1,34 @@
+{
+  "itemName" : "st_chargedsniperbullet",
+  "maxStack" : 5,
+  "price" : 1500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_chargedsniperbullet.png",
+  "description" : "Enables charge firing for sniper rifles, damage increases with charge time.",
+  "shortdescription" : "Charged Sniper Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "sniperrifleammo",
+    "category": "stock",
+    "name": "st_chargedsniperbullet",
+    "displayName": "Charged Ammo",
+    "displayIcon": "/custom/items/augments/sniperrifle/stock/chargedbullet/st_chargedsniperbullet.png",
+
+    "inventoryIcon" : "charged.png",
+
+    "primaryAbility": {
+      "scripts" : ["/custom/items/augments/sniperrifle/stock/chargedbullet/st_charge.lua"],
+
+      "chargeTime" : 1,
+      "maxDamage" : 25
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

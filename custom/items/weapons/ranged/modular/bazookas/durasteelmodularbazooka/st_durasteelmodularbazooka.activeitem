@@ -63,7 +63,7 @@
     "class" : "GunFire",
 
     "fireTime" : 1.5,
-    "baseDps" : 10,
+    "baseDps" : 15,
     "energyUsage" : 0,
     "ammoUsage" : 7.5,
     "inaccuracy" : 0.0,
@@ -75,20 +75,11 @@
 
     "elementalConfig" : {
       "physical" : {
-        "primaryAbility" : { "projectileType" : "rocketshell", "projectileParameters" : {"knockback" : 5} }
-        //"fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ] //talvez colocar depois
-      },
-      "fire" : {
-        "primaryAbility" : { "projectileType" : "st_firegasrocket", "projectileParameters" : {} }
-      },
-      "ice" : {
-        "primaryAbility" : { "projectileType" : "st_icegasrocket", "projectileParameters" : {} }
-      },
-      "poison" : {
-        "primaryAbility" : { "projectileType" : "st_poisongasrocket", "projectileParameters" : {} }
-      },
-      "electric" : {
-        "primaryAbility" : { "projectileType" : "st_electricgasrocket", "projectileParameters" : {} }
+        "primaryAbility" : {
+          "default" : {
+            "projectileType" : "rocketshell"
+          }
+        }
       }
     },
 

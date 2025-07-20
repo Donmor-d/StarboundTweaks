@@ -1,0 +1,192 @@
+{
+  "itemName" : "st_minirocket",
+  "maxStack" : 5,
+  "price" : 1500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_minirocket.png",
+  "description" : "Replaces rockets with a burst of mini rockets.",
+  "shortdescription" : "Mini Rocket",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "category": "barrel",
+    "name": "st_minirocket",
+    "displayName": "Rapid fire Ammo",
+    "displayIcon": "/custom/items/augments/bazooka/barrel/minirocket/st_minirocket.png",
+
+    "inventoryIcon" : "mini.png",
+
+    "primaryAbility": {
+      "barrelDamageMult" : 0.5,
+      "barrelFireRateMult" : 3,
+      "inaccuracy" : 0.075,
+
+      "fireType" : "burst",
+      "burstCount" : 6,
+      "burstTime" : 0.15,
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "minirocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_guidedminirocket", 
+              "projectileParameters" : {}
+            },
+            "homing" : {
+              "projectileType" : "st_minihomingrocket", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_firegasminirocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_fireguidedminirocket", 
+              "projectileParameters" : {
+                "periodicActions": [
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.5,
+                    "type" : "st_smallfirecloud",
+                    "angleAdjust" : 180,
+                    "time" : 0.1,
+                    "fuzzAngle" : 100,
+                    "repeat" : true,
+                    "config" :{
+                      "movementSettings" : {
+                        "speed" : 10,
+                        "gravityMultiplier" : 0.1
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "homing" : {
+              "projectileType" : "st_fireminihomingrocket", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_icegasminirocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_iceguidedminirocket", 
+              "projectileParameters" : {
+                "periodicActions": [
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.5,
+                    "type" : "st_smallicecloud",
+                    "angleAdjust" : 180,
+                    "time" : 0.1,
+                    "fuzzAngle" : 100,
+                    "repeat" : true,
+                    "config" :{
+                      "movementSettings" : {
+                        "speed" : 10,
+                        "gravityMultiplier" : 0.1
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "homing" : {
+              "projectileType" : "st_iceminihomingrocket", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_poisongasminirocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_poisonguidedminirocket", 
+              "projectileParameters" : {
+                "periodicActions": [
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.5,
+                    "type" : "st_smallpoisoncloud",
+                    "angleAdjust" : 180,
+                    "time" : 0.1,
+                    "fuzzAngle" : 100,
+                    "repeat" : true,
+                    "config" :{
+                      "movementSettings" : {
+                        "speed" : 10,
+                        "gravityMultiplier" : 0.1
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "homing" : {
+              "projectileType" : "st_poisonminihomingrocket", 
+              "projectileParameters" : {}
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_electricgasminirocket", 
+              "projectileParameters" : {}
+            },
+            "guided" : {
+              "projectileType" : "st_electricguidedminirocket", 
+              "projectileParameters" : {
+                "periodicActions": [
+                  {
+                    "action" : "projectile",
+                    "inheritDamageFactor" : 0.5,
+                    "type" : "st_smallelectriccloud",
+                    "angleAdjust" : 180,
+                    "time" : 0.1,
+                    "fuzzAngle" : 100,
+                    "repeat" : true,
+                    "config" :{
+                      "movementSettings" : {
+                        "speed" : 10,
+                        "gravityMultiplier" : 0.1
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "homing" : {
+              "projectileType" : "st_electricminihomingrocket", 
+              "projectileParameters" : {}
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

@@ -3,7 +3,7 @@
   "image" : "st_strongicesniperbullet.png",
   "physics" : "laser",
   "animationCycle" : 0.25,
-  "lightColor" : [255, 216, 0],
+  "lightColor" : [86, 187, 255],
   "fullBright" : true,
   "frameNumber" : 1,
   "damageKind" : "iceplasmabullet",
@@ -12,10 +12,10 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/st_plasmaiceexplosion.config"
+      "file" : "/custom/projectiles/guns/explosions/plasmabulletexplosion/st_plasmaiceexplosion.config"
     }
   ],
-  "statusEffects" : [ ],
+  "statusEffects" : [ "frostslow" ],
   "power" : 5.0,
   "speed" : 150,
   "knockback" : 0

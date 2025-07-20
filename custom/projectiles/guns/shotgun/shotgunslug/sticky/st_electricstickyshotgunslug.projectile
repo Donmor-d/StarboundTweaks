@@ -1,0 +1,129 @@
+{
+  "projectileName" : "st_electricstickyshotgunslug",
+  "physics" : "stickybullet",
+  "bounces" : -1,
+  "timeToLive" : 0.15,
+  "speed" : 75,
+  "image" : "st_electricstickyshotgunslug.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "piercing" : true,
+  "actionOnCollide" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallelectricexplosion.config"
+    }
+  ],
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallelectricexplosion.config"
+    }
+  ],
+  "actionOnTimeout" : [
+    {
+      "action" : "config",
+      "file" : "/custom/projectiles/guns/explosions/smallelementalexplosions/st_smallelectricexplosion.config"
+    },
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/projectiles/bullet_ricochet6.ogg",
+        "/sfx/projectiles/bullet_ricochet7.ogg",
+        "/sfx/projectiles/bullet_ricochet12.ogg",
+        "/sfx/projectiles/bullet_ricochet13.ogg"
+      ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "st_electricstickybullet",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 0,
+      "config" : {
+        "speed" : 100,
+        "timeToLive" : 4
+      }
+    },
+    {
+      "action" : "projectile",
+      "type" : "st_electricstickybullet",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 10,
+      "config" : {
+        "speed" : 100,
+        "timeToLive" : 4
+      }
+    },
+    {
+      "action" : "projectile",
+      "type" : "st_electricstickybullet",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 350,
+      "config" : {
+        "speed" : 100,
+        "timeToLive" : 4
+      }
+    },
+    {
+      "action" : "projectile",
+      "type" : "st_electricstickybullet",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 20,
+      "config" : {
+        "speed" : 100,
+        "timeToLive" : 4
+      }
+    },
+    {
+      "action" : "projectile",
+      "type" : "st_electricstickybullet",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 340,
+      "config" : {
+        "speed" : 100,
+        "timeToLive" : 4
+      }
+    },
+    {
+      "action" : "projectile",
+      "type" : "st_electricstickybullet",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 30,
+      "config" : {
+        "speed" : 100,
+        "timeToLive" : 4
+      }
+    },
+    {
+      "action" : "projectile",
+      "type" : "st_electricstickybullet",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 330,
+      "config" : {
+        "speed" : 100,
+        "timeToLive" : 4
+      }
+    },
+    {
+      "action" : "projectile",
+      "type" : "st_electricstickybullet",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.35,
+      "angleAdjust" : 40,
+      "config" : {
+        "speed" : 100,
+        "timeToLive" : 4
+      }
+    }
+  ],
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

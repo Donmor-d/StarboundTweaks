@@ -4,9 +4,9 @@
   "rarity" : "Uncommon",
   "category" : "throwableItem",
   "inventoryIcon" : "st_stickysuspiciousgrape.png",
-  "image" : "stickysuspiciousgrape.png",
+  "image" : "st_stickysuspiciousgrape.png",
   "shortdescription" : "Sticky Grape",
-  "description" : "Grown out of a living being, inedible but can be used as a bomb that sticks to surfaces.",
+  "description" : "Grown out of a monster. Very sticky and volatile.",
 
   "ammoUsage" : 1,
 

@@ -1,0 +1,110 @@
+{
+  "itemName" : "st_soapymachinepistolbullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_soapymachinepistolbullet.png",
+  "description" : "Turns your machine pistol's bullets into lingering bubbles.",
+  "shortdescription" : "Soapy Machine Pistol Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "machinepistolammo",
+    "category": "barrel",
+    "name": "st_soapymachinepistolbullet",
+    "displayName": "Soapy Ammo",
+    "displayIcon": "/custom/items/augments/machinepistol/barrel/soapybullet/st_soapymachinepistolbullet.png",
+
+    "inventoryIcon" : "soapy.png",
+    
+    "animationCustom" : {
+      "particleEmitters" : {
+        "muzzleFlash" : {
+          "burstCount" : 1,
+          "particles" : []
+        }
+      },
+      "sounds" : {
+        "fire" : [ "/sfx/projectiles/bubble_cluster.ogg" ],
+        "reload" : [ "/sfx/projectiles/bubble_cluster.ogg" ],
+        "reloaded" : ["/sfx/gun/reload/pistol_reload_clip3.ogg"]
+      }
+     },
+
+    "primaryAbility": {
+      "barrelDamageMult": 0.9,
+      
+
+      "elementalConfig" : {
+        "physical" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "bubbles", 
+              "projectileParameters" : {
+                "damageKind" : "default",
+                "piercing" : false,
+                "timeToLive" : 3.95,
+                "animationCycle" : 4
+              }
+            }
+          }
+        },
+        "fire" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_firebubbles", 
+              "projectileParameters" : {
+                "piercing" : false,
+                "timeToLive" : 3.95,
+                "animationCycle" : 4
+              }
+            }
+          }
+        },
+        "ice" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_icebubbles", 
+              "projectileParameters" : {
+                "piercing" : false,
+                "timeToLive" : 3.95,
+                "animationCycle" : 4
+              }
+            }
+          }
+        },
+        "poison" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_poisonbubbles", 
+              "projectileParameters" : {
+                "piercing" : false,
+                "timeToLive" : 3.95,
+                "animationCycle" : 4
+              }
+            }
+          }
+        },
+        "electric" : {
+          "primaryAbility" : { 
+            "default" : {
+              "projectileType" : "st_electricbubbles", 
+              "projectileParameters" : {
+                "piercing" : false,
+                "timeToLive" : 3.95,
+                "animationCycle" : 4
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

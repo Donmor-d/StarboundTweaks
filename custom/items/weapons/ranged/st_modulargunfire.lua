@@ -1,35 +1,35 @@
 function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
+  --self.fired = true
+  local element = config.getParameter("elementalType", "physical")
+  local projectileCategory = self.projectileCategory or "default"
+  local params = sb.jsonMerge(self.elementalConfig[element].primaryAbility[projectileCategory].projectileParameters or {}, projectileParams or {})
+  params.power = self:damagePerShot() * (self.stockDamageMult or 1) * (self.chamberDamageMult or 1) * (self.barrelDamageMult or 1) --could do better by getting the augment types and their multiplier but oh well
+  params.powerMultiplier = activeItem.ownerPowerMultiplier()
+  params.speed = util.randomInRange(params.speed)
 
-    --self.fired = true
-    local element = config.getParameter("elementalType", "physical")
-    local params = sb.jsonMerge(self.elementalConfig[element].primaryAbility.projectileParameters, projectileParams or {})
-    params.power = self:damagePerShot() * (self.stockDamageMult or 1) * (self.chamberDamageMult or 1) * (self.barrelDamageMult or 1) --could do better by getting the augment types and their multiplier but oh well
-    params.powerMultiplier = activeItem.ownerPowerMultiplier()
-    params.speed = util.randomInRange(params.speed)
+  if not projectileType then
+      projectileType = self.elementalConfig[element].primaryAbility[projectileCategory].projectileType
+  end
+  if type(projectileType) == "table" then
+      projectileType = projectileType[math.random(#projectileType)]
+  end
 
-    if not projectileType then
-        projectileType = self.elementalConfig[element].primaryAbility.projectileType
-    end
-    if type(projectileType) == "table" then
-        projectileType = projectileType[math.random(#projectileType)]
-    end
+  self.projectileId = 0
+  for i = 1, (projectileCount or self.projectileCount) do
+      if params.timeToLive then
+      params.timeToLive = util.randomInRange(params.timeToLive)
+      end
+      self.projectileId = world.spawnProjectile(
+          projectileType,
+          firePosition or self:firePosition(),
+          activeItem.ownerEntityId(),
+          self:aimVector(inaccuracy or self.inaccuracy),
+          false,
+          params
+      )
+  end
 
-    self.projectileId = 0
-    for i = 1, (projectileCount or self.projectileCount) do
-        if params.timeToLive then
-        params.timeToLive = util.randomInRange(params.timeToLive)
-        end
-        self.projectileId = world.spawnProjectile(
-            projectileType,
-            firePosition or self:firePosition(),
-            activeItem.ownerEntityId(),
-            self:aimVector(inaccuracy or self.inaccuracy),
-            false,
-            params
-        )
-    end
-
-    return self.projectileId
+  return self.projectileId
 end
 
 function GunFire:auto()

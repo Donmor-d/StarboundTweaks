@@ -65,20 +65,11 @@
 
     "elementalConfig" : {
       "physical" : {
-        "primaryAbility" : { "projectileType" : "standardbullet", "projectileParameters" : {"knockback" : 2} }
-        //"fireSounds" : [ "/sfx/gun/plasma_ar1.ogg", "/sfx/gun/plasma_ar2.ogg", "/sfx/gun/plasma_ar3.ogg", "/sfx/gun/plasma_pistol3.ogg" ] //talvez colocar depois
-      },
-      "fire" : {
-        "primaryAbility" : { "projectileType" : "fireplasma", "projectileParameters" : {"knockback" : 2, "statusEffects" : [ "burning" ] } }
-      },
-      "ice" : {
-        "primaryAbility" : { "projectileType" : "iceplasma", "projectileParameters" : {"knockback" : 2, "statusEffects" : [ "frostslow" ] } }
-      },
-      "poison" : {
-        "primaryAbility" : { "projectileType" : "poisonplasma", "projectileParameters" : {"knockback" : 2, "statusEffects" : [ "weakpoison" ] } }
-      },
-      "electric" : {
-        "primaryAbility" : { "projectileType" : "electricplasma", "projectileParameters" : {"knockback" : 2, "statusEffects" : [ "electrified" ] } }
+        "primaryAbility" : {
+          "default" : {
+            "projectileType" : "standardbullet"
+          }
+        }
       }
     },
     

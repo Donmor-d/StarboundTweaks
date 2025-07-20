@@ -46,13 +46,14 @@
         "periodicActions":[
           {
             "action" : "projectile",
-            "inheritDamageFactor" : 1,
+            "inheritDamageFactor" : 0.5,
             "type" : "largeelectriccloud",
             "angleAdjust" : 180,
             "time" : 0.075,
             "repeat" : true,
             "config" :{
               "movementSettings" : {
+                "speed" : 10,
                 "gravityMultiplier" : 0.1
               }
             }

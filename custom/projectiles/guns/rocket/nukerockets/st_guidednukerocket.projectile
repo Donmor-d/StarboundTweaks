@@ -19,9 +19,8 @@
   "speed" : 10.0,
   "acceleration" : 10,
   "physics" : "rocket",
-  "damageType" : "damage",
+  "damageType" : "NoDamage",
   "knockback" : 40,
-  "damageRepeatGroup" : "STexplosion",
   "damageKind" : "default",
 
   "scripts" : [ "/projectiles/activeitems/guidedrocket/guidedrocket.lua" ],

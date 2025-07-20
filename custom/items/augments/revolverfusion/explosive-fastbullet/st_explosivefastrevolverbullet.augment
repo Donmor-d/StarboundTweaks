@@ -47,10 +47,10 @@
 
       "projectileType": "explosivebullet",
       "projectileParameters": {
-      "damageType" : "damage",
-      "lightColor" : [99, 82, 0],
-	    "knockback" : 5
-	  },
+        "damageType" : "damage",
+        "lightColor" : [99, 82, 0],
+        "knockback" : 5
+      },
       "projectileCount": 1,
 
      "stances" : {
