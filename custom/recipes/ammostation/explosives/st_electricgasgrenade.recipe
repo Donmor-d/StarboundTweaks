@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "st_defaultgrenade", "count" : 1 },
-	{ "item" : "staticcell", "count" : 2 }
+    { "item" : "st_defaultchamber", "count" : 1 },
+	  { "item" : "staticcell", "count" : 2 }
   ],
   "output" : { "item" : "st_electricgasgrenade", "count" : 1 },
   "groups" : [ "st_ammostation2", "st_ammoexplosive", "all" ]

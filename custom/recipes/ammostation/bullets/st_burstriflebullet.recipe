@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "st_defaultriflebullet", "count" : 1 },
-	{ "item" : "phasematter", "count" : 2 }
+    { "item" : "st_defaultstock", "count" : 1 },
+	  { "item" : "ironbar", "count" : 5 }
   ],
   "output" : { "item" : "st_burstriflebullet", "count" : 1 },
   "groups" : [ "st_ammostation", "st_ammobullet", "all" ]

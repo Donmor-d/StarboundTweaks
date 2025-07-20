@@ -1,12 +1,12 @@
 {
-  "itemName" : "st_electricammo",
+  "itemName" : "st_poisonammo",
   "maxStack" : 5,
   "price" : 3000,
   "rarity" : "Legendary",
   "category" : "ammoModifier",
-  "inventoryIcon" : "st_electricammo.png",
-  "description" : "Changes any modular gun's element to electric.",
-  "shortdescription" : "Electric Ammo",
+  "inventoryIcon" : "st_poisonammo.png",
+  "description" : "Changes the gun's element to poison.",
+  "shortdescription" : "Poison Ammo",
   "tooltipKind" : "st_ammomodifier",
 
   //"notes" : "", 
@@ -16,13 +16,13 @@
   "augment": {
     "type": "anyammo",
     "category": "chamber",
-    "name": "st_electricammo",
-    "displayName": "Electrified Ammo",
-    "displayIcon": "/custom/items/augments/misc/chamber/electricammo/st_electricammo.png",
-    "elementalType": "electric",
+    "name": "st_poisonammo",
+    "displayName": "Poisoned Ammo",
+    "displayIcon": "/custom/items/augments/any/chamber/poisonammo/st_poisonammo.png",
+    "elementalType": "poison",
 
-    "inventoryIcon" : "electric.png",
-    "fullbright" : "electricfullbright.png",
+    "inventoryIcon" : "poison.png",
+    "fullbright" : "poisonfullbright.png",
 
     "primaryAbility": {
       "chamberDamageMult" : 0.75

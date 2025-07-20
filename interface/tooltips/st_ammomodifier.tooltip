@@ -75,7 +75,7 @@
     "hAnchor" : "left",
     "vAnchor" : "top",
     "wrapWidth" : 118,
-    "value" : "Only equippable on modular weapons",
+    "value" : "Only works on modular weapons",
     "color" : "gray"
   }
 }

@@ -18,7 +18,7 @@
     "category": "chamber",
     "name": "st_fireammo",
     "displayName": "Burning Ammo",
-    "displayIcon": "/custom/items/augments/misc/chamber/fireammo/st_fireammo.png",
+    "displayIcon": "/custom/items/augments/any/chamber/fireammo/st_fireammo.png",
     "elementalType": "fire",
 
     "inventoryIcon" : "fire.png",

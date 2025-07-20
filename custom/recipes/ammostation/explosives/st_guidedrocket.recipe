@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "st_defaultrocket", "count" : 1 },
-	{ "item" : "siliconboard", "count" : 1 }
+    { "item" : "st_defaultbarrel", "count" : 1 },
+	  { "item" : "siliconboard", "count" : 1 }
   ],
   "output" : { "item" : "st_guidedrocket", "count" : 1 },
   "groups" : [ "st_ammostation2", "st_ammoexplosive", "all" ]

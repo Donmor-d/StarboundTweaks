@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "st_defaultsniperbullet", "count" : 1 },
-	{ "item" : "liquidoil", "count" : 5 }
+    { "item" : "st_defaultbarrel", "count" : 1 },
+	  { "item" : "liquidoil", "count" : 5 }
   ],
   "output" : { "item" : "st_bouncingsniperbullet", "count" : 1 },
   "groups" : [ "st_ammostation", "st_ammobullet", "all" ]

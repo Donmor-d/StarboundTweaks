@@ -18,7 +18,7 @@
     "category": "chamber",
     "name": "st_iceammo",
     "displayName": "Freezing Ammo",
-    "displayIcon": "/custom/items/augments/misc/chamber/iceammo/st_iceammo.png",
+    "displayIcon": "/custom/items/augments/any/chamber/iceammo/st_iceammo.png",
     "elementalType": "ice",
 
     "inventoryIcon" : "ice.png",

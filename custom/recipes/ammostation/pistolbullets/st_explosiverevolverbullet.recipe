@@ -1,8 +1,8 @@
 {
   "input" : [
-    { "item" : "st_defaultrevolverbullet", "count" : 1 },
-	{ "item" : "volatilepowder", "count" : 5 },
-	{ "item" : "titaniumbar", "count" : 1 }
+    { "item" : "st_defaultbarrel", "count" : 1 },
+    { "item" : "volatilepowder", "count" : 5 },
+    { "item" : "titaniumbar", "count" : 1 }
   ],
   "output" : { "item" : "st_explosiverevolverbullet", "count" : 1 },
   "groups" : [ "st_ammostation", "st_ammopistolbullet", "all" ]

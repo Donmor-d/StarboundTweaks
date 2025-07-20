@@ -1,28 +1,40 @@
 [
 	{
-	"op": "replace",
-	"path": "/statusControllerSettings/stats/foodDelta/baseValue",
-	"value": -0.02915 //-70 food over 40 minutes
+		"op": "replace",
+		"path": "/statusControllerSettings/stats/foodDelta/baseValue",
+		"value": -0.02915 //-70 food over 40 minutes
 	},
 	{
-	"op": "replace",
-	"path": "/statusControllerSettings/stats/fallDamageMultiplier/baseValue",
-	"value": 0.75
+		"op": "replace",
+		"path": "/statusControllerSettings/stats/fallDamageMultiplier/baseValue",
+		"value": 0.75
 	},
 	{
-	"op": "replace",
-	"path": "/movementParameters/flySpeed",
-	"value": 14 
+		"op": "replace",
+		"path": "/movementParameters/flySpeed",
+		"value": 14
 	},
 	{
-	"op": "replace",
-	"path": "/movementParameters/airFriction",
-	"value": 0 
+		"op": "replace",
+		"path": "/movementParameters/airFriction",
+		"value": 0
 	},
-//--------------------------------------recipes--------------------------------------
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ammocombiner" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ammostation" } },
-/*
+	//--------------------------------------recipes--------------------------------------
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_ammocombiner"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_ammostation"
+		}
+	},
+	/*
 		//assaultrifles
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ironmodularrifle" } },
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_tungstenmodularrifle" } },
@@ -50,72 +62,233 @@
 		//launchers - grenade launchers
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularlauncher" } },
 */
-		//------augments-----
-			//assaultrifle
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultriflebullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_piercingriflebullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_burstriflebullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_bouncingriflebullet" } },
-			//revolver
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultrevolverbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_explosiverevolverbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_rapidrevolverbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ghostrevolverbullet" } },
-			//shotgun
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultshotgunshell" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_stickybombshotgunshell" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_poisonshotgunshell" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_fireshotgunshell" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_iceshotgunshell" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricshotgunshell" } },
-			//sniperrifle
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultsniperbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_piercingsniperbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_bouncingsniperbullet" } },
-			//machinepistol
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultmachinepistolbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricmachinepistolbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_firemachinepistolbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_icemachinepistolbullet" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_poisonmachinepistolbullet" } },
-			//bazooka - rocketlauncher
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultrocket" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_guidedrocket" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_homingrocket" } },
-			//launcher - grenade launcher
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_defaultgrenade" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_poisongasgrenade" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_icegasgrenade" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_electricgasgrenade" } },
-		{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_firegasgrenade" } },
-		//bars
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_leadbar" } },
-
+	//------augments-----
 	{
-	"op": "add",
-	"path": "/statusControllerSettings/stats/maxAmmo",
-	"value": { "baseValue": 100 }
-	},
-	{
-	"op": "add",
-	"path": "/statusControllerSettings/resources/ammo",
-	"value": { "maxStat": "maxAmmo",
-		  		"inicialPercentage": 0 }
-	},
-	{
-	"op": "add",
-	"path": "/statusControllerSettings/resources/lunacy",
-	"value": {
-		"maxValue": 3600, //1 hour if 1 item is equipped/held, 30 minutes if 2, 20 minutes if 3, 10 minutes if 4
-		"inicialPercentage": 0,
-		"deltaStat" : "lunacyRegen"
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_defaultstock"
 		}
 	},
 	{
-	"op": "add",
-	"path": "/statusControllerSettings/stats/lunacyRegen",
-	"value": {
-		"baseValue": 0
-	}
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_defaultchamber"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_defaultbarrel"
+		}
+	},
+	//assaultrifle
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_piercingriflebullet"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_burstriflebullet"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_bouncingriflebullet"
+		}
+	},
+	//revolver
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_explosiverevolverbullet"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_rapidrevolverbullet"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_ghostrevolverbullet"
+		}
+	},
+	//shotgun
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_stickybombshotgunshell"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_poisonshotgunshell"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_fireshotgunshell"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_iceshotgunshell"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_electricshotgunshell"
+		}
+	},
+	//sniperrifle
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_piercingsniperbullet"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_bouncingsniperbullet"
+		}
+	},
+	//machinepistol
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_electricmachinepistolbullet"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_firemachinepistolbullet"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_icemachinepistolbullet"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_poisonmachinepistolbullet"
+		}
+	},
+	//bazooka - rocketlauncher
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_guidedrocket"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_homingrocket"
+		}
+	},
+	//launcher - grenade launcher
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_poisongasgrenade"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_icegasgrenade"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_electricgasgrenade"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_firegasgrenade"
+		}
+	},
+	//bars
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
+			"item": "st_leadbar"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/statusControllerSettings/stats/maxAmmo",
+		"value": {
+			"baseValue": 100
+		}
+	},
+	{
+		"op": "add",
+		"path": "/statusControllerSettings/resources/ammo",
+		"value": {
+			"maxStat": "maxAmmo",
+			"inicialPercentage": 0
+		}
+	},
+	{
+		"op": "add",
+		"path": "/statusControllerSettings/resources/lunacy",
+		"value": {
+			"maxValue": 3600, //1 hour if 1 item is equipped/held, 30 minutes if 2, 20 minutes if 3, 10 minutes if 4
+			"inicialPercentage": 0,
+			"deltaStat": "lunacyRegen"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/statusControllerSettings/stats/lunacyRegen",
+		"value": {
+			"baseValue": 0
+		}
 	}
 ]

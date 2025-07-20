@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "st_defaultsniperbullet", "count" : 1 },
-	{ "item" : "titaniumbar", "count" : 2 }
+    { "item" : "st_defaultbarrel", "count" : 1 },
+	  { "item" : "titaniumbar", "count" : 2 }
   ],
   "output" : { "item" : "st_piercingsniperbullet", "count" : 1 },
   "groups" : [ "st_ammostation", "st_ammobullet", "all" ]

@@ -1,7 +1,22 @@
+//test if has animationScripts, if not, continue the first patching process
 [
-  {
-    "op": "add",
-    "path": "/animationScripts/-",
-    "value": "/custom/scripts/st_ammo_drawables.lua"
-  }
+  [
+    {
+      "op": "test",
+      "path": "/animationScripts",
+      "inverse" : true
+    },
+    {
+      "op": "add",
+      "path": "/animationScripts",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/animationScripts/-",
+      "value": "/custom/scripts/st_ammo_drawables.lua"
+    }
+  ]
 ]

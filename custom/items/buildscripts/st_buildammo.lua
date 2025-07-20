@@ -2,6 +2,8 @@ function build(directory, config, parameters, level, seed)
 
   config.tooltipFields = config.tooltipFields or {}
 
+  local augmentType = config.augment.type or "anyammo"
+
   -- if config.augment.primaryAbility then
 
   --   config.tooltipFields.damagePerShotLabel = config.augment.primaryAbility.baseDps or ""
@@ -16,8 +18,8 @@ function build(directory, config, parameters, level, seed)
   
   --config.tooltipFields.weaponTypeLabel = config.typeName
   if type(config.augment.type) == "table" then
-    for key, value in ipairs(config.augment.type) do
-      config.tooltipFields["weaponType" .. tostring(key) .. "Image"] = "/custom/interface/tooltips/ammo/" .. config.augment.category .. value .. ".png"
+    for key, type in ipairs(config.augment.type) do
+      config.tooltipFields["weaponType" .. tostring(key) .. "Image"] = "/custom/interface/tooltips/ammo/" .. config.augment.category .. type .. ".png"
     end
   else
     config.tooltipFields.weaponType1Image = "/custom/interface/tooltips/ammo/" .. config.augment.category .. config.augment.type .. ".png"

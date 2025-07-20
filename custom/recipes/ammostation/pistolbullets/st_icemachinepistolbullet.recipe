@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "st_defaultmachinepistolbullet", "count" : 1 },
-	{ "item" : "cryonicextract", "count" : 2 }
+    { "item" : "st_defaultchamber", "count" : 1 },
+	  { "item" : "cryonicextract", "count" : 2 }
   ],
   "output" : { "item" : "st_icemachinepistolbullet", "count" : 1 },
   "groups" : [ "st_ammostation", "st_ammopistolbullet", "all" ]

@@ -14,8 +14,6 @@ function crystalMoontantAttack.enter()
     boundMode = "CollisionArea"
   })
 
-  sb.logInfo(#self.flyingMoontants)
-
   if #self.flyingMoontants > 6 then return nil end --wont spawn more if the amount is reached
 
   return {

@@ -7,10 +7,14 @@ function apply(input)
   local weaponType = output:instanceValue("acceptsAugmentType", "")
 
   if augmentConfig then
-    if weaponType == augmentConfig.type or augmentConfig.type == "anyammo" or isCompatible(augmentConfig.type, weaponType) then --checks if compatible, 
+    if weaponType == augmentConfig.type or augmentConfig.type == "anyammo" or augmentConfig.type == "default" or isCompatible(augmentConfig.type, weaponType) then --checks if compatible, 
       local currentAugments = output:instanceValue("currentAugments", {stock, chamber, barrel})
       if currentAugments then
-        if currentAugments[augmentConfig.category] and currentAugments[augmentConfig.category].name == augmentConfig.name then
+        if currentAugments[augmentConfig.category] then
+          if currentAugments[augmentConfig.category].name == augmentConfig.name then
+            return nil
+          end
+        elseif augmentConfig.type == "default" then
           return nil
         end
       end
@@ -31,10 +35,6 @@ function apply(input)
       else
         local equippedAugments = output:instanceValue("currentAugments", {stock, chamber, barrel})
         equippedAugments[augmentConfig.category] = augmentConfig
-        output:setInstanceValue("currentAugments", equippedAugments)
-        if augmentConfig.elementalType then
-          output:setInstanceValue("elementalType", augmentConfig.elementalType)
-        end
 
         --rebuild gun with current augments every time a new one is equipped
 
@@ -49,50 +49,50 @@ function apply(input)
           end 
 
           output:setInstanceValue("primaryAbility", defaultPrimaryAbility) 
+          
+          local inventoryIcon = output:instanceValue("inventoryIcon") 
+          local animationParts = output:instanceValue("animationParts")
 
-          if augment.inventoryIcon then
-            local inventoryIcon = output:instanceValue("inventoryIcon") 
+          local newInventoryIcon = augment.inventoryIcon or "normal.png"
 
-            local animationParts = output:instanceValue("animationParts") 
-            if augment.category == "stock" then
-              local index = string.find(inventoryIcon[1].image, "/[^/]*$")
+          if augment.category == "stock" then
+            local index = string.find(inventoryIcon[1].image, "/[^/]*$")
 
-              local filePath = string.sub(inventoryIcon[1].image, 1, index)
+            local filePath = string.sub(inventoryIcon[1].image, 1, index)
 
-              inventoryIcon[1].image = filePath .. augment.inventoryIcon
-              animationParts.butt = filePath .. augment.inventoryIcon
-              if augment.fullbright then
-                animationParts.buttfullbright = filePath .. augment.fullbright
-              end
-            elseif augment.category == "chamber" then
-              local index = string.find(inventoryIcon[2].image, "/[^/]*$")
-
-              local filePath = string.sub(inventoryIcon[2].image, 1, index)
-
-              inventoryIcon[2].image = filePath .. augment.inventoryIcon
-              animationParts.middle = filePath .. augment.inventoryIcon
-              if augment.fullbright then
-                animationParts.middlefullbright = filePath .. augment.fullbright
-              end
-            elseif augment.category == "barrel" then
-              local index = string.find(inventoryIcon[3].image, "/[^/]*$")
-
-              local filePath = string.sub(inventoryIcon[3].image, 1, index)
-
-              inventoryIcon[3].image = filePath .. augment.inventoryIcon
-              animationParts.barrel = filePath .. augment.inventoryIcon
-              if augment.fullbright then
-                animationParts.barrelfullbright = filePath .. augment.fullbright
-              end
+            inventoryIcon[1].image = filePath .. newInventoryIcon
+            animationParts.butt = filePath .. newInventoryIcon
+            if augment.fullbright then
+              animationParts.buttfullbright = filePath .. augment.fullbright
+            end
+          elseif augment.category == "chamber" then
+            if augmentConfig.elementalType or augmentConfig.type == "default" then
+              output:setInstanceValue("elementalType", elementType)
             end
 
-            output:setInstanceValue("inventoryIcon", inventoryIcon)
-            output:setInstanceValue("animationParts", animationParts)
+            local index = string.find(inventoryIcon[2].image, "/[^/]*$")
+
+            local filePath = string.sub(inventoryIcon[2].image, 1, index)
+
+            inventoryIcon[2].image = filePath .. newInventoryIcon
+            animationParts.middle = filePath .. newInventoryIcon
+            if augment.fullbright then
+              animationParts.middlefullbright = filePath .. augment.fullbright
+            end
+          elseif augment.category == "barrel" then
+            local index = string.find(inventoryIcon[3].image, "/[^/]*$")
+
+            local filePath = string.sub(inventoryIcon[3].image, 1, index)
+
+            inventoryIcon[3].image = filePath .. newInventoryIcon
+            animationParts.barrel = filePath .. newInventoryIcon
+            if augment.fullbright then
+              animationParts.barrelfullbright = filePath .. augment.fullbright
+            end
           end
-          
-          if augment.animationCustom then
-            output:setInstanceValue("animationCustom", augment.animationCustom)
-          end
+
+          output:setInstanceValue("inventoryIcon", inventoryIcon)
+          output:setInstanceValue("animationParts", animationParts)
 
           if augment.animationCustom then
             local newAnimationCustom = {}
@@ -100,9 +100,13 @@ function apply(input)
               newAnimationCustom[key] = value
             end 
             output:setInstanceValue("animationCustom", newAnimationCustom)
-          end  
-
+          end
         end
+
+        if augmentConfig.type == "default" then
+          equippedAugments[augmentConfig.category] = nil
+        end
+        output:setInstanceValue("currentAugments", equippedAugments)
       end
       return output:descriptor(), 1
     end
