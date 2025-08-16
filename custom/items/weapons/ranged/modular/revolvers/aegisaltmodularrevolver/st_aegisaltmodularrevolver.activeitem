@@ -29,10 +29,11 @@
     }
   ],
   "acceptsAugmentType": "pistolammo",
-  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts": {
     "butt": "/custom/items/weapons/ranged/modular/revolvers/aegisaltmodularrevolver/butt/normal.png",
     "middle": "/custom/items/weapons/ranged/modular/revolvers/aegisaltmodularrevolver/middle/normal.png",
+    "middleFullbright" : "/custom/items/weapons/ranged/modular/revolvers/aegisaltmodularrevolver/middle/normalfullbright.png",
     "barrel": "/custom/items/weapons/ranged/modular/revolvers/aegisaltmodularrevolver/barrel/normal.png",
     "muzzleFlash": "/items/active/weapons/ranged/muzzleflash.png"
   },

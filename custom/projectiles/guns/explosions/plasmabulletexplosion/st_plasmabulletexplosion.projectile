@@ -2,7 +2,7 @@
   "projectileName" : "st_plasmabulletexplosion",
   "image" : "st_plasmabulletexplosion.png",
   "animationCycle" : 0.4,
-  "frameNumber" : 8,
+  "frameNumber" : 7,
   "speed" : 0,
   "animationLoops" : false,
   "piercing" : true,

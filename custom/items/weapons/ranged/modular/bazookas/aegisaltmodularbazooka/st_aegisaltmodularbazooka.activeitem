@@ -19,10 +19,11 @@
   
   "acceptsAugmentType" : "rocketlauncherammo",               //adiciona munição que usa
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts" : {
     "butt" : "/custom/items/weapons/ranged/modular/bazookas/aegisaltmodularbazooka/butt/normal.png",
     "middle" : "/custom/items/weapons/ranged/modular/bazookas/aegisaltmodularbazooka/middle/normal.png",
+    "middleFullbright" : "/custom/items/weapons/ranged/modular/bazookas/aegisaltmodularbazooka/middle/normalfullbright.png",
     "barrel" : "/custom/items/weapons/ranged/modular/bazookas/aegisaltmodularbazooka/barrel/normal.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },

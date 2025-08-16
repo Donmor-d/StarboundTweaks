@@ -29,7 +29,7 @@
     }
   ],
   "acceptsAugmentType": "pistolammo",
-  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts": {
     "butt": "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/butt/normal.png",
     "middle": "/custom/items/weapons/ranged/modular/revolvers/tungstenmodularrevolver/middle/normal.png",

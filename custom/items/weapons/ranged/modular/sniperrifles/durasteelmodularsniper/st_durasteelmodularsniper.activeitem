@@ -21,7 +21,7 @@
     { "image" : "/custom/items/weapons/ranged/modular/sniperrifles/durasteelmodularsniper/barrel/normal.png" }
   ],
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts" : {
     "butt" : "/custom/items/weapons/ranged/modular/sniperrifles/durasteelmodularsniper/butt/normal.png",
     "middle" : "/custom/items/weapons/ranged/modular/sniperrifles/durasteelmodularsniper/middle/normal.png",

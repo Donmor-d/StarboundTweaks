@@ -19,7 +19,7 @@
   
   "acceptsAugmentType" : "assaultrifleammo",               //adiciona munição que usa
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts" : {
     "butt" : "/custom/items/weapons/ranged/modular/assaultrifles/ironmodularrifle/butt/normal.png",
     "middle" : "/custom/items/weapons/ranged/modular/assaultrifles/ironmodularrifle/middle/normal.png",

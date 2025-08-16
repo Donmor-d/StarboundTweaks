@@ -26,7 +26,7 @@
     }
   ],
   "acceptsAugmentType": "pistolammo",
-  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts": {
     "butt": "/custom/items/weapons/ranged/modular/revolvers/ironmodularrevolver/butt/normal.png",
     "middle": "/custom/items/weapons/ranged/modular/revolvers/ironmodularrevolver/middle/normal.png",

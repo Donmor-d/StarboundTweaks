@@ -63,11 +63,13 @@ function apply(input)
             inventoryIcon[1].image = filePath .. newInventoryIcon
             animationParts.butt = filePath .. newInventoryIcon
             if augment.fullbright then
-              animationParts.buttfullbright = filePath .. augment.fullbright
+              animationParts.buttFullbright = filePath .. augment.fullbright
             end
           elseif augment.category == "chamber" then
-            if augmentConfig.elementalType or augmentConfig.type == "default" then
-              output:setInstanceValue("elementalType", elementType)
+            if augmentConfig.type == "default" then
+              output:setInstanceValue("elementalType", "physical")
+            elseif augmentConfig.elementalType then
+              output:setInstanceValue("elementalType", augmentConfig.elementalType)
             end
 
             local index = string.find(inventoryIcon[2].image, "/[^/]*$")
@@ -77,7 +79,7 @@ function apply(input)
             inventoryIcon[2].image = filePath .. newInventoryIcon
             animationParts.middle = filePath .. newInventoryIcon
             if augment.fullbright then
-              animationParts.middlefullbright = filePath .. augment.fullbright
+              animationParts.middleFullbright = filePath .. augment.fullbright
             end
           elseif augment.category == "barrel" then
             local index = string.find(inventoryIcon[3].image, "/[^/]*$")
@@ -87,7 +89,7 @@ function apply(input)
             inventoryIcon[3].image = filePath .. newInventoryIcon
             animationParts.barrel = filePath .. newInventoryIcon
             if augment.fullbright then
-              animationParts.barrelfullbright = filePath .. augment.fullbright
+              animationParts.barrelFullbright = filePath .. augment.fullbright
             end
           end
 
@@ -108,6 +110,7 @@ function apply(input)
         end
         output:setInstanceValue("currentAugments", equippedAugments)
       end
+      sb.logError(sb.print(output:descriptor()))
       return output:descriptor(), 1
     end
   end

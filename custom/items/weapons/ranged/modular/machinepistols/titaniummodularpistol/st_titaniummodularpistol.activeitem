@@ -19,7 +19,7 @@
   
   "acceptsAugmentType" : "machinepistolammo",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts" : {
     "butt" : "/custom/items/weapons/ranged/modular/machinepistols/titaniummodularpistol/butt/normal.png",
     "middle" : "/custom/items/weapons/ranged/modular/machinepistols/titaniummodularpistol/middle/normal.png",

@@ -19,10 +19,11 @@
    
   "acceptsAugmentType" : "grenadelauncherammo",               //adiciona munição que usa
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts" : {
     "butt" : "/custom/items/weapons/ranged/modular/grenadelaunchers/aegisaltmodularlauncher/butt/normal.png",
     "middle" : "/custom/items/weapons/ranged/modular/grenadelaunchers/aegisaltmodularlauncher/middle/normal.png",
+    "middleFullbright" : "/custom/items/weapons/ranged/modular/grenadelaunchers/aegisaltmodularlauncher/middle/normalfullbright.png",
     "barrel" : "/custom/items/weapons/ranged/modular/grenadelaunchers/aegisaltmodularlauncher/barrel/normal.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },

@@ -56,6 +56,22 @@ function build(directory, config, parameters, level, seed)
     config.animationCustom.animatedParts.parts.butt.properties.offset = config.baseOffset
     config.animationCustom.animatedParts.parts.middle.properties.offset = config.baseOffset
     config.animationCustom.animatedParts.parts.barrel.properties.offset = config.baseOffset
+    
+    
+    construct(config, "animationCustom", "animatedParts", "parts", "middleFullbright", "properties")
+    construct(config, "animationCustom", "animatedParts", "parts", "buttFullbright", "properties")
+    construct(config, "animationCustom", "animatedParts", "parts", "barrelFullbright", "properties")
+    if config.animationCustom.animatedParts.parts.buttFullbright then
+      config.animationCustom.animatedParts.parts.buttFullbright.properties.offset = config.baseOffset
+    end
+    if config.animationCustom.animatedParts.parts.middleFullbright then
+      sb.logError("testete")
+      config.animationCustom.animatedParts.parts.middleFullbright.properties.offset = config.baseOffset
+    end
+    if config.animationCustom.animatedParts.parts.barrelFullbright then
+      config.animationCustom.animatedParts.parts.barrelFullbright.properties.offset = config.baseOffset
+    end
+
     if config.muzzleOffset then
       config.muzzleOffset = vec2.add(config.muzzleOffset, config.baseOffset)
     end

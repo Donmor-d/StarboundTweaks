@@ -19,15 +19,16 @@
   
   "acceptsAugmentType" : "assaultrifleammo",               //adiciona munição que usa
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts" : {
     "butt" : "/custom/items/weapons/ranged/modular/assaultrifles/aegisaltmodularrifle/butt/normal.png",
     "middle" : "/custom/items/weapons/ranged/modular/assaultrifles/aegisaltmodularrifle/middle/normal.png",
+    "middleFullbright" : "/custom/items/weapons/ranged/modular/assaultrifles/aegisaltmodularrifle/middle/normalfullbright.png",
     "barrel" : "/custom/items/weapons/ranged/modular/assaultrifles/aegisaltmodularrifle/barrel/normal.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
-  "particleEmitters" : {
+    "particleEmitters" : {
       "muzzleFlash" : {
         "burstCount" : 1,
         "particles" : [
@@ -50,7 +51,7 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua", "/custom/items/weapons/ranged/st_modulargunfire.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.11,

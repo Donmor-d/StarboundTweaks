@@ -21,10 +21,11 @@
     { "image" : "/custom/items/weapons/ranged/modular/sniperrifles/aegisaltmodularsniper/barrel/normal.png" }
   ],
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/custom/items/weapons/ranged/modular/st_modulargun.animation",
   "animationParts" : {
     "butt" : "/custom/items/weapons/ranged/modular/sniperrifles/aegisaltmodularsniper/butt/normal.png",
     "middle" : "/custom/items/weapons/ranged/modular/sniperrifles/aegisaltmodularsniper/middle/normal.png",
+    "middleFullbright" : "/custom/items/weapons/ranged/modular/sniperrifles/aegisaltmodularsniper/middle/normalfullbright.png",
     "barrel" : "/custom/items/weapons/ranged/modular/sniperrifles/aegisaltmodularsniper/barrel/normal.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
