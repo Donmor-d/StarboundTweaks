@@ -23,7 +23,8 @@
     "inventoryIcon" : "inaccurate.png",
 
     "primaryAbility": {
-      "inaccuracy" : 0.25
+      "inaccuracy" : 0.25,
+      "stockDamageMult" : 1.2
     }
   },
 

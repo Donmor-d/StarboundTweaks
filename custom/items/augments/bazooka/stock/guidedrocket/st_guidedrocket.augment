@@ -21,6 +21,7 @@
     "displayIcon": "/custom/items/augments/bazooka/stock/guidedrocket/st_guidedrocket.png",
 
     "inventoryIcon" : "guided.png",
+    "fullbright" : "guidedfullbright.png",
 
     "primaryAbility": {
       "scripts": [ "/items/active/weapons/ranged/gunfire.lua", "/custom/items/weapons/ranged/st_modulargunfire.lua", "/custom/items/augments/bazooka/stock/guidedrocket/st_guidedrocketaugment.lua" ],

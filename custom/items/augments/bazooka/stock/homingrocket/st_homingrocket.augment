@@ -21,6 +21,7 @@
     "displayIcon": "/custom/items/augments/bazooka/stock/homingrocket/st_homingrocket.png",
 
     "inventoryIcon" : "homing.png",
+    "fullbright" : "homingfullbright.png",
 
     "primaryAbility": {
       "projectileCategory" : "homing"
