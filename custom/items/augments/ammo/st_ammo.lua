@@ -110,7 +110,6 @@ function apply(input)
         end
         output:setInstanceValue("currentAugments", equippedAugments)
       end
-      sb.logError(sb.print(output:descriptor()))
       return output:descriptor(), 1
     end
   end

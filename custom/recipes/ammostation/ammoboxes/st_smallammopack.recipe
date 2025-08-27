@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "ironbar", "count" : 1 },
-	{ "item" : "copperbar", "count" : 1 }
+	  { "item" : "copperbar", "count" : 1 }
   ],
   "output" : { "item" : "st_smallammopack", "count" : 10 },
   "groups" : [ "st_ammostation", "st_ammoboxes", "all" ]

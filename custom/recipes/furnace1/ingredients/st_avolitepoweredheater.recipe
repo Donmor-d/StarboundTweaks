@@ -1,8 +1,6 @@
 {
   "input" : [
     { "item" : "refinedaegisalt", "count" : 1 },
-    { "item" : "refinedferozium", "count" : 1 },
-    { "item" : "refinedviolium", "count" : 1 },
     { "item" : "durasteelbar", "count" : 2 }
   ],
   "output" : { "item" : "st_avolitepoweredheater", "count" : 1 },

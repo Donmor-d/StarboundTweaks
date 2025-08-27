@@ -24,7 +24,7 @@
 		"op": "add",
 		"path": "/defaultBlueprints/tier1/-",
 		"value": {
-			"item": "st_ammocombiner"
+			"item": "st_ammoduplicator"
 		}
 	},
 	{

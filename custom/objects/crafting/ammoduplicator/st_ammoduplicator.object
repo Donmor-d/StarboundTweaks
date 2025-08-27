@@ -1,0 +1,63 @@
+{
+  "objectName" : "st_ammoduplicator",
+  "colonyTags" : ["commerce"],
+  "rarity" : "Rare",
+  "printable" : false,
+  "description" : "The ammo duplicator is used to clone ammo.",
+  "shortdescription" : "^orange;Ammo Duplicator^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1250,
+  "health" : 1.5,
+
+  "objectType" : "container",
+  "slotCount" : 3,
+  "uiConfig" : "/custom/interface/objectcrafting/st_ammoduplicator.config",
+  "subtitle" : "Duplicates ammo",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+  "scripts" : [ "st_ammoduplicator.lua"],
+
+  "apexDescription" : "Ammo duplicator description!!",
+  "avianDescription" : "Ammo duplicator description!!",
+  "floranDescription" : "Ammo duplicator description!!",
+  "glitchDescription" : "Ammo duplicator description!!",
+  "humanDescription" : "Ammo duplicator description!!",
+  "hylotlDescription" : "Ammo duplicator description!!",
+  "novakidDescription" : "Ammo duplicator description!!",
+
+
+  "inventoryIcon" : "st_ammoduplicatoricon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "st_ammoduplicator.png:<color>.<frame>" } ],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [0, 0],
+      "frames" : 15,
+      "animationCycle" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "st_ammoduplicator.png:<color>.<frame>" } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 15,
+      "animationCycle" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+/*
+  "soundEffect" : "/sfx/objects/campfire.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+*/
+  "statusEffects" : [ ]
+//  "openSounds" : [ ],
+
+}

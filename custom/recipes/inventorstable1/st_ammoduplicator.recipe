@@ -5,7 +5,7 @@
     { "item" : "corefragmentore", "count" : 5 }   
   ],
   "output" : {
-    "item" : "st_ammocombiner",
+    "item" : "st_ammoduplicator",
     "count" : 1
   },
   "groups" : [ "inventorstable", "craftingstations", "all" ]

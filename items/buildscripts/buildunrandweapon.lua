@@ -65,7 +65,6 @@ function build(directory, config, parameters, level, seed)
       config.animationCustom.animatedParts.parts.buttFullbright.properties.offset = config.baseOffset
     end
     if config.animationCustom.animatedParts.parts.middleFullbright then
-      sb.logError("testete")
       config.animationCustom.animatedParts.parts.middleFullbright.properties.offset = config.baseOffset
     end
     if config.animationCustom.animatedParts.parts.barrelFullbright then

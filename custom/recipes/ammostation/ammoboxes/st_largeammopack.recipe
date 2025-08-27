@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "st_leadbar", "count" : 1 },
-	{ "item" : "durasteelbar", "count" : 1 }
+    { "item" : "st_leadbar", "count" : 3 },
+	  { "item" : "durasteelbar", "count" : 1 }
   ],
   "output" : { "item" : "st_largeammopack", "count" : 10 },
   "groups" : [ "st_ammostation2", "st_ammoboxes", "all" ]

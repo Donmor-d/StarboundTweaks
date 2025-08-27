@@ -1,9 +1,9 @@
 {
   "input" : [
     { "item" : "durasteelbar", "count" : 1 },
-    { "item" : "titaniumbar", "count" : 5 }
+    { "item" : "titaniumbar", "count" : 2 },
+    { "item" : "st_leadbar", "count" : 2 }
   ],
   "output" : { "item" : "st_leadshieldedcore", "count" : 1 },
   "groups" : ["craftingfurnace", "craftingfurnace2", "craftingfurnace3", "ingredients", "all" ]
 }
-//temporary recipe until lead is added
