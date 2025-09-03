@@ -1,7 +1,15 @@
+--Credits to Silver Sokolova (play betabound! https://steamcommunity.com/workshop/filedetails/?id=2010607826)
+
+
+--[[
+    WARNING:
+    IF MODIFIED, CHANGE THE FOLLOWING SCRIPTS:
+    - chain.LUA
+    - laserbeam.lua
+]]
 local oldUpdate = update or function() end
 
 function update(dt) oldUpdate(dt)
-
     localAnimator.clearDrawables()
 
     local maxAmmo = animationConfig.animationParameter("maxAmmo") and math.floor(animationConfig.animationParameter("maxAmmo")) or 0
@@ -44,6 +52,4 @@ function update(dt) oldUpdate(dt)
     if self.showState then
         localAnimator.addDrawable({image="/custom/interface/st_ammo.png",fullbright=true,position={pos[1]+2,pos[2] + 3}}, "overlay")
     end
-
-    --Thanks silver sokolova for the inspo reminder to credit
 end

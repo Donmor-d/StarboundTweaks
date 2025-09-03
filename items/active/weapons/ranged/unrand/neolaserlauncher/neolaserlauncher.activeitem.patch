@@ -1,12 +1,5 @@
 [
   {
-    "op": "add",
-    "path": "/animationScripts",
-    "value": [
-      "/custom/scripts/st_ammo_drawables.lua"
-    ]
-  },
-  {
     "op": "replace",
     "path": "/primaryAbility/energyUsage",
     "value": 0

@@ -1169,6 +1169,7 @@
         {"weight" : 0.5, "item" : "st_grapeshotgunshell"},
         {"weight" : 1.0, "item" : "st_chargedsniperbullet"},
         {"weight" : 1.0, "item" : "st_splitsniperbullet"},
+        {"weight" : 1.0, "item" : "st_wavesniperbullet"},
         {"weight" : 1.0, "item" : "st_speedingmachinepistolbullet"},
         {"weight" : 0.5, "item" : "st_soapymachinepistolbullet"},
         {"weight" : 1.0, "item" : "st_splitgrenade"},

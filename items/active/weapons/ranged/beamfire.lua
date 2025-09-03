@@ -30,8 +30,7 @@ function BeamFire:update(dt, fireMode, shiftHeld)
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
     and not self.weapon.currentAbility
     and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-    and self.cooldownTimer == 0
-    and not status.resourceLocked("ammo") then
+    and self.cooldownTimer == 0 then
 
     self:setState(self.fire)
   end
@@ -44,10 +43,11 @@ function BeamFire:fire()
   animator.playSound("fireLoop", -1)
 
   local wasColliding = false
-  while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.overConsumeResource("ammo", (self.ammoUsage or 0) * self.dt) do
+  while self.fireMode == (self.activatingFireMode or self.abilitySlot) do
+    status.overConsumeResource("ammo", (self.ammoUsage or 0) * self.dt)
     local beamStart = self:firePosition()
-    local beamEnd = vec2.add(beamStart, vec2.mul(vec2.norm(self:aimVector(0)), self.beamLength))
-    local beamLength = self.beamLength
+    local beamEnd = vec2.add(beamStart, vec2.mul(vec2.norm(self:aimVector(0)), self.beamLength * (status.resourceLocked("ammo") and 0.5 or 1)))
+    local beamLength = self.beamLength * (status.resourceLocked("ammo") and 0.5 or 1)
 
     local collidePoint = world.lineCollision(beamStart, beamEnd)
     if collidePoint then

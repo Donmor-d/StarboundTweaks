@@ -1,12 +1,12 @@
 {
-  "itemName" : "st_sinewavesniperbullet",
+  "itemName" : "st_wavesniperbullet",
   "maxStack" : 5,
   "price" : 1500,
   "rarity" : "Rare",
   "category" : "ammoModifier",
-  "inventoryIcon" : "st_sinewavesniperbullet.png",
+  "inventoryIcon" : "st_wavesniperbullet.png",
   "description" : "Splits bullets into 2 waving bullets.",
-  "shortdescription" : "Sinewave Sniper Bullet",
+  "shortdescription" : "Wave Sniper Bullet",
   "tooltipKind" : "st_ammomodifier",
 
   //"notes" : "", 
@@ -16,11 +16,11 @@
   "augment": {
     "type": "sniperrifleammo",
     "category": "barrel",
-    "name": "st_sinewavesniperbullet",
-    "displayName": "Sine Wave Ammo",
-    "displayIcon": "/custom/items/augments/sniperrifle/sinewavebullet/st_sinewavesniperbullet.png",
+    "name": "st_wavesniperbullet",
+    "displayName": "Wave Ammo",
+    "displayIcon": "/custom/items/augments/sniperrifle/wavebullet/st_wavesniperbullet.png",
 
-    "inventoryIcon" : "sinewave.png",
+    "inventoryIcon" : "wave.png",
     
     "primaryAbility": {
       "elementalConfig" : {

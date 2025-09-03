@@ -7,7 +7,10 @@
     "frameNumber" : 1,
     "power" : 50,
     "speed" : 150,
-    "timeToLive" : 3,
+    "timeToLive" : 0.3,
+    "movementSettings" : {
+      "collisionEnabled" : false
+    },
     "lightColor" : [255, 216, 0],
     "damageKind" : "standardbullet",
     "knockback" : 2,
@@ -21,7 +24,7 @@
     "scripts" : ["/scripts/projectiles/sinewaveprojectile.lua"],
     "scriptDelta" : 1,
   
-    "wavePeriod" : 0.5,
+    "wavePeriod" : 0.3,
     "waveAmplitude" : -0.25
   }
   
