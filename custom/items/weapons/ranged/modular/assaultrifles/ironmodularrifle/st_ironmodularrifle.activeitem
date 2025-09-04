@@ -129,5 +129,5 @@
   
   //"radioMessagesOnPickup" : [ "pickupfirearm" ],
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/custom/items/buildscripts/st_buildmodularweapon.lua"
 }

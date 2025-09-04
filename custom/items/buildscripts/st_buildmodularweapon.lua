@@ -51,7 +51,26 @@ function build(directory, config, parameters, level, seed)
   -- gun offsets
   if config.baseOffset then
     construct(config, "animationCustom", "animatedParts", "parts", "middle", "properties")
+    construct(config, "animationCustom", "animatedParts", "parts", "butt", "properties")
+    construct(config, "animationCustom", "animatedParts", "parts", "barrel", "properties")
+    config.animationCustom.animatedParts.parts.butt.properties.offset = config.baseOffset
     config.animationCustom.animatedParts.parts.middle.properties.offset = config.baseOffset
+    config.animationCustom.animatedParts.parts.barrel.properties.offset = config.baseOffset
+    
+    
+    construct(config, "animationCustom", "animatedParts", "parts", "middleFullbright", "properties")
+    construct(config, "animationCustom", "animatedParts", "parts", "buttFullbright", "properties")
+    construct(config, "animationCustom", "animatedParts", "parts", "barrelFullbright", "properties")
+    if config.animationCustom.animatedParts.parts.buttFullbright then
+      config.animationCustom.animatedParts.parts.buttFullbright.properties.offset = config.baseOffset
+    end
+    if config.animationCustom.animatedParts.parts.middleFullbright then
+      config.animationCustom.animatedParts.parts.middleFullbright.properties.offset = config.baseOffset
+    end
+    if config.animationCustom.animatedParts.parts.barrelFullbright then
+      config.animationCustom.animatedParts.parts.barrelFullbright.properties.offset = config.baseOffset
+    end
+
     if config.muzzleOffset then
       config.muzzleOffset = vec2.add(config.muzzleOffset, config.baseOffset)
     end
@@ -78,6 +97,23 @@ function build(directory, config, parameters, level, seed)
       config.tooltipFields.altAbilityTitleLabel = "Special:"
       config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
     end
+
+    if config.acceptsAugmentType then
+      config.tooltipFields.weaponTypeImage = "/custom/interface/tooltips/ammo/" .. config.acceptsAugmentType .. ".png"
+    end
+
+    if parameters.currentAugments then
+      if parameters.currentAugments.stock then
+        config.tooltipFields.stockIconImage = parameters.currentAugments.stock.displayIcon
+      end
+      if parameters.currentAugments.chamber then
+        config.tooltipFields.chamberIconImage = parameters.currentAugments.chamber.displayIcon
+      end
+      if parameters.currentAugments.barrel then
+        config.tooltipFields.barrelIconImage = parameters.currentAugments.barrel.displayIcon
+      end
+    end
+
   end
 
   -- set price
