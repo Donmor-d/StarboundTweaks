@@ -4,6 +4,6 @@
     { "item" : "silverbar", "count" : 2 },
     { "item" : "st_modularframe", "count" : 1 }
   ],
-  "output" : { "item" : "st_titaniummodularpistol", "count" : 1 },
-  "groups" : [ "craftinganvil2", "weapons", "all" ]
+  "output" : { "item" : "st_modularmachinepistol", "count" : 1, "parameters" : { "level" : 3 } },
+  "groups" : [ "craftinganvil2", "st_modularweapons", "all" ]
 }

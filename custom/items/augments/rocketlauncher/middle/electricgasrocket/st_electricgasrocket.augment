@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_electricgasrocket",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_electricgasrocket.png",
+  "description" : "Replaces explosive power with shocking propulsion.",
+  "shortdescription" : "Gas Rocket",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Releases electric gas throughout its trajectory.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "category": "middle",
+    "name": "st_electricammo",
+    "displayName": "Electrified Ammo",
+    "displayIcon": "/custom/items/augments/rocketlauncher/middle/electricgasrocket/st_electricgasrocket.png",
+    "elementalType": "electric",
+
+    "inventoryIcon" : "electric.png",
+    "fullbright" : "electricfullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.75
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

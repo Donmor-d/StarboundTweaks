@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 10 },
+    { "item" : "goldbar", "count" : 4 },
+    { "item" : "st_modularframe", "count" : 1 }
+  ],
+  "output" : { "item" : "st_modulargrenadelauncher", "count" : 1, "parameters" : { "level" : 4 } },
+  "groups" : [ "craftinganvil3", "st_modularweapons", "all" ]
+}

@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_poisongasrocket",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_poisongasrocket.png",
+  "description" : "Replaces explosive power with poisonous propulsion.",
+  "shortdescription" : "Gas Rocket",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Releases poisonous gas throughout its trajectory.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "category": "middle",
+    "name": "st_poisonammo",
+    "displayName": "Poisoned Ammo",
+    "displayIcon": "/custom/items/augments/rocketlauncher/middle/poisongasrocket/st_poisongasrocket.png",
+    "elementalType": "poison",
+
+    "inventoryIcon" : "poison.png",
+    "fullbright" : "poisonfullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.75
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

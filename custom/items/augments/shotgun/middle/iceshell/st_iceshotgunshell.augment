@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_iceshotgunshell",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_iceshotgunshell.png",
+  "description" : "Changes the shotgun's element to ice.",
+  "shortdescription" : "Ice Shotgun Shell",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Bullets weaken after a short time.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "shotgunammo",
+    "category": "middle",
+    "name": "st_iceammo",
+    "displayName": "Freezing Ammo",
+    "displayIcon": "/custom/items/augments/shotgun/middle/iceshell/st_iceshotgunshell.png",
+    "elementalType": "ice",
+
+    "inventoryIcon" : "ice.png",
+    "fullbright" : "icefullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.85
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

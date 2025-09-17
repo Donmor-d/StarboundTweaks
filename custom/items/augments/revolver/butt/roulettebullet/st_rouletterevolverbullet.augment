@@ -1,0 +1,35 @@
+{
+  "itemName" : "st_rouletterevolverbullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_rouletterevolverbullet.png",
+  "description" : "Weakens bullets but adds a chance to shoot an empowered bullet.",
+  "shortdescription" : "Roulette Revolver Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  "typeName" : "Revolver",
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "pistolammo",
+    "category": "butt",
+    "name": "st_rouletterevolverbullet",
+    "displayName": "Roulette Ammo",
+    "displayIcon": "/custom/items/augments/revolver/butt/roulettebullet/st_rouletterevolverbullet.png",
+    "elementalType": "physical",
+
+    "inventoryIcon" : "roulette.png",
+
+    "primaryAbility": {
+      "scripts": ["/items/active/weapons/ranged/gunfire.lua", "/custom/items/weapons/ranged/st_modulargunfire.lua", "/custom/items/augments/revolver/butt/roulettebullet/st_critshot.lua"],
+      "buttDamageMult": 0.75,
+      "critChance": 17 //percentage chance, whole numbers (%)
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

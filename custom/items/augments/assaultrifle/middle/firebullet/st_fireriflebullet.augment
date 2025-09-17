@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_fireriflebullet",
+  "maxStack" : 5,
+  "price" : 1000,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_fireriflebullet.png",
+  "description" : "Changes the assault rifle's element to fire.",
+  "shortdescription" : "Fire Rifle Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "assaultrifleammo",
+    "category": "middle",
+    "name": "st_fireammo",
+    "displayName": "Burning Ammo",
+    "displayIcon": "/custom/items/augments/assaultrifle/middle/firebullet/st_fireriflebullet.png",
+    "elementalType": "fire",
+
+    "inventoryIcon" : "fire.png",
+    "fullbright" : "firefullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.75
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

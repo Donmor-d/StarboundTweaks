@@ -1,0 +1,34 @@
+{
+  "itemName" : "st_fireshotgunshell",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_fireshotgunshell.png",
+  "description" : "Changes the shotgun's element to fire.",
+  "shortdescription" : "Fire Shotgun Shell",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Shotgun",
+  "notes" : "Bullets weaken after a short time.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "shotgunammo",
+    "category": "middle",
+    "name": "st_fireammo",
+    "displayName": "Burning Ammo",
+    "displayIcon": "/custom/items/augments/shotgun/middle/fireshell/st_fireshotgunshell.png",
+    "elementalType": "fire",
+
+    "inventoryIcon" : "fire.png",
+    "fullbright" : "firefullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.75
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

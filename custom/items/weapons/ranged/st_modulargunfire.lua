@@ -3,7 +3,7 @@ function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, fi
   local element = config.getParameter("elementalType", "physical")
   local projectileCategory = self.projectileCategory or "default"
   local params = sb.jsonMerge(self.elementalConfig[element].primaryAbility[projectileCategory].projectileParameters or {}, projectileParams or {})
-  params.power = self:damagePerShot() * (self.stockDamageMult or 1) * (self.chamberDamageMult or 1) * (self.barrelDamageMult or 1) --could do better by getting the augment types and their multiplier but oh well
+  params.power = self:damagePerShot() * (self.buttDamageMult or 1) * (self.middleDamageMult or 1) * (self.barrelDamageMult or 1) --could do better by getting the augment types and their multiplier but oh well
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
 
@@ -43,9 +43,9 @@ function GunFire:auto()
   end
 
   if status.resourceLocked("ammo") then
-    self.cooldownTimer = self.fireTime * 2 / (self.stockFireRateMult or 1)  / (self.barrelFireRateMult or 1)
+    self.cooldownTimer = self.fireTime * 2 / (self.buttFireRateMult or 1)  / (self.barrelFireRateMult or 1)
   else
-    self.cooldownTimer = self.fireTime / (self.stockFireRateMult or 1)  / (self.barrelFireRateMult or 1)
+    self.cooldownTimer = self.fireTime / (self.buttFireRateMult or 1)  / (self.barrelFireRateMult or 1)
   end
   self:setState(self.cooldown)
 end
@@ -69,7 +69,7 @@ function GunFire:burst()
     end
   end
 
-  self.cooldownTimer = (self.fireTime - self.burstTime) * self.burstCount / (self.stockFireRateMult or 1)  / (self.barrelFireRateMult or 1)
+  self.cooldownTimer = (self.fireTime - self.burstTime) * self.burstCount / (self.buttFireRateMult or 1)  / (self.barrelFireRateMult or 1)
 end
 
 function GunFire:cooldown()
@@ -77,7 +77,7 @@ function GunFire:cooldown()
   self.weapon:updateAim()
 
   local progress = 0
-  local cooldown = math.min(self.fireTime / (self.stockFireRateMult or 1)  / (self.barrelFireRateMult or 1), self.stances.cooldown.duration)
+  local cooldown = math.min(self.fireTime / (self.buttFireRateMult or 1)  / (self.barrelFireRateMult or 1), self.stances.cooldown.duration)
   util.wait(cooldown, function()
     local from = self.stances.cooldown.weaponOffset or {0,0}
     local to = self.stances.idle.weaponOffset or {0,0}

@@ -1,0 +1,26 @@
+[
+  {
+    "op": "add",
+    "path": "/paneLayout/lblStModularWeaponsTab",
+    "value": {
+      "type": "image",
+      "file": "/interface/crafting/st_tabicon_modularweapons.png",
+      "position": [ 133, 223 ],
+      "zlevel": 3
+    }
+  },
+  {
+    "op": "add",
+    "path": "/paneLayout/categories/buttons/-",
+    "value": {
+      "position": [ 126, 221 ],
+      "baseImage": "/interface/crafting/unselectedTab.png",
+      "baseImageChecked": "/interface/crafting/selectedTab.png",
+      "data": {
+        "filter": [
+          "st_modularweapons"
+        ]
+      }
+    }
+  }
+]

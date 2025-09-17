@@ -40,11 +40,41 @@ function build(directory, config, parameters, level, seed)
       config.paletteSwaps = string.format("%s?replace=%s=%s", config.paletteSwaps, k, v)
     end
   end
-  if type(config.inventoryIcon) == "string" then
-    config.inventoryIcon = config.inventoryIcon .. config.paletteSwaps
-  else
-    for i, drawable in ipairs(config.inventoryIcon) do
-      if drawable.image then drawable.image = drawable.image .. config.paletteSwaps end
+
+  local levelUsed = parameters.level or config.level
+
+  for i, drawable in ipairs(config.inventoryIcon) do
+    local part = { "butt", "middle", "barrel"}
+
+    if parameters.currentAugments and parameters.currentAugments[part[i]] then
+      drawable.image = levelUsed .. "/" .. part[i] .. "/" .. parameters.currentAugments[part[i]].inventoryIcon
+    else
+      drawable.image = levelUsed .. "/" .. part[i] .. "/normal.png"
+    end
+
+    if drawable.image then drawable.image = drawable.image .. config.paletteSwaps end
+  end
+
+  for part, image in pairs(config.animationParts) do
+    if part ~= "muzzleFlash" then
+
+      local isFullbright = string.find(part, "Fullbright")
+
+      if isFullbright then
+        local partName = string.sub(part, 1, isFullbright - 1)
+
+        if parameters.currentAugments and parameters.currentAugments[partName] and parameters.currentAugments[partName].fullbright then
+          config.animationParts[part] = levelUsed .. "/" .. partName .. "/" .. parameters.currentAugments[partName].fullbright
+        else
+          config.animationParts[part] = levelUsed .. "/" .. partName .. "/normalfullbright.png"
+        end
+      else
+        if parameters.currentAugments and parameters.currentAugments[part] then
+          config.animationParts[part] = levelUsed .. "/" .. part .. "/" .. parameters.currentAugments[part].inventoryIcon
+        else
+          config.animationParts[part] = levelUsed .. "/" .. part .. "/normal.png"
+        end
+      end
     end
   end
 
@@ -103,11 +133,11 @@ function build(directory, config, parameters, level, seed)
     end
 
     if parameters.currentAugments then
-      if parameters.currentAugments.stock then
-        config.tooltipFields.stockIconImage = parameters.currentAugments.stock.displayIcon
+      if parameters.currentAugments.butt then
+        config.tooltipFields.buttIconImage = parameters.currentAugments.butt.displayIcon
       end
-      if parameters.currentAugments.chamber then
-        config.tooltipFields.chamberIconImage = parameters.currentAugments.chamber.displayIcon
+      if parameters.currentAugments.middle then
+        config.tooltipFields.middleIconImage = parameters.currentAugments.middle.displayIcon
       end
       if parameters.currentAugments.barrel then
         config.tooltipFields.barrelIconImage = parameters.currentAugments.barrel.displayIcon

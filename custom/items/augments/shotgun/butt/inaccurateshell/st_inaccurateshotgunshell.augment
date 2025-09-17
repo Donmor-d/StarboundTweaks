@@ -1,0 +1,32 @@
+{
+  "itemName" : "st_inaccurateshotgunshell",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_inaccurateshotgunshell.png",
+  "description" : "Increases the damage of shotguns at the price of accuracy.",
+  "shortdescription" : "Inaccurate Shotgun Shell",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Bullets weaken after a short time.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "shotgunammo",
+    "category": "butt",
+    "name": "st_inaccurateshotgunshell",
+    "displayName": "Inaccurate Ammo",
+    "displayIcon": "/custom/items/augments/shotgun/butt/inaccurateshell/st_inaccurateshotgunshell.png",
+
+    "inventoryIcon" : "inaccurate.png",
+
+    "primaryAbility": {
+      "inaccuracy" : 0.25,
+      "buttDamageMult" : 1.2
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

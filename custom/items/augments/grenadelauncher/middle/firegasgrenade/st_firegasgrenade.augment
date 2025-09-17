@@ -1,0 +1,34 @@
+{
+  "itemName" : "st_firegasgrenade",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_firegasgrenade.png",
+  "description" : "Grenades from launchers explode into burning gas.",
+  "shortdescription" : "Fire Gas Grenade",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "typeName" : "Launcher",
+  "notes" : "Grenades explode into burning gas.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "grenadelauncherammo",
+    "category": "middle",
+    "name": "st_fireammo",
+    "displayName": "Burning Ammo",
+    "displayIcon": "/custom/items/augments/grenadelauncher/middle/firegasgrenade/st_firegasgrenade.png",
+    "elementalType": "fire",
+
+    "inventoryIcon" : "fire.png",
+    "fullbright" : "firefullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.75
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

@@ -1,0 +1,22 @@
+{
+  "itemName" : "st_defaultchamber",
+  "maxStack" : 20,
+  "price" : 500,
+  "rarity" : "common",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_defaultchamber.png",
+  "description" : "Removes current chamber augment.",
+  "shortdescription" : "Default Chamber",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "default",
+    "category": "middle"
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

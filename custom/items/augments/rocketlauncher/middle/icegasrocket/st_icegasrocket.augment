@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_icegasrocket",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_icegasrocket.png",
+  "description" : "Replaces explosive power with chilling propulsion.",
+  "shortdescription" : "Gas Rocket",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Releases freezing gas throughout its trajectory.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "category": "middle",
+    "name": "st_iceammo",
+    "displayName": "Freezing Ammo",
+    "displayIcon": "/custom/items/augments/rocketlauncher/middle/icegasrocket/st_icegasrocket.png",
+    "elementalType": "ice",
+
+    "inventoryIcon" : "ice.png",
+    "fullbright" : "icefullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.85
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

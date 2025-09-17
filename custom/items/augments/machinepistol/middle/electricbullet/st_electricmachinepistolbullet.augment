@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_electricmachinepistolbullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_electricmachinepistolbullet.png",
+  "description" : "Changes the machine pistol's element to electric.",
+  "shortdescription" : "Electric Machine Pistol Bullet",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "machinepistolammo",
+    "category": "middle",
+    "name": "st_electricammo",
+    "displayName": "Electrified Ammo",
+    "displayIcon": "/custom/items/augments/machinepistol/middle/electricbullet/st_electricmachinepistolbullet.png",
+    "elementalType": "electric",
+
+    "inventoryIcon" : "electric.png",
+    "fullbright" : "electricfullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.75
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_firegasrocket",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_firegasrocket.png",
+  "description" : "Replaces explosive power with fiery propulsion.",
+  "shortdescription" : "Gas Rocket",
+  "tooltipKind" : "st_ammomodifiernotes",
+
+  "notes" : "Releases burning gas throughout its trajectory.", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "category": "middle",
+    "name": "st_fireammo",
+    "displayName": "Burning Ammo",
+    "displayIcon": "/custom/items/augments/rocketlauncher/middle/firegasrocket/st_firegasrocket.png",
+    "elementalType": "fire",
+
+    "inventoryIcon" : "fire.png",
+    "fullbright" : "firefullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.75
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

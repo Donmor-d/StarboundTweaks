@@ -15,7 +15,7 @@
 
   "augment": {
     "type": "default",
-    "category": "stock"
+    "category": "butt"
   },
 
   "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]

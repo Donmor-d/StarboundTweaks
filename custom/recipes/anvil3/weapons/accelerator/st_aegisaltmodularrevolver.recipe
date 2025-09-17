@@ -1,9 +1,9 @@
 {
   "input" : [
     { "item" : "refinedaegisalt", "count" : 6 },
-    { "item" : "st_durasteelmodularrevolver", "count" : 1 },
+    { "item" : "st_modularrevolver", "count" : 1, "parameters" : { "level" : 4 } },
     { "item" : "st_modularframe", "count" : 1 }
   ],
-  "output" : { "item" : "st_aegisaltmodularrevolver", "count" : 1 },
-  "groups" : [ "craftingaccelerator", "weapons", "all" ]
+  "output" : { "item" : "st_modularrevolver", "count" : 1, "parameters" : { "level" : 5 } },
+  "groups" : [ "craftingaccelerator", "st_modularweapons", "all" ]
 }

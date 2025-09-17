@@ -56,11 +56,11 @@
 		//machinepistols
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularpistol" } },
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularpistol" } },
-		//bazookas - rocket launchers
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularbazooka" } },
+		//rocket launchers
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularrocketlauncher" } },
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_rocketjumper" } },
-		//launchers - grenade launchers
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularlauncher" } },
+		//grenade launchers
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodulargrenadelauncher" } },
 */
 	//------augments-----
 	{

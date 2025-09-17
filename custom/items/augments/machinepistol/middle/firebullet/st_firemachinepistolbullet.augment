@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_firemachinepistolbullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_firemachinepistolbullet.png",
+  "description" : "Changes the machine pistol's element to fire.",
+  "shortdescription" : "Fire Machine Pistol Bullet",
+  "tooltipKind" : "st_ammomodifier",
+  
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "machinepistolammo",
+    "category": "middle",
+    "name": "st_fireammo",
+    "displayName": "Burning Ammo",
+    "displayIcon": "/custom/items/augments/machinepistol/middle/firebullet/st_firemachinepistolbullet.png",
+    "elementalType": "fire",
+
+    "inventoryIcon" : "fire.png",
+    "fullbright" : "firefullbright.png",
+
+    "primaryAbility": {
+      "middleDamageMult" : 0.75
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

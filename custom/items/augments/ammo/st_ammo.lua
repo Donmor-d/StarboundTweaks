@@ -8,7 +8,7 @@ function apply(input)
 
   if augmentConfig then
     if weaponType == augmentConfig.type or augmentConfig.type == "anyammo" or augmentConfig.type == "default" or isCompatible(augmentConfig.type, weaponType) then --checks if compatible, 
-      local currentAugments = output:instanceValue("currentAugments", {stock, chamber, barrel})
+      local currentAugments = output:instanceValue("currentAugments", {butt, middle, barrel})
       if currentAugments then
         if currentAugments[augmentConfig.category] then
           if currentAugments[augmentConfig.category].name == augmentConfig.name then
@@ -27,16 +27,22 @@ function apply(input)
       end
       
       local elementType = output:instanceValue("elementalType") or "physical"
+
+      --adds secondary abilities, not used for now
       if augmentConfig.altAbilityType then
-        if elementType == "physical" and augmentConfig.elementalAbility then --checa se a abilidade é elemental e não coloca se a arma é physical (algumas habilidades só funcionam se a arma tiver um elemento) / checks if the ability is elemental and doesnt apply if the weapon is physical(certain abilities only work when the weapon has an element)
+        -- checks if alt ability type requires an element
+        if elementType == "physical" and augmentConfig.elementalAbility then
           return nil
         end
         output:setInstanceValue("altAbilityType", augmentConfig.altAbilityType)
       else
-        local equippedAugments = output:instanceValue("currentAugments", {stock, chamber, barrel})
+        local equippedAugments = output:instanceValue("currentAugments", {butt, middle, barrel})
         equippedAugments[augmentConfig.category] = augmentConfig
 
         --rebuild gun with current augments every time a new one is equipped
+        --NOTES:
+        --  - this means any value added by the butt can be overriden by the middle and then both will be overriden by the barrel
+        --  - to avoid this simply dont add values that are used by the other augment types (eg. if a butt augment changes fireTime, dont change that in any middle or barrel augment)
 
         local defaultPrimaryAbility = root.assetJson("/custom/items/weapons/ranged/modular/st_defaultParameters.config:".. output:instanceValue("category", "assaultRifle"))
 
@@ -54,42 +60,33 @@ function apply(input)
           local animationParts = output:instanceValue("animationParts")
 
           local newInventoryIcon = augment.inventoryIcon or "normal.png"
+          
+          if augment.category then
+            -- Mudar para pegar de um arquivo config
+            local categories = {
+              butt = {index = 1}, 
+              middle = {index = 2}, 
+              barrel = {index = 3}
+            }
 
-          if augment.category == "stock" then
-            local index = string.find(inventoryIcon[1].image, "/[^/]*$")
+            local category = augment.category
 
-            local filePath = string.sub(inventoryIcon[1].image, 1, index)
-
-            inventoryIcon[1].image = filePath .. newInventoryIcon
-            animationParts.butt = filePath .. newInventoryIcon
-            if augment.fullbright then
-              animationParts.buttFullbright = filePath .. augment.fullbright
+            if category == "middle" then
+              if augmentConfig.type == "default" then
+                output:setInstanceValue("elementalType", "physical")
+              elseif augmentConfig.elementalType then
+                output:setInstanceValue("elementalType", augmentConfig.elementalType)
+              end
             end
-          elseif augment.category == "chamber" then
-            if augmentConfig.type == "default" then
-              output:setInstanceValue("elementalType", "physical")
-            elseif augmentConfig.elementalType then
-              output:setInstanceValue("elementalType", augmentConfig.elementalType)
-            end
 
-            local index = string.find(inventoryIcon[2].image, "/[^/]*$")
+            local index = string.find(inventoryIcon[categories[category].index].image, "/[^/]*$")
 
-            local filePath = string.sub(inventoryIcon[2].image, 1, index)
+            local filePath = string.sub(inventoryIcon[categories[category].index].image, 1, index)
 
-            inventoryIcon[2].image = filePath .. newInventoryIcon
-            animationParts.middle = filePath .. newInventoryIcon
+            inventoryIcon[categories[category].index].image = filePath .. newInventoryIcon
+            animationParts[category] = filePath .. newInventoryIcon
             if augment.fullbright then
-              animationParts.middleFullbright = filePath .. augment.fullbright
-            end
-          elseif augment.category == "barrel" then
-            local index = string.find(inventoryIcon[3].image, "/[^/]*$")
-
-            local filePath = string.sub(inventoryIcon[3].image, 1, index)
-
-            inventoryIcon[3].image = filePath .. newInventoryIcon
-            animationParts.barrel = filePath .. newInventoryIcon
-            if augment.fullbright then
-              animationParts.barrelFullbright = filePath .. augment.fullbright
+              animationParts[category .. "Fullbright"] = filePath .. augment.fullbright
             end
           end
 

@@ -1,0 +1,33 @@
+{
+  "itemName" : "st_guidedrocket",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_guidedrocket.png",
+  "description" : "Enables rocket control for rocket launchers.",
+  "shortdescription" : "Guided Rocket",
+  "tooltipKind" : "st_ammomodifier",
+
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "rocketlauncherammo",
+    "category": "butt",
+    "name": "st_guidedrocket",
+    "displayName": "Guided Ammo",
+    "displayIcon": "/custom/items/augments/rocketlauncher/butt/guidedrocket/st_guidedrocket.png",
+
+    "inventoryIcon" : "guided.png",
+    "fullbright" : "guidedfullbright.png",
+
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/gunfire.lua", "/custom/items/weapons/ranged/st_modulargunfire.lua", "/custom/items/augments/rocketlauncher/butt/guidedrocket/st_guidedrocketaugment.lua" ],
+      "projectileCategory" : "guided"
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

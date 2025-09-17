@@ -1,0 +1,37 @@
+{
+  "itemName" : "st_rapidrevolverbullet",
+  "maxStack" : 5,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "ammoModifier",
+  "inventoryIcon" : "st_rapidrevolverbullet.png",
+  "description" : "Revolver fires in a 6 round burst.",
+  "shortdescription" : "Rapid Fire Revolver Bullet",
+  "tooltipKind" : "st_ammomodifier",
+       
+  //"notes" : "", 
+  //"statusEffect" : "", not used for now, decide if shown by text or image
+  "builder" : "/custom/items/buildscripts/st_buildammo.lua",
+
+  "augment": {
+    "type": "pistolammo",
+    "category": "butt",
+    "name": "st_rapidrevolverbullet",
+    "displayName": "Rapid Fire Ammo",
+    "displayIcon": "/custom/items/augments/revolver/butt/rapidbullet/st_rapidrevolverbullet.png",
+
+    "inventoryIcon" : "rapid.png",
+
+    "primaryAbility": {
+      "fireType": "burst",
+      "burstCount": 6,
+      "ammoUsage" : 2,
+      "burstTime": 0.15,
+      "fireTime" : 0.5,
+      "inaccuracy" : 0
+
+    }
+  },
+
+  "scripts" : [ "/custom/items/augments/ammo/st_ammo.lua" ]
+}

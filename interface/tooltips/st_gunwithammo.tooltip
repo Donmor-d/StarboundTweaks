@@ -93,17 +93,17 @@
     "file" : ""
   },
   //Faz aparecer o slot de augment
-  "stockIconImage" : {
+  "buttIconImage" : {
     "type" : "image",
     "position" : [8, 124],
     "zlevel" : 3,
-    "file" : "/custom/interface/tooltips/st_ammonostock.png"
+    "file" : "/custom/interface/tooltips/st_ammonobutt.png"
   },
-  "chamberIconImage" : {
+  "middleIconImage" : {
     "type" : "image",
     "position" : [60, 81],
     "zlevel" : 3,
-    "file" : "/custom/interface/tooltips/st_ammonochamber.png"
+    "file" : "/custom/interface/tooltips/st_ammonomiddle.png"
   },
   "barrelIconImage" : {
     "type" : "image",

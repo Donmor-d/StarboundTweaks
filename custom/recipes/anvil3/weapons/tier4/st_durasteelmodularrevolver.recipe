@@ -1,9 +1,9 @@
 {
   "input" : [
     { "item" : "durasteelbar", "count" : 6 },
-    { "item" : "st_titaniummodularrevolver", "count" : 1 },
+    { "item" : "st_modularrevolver", "count" : 1, "parameters" : { "level" : 3 } },
     { "item" : "st_modularframe", "count" : 1 }
   ],
-  "output" : { "item" : "st_durasteelmodularrevolver", "count" : 1 },
-  "groups" : [ "craftinganvil3", "weapons", "all" ]
+  "output" : { "item" : "st_modularrevolver", "count" : 1, "parameters" : { "level" : 4 } },
+  "groups" : [ "craftinganvil3", "st_modularweapons", "all" ]
 }
