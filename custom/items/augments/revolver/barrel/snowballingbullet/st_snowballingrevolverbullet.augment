@@ -18,7 +18,7 @@
     "category": "barrel",
     "name": "st_snowballingrevolverbullet",
     "displayName": "Snowballing Ammo",
-    "displayIcon": "/custom/items/augments/revolver/snowballingbullet/st_snowballingrevolverbullet.png",
+    "displayIcon": "/custom/items/augments/revolver/barrel/snowballingbullet/st_snowballingrevolverbullet.png",
 
     "inventoryIcon" : "snowballing.png",
 

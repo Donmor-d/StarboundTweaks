@@ -18,19 +18,19 @@
   "autoCloseCooldown" : 3600,
   "scripts" : [ "st_ammoduplicator.lua"],
 
-  "apexDescription" : "Ammo duplicator description!!",
-  "avianDescription" : "Ammo duplicator description!!",
-  "floranDescription" : "Ammo duplicator description!!",
-  "glitchDescription" : "Ammo duplicator description!!",
-  "humanDescription" : "Ammo duplicator description!!",
-  "hylotlDescription" : "Ammo duplicator description!!",
-  "novakidDescription" : "Ammo duplicator description!!",
+  "apexDescription" : "I can easily clone any type of ammo here!",
+  "avianDescription" : "I can easily clone any type of ammo here!",
+  "floranDescription" : "I can easily clone any type of ammo here!",
+  "glitchDescription" : "I can easily clone any type of ammo here!",
+  "humanDescription" : "I can easily clone any type of ammo here!",
+  "hylotlDescription" : "I can easily clone any type of ammo here!",
+  "novakidDescription" : "I can easily clone any type of ammo here!",
 
 
   "inventoryIcon" : "st_ammoduplicatoricon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "st_ammoduplicator.png:<color>.<frame>" } ],
+      "imageLayers" : [ { "image" : "st_ammoduplicator.png:<frame>", "fullbright" : true }, { "image" : "st_ammoduplicatorlit.png:<frame>" } ],
       "direction" : "left",
       "flipImages" : true,
 
@@ -42,7 +42,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-      "imageLayers" : [ { "image" : "st_ammoduplicator.png:<color>.<frame>" } ],
+      "imageLayers" : [ { "image" : "st_ammoduplicator.png:<frame>", "fullbright" : true }, { "image" : "st_ammoduplicatorlit.png:<frame>" } ],
       "direction" : "right",
 
       "imagePosition" : [0, 0],

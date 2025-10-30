@@ -17,8 +17,8 @@
   
   "inventoryIcon" : "st_ammostationicon.png",
   "placementImage" : "st_ammostation.png:default.default",
-  "placementImagePosition" : [-9.5, 0],    
-  "animationPosition" : [4, 12.5],
+  "placementImagePosition" : [-8, 0],    
+  "animationPosition" : [4, 14],
 
   "description" : "Used to craft ammo boxes and augments for certain guns.",
   "shortdescription" : "^orange;Ammo Table^white;",
@@ -42,19 +42,19 @@
       
       "itemSpawnParameters" : {
         "inventoryIcon" : "st_ammostationicon.png",
-        "placementImage" : "st_ammostation.png:default.default",
-        "placementImagePosition" : [-9.5, 0],    
+        "placementImiage" : "st_ammostation.png:default.default",
+        "placementImagePosition" : [-8, 0],    
 
-        "description" : "Used to craft ammo boxes and augments for certain guns.",
+        "description" : "Used to craft ammo boxes and augments for modular guns.",
         "shortdescription" : "^orange;Ammo Table^white;",
 
-		  "apexDescription" : "I can modify ammo here. (but apex desc)",
-		  "avianDescription" : "I can modify ammo here. (but avian desc)",
-		  "floranDescription" : "I can modify ammo here. (but floran dessssc)",
-		  "glitchDescription" : "I can modify ammo here. (but, glitch desc)",
-		  "humanDescription" : "I can modify ammo here. (but human desc)",
-		  "hylotlDescription" : "I can modify ammo here. (but hylotl desc)",
-		  "novakidDescription" : "I can modify ammo here. (but' novakid' desc)"
+        "apexDescription" : "I can modify ammo here!",
+        "avianDescription" : "I can modify ammo here!",
+        "floranDescription" : "I can modify ammo here!",
+        "glitchDescription" : "I can modify ammo here!",
+        "humanDescription" : "I can modify ammo here!",
+        "hylotlDescrption" : "I can modify ammo here!",
+        "novakidDescription" : "I can modify ammo here!"
       },
 
       "interactData" : {
@@ -92,18 +92,18 @@
         "price" : 750,
         "inventoryIcon" : "st_ammostation2icon.png",
         "placementImage" : "st_ammostation2.png:default.default",
-        "placementImagePosition" : [-9.5, 0],    
+        "placementImagePosition" : [8, 0],    
 
-        "description" : "Used to craft ammo boxes and augments for certain guns.",
-        "shortdescription" : "^orange;Agricultural Station^white;",
+        "description" : "Used to craft ammo boxes and augments for modular guns.",
+        "shortdescription" : "^orange;Ammo Station^white;",
 
-		"apexDescription" : "I can modify ammo here. (but apex desc)",
-		"avianDescription" : "I can modify ammo here. (but avian desc)",
-		"floranDescription" : "I can modify ammo here. (but floran dessssc)",
-		"glitchDescription" : "I can modify ammo here. (but, glitch desc)",
-		"humanDescription" : "I can modify ammo here. (but human desc)",
-		"hylotlDescription" : "I can modify ammo here. (but hylotl desc)",
-		"novakidDescription" : "I can modify ammo here. (but' novakid' desc)"
+        "apexDescription" : "I can modify ammo here!",
+        "avianDescription" : "I can modify ammo here!",
+        "floranDescription" : "I can modify ammo here!",
+        "glitchDescription" : "I can modify ammo here!",
+        "humanDescription" : "I can modify ammo here!",
+        "hylotlDescrption" : "I can modify ammo here!",
+        "novakidDescription" : "I can modify ammo here!"
       },
 
       "interactData" : {
@@ -131,27 +131,17 @@
   "orientations" : [
     {
       "image" : "st_ammostation.png:<color>.<frame>",
-      "imagePosition" : [-9.5, 0],   
+      "imagePosition" : [-8, 0],   
       "direction" : "left",
       "flipImages" : true,
-      "spaces" : [
-        [-2, 3], [-1, 3], [0, 3], [1, 3],
-        [-2, 2], [-1, 2], [0, 2], [1, 2],
-        [-2, 1], [-1, 1], [0, 1], [1, 1],
-        [-2, 0], [-1, 0], [0, 0], [1, 0]
-      ],
+      "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     },
     {
       "image" : "st_ammostation.png:<color>.<frame>",
-      "imagePosition" : [-9.5, 0],
+      "imagePosition" : [-8, 0],
       "direction" : "right",
-      "spaces" : [
-        [-2, 3], [-1, 3], [0, 3], [1, 3],
-        [-2, 2], [-1, 2], [0, 2], [1, 2],
-        [-2, 1], [-1, 1], [0, 1], [1, 1],
-        [-2, 0], [-1, 0], [0, 0], [1, 0]
-      ],
+      "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
   ]

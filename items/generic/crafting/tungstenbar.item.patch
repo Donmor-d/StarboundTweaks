@@ -6,9 +6,7 @@
 		"throwingdagger",
 		"throwingspear",
 		"st_rocketjumper",
-		"st_tungstenmodularrifle",
-		"st_tungstenmodularrevolver",
-		"st_tungstenmodularshotgun"
+		"st_modularshotgun"
 		]
 	}
 ]

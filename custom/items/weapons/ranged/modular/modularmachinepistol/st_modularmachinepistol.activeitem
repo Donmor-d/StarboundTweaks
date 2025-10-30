@@ -8,7 +8,7 @@
   "tooltipKind" : "st_gunwithammo",
   "category" : "machinePistol",
   "twoHanded" : false,
-  "itemTags" : ["weapon","ranged","machinepistol"],
+  "itemTags" : ["weapon","ranged","machinepistol","st_modularWeapon"],
   "level" : 3,
 
   "inventoryIcon" : [

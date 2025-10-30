@@ -4,6 +4,6 @@
     { "item" : "darkwoodmaterial", "count" : 6 },
     { "item" : "copperbar", "count" : 5 }
   ],
-  "output" : { "item" : "st_modularrifle", "count" : 1, "parameters" : { "level" : 1 } },
+  "output" : { "item" : "st_modularrifle", "count" : 1 },
   "groups" : [ "craftinganvil", "st_modularweapons", "all" ]
 }

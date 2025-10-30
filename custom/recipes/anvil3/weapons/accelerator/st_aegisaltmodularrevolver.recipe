@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "refinedaegisalt", "count" : 6 },
-    { "item" : "st_modularrevolver", "count" : 1, "parameters" : { "level" : 4 } },
+    { "item" : "goldbar", "count" : 6 },
     { "item" : "st_modularframe", "count" : 1 }
   ],
   "output" : { "item" : "st_modularrevolver", "count" : 1, "parameters" : { "level" : 5 } },

@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "titaniumbar", "count" : 10 },
-    { "item" : "st_modularrifle", "count" : 1, "parameters" : { "level" : 2 } },
+    { "item" : "silverbar", "count" : 4 },
     { "item" : "st_modularframe", "count" : 1 }
   ],
   "output" : { "item" : "st_modularrifle", "count" : 1, "parameters" : { "level" : 3 } },

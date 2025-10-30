@@ -18,11 +18,8 @@
 		"throwingknife",
 		"throwingaxe",
 		"st_leadshieldedcore",
-		"st_titaniummodularrifle",
-		"st_titaniummodularrevolver",
-		"st_titaniummodularshotgun",
-		"st_titaniummodularpistol",
-		"st_titaniummodularsniper"
+		"st_modularmachinepistol",
+		"st_modularsniper"
 		]
 	}
 ]

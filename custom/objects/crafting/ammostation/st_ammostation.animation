@@ -49,7 +49,7 @@
 
             "st_ammostation2" : {
               "properties" : {
-                "image" : "st_ammostation2.png:<color>.<frame>"
+                "image" : "st_ammostation2lit.png:<color>.<frame>"
               }
             }
           }

@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "refinedaegisalt", "count" : 10 },
-    { "item" : "st_modularmachinepistol", "count" : 1, "parameters" : { "level" : 4 } },
+    { "item" : "goldbar", "count" : 6 },
     { "item" : "st_modularframe", "count" : 1 }
   ],
   "output" : { "item" : "st_modularmachinepistol", "count" : 1, "parameters" : { "level" : 5 } },

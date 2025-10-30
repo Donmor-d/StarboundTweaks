@@ -19,7 +19,7 @@
     "category": "middle",
     "name": "st_poisonammo",
     "displayName": "Poisoned Ammo",
-    "displayIcon": "/custom/items/augments/grenadelauncher/middle/poisonasgrenade/st_poisongasgrenade.png",
+    "displayIcon": "/custom/items/augments/grenadelauncher/middle/poisongasgrenade/st_poisongasgrenade.png",
     "elementalType": "poison",
 
     "inventoryIcon" : "poison.png",

@@ -8,7 +8,7 @@
   "tooltipKind" : "st_gunwithammo",
   "category" : "assaultRifle",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "itemTags" : ["weapon","ranged","assaultrifle","st_modularWeapon"],
   "level" : 1,
 
   "inventoryIcon" : [

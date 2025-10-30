@@ -43,6 +43,14 @@ function build(directory, config, parameters, level, seed)
 
   local levelUsed = parameters.level or config.level
 
+  if levelUsed < 3 then
+    config.rarity = 'Uncommon'
+  elseif levelUsed < 5 then
+    config.rarity = 'Rare'
+  else
+    config.rarity = 'Legendary'
+  end
+
   for i, drawable in ipairs(config.inventoryIcon) do
     local part = { "butt", "middle", "barrel"}
 
@@ -51,7 +59,6 @@ function build(directory, config, parameters, level, seed)
     else
       drawable.image = levelUsed .. "/" .. part[i] .. "/normal.png"
     end
-
     if drawable.image then drawable.image = drawable.image .. config.paletteSwaps end
   end
 

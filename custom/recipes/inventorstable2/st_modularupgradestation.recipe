@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "tungstenbar", "count" : 10 },
+    { "item" : "goldbar", "count" : 10 },
+    { "item" : "st_modularframe", "count" : 2 }   
+  ],
+  "output" : {
+    "item" : "st_modularupgradestation",
+    "count" : 1
+  },
+  "groups" : [ "inventorstable2", "craftingstations", "all" ]
+}

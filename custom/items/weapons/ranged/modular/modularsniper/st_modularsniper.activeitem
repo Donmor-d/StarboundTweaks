@@ -8,7 +8,7 @@
   "tooltipKind" : "st_gunwithammo",
   "category" : "sniperRifle",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","sniperrifle"],
+  "itemTags" : ["weapon","ranged","sniperrifle","st_modularWeapon"],
   "level" : 3,
 
   "inventoryIcon" : [

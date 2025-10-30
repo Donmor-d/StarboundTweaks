@@ -1,8 +1,8 @@
 {
   "input" : [
     { "item" : "tungstenbar", "count" : 10 },
-    { "item" : "st_modularrifle", "count" : 1, "parameters" : { "level" : 1 } },
-    { "item" : "st_modularframe", "count" : 1 }
+    { "item" : "copperbar", "count" : 2 },
+    { "item" : "st_modularframe", "count" : 2 }
   ],
   "output" : { "item" : "st_modularrifle", "count" : 1, "parameters" : { "level" : 2 } },
   "groups" : [ "craftinganvil", "st_modularweapons", "all" ]

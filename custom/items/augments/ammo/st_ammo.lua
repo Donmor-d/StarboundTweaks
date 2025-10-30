@@ -56,8 +56,8 @@ function apply(input)
 
           output:setInstanceValue("primaryAbility", defaultPrimaryAbility) 
           
-          local inventoryIcon = output:instanceValue("inventoryIcon") 
-          local animationParts = output:instanceValue("animationParts")
+          -- local inventoryIcon = output:instanceValue("inventoryIcon") 
+          -- local animationParts = output:instanceValue("animationParts")
 
           local newInventoryIcon = augment.inventoryIcon or "normal.png"
           
@@ -79,27 +79,27 @@ function apply(input)
               end
             end
 
-            local index = string.find(inventoryIcon[categories[category].index].image, "/[^/]*$")
+            -- local index = string.find(inventoryIcon[categories[category].index].image, "/[^/]*$")
 
-            local filePath = string.sub(inventoryIcon[categories[category].index].image, 1, index)
+            -- local filePath = string.sub(inventoryIcon[categories[category].index].image, 1, index)
 
-            inventoryIcon[categories[category].index].image = filePath .. newInventoryIcon
-            animationParts[category] = filePath .. newInventoryIcon
+            -- inventoryIcon[categories[category].index].image = filePath .. newInventoryIcon
+            -- animationParts[category] = filePath .. newInventoryIcon
             if augment.fullbright then
-              animationParts[category .. "Fullbright"] = filePath .. augment.fullbright
+              -- animationParts[category .. "Fullbright"] = filePath .. augment.fullbright
             end
           end
 
-          output:setInstanceValue("inventoryIcon", inventoryIcon)
-          output:setInstanceValue("animationParts", animationParts)
+          -- output:setInstanceValue("inventoryIcon", inventoryIcon)
+          -- output:setInstanceValue("animationParts", animationParts)
 
-          if augment.animationCustom then
-            local newAnimationCustom = {}
-            for key, value in pairs(augment.animationCustom) do
-              newAnimationCustom[key] = value
-            end 
-            output:setInstanceValue("animationCustom", newAnimationCustom)
-          end
+          -- if augment.animationCustom then
+          --   local newAnimationCustom = {}
+          --   for key, value in pairs(augment.animationCustom) do
+          --     newAnimationCustom[key] = value
+          --   end 
+          --   output:setInstanceValue("animationCustom", newAnimationCustom)
+          -- end
         end
 
         if augmentConfig.type == "default" then

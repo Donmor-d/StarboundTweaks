@@ -24,6 +24,13 @@
 		"op": "add",
 		"path": "/defaultBlueprints/tier1/-",
 		"value": {
+			"item": "st_ammostation"
+		}
+	},
+	{
+		"op": "add",
+		"path": "/defaultBlueprints/tier1/-",
+		"value": {
 			"item": "st_ammoduplicator"
 		}
 	},
@@ -31,37 +38,24 @@
 		"op": "add",
 		"path": "/defaultBlueprints/tier1/-",
 		"value": {
-			"item": "st_ammostation"
+			"item": "st_modularupgradestation"
 		}
 	},
-	/*
 		//assaultrifles
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ironmodularrifle" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_tungstenmodularrifle" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularrifle" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularrifle" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularrifle" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_modularrifle" } },
 		//revolvers
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_ironmodularrevolver" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_tungstenmodularrevolver" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularrevolver" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularrevolver" } },
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_modularrevolver" } },
 		//shotguns
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_tungstenmodularshotgun" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularshotgun" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularshotgun" } },
+	// { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_modularshotgun" } },
 		//snipers
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularsniper" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularsniper" } },
+	// { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_modularsniper" } },
 		//machinepistols
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_titaniummodularpistol" } },
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularpistol" } },
+	// { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_modularmachinepistol" } },
 		//rocket launchers
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodularrocketlauncher" } },
+	// { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_modularrocketlauncher" } },
 	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_rocketjumper" } },
 		//grenade launchers
-	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_durasteelmodulargrenadelauncher" } },
-*/
+	{ "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : { "item" : "st_modulargrenadelauncher" } },
 	//------augments-----
 	{
 		"op": "add",

@@ -15,13 +15,8 @@
 		"throwingkunai",
 		"javelin",
 		"st_avolitepoweredheater",
-		"st_durasteelmodularrifle",
-		"st_durasteelmodularrevolver",
-		"st_durasteelmodularshotgun",
-		"st_durasteelmodularpistol",
-		"st_durasteelmodularsniper",
-		"st_durasteelmodularrocketlauncher",
-		"st_durasteelmodulargrenadelauncher"
+		"st_modularrocketlauncher",
+		"st_modulargrenadelauncher"
 		]
 	}
 ]
