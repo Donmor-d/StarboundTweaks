@@ -13,13 +13,19 @@
     "op": "add",
     "path": "/projectileParameters",
     "value": {
-      "damageType": "noDamage"
+      "damageType": "knockback",
+      "knockback" : 40
     }
   },
   {
     "op": "add",
     "path": "/parryEffect",
-    "value": "Defense"
+    "value": ""
+  },
+  {
+    "op": "replace",
+    "path": "/rarity",
+    "value": "Rare"
   },
   {
     "op": "add",

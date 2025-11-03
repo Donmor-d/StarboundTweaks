@@ -31,6 +31,8 @@ function init()
   self.projectileDamage = config.getParameter("parryDamage", 0)
   self.parryEffects = config.getParameter("parryEffects")
   
+  self.parryMultiplier = config.getParameter("parryMultiplier", 1)
+  self.changeHealth = true
   setStance(self.stances.idle)
 
   updateAim()
@@ -43,7 +45,6 @@ function update(dt, fireMode, shiftHeld)
     and fireMode == "primary"
     and self.cooldownTimer == 0
     and status.resourcePositive("shieldStamina") then
-
     raiseShield()
   end
 
@@ -55,6 +56,10 @@ function update(dt, fireMode, shiftHeld)
     if status.resourcePositive("perfectBlock") then
       animator.setGlobalTag("directives", self.perfectBlockDirectives)
     else
+      if self.changeHealth then
+        self.changeHealth = false
+        status.setPersistentEffects(activeItem.hand().."Shield", {{stat = "shieldHealth", amount = shieldHealth(false)}})
+      end
       animator.setGlobalTag("directives", "")
     end
 
@@ -109,7 +114,7 @@ function raiseShield()
   animator.playSound("raiseShield")
   self.active = true
   self.activeTimer = 0
-  status.setPersistentEffects(activeItem.hand().."Shield", {{stat = "shieldHealth", amount = shieldHealth()}})
+  status.setPersistentEffects(activeItem.hand().."Shield", {{stat = "shieldHealth", amount = shieldHealth(true)}})
   local shieldPoly = animator.partPoly("shield", "shieldPoly")
   activeItem.setItemShieldPolys({shieldPoly})
 
@@ -164,6 +169,7 @@ function refreshPerfectBlock()
 end
 
 function lowerShield()
+  self.changeHealth = true
   setStance(self.stances.idle)
   animator.setGlobalTag("directives", "")
   animator.setAnimationState("shield", "idle")
@@ -176,8 +182,8 @@ function lowerShield()
   self.cooldownTimer = self.cooldownTime
 end
 
-function shieldHealth()
-  return self.baseShieldHealth * root.evalFunction("shieldLevelMultiplier", self.level)
+function shieldHealth(perfectBlock)
+  return self.baseShieldHealth * root.evalFunction("shieldLevelMultiplier", self.level) * (perfectBlock and self.parryMultiplier or 1)
 end
 
 --Spawn projectile on parry

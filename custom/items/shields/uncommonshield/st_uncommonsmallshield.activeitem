@@ -1,0 +1,107 @@
+{
+  "itemName" : "st_uncommonsmallshield",
+  "price" : 1320,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "category" : "shield",
+  "description" : "There's a little something special between us.",
+  "shortdescription" : "Small Shield",
+  "tooltipKind" : "Shield",
+  "twoHanded" : false,
+  "itemTags" : ["shield"],
+
+  "animation" : "/items/active/shields/shield.animation",
+  "animationParts" : {},
+  "animationCustom" : {
+    "sounds" : {
+      "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/shields/shield.lua"],
+
+  "minActiveTime" : 0.2,
+
+  "forceWalk" : true,
+  "baseShieldHealth" : [20, 25],
+  "cooldownTime": [0.3, 0.5],
+
+  "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
+  "perfectBlockTime" : 0.2,
+
+  "parryDamage": 0,
+  "parryProjectile": "regularexplosionknockback",
+  "projectileParameters": {
+    "damageType": "knockback",
+    "knockback": 25
+  },
+  //effects applied on the player when perfect blocking
+  "parryEffects": [
+    [
+      { "effect": "rage", "duration": 2 }
+    ],
+    [
+      { "effect" : "runboostfood", "duration" : 2.5 }
+    ],
+    [
+      { "effect": "maxhealthscalingboostfood", "duration": 3 }
+    ]
+  ],
+  "parryEffect": "",
+  "parryMultiplier": 3, //shield health multiplier for perfect block
+
+  "knockback" : 10,
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "raised" : {
+      "armRotation" : 0,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildshield.lua",
+  "builderConfig" : [
+    {
+      "nameGenerator" : "st_uncommonshieldnames.config:nameGen",
+      "animationParts" : {
+        "shield" : {
+          "path" : "images/smallwood/<variant>.png",
+          "variants" : 2
+        }
+      },
+      "animationCustom" : {
+        "sounds" : {
+          "perfectBlock" : [ "/sfx/melee/shield_block_wood_perfect.ogg" ],
+          "block" : [ "/sfx/melee/shield_block_wood.ogg" ],
+          "break" : [ "/sfx/melee/shield_break_wood.ogg" ]
+        }
+      },
+      "iconDrawables" : [ "shield" ]
+    },
+    {
+      "nameGenerator" : "st_uncommonshieldnames.config:nameGen",
+      "animationParts" : {
+        "shield" : {
+          "path" : "images/smallmetal/<variant>.png",
+          "variants" : 2
+        }
+      },
+      "animationCustom" : {
+        "sounds" : {
+          "perfectBlock" : [ "/sfx/melee/shield_block_metal_perfect.ogg" ],
+          "block" : [ "/sfx/melee/shield_block_metal.ogg" ],
+          "break" : [ "/sfx/melee/shield_break_metal.ogg" ]
+        }
+      },
+      "iconDrawables" : [ "shield" ]
+    }
+  ]
+}

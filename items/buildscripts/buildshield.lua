@@ -82,9 +82,25 @@ function build(directory, config, parameters, level, seed)
 
   -- tooltip fields
   config.tooltipFields = {}
-  config.tooltipFields.healthLabel = util.round(configParameter("baseShieldHealth", 0) * root.evalFunction("shieldLevelMultiplier", configParameter("level", 1)), 0)
-  config.tooltipFields.cooldownLabel = configParameter("cooldownTime")
-  config.tooltipFields.parryEffectLabel = configParameter("parryEffect") or "none"
+  config.tooltipFields.healthLabel = util.round(parameters.baseShieldHealth * root.evalFunction("shieldLevelMultiplier", configParameter("level", 1)), 0)
+  config.tooltipFields.cooldownLabel = parameters.cooldownTime
+  if configParameter("parryEffect", "") == "" and #config.parryEffects <= 0 then
+    config.tooltipFields.parryEffectLabel = "none" 
+  else 
+    config.tooltipFields.parryEffectLabel = configParameter("parryEffect", "") 
+  end
 
+  config.parryEffects = configParameter("parryEffects", {}) 
+
+  if #config.parryEffects > 0 and not config.parryEffects[1].effect then
+    config.parryEffects = config.parryEffects[math.random(#config.parryEffects)]
+  end
+
+  if config.parryEffects then
+    local effectNumber = math.min(#config.parryEffects, 3)
+    for i = 1, effectNumber do
+      config.tooltipFields["parryBuff"..tostring(i).."Image"] = "/custom/interface/statusinterface/"..config.parryEffects[i].effect..".png" or ""
+    end
+  end
   return config, parameters
 end

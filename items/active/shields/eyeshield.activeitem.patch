@@ -39,6 +39,11 @@
     "value": 15
   },
   {
+    "op": "add",
+    "path": "/parryMultiplier",
+    "value": 3
+  },
+  {
     "op": "replace",
     "path": "/forceWalk",
     "value": false

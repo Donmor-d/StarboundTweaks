@@ -20,14 +20,17 @@
   {
     "op": "add",
     "path": "/parryEffects",
-    "value": [
-      {"effect" : "rage", "duration" : 2}
-    ]
+    "value": []
   },
   {
     "op": "add",
     "path": "/parryEffect",
-    "value": "Rage"
+    "value": ""
+  },
+  {
+    "op": "add",
+    "path": "/parryMultiplier",
+    "value": 3
   },
   {
     "op": "replace",

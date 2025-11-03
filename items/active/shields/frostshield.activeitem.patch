@@ -31,6 +31,11 @@
   },
   {
     "op": "replace",
+    "path": "/rarity",
+    "value": "Rare"
+  },
+  {
+    "op": "replace",
     "path": "/baseShieldHealth",
     "value": 25
   }

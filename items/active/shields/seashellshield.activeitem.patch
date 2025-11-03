@@ -27,12 +27,17 @@
   {
     "op": "add",
     "path": "/parryEffect",
-    "value": "Speed Boost"
+    "value": ""
   },
   {
     "op": "replace",
     "path": "/baseShieldHealth",
-    "value": 15
+    "value": 40
+  },
+  {
+    "op": "replace",
+    "path": "/rarity",
+    "value": "Rare"
   },
   {
     "op": "replace",

@@ -1257,11 +1257,20 @@
     [0, {
       "pool" : [
         {"weight" : 0.5, "item" : "commonsmallshield" },
-        {"weight" : 0.5, "item" : "commonlargeshield" }
+        {"weight" : 0.5, "item" : "commonlargeshield" },
+        {"weight" : 0.25, "pool" : "st_uncommonShield" }
       ]
     }]
   ],
 
+  "st_uncommonShield" : [
+    [0, {
+      "pool" : [
+        {"weight" : 1, "item" : "st_uncommonsmallshield" },
+        {"weight" : 1, "item" : "st_uncommonlargeshield" }
+      ]
+    }]
+  ],
   // ================================
   //              Seeds
   // ================================

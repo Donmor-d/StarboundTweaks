@@ -7,7 +7,7 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [67, 118],
+    "position" : [67, 134],
     "file" : "",
     "centered" : true,
     "maxSize" : [38, 38],
@@ -15,40 +15,63 @@
   },
   "healthLabel" : {
     "type" : "label",
-    "position" : [127, 80],
+    "position" : [127, 96],
     "hAnchor" : "right",
     "value" : ""
   },
   "healthTitleLabel" : {
     "type" : "label",
-    "position" : [12, 80],
+    "position" : [12, 96],
     "hAnchor" : "left",
     "value" : "Shield Health:"
   },
   "cooldownLabel" : {
     "type" : "label",
-    "position" : [127, 71],
+    "position" : [127, 87],
     "hAnchor" : "right",
     "value" : ""
   },
   "cooldownTitleLabel" : {
     "type" : "label",
-    "position" : [12, 71],
+    "position" : [12, 87],
     "hAnchor" : "left",
     "value" : "Cooldown Time:"
   },
   "parryEffectLabel" : {
     "type" : "label",
-    "position" : [127, 62],
+    "position" : [127, 78],
     "hAnchor" : "right",
-    "value" : ""
+    "value" : "none"
   },
+
   "parryEffectTitleLabel" : {
     "type" : "label",
-    "position" : [12, 62],
+    "position" : [12, 78],
     "hAnchor" : "left",
-    "value" : "Parry Effect:"
+    "value" : "Parry Effects:"
   },
+  "parryBuff1Image": {
+    "type": "image",
+    "position": [12, 64],
+    "file": "",
+    "maxSize": [12, 12],
+    "minSize": [12, 12]
+  },
+  "parryBuff2Image": {
+    "type": "image",
+    "position": [12, 64],
+    "file": "",
+    "maxSize": [12, 12],
+    "minSize": [12, 12]
+  },
+  "parryBuff3Image": {
+    "type": "image",
+    "position": [12, 64],
+    "file": "",
+    "maxSize": [12, 12],
+    "minSize": [12, 12]
+  },
+
   "descriptionLabel" : {
     "type" : "label",
     "position" : [12, 58],
@@ -60,13 +83,13 @@
   },
   "priceLabel" : {
     "type" : "label",
-    "position" : [120, 23],
+    "position" : [110, 23],
     "hAnchor" : "left",
     "value" : "tree"
   },
   "moneyIcon" : {
     "type" : "image",
-    "position" : [107, 23],
+    "position" : [97, 23],
     "file" : "/interface/money.png"
   },
   "rarityLabel" : {

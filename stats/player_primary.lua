@@ -101,6 +101,14 @@ function applyDamageRequest(damageRequest)
 
       if not status.resourcePositive("perfectBlock") then
         status.modifyResource("shieldStamina", -damage / status.stat("shieldHealth"))
+      elseif damage >= status.stat("shieldHealth") * 2 then
+        --if the damage is too high, it consumes shield stamina when parrying
+        -- consumes 25% for every x times larger the damage is compared to max shield health, up to 75%
+
+        --Needs serious testing due to how enemy damage scaling works compared to shield health scaling (for more info check levelingmultipliers.functions file)
+        local staminaConsumption = (math.floor(damage / status.stat("shieldHealth")) - 1) * 0.25
+
+        status.modifyResource("shieldStamina", math.min(1, staminaConsumption))
       end
     end
 
@@ -141,6 +149,7 @@ function applyDamageRequest(damageRequest)
   local hitType = damageRequest.hitType
   if not status.resourcePositive("health") then
     hitType = "kill"
+    status.setResource("health", status.resourceMax("health"))
   end
   return {{
     sourceEntityId = damageRequest.sourceEntityId,
@@ -323,16 +332,6 @@ function overheadBars()
       color = status.resourcePositive("perfectBlock") and {255, 255, 200, 255} or {200, 200, 0, 255}
     })
   end
-
-  --[[
-  local r = math.min(math.abs(status.resourcePercentage("ammo") - 1) * 800, 200) --pega um valor de 0 a 200 dependendo da porcentagem perdida até 0.5
-  local g = math.min(status.resourcePercentage("ammo") * 400, 200)               --mesmo de cima mas do contrário
-
-  table.insert(bars, {
-      percentage = status.resource("ammo") * (1/status.resourceMax("ammo")),
-      color = {r, g, 0, 255}
-  })
-  ]]
 
   return bars
 end

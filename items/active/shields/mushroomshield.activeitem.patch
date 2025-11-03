@@ -43,6 +43,11 @@
   },
   {
     "op": "replace",
+    "path": "/rarity",
+    "value": "Rare"
+  },
+  {
+    "op": "replace",
     "path": "/scripts/0",
     "value": "/items/active/shields/st_mushroomshield.lua"
   }
