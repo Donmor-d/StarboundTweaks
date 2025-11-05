@@ -97,7 +97,7 @@
       "animationParts" : {
         "shield" : {
           "path" : "images/largemetal/<variant>.png",
-          "variants" : 3
+          "variants" : 4
         }
       },
       "animationCustom" : {

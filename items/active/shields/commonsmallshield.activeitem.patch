@@ -49,7 +49,12 @@
   },
   {
     "op": "replace",
+    "path": "/builderConfig/0/animationParts/shield/variants",
+    "value": 7
+  },
+  {
+    "op": "replace",
     "path": "/builderConfig/1/animationParts/shield/variants",
-    "value": 3
+    "value": 6
   }
 ]
