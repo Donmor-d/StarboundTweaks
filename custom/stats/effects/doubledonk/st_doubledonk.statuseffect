@@ -11,7 +11,7 @@
   "defaultDuration" : 0.5,
 
   "scripts" : [
-    "doubledonk.lua"
+    "st_doubledonk.lua"
   ],
 
   "animationConfig" : "st_doubledonk.animation"

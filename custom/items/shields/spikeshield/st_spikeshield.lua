@@ -35,6 +35,11 @@ function init()
   self.changeHealth = true
   setStance(self.stances.idle)
 
+  --dash stuff
+  self.dashSpeed = config.getParameter("dashSpeed", 50)
+  self.airDashing = false
+  self.dashing = false
+
   updateAim()
 end
 
@@ -45,6 +50,10 @@ function update(dt, fireMode, shiftHeld)
     and fireMode == "primary"
     and self.cooldownTimer == 0
     and status.resourcePositive("shieldStamina") then
+
+    self.dashing = true
+    self.airDashing = not mcontroller.groundMovement()
+
     raiseShield()
   end
 
@@ -54,13 +63,31 @@ function update(dt, fireMode, shiftHeld)
     self.damageListener:update()
 
     if status.resourcePositive("perfectBlock") then
-      animator.setGlobalTag("directives", self.perfectBlockDirectives)
+      if self.dashing then
+        animator.setGlobalTag("directives", self.perfectBlockDirectives)
+      else
+        animator.setGlobalTag("directives", "")
+      end
+      local dash = self.dashSpeed
+      dash = mcontroller.onGround() and dash or dash/2
+
+      if self.airDashing then
+        mcontroller.setYVelocity(0)
+      end
+
+      mcontroller.controlModifiers({jumpingSuppressed = true})
+      mcontroller.controlApproachVelocity({self.dashSpeed * self.aimDirection, 0}, 2000)
     else
+      stopDash()
+      mcontroller.controlModifiers({jumpingSuppressed = false})
+
       if self.changeHealth then
         self.changeHealth = false
         status.setPersistentEffects(activeItem.hand().."Shield", {{stat = "shieldHealth", amount = shieldHealth(false)}})
       end
       animator.setGlobalTag("directives", "")
+
+      lowerShield()
     end
 
     if self.forceWalk then
@@ -94,8 +121,8 @@ function updateAim()
   end
   activeItem.setFacingDirection(self.aimDirection)
 
-  animator.setGlobalTag("hand", isNearHand() and "near" or "far")
-  activeItem.setOutsideOfHand(not self.active or isNearHand())
+  animator.setGlobalTag("hand", "near")
+  activeItem.setOutsideOfHand(true)
 end
 
 function isNearHand()
@@ -121,7 +148,7 @@ function raiseShield()
   if self.knockback > 0 then
     local knockbackDamageSource = {
       poly = shieldPoly,
-      damage = 0,
+      damage = util.round(self.projectileDamage * root.evalFunction("weaponDamageLevelMultiplier", self.level), 0),
       damageType = "Knockback",
       sourceEntity = activeItem.ownerEntityId(),
       team = activeItem.ownerTeam(),
@@ -147,7 +174,12 @@ function raiseShield()
             status.addEphemeralEffects(self.parryEffects)
           end
           --function that applies damage to nearby enemies (or make it so they receive an effect similar to Doomed)
+          mcontroller.controlModifiers({jumpingSuppressed = false})
+          animator.setGlobalTag("directives", "")
           refreshPerfectBlock()
+          stopDash()
+          mcontroller.setXVelocity(self.dashSpeed * -self.aimDirection)
+          lowerShield()
         elseif status.resourcePositive("shieldStamina") then
           animator.playSound("block")
         else
@@ -160,6 +192,17 @@ function raiseShield()
   end)
 
   refreshPerfectBlock()
+end
+
+function stopDash()
+  self.dashing = false
+  local movementParams = mcontroller.baseParameters()
+  local currentVelocity = mcontroller.velocity()
+
+  if math.abs(currentVelocity[1]) > movementParams.runSpeed then
+    mcontroller.setVelocity({movementParams.runSpeed * self.aimDirection, 0})
+  end
+  mcontroller.controlApproachXVelocity(self.aimDirection * movementParams.runSpeed, 2000)
 end
 
 function refreshPerfectBlock()
@@ -189,7 +232,7 @@ end
 --Spawn projectile on parry
 function fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
-  params.power = util.round(self.projectileDamage * root.evalFunction("weaponDamageLevelMultiplier", self.level), 0)
+  params.power = self.projectileDamage
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
 

@@ -1,0 +1,72 @@
+{
+  "itemName" : "st_spikeshield",
+  "fixedLevel" : true,
+  "price" : 720,
+  "maxStack" : 1,
+  "level" : 6,
+  "rarity" : "Legendary",
+  "category" : "shield",
+  "description" : "Comes from a dark cursed world, where even a shield can be used as a weapon.",
+  "shortdescription" : "Spike Shield",
+  "tooltipKind" : "Shield",
+  "twoHanded" : true,
+  "itemTags" : ["shield"],
+
+  "inventoryIcon" : "st_spikeshield.png:nearidle",
+
+  "animation" : "/items/active/shields/shield.animation",
+  "animationParts" : {
+    "shield" : "st_spikeshield.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "shield" : { "properties" : {
+        "shieldPoly" : [ [-0.5, -2.5], [-0.5, 2.25], [0.75, 1.5], [0.75, -1.75] ]
+    }}}},
+    "sounds" : {
+      "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
+      "perfectBlock" : [ "/sfx/melee/shield_block_metal_perfect.ogg" ],
+      "block" : [ "/sfx/melee/shield_block_metal.ogg" ],
+      "break" : [ "/sfx/melee/shield_break_metal.ogg" ]
+    }
+  },
+
+  "scripts" : ["/custom/items/shields/spikeshield/st_spikeshield.lua"],
+
+  "minActiveTime" : 0.3,
+
+  "forceWalk" : true,
+  "baseShieldHealth" : 45,
+  "cooldownTime" : 1.5,
+
+  "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
+  "perfectBlockTime" : 0.2,
+
+  "dashSpeed" : 50,
+
+  "knockback" : 10,
+
+  "parryDamage": 10,
+  "parryProjectile": "regularexplosionknockback",
+  "projectileParameters": {
+    "damageType": "noDamage"
+  },
+  "parryEffects": [],
+  "parryEffect": "Dash",
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "raised" : {
+      "armRotation" : 0,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : false
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandshield.lua"
+}

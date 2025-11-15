@@ -26,7 +26,6 @@ function GunFire:update(dt, fireMode, shiftHeld)
   if self.fireMode == "primary"
     and not self.weapon.currentAbility
     and self.cooldownTimer == 0
-    and not status.resourceLocked("ammo")
     and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
     
     self:setState(self.charge)
@@ -36,14 +35,16 @@ end
 
 function GunFire:charge()
 
-  --self.weapon:setStance(self.stances.charge)
+  self.weapon:setStance(self.stances.charge)
   animator.playSound("charge")
+  animator.setAnimationState("middle", "charge")
 
-  --[[
-  animator.setAnimationState("charge", "charge")
-  --]]
-
-  self.chargeTimer = self.chargeTime
+  if status.resourceLocked("ammo") then
+    self.chargeTimer = self.chargeTime * 2
+  else
+    self.chargeTimer = self.chargeTime
+  end
+  
   while self.chargeTimer > 0 and self.fireMode == "primary" do
     self.chargeTimer = self.chargeTimer - self.dt
 
@@ -63,7 +64,7 @@ function GunFire:fire()
 
   animator.stopAllSounds("charge")
 
-  
+  animator.setAnimationState("middle", "idle")
 
   self:fireProjectile()
   self:muzzleFlash()

@@ -30,6 +30,9 @@ function build(directory, config, parameters, level, seed)
 
   --randomised valores
   parameters.baseShieldHealth = randomIntInRange(configParameter("baseShieldHealth"), seed, "baseShieldHealth")
+  parameters.baseShieldHealth = util.round(parameters.baseShieldHealth * root.evalFunction("shieldLevelMultiplier", configParameter("level", 1)), 0)
+  -- VER PORQUE NAO FUNCIONA E MULTIPLICA O DANO
+  parameters.parryDamage = util.round(configParameter("parryDamage") * root.evalFunction("weaponDamageLevelMultiplier", configParameter("level", 1)), 0)
   parameters.cooldownTime = math.floor(randomInRange(configParameter("cooldownTime"), seed, "cooldownTime") * 10) / 10
 
   -- select the generation profile to use
@@ -82,7 +85,7 @@ function build(directory, config, parameters, level, seed)
 
   -- tooltip fields
   config.tooltipFields = {}
-  config.tooltipFields.healthLabel = util.round(parameters.baseShieldHealth * root.evalFunction("shieldLevelMultiplier", configParameter("level", 1)), 0)
+  config.tooltipFields.healthLabel = parameters.baseShieldHealth
   config.tooltipFields.cooldownLabel = parameters.cooldownTime
   if configParameter("parryEffect", "") == "" and #config.parryEffects <= 0 then
     config.tooltipFields.parryEffectLabel = "none" 

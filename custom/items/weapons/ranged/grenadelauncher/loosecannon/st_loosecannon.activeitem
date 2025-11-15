@@ -3,7 +3,7 @@
   "price" : 1500,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "Grenades live depending on the charge time, be careful to not overcharge it.",
+  "description" : "Charge to decrease the fuse time of the grenade.",
   "shortdescription" : "Loose Cannon",
   "tooltipKind" : "base",
   "category" : "uniqueWeapon",
@@ -21,8 +21,66 @@
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : { 
-    "animatedParts" : { 
+    "animatedParts" : {
+      "stateTypes" : {
+        "middle" : {
+          "default" : "idle",
+          "states" : {
+            "idle" : {},
+            "charge" : {
+              "frames" : 4,
+              "cycle" : 1.5,
+              "mode" : "loop"
+            }
+          }
+        }
+      }, 
       "parts" : {
+        "middle" : {
+          "properties" : {
+            "centered" : true,
+            "offset" : [0.9, 0.3],
+            "zLevel" : 0,
+            "transformationGroups" : ["weapon"]
+          },
+          "partStates" : {
+            "middle" : {
+              "idle" : {
+                "properties" : {
+                  "image" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/st_loosecannon.png<paletteSwaps>"
+                }
+              },
+              "charge" : {
+                "properties" : {
+                  "image" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/st_loosecannon.png<paletteSwaps>"
+                }
+              }
+            }
+          }
+        },
+        "middlefullbright" : {
+          "properties" : {
+            "centered" : true,
+            "offset" : [0.9, 0.3],
+            "zLevel" : 1,
+            "transformationGroups" : ["weapon"],
+            "fullbright" : true
+          },
+          "partStates" : {
+            "middle" : {
+              "idle" : {
+                "properties" : {
+                  "image" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/st_loosecannonfullbright.png:4<paletteSwaps>"
+                }
+              },
+              "charge" : {
+                "properties" : {
+                  "image" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/st_loosecannonfullbright.png:<frame><paletteSwaps>"
+                }
+              }
+            }
+          }
+        },
         "muzzleFlash" : {
           "partStates" : {
             "firing" : {
@@ -90,6 +148,14 @@
         "allowRotate" : true,
         "allowFlip" : true
       },
+      "charge" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
       "fire" : {
         "duration" : 0,
         "armRotation" : 7.5,
@@ -120,6 +186,31 @@
     "animationParts" : {
       "middle" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/st_loosecannon_l6.png"
     },
-    "shortdescription" : "Australium Loose Cannon ^yellow;^reset;"
+    "animationCustom" : {
+      "animatedParts" : {
+        "parts" : {
+          "middle": {
+            "partStates" : {
+              "middle" : {
+                "idle" : {
+                  "properties" : {
+                    "image" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/st_loosecannon_l6.png<paletteSwaps>"
+                  }
+                },
+                "charge" : {
+                  "properties" : {
+                    "image" : "/custom/items/weapons/ranged/grenadelauncher/loosecannon/st_loosecannon_l6.png<paletteSwaps>"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "primaryAbility" : {
+      "projectileType" : "st_goldenloosecannongrenade"
+    },
+    "shortdescription" : "Golden Loose Cannon ^yellow;^reset;"
   }
 }

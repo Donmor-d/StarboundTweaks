@@ -1232,7 +1232,9 @@
         {"weight" : 1.0, "item" : "energypickaxe"},
         {"weight" : 1.0, "item" : "evileye"},
         {"weight" : 1.0, "item" : "remotegrenadelauncher"},
-        {"weight" : 1.0, "item" : "doomcannon"}
+        {"weight" : 1.0, "item" : "doomcannon"},
+        //spikeshield courtesy of yours truly
+        {"weight" : 1.0, "item" : "st_spikeshield"}
       ]
     }]
   ],
