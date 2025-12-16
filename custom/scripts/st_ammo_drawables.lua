@@ -33,23 +33,17 @@ function update(dt) oldUpdate(dt)
 
     if #currentAmmoString < 3 then currentAmmoString = "n"..currentAmmoString end
 
-    for i = 1, #currentAmmoString do 
-        if self.showState then
+    if self.showState then 
+        for i = 1, #currentAmmoString do 
             localAnimator.addDrawable({image="/custom/interface/st_number.png:"..currentAmmoString:sub(i, i),fullbright=true,position={pos[1] + 3 + (i/1.6),pos[2] + 3}}, "overlay")
         end
-    end
-    
-    if self.showState then
+        
         localAnimator.addDrawable({image="/custom/interface/st_number.png:slash",fullbright=true,position={pos[1] + 5.6,pos[2] + 3}}, "overlay")
-    end
 
-    for i = 1, #maxAmmoString do 
-        if self.showState then
+        for i = 1, #maxAmmoString do 
             localAnimator.addDrawable({image="/custom/interface/st_number.png:"..maxAmmoString:sub(i, i),fullbright=true,position={pos[1] + 6.225 + (i/1.6),pos[2] + 3}}, "overlay")
         end
-    end
 
-    if self.showState then
         localAnimator.addDrawable({image="/custom/interface/st_ammo.png",fullbright=true,position={pos[1]+2,pos[2] + 3}}, "overlay")
     end
 end

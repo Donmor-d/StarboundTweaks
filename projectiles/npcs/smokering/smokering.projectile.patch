@@ -2,7 +2,7 @@
     {
       "op": "replace",
       "path": "/damageKind",
-      "value": "electric"
+      "value": "fire"
     },
     {
       "op": "remove",

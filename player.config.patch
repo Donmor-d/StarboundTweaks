@@ -11,13 +11,13 @@
 	},
 	{
 		"op": "replace",
-		"path": "/movementParameters/flySpeed",
-		"value": 14
+		"path": "/movementParameters/airFriction",
+		"value": 0.5
 	},
 	{
-		"op": "replace",
-		"path": "/movementParameters/airFriction",
-		"value": 0
+		"op": "add",
+		"path": "/movementParameters/airForce",
+		"value": 100
 	},
 	//--------------------------------------recipes--------------------------------------
 	{

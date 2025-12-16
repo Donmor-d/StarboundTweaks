@@ -12,7 +12,7 @@
   {
     "op": "replace",
     "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/maximumRange",
-    "value": 20
+    "value": 10
   },
   {
     "op": "replace",

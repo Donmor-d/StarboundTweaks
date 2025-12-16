@@ -225,15 +225,24 @@ function update(dt)
   ----------------------------------------------ammo stuff----------------------------------------------
   
 
+  if world.getProperty("invinciblePlayers")  and status.resourcePercentage("ammo") < 1 then
+    status.setResourcePercentage("ammo", 1)
+  end
+
   if status.resourcePercentage("ammo") == 0 then 
     local message = {
       unique = true,
       messageId = "outofammo",
       senderName = "doesntmatter",
-      text = "Looks like you've run out of ammo, you can craft more at an ^orange;Ammo Station^white; or simply interact with S.A.I.L. to refill."
+      text = "You've run out of ammo, you can refill it with ammo boxes, which can either be crafted at an ^orange;Ammo Station^white; or found in chests. Being inside your ship automatically refills ammo."
     }
 
-    world.sendEntityMessage(entity.id(), "queueRadioMessage", message)
+    world.sendEntityMessage(entity.id(), "queueRadioMessage", message) 
+
+  elseif status.resourcePercentage("ammo") >= 1 then
+    status.addEphemeralEffect("st_fullammo", math.huge)
+  else
+    status.removeEphemeralEffect("st_fullammo")
   end
 
   --localAnimator.addDrawable({image="/custom/interface/st_number.png:"..time[i],fullbright=true,position={pos[1]+(i/1.6),pos[2]}},"overlay")

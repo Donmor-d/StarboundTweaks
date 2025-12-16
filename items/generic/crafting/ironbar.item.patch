@@ -1,13 +1,5 @@
 [
 	{
-	"op": "add",
-	"path": "/learnBlueprintsOnPickup",
-	"value": [
-		"st_ironmodularrifle",
-		"st_ironmodularrevolver"
-		]
-	},
-	{
 	  "op": "add",
 	  "path": "/pickupQuestTemplates",
 	  "value": [

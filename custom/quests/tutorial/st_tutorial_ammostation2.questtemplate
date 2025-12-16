@@ -17,7 +17,7 @@
     "conditions" : [
       {
         "type" : "gatherItem",
-        "itemName" : "st_ironmodularrifle",
+        "itemName" : "st_modularrifle",
         "count" : 1,
         "consume" : false
       },

@@ -1,0 +1,12 @@
+{
+  "name" : "st_fullammo",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [],
+
+  "animationConfig" : "st_fullammo.animation",
+
+  "label" : "Full ammo"
+}
+//this actually doesnt do anything, its just made to prevent using ammo boxes when full of ammo

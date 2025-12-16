@@ -15,46 +15,34 @@
     "value": 26
   },
   {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
     "op": "replace",
     "path": "/baseParameters/touchDamage/damage",
     "value": 0
   },
   {
     "op": "replace",
+    "path": "/baseParameters/touchDamage/damageSourceKind",
+    "value": "nodamage"
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/knockback",
+    "value": 30
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/runSpeed",
+    "value": 11
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/walkSpeed",
+    "value": 9
+  },
+  {
+    "op": "replace",
     "path": "/baseParameters/scale",
-    "value": 1.5
+    "value": 1.25
   },
   {
     "op": "replace",

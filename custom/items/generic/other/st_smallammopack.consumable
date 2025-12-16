@@ -14,5 +14,5 @@
     ] ],
   "emote" : "",
   "emitters" : [ "st_smallammouse" ],
-  "blockingEffects" : [ ]
+  "blockingEffects" : [ "st_fullammo" ]
 }
