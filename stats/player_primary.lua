@@ -147,6 +147,9 @@ function applyDamageRequest(damageRequest)
   end
 
   local hitType = damageRequest.hitType
+  if not status.resourcePositive("health") then
+    hitType = "kill"
+  end
   return {{
     sourceEntityId = damageRequest.sourceEntityId,
     targetEntityId = entity.id(),
