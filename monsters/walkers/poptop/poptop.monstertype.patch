@@ -18,11 +18,6 @@
     "value": true
   },
   {
-    "op": "replace",
-    "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown",
-    "value": 1.5
-  },
-  {
     "op": "add",
     "path": "/baseParameters/touchDamage/damageType",
     "value": "knockback"
@@ -51,5 +46,30 @@
     "op": "replace",
     "path": "/baseParameters/touchDamage/knockback",
     "value": 30
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown",
+    "value": 0.5
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/0/parameters/chargeControlForce",
+    "value": 400
+  },
+  // FOR NEW BEHAVIOR REGARDING "approach-walk"
+  // DEFINE THESE SO THE CREATURE TRIES TO STAY IN RANGE OF THEIR ATTACKS
+  // keep difference between them at least 2 and idle distance should always be bigger
+  // idleRange should be the same as the attack range
+  // fleeRange is optional, but makes enemies try to not be too close to you
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/approachActions/0/parameters/fleeRange",
+    "value": 3
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/approachActions/0/parameters/idleRange",
+    "value": 5
   }
 ]

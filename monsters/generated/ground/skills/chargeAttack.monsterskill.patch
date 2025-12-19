@@ -8,5 +8,10 @@
     "op": "replace",
     "path": "/config/hostileActions/0/parameters/chargeSpeed",
     "value": 40
+  },
+  {
+    "op": "replace",
+    "path": "/config/hostileActions/0/parameters/chargeControlForce",
+    "value": 400
   }
 ]

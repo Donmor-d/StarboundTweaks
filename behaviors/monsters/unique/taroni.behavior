@@ -468,7 +468,9 @@
                               "jumpXControlForce": {"value": 50},
                               "moveState": {"value": "walk"},
                               "run": {"value": false},
-                              "idleState": {"value": "idle"}
+                              "idleState": {"value": "idle"},
+                              "fleeRange": {"value": 6},
+                              "idleRange": {"value": 10}
                             }
                           }
                         ]

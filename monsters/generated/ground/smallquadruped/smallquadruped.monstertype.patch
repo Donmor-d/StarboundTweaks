@@ -6,7 +6,7 @@
   {
     "op": "replace",
     "path": "/baseParameters/movementSettings/runSpeed",
-    "value": 16
+    "value": 12
   },
   {
     "op": "replace",

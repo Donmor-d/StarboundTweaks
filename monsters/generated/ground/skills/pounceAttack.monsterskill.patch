@@ -2,7 +2,7 @@
   {
     "op": "replace",
     "path": "/config/hostileActions/0/cooldown",
-    "value": 2
+    "value": 0
   },
   {
     "op": "replace",
@@ -16,7 +16,12 @@
   },
   {
     "op": "replace",
+    "path": "/config/hostileActions/0/parameters/highArc",
+    "value": false
+  },
+  {
+    "op": "replace",
     "path": "/config/hostileActions/0/parameters/winddownTime",
-    "value": 0.1
+    "value": 0.5
   }
 ]

@@ -63,5 +63,20 @@
     "op": "replace",
     "path": "/baseParameters/touchDamage/knockback",
     "value": 30
+  },
+  // FOR NEW BEHAVIOR REGARDING "approach-walk"
+  // DEFINE THESE SO THE CREATURE TRIES TO STAY IN RANGE OF THEIR ATTACKS
+  // keep difference between them at least 2 and idle distance should always be bigger
+  // idleRange should be the same as the attack range
+  // fleeRange is optional, but makes enemies try to not be too close to you
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/approachActions/0/parameters/fleeRange",
+    "value": 8
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/approachActions/0/parameters/idleRange",
+    "value": 10
   }
 ]

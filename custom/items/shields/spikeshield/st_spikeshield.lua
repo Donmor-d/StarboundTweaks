@@ -149,7 +149,7 @@ function raiseShield()
     local knockbackDamageSource = {
       poly = shieldPoly,
       damage = util.round(self.projectileDamage * root.evalFunction("weaponDamageLevelMultiplier", self.level), 0),
-      damageType = "Knockback",
+      damageType = "Damage",
       sourceEntity = activeItem.ownerEntityId(),
       team = activeItem.ownerTeam(),
       knockback = self.knockback,
@@ -173,7 +173,6 @@ function raiseShield()
           if self.parryEffects then
             status.addEphemeralEffects(self.parryEffects)
           end
-          --function that applies damage to nearby enemies (or make it so they receive an effect similar to Doomed)
           mcontroller.controlModifiers({jumpingSuppressed = false})
           animator.setGlobalTag("directives", "")
           refreshPerfectBlock()

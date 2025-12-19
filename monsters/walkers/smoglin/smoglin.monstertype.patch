@@ -2,7 +2,7 @@
   {
     "op": "replace",
     "path": "/baseParameters/behaviorConfig/hostileActions/0/cooldown",
-    "value": 2
+    "value": 0
   },
   {
     "op": "replace",

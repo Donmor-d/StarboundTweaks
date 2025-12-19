@@ -15,36 +15,24 @@
     "value": 26
   },
   {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/walkSpeed",
+    "value": 6
   },
   {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
+    "op": "replace",
+    "path": "/baseParameters/movementSettings/runSpeed",
+    "value": 8
   },
   {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
+    "op": "add",
+    "path": "/baseParameters/touchDamage/damageType",
+    "value": "knockback"
   },
   {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
-  },
-  {
-    "op": "remove",
-    "path": "/baseParameters/touchDamage/poly/0"
+    "op": "add",
+    "path": "/baseParameters/touchDamage/damageRepeatTimeout",
+    "value": 0.25
   },
   {
     "op": "replace",
@@ -53,7 +41,37 @@
   },
   {
     "op": "replace",
-    "path": "/baseParameters/movementSettings/runSpeed",
-    "value": 6
+    "path": "/baseParameters/touchDamage/damageSourceKind",
+    "value": "nodamage"
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/touchDamage/knockback",
+    "value": 30
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/1/cooldown",
+    "value": 1.5
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/behaviorConfig/hostileActions/1/parameters/winddownStopForce",
+    "value": 500
+  },
+  // FOR NEW BEHAVIOR REGARDING "approach-walk"
+  // DEFINE THESE SO THE CREATURE TRIES TO STAY IN RANGE OF THEIR ATTACKS
+  // keep difference between them at least 2 and idle distance should always be bigger
+  // idleRange should be the same as the attack range
+  // fleeRange is optional, but makes enemies try to not be too close to you
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/approachActions/0/parameters/fleeRange",
+    "value": 8
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/approachActions/0/parameters/idleRange",
+    "value": 15
   }
 ]

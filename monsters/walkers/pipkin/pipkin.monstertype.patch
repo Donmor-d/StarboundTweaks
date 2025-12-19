@@ -22,5 +22,10 @@
     "op": "add",
     "path": "/baseParameters/touchDamage/statusEffects/-",
     "value": "burning"
+  },
+  {
+    "op": "add",
+    "path": "/baseParameters/touchDamage/damageSourceKind",
+    "value": "fire"
   }
 ]
