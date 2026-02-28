@@ -44,9 +44,8 @@
     "value": 0
   },
   {
-    "op": "replace",
-    "path": "/baseParameters/touchDamage/damageSourceKind",
-    "value": "nodamage"
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/damageSourceKind"
   },
   {
     "op": "replace",

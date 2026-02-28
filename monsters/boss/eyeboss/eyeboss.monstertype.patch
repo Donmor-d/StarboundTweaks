@@ -1,17 +1,17 @@
 [
 	{
-	"op" : "replace",
-	"path" : "/baseParameters/damageParts/beam/damage",
-	"value" : 100
+		"op" : "replace",
+		"path" : "/baseParameters/damageParts/beam/damage",
+		"value" : 100
 	},
 	{
-	"op" : "replace",
-	"path" : "/baseParameters/statusSettings/stats/maxHealth/baseValue",
-	"value" : 4000
+		"op" : "replace",
+		"path" : "/baseParameters/statusSettings/stats/maxHealth/baseValue",
+		"value" : 4000
 	},
 	{
-	"op" : "remove",
-	"path" : "/baseParameters/damageParts/beam/damageTeam"
+		"op" : "remove",
+		"path" : "/baseParameters/damageParts/beam/damageTeam"
 	},
 	{
 	  "op": "replace",

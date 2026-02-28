@@ -1,11 +1,6 @@
 [
   {
     "op": "replace",
-    "path": "/baseParameters/behaviorConfig/damageOnTouch",
-    "value": true
-  },
-  {
-    "op": "replace",
     "path": "/baseParameters/behaviorConfig/hostileActions/1/cooldown",
     "value": 2.5
   },
@@ -40,9 +35,8 @@
     "value": 0
   },
   {
-    "op": "replace",
-    "path": "/baseParameters/touchDamage/damageSourceKind",
-    "value": "nodamage"
+    "op": "remove",
+    "path": "/baseParameters/touchDamage/damageSourceKind"
   },
   {
     "op": "replace",
