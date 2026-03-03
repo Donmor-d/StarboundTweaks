@@ -1,26 +1,30 @@
 [
   {
+    "op": "add",
+    "path": "/baseParameters/damageParts",
+    "value": {
+      "head": {
+        "damage": 28,
+        "teamType": "enemy",
+        "damageSourceKind": "slash",
+        "knockback": 20,
+        "statusEffects": []
+      }
+    }
+  },
+  {
     "op": "remove",
-    "path": "/baseParameters/baseSkills"
+    "path": "/baseParameters/baseSkills/0"
+  },
+  {
+    "op": "replace",
+    "path": "/baseParameters/skillCount",
+    "value": 3
   },
   {
     "op": "add",
     "path": "/baseParameters/specialSkills",
-    "value": [
-      "shockingWaveAttack",
-      "plasmaTorpedoAttack",
-      "miniDragonBreathAttack",
-      "fireSwirlAttack",
-      "rockRollAttack",
-      "snotBubbleAttack",
-      "leafyGustAttack",
-      "lightBallAttack",
-      "smokeRingAttack",
-      "putridWaveAttack",
-      "orbOfZotsAttack",
-      "explosivePhlegmAttack",
-      "cellBlastAttack"
-    ]
+    "value": []
   },
   {
     "op": "add",

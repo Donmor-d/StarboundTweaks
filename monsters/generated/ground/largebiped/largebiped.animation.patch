@@ -32,7 +32,7 @@
     "path": "/animatedParts/parts/backArm/partStates/body/firewindup",
     "value": {
       "properties": {
-        "image": "<partImage>:idle"
+        "image": "<partImage>:walk.1"
       }
     }
   },
@@ -41,7 +41,7 @@
     "path": "/animatedParts/parts/backArm/partStates/body/fire",
     "value": {
       "properties": {
-        "image": "<partImage>:idle"
+        "image": "<partImage>:walk.1"
       }
     }
   },
@@ -50,7 +50,7 @@
     "path": "/animatedParts/parts/backArm/partStates/body/firewinddown",
     "value": {
       "properties": {
-        "image": "<partImage>:idle"
+        "image": "<partImage>:walk.1"
       }
     }
   },
@@ -59,7 +59,7 @@
     "path": "/animatedParts/parts/frontArm/partStates/body/firewindup",
     "value": {
       "properties": {
-        "image": "<partImage>:rotation"
+        "image": "<partImage>:walk.5"
       }
     }
   },
@@ -68,7 +68,7 @@
     "path": "/animatedParts/parts/frontArm/partStates/body/fire",
     "value": {
       "properties": {
-        "image": "<partImage>:rotation"
+        "image": "<partImage>:walk.5"
       }
     }
   },
@@ -77,7 +77,7 @@
     "path": "/animatedParts/parts/frontArm/partStates/body/firewinddown",
     "value": {
       "properties": {
-        "image": "<partImage>:rotation"
+        "image": "<partImage>:walk.5"
       }
     }
   },
@@ -161,5 +161,12 @@
         "image": "<partImage>:rotation"
       }
     }
+  },
+  {
+    "op": "add",
+    "path": "/animatedParts/parts/head/partStates/body/jump/properties/damageArea",
+    "value": [
+      [-0.8, -2.2], [-0.4, -2.6], [0.4, -2.6], [0.8, -2.2], [0.8, 0.1], [0.4, 0.5], [-0.4, 0.5], [-0.8, 0.1]
+    ]
   }
 ]

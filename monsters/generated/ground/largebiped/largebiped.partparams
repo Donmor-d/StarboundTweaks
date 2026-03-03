@@ -1,0 +1,119 @@
+{
+  "partParameterDescription" : {
+    "weightMultiplier" : [ "multiply", 1.0],
+    "walkMultiplier" : [ "multiply", 1.0],
+    "runMultiplier" : [ "multiply", 1.0],
+    "jumpMultiplier" : [ "multiply", 1.0],
+
+    "baseSkills" : [ "merge", [ ] ],
+    "specialSkills" : [ "merge", [ ] ],
+
+    "projectileSourcePosition" : [ "override", [0.0, 0.0] ],
+    "meleeProjectile" : [ "override", "swipe" ]
+  },
+
+  "partParameters" : {
+    "largebackwardsfinhead" : {
+      "specialSkills" : [ "miniDragonBreathAttack" ]
+    },
+    "largebladedhead" : {
+      "specialSkills" : [ "burninghaloAttack" ]
+    },
+    "largecurlhead" : {
+      "specialSkills" : [ "rockShotAttack" ]
+    },
+    "largefinnedhead" : {
+      "specialSkills" : [ "bubbleBlastAttack" ]
+    },
+    "largefanhead" : {
+      "specialSkills" : [ "bubbleBlastAttack" ]
+    },
+    "largefroggishhead" : {
+      "specialSkills" : [ "bubbleBlastAttack" ]
+    },
+    "largehornedhead" : {
+      "specialSkills" : [ "iceBlastAttack" ]
+    },
+    "largeonehornhead" : {
+      "specialSkills" : [ "iceBlastAttack" ]
+    },
+    "largemonkeyhead" : {
+      "specialSkills" : [ "seedSpitAttack" ]
+    },
+    "largeowlhead" : {
+      "specialSkills" : [ "glitterAttack" ]
+    },
+    "largeshellplatehead" : {
+      "specialSkills" : [ "shardSprayAttack" ]
+    },
+    "largepighead" : {
+      "specialSkills" : [ "iceShotAttack" ]
+    },
+    "largefloatyhead" : {
+      "specialSkills" : [ "fireSwirlAttack" ]
+    },
+    "largeflowerhead" : {
+      "specialSkills" : [ "leafyGustAttack" ]
+    },
+    "largegrumpyhead" : {
+      "specialSkills" : [ "rockShotAttack" ]
+    },
+    "largerhinohead" : {
+      "specialSkills" : [ "rockRollAttack" ]
+    },
+    "largepapermaskhead" : {
+      "specialSkills" : [ "orbOfZotsAttack" ]
+    },
+    "largesuckyhead" : {
+      "specialSkills" : [ "snotShotAttack" ]
+    },
+    "largesunhead" : {
+      "specialSkills" : [ "tentacleShotAttack" ]
+    },
+    "largestarhead" : {
+      "specialSkills" : [ "acidicSpitAttack" ]
+    },
+    "largestupidhead" : {
+      "specialSkills" : [ "flameBurstAttack" ]
+    },
+    "largestackedhead" : {
+      "specialSkills" : [ "putridWaveAttack" ]
+    },
+    "largefuzzyhead" : {
+      "specialSkills" : [ "boneRainAttack" ]
+    },
+    "largeplainhead" : {
+      "specialSkills" : [ ]
+    },
+    "largehappyhead" : {
+      "specialSkills" : [ ]
+    },
+    "largesharpteethhead" : {
+      "specialSkills" : [ "rangedChompAttack" ]
+    },
+    "largeboredbughead" : {
+      "specialSkills" : [ "acidSprayAttack" ]
+    },
+    "largesharkhead" : {
+      "specialSkills" : [ "rangedChompAttack" ]
+    },
+    "largemousehead" : {
+      "specialSkills" : [ "seedSpitAttack" ]
+    },
+    "largebananahead" : {
+      "specialSkills" : [ "mudBallAttack" ]
+    },
+    "largesphereearshead" : {
+      "specialSkills" : [ "lightBallAttack" ]
+    },
+    "largecauldronhead" : {
+      "specialSkills" : [ "tentacleShotAttack" ]
+    },
+    "largecoffeehead" : {
+      "specialSkills" : [ "smokeRingAttack" ]
+    },
+    "largerabbithead" : {
+      "specialSkills" : [ "mudBallAttack" ]
+    }
+  }
+}

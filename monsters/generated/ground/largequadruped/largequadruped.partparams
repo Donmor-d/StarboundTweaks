@@ -1,0 +1,171 @@
+{
+  "partParameterDescription" : {
+    "weightMultiplier" : [ "multiply", 1.0],
+    "walkMultiplier" : [ "multiply", 1.0],
+    "runMultiplier" : [ "multiply", 1.0],
+    "jumpMultiplier" : [ "multiply", 1.0],
+
+    "baseSkills" : [ "merge", [ ] ],
+    "specialSkills" : [ "merge", [ ] ],
+
+    "projectileSourcePosition" : [ "override", [2.0, 0] ],
+    "meleeProjectile" : [ "override", "swipe" ]
+  },
+  
+  "partParameters" : {
+
+    "aardvarkhead" : {
+      "specialSkills" : [  ]
+    },
+    "largearrowhead" : {
+      "specialSkills" : [ "shockingWaveAttack" ]
+    },
+    "largebearhead" : {
+      "specialSkills" : [ "staticDischargeAttack" ]
+    },
+    "largebigfinhead" : {
+      "specialSkills" : [ "bubbleBlastAttack" ]
+    },
+    "largebillhead" : {
+      "specialSkills" : [ "waterGunAttack" ]
+    },
+    "largebladedhead" : {
+      "specialSkills" : [ "burninghaloAttack" ]
+    },
+    "largebuffalohead" : {
+      "specialSkills" : [ "gasBelchAttack" ]
+    },
+    "largecentaurhead" : {
+      "specialSkills" : [ "rainbowVomitAttack" ]
+    },
+    "largechainsawhead" : {
+      "specialSkills" : [ "shockingBoltAttack" ]
+    },
+    "largeclawhead" : {
+      "specialSkills" : [ "plasmaTorpedoAttack" ]
+    },
+    "largecrazyhead" : {
+      "specialSkills" : [ "eyeballSprayAttack" ]
+    },
+    "largecreepyhead" : {
+      "specialSkills" : [ "bloodVomitAttack" ]
+    },
+    "largecrownhead" : {
+      "specialSkills" : [ "acidicSpitAttack" ]
+    },
+    "largecurledhead" : {
+      "specialSkills" : [ "fireballAttack" ]
+    },
+    "largecurlednosehead" : {
+      "specialSkills" : [ "rockShotAttack" ]
+    },
+    "largecutestripeyhead" : {
+      "specialSkills" : [ "flySwarmAttack" ]
+    },
+    "largedogsnakehead" : {
+      "specialSkills" : [ "flameBurstAttack" ]
+    },
+    "largedomeplatehead" : {
+      "specialSkills" : [ "rockShotAttack" ]
+    },
+    "largedoublejawhead" : {
+      "specialSkills" : [ "doubleBarbSprayAttack" ]
+    },
+    "largedragonhead" : {
+      "specialSkills" : [ "miniDragonBreathAttack" ]
+    },
+    "largedroopyhead" : {
+      "specialSkills" : [ "acidSprayAttack" ]
+    },
+    "largeeyeballhead" : {
+      "specialSkills" : [ "beamBurstAttack" ]
+    },
+    "largeeyentlerhead" : {
+      "specialSkills" : [ "plasmaSweepAttack" ]
+    },
+    "largeeyestalkhead" : {
+      "specialSkills" : [ "eyeballShotAttack" ]
+    },
+    "largefancybirdhead" : {
+      "specialSkills" : [ "glitterAttack" ]
+    },
+    "largefangedshadowyhead" : {
+      "specialSkills" : [ "darkGravityBallAttack" ]
+    },
+    "largefloppyhead" : {
+      "specialSkills" : [ "fireSwirlAttack" ]
+    },
+    "largegatorhead" : {
+      "specialSkills" : [ "rangedChompAttack" ]
+    },
+    "largegorillahead" : {
+      "specialSkills" : [ "seedSpitAttack" ]
+    },
+    "largeguardedhead" : {
+      "specialSkills" : [ "rockRollAttack" ]
+    },
+    "largehorniesthead" : {
+      "specialSkills" : [ "iceBlastAttack" ]
+    },
+    "largehypnohead" : {
+      "specialSkills" : [  ]
+    },
+    "largeinsomniachead" : {
+      "specialSkills" : [ "snotBubbleAttack" ]
+    },
+    "largelizardshellhead" : {
+      "specialSkills" : [ "leafyGustAttack" ]
+    },
+    "largeminicrochead" : {
+      "specialSkills" : [ "mudBallAttack" ]
+    },
+    "largepetalhead" : {
+      "specialSkills" : [ "lightBallAttack" ]
+    },
+    "largeplatedhead" : {
+      "specialSkills" : [ "shardSprayAttack" ]
+    },
+    "largeraptorhead" : {
+      "specialSkills" : [ "blueFlameAttack" ]
+    },
+    "largerelaxedhead" : {
+      "specialSkills" : [ "smokeRingAttack" ]
+    },
+    "largesandwormhead" : {
+      "specialSkills" : [ "spiceCloudAttack" ]
+    },
+    "largescrabhead" : {
+      "specialSkills" : [ "sonicWaveAttack" ]
+    },
+    "largeshadowyhead" : {
+      "specialSkills" : [ "darkGasAttack" ]
+    },
+    "largeskullbuffalohead" : {
+      "specialSkills" : [ "boneRainAttack" ]
+    },
+    "largesoullesshead" : {
+      "specialSkills" : [ "orbOfZotsAttack" ]
+    },
+    "largesquoidhead" : {
+      "specialSkills" : [ "inkSprayAttack" ]
+    },
+    "largetapirhead" : {
+      "specialSkills" : [ "snotShotAttack" ]
+    },
+    "largeteethyhead" : {
+      "specialSkills" : [ "beetleSwarmAttack" ]
+    },
+    "largethicktuskhead" : {
+      "specialSkills" : [  ]
+    },
+    "largethintuskhead" : {
+      "specialSkills" : [ "fishBreathAttack" ]
+    },
+    "largetoadhead" : {
+      "specialSkills" : [ "explosivePhlegmAttack" ]
+    },
+    "largeverticaleyehead" : {
+      "specialSkills" : [ "cellBlastAttack" ]
+    }
+  }
+}
