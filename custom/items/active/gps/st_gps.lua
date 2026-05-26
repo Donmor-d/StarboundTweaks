@@ -10,16 +10,8 @@ function update()
 end
 
 function activate()
-  local position = world.entityPosition(entity.id())
-  local message = {
-    unique = false,
-    messageId = "showposition",
-    senderName = "doesntmatter",
-    text = "Your X and Y coordinates: ("..math.floor(position[1])..", "..math.floor(position[2])..")",
-    textSpeed = 140
-  }
-  
-  world.sendEntityMessage(entity.id(), "queueRadioMessage", message)
+  local configData = root.assetJson("/custom/interface/scripted/gps/st_gpsgui.config")
+  activeItem.interact("ScriptPane", configData)
 end
 
 function updateAim()

@@ -32,6 +32,8 @@ function init()
   animator.playSound("veryLowHealth", -1)
   animator.setSoundVolume("lowHealth", 0)
   animator.setSoundVolume("veryLowHealth", 0)
+
+  self.hasGps = false
 end
 
 function inflictedDamageCallback(notifications)
@@ -148,6 +150,11 @@ function applyDamageRequest(damageRequest)
 
   local hitType = damageRequest.hitType
   if not status.resourcePositive("health") then
+
+    if world.entityHasCountOfItem(entity.id(), {name = "st_gps"}) then
+      -- used by gps to get current death coordinates
+      world.sendEntityMessage(entity.id(), "getCurrentPlanetInfo")
+    end
     hitType = "kill"
   end
   return {{
@@ -253,6 +260,10 @@ function update(dt)
   --------------------------------------------end ammo stuff--------------------------------------------
 
   ----------------------------------------lunacy mechanic start-----------------------------------------
+
+  --Wearing any cultist gear makes you accumulate lunacy, after a long time you die
+
+
   if status.resource("lunacy") > 0 and status.stat("lunacyRegen") == 0 then --if no equipment is equipped 
     status.consumeResource("lunacy", 3 * dt)
   end

@@ -254,6 +254,7 @@
 			"item": "st_leadbar"
 		}
 	},
+	//end recipes----------------------
 	{
 		"op": "add",
 		"path": "/statusControllerSettings/stats/maxAmmo",
@@ -284,5 +285,10 @@
 		"value": {
 			"baseValue": 0
 		}
-	}
+	},
+	{
+    "op": "add",
+    "path": "/genericScriptContexts/st_main",
+    "value": "/scripts/player/st_main.lua"
+  }
 ]

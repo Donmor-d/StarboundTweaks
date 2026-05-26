@@ -1,0 +1,16 @@
+{
+  //Tutorials
+  //on crafted modular weapon pickup
+  "pickupfirearm" : {
+    "type" : "tutorial",
+    "text" : "I looks like you've created your first modular weapon, i suggest you craft an ^orange;Ammo Table^reset; to see what augments you can craft to enhance it."
+  },
+  "pickupupgrademodule" : {
+    "type" : "tutorial",
+    "text" : "You've obtained a Ship Upgrade Module. With enough of these and a sizeable crew (or some other means) you can upgrade your ship! Upgrading your ship will ^orange;increase fuel capacity^reset;, ^orange;ship speed^reset; and ^orange;decrease fuel consumption^reset;."
+  },
+  "outofammo" : {
+    "type" : "tutorial",
+    "text" : "Looks like you've ran out of ammo, you can craft more at an ^orange;Ammo Station^reset; or simply interact with me on the ship to refill."
+  }
+}
