@@ -264,6 +264,29 @@
 	},
 	{
 		"op": "add",
+		"path": "/statusControllerSettings/stats/ammoRegenPercentageRate",
+		"value": {
+			"baseValue": 0.02 //2% per second
+		}
+	},
+	{
+		"op": "add",
+		"path": "/statusControllerSettings/stats/ammoRegenBlockTime",
+		"value": {
+			"baseValue": 2
+		}
+	},
+  {
+    "op": "add",
+    "path": "/statusControllerSettings/resources/ammoRegenBlock",
+    "value": {
+      "maxStat": "ammoRegenBlockTime",
+      "deltaValue": -1,
+      "initialPercentage": 0
+    }
+  },
+	{
+		"op": "add",
 		"path": "/statusControllerSettings/resources/ammo",
 		"value": {
 			"maxStat": "maxAmmo",

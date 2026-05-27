@@ -32,8 +32,6 @@ function init()
   animator.playSound("veryLowHealth", -1)
   animator.setSoundVolume("lowHealth", 0)
   animator.setSoundVolume("veryLowHealth", 0)
-
-  self.hasGps = false
 end
 
 function inflictedDamageCallback(notifications)
@@ -173,6 +171,9 @@ function notifyResourceConsumed(resourceName, amount)
   if resourceName == "energy" and amount > 0 then
     status.setResourcePercentage("energyRegenBlock", 1.0)
   end
+  if resourceName == "ammo" and amount > 0 then
+    status.setResourcePercentage("ammoRegenBlock", 1.0)
+  end
 end
 
 function update(dt)
@@ -234,9 +235,12 @@ function update(dt)
 
   ----------------------------------------------ammo stuff----------------------------------------------
   
-
-  if world.getProperty("invinciblePlayers")  and status.resourcePercentage("ammo") < 1 then
+  if world.getProperty("invinciblePlayers") and status.resourcePercentage("ammo") < 1 then
     status.setResourcePercentage("ammo", 1)
+  end
+  
+  if not status.resourcePositive("ammoRegenBlock") then
+    status.modifyResourcePercentage("ammo", status.stat("ammoRegenPercentageRate") * (1 + status.resourcePercentage("ammo") * 4) * dt) -- ramps up the more ammo you have left, up to 5x (normally 2% a second)
   end
 
   if status.resourcePercentage("ammo") == 0 then 
@@ -244,7 +248,7 @@ function update(dt)
       unique = true,
       messageId = "outofammo",
       senderName = "doesntmatter",
-      text = "You've run out of ammo, you can refill it with ammo boxes, which can either be crafted at an ^orange;Ammo Station^white; or found in chests. Being inside your ship automatically refills ammo."
+      text = "You've ran out of ammo, you can wait a bit to restore it or quickly refill it with ^green;ammo boxes^reset;, which can be crafted at an ^orange;Ammo Station^white;. Being inside your ship automatically restores all of your ammo."
     }
 
     world.sendEntityMessage(entity.id(), "queueRadioMessage", message) 
@@ -255,14 +259,13 @@ function update(dt)
     status.removeEphemeralEffect("st_fullammo")
   end
 
-  --localAnimator.addDrawable({image="/custom/interface/st_number.png:"..time[i],fullbright=true,position={pos[1]+(i/1.6),pos[2]}},"overlay")
+  --localAnimator.addDrawable({image="/custom/interface/st_number.png:"..time[i],fullbright=true,position={pos[1]+(i/1.6),pos[2]}},"overlay") not possible currently, see if can be done with a permanent status effect
 
   --------------------------------------------end ammo stuff--------------------------------------------
 
   ----------------------------------------lunacy mechanic start-----------------------------------------
 
   --Wearing any cultist gear makes you accumulate lunacy, after a long time you die
-
 
   if status.resource("lunacy") > 0 and status.stat("lunacyRegen") == 0 then --if no equipment is equipped 
     status.consumeResource("lunacy", 3 * dt)
