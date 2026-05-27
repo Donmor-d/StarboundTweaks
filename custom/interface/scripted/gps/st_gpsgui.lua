@@ -41,8 +41,6 @@ end
 
 function update(dt)
 
-  pane.
-
   local position = world.entityPosition(player.id())
   widget.setText("lblCurrentPlanetX", "^blue;"..math.floor(position[1]))
   widget.setText("lblCurrentPlanetY", "^green;"..math.floor(position[2]))
