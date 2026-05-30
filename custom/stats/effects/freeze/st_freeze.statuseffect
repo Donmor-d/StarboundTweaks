@@ -2,8 +2,10 @@
   "name" : "st_freeze",
   "blockingStat" : "iceStatusImmunity",
 
-  "effectConfig" : {},
-  "defaultDuration" : 5,
+  "effectConfig" : {
+    "triggerDamageThreshold" : 0.25 //% health damage to break
+  },
+  "defaultDuration" : 3,
 
   "scripts" : [
     "st_freeze.lua"
@@ -12,5 +14,5 @@
   "animationConfig" : "st_freeze.animation",
 
   "label" : "Frozen: you cant move",
-  "icon" : "/interface/statuses/ice.png"
+  "icon" : "/interface/statuses/frozen.png"
 }

@@ -1,0 +1,12 @@
+{
+  "name" : "st_freezeimmunity",
+  "effectConfig" : {},
+  "defaultDuration" : 10,
+
+  "scripts" : [],
+
+  "animationConfig" : "st_freezeimmunity.animation",
+
+  "label" : "Hypothermic: recently frozen"
+}
+//prevents reapplication of freeze

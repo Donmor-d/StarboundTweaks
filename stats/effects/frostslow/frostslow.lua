@@ -1,39 +1,26 @@
+require "/scripts/util.lua"
+require "/scripts/status.lua"
+
 function init()
   animator.setParticleEmitterOffsetRegion("icetrail", mcontroller.boundBox())
   animator.setParticleEmitterActive("icetrail", true)
   effect.setParentDirectives("fade=00BBFF=0.15")
   
-  effect.addStatModifierGroup({{stat = "powerMultiplier", effectiveMultiplier = 0.75}}) --reduces damage done by victim
+  -- effect.addStatModifierGroup({{stat = "powerMultiplier", effectiveMultiplier = 0.75}}) --reduces damage done by victim
 
-  script.setUpdateDelta(5)
   effect.addStatModifierGroup({
     {stat = "jumpModifier", amount = -0.15}
   })
   self.defaultSpeedMult = 1
+  
+  self.maxSpeedMult = self.defaultSpeedMult
   self.speedMult = self.defaultSpeedMult
 
-  --[[
   self.block = true
-  self.frozen = false
-  ]]--
 end
 
 function update(dt)
-  --[[  stacking cold, removed to balance later, too op for bosses
-  if effect.duration() > 4.9 and not self.block then  --Cada reaplicacao reseta a duração, então a cada vez que a duração fica 5s (que é a defaultDuration), 4.9 pois o ele é detectado entre 4.9 e 5
-    self.defaultSpeedMult = self.defaultSpeedMult - self.defaultSpeedMult/10
-    self.block = true
-  else
-    self.block = false
-  end
-
-  if self.defaultSpeedMult < 0.10 and not self.frozen then
-    status.setResource("stunned", 50)
-    animator.setSoundVolume("freeze", 5)
-    animator.playSound("freeze", 0)
-    self.frozen = true
-  end
-]]--
+  local freezeImmune = false
   local sourceID = effect.sourceEntity()
   local activeStatus = status.activeUniqueStatusEffectSummary()
 
@@ -41,6 +28,22 @@ function update(dt)
     if activeStatus[i][1] == "weakpoison" then
       status.addEphemeralEffect("st_commoncold", nil, sourceID)
     end
+    if activeStatus[i][1] == "st_freezeimmunity" or activeStatus[i][1] == "st_freeze" then
+      freezeImmune = true
+      self.maxSpeedMult = self.defaultSpeedMult
+    end
+  end
+
+  --Stacking cold, reapplications make you slower and slower until you freeze, deactivated on bosses (entity.persistent())
+  if effect.duration() > 4.98 and not self.block and not freezeImmune and not entity.persistent() then  --Cada reaplicacao reseta a duração, então a cada vez que a duração fica 5s (que é a defaultDuration), 4.9 pois o ele é detectado entre 4.9 e 5
+    self.maxSpeedMult = math.max(self.maxSpeedMult - self.defaultSpeedMult / 10, self.defaultSpeedMult / 10)
+    self.block = true
+  else
+    self.block = false
+  end
+
+  if self.maxSpeedMult <= self.defaultSpeedMult / 10 and not freezeImmune and not self.damageListener then
+    status.addEphemeralEffect("st_freeze", nil, sourceID)
   end
 
   if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then --if touching water, eventually slows more
@@ -49,7 +52,7 @@ function update(dt)
         self.speedMult = math.max(self.speedMult - dt/2, 0.1)
       end
   else  
-    self.speedMult = math.min(self.speedMult + dt/2, self.defaultSpeedMult)
+    self.speedMult = math.min(self.speedMult + dt/2, self.maxSpeedMult)
   end
 
   mcontroller.controlModifiers({
@@ -60,5 +63,4 @@ function update(dt)
 end
 
 function uninit()
-  --status.setResource("stunned", 0)
 end
